@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stocktrack"
+version = "0.1.0"
+description = "Track significant insider buying from SEC Form 4 filings, with scoring, cluster detection and alerts."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+stocktrack = "stocktrack.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["stocktrack*"]
