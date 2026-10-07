@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS buys (
     shares_before   REAL,
     shares_after    REAL,
     plan_10b5_1     INTEGER,
+    plan_purchase   INTEGER,
     n_transactions  INTEGER,
     url             TEXT,
     alerted_at      TEXT
@@ -63,6 +64,11 @@ class Database:
         self.conn = sqlite3.connect(path)
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
+        # Columns added after a database was created
+        existing = {r["name"] for r in self.conn.execute("PRAGMA table_info(buys)")}
+        for name in ("plan_purchase",):
+            if name not in existing:
+                self.conn.execute(f"ALTER TABLE buys ADD COLUMN {name} INTEGER")
 
     def close(self) -> None:
         self.conn.close()
@@ -100,6 +106,7 @@ class Database:
     def _to_buy(row: sqlite3.Row) -> BuyEvent:
         d = {f: row[f] for f in _BUY_FIELDS}
         d["plan_10b5_1"] = bool(d["plan_10b5_1"])
+        d["plan_purchase"] = bool(d["plan_purchase"])
         return BuyEvent(**d)
 
     def buys(

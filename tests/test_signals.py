@@ -8,6 +8,7 @@ from stocktrack.signals import (
     build_buy,
     cluster_size,
     dedupe_purchases,
+    is_listed_stock,
     money,
     owner_role,
     score_buy,
@@ -36,6 +37,7 @@ def make_buy(**kw) -> BuyEvent:
         shares_before=40_000,
         shares_after=50_000,
         plan_10b5_1=False,
+        plan_purchase=False,
         n_transactions=1,
         url="https://www.sec.gov/x",
     )
@@ -98,6 +100,20 @@ class BuildBuyTest(unittest.TestCase):
         self.assertEqual(b.shares_before, 0)
         self.assertTrue(math.isinf(b.stake_increase))
 
+    def test_plan_purchase_detection(self):
+        def plan(note_text: str, where: str = "trade", remarks: str = "") -> bool:
+            tx = tx_xml(trade_note="F2") if where == "trade" else tx_xml(holding_note="F2")
+            xml = form4_xml(txs=[tx], footnotes={"F2": note_text}, remarks=remarks)
+            return build_buy(parse_form4_xml(xml)).plan_purchase
+
+        self.assertTrue(plan("Acquired through the reinvestment of dividends received on restricted stock."))
+        self.assertTrue(plan("Shares purchased through the Director Stock Purchase Plan."))
+        self.assertTrue(plan("Purchased under the Company's ESPP."))
+        self.assertTrue(plan("Weighted average price.", remarks="DRIP/OCP"))
+        self.assertFalse(plan("Weighted average price; range $10.01 to $10.20."))
+        # a note on the resulting balance says nothing about how these shares were bought
+        self.assertFalse(plan("Balance includes shares acquired through the Dividend Reinvestment Plan.", "holding"))
+
     def test_joint_filing_uses_most_senior_owner(self):
         xml = form4_xml(
             owners=[
@@ -140,6 +156,9 @@ class ScoreTest(unittest.TestCase):
         late = score_buy(make_buy(last_date="2026-08-01", filed_at="2026-10-02T09:00:00"))
         self.assertEqual(late.total, base - 10)
         self.assertIn("Filed 62d late", late.tags)
+        drip = score_buy(make_buy(plan_purchase=True))
+        self.assertEqual(drip.total, base - 30)
+        self.assertIn("DRIP/purchase plan", drip.tags)
 
     def test_score_never_negative(self):
         b = make_buy(role="Other", value=0, shares_before=None, shares_after=None, plan_10b5_1=True)
@@ -160,11 +179,25 @@ class ClusterTest(unittest.TestCase):
         self.assertEqual(cluster_size(me, peers), 3)
         self.assertEqual(cluster_size(me, peers, window_days=3), 1)
 
+    def test_small_and_plan_buys_dont_make_a_cluster(self):
+        me = make_buy(accession="a", owner_cik="1", shares=100)
+        small = make_buy(accession="b", owner_cik="2", shares=200, value=5_000)
+        drip = make_buy(accession="c", owner_cik="3", shares=300, plan_purchase=True)
+        real = make_buy(accession="d", owner_cik="4", shares=400, value=25_000)
+        self.assertEqual(cluster_size(me, [small, drip]), 1)
+        self.assertEqual(cluster_size(me, [small, drip, real]), 2)
+
     def test_same_purchase_reported_by_related_filers_counts_once(self):
         fund = make_buy(accession="a", owner_cik="1", shares=5000)
         manager = make_buy(accession="b", owner_cik="2", shares=5000)
         self.assertEqual(cluster_size(fund, [fund, manager]), 1)
         self.assertEqual(dedupe_purchases([fund, manager]), [fund])
+
+
+class ListedStockTest(unittest.TestCase):
+    def test_tickers(self):
+        self.assertTrue(all(is_listed_stock(t) for t in ("AAPL", "BRK.B", "PORT.U", "AXIA3", "X", "XOMX1")))
+        self.assertFalse(any(is_listed_stock(t) for t in ("", "CRAFX", "PMPEX")))
 
 
 class FormatTest(unittest.TestCase):

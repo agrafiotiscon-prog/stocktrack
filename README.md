@@ -68,14 +68,19 @@ Each Form 4 with open-market purchases becomes one buy event.
 | Value | up to 30 | Dollars spent, on a log scale: $100K = 10, $1M = 20, $10M = 30. |
 | Role | up to 25 | CEO 25; CFO, President, Chair 22; other C-suite 18; officers 14; directors 12; 10% holders 8. |
 | Conviction | up to 20 | How much the purchase grew the insider's holding. +50% or more, or a brand-new position, scores full. |
-| Cluster | up to 25 | Distinct insiders buying the same stock within 14 days: 2 = 12, 3 = 20, 4+ = 25. |
-| Penalties | -15 / -10 | Purchases under a pre-scheduled Rule 10b5-1 plan; filings made more than 10 days after the trade. |
+| Cluster | up to 25 | Distinct insiders each buying $25K+ of the same stock within 14 days: 2 = 12, 3 = 20, 4+ = 25. |
+| Penalties | -30 / -15 / -10 | Automatic plan purchases (dividend reinvestment, employee or director stock purchase plans, deferred comp); purchases under a pre-scheduled Rule 10b5-1 plan; filings made more than 10 days after the trade. |
 
 60+ is labelled **Strong** (for example, a CEO spending $1M to grow their stake by half),
 40+ **Notable**. In the HTML report, hover a score to see its breakdown.
 
 Some details:
 - Only non-derivative `P` transactions count, so option exercises, grants, gifts and sales are ignored.
+- Some plans also report their buys as code `P`: a board of directors buying through dividend reinvestment
+  all on the same day, say. Footnotes on the trade and the filing's remarks are checked for that language.
+  These buys get the -30 penalty and never count toward a cluster.
+- Rankings and alerts skip issuers you can't trade on an exchange: no ticker (private funds, non-traded
+  BDCs) or a mutual-fund ticker (interval funds). They are still stored; add `--include-funds` to see them.
 - Joint filings (a fund and its manager, say) are attributed to the most senior reporting owner.
 - When related entities file separate Form 4s for the same shares on the same day, they count as one purchase, so they don't inflate clusters or the rankings.
 - Form 4/A amendments are skipped by default to avoid double counting (`--amendments` to include them).

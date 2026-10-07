@@ -35,10 +35,14 @@ def tx_xml(
     after: float | str | None = 11000,
     di: str = "D",
     nature: str = "",
+    trade_note: str = "",  # footnote id attached to the share count
+    holding_note: str = "",  # footnote id attached to the post-trade balance
 ) -> str:
     price_el = f"<value>{price}</value>" if price is not None else '<footnoteId id="F1"/>'
+    trade_note_el = f'<footnoteId id="{trade_note}"/>' if trade_note else ""
+    holding_note_el = f'<footnoteId id="{holding_note}"/>' if holding_note else ""
     after_el = (
-        f"<postTransactionAmounts><sharesOwnedFollowingTransaction><value>{after}</value>"
+        f"<postTransactionAmounts><sharesOwnedFollowingTransaction><value>{after}</value>{holding_note_el}"
         f"</sharesOwnedFollowingTransaction></postTransactionAmounts>"
         if after is not None
         else ""
@@ -54,7 +58,7 @@ def tx_xml(
                 <equitySwapInvolved>0</equitySwapInvolved>
             </transactionCoding>
             <transactionAmounts>
-                <transactionShares><value>{shares}</value></transactionShares>
+                <transactionShares><value>{shares}</value>{trade_note_el}</transactionShares>
                 <transactionPricePerShare>{price_el}</transactionPricePerShare>
                 <transactionAcquiredDisposedCode><value>{ad}</value></transactionAcquiredDisposedCode>
             </transactionAmounts>
@@ -74,7 +78,11 @@ def form4_xml(
     ticker: str = "ACME",
     aff10b5one: str | None = "0",
     doc_type: str = "4",
+    footnotes: dict[str, str] | None = None,
+    remarks: str = "Test filing",
 ) -> str:
+    footnotes = footnotes if footnotes is not None else {"F1": "Weighted average price."}
+    notes = "".join(f'<footnote id="{k}">{v}</footnote>' for k, v in footnotes.items())
     owners = owners if owners is not None else [owner_xml(officer=True, title="Chief Executive Officer")]
     txs = txs if txs is not None else [tx_xml()]
     aff = f"<aff10b5One>{aff10b5one}</aff10b5One>" if aff10b5one is not None else ""
@@ -91,8 +99,8 @@ def form4_xml(
     {"".join(owners)}
     {aff}
     <nonDerivativeTable>{"".join(txs)}</nonDerivativeTable>
-    <footnotes><footnote id="F1">Weighted average price.</footnote></footnotes>
-    <remarks>Test filing</remarks>
+    <footnotes>{notes}</footnotes>
+    <remarks>{remarks}</remarks>
 </ownershipDocument>"""
 
 

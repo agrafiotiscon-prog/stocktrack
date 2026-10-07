@@ -26,6 +26,16 @@ class ParseForm4Test(unittest.TestCase):
         self.assertEqual(f.plan_10b5_1, False)
         self.assertEqual(f.footnotes, {"F1": "Weighted average price."})
 
+    def test_trade_footnotes_exclude_holding_footnotes(self):
+        xml = form4_xml(
+            txs=[tx_xml(trade_note="F2", holding_note="F3")],
+            footnotes={"F2": "Bought via plan.", "F3": "Balance includes DRIP shares."},
+        )
+        f = parse_form4_xml(xml)
+        t = f.transactions[0]
+        self.assertEqual(t.footnote_ids, ["F2"])
+        self.assertEqual(f.notes(t), ["Bought via plan."])
+
     def test_price_given_only_by_footnote(self):
         f = parse_form4_xml(form4_xml(txs=[tx_xml(price=None)]))
         self.assertIsNone(f.transactions[0].price)

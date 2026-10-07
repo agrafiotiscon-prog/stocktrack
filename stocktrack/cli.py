@@ -17,7 +17,7 @@ from stocktrack.db import Database
 from stocktrack.prices import PriceService
 from stocktrack.report import render_report
 from stocktrack.sec import HttpClient, MissingUserAgent
-from stocktrack.signals import money, stake_text
+from stocktrack.signals import dedupe_purchases, money, stake_text
 from stocktrack.tracker import IngestResult, Signal, Tracker
 
 DEFAULT_DB = os.environ.get("STOCKTRACK_DB", str(Path.home() / ".stocktrack" / "stocktrack.db"))
@@ -34,6 +34,7 @@ def _tracker(args, online: bool) -> Tracker:
         Database(args.db),
         client=_client(args) if online else None,
         include_amendments=getattr(args, "amendments", False),
+        include_funds=getattr(args, "include_funds", False),
     )
 
 
@@ -84,6 +85,8 @@ def _alert_new(tracker: Tracker, result: IngestResult, args, notifier: Notifier)
     sent = 0
     prices = PriceService() if args.prices else None
     for buy in result.buys:
+        if not tracker.wanted(buy):
+            continue
         sig = tracker.score(buy)
         if sig.score.total < args.min_score or buy.value < args.min_value:
             continue
@@ -155,8 +158,13 @@ def cmd_backfill(args) -> int:
     if args.alert:
         _alert_new(tracker, result, args, Notifier.from_env())
     print()
-    found = sorted((tracker.score(b) for b in result.buys), key=lambda s: s.score.total, reverse=True)
-    print_table(found[:20])
+    found = sorted(
+        (tracker.score(b) for b in result.buys if tracker.wanted(b)),
+        key=lambda s: (s.score.total, s.buy.value),
+        reverse=True,
+    )
+    keep = {id(b) for b in dedupe_purchases([s.buy for s in found])}
+    print_table([s for s in found if id(s.buy) in keep][:20])
     return 0
 
 
@@ -231,12 +239,17 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("-v", "--verbose", action="store_true")
     sub = p.add_subparsers(dest="command", required=True)
 
+    def funds_opt(sp):
+        sp.add_argument("--include-funds", action="store_true",
+                        help="include issuers with no ticker or a mutual-fund ticker (non-traded funds, BDCs)")
+
     def alert_opts(sp, min_score=50, min_value=50_000):
         sp.add_argument("--min-score", type=int, default=min_score, help="alert threshold (default %(default)s)")
         sp.add_argument("--min-value", type=float, default=min_value,
                         help="minimum purchase value in dollars (default %(default)s)")
         sp.add_argument("--prices", action="store_true", help="include the current price (Yahoo Finance)")
         sp.add_argument("--amendments", action="store_true", help="also process Form 4/A amendments")
+        funds_opt(sp)
 
     sp = sub.add_parser("scan", help="process new filings from the live EDGAR feed once")
     sp.add_argument("--pages", type=int, default=10, help="max feed pages of 100 entries (default %(default)s)")
@@ -262,12 +275,14 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--min-value", type=float, default=0)
     sp.add_argument("--limit", type=int, default=25)
     sp.add_argument("--prices", action="store_true", help="include the current price (Yahoo Finance)")
+    funds_opt(sp)
     sp.set_defaults(func=cmd_top)
 
     sp = sub.add_parser("clusters", help="stocks where several insiders are buying")
     sp.add_argument("--days", type=int, default=14, help="look back this many days (default %(default)s)")
     sp.add_argument("--min-insiders", type=int, default=2)
     sp.add_argument("--limit", type=int, default=20)
+    funds_opt(sp)
     sp.set_defaults(func=cmd_clusters)
 
     sp = sub.add_parser("report", help="write an HTML dashboard")
@@ -277,6 +292,7 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--min-value", type=float, default=0)
     sp.add_argument("--limit", type=int, default=300)
     sp.add_argument("--prices", action="store_true", help="include the current price (Yahoo Finance)")
+    funds_opt(sp)
     sp.set_defaults(func=cmd_report)
 
     sp = sub.add_parser("stats", help="database summary")

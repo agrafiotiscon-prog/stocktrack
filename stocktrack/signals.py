@@ -8,8 +8,10 @@ It is scored 0-100 on what tends to make insider buying meaningful:
   conviction  up to 20  how much the purchase grew the insider's stake (new position = max)
   cluster     up to 25  several different insiders buying the same stock around the same time
 
-minus penalties for purchases under a pre-scheduled Rule 10b5-1 plan and for
-filings made long after the trade (Form 4 is due within two business days).
+minus penalties for purchases under a pre-scheduled Rule 10b5-1 plan, for
+automatic plan purchases (dividend reinvestment, employee/director stock
+purchase plans), and for filings made long after the trade (Form 4 is due
+within two business days).
 """
 
 from __future__ import annotations
@@ -38,9 +40,27 @@ STRONG = 60  # e.g. a CEO spending $1M to grow their stake by half
 NOTABLE = 40
 
 CLUSTER_WINDOW_DAYS = 14
+CLUSTER_MIN_VALUE = 25_000  # smaller buys don't make a stock a cluster buy
 LATE_FILING_DAYS = 10
 PLAN_PENALTY = 15
+PLAN_PURCHASE_PENALTY = 30
 LATE_PENALTY = 10
+
+# Footnote language for purchases that happen automatically rather than by choice.
+PLAN_PURCHASE_RE = re.compile(
+    r"dividend reinvestment|reinvest\w* (?:of )?(?:the )?(?:cash )?dividends|\bdrip\b"
+    r"|stock purchase plan|\bespp\b|401\(k\)|deferred compensation|dividend equivalent",
+    re.I,
+)
+
+# Nasdaq convention: 5-letter symbols ending in X are mutual funds.
+_FUND_TICKER_RE = re.compile(r"^[A-Z]{4}X$")
+
+
+def is_listed_stock(ticker: str) -> bool:
+    """False for issuers you can't trade on an exchange: no ticker (private and
+    non-traded funds, BDCs) or a mutual-fund ticker (interval funds)."""
+    return bool(ticker) and not _FUND_TICKER_RE.match(ticker)
 
 
 @dataclass
@@ -63,8 +83,13 @@ class BuyEvent:
     shares_before: float | None
     shares_after: float | None
     plan_10b5_1: bool
+    plan_purchase: bool  # bought via DRIP, an employee/director stock purchase plan, etc.
     n_transactions: int
     url: str
+
+    @property
+    def counts_toward_cluster(self) -> bool:
+        return self.value >= CLUSTER_MIN_VALUE and not self.plan_purchase
 
     @property
     def stake_increase(self) -> float | None:
@@ -160,6 +185,8 @@ def build_buy(form: Form4) -> BuyEvent | None:
     ranked = sorted(form.owners, key=lambda o: ROLE_POINTS[owner_role(o)], reverse=True)
     primary = ranked[0] if ranked else Owner(cik="", name="")
     dates = sorted(t.date for t in buys if t.date)
+    # Remarks cover the whole filing, so a DRIP mention there flags it too.
+    plan_text = " ".join([form.remarks, *(n for t in buys for n in form.notes(t))])
 
     return BuyEvent(
         accession=form.accession,
@@ -180,6 +207,7 @@ def build_buy(form: Form4) -> BuyEvent | None:
         shares_before=shares_before,
         shares_after=shares_after,
         plan_10b5_1=bool(form.plan_10b5_1),
+        plan_purchase=bool(PLAN_PURCHASE_RE.search(plan_text)),
         n_transactions=len(buys),
         url=filing_index_url(form.issuer_cik or primary.cik, form.accession) if form.accession else "",
     )
@@ -210,12 +238,16 @@ def _within(a: str, b: str, days: int) -> bool:
 
 
 def cluster_size(buy: BuyEvent, peers: list[BuyEvent], window_days: int = CLUSTER_WINDOW_DAYS) -> int:
-    """Distinct insiders buying the same issuer within window_days of this buy (itself included)."""
+    """Distinct insiders buying the same issuer within window_days of this buy (itself included).
+
+    Only discretionary buys of at least CLUSTER_MIN_VALUE count as other insiders.
+    """
     nearby = [
         p
         for p in peers
         if p.issuer_cik == buy.issuer_cik
         and p.accession != buy.accession
+        and p.counts_toward_cluster
         and _within(p.last_date, buy.last_date, window_days)
     ]
     return len({b.owner_cik for b in dedupe_purchases([buy, *nearby])})
@@ -248,6 +280,9 @@ def score_buy(buy: BuyEvent, cluster: int = 1) -> Score:
     if buy.plan_10b5_1:
         penalty += PLAN_PENALTY
         tags.append("10b5-1 plan")
+    if buy.plan_purchase:
+        penalty += PLAN_PURCHASE_PENALTY
+        tags.append("DRIP/purchase plan")
     delay = buy.filing_delay_days
     if delay is not None and delay > LATE_FILING_DAYS:
         penalty += LATE_PENALTY

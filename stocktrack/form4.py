@@ -34,6 +34,7 @@ class Transaction:
     shares_after: float | None
     direct_indirect: str  # D or I
     nature: str  # for indirect holdings, e.g. "By Trust"
+    footnote_ids: list[str] = field(default_factory=list)  # notes on the trade itself, not the holding
 
     @property
     def is_purchase(self) -> bool:
@@ -58,6 +59,9 @@ class Form4:
     @property
     def purchases(self) -> list[Transaction]:
         return [t for t in self.transactions if t.is_purchase]
+
+    def notes(self, t: Transaction) -> list[str]:
+        return [self.footnotes[i] for i in t.footnote_ids if i in self.footnotes]
 
 
 def _text(el: ET.Element | None, path: str) -> str:
@@ -97,6 +101,19 @@ def _owner(el: ET.Element) -> Owner:
     )
 
 
+# Footnotes under these describe the resulting holding ("balance includes DRIP
+# shares"), not how the reported shares were bought.
+_HOLDING_FIELDS = ("postTransactionAmounts", "ownershipNature")
+
+
+def _trade_footnote_ids(el: ET.Element) -> list[str]:
+    ids: list[str] = []
+    for child in el:
+        if child.tag not in _HOLDING_FIELDS:
+            ids.extend(f.get("id", "") for f in child.iter("footnoteId"))
+    return list(dict.fromkeys(ids))
+
+
 def _transaction(el: ET.Element) -> Transaction:
     return Transaction(
         security=_text(el, "securityTitle/value"),
@@ -108,6 +125,7 @@ def _transaction(el: ET.Element) -> Transaction:
         shares_after=_num(_text(el, "postTransactionAmounts/sharesOwnedFollowingTransaction/value")),
         direct_indirect=_text(el, "ownershipNature/directOrIndirectOwnership/value"),
         nature=_text(el, "ownershipNature/natureOfOwnership/value"),
+        footnote_ids=_trade_footnote_ids(el),
     )
 
 

@@ -152,6 +152,37 @@ class TrackerTest(unittest.TestCase):
         # alerts use the same cluster-aware score
         self.assertEqual(tracker.score(ranked[0].buy).score.total, ranked[0].score.total)
 
+    def test_unlisted_issuers_hidden_unless_requested(self):
+        tracker = self._load(
+            [
+                ("0000000001-26-000001", buy_filing("0000000001-26-000001", "11", "Fund Director", ticker="")),
+                ("0000000001-26-000002", buy_filing("0000000001-26-000002", "12", "Other Director", ticker="CRAFX",
+                                                    shares=2000)),
+            ]
+        )
+        self.assertEqual(tracker.ranked(since="2026-01-01"), [])
+        self.assertEqual(tracker.clusters(since="2026-01-01"), [])
+        tracker.include_funds = True
+        self.assertEqual(len(tracker.ranked(since="2026-01-01")), 2)
+
+    def test_old_database_gets_new_columns(self):
+        import os
+        import sqlite3
+        import tempfile
+
+        from stocktrack.db import SCHEMA
+
+        old_schema = "\n".join(line for line in SCHEMA.splitlines() if "plan_purchase" not in line)
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "old.db")
+            conn = sqlite3.connect(path)
+            conn.executescript(old_schema)
+            conn.close()
+            db = Database(path)
+            cols = {r["name"] for r in db.conn.execute("PRAGMA table_info(buys)")}
+            db.close()
+            self.assertIn("plan_purchase", cols)
+
     def test_alert_bookkeeping(self):
         tracker = self._load([("0000000001-26-000001", buy_filing("0000000001-26-000001", "11", "Ceo Carl", "CEO"))])
         self.assertFalse(self.db.was_alerted("0000000001-26-000001"))

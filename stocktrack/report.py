@@ -188,8 +188,9 @@ footer {{ margin-top: 32px; font-size: 12px; color: var(--muted); max-width: 820
 <p><b>How the score works (0-100).</b> Value up to 30 (log scale: $100K = 10, $1M = 20, $10M = 30).
 Role up to 25 (CEO highest, then CFO/President/Chair, other executives, directors, 10% holders).
 Conviction up to 20 (how much the purchase grew the insider's holding; a new position scores full).
-Cluster up to 25 (2, 3 or 4+ different insiders buying within 14 days). Minus 15 for purchases under a
-pre-arranged Rule 10b5-1 plan and 10 for filings made more than 10 days after the trade.
+Cluster up to 25 (2, 3 or 4+ different insiders each buying $25K+ within 14 days). Minus 30 for automatic
+plan purchases (dividend reinvestment, stock purchase plans), 15 for purchases under a pre-arranged
+Rule 10b5-1 plan, and 10 for filings made more than 10 days after the trade.
 Hover a score to see its breakdown.</p>
 <p>Data: SEC EDGAR. Insider purchases are public disclosures, not recommendations. This is not investment advice.</p>
 </footer>

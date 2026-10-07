@@ -29,6 +29,7 @@ from stocktrack.signals import (
     build_buy,
     cluster_size,
     dedupe_purchases,
+    is_listed_stock,
     score_buy,
 )
 
@@ -88,12 +89,18 @@ class Tracker:
         db: Database,
         client: HttpClient | None = None,
         include_amendments: bool = False,
+        include_funds: bool = False,
         window_days: int = CLUSTER_WINDOW_DAYS,
     ) -> None:
         self.db = db
         self.client = client
         self.form_types = FORM4_TYPES_WITH_AMENDMENTS if include_amendments else FORM4_TYPES
+        self.include_funds = include_funds
         self.window_days = window_days
+
+    def wanted(self, buy: BuyEvent) -> bool:
+        """Whether a buy belongs in rankings and alerts. Everything is stored either way."""
+        return self.include_funds or is_listed_stock(buy.ticker)
 
     def _http(self) -> HttpClient:
         if self.client is None:
@@ -222,7 +229,7 @@ class Tracker:
         for b in peers:
             if b.last_date < since or (until and b.last_date > until):
                 continue
-            if b.value < min_value:
+            if b.value < min_value or not self.wanted(b):
                 continue
             s = Signal(b, score_buy(b, cluster_size(b, by_issuer[b.issuer_cik], w)))
             if s.score.total >= min_score:
@@ -232,10 +239,12 @@ class Tracker:
         return [s for s in signals if id(s.buy) in keep]
 
     def clusters(self, since: str, until: str | None = None, min_insiders: int = 2) -> list[Cluster]:
-        """Stocks where at least `min_insiders` different insiders bought in the period."""
+        """Stocks where at least `min_insiders` different insiders bought in the period
+        (counting discretionary buys of CLUSTER_MIN_VALUE or more)."""
         by_issuer: dict[str, list[BuyEvent]] = defaultdict(list)
         for b in self.db.buys(since=since, until=until):
-            by_issuer[b.issuer_cik].append(b)
+            if b.counts_toward_cluster and self.wanted(b):
+                by_issuer[b.issuer_cik].append(b)
         out = []
         for buys in by_issuer.values():
             buys = dedupe_purchases(sorted(buys, key=lambda b: (b.last_date, b.filed_at)))
