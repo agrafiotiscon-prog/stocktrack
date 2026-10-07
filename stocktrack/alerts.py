@@ -15,6 +15,7 @@ import os
 import urllib.request
 from dataclasses import dataclass
 
+from stocktrack.prices import MISMATCH_NOTE
 from stocktrack.signals import money, qty
 from stocktrack.tracker import Signal
 
@@ -38,7 +39,10 @@ def format_alert(sig: Signal) -> str:
         lines.append(" | ".join(s.tags))
     if sig.quote and b.avg_price:
         chg = sig.quote.change_from(b.avg_price)
-        lines.append(f"Now ${sig.quote.price:,.2f} ({chg:+.1%} vs insider price)")
+        if chg is None:
+            lines.append(f"Now ${sig.quote.price:,.2f} ({MISMATCH_NOTE})")
+        else:
+            lines.append(f"Now ${sig.quote.price:,.2f} ({chg:+.1%} vs insider price)")
     lines.append(b.url)
     return "\n".join(lines)
 

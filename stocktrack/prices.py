@@ -15,6 +15,8 @@ from dataclasses import dataclass
 log = logging.getLogger(__name__)
 
 CHART_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{}?range=1d&interval=1d"
+MAX_PRICE_RATIO = 4.0
+MISMATCH_NOTE = "filing price isn't comparable to the market price (ADR or share class, or a filing error)"
 
 
 @dataclass
@@ -24,8 +26,15 @@ class Quote:
     high_52w: float | None
     low_52w: float | None
 
-    def change_from(self, paid: float | None) -> float | None:
+    def comparable(self, paid: float | None) -> bool:
+        """False when the filing price is far from today's: usually an ADR quoted against
+        local shares, a different share class, or a typo in the filing."""
         if not paid:
+            return False
+        return 1 / MAX_PRICE_RATIO <= self.price / paid <= MAX_PRICE_RATIO
+
+    def change_from(self, paid: float | None) -> float | None:
+        if not self.comparable(paid):
             return None
         return self.price / paid - 1
 

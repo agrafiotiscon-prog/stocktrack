@@ -45,6 +45,7 @@ LATE_FILING_DAYS = 10
 PLAN_PENALTY = 15
 PLAN_PURCHASE_PENALTY = 30
 LATE_PENALTY = 10
+MAX_TRANSACTION_VALUE = 5e9  # far beyond any real insider purchase
 
 # Footnote language for purchases that happen automatically rather than by choice.
 PLAN_PURCHASE_RE = re.compile(
@@ -164,7 +165,9 @@ def build_buy(form: Form4) -> BuyEvent | None:
         return None
 
     shares = sum(t.shares or 0 for t in buys)
-    priced = [t for t in buys if t.shares and t.price]
+    # A filer sometimes types the total cost into the per-share price field;
+    # treat implausibly large transactions as unpriced rather than trust them.
+    priced = [t for t in buys if t.shares and t.price and t.shares * t.price <= MAX_TRANSACTION_VALUE]
     value = sum(t.shares * t.price for t in priced)
     priced_shares = sum(t.shares for t in priced)
     avg_price = value / priced_shares if priced_shares else None

@@ -45,6 +45,17 @@ class QuoteTest(unittest.TestCase):
         self.assertIsNone(q.change_from(None))
         self.assertAlmostEqual(q.range_position, 0.5)
 
+    def test_incomparable_prices(self):
+        adr = Quote("PAM", 81.48, None, None)  # one ADR = 25 local shares bought at $3.89
+        self.assertFalse(adr.comparable(3.89))
+        self.assertIsNone(adr.change_from(3.89))
+        self.assertTrue(adr.comparable(81.48 / 3.9))
+
+    def test_alert_flags_incomparable_price(self):
+        b = make_buy(avg_price=3.89)
+        text = format_alert(Signal(b, score_buy(b), Quote("PAM", 81.48, None, None)))
+        self.assertIn("Now $81.48 (filing price isn't comparable", text)
+
 
 class ReportTest(unittest.TestCase):
     def test_renders_and_escapes(self):
@@ -63,6 +74,12 @@ class ReportTest(unittest.TestCase):
         self.assertIn("O&#x27;Brien &amp; Sons", html)
         self.assertIn("2 insiders", html)
         self.assertIn("+10.0%", html)
+
+    def test_incomparable_price_shows_question_mark(self):
+        b = make_buy(avg_price=3.89)
+        html = render_report([Signal(b, score_buy(b), Quote("PAM", 81.48, None, None))], [], "a", "b", with_prices=True)
+        self.assertIn(">?</span>", html)
+        self.assertNotIn("+1994", html)
 
     def test_empty(self):
         html = render_report([], [], "2026-09-01", "2026-10-07")

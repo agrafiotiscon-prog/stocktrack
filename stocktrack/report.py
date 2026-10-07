@@ -6,6 +6,7 @@ import datetime as dt
 import math
 from html import escape
 
+from stocktrack.prices import MISMATCH_NOTE
 from stocktrack.signals import NOTABLE, STRONG, money, qty, stake_text
 from stocktrack.tracker import Cluster, Signal
 
@@ -30,10 +31,15 @@ def _row(sig: Signal, with_prices: bool) -> str:
         q = sig.quote
         chg = q.change_from(b.avg_price) if q else None
         cls = "" if chg is None else ("up" if chg >= 0 else "down")
+        if chg is not None:
+            vs = f"{chg:+.1%}"
+        elif q and b.avg_price:
+            vs = f'<span title="{escape(MISMATCH_NOTE)}">?</span>'
+        else:
+            vs = "–"
         price_cells = (
             f'<td class="num" data-v="{q.price if q else -1}">{f"${q.price:,.2f}" if q else "–"}</td>'
-            f'<td class="num {cls}" data-v="{chg if chg is not None else -99}">'
-            f'{f"{chg:+.1%}" if chg is not None else "–"}</td>'
+            f'<td class="num {cls}" data-v="{chg if chg is not None else -99}">{vs}</td>'
         )
     who = escape(b.owner_name)
     if b.owner_names and b.owner_names != b.owner_name:

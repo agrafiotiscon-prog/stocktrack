@@ -70,7 +70,8 @@ def print_table(signals: list[Signal], with_prices: bool = False) -> None:
         if with_prices:
             q = s.quote
             chg = q.change_from(b.avg_price) if q else None
-            line += f"  {f'${q.price:,.2f}' if q else '-':>9}  {f'{chg:+.1%}' if chg is not None else '-':>7}"
+            vs = f"{chg:+.1%}" if chg is not None else ("?" if q and b.avg_price else "-")
+            line += f"  {f'${q.price:,.2f}' if q else '-':>9}  {vs:>7}"
         tags = [t for t in s.score.tags if not (t.startswith("Stake ") or t == "New position")]
         print(line + "  " + ", ".join(tags))
 

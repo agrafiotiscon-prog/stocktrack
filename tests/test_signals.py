@@ -95,6 +95,12 @@ class BuildBuyTest(unittest.TestCase):
         b = build_buy(parse_form4_xml(form4_xml(txs=[tx_xml(shares=100, price=None), tx_xml(shares=100, price=5)])))
         self.assertEqual((b.shares, b.value, b.avg_price), (200, 500, 5.0))
 
+    def test_total_cost_typed_as_price_is_ignored(self):
+        # 4.5M shares "at $2,272,653": the filer entered the total cost as the price
+        xml = form4_xml(txs=[tx_xml(shares=4_545_306, price=2_272_653), tx_xml(shares=1000, price=0.5)])
+        b = build_buy(parse_form4_xml(xml))
+        self.assertEqual((b.shares, b.value, b.avg_price), (4_546_306, 500, 0.5))
+
     def test_new_position(self):
         b = build_buy(parse_form4_xml(form4_xml(txs=[tx_xml(shares=1000, after=1000)])))
         self.assertEqual(b.shares_before, 0)
