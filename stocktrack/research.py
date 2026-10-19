@@ -6,10 +6,17 @@ Committed state: data/ (backtest summaries, the forward-test ledger) and vault/.
 
 from __future__ import annotations
 
+import csv
+import datetime as dt
+import gzip
+import hashlib
+import json
 import logging
 import os
+import subprocess
 from pathlib import Path
 
+from stocktrack import backtest as bt
 from stocktrack.bulk import download_datasets, quarter_events
 from stocktrack.history import BENCHMARK, PriceStore, TickerMap
 from stocktrack.researchdb import ResearchDB
@@ -66,3 +73,183 @@ def fetch_prices(http: HttpClient, db: ResearchDB, store: PriceStore, echo=print
     stats = store.prefetch(symbols, progress=progress)
     echo(f"prices: {stats}")
     return stats
+
+
+PREREGISTRATION = {
+    "written": "2026-10-19, before the first full run",
+    "question": "Do stocks beat the market after insider open-market purchases, and which kinds of purchase work best?",
+    "sample": "SEC Form 4 open-market purchases (code P), 2006 onward, one signal per company per filing day; "
+              "study sample needs a verified price, raw price >= $1 and 20-day dollar volume >= $100K.",
+    "primary_horizon_sessions": bt.PRIMARY,
+    "other_horizons": [h for h in bt.HORIZONS if h != bt.PRIMARY],
+    "benchmark": "SPY (buy-and-hold, same entry and exit days); secondary: equal-weighted survivor index",
+    "entry": "open of the first session after the filing date; variant C enters at that session's close",
+    "discovery_period": f"2006-01-01 to {bt.DISCOVERY_END}",
+    "holdout_period": f"{bt.DISCOVERY_END} onward",
+    "significance": "calendar-time portfolios held 63 sessions, monthly excess over SPY, Newey-West t (3 lags), "
+                    "Holm correction within each family",
+    "minimum_data": f"{bt.MIN_SIGNALS}+ signals and {bt.MIN_MONTHS}+ usable months in discovery",
+    "slices": {
+        "role": ["CEO", "CFO", "President/Chair", "Other exec", "Director", "10% owner", "Other"],
+        "value": ["<$25K", "$25-100K", "$100-250K", "$250K-1M", "$1M+"],
+        "stake_increase": ["<5%", "5-25%", "25-100%", "100%+", "new position", "unknown"],
+        "cluster": ["1 insider", "2 insiders", "3+ insiders"],
+        "insider_type": ["routine", "opportunistic", "unclassified"],
+        "track_record": ["none", "good", "poor"],
+        "prior_3m_return": ["down 30%+", "down 10-30%", "flat", "up 10-30%", "up 30%+"],
+        "price": ["$1-5", "$5-20", "$20+"],
+        "liquidity": ["$100K-1M/day", "$1-10M/day", "$10-100M/day", "$100M+/day"],
+        "score": ["0-19", "20-39", "40-59", "60-79", "80+"],
+        "plan_purchase": ["discretionary", "DRIP/plan"],
+        "filing_delay": ["0-2 days", "3-10 days", "11+ days"],
+        "insider_novelty": ["first buy in 12m", "repeat buyer"],
+        "company_novelty": ["first insider buy in 12m", "recent insider buys"],
+    },
+    "strategies": {k: v[0] for k, v in bt.STRATEGIES.items()},
+    "walk_forward": "score threshold in {40, 50, 60, 70}, chosen each year from 2011 by calendar-time Sharpe "
+                    "on months already realized",
+    "verdict_rule": {
+        "works": "positive with Holm p < 0.05 in discovery AND same sign with Holm p < 0.05 in holdout AND "
+                 "positive under entry variant C AND positive against the survivor index AND positive in 60%+ of years",
+        "promising": "passes in only one period",
+        "hurts": "significantly negative in both periods",
+        "no evidence": "otherwise",
+        "not enough data": "fails the minimum-data rule (decided on counts only)",
+    },
+}
+
+
+def config_hash() -> str:
+    h = hashlib.sha256()
+    for mod in ("backtest.py", "signals.py", "bulk.py", "history.py"):
+        h.update((Path(__file__).parent / mod).read_bytes())
+    return h.hexdigest()[:16]
+
+
+def git_commit() -> str:
+    try:
+        return subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True,
+                              cwd=Path(__file__).parent, timeout=10).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        return ""
+
+
+def risk_free(store: PriceStore, cal: bt.Calendar) -> tuple[list[float] | None, str]:
+    """Daily T-bill return from Yahoo's ^IRX (13-week yield, %), carried forward; None if unavailable."""
+    try:
+        irx = store.get("^IRX")
+    except Exception:  # best effort
+        irx = None
+    if irx is None:
+        return None, "0 (^IRX unavailable)"
+    by_day = dict(zip(irx.dates, irx.close))
+    out, last = [], 0.0
+    for d in cal.dates:
+        if d in by_day and 0 <= by_day[d] < 25:
+            last = by_day[d] / 100 / 252
+        out.append(last)
+    return out, "^IRX 13-week T-bill"
+
+
+def run_full_backtest(http: HttpClient, db: ResearchDB, store: PriceStore, out_dir: str | Path,
+                      echo=print) -> dict:
+    """Run the backtest on everything in the research DB and write results to out_dir."""
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    tickers = TickerMap.load(http, CACHE)
+    buys = db.events()
+    echo(f"{len(buys)} filings in the research DB")
+
+    def progress(i: int, n: int) -> None:
+        if i % 1000 == 0 or i == n:
+            echo(f"  priced {i}/{n} symbols")
+
+    evs, cal, meta = bt.build_events(buys, store, tickers, progress)
+    rf, rf_note = risk_free(store, cal)
+    result = bt.run_backtest(evs, cal, echo=echo, rf_daily=rf)
+    zips = sorted(p.name for p in (CACHE / "sec-bulk").glob("*.zip"))
+    snapshot = max((p.stat().st_mtime for p in (CACHE / "prices").glob("*.json.gz")), default=0)
+    result["meta"] = {
+        "run_date": dt.date.today().isoformat(), "git_commit": git_commit(), "config_hash": config_hash(),
+        "datasets": f"{zips[0]} .. {zips[-1]} ({len(zips)} files)" if zips else "",
+        "price_snapshot": dt.datetime.fromtimestamp(snapshot, dt.timezone.utc).date().isoformat() if snapshot else "",
+        "last_price_date": cal.dates[-1], "seed": bt.SEED, "risk_free": rf_note, **meta,
+    }
+    (out / "latest.json").write_text(json.dumps(result, indent=1, default=_json_default))
+    (out / f"{result['meta']['run_date']}.json.gz").write_bytes(
+        gzip.compress(json.dumps(result, default=_json_default).encode()))
+    _write_insider_records(out / "insider_track.csv.gz", bt.insider_records(evs, result_bounds(result)))
+    _append_tests_log(out / "tests_log.csv", result)
+    _write_signals(HOME / "research" / "signals.csv.gz", evs)
+    echo(f"wrote {out / 'latest.json'}")
+    return result
+
+
+def result_bounds(result: dict) -> tuple[float, float]:
+    lo, hi = result["winsor"][str(bt.PRIMARY)]
+    return lo, hi
+
+
+def _json_default(o):
+    if isinstance(o, float) and (o != o or o in (float("inf"), float("-inf"))):
+        return None
+    if isinstance(o, (set, tuple)):
+        return list(o)
+    return str(o)
+
+
+def _write_insider_records(path: Path, records: dict[str, tuple[int, float]]) -> None:
+    rows = ["owner_cik,n,mean_abn63"] + [f"{k},{n},{m:.5f}" for k, (n, m) in sorted(records.items())]
+    path.write_bytes(gzip.compress(("\n".join(rows) + "\n").encode()))
+
+
+def load_insider_records(path: str | Path) -> dict[str, tuple[int, float]]:
+    p = Path(path)
+    if not p.exists():
+        return {}
+    out = {}
+    for row in csv.DictReader(gzip.decompress(p.read_bytes()).decode().splitlines()):
+        out[row["owner_cik"]] = (int(row["n"]), float(row["mean_abn63"]))
+    return out
+
+
+def _append_tests_log(path: Path, result: dict) -> None:
+    """Every test ever run, so the number of tests behind each p-value is on record."""
+    new = not path.exists()
+    with path.open("a", newline="") as f:
+        w = csv.writer(f)
+        if new:
+            w.writerow(["run_date", "config_hash", "family", "test", "period", "months", "excess_mean", "t", "p",
+                        "p_holm", "verdict"])
+        run, cfg = result["meta"]["run_date"], result["meta"]["config_hash"]
+        for feat, rows in result["slices"].items():
+            for label, r in rows.items():
+                for period, key in (("discovery", "p_holm_discovery"), ("holdout", "p_holm_holdout")):
+                    s = r[period]
+                    w.writerow([run, cfg, "slice_vs_spy", f"{feat}={label}", period, s.get("months", 0),
+                                _f(s.get("excess_mean")), _f(s.get("t")), _f(s.get("p")), _f(r.get(key)),
+                                r.get("verdict", "")])
+                s = r["vs_all_buys"]
+                w.writerow([run, cfg, "slice_vs_all_buys", f"{feat}={label}", "full", s.get("months", 0),
+                            _f(s.get("excess_mean")), _f(s.get("t")), _f(s.get("p")), _f(r.get("p_holm_vs_all")),
+                            r.get("vs_all_verdict", "")])
+
+
+def _f(x) -> str:
+    return "" if x is None else f"{x:.6g}"
+
+
+def _write_signals(path: Path, evs: list[bt.Ev]) -> None:
+    """Every signal with its features, prices and outcomes (local only; too big for git)."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    cols = ["accession", "filed", "ticker", "symbol", "status", "issuer", "insider", "role", "value", "score",
+            "cluster", "kind", "track_n", "track", "price", "adv", "prior_ret", "entry_date"] + [
+        f"abn_{h}" for h in bt.HORIZONS]
+    with gzip.open(path, "wt", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(cols)
+        for e in evs:
+            b = e.buy
+            w.writerow([b.accession, e.filed, b.ticker, e.symbol or "", e.status, b.issuer_name, b.owner_name, b.role,
+                        f"{b.value:.0f}", e.score, e.cluster, e.kind, e.track_n, _f(e.track), _f(e.price), _f(e.adv),
+                        _f(e.prior_ret), e.entry_date or ""] + [_f(e.abn.get(h)) for h in bt.HORIZONS])

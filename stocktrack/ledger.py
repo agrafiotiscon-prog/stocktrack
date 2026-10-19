@@ -20,13 +20,13 @@ from stocktrack.signals import BuyEvent
 
 LEDGER_HORIZONS = (5, 21, 63, 126, 252)
 _BUY_FIELDS = [f.name for f in dataclasses.fields(BuyEvent)]
-FEATURE_FIELDS = ["symbol", "score", "cluster", "kind", "track_n", "track_mean", "first_in_year_insider",
+FEATURE_FIELDS = ["symbol", "score", "cluster", "kind", "track_n", "track", "first_in_year_insider",
                   "first_in_year_issuer", "prior_ret", "price", "adv", "strategies"]
 OUTCOME_FIELDS = (["entry_date", "entry_price", "last_seen", "last_price", "status", "ret_now", "abn_now"]
                   + [f"ret_{h}" for h in LEDGER_HORIZONS] + [f"abn_{h}" for h in LEDGER_HORIZONS])
 COLUMNS = ["logged"] + _BUY_FIELDS + FEATURE_FIELDS + OUTCOME_FIELDS
 
-_FLOAT = {"shares", "value", "avg_price", "shares_before", "shares_after", "track_mean", "prior_ret", "price",
+_FLOAT = {"shares", "value", "avg_price", "shares_before", "shares_after", "track", "prior_ret", "price",
           "adv", "entry_price", "last_price", "ret_now", "abn_now"} | {f"ret_{h}" for h in LEDGER_HORIZONS} | {
               f"abn_{h}" for h in LEDGER_HORIZONS}
 _INT = {"n_transactions", "score", "cluster", "track_n"}
@@ -92,7 +92,7 @@ def new_row(ev: Ev, logged: str) -> dict:
     row = {"logged": logged, **dataclasses.asdict(ev.buy)}
     row.update({
         "symbol": ev.symbol, "score": ev.score, "cluster": ev.cluster, "kind": ev.kind,
-        "track_n": ev.track_n, "track_mean": ev.track_mean, "first_in_year_insider": ev.first_in_year_insider,
+        "track_n": ev.track_n, "track": ev.track, "first_in_year_insider": ev.first_in_year_insider,
         "first_in_year_issuer": ev.first_in_year_issuer, "prior_ret": ev.prior_ret, "price": ev.price,
         "adv": ev.adv, "strategies": "|".join(k for k, (_, pred) in STRATEGIES.items() if pred(ev)),
         "status": "pending",
@@ -112,9 +112,9 @@ def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar, refresh:
                 row["status"] = "dead"  # symbol vanished: keep the last known price
                 changed += 1
             continue
-        hist = align(hist, cal)
+        hist, _ = align(hist, cal)
         ev = Ev(buy=to_buy(row), filed=row["filed_at"][:10])
-        attach_market_data(ev, hist, cal)
+        attach_market_data(ev, hist, cal, verify=False)
         if ev.entry_date is None:
             continue
         before = (row["entry_date"], row["last_seen"], row["status"])

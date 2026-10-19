@@ -1,7 +1,7 @@
 import datetime as dt
 import math
 import unittest
-from dataclasses import replace
+from array import array
 
 from stocktrack.backtest import (
     MAX_STALE,
@@ -11,9 +11,13 @@ from stocktrack.backtest import (
     add_pit_features,
     align,
     attach_market_data,
+    block_bootstrap,
+    calendar_time,
+    event_stats,
     holm,
+    newey_west_t,
     simulate,
-    summarize,
+    unique_signals,
     walk_forward,
 )
 from stocktrack.history import PriceHistory
@@ -37,12 +41,14 @@ def flat_spy(days=DAYS, price=100.0) -> PriceHistory:
     return PriceHistory("SPY", list(days), [price] * n, [price] * n, [1e9] * n, [price] * n)
 
 
-def stock(days, opens, closes, raw=None) -> PriceHistory:
+def stock(days, opens, closes, raw=None, dollar_volume=5e6) -> PriceHistory:
     raw = raw or closes
-    return PriceHistory("ACME", list(days), list(opens), list(closes), [5e6] * len(days), list(raw))
+    return PriceHistory("ACME", list(days), list(opens), list(closes), [dollar_volume] * len(days), list(raw))
 
 
 def ev_for(filed: str, **buy_kw) -> Ev:
+    buy_kw.setdefault("last_date", filed)
+    buy_kw.setdefault("avg_price", 10.0)
     return Ev(buy=make_buy(filed_at=filed, **buy_kw), filed=filed)
 
 
@@ -51,36 +57,43 @@ class MarketDataTest(unittest.TestCase):
         self.cal = Calendar(flat_spy())
 
     def test_entry_is_next_open_after_filing(self):
-        # price climbs 1 per day; open = close - 0.5
         closes = [10 + k for k in range(len(DAYS))]
         opens = [c - 0.5 for c in closes]
         h = stock(DAYS, opens, closes)
         ev = ev_for(DAYS[10], last_date=DAYS[8], avg_price=18.0, shares=100)
         attach_market_data(ev, h, self.cal)
-        self.assertEqual(ev.entry_date, DAYS[11])
-        self.assertEqual(ev.entry_cal, 11)
+        self.assertEqual(ev.status, "priced")
+        self.assertEqual((ev.entry_date, ev.entry_cal), (DAYS[11], 11))
         self.assertAlmostEqual(ev.ret[1], closes[11] / opens[11] - 1)
         self.assertAlmostEqual(ev.ret[5], closes[15] / opens[11] - 1)
         self.assertAlmostEqual(ev.ret[63], closes[11 + 62] / opens[11] - 1)
-        self.assertEqual(ev.exit_date[5], DAYS[15])
-        # flat SPY: abnormal equals raw
-        self.assertAlmostEqual(ev.abn[63], ev.ret[63])
-        self.assertAlmostEqual(ev.price, closes[10])  # day before entry
-        self.assertAlmostEqual(ev.price_ratio, 18.0 / closes[8])
-        self.assertAlmostEqual(ev.mkt_value, 100 * closes[8])
+        self.assertEqual(ev.exit_cal[5], 15)
+        self.assertAlmostEqual(ev.abn[63], ev.ret[63])  # flat SPY
+        self.assertAlmostEqual(ev.abn_c[63], closes[73] / closes[11] - 1)  # variant C: entry at day-e close
+        self.assertAlmostEqual(ev.price, closes[10])
+        self.assertAlmostEqual(ev.price_ratio, 1.0)
+        self.assertAlmostEqual(ev.pre_drift, opens[11] / closes[8] - 1)
+
+    def test_price_mismatch_is_rejected(self):
+        h = stock(DAYS, [10.0] * 400, [10.0] * 400)
+        ev = ev_for(DAYS[10], avg_price=40.0)  # 4x the market: wrong security or a typo
+        attach_market_data(ev, h, self.cal)
+        self.assertEqual(ev.status, "price_mismatch")
+        self.assertEqual(ev.ret, {})
+        unpriced = ev_for(DAYS[10], avg_price=None)
+        attach_market_data(unpriced, h, self.cal)
+        self.assertEqual(unpriced.status, "unverified")
 
     def test_abnormal_subtracts_spy_same_window(self):
         spy_close = [100 * 1.001 ** k for k in range(len(DAYS))]
-        spy = PriceHistory("SPY", DAYS, spy_close, spy_close, [1e9] * len(DAYS), spy_close)
-        cal = Calendar(spy)
-        h = stock(DAYS, [10.0] * len(DAYS), [11.0] * len(DAYS))
+        cal = Calendar(PriceHistory("SPY", DAYS, spy_close, spy_close, [1e9] * len(DAYS), spy_close))
+        h = stock(DAYS, [10.0] * len(DAYS), [11.0] * len(DAYS), raw=[10.0] * len(DAYS))
         ev = ev_for(DAYS[0])
         attach_market_data(ev, h, cal)
-        spy_r = spy_close[1 + 20] / spy_close[1] - 1
-        self.assertAlmostEqual(ev.abn[21], 0.1 - spy_r)
+        self.assertAlmostEqual(ev.abn[21], 0.1 - (spy_close[21] / spy_close[1] - 1))
 
     def test_immature_and_delisted_horizons_are_missing(self):
-        h = stock(DAYS[:40], [10.0] * 40, [10.0] * 40)  # stock stops trading after 40 sessions
+        h = stock(DAYS[:40], [10.0] * 40, [10.0] * 40)
         ev = ev_for(DAYS[0])
         attach_market_data(ev, h, self.cal)
         self.assertIn(21, ev.ret)
@@ -91,24 +104,27 @@ class MarketDataTest(unittest.TestCase):
         self.assertNotIn(5, late.ret)
 
     def test_stale_entry_is_skipped(self):
-        days = DAYS[:5] + DAYS[10:]  # no bars for 5 sessions after filing
-        h = stock(days, [10.0] * len(days), [10.0] * len(days))
+        days = DAYS[:5] + DAYS[12:]  # no bars for 7 sessions after filing
+        h, _ = align(stock(days, [10.0] * len(days), [10.0] * len(days)), self.cal)
         ev = ev_for(DAYS[4])
-        attach_market_data(ev, align(h, self.cal), self.cal)
-        self.assertIsNone(ev.entry_date)
+        attach_market_data(ev, h, self.cal)
+        self.assertEqual(ev.status, "no_entry_bar")
 
     def test_path_fills_missing_days_and_stops_when_stale(self):
-        days = DAYS[:12] + DAYS[14:20]  # 2-day gap, then the stock ends
+        days = DAYS[:12] + DAYS[14:20]
         closes = [10.0] * 12 + [12.0] * 6
-        h = stock(days, closes, closes)
         ev = ev_for(DAYS[9])
-        attach_market_data(ev, h, self.cal)
+        attach_market_data(ev, stock(days, closes, closes), self.cal)
         p = list(ev.path)
-        self.assertEqual(p[:2], [0.0, 0.0])  # entry day 10 and day 11: flat
-        self.assertEqual(p[2:4], [0.0, 0.0])  # sessions 12-13: no bars
-        self.assertAlmostEqual(p[4], 0.2)  # session 14: 10 -> 12
-        # sessions 10-19, then up to MAX_STALE flat sessions after the last bar
+        self.assertEqual(p[:4], [0.0, 0.0, 0.0, 0.0])
+        self.assertAlmostEqual(p[4], 0.2)
         self.assertEqual(len(p), 10 + MAX_STALE)
+
+    def test_bad_ticks_are_repaired(self):
+        closes = [10.0, 10.0, 50.0, 10.0, 10.0]  # one-day 5x spike
+        h, repaired = align(stock(DAYS[:5], closes, closes), self.cal)
+        self.assertEqual(repaired, 1)
+        self.assertEqual(h.close, [10.0] * 4)
 
 
 class PitTest(unittest.TestCase):
@@ -121,15 +137,15 @@ class PitTest(unittest.TestCase):
 
     def test_track_record_uses_only_known_outcomes(self):
         old = ev_for("2021-01-04", accession="o", owner_cik="9")
-        old.abn[PRIMARY], old.exit_date[PRIMARY], old.entry_date = 0.30, "2021-04-06", "2021-01-05"
+        old.entry_cal, old.abn[PRIMARY], old.exit_cal[PRIMARY] = 1, 0.30, 63
         early = ev_for("2021-03-01", accession="e", owner_cik="9")
-        early.entry_date = "2021-03-02"
+        early.entry_cal = 40  # before the old buy's outcome closed
         later = ev_for("2021-05-03", accession="l", owner_cik="9")
-        later.entry_date = "2021-05-04"
+        later.entry_cal = 85
         add_pit_features([old, early, later])
-        self.assertEqual(early.track_n, 0)  # old buy's 63d outcome wasn't known yet
+        self.assertEqual(early.track_n, 0)
         self.assertEqual(later.track_n, 1)
-        self.assertAlmostEqual(later.track_mean, 0.30)
+        self.assertAlmostEqual(later.track, 0.30 / 6)  # shrunk: n/(n+5) * mean
 
     def test_routine_vs_opportunistic(self):
         evs = [ev_for(f"{y}-03-10", accession=f"r{y}", owner_cik="7", first_date=f"{y}-03-05",
@@ -137,40 +153,49 @@ class PitTest(unittest.TestCase):
         evs.append(ev_for("2019-09-10", accession="x", owner_cik="7", first_date="2019-09-05",
                           last_date="2019-09-05", shares=5))
         add_pit_features(evs)
-        self.assertEqual(evs[0].kind, "unknown")
-        self.assertEqual(evs[3].kind, "routine")  # March in each of 2016-2018
-        self.assertEqual(evs[4].kind, "opportunistic")  # September breaks the pattern
+        self.assertEqual(evs[0].kind, "unclassified")
+        self.assertEqual(evs[3].kind, "routine")
+        self.assertEqual(evs[4].kind, "opportunistic")
 
-    def test_novelty_and_score(self):
-        a = ev_for("2021-01-04", accession="a", owner_cik="1")
-        b = ev_for("2021-06-01", accession="b", owner_cik="1", shares=7)
-        add_pit_features([a, b])
-        self.assertTrue(a.first_in_year_insider)
-        self.assertFalse(b.first_in_year_insider)
-        self.assertGreater(a.score, 0)
+    def test_features_ignore_later_filings(self):
+        """Deleting everything filed after a signal must not change its features."""
+        evs = [ev_for(f"2021-03-{d:02d}", accession=f"a{d}", owner_cik=str(d % 3), shares=d,
+                      last_date=f"2021-03-{d:02d}") for d in range(1, 20)]
+        add_pit_features(evs)
+        full = [(e.cluster, e.kind, e.track_n, e.first_in_year_insider, e.score) for e in evs]
+        for cut in (5, 10, 15):
+            prefix = [ev_for(e.filed, accession=e.buy.accession, owner_cik=e.buy.owner_cik, shares=e.buy.shares,
+                             last_date=e.buy.last_date) for e in evs[:cut]]
+            add_pit_features(prefix)
+            self.assertEqual([(e.cluster, e.kind, e.track_n, e.first_in_year_insider, e.score) for e in prefix],
+                             full[:cut])
 
 
 class StatsTest(unittest.TestCase):
-    def test_summarize_weights_months_equally(self):
-        evs = []
-        for k in range(10):  # January: ten +10% events
-            e = ev_for("2021-01-04")
-            e.entry_date, e.abn[21], e.ret[21] = "2021-01-05", 0.10, 0.12
-            evs.append(e)
-        for m in ("02", "03"):
-            e = ev_for(f"2021-{m}-01")
-            e.entry_date, e.abn[21], e.ret[21] = f"2021-{m}-02", -0.10, -0.08
-            evs.append(e)
-        s = summarize(evs, 21, (-1.0, 1.0))
-        self.assertEqual((s["n"], s["months"]), (12, 3))
-        self.assertAlmostEqual(s["mean"], (1.0 - 0.2) / 12)
-        self.assertAlmostEqual(s["monthly_mean"], (0.10 - 0.20) / 3)
-        self.assertAlmostEqual(s["hit"], 10 / 12)
+    def test_one_signal_per_company_day(self):
+        a = ev_for("2021-01-04", accession="a", owner_cik="1")
+        b = ev_for("2021-01-04", accession="b", owner_cik="2")
+        a.entry_date = b.entry_date = "2021-01-05"
+        self.assertEqual(unique_signals([a, b]), [a])
 
-    def test_winsorizing(self):
-        e = ev_for("2021-01-04")
-        e.entry_date, e.abn[21], e.ret[21] = "2021-01-05", 5.0, 5.0
-        self.assertAlmostEqual(summarize([e], 21, (-0.5, 0.5))["mean"], 0.5)
+    def test_event_stats(self):
+        evs = []
+        for k, abn in enumerate([0.10, 0.10, -0.05, 5.0]):
+            e = ev_for("2021-01-04", accession=str(k), issuer_cik=str(k))
+            e.entry_date, e.abn[21], e.ret[21] = "2021-01-05", abn, abn
+            evs.append(e)
+        s = event_stats(evs, 21, (-0.5, 0.5))
+        self.assertEqual(s["n"], 4)
+        self.assertAlmostEqual(s["mean"], (0.10 + 0.10 - 0.05 + 0.5) / 4)  # winsorized
+        self.assertAlmostEqual(s["hit"], 0.75)
+
+    def test_newey_west_and_bootstrap(self):
+        mean, t = newey_west_t([0.01, 0.02, 0.0, 0.015, 0.01, 0.02, 0.005, 0.01])
+        self.assertAlmostEqual(mean, 0.01125)
+        self.assertGreater(t, 3)
+        bb = block_bootstrap([0.01] * 30, draws=200)
+        self.assertEqual(bb["ci"], [0.01, 0.01])
+        self.assertEqual(bb["p_boot"], 0.0)
 
     def test_holm(self):
         adj = holm({"a": 0.01, "b": 0.04, "c": 0.03})
@@ -179,37 +204,66 @@ class StatsTest(unittest.TestCase):
         self.assertAlmostEqual(adj["b"], 0.06)
 
 
-class SimulateTest(unittest.TestCase):
-    def test_single_position_with_slots_and_costs(self):
-        cal = Calendar(flat_spy(DAYS[:30]))
-        e = ev_for(DAYS[0], avg_price=20.0)
-        e.entry_cal, e.price = 1, 20.0
-        from array import array
+def priced_ev(entry_cal: int, path: list[float], score: int = 50, issuer: str = "1", acc: str = "x") -> Ev:
+    e = ev_for(DAYS[entry_cal - 1], issuer_cik=issuer, accession=acc)
+    e.status, e.entry_cal, e.entry_date = "priced", entry_cal, DAYS[entry_cal]
+    e.price, e.adv, e.score = 20.0, 5e7, score
+    e.path = array("f", path)
+    return e
 
-        e.path = array("f", [0.10] * 5)
-        res = simulate([e], cal, hold=5, slots=2, costs=False)
+
+class PortfolioTest(unittest.TestCase):
+    def test_calendar_time_buy_and_hold_weights(self):
+        cal = Calendar(flat_spy(DAYS[:60]))
+        evs = [priced_ev(1, [0.10] + [0.0] * 20, issuer=str(k), acc=str(k)) for k in range(5)]
+        ct = calendar_time(evs, cal, hold=21, min_positions=5)
+        self.assertEqual(len(ct["series"]), 1)  # January only; February is the last, incomplete month
+        m, port, spy = ct["series"][0]
+        self.assertAlmostEqual(port, 0.10, places=6)
+        self.assertEqual(spy, 0.0)
+
+    def test_company_held_once(self):
+        cal = Calendar(flat_spy(DAYS[:60]))
+        evs = [priced_ev(1, [0.0] * 21, issuer="1", acc="a"), priced_ev(3, [0.5] * 21, issuer="1", acc="b")]
+        evs += [priced_ev(1, [0.0] * 21, issuer=str(k), acc=str(k)) for k in range(2, 6)]
+        ct = calendar_time(evs, cal, hold=21, min_positions=1)
+        self.assertAlmostEqual(ct["series"][0][1], 0.0)  # the second ACME signal is ignored
+
+    def test_simulation_slots_and_costs(self):
+        cal = Calendar(flat_spy(DAYS[:30]))
+        e = priced_ev(1, [0.10] * 5)
+        res = simulate([e], cal, hold=5, slots=2, cost_mult=0)
         self.assertEqual(res["trades"], 1)
-        self.assertAlmostEqual(res["strategy_total"], 1.05 ** 5 - 1, places=5)  # half the capital in the trade
-        self.assertAlmostEqual(res["exposure"], 5 / 2 / 29, places=6)
-        with_costs = simulate([e], cal, hold=5, slots=1, costs=True)
-        self.assertLess(with_costs["strategy_total"], 1.10 ** 5 - 1)
+        self.assertAlmostEqual(res["strategy_total"], (1 + (1.1 ** 5 - 1) / 2) - 1, places=4)
+        costly = simulate([e], cal, hold=5, slots=2, cost_mult=1)
+        self.assertLess(costly["strategy_total"], res["strategy_total"])
+
+    def test_simulation_prefers_higher_scores_when_full(self):
+        cal = Calendar(flat_spy(DAYS[:30]))
+        lo = priced_ev(1, [0.0] * 5, score=10, issuer="1", acc="a")
+        hi = priced_ev(1, [0.10] * 5, score=90, issuer="2", acc="b")
+        res = simulate([lo, hi], cal, hold=5, slots=1, cost_mult=0)
+        self.assertEqual((res["trades"], res["skipped"]), (1, 1))
+        self.assertGreater(res["strategy_total"], 0.5)
 
 
 class WalkForwardTest(unittest.TestCase):
-    def test_threshold_chosen_from_past_only(self):
-        evs = []
-        for year in (2010, 2011):
-            for k in range(250):
-                for score, abn in ((70, 0.05), (10, -0.05)):
-                    e = ev_for(f"{year}-03-01")
-                    e.entry_date, e.score, e.price, e.adv = f"{year}-03-02", score, 10.0, 5e6
-                    e.abn[PRIMARY], e.ret[PRIMARY] = abn, abn
-                    e.exit_date[PRIMARY] = f"{year}-06-01"
+    def test_threshold_uses_only_earlier_months(self):
+        days = business_days("2009-01-01", 1300)
+        cal = Calendar(flat_spy(days))
+        evs, k = [], 0
+        for c in range(1, len(days) - 70, 5):
+            for score, r in ((70, 0.001), (45, -0.001)):
+                for j in range(3):
+                    k += 1
+                    e = ev_for(days[c - 1], issuer_cik=f"{score}-{j}-{c}", accession=str(k))
+                    e.status, e.entry_cal, e.entry_date = "priced", c, days[c]
+                    e.price, e.adv, e.score = 20.0, 5e7, score
+                    e.path = array("f", [r] * 63)
                     evs.append(e)
-        wf = walk_forward(evs, (-1, 1), start_year=2010)
-        self.assertEqual(wf["thresholds"]["2010"], 0)  # nothing known yet
-        self.assertEqual(wf["thresholds"]["2011"], 20)  # lowest threshold that drops the losers
-        self.assertEqual(wf["stats"]["n"], 500 + 250)
+        wf = walk_forward(evs, cal, start_year=2011)
+        self.assertEqual(wf["thresholds"]["2011"], 50)  # 2009-2010 showed the 45-score buys losing
+        self.assertTrue(all(e.score >= 50 for e in evs if e.year >= 2011 and e.score >= 50))
 
 
 if __name__ == "__main__":

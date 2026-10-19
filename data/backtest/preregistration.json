@@ -1,0 +1,122 @@
+{
+  "written": "2026-10-19, before the first full run",
+  "question": "Do stocks beat the market after insider open-market purchases, and which kinds of purchase work best?",
+  "sample": "SEC Form 4 open-market purchases (code P), 2006 onward, one signal per company per filing day; study sample needs a verified price, raw price >= $1 and 20-day dollar volume >= $100K.",
+  "primary_horizon_sessions": 63,
+  "other_horizons": [
+    1,
+    5,
+    21,
+    126,
+    252
+  ],
+  "benchmark": "SPY (buy-and-hold, same entry and exit days); secondary: equal-weighted survivor index",
+  "entry": "open of the first session after the filing date; variant C enters at that session's close",
+  "discovery_period": "2006-01-01 to 2015-12-31",
+  "holdout_period": "2015-12-31 onward",
+  "significance": "calendar-time portfolios held 63 sessions, monthly excess over SPY, Newey-West t (3 lags), Holm correction within each family",
+  "minimum_data": "200+ signals and 60+ usable months in discovery",
+  "slices": {
+    "role": [
+      "CEO",
+      "CFO",
+      "President/Chair",
+      "Other exec",
+      "Director",
+      "10% owner",
+      "Other"
+    ],
+    "value": [
+      "<$25K",
+      "$25-100K",
+      "$100-250K",
+      "$250K-1M",
+      "$1M+"
+    ],
+    "stake_increase": [
+      "<5%",
+      "5-25%",
+      "25-100%",
+      "100%+",
+      "new position",
+      "unknown"
+    ],
+    "cluster": [
+      "1 insider",
+      "2 insiders",
+      "3+ insiders"
+    ],
+    "insider_type": [
+      "routine",
+      "opportunistic",
+      "unclassified"
+    ],
+    "track_record": [
+      "none",
+      "good",
+      "poor"
+    ],
+    "prior_3m_return": [
+      "down 30%+",
+      "down 10-30%",
+      "flat",
+      "up 10-30%",
+      "up 30%+"
+    ],
+    "price": [
+      "$1-5",
+      "$5-20",
+      "$20+"
+    ],
+    "liquidity": [
+      "$100K-1M/day",
+      "$1-10M/day",
+      "$10-100M/day",
+      "$100M+/day"
+    ],
+    "score": [
+      "0-19",
+      "20-39",
+      "40-59",
+      "60-79",
+      "80+"
+    ],
+    "plan_purchase": [
+      "discretionary",
+      "DRIP/plan"
+    ],
+    "filing_delay": [
+      "0-2 days",
+      "3-10 days",
+      "11+ days"
+    ],
+    "insider_novelty": [
+      "first buy in 12m",
+      "repeat buyer"
+    ],
+    "company_novelty": [
+      "first insider buy in 12m",
+      "recent insider buys"
+    ]
+  },
+  "strategies": {
+    "all_liquid": "Every discretionary insider buy",
+    "score_40": "Live score 40+ (notable)",
+    "score_60": "Live score 60+ (strong)",
+    "ceo_cfo_100k": "CEO or CFO buying $100K+",
+    "cluster_3": "3+ insiders buying within 14 days",
+    "opportunistic": "Opportunistic insiders (Cohen-Malloy-Pomorski)",
+    "contrarian": "Insider buying after a 30%+ drop",
+    "proven_insider": "Insiders whose earlier buys beat SPY",
+    "big_stake_up": "Exec/director growing stake 25%+ with $100K+",
+    "first_buy_exec": "Exec's first buy in a year, $50K+"
+  },
+  "walk_forward": "score threshold in {40, 50, 60, 70}, chosen each year from 2011 by calendar-time Sharpe on months already realized",
+  "verdict_rule": {
+    "works": "positive with Holm p < 0.05 in discovery AND same sign with Holm p < 0.05 in holdout AND positive under entry variant C AND positive against the survivor index AND positive in 60%+ of years",
+    "promising": "passes in only one period",
+    "hurts": "significantly negative in both periods",
+    "no evidence": "otherwise",
+    "not enough data": "fails the minimum-data rule (decided on counts only)"
+  }
+}
