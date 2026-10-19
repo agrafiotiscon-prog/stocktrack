@@ -10,6 +10,7 @@ import csv
 import datetime as dt
 import gzip
 import hashlib
+import io
 import json
 import logging
 import os
@@ -36,12 +37,14 @@ def price_store(max_age_days: float = 7.0) -> PriceStore:
     return PriceStore(CACHE / "prices", max_age_days=max_age_days)
 
 
-def load_history(http: HttpClient, db: ResearchDB, refresh_latest: bool = True, echo=print) -> int:
+def load_history(http: HttpClient, db: ResearchDB, refresh_latest: bool = True, echo=print,
+                 min_year: int | None = None) -> int:
     """Download any missing quarterly datasets and load their purchases into the research DB.
 
     The newest quarter is re-downloaded and re-loaded (SEC revises it), older ones only once.
+    `min_year` skips older quarters (the daily run only needs a few years of history).
     """
-    paths = download_datasets(http, CACHE / "sec-bulk", refresh_latest=refresh_latest)
+    paths = download_datasets(http, CACHE / "sec-bulk", refresh_latest=refresh_latest, min_year=min_year)
     added = 0
     for i, path in enumerate(paths):
         latest = i == len(paths) - 1
@@ -253,3 +256,145 @@ def _write_signals(path: Path, evs: list[bt.Ev]) -> None:
             w.writerow([b.accession, e.filed, b.ticker, e.symbol or "", e.status, b.issuer_name, b.owner_name, b.role,
                         f"{b.value:.0f}", e.score, e.cluster, e.kind, e.track_n, _f(e.track), _f(e.price), _f(e.adv),
                         _f(e.prior_ret), e.entry_date or ""] + [_f(e.abn.get(h)) for h in bt.HORIZONS])
+
+
+# --- daily routine -------------------------------------------------------------
+
+LIVE_DIR = "live"
+DAILY_HISTORY_YEARS = 4  # enough for clusters, novelty and the 3-year routine/opportunistic test
+BACKTEST_MAX_AGE_DAYS = 7
+
+
+def _read_gz_lines(path: Path) -> list[str]:
+    return gzip.decompress(path.read_bytes()).decode().splitlines() if path.exists() else []
+
+
+def _write_gz_lines(path: Path, lines: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(gzip.compress(("\n".join(lines) + "\n").encode(), mtime=0))
+
+
+def _live_buys_load(path: Path) -> list:
+    from stocktrack.ledger import parse_buy
+
+    return [parse_buy(r) for r in csv.DictReader(_read_gz_lines(path)) if r.get("accession")]
+
+
+def _live_buys_save(path: Path, buys: list) -> None:
+    from stocktrack.ledger import BUY_FIELDS, _fmt
+
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(BUY_FIELDS)
+    for b in sorted({b.accession: b for b in buys}.values(), key=lambda b: (b.filed_at, b.accession)):
+        w.writerow([_fmt(getattr(b, f)) for f in BUY_FIELDS])
+    _write_gz_lines(path, buf.getvalue().splitlines())
+
+
+def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path = "vault",
+          today: str | None = None, force_backtest: bool = False, scan_days: int = 5, echo=print) -> dict:
+    """One research cycle: collect new buys, log qualifying ones, update outcomes, refresh the vault.
+
+    Runs a full backtest too when the last one is older than a week (or when forced).
+    """
+    from stocktrack import ledger as led
+    from stocktrack import vault as vlt
+    from stocktrack.bulk import quarter_end
+    from stocktrack.db import Database
+    from stocktrack.tracker import Tracker
+
+    data = Path(data_dir)
+    today = today or dt.date.today().isoformat()
+    summary: dict = {}
+    db = research_db()
+
+    # 1. History: recent bulk quarters (all of them when a backtest is due).
+    latest_path = data / "backtest" / "latest.json"
+    last_bt = json.loads(latest_path.read_text())["meta"]["run_date"] if latest_path.exists() else "1900-01-01"
+    backtest_due = force_backtest or (dt.date.fromisoformat(today) - dt.date.fromisoformat(last_bt)).days >= BACKTEST_MAX_AGE_DAYS
+    min_year = None if backtest_due else dt.date.fromisoformat(today).year - DAILY_HISTORY_YEARS
+    load_history(http, db, refresh_latest=True, echo=echo, min_year=min_year)
+    zips = sorted((CACHE / "sec-bulk").glob("*q*_form345.zip"))
+    bulk_through = quarter_end(zips[-1].name) if zips else "2000-01-01"
+    summary["SEC datasets through"] = bulk_through
+
+    # 2. Live filings since the bulk data ends.
+    live_path, seen_path = data / LIVE_DIR / "buys.csv.gz", data / LIVE_DIR / "seen.txt.gz"
+    live_buys = [b for b in _live_buys_load(live_path) if b.filed_at[:10] > bulk_through]
+    seen = set(_read_gz_lines(seen_path))
+    tdb = Database(":memory:")
+    for acc in seen:
+        tdb.conn.execute("INSERT OR IGNORE INTO filings (accession, processed_at) VALUES (?, ?)", (acc, today))
+    for b in live_buys:
+        tdb.record_filing(b.accession, "4", b.issuer_cik, b)
+    tracker = Tracker(tdb, http)
+    start = max(dt.date.fromisoformat(bulk_through) + dt.timedelta(days=1),
+                dt.date.fromisoformat(today) - dt.timedelta(days=scan_days))
+    gap = (dt.date.fromisoformat(today) - start).days + 1
+    res_live = tracker.backfill(gap, end=dt.date.fromisoformat(today))
+    res_feed = tracker.scan_latest(max_pages=20)
+    new_buys = res_live.buys + res_feed.buys
+    live_buys += new_buys
+    summary["Form 4 filings processed"] = res_live.filings + res_feed.filings
+    summary["new insider buys"] = len(new_buys)
+    # Remember every filing processed since the bulk data ends, so later runs skip them.
+    seen = {r[0] for r in tdb.conn.execute("SELECT accession FROM filings")}
+    db.add_events(live_buys, source="live")
+    _live_buys_save(live_path, live_buys)
+    _write_gz_lines(seen_path, sorted(seen))
+
+    # 3. Backtest if due (also refreshes every price history).
+    store = price_store(max_age_days=0.5)
+    if backtest_due:
+        fetch_prices(http, db, store, echo=echo)
+        run_full_backtest(http, db, price_store(max_age_days=365), data / "backtest", echo=echo)
+        summary["backtest"] = "re-run"
+    res = json.loads(latest_path.read_text())
+    records = load_insider_records(data / "backtest" / "insider_track.csv.gz")
+
+    # 4. Point-in-time features for recent buys, then log the qualifying new ones.
+    tickers = TickerMap.load(http, CACHE)
+    since = (dt.date.fromisoformat(today) - dt.timedelta(days=365 * DAILY_HISTORY_YEARS)).isoformat()
+    evs = [bt.Ev(buy=b, filed=b.filed_at[:10]) for b in
+           bt.dedupe_purchases(sorted(db.events(since=since), key=lambda b: (b.filed_at[:10], b.accession)))]
+    bt.add_pit_features(evs)
+    ledger_path = data / "picks.csv"
+    ledger = led.load(ledger_path)
+    logged = {r["accession"] for r in ledger}
+    window = (dt.date.fromisoformat(today) - dt.timedelta(days=scan_days + 3)).isoformat()
+    spy = store.get(BENCHMARK, refresh=True)
+    cal = bt.Calendar(spy)
+    added = 0
+    for ev in evs:
+        if ev.filed < window or ev.buy.accession in logged:
+            continue
+        ev.symbol, ev.resolve = tickers.resolve(ev.buy.issuer_cik, ev.buy.ticker)
+        if not ev.symbol:
+            continue
+        rec = records.get(ev.buy.owner_cik)
+        if rec:
+            n, mean = rec
+            ev.track_n, ev.track = n, (n / (n + 5)) * mean
+        hist = store.get(ev.symbol)
+        if hist is None:
+            continue
+        aligned, _ = bt.align(hist, cal)
+        bt.attach_market_data(ev, aligned, cal)
+        if led.qualifies(ev):
+            ledger.append(led.new_row(ev, today))
+            logged.add(ev.buy.accession)
+            added += 1
+    summary["buys logged to the forward test"] = added
+
+    # 5. Outcomes.
+    changed, matured = led.update_outcomes(ledger, store, cal)
+    summary["ledger rows updated"] = changed
+    summary["outcomes matured"] = len(matured)
+    led.save(ledger_path, ledger)
+
+    # 6. Vault.
+    n = vlt.build_vault(vault_dir, res, ledger, records, today=today, run_summary=summary, matured=matured)
+    summary["vault notes written"] = n
+    for k, v in summary.items():
+        echo(f"{k}: {v}")
+    return summary

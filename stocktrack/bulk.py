@@ -172,12 +172,23 @@ def dataset_urls(http: HttpClient) -> list[str]:
     return [p if p.startswith("http") else "https://www.sec.gov" + p for p in paths]
 
 
+def quarter_end(name: str) -> str:
+    """'2026q3_form345.zip' -> '2026-09-30'."""
+    m = re.match(r"(\d{4})q(\d)", name)
+    if not m:
+        return ""
+    year, q = int(m.group(1)), int(m.group(2))
+    return (dt.date(year + (q == 4), 1 if q == 4 else 3 * q + 1, 1) - dt.timedelta(days=1)).isoformat()
+
+
 def download_datasets(http: HttpClient, cache_dir: str | Path, refresh_latest: bool = False,
-                      progress=None) -> list[Path]:
+                      progress=None, min_year: int | None = None) -> list[Path]:
     """Download every quarterly zip not already cached; returns local paths, oldest first."""
     cache = Path(cache_dir).expanduser()
     cache.mkdir(parents=True, exist_ok=True)
     urls = dataset_urls(http)
+    if min_year:
+        urls = [u for u in urls if int(re.search(r"(\d{4})q\d_form345", u).group(1)) >= min_year]
     paths = []
     for i, url in enumerate(urls, 1):
         path = cache / url.rsplit("/", 1)[-1]

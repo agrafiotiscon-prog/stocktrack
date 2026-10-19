@@ -203,17 +203,21 @@ def attach_market_data(ev: Ev, hist: PriceHistory, cal: Calendar, verify: bool =
 
     first = cal.first_after(ev.filed)
     i = bisect.bisect_left(cals, first)
+    # Decision-time facts come from bars before the entry session.
+    if i >= 1:
+        ev.price = hist.raw_close[i - 1]
+        ev.adv = hist.dollar_volume(i, 20)
+    if i >= 64:
+        ev.prior_ret = hist.close[i - 1] / hist.close[i - 64] - 1
+    if first >= len(cal.dates):
+        ev.status = "awaiting_entry"  # filed after the last session in the data
+        return
     if i >= len(cals) or cals[i] - first > MAX_ENTRY_DELAY:
         ev.status = "no_entry_bar"
         return
     c_entry = cals[i]
     ev.status, ev.entry_date, ev.entry_cal = "priced", hist.dates[i], c_entry
     entry_open, entry_close = hist.open[i], hist.close[i]
-    if i >= 1:
-        ev.price = hist.raw_close[i - 1]
-        ev.adv = hist.dollar_volume(i, 20)
-    if i >= 64:
-        ev.prior_ret = hist.close[i - 1] / hist.close[i - 64] - 1
     if ti is not None and ti < i:
         ev.pre_drift = entry_open / hist.close[ti] - 1
 
@@ -285,7 +289,8 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
     ordered = sorted((b for b in buys if b.filed_at), key=lambda b: (b.filed_at[:10], b.accession))
     deduped = dedupe_purchases(ordered)
     evs = [Ev(buy=b, filed=b.filed_at[:10]) for b in deduped]
-    meta = {"filings": len(ordered), "duplicate_filings": len(ordered) - len(deduped), "bars_repaired": 0}
+    # bars_dropped: sub-penny days plus isolated bad ticks removed by align()
+    meta = {"filings": len(ordered), "duplicate_filings": len(ordered) - len(deduped), "bars_dropped": 0}
     by_symbol: dict[str, list[Ev]] = defaultdict(list)
     for ev in evs:
         ev.symbol, ev.resolve = tickers.resolve(ev.buy.issuer_cik, ev.buy.ticker)
@@ -301,7 +306,7 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
                 ev.status = "no_history"
             continue
         hist, repaired = align(raw, cal)
-        meta["bars_repaired"] += repaired
+        meta["bars_dropped"] += repaired
         if not hist.dates:
             continue
         _add_to_ew(hist, cal, sums, counts)

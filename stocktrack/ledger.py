@@ -14,9 +14,10 @@ import dataclasses
 import datetime as dt
 from pathlib import Path
 
-from stocktrack.backtest import HORIZONS, STRATEGIES, Calendar, Ev, align, attach_market_data
+from stocktrack.backtest import (HORIZONS, SIM_MIN_ADV, SIM_MIN_PRICE, STRATEGIES, Calendar, Ev, align,
+                                 attach_market_data)
 from stocktrack.history import PriceStore
-from stocktrack.signals import BuyEvent
+from stocktrack.signals import BuyEvent, is_listed_stock
 
 LEDGER_HORIZONS = (5, 21, 63, 126, 252)
 _BUY_FIELDS = [f.name for f in dataclasses.fields(BuyEvent)]
@@ -83,13 +84,24 @@ def to_buy(row: dict) -> BuyEvent:
     return BuyEvent(**{f: row[f] for f in _BUY_FIELDS})
 
 
+BUY_FIELDS = _BUY_FIELDS
+
+
+def parse_buy(row: dict[str, str]) -> BuyEvent:
+    """BuyEvent from a CSV row of its fields (as written by _fmt)."""
+    return to_buy(_parse({k: row.get(k, "") for k in COLUMNS}))
+
+
 def qualifies(ev: Ev) -> bool:
-    """Ledger universe: discretionary buys of listed, liquid stocks."""
-    return ev.symbol is not None and ev.liquid and not ev.buy.plan_purchase
+    """Ledger universe: discretionary buys of listed, liquid stocks whose price checks out."""
+    return (ev.symbol is not None and is_listed_stock(ev.symbol) and not ev.buy.plan_purchase
+            and ev.status in ("priced", "awaiting_entry")
+            and (ev.price or 0) >= SIM_MIN_PRICE and (ev.adv or 0) >= SIM_MIN_ADV)
 
 
 def new_row(ev: Ev, logged: str) -> dict:
-    row = {"logged": logged, **dataclasses.asdict(ev.buy)}
+    row = {k: None for k in OUTCOME_FIELDS}
+    row.update({"logged": logged, "entry_date": "", "last_seen": "", **dataclasses.asdict(ev.buy)})
     row.update({
         "symbol": ev.symbol, "score": ev.score, "cluster": ev.cluster, "kind": ev.kind,
         "track_n": ev.track_n, "track": ev.track, "first_in_year_insider": ev.first_in_year_insider,
@@ -100,9 +112,13 @@ def new_row(ev: Ev, logged: str) -> dict:
     return row
 
 
-def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar, refresh: bool = True) -> int:
-    """Fill entry and matured returns from fresh prices; returns how many rows changed."""
-    changed = 0
+def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar,
+                    refresh: bool = True) -> tuple[int, list[tuple[int, dict]]]:
+    """Fill entries and matured returns from fresh prices.
+
+    Returns (rows changed, [(horizon, row)] for horizons that matured in this update).
+    """
+    changed, matured = 0, []
     for row in rows:
         if row["status"] == "closed":
             continue
@@ -123,6 +139,8 @@ def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar, refresh:
         row["last_seen"], row["last_price"] = hist.dates[-1], hist.close[-1]
         for h in LEDGER_HORIZONS:
             if h in ev.ret:
+                if row[f"ret_{h}"] is None:
+                    matured.append((h, row))
                 row[f"ret_{h}"], row[f"abn_{h}"] = ev.ret[h], ev.abn[h]
         # Mark to market: entry to the latest close, against SPY over the same days.
         row["ret_now"] = hist.close[-1] / entry_px - 1
@@ -137,7 +155,7 @@ def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar, refresh:
         else:
             row["status"] = "open"
         changed += before != (row["entry_date"], row["last_seen"], row["status"])
-    return changed
+    return changed, matured
 
 
 def today_iso() -> str:

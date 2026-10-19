@@ -228,6 +228,33 @@ def cmd_test_alert(args) -> int:
     return 0 if all(e is None for e in results.values()) else 1
 
 
+def cmd_research(args) -> int:
+    from stocktrack import research as rs
+
+    http = _client(args) if args.action != "vault" else None
+    if args.action == "load":
+        db = rs.research_db()
+        rs.load_history(http, db, refresh_latest=True, min_year=args.min_year)
+        print(f"{db.count():,} purchase filings in {rs.HOME / 'research.db'}")
+    elif args.action == "prices":
+        rs.fetch_prices(http, rs.research_db(), rs.price_store(max_age_days=0.5))
+    elif args.action == "backtest":
+        rs.run_full_backtest(http, rs.research_db(), rs.price_store(max_age_days=365), Path(args.data) / "backtest")
+    elif args.action == "daily":
+        rs.daily(http, args.data, args.vault, force_backtest=args.backtest)
+    elif args.action == "vault":
+        import json
+
+        from stocktrack import ledger, vault
+
+        res = json.loads((Path(args.data) / "backtest" / "latest.json").read_text())
+        rows = ledger.load(Path(args.data) / "picks.csv")
+        records = rs.load_insider_records(Path(args.data) / "backtest" / "insider_track.csv.gz")
+        n = vault.build_vault(args.vault, res, rows, records)
+        print(f"wrote {n} notes to {args.vault}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="stocktrack",
@@ -301,6 +328,16 @@ def build_parser() -> argparse.ArgumentParser:
 
     sp = sub.add_parser("test-alert", help="send a test message to configured alert channels")
     sp.set_defaults(func=cmd_test_alert)
+
+    sp = sub.add_parser("research", help="historical backtest, forward-test ledger and Obsidian vault")
+    sp.add_argument("action", choices=["load", "prices", "backtest", "daily", "vault"],
+                    help="load: SEC history; prices: price histories; backtest: full run; "
+                         "daily: one research cycle; vault: regenerate notes")
+    sp.add_argument("--data", default="data", help="committed results directory (default %(default)s)")
+    sp.add_argument("--vault", default="vault", help="Obsidian vault directory (default %(default)s)")
+    sp.add_argument("--min-year", type=int, help="load: skip quarters before this year")
+    sp.add_argument("--backtest", action="store_true", help="daily: re-run the full backtest even if recent")
+    sp.set_defaults(func=cmd_research)
     return p
 
 
