@@ -125,6 +125,55 @@ Either keep `stocktrack watch` running (tmux, screen, a systemd service), or cal
   does, prices just show as `-`. Tickers are taken from the filing, so foreign issuers that report a
   home-market symbol (like `AXIA3`) may not resolve.
 
+## Research: does it actually work?
+
+`stocktrack research` backtests every insider purchase filed since 2006 and keeps a live
+forward test, and writes it all into an Obsidian vault.
+
+```bash
+stocktrack research load       # SEC quarterly insider datasets, 2006 onward (~900MB, cached)
+stocktrack research prices     # daily price histories for every company still listed
+stocktrack research backtest   # full backtest -> data/backtest/latest.json
+stocktrack research daily      # one research cycle: new buys, ledger, outcomes, vault
+stocktrack research vault      # rebuild the vault from saved results
+```
+
+**Open `vault/` as an Obsidian vault.** Start at `Home.md` and `What Works.md`. Notes carry YAML
+frontmatter, so with the Dataview plugin you can query them like a database:
+
+```dataview
+TABLE ticker, insider, score, abn_now AS "vs SPY so far", status
+FROM "Signals" WHERE score >= 60 SORT filed DESC
+```
+
+What's in it:
+
+| Folder / note | What it holds |
+| --- | --- |
+| `What Works.md` | The scoreboard: every kind of buy and every strategy with a verdict (✅ works, 🟡 promising, ⚪ no evidence, ❌ hurts) |
+| `Backtests/` | One report per full backtest: returns by horizon, robustness checks, coverage, walk-forward |
+| `Slices/` | Each feature (role, size, cluster, prior move...) broken into buckets |
+| `Strategies/` | Each tradable rule: event stats, a simulated $100K portfolio after costs, year by year, live results |
+| `Research Log/` | One note per daily run: new buys, outcomes that matured, forward-test scoreboard, and notes |
+| `Signals/`, `Tickers/`, `Insiders/` | Every notable live buy, linked to its company and insider |
+
+**How the backtest stays honest** (details in `vault/Methodology.md`):
+- Trades are entered at the open after the filing date, never the trade date.
+- Every feature is point-in-time.
+- Filing prices are checked against the market.
+- Significance comes from calendar-time portfolios with Newey-West t-stats.
+- 2006-2015 is discovery and 2016+ is holdout, with a Holm correction across slices.
+- Everything was pre-registered in `data/backtest/preregistration.json` before the first run.
+- The portfolio simulation includes trading costs.
+- Prices exist only for companies still listed today. That survivorship bias is measured and reported, not hidden.
+
+**The forward test** (`data/picks.csv`) logs every qualifying buy the day it is filed and tracks
+it for a year, including the last price of stocks that later delist. Only rows logged before their
+entry day count, so it can't be overfit.
+
+A scheduled routine runs `research daily` each weekday morning, writes a short note into the
+day's Research Log, and commits the results.
+
 ## Development
 
 ```bash
