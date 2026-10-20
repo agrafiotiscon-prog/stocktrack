@@ -127,48 +127,82 @@ class Calendar:
         self.dates = spy.dates
         self.index = {d: i for i, d in enumerate(spy.dates)}
         self.daily = [0.0] + [spy.close[i] / spy.close[i - 1] - 1 for i in range(1, len(spy.dates))]
-        self.ew_daily = [0.0] * len(spy.dates)  # survivor equal-weight index, filled by build_events
+        n = len(spy.dates)
+        # Survivor index, filled by build_events: close-to-close returns of a
+        # buy-and-hold portfolio rebalanced to equal weights monthly, plus the
+        # equal-weight open-to-close return for entry days.
+        self.ew_daily = [0.0] * n
+        self.ew_intraday = [0.0] * n
         self.ew_level: list[float] = []
 
     def first_after(self, day: str) -> int:
         return bisect.bisect_right(self.dates, day)
 
-    def finish_ew(self, sums: list[float], counts: list[int]) -> None:
-        self.ew_daily = [s / n if n else 0.0 for s, n in zip(sums, counts)]
+    def finish_ew(self, acc: "EWAccumulator") -> None:
+        self.ew_daily = [a / b if b else 0.0 for a, b in zip(acc.num, acc.den)]
+        self.ew_intraday = [a / b if b else 0.0 for a, b in zip(acc.intra, acc.count)]
         level, self.ew_level = 1.0, []
         for r in self.ew_daily:
             level *= 1 + r
             self.ew_level.append(level)
 
     def ew_return(self, c_from: int, c_to: int) -> float:
-        """Survivor index from the close before c_from to the close of c_to."""
-        base = self.ew_level[c_from - 1] if c_from >= 1 else 1.0
-        return self.ew_level[c_to] / base - 1
+        """Survivor index from the open of session c_from to the close of c_to."""
+        return (1 + self.ew_intraday[c_from]) * self.ew_level[c_to] / self.ew_level[c_from] - 1
+
+
+class EWAccumulator:
+    def __init__(self, n: int) -> None:
+        self.num, self.den = [0.0] * n, [0.0] * n
+        self.intra, self.count = [0.0] * n, [0] * n
 
 
 def align(hist: PriceHistory, cal: Calendar) -> tuple[PriceHistory, int]:
-    """Keep bars on benchmark trading days and drop isolated bad ticks.
+    """Keep bars on benchmark trading days, drop bad ticks and flag data breaks.
 
-    A bad tick is a close that jumps more than +300% and reverses more than 75%
-    on the next bar (or the mirror image), or a raw price under one cent.
-    Returns the cleaned history and the number of bars repaired.
+    * Bad ticks: a close that jumps 4x up (or to under a quarter) and comes back
+      to within 2x of where it was within 3 bars. The bars in between are dropped.
+    * Data breaks: a 3x step that doesn't come back and isn't traded like news
+      (dollar volume under 3x its 20-day average): typically a split Yahoo didn't
+      adjust for. Returns that span a break are censored (hist.breaks).
+    Sub-penny bars are kept, so a near-total loss is recorded rather than lost.
+    Returns the cleaned history and the number of bars dropped.
     """
-    keep = [k for k, d in enumerate(hist.dates) if d in cal.index and hist.raw_close[k] >= 0.01]
-    repaired = len([k for k, d in enumerate(hist.dates) if d in cal.index]) - len(keep)
+    keep = [k for k, d in enumerate(hist.dates) if d in cal.index]
+    close = hist.close
     clean: list[int] = []
-    for pos, k in enumerate(keep):
-        if clean and pos + 1 < len(keep):
-            prev, nxt = hist.close[clean[-1]], hist.close[keep[pos + 1]]
-            up, down = hist.close[k] / prev - 1, nxt / hist.close[k] - 1
-            if (up > 3.0 and down < -0.75) or (up < -0.75 and down > 3.0):
-                repaired += 1
-                continue
+    dropped = 0
+    pos = 0
+    while pos < len(keep):
+        k = keep[pos]
+        if clean:
+            prev = close[clean[-1]]
+            jump = close[k] / prev
+            if jump > 4 or jump < 0.25:
+                back = next((q for q in range(pos + 1, min(pos + 4, len(keep)))
+                             if 0.5 <= close[keep[q]] / prev <= 2), None)
+                if back is not None:
+                    dropped += back - pos
+                    pos = back
+                    continue
         clean.append(k)
-    if len(clean) == len(hist.dates):
+        pos += 1
+    breaks = []
+    for a, b in zip(clean, clean[1:]):
+        jump = close[b] / close[a]
+        if jump > 3 or jump < 1 / 3:
+            q = clean.index(a)
+            window = [hist.dollar_volume_day[x] for x in clean[max(0, q - 19):q + 1]]
+            avg = sum(window) / len(window) if window else 0.0
+            if avg > 0 and hist.dollar_volume_day[b] < 3 * avg:
+                breaks.append(hist.dates[b])
+    if len(clean) == len(hist.dates) and not breaks:
         return hist, 0
-    return PriceHistory(hist.symbol, [hist.dates[k] for k in clean], [hist.open[k] for k in clean],
-                        [hist.close[k] for k in clean], [hist.dollar_volume_day[k] for k in clean],
-                        [hist.raw_close[k] for k in clean]), repaired
+    out = PriceHistory(hist.symbol, [hist.dates[k] for k in clean], [hist.open[k] for k in clean],
+                       [close[k] for k in clean], [hist.dollar_volume_day[k] for k in clean],
+                       [hist.raw_close[k] for k in clean])
+    out.breaks = breaks
+    return out, dropped
 
 
 def _exit_bar(cals: list[int], c_exit: int, lo: int) -> int | None:
@@ -223,11 +257,13 @@ def attach_market_data(ev: Ev, hist: PriceHistory, cal: Calendar, verify: bool =
     entry_open, entry_close = hist.open[i], hist.close[i]
     if ti is not None and ti < i:
         ev.pre_drift = entry_open / hist.close[ti] - 1
+    # A data break (an unadjusted split, say) after entry censors everything past it.
+    stop = min((cal.index[d] for d in hist.breaks if d > ev.entry_date and d in cal.index), default=len(cal.dates))
 
     for h in HORIZONS:
         c_exit = c_entry + h - 1
-        if c_exit >= len(cal.dates):
-            break  # censored: not enough data yet
+        if c_exit >= len(cal.dates) or c_exit >= stop:
+            break  # censored: not enough data yet, or a data break
         j = _exit_bar(cals, c_exit, i)
         if j is None:
             break  # stopped trading
@@ -241,7 +277,7 @@ def attach_market_data(ev: Ev, hist: PriceHistory, cal: Calendar, verify: bool =
     prev_close, last_bar_cal, j = entry_open, c_entry, i
     for k in range(PATH_LEN):
         c = c_entry + k
-        if c >= len(cal.dates):
+        if c >= len(cal.dates) or c >= stop:
             break
         if j < len(cals) and cals[j] == c:
             path.append(hist.close[j] / prev_close - 1)
@@ -252,6 +288,11 @@ def attach_market_data(ev: Ev, hist: PriceHistory, cal: Calendar, verify: bool =
                 break
             path.append(0.0)
     ev.path = path
+
+
+def _unprice(ev: Ev, status: str) -> None:
+    ev.status, ev.entry_date, ev.entry_cal, ev.path = status, None, -1, None
+    ev.ret, ev.abn, ev.abn_c, ev.abn_ew, ev.exit_cal = {}, {}, {}, {}, {}
 
 
 def placebo_ar(hist: PriceHistory, cal: Calendar, c_entry: int) -> float | None:
@@ -269,23 +310,43 @@ def placebo_ar(hist: PriceHistory, cal: Calendar, c_entry: int) -> float | None:
     return (hist.close[j] / hist.open[i] - 1) - (cal.spy.close[c_exit] / cal.spy.open[c0] - 1)
 
 
-def _add_to_ew(hist: PriceHistory, cal: Calendar, sums: list[float], counts: list[int], start_cal: int) -> None:
-    """Add a stock's daily returns to the survivor index from `start_cal` on.
+def _add_to_ew(hist: PriceHistory, cal: Calendar, acc: EWAccumulator, start_cal: int,
+               own_entries: list[int]) -> None:
+    """Add a stock to the survivor index: other insider-bought stocks, held buy-and-hold.
 
-    A stock joins only once its first insider filing is public: before that, being
-    in this sample depends on a future insider buy (which tends to follow declines).
+    * It joins only once its first insider filing is public: before that, being in
+      this sample depends on a future buy (which tends to follow declines).
+    * Days inside its own post-signal windows (entry to entry + 63 sessions) are left
+      out, so the index measures *other* stocks; those signals are already public.
+    * Weights drift with returns and reset to equal at each month start, matching
+      the buy-and-hold returns it is compared with (a daily-rebalanced average of
+      returns would be inflated by bid-ask bounce).
     """
     cals = [cal.index[d] for d in hist.dates]
+    breaks = {cal.index[d] for d in hist.breaks if d in cal.index}
     window, total = 20, 0.0
+    weight, month = None, ""
     for k in range(1, len(cals)):
         total += hist.dollar_volume_day[k - 1]
         if k > window:
             total -= hist.dollar_volume_day[k - 1 - window]
-        if cals[k] < start_cal or cals[k] != cals[k - 1] + 1 or hist.raw_close[k - 1] < STUDY_MIN_PRICE:
+        c = cals[k]
+        j = bisect.bisect_right(own_entries, c) - 1
+        member = (c >= start_cal and cals[k] == cals[k - 1] + 1 and hist.raw_close[k - 1] >= STUDY_MIN_PRICE
+                  and k >= window and total / window >= STUDY_MIN_ADV and c not in breaks
+                  and not (j >= 0 and c < own_entries[j] + PRIMARY))
+        if not member:
+            weight = None
             continue
-        if k >= window and total / window >= STUDY_MIN_ADV:
-            sums[cals[k]] += hist.close[k] / hist.close[k - 1] - 1
-            counts[cals[k]] += 1
+        m = cal.dates[c][:7]
+        if weight is None or m != month:
+            weight, month = 1.0, m
+        r = hist.close[k] / hist.close[k - 1] - 1
+        acc.num[c] += weight * r
+        acc.den[c] += weight
+        acc.intra[c] += hist.close[k] / hist.open[k] - 1
+        acc.count[c] += 1
+        weight *= 1 + r
 
 
 def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap,
@@ -309,7 +370,7 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
     meta["ticker_resolution"] = {}
     for ev in evs:
         meta["ticker_resolution"][ev.resolve] = meta["ticker_resolution"].get(ev.resolve, 0) + 1
-    sums, counts = [0.0] * len(cal.dates), [0] * len(cal.dates)
+    acc = EWAccumulator(len(cal.dates))
     for n, (sym, group) in enumerate(sorted(by_symbol.items()), 1):
         raw = store.load(sym)
         if raw is None:
@@ -318,24 +379,35 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
             continue
         hist, repaired = align(raw, cal)
         meta["bars_dropped"] += repaired
+        meta["data_breaks"] = meta.get("data_breaks", 0) + len(hist.breaks)
         if not hist.dates:
             continue
-        _add_to_ew(hist, cal, sums, counts, min(cal.first_after(ev.filed) for ev in group))
         for ev in group:
             attach_market_data(ev, hist, cal)
-        # Placebo: the same stock over a window a year AFTER the buy, with no other
-        # signal within 63 sessions. (A window before the buy would be selected on
-        # the future buy, which tends to follow declines.)
+        # A reused ticker belongs to another company now; trust its history for this
+        # issuer only if the issuer's filings match it consistently, not by chance.
+        for issuer in {ev.buy.issuer_cik for ev in group if ev.resolve == "reused"}:
+            pair = [ev for ev in group if ev.buy.issuer_cik == issuer]
+            ratios = sorted(ev.price_ratio for ev in pair if ev.price_ratio is not None)
+            passed = sum(1 for ev in pair if ev.priced or ev.status == "awaiting_entry")
+            if not ratios or passed < 0.8 * len(ratios) or not 0.9 <= percentile(ratios, 0.5) <= 1.1:
+                for ev in pair:
+                    _unprice(ev, "price_mismatch")
         entries = sorted(ev.entry_cal for ev in group if ev.priced)
+        if entries:
+            _add_to_ew(hist, cal, acc, min(cal.first_after(ev.filed) for ev in group), entries)
+        # Placebo: the same stock over a 63-session window a year after the buy,
+        # unless an earlier signal's post-entry window overlaps it. (Excluding
+        # windows that contain a later buy would select on the future.)
         for ev in group:
             if ev.priced:
                 p = ev.entry_cal + 252
-                k = bisect.bisect_left(entries, p - 63)
-                if not (k < len(entries) and entries[k] <= p + 63):
+                k = bisect.bisect_left(entries, p - 62)
+                if not (k < len(entries) and entries[k] < p):
                     ev.placebo = placebo_ar(hist, cal, p)
         if progress:
             progress(n, len(by_symbol))
-    cal.finish_ew(sums, counts)
+    cal.finish_ew(acc)
     for ev in evs:
         for h, c_exit in ev.exit_cal.items():
             ev.abn_ew[h] = ev.ret[h] - cal.ew_return(ev.entry_cal, c_exit)
@@ -364,6 +436,7 @@ def add_pit_features(evs: list[Ev], history_start: str | None = None) -> None:
     last_owner: dict[str, str] = {}
     last_issuer: dict[str, str] = {}
     outcomes: dict[str, list[tuple[int, float]]] = defaultdict(list)  # owner -> sorted (exit index, AR63)
+    counted: set[tuple[str, tuple[str, str]]] = set()
 
     for day in sorted(by_day):
         todays = by_day[day]
@@ -404,7 +477,9 @@ def add_pit_features(evs: list[Ev], history_start: str | None = None) -> None:
             months[b.owner_cik][int((b.first_date or day)[:4])].add(int((b.first_date or day)[5:7]))
             last_owner[b.owner_cik] = day
             last_issuer[b.issuer_cik] = day
-            if PRIMARY in ev.abn:
+            # Same rule as insider_records: discretionary buys, one per company-day.
+            if PRIMARY in ev.abn and not b.plan_purchase and (b.owner_cik, ev.issuer_day) not in counted:
+                counted.add((b.owner_cik, ev.issuer_day))
                 ar = max(-TRACK_CLIP, min(TRACK_CLIP, ev.abn[PRIMARY]))
                 bisect.insort(outcomes[b.owner_cik], (ev.exit_cal[PRIMARY], ar))
 
@@ -572,8 +647,9 @@ def calendar_time(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, min_positio
             num[c] += v * r
             den[c] += v
             cnt[c] += 1
-            if k == 0 and bench == "spy":
-                bnum[c] += v * (cal.spy.close[c] / cal.spy.open[c] - 1)
+            if k == 0:  # the position starts at the open
+                day0 = cal.spy.close[c] / cal.spy.open[c] - 1 if bench == "spy" else cal.ew_intraday[c]
+                bnum[c] += v * day0
             else:
                 bnum[c] += v * daily_bench[c]
             v *= 1 + r

@@ -12,12 +12,15 @@ from __future__ import annotations
 import csv
 import dataclasses
 import datetime as dt
+import logging
 from pathlib import Path
 
 from stocktrack.backtest import (HORIZONS, SIM_MIN_ADV, SIM_MIN_PRICE, STRATEGIES, Calendar, Ev, align,
                                  attach_market_data)
 from stocktrack.history import PriceStore
 from stocktrack.signals import BuyEvent, is_listed_stock
+
+log = logging.getLogger(__name__)
 
 LEDGER_HORIZONS = (5, 21, 63, 126, 252)
 _BUY_FIELDS = [f.name for f in dataclasses.fields(BuyEvent)]
@@ -122,7 +125,11 @@ def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar,
     for row in rows:
         if row["status"] == "closed":
             continue
-        hist = store.get(row["symbol"], refresh=refresh) if row["symbol"] else None
+        try:
+            hist = store.get(row["symbol"], refresh=refresh) if row["symbol"] else None
+        except Exception as e:  # a failed download leaves the row as it was until the next run
+            log.warning("price update failed for %s: %s", row["symbol"], e)
+            continue
         if hist is None:
             if row["status"] == "open":
                 row["status"] = "dead"  # symbol vanished: keep the last known price
@@ -171,8 +178,12 @@ OPEN_UTC = "T13:30:00Z"
 
 
 def is_forward(row: dict) -> bool:
-    """Was the row logged before its entry session opened? Only those count as a forward test."""
-    return bool(row["entry_date"]) and row["logged"] < row["entry_date"] + OPEN_UTC
+    """Was the row logged before its entry session opened? Only those count as a forward test.
+
+    A date-only stamp (older rows) is taken as the end of that day, the safe assumption.
+    """
+    logged = row["logged"] if "T" in row["logged"] else row["logged"] + "T23:59:59Z"
+    return bool(row["entry_date"]) and logged < row["entry_date"] + OPEN_UTC
 
 
 assert set(LEDGER_HORIZONS) <= set(HORIZONS)

@@ -87,15 +87,56 @@ class MarketDataTest(unittest.TestCase):
         attach_market_data(typo, h, self.cal)
         self.assertEqual(typo.status, "bad_trade_date")
 
-    def test_survivor_index_counts_a_stock_only_after_its_first_filing(self):
-        from stocktrack.backtest import _add_to_ew
+    def test_survivor_index_membership(self):
+        from stocktrack.backtest import EWAccumulator, _add_to_ew
 
-        closes = [10 * 1.01 ** k for k in range(60)]
-        h = stock(DAYS[:60], closes, closes)
-        sums, counts = [0.0] * 400, [0] * 400
-        _add_to_ew(h, self.cal, sums, counts, start_cal=40)
-        self.assertEqual(sum(counts[:40]), 0)
-        self.assertEqual(sum(counts[40:60]), 20)
+        closes = [10 * 1.01 ** k for k in range(200)]
+        h = stock(DAYS[:200], closes, closes)
+        acc = EWAccumulator(400)
+        _add_to_ew(h, self.cal, acc, start_cal=40, own_entries=[100])
+        member = [c for c in range(400) if acc.count[c]]
+        self.assertEqual(member[0], 40)  # joins only after its first filing is public
+        self.assertNotIn(100, member)  # its own post-signal window is left out...
+        self.assertNotIn(162, member)
+        self.assertIn(163, member)  # ...until 63 sessions after entry
+        self.assertEqual(member[-1], 199)
+
+    def test_survivor_index_is_buy_and_hold(self):
+        from stocktrack.backtest import EWAccumulator, _add_to_ew
+
+        n = 60  # one stock bouncing 10 -> 11 -> 10, one flat: no buy-and-hold gain
+        bounce = [10.0 if k % 2 == 0 else 11.0 for k in range(n)]
+        acc = EWAccumulator(400)
+        _add_to_ew(stock(DAYS[:n], bounce, bounce), self.cal, acc, 0, [])
+        _add_to_ew(stock(DAYS[:n], [10.0] * n, [10.0] * n), self.cal, acc, 0, [])
+        self.cal.finish_ew(acc)
+        month = [c for c in range(n) if DAYS[c][:7] == "2020-02" and acc.count[c]]
+        level = 1.0
+        for c in month:
+            level *= 1 + self.cal.ew_daily[c]
+        self.assertLess(abs(level - 1), 0.03)  # a daily-rebalanced average would compound to ~+50%
+
+    def test_data_break_censors_returns(self):
+        closes = [2.0] * 30 + [16.0] * 370  # an 8x step on normal volume: an unadjusted reverse split
+        h, _ = align(stock(DAYS, closes, closes), self.cal)
+        self.assertEqual(h.breaks, [DAYS[30]])
+        ev = ev_for(DAYS[10], avg_price=2.0)
+        attach_market_data(ev, h, self.cal)
+        self.assertIn(5, ev.ret)
+        self.assertNotIn(21, ev.ret)  # the window would span the break
+        self.assertEqual(len(ev.path), 30 - 11)
+
+    def test_news_jump_is_kept(self):
+        closes = [2.0] * 30 + [16.0] * 370
+        h = stock(DAYS, closes, closes)
+        h.dollar_volume_day[30] = 5e8  # a real 8x move trades heavily
+        self.assertEqual(align(h, self.cal)[0].breaks, [])
+
+    def test_multi_bar_bad_tick(self):
+        closes = [10.0, 10.0, 1.0, 1.1, 10.0, 10.0]  # two-bar dip to a tenth
+        h, dropped = align(stock(DAYS[:6], closes, closes), self.cal)
+        self.assertEqual(dropped, 2)
+        self.assertEqual(h.close, [10.0] * 4)
 
     def test_abnormal_subtracts_spy_same_window(self):
         spy_close = [100 * 1.001 ** k for k in range(len(DAYS))]
@@ -169,6 +210,14 @@ class PitTest(unittest.TestCase):
         self.assertEqual(evs[0].kind, "unclassified")
         self.assertEqual(evs[3].kind, "routine")
         self.assertEqual(evs[4].kind, "opportunistic")
+
+    def test_track_record_skips_plan_purchases(self):
+        old = ev_for("2021-01-04", accession="o", owner_cik="9", plan_purchase=True)
+        old.entry_cal, old.abn[PRIMARY], old.exit_cal[PRIMARY] = 1, 0.30, 63
+        later = ev_for("2021-05-03", accession="l", owner_cik="9")
+        later.entry_cal = 85
+        add_pit_features([old, later])
+        self.assertEqual(later.track_n, 0)
 
     def test_novelty_unknown_in_first_year_of_data(self):
         a = ev_for("2006-01-10", accession="a", owner_cik="1")

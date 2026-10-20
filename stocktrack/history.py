@@ -24,7 +24,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from stocktrack.sec import HttpClient
@@ -46,6 +46,7 @@ class PriceHistory:
     close: list[float]  # split/dividend adjusted
     dollar_volume_day: list[float]  # dollars traded that day
     raw_close: list[float]  # the price actually quoted that day (no split adjustment)
+    breaks: list[str] = field(default_factory=list)  # dates of data breaks (set by backtest.align)
 
     def index_after(self, day: str) -> int | None:
         """Index of the first trading day strictly after `day`."""

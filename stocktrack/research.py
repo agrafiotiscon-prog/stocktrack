@@ -397,7 +397,11 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
         if rec:
             n, mean = rec
             ev.track_n, ev.track = n, (n / (n + 5)) * mean
-        hist = store.get(ev.symbol)
+        try:
+            hist = store.get(ev.symbol)
+        except Exception as e:  # one failed download shouldn't stop the run
+            log.warning("price download failed for %s: %s", ev.symbol, e)
+            continue
         if hist is None:
             continue
         aligned, _ = bt.align(hist, cal)
@@ -407,6 +411,7 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
             logged.add(ev.buy.accession)
             added += 1
     summary["buys logged to the forward test"] = added
+    led.save(ledger_path, ledger)  # keep today's rows even if a later step fails
 
     # 5. Outcomes.
     changed, matured = led.update_outcomes(ledger, store, cal)

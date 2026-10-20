@@ -96,6 +96,8 @@ class PipelineTest(unittest.TestCase):
         self.assertFalse(led.is_forward(row("2026-10-20T20:05:00Z", "2026-10-20")))  # evening run, after the open
         self.assertTrue(led.is_forward(row("2026-10-20T20:05:00Z", "2026-10-21")))
         self.assertFalse(led.is_forward(row("2026-10-20T11:00:00Z", "")))  # not entered yet
+        self.assertFalse(led.is_forward(row("2026-10-20", "2026-10-20")))  # date only: assume end of day
+        self.assertTrue(led.is_forward(row("2026-10-19", "2026-10-20")))
 
     def test_forward_test_excludes_late_logged_rows(self):
         ev = next(e for e in self.evs if e.priced)

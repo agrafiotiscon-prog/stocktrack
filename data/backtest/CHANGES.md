@@ -50,3 +50,27 @@ Statistics:
 Added analysis (exploratory, not part of the pre-registered tests):
 - Each simulated portfolio is also reported hedged: short the Russell 2000 ETF (IWM) against the
   invested fraction each day, to separate the insider edge from the small-cap market's return.
+
+## Run 3 (2026-10-20): second review round
+
+A second independent review (return math, plus a check of the run-2 fixes) confirmed 10 more issues:
+- The survivor index included each stock's own post-buy windows, so "vs survivors" compared buys
+  partly against themselves and understated the edge by about half. A stock is now left out of the
+  index for 63 sessions after its own public signals.
+- The survivor index averaged daily returns (daily rebalancing, inflated by bid-ask bounce) but was
+  compared with buy-and-hold returns. It is now buy-and-hold, rebalanced monthly.
+- The survivor index measured from the prior close; stocks are entered at the open. Entry days now
+  use the index's open-to-close return.
+- The placebo still dropped windows that contained a *later* buy (selecting on the future). It now
+  drops only windows overlapping an *earlier* signal.
+- Yahoo sometimes misses a split, leaving a fake 3x+ step (e.g. +225% "returns"). Steps that aren't
+  traded like news (dollar volume under 3x normal) are now data breaks that censor returns spanning
+  them. Bad ticks lasting up to 3 bars are removed. Sub-penny days are kept, so near-total losses
+  aren't dropped.
+- Track records in the backtest now skip plan purchases and repeat same-day reports, matching the
+  records used live.
+- A reused ticker is trusted for an old company only if most of that company's filings match its
+  price history (80%+ pass, median ratio 0.9-1.1), not one lucky match.
+- Forward test: a date-only log stamp now counts as the end of that day. One failed price download no
+  longer aborts the daily run, and new ledger rows are saved before outcomes update. The 16 rows
+  logged on 2026-10-20 were re-stamped to their commit time (01:56 UTC, before that day's open).
