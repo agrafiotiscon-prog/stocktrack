@@ -2,7 +2,7 @@
 type: "slice"
 feature: "insider_novelty"
 verdict: "no evidence"
-signals: 107093
+signals: 107299
 holdout_excess: 0.0187456
 ---
 
@@ -10,8 +10,8 @@ holdout_excess: 0.0187456
 
 | Bucket | Signals | 3-mo vs SPY | Median | Beat SPY | 2006-15 /yr | 2016+ /yr | Enter later | vs survivors (06-15 / 16+) | vs typical buy |
 |---|---|---|---|---|---|---|---|---|---|
-| ⚪ first buy in 12m | 36,638 | +1.0% | -0.6% | 48% | +9.0% (p 0.176) | +1.9% (p 0.622) | +0.8% | +4.1% / +3.6% | no different |
-| ⚪ repeat buyer | 67,528 | +0.8% | -1.0% | 47% | +8.0% (p 0.347) | +0.1% (p 0.977) | +0.7% | +3.2% / +1.9% | no different |
+| ⚪ first buy in 12m | 36,690 | +1.0% | -0.6% | 48% | +9.0% (p 0.176) | +1.9% (p 0.622) | +0.8% | +4.1% / +3.6% | no different |
+| ⚪ repeat buyer | 67,682 | +0.8% | -1.0% | 47% | +8.0% (p 0.347) | +0.1% (p 0.977) | +0.7% | +3.2% / +1.9% | no different |
 | ❔ unknown | 2,927 | +1.7% | +0.6% | 53% | +12.6% (p 0.029) | – (p –) | +1.4% | +3.3% / – | – |
 
 

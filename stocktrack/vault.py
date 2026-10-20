@@ -14,7 +14,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from stocktrack.backtest import PRIMARY, STRATEGIES
+from stocktrack.backtest import POST_HOC, PRIMARY, STRATEGIES
 from stocktrack.ledger import LEDGER_HORIZONS, is_forward
 from stocktrack.signals import money
 
@@ -240,6 +240,7 @@ def home(res: dict, fwd: dict, ledger: list[dict], today: str) -> str:
              "A research log on one question: **do stocks go up after insiders buy them, and which buys are worth "
              "following?** Every SEC Form 4 open-market purchase since 2006 is backtested, and every new buy is logged "
              "and tracked forward.\n",
+             "- [[Findings]]: what the evidence says, in plain English",
              "- [[What Works]]: the scoreboard",
              f"- [[{res['meta']['run_date']} Backtest]]: the latest full backtest",
              f"- [[{today}]]: today's research log",
@@ -420,8 +421,12 @@ def strategy_note(key: str, s: dict, fwd: dict, ledger: list[dict]) -> str:
     lines = [frontmatter({"type": "strategy", "key": key, "signals": s["signals"], "cagr": p.get("strategy_cagr"),
                           "spy_cagr": p.get("spy_cagr"), "sharpe": p.get("strategy_sharpe"),
                           "max_drawdown": p.get("strategy_max_drawdown"), "holdout_excess": s["holdout"].get("annualized")}),
-             f"# {desc}\n", f"Rule key: `{key}`. Liquid stocks only ($2+, $1M+/day), plan purchases excluded.\n",
-             "## Backtest\n"]
+             f"# {desc}\n", f"Rule key: `{key}`. Liquid stocks only ($2+, $1M+/day), plan purchases excluded.\n"]
+    if key in POST_HOC:
+        lines.append("> [!warning] Post-hoc idea\n> This rule was written after seeing the backtest, so the backtest numbers "
+                     "below are in-sample and can't confirm it. Only the live forward test counts. See [[Findings]] and "
+                     "`data/backtest/hypotheses.json`.\n")
+    lines.append("## Backtest\n")
     e = s["events"]
     lines.append(table(["Measure", "Value"], [
         ["Signals", f"{s['signals']:,}"],

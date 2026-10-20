@@ -1,0 +1,25 @@
+{
+  "registered": "2026-10-20",
+  "why": "Leads from the run-2 backtest. They were found by looking at the 2006-2026 data, so that data can't confirm them. Each is judged only on the forward-test ledger (data/picks.csv), on buys logged from 2026-10-21 onward.",
+  "rule": "After 100 matured 63-session outcomes, a hypothesis is supported if its mean excess return vs SPY is positive and its 95% CI excludes zero; refuted if the CI excludes the backtest's survivor-adjusted estimate; otherwise still open.",
+  "hypotheses": [
+    {
+      "strategy": "cfo_exec_25k",
+      "claim": "Buys of $25K+ by a CFO or another non-CEO executive beat SPY over the next 63 sessions.",
+      "backtest_evidence": "vs comparable surviving stocks: CFO +8.4%/yr (t 4.5, 18 of 21 years positive), other executives +6.0%/yr (t 5.0, 19 of 21); both beat the typical insider buy after Holm correction.",
+      "expected": "+1% to +2% excess over 63 sessions vs SPY; less after small-cap underperformance"
+    },
+    {
+      "strategy": "momentum_buy",
+      "claim": "Non-routine insider buys after the stock rose 30%+ in the prior 3 months beat SPY over the next 63 sessions.",
+      "backtest_evidence": "vs survivors +14.3%/yr (t 3.7, 16 of 21 years positive) but volatile; not significant after Holm correction.",
+      "expected": "+2% to +4% excess over 63 sessions, with wide dispersion"
+    },
+    {
+      "strategy": "avoid: role Other and routine insiders",
+      "claim": "Buys by owners filing as 'Other' and by routine insiders (same month 3 years running) underperform the typical insider buy.",
+      "backtest_evidence": "Other: -4.6%/yr vs survivors, 6 of 21 years positive, worse than typical (Holm p 0.02). Routine: -3%/yr vs survivors.",
+      "expected": "below the all-buys forward average"
+    }
+  ]
+}

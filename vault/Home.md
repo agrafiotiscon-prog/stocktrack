@@ -7,6 +7,7 @@ updated: "2026-10-20"
 
 A research log on one question: **do stocks go up after insiders buy them, and which buys are worth following?** Every SEC Form 4 open-market purchase since 2006 is backtested, and every new buy is logged and tracked forward.
 
+- [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-10-20 Backtest]]: the latest full backtest
 - [[2026-10-20]]: today's research log
@@ -16,7 +17,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 - On average a stock beat the S&P 500 by **+0.9%** over the 3 months after an insider purchase was filed (95% CI -0.1% to +2.0%, 101,179 signals since 2006). That is roughly +3.4% a year, but the median stock *lagged* by 0.9%.
 - The edge was real in **2006-2015** (+7.9% a year, p 0.006) and has **faded since 2016** (+1.0% a year, p 0.775).
-- The best simulated portfolio (*Opportunistic insiders (Cohen-Malloy-Pomorski)*) returned +12.0% a year after costs with a 49% max drawdown, against SPY's +11.4% and 51%.
+- The best simulated portfolio (*Insider buying after a 30%+ run-up (post-hoc)*) returned +20.2% a year after costs with a 42% max drawdown, against SPY's +11.0% and 55%.
 - Survivorship: about half of all insider buys are in companies that no longer trade and can't be priced. If those did like a typical priced buy, the average falls from +0.9% to -0.1%; if they did badly, to -12.6%.
 
 ## Latest notable buys

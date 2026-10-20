@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "proven_insider"
-signals: 20425
-cagr: 0.108304
+signals: 20449
+cagr: 0.108259
 spy_cagr: 0.112438
-sharpe: 0.455883
+sharpe: 0.455723
 max_drawdown: 0.534823
-holdout_excess: 0.00662708
+holdout_excess: 0.00662709
 ---
 
 # Insiders whose earlier buys beat SPY
@@ -17,7 +17,7 @@ Rule key: `proven_insider`. Liquid stocks only ($2+, $1M+/day), plan purchases e
 
 | Measure | Value |
 |---|---|
-| Signals | 20,425 |
+| Signals | 20,449 |
 | 3-month excess vs SPY (mean / median) | +0.8% / -0.9% |
 | Beat SPY over 3 months | 47% |
 | Entering one session later | +0.6% |
@@ -30,9 +30,9 @@ Rule key: `proven_insider`. Liquid stocks only ($2+, $1M+/day), plan purchases e
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +7.1% | +11.2% | 0.34 | 0.56 | 52% | 1.10 | -3.6% | 29% | 4,559 | 8.4% | -0.7% / -0.15 / 48% |
-| 63d | +10.8% | +11.2% | 0.46 | 0.56 | 53% | 1.19 | -0.9% | 48% | 1,612 | 3.0% | +2.5% / 0.13 / 39% |
-| 126d | +12.3% | +11.2% | 0.52 | 0.56 | 51% | 1.14 | +0.9% | 43% | 817 | 1.6% | +3.8% / 0.24 / 35% |
+| 21d | +7.1% | +11.2% | 0.33 | 0.56 | 52% | 1.10 | -3.6% | 29% | 4,568 | 8.5% | -0.7% / -0.15 / 48% |
+| 63d | +10.8% | +11.2% | 0.46 | 0.56 | 53% | 1.19 | -0.9% | 48% | 1,614 | 3.0% | +2.5% / 0.13 / 39% |
+| 126d | +12.3% | +11.2% | 0.52 | 0.56 | 51% | 1.14 | +0.9% | 43% | 818 | 1.6% | +3.8% / 0.24 / 35% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
@@ -65,7 +65,7 @@ Cost sensitivity (63-session hold): no costs +14.4%/yr, double costs +7.8%/yr.
 | 2023 | +20.7% | +26.2% | -5.5% |
 | 2024 | +9.8% | +24.9% | -15.1% |
 | 2025 | +14.7% | +17.7% | -3.0% |
-| 2026 | +18.9% | +13.3% | +5.6% |
+| 2026 | +18.8% | +13.3% | +5.5% |
 
 
 ## Live forward test

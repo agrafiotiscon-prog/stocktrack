@@ -1,10 +1,10 @@
 ---
 type: "strategy"
 key: "ceo_cfo_100k"
-signals: 7846
-cagr: 0.0971444
+signals: 7859
+cagr: 0.0968604
 spy_cagr: 0.110437
-sharpe: 0.416021
+sharpe: 0.415062
 max_drawdown: 0.658732
 holdout_excess: 0.0160695
 ---
@@ -17,7 +17,7 @@ Rule key: `ceo_cfo_100k`. Liquid stocks only ($2+, $1M+/day), plan purchases exc
 
 | Measure | Value |
 |---|---|
-| Signals | 7,846 |
+| Signals | 7,859 |
 | 3-month excess vs SPY (mean / median) | +1.4% / -0.9% |
 | Beat SPY over 3 months | 48% |
 | Entering one session later | +1.1% |
@@ -30,9 +30,9 @@ Rule key: `ceo_cfo_100k`. Liquid stocks only ($2+, $1M+/day), plan purchases exc
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +6.4% | +11.0% | 0.32 | 0.55 | 52% | 0.86 | -2.2% | 29% | 3,414 | 6.0% | +1.4% / 0.02 / 29% |
-| 63d | +9.7% | +11.0% | 0.42 | 0.55 | 66% | 1.32 | -2.2% | 38% | 1,601 | 2.8% | +2.5% / 0.12 / 39% |
-| 126d | +7.6% | +11.0% | 0.35 | 0.55 | 62% | 1.24 | -3.7% | 43% | 823 | 1.4% | -0.1% / -0.08 / 54% |
+| 21d | +6.4% | +11.0% | 0.32 | 0.55 | 52% | 0.86 | -2.2% | 29% | 3,424 | 6.0% | +1.5% / 0.03 / 29% |
+| 63d | +9.7% | +11.0% | 0.42 | 0.55 | 66% | 1.32 | -2.3% | 38% | 1,602 | 2.8% | +2.4% / 0.12 / 39% |
+| 126d | +7.6% | +11.0% | 0.35 | 0.55 | 62% | 1.24 | -3.8% | 43% | 824 | 1.4% | -0.2% / -0.08 / 54% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
@@ -65,7 +65,7 @@ Cost sensitivity (63-session hold): no costs +12.7%/yr, double costs +6.8%/yr.
 | 2023 | +49.4% | +26.2% | +23.2% |
 | 2024 | +34.0% | +24.9% | +9.2% |
 | 2025 | -9.2% | +17.7% | -26.9% |
-| 2026 | +8.4% | +13.3% | -4.9% |
+| 2026 | +7.8% | +13.3% | -5.4% |
 
 
 ## Live forward test

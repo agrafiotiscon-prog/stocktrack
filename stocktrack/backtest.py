@@ -722,7 +722,16 @@ STRATEGIES: dict[str, tuple[str, Callable[[Ev], bool]]] = {
     "first_buy_exec": ("Exec's first buy in a year, $50K+", lambda e: e.first_in_year_insider is True
                        and e.buy.role in ("CEO", "CFO", "President", "Chair", "C-Suite") and e.value >= 5e4
                        and not e.buy.plan_purchase),
+    # Post-hoc ideas, added 2026-10-20 after seeing the run-2 results (see data/backtest/hypotheses.json).
+    # Their backtest numbers are in-sample by construction; only the live forward test can confirm them.
+    "cfo_exec_25k": ("CFO or other non-CEO executive buying $25K+ (post-hoc)",
+                     lambda e: e.buy.role in ("CFO", "C-Suite", "Officer") and e.value >= 25e3
+                     and not e.buy.plan_purchase),
+    "momentum_buy": ("Insider buying after a 30%+ run-up (post-hoc)",
+                     lambda e: (e.prior_ret or 0) >= 0.3 and not e.buy.plan_purchase and e.kind != "routine"),
 }
+
+POST_HOC = {"cfo_exec_25k", "momentum_buy"}
 
 
 # --- portfolio simulation ------------------------------------------------------------

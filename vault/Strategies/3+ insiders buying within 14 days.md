@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "cluster_3"
-signals: 7458
-cagr: 0.0601742
+signals: 7470
+cagr: 0.060407
 spy_cagr: 0.110437
-sharpe: 0.288989
+sharpe: 0.289792
 max_drawdown: 0.591046
-holdout_excess: 0.00737948
+holdout_excess: 0.00737947
 ---
 
 # 3+ insiders buying within 14 days
@@ -17,7 +17,7 @@ Rule key: `cluster_3`. Liquid stocks only ($2+, $1M+/day), plan purchases exclud
 
 | Measure | Value |
 |---|---|
-| Signals | 7,458 |
+| Signals | 7,470 |
 | 3-month excess vs SPY (mean / median) | +2.1% / +0.1% |
 | Beat SPY over 3 months | 50% |
 | Entering one session later | +2.0% |
@@ -30,15 +30,15 @@ Rule key: `cluster_3`. Liquid stocks only ($2+, $1M+/day), plan purchases exclud
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +5.9% | +11.0% | 0.30 | 0.55 | 52% | 0.75 | -1.7% | 24% | 2,846 | 5.9% | +1.4% / 0.03 / 36% |
-| 63d | +6.0% | +11.0% | 0.29 | 0.55 | 59% | 1.13 | -4.4% | 33% | 1,539 | 3.0% | -1.1% / -0.12 / 55% |
-| 126d | +10.4% | +11.0% | 0.44 | 0.55 | 67% | 1.14 | -0.3% | 48% | 820 | 1.7% | +2.5% / 0.13 / 46% |
+| 21d | +5.9% | +11.0% | 0.30 | 0.55 | 52% | 0.75 | -1.7% | 24% | 2,850 | 5.9% | +1.4% / 0.03 / 36% |
+| 63d | +6.0% | +11.0% | 0.29 | 0.55 | 59% | 1.13 | -4.4% | 33% | 1,540 | 3.0% | -1.1% / -0.12 / 55% |
+| 126d | +10.4% | +11.0% | 0.44 | 0.55 | 67% | 1.14 | -0.3% | 48% | 821 | 1.7% | +2.5% / 0.13 / 46% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +9.3%/yr, double costs +3.1%/yr.
+Cost sensitivity (63-session hold): no costs +9.4%/yr, double costs +3.1%/yr.
 
 
 ### Year by year (63-session hold)
@@ -65,7 +65,7 @@ Cost sensitivity (63-session hold): no costs +9.3%/yr, double costs +3.1%/yr.
 | 2023 | +16.7% | +26.2% | -9.5% |
 | 2024 | +0.5% | +24.9% | -24.4% |
 | 2025 | +3.3% | +17.7% | -14.5% |
-| 2026 | -3.1% | +13.3% | -16.4% |
+| 2026 | -2.7% | +13.3% | -16.0% |
 
 
 ## Live forward test

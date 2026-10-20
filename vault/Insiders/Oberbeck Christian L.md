@@ -3,7 +3,7 @@ type: "insider"
 name: "Oberbeck Christian L"
 cik: "1349483"
 past_buys: 11
-past_mean_abn_63: 0.08461
+past_mean_abn_63: 0.0846
 ---
 
 # Oberbeck Christian L

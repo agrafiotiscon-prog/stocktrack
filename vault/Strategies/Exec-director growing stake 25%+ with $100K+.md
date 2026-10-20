@@ -1,10 +1,10 @@
 ---
 type: "strategy"
 key: "big_stake_up"
-signals: 11402
-cagr: 0.105919
+signals: 11422
+cagr: 0.105718
 spy_cagr: 0.110668
-sharpe: 0.445691
+sharpe: 0.445011
 max_drawdown: 0.653175
 holdout_excess: 0.016554
 ---
@@ -17,7 +17,7 @@ Rule key: `big_stake_up`. Liquid stocks only ($2+, $1M+/day), plan purchases exc
 
 | Measure | Value |
 |---|---|
-| Signals | 11,402 |
+| Signals | 11,422 |
 | 3-month excess vs SPY (mean / median) | +0.8% / -0.5% |
 | Beat SPY over 3 months | 48% |
 | Entering one session later | +0.6% |
@@ -30,9 +30,9 @@ Rule key: `big_stake_up`. Liquid stocks only ($2+, $1M+/day), plan purchases exc
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +4.0% | +11.1% | 0.22 | 0.55 | 54% | 1.06 | -5.9% | 24% | 4,249 | 6.4% | -1.8% / -0.23 / 50% |
-| 63d | +10.6% | +11.1% | 0.45 | 0.55 | 65% | 1.30 | -1.7% | 52% | 1,651 | 2.7% | +2.3% / 0.11 / 33% |
-| 126d | +7.7% | +11.1% | 0.35 | 0.55 | 64% | 1.24 | -3.9% | 48% | 837 | 1.3% | -0.2% / -0.08 / 45% |
+| 21d | +4.0% | +11.1% | 0.22 | 0.55 | 54% | 1.06 | -5.9% | 24% | 4,259 | 6.4% | -1.8% / -0.22 / 50% |
+| 63d | +10.6% | +11.1% | 0.45 | 0.55 | 65% | 1.30 | -1.7% | 52% | 1,652 | 2.7% | +2.3% / 0.11 / 33% |
+| 126d | +7.7% | +11.1% | 0.35 | 0.55 | 64% | 1.24 | -3.9% | 48% | 840 | 1.3% | -0.2% / -0.08 / 45% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
@@ -65,7 +65,7 @@ Cost sensitivity (63-session hold): no costs +13.4%/yr, double costs +7.8%/yr.
 | 2023 | +16.6% | +26.2% | -9.6% |
 | 2024 | +15.3% | +24.9% | -9.6% |
 | 2025 | -0.3% | +17.7% | -18.0% |
-| 2026 | +14.7% | +13.3% | +1.4% |
+| 2026 | +14.3% | +13.3% | +1.0% |
 
 
 ## Live forward test

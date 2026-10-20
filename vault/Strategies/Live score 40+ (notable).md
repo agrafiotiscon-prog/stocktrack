@@ -1,11 +1,11 @@
 ---
 type: "strategy"
 key: "score_40"
-signals: 32360
+signals: 32415
 cagr: 0.0581472
 spy_cagr: 0.110668
 sharpe: 0.281738
-max_drawdown: 0.585572
+max_drawdown: 0.585571
 holdout_excess: 0.0146921
 ---
 
@@ -17,7 +17,7 @@ Rule key: `score_40`. Liquid stocks only ($2+, $1M+/day), plan purchases exclude
 
 | Measure | Value |
 |---|---|
-| Signals | 32,360 |
+| Signals | 32,415 |
 | 3-month excess vs SPY (mean / median) | +1.1% / -0.6% |
 | Beat SPY over 3 months | 48% |
 | Entering one session later | +0.8% |
@@ -30,7 +30,7 @@ Rule key: `score_40`. Liquid stocks only ($2+, $1M+/day), plan purchases exclude
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +6.4% | +11.1% | 0.30 | 0.55 | 59% | 1.25 | -4.9% | 33% | 4,855 | 8.6% | -1.0% / -0.12 / 63% |
+| 21d | +6.3% | +11.1% | 0.30 | 0.55 | 59% | 1.25 | -4.9% | 33% | 4,865 | 8.6% | -1.0% / -0.12 / 63% |
 | 63d | +5.8% | +11.1% | 0.28 | 0.55 | 59% | 1.25 | -5.4% | 38% | 1,660 | 2.6% | -1.9% / -0.19 / 57% |
 | 126d | +5.4% | +11.1% | 0.27 | 0.55 | 68% | 1.16 | -5.1% | 33% | 840 | 1.3% | -2.4% / -0.25 / 49% |
 
