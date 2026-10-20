@@ -313,6 +313,9 @@ $25+: 0.1%, plus 0.25% if dollar volume is under $5M and 0.25% if the position e
 results, and the survivor index and survivorship bound show by how much. The adjustment is for market beta only (no
 size/value factors). The routine/opportunistic split uses purchases only, because sales aren't loaded.
 
+**Changes after the pre-registration** are bug fixes only, each listed in `data/backtest/CHANGES.md`
+(found by an independent adversarial review of the code).
+
 **Reproducibility.** Git commit `{m.get("git_commit", "")}`, config hash `{m.get("config_hash", "")}`, seed {m.get("seed", "")}.
 """
 
