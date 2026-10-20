@@ -7,16 +7,16 @@ role: "Director"
 filed: "2026-10-16"
 traded: "2026-10-14"
 score: 62
-value: 23686389
+value: 23686400
 cluster: 1
 insider_type: "unclassified"
 price: 131.49
 strategies: ["all_liquid", "score_40", "score_60", "big_stake_up"]
 entry_date: "2026-10-19"
-entry_price: 130.875
+entry_price: 130.88
 status: "open"
-abn_now: 0.0172248
-ret_now: 0.0174594
+abn_now: 0.0215307
+ret_now: 0.0205532
 abn_5: 
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | +1.7% |
+| – | – | – | – | – | +2.2% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/77476/000106127226000004/0001061272-26-000004-index.htm)

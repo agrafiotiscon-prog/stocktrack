@@ -162,4 +162,17 @@ def today_iso() -> str:
     return dt.date.today().isoformat()
 
 
+def now_utc() -> str:
+    return dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+# 9:30 New York is 13:30 UTC in summer and 14:30 in winter; the earlier time is the safe cut-off.
+OPEN_UTC = "T13:30:00Z"
+
+
+def is_forward(row: dict) -> bool:
+    """Was the row logged before its entry session opened? Only those count as a forward test."""
+    return bool(row["entry_date"]) and row["logged"] < row["entry_date"] + OPEN_UTC
+
+
 assert set(LEDGER_HORIZONS) <= set(HORIZONS)

@@ -46,3 +46,7 @@ Statistics:
   qualifying filings.
 - Insider track records grouped all insiders' buys by company-day before grouping by insider.
 - Simulation beta and alpha now come from monthly excess returns (daily small-cap returns lag).
+
+Added analysis (exploratory, not part of the pre-registered tests):
+- Each simulated portfolio is also reported hedged: short the Russell 2000 ETF (IWM) against the
+  invested fraction each day, to separate the insider edge from the small-cap market's return.

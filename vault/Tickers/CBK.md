@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-28 | [[Robertson John Adam]] | Executive Chairperson | $2K | 13 | -1.3% | open |
+| 2026-09-28 | [[Robertson John Adam]] | Executive Chairperson | $2K | 13 | -2.0% | open |

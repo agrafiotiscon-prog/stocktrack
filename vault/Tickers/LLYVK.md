@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-28 | [[MALONE JOHN C]] | 10% Owner | $2.9M | 36 | -2.0% | open |
+| 2026-09-28 | [[MALONE JOHN C]] | 10% Owner | $2.9M | 36 | -2.2% | open |

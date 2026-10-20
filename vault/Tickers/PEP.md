@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-16 PEP POHLAD ROBERT C\|2026-10-16]] | [[POHLAD ROBERT C]] | Director | $23.7M | 62 | +1.7% | open |
+| [[2026-10-16 PEP POHLAD ROBERT C\|2026-10-16]] | [[POHLAD ROBERT C]] | Director | $23.7M | 62 | +2.2% | open |

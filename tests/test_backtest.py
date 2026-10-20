@@ -216,6 +216,8 @@ class StatsTest(unittest.TestCase):
         bb = block_bootstrap([0.01] * 30, draws=200)
         self.assertEqual(bb["ci"], [0.01, 0.01])
         self.assertEqual(bb["p_boot"], 0.0)
+        self.assertEqual(block_bootstrap([0.0] * 30, draws=200)["p_boot"], 1.0)  # mid-p for an all-zero series
+        self.assertEqual(block_bootstrap([0.01] * 30, draws=0), {})
 
     def test_holm(self):
         adj = holm({"a": 0.01, "b": 0.04, "c": 0.03})

@@ -15,8 +15,8 @@ strategies: ["all_liquid"]
 entry_date: "2026-09-29"
 entry_price: 33.695
 status: "open"
-abn_now: 0.0219473
-ret_now: 0.0227036
+abn_now: 0.0216762
+ret_now: 0.0212198
 abn_5: 0.0235488
 abn_21: 
 abn_63: 
@@ -39,7 +39,7 @@ tags: ["signal", "strategy/all_liquid"]
 | Score / cluster | 24 / 1 insider(s) |
 | Insider type / track record | unclassified / no record |
 | Prior 3 months | +18.0% |
-| Entry | 2026-09-29 @ $33.69 |
+| Entry | 2026-09-29 @ $33.70 |
 | Status | open |
 
 

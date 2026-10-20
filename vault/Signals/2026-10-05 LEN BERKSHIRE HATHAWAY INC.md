@@ -7,7 +7,7 @@ role: "10% Owner"
 filed: "2026-10-05"
 traded: "2026-10-02"
 score: 70
-value: 192634433
+value: 192634000
 cluster: 2
 insider_type: "opportunistic"
 price: 74.44
@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40", "score_60", "opportunistic", "proven_insi
 entry_date: "2026-10-06"
 entry_price: 74.4659
 status: "open"
-abn_now: 0.0370893
-ret_now: 0.0232873
+abn_now: 0.033853
+ret_now: 0.0188558
 abn_5: 0.00253679
 abn_21: 
 abn_63: 
@@ -35,7 +35,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 | Company | LENNAR CORP /NEW/ |
 | Insider | BERKSHIRE HATHAWAY INC (10% Owner) |
 | Traded / filed | 2026-10-01 to 2026-10-02 / 2026-10-05 |
-| Shares @ price | 2,418,637 @ $79.65 |
+| Shares @ price | 2,418,640 @ $79.65 |
 | Score / cluster | 70 / 2 insider(s) |
 | Insider type / track record | opportunistic / 53 earlier buys, +1.9% |
 | Prior 3 months | -13.7% |
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| +0.3% | – | – | – | – | +3.7% |
+| +0.3% | – | – | – | – | +3.4% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/920760/000119312526414744/0001193125-26-414744-index.htm)

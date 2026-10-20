@@ -505,7 +505,7 @@ def newey_west_t(x: list[float], lags: int = 3) -> tuple[float, float]:
 
 def block_bootstrap(x: list[float], draws: int = 2000, block: int = 6, seed: int = SEED) -> dict:
     t_len = len(x)
-    if t_len < 2 * block:
+    if draws <= 0 or t_len < 2 * block:
         return {}
     rng = random.Random(seed)
     nblocks = math.ceil(t_len / block)
@@ -739,11 +739,14 @@ def cost_per_side(price: float | None, adv: float | None, size: float = 0.0) -> 
 
 
 def simulate(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, slots: int = 20, nav0: float = 100_000.0,
-             cost_mult: float = 1.0, rf_daily: list[float] | None = None) -> dict:
+             cost_mult: float = 1.0, rf_daily: list[float] | None = None,
+             hedge_daily: list[float] | None = None) -> dict:
     """$100K, `slots` positions, each signal bought at the next open and held `hold` sessions.
 
     When more signals arrive than free slots, the highest scores win. Size is
     NAV/slots, capped by cash and 2% of the stock's daily dollar volume.
+    With `hedge_daily` (e.g. IWM), also reports a hedged version that shorts the
+    hedge against the invested fraction each day (exploratory; borrow costs ignored).
     """
     n = len(cal.dates)
     todo: dict[int, list[Ev]] = defaultdict(list)
@@ -757,6 +760,7 @@ def simulate(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, slots: int = 20,
     open_pos: list[list] = []  # [ev, value, step, steps]
     held: set[str] = set()
     navs, trades, skipped, costs_paid, positions_sum = [], 0, 0, 0.0, 0
+    exposure: list[float] = []  # invested fraction at the start of each day, after entries
     for c in range(start, n):
         # entries at the open
         cands = sorted(todo.get(c, []), key=lambda e: (-e.score, -e.value, e.buy.accession))
@@ -776,6 +780,8 @@ def simulate(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, slots: int = 20,
             open_pos.append([e, size - fee, 0, min(hold, len(e.path))])
             held.add(e.buy.issuer_cik)
             trades += 1
+        invested = sum(p[1] for p in open_pos)
+        exposure.append(invested / (cash + invested) if cash + invested > 0 else 0.0)
         # mark to market, exits at the close
         still = []
         for pos in open_pos:
@@ -803,6 +809,10 @@ def simulate(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, slots: int = 20,
     rf = rf_daily[start:n] if rf_daily else [0.0] * len(daily)
     out.update({f"strategy_{k}": v for k, v in perf(daily, rf).items()})
     out.update({f"spy_{k}": v for k, v in perf(spy, rf).items()})
+    if hedge_daily:
+        hedged = [r - e * hedge_daily[c] for c, r, e in zip(range(start, n), daily, exposure)]
+        out.update({f"hedged_{k}": v for k, v in perf(hedged, rf).items()})
+        out["hedge_cagr"] = perf(hedge_daily[start:n]).get("cagr")
     # Beta and alpha from monthly excess returns: small, thinly traded stocks react
     # to the market with a lag, which biases daily betas down (and alphas up).
     months: dict[str, list[float]] = {}
@@ -1047,7 +1057,8 @@ def insider_records(evs: list[Ev], bounds=None) -> dict[str, tuple[int, float]]:
     return out
 
 
-def run_backtest(evs: list[Ev], cal: Calendar, echo=print, rf_daily: list[float] | None = None) -> dict:
+def run_backtest(evs: list[Ev], cal: Calendar, echo=print, rf_daily: list[float] | None = None,
+                 hedge_daily: list[float] | None = None) -> dict:
     add_pit_features(evs)
     study = [e for e in evs if e.in_study and is_listed_stock(e.symbol or "")]
     # Winsorizing bounds come from the discovery period only, so holdout returns
@@ -1097,7 +1108,8 @@ def run_backtest(evs: list[Ev], cal: Calendar, echo=print, rf_daily: list[float]
             "variant_c": event_stats(sel, PRIMARY, bounds[PRIMARY], key="abn_c"),
             "vs_survivors": event_stats(sel, PRIMARY, bounds[PRIMARY], key="abn_ew"),
             **_periods(ct, cal, sel, boot=1000),
-            "portfolio": {f"{h}d": simulate(sel, cal, hold=h, rf_daily=rf_daily) for h in (21, 63, 126)},
+            "portfolio": {f"{h}d": simulate(sel, cal, hold=h, rf_daily=rf_daily, hedge_daily=hedge_daily)
+                          for h in (21, 63, 126)},
             "portfolio_costs": {f"{m}x": _sim_brief(simulate(sel, cal, cost_mult=m, rf_daily=rf_daily))
                                 for m in (0, 2)},
         }

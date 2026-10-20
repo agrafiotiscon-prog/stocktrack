@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-13 | [[Gonzalez Luis A]] | Director | $595K | 32 | -2.2% | open |
+| 2026-10-13 | [[Gonzalez Luis A]] | Director | $595K | 32 | -2.4% | open |

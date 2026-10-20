@@ -7,7 +7,7 @@ role: "10% Owner"
 filed: "2026-09-29"
 traded: "2026-09-29"
 score: 46
-value: 11353675
+value: 11353700
 cluster: 1
 insider_type: "unclassified"
 price: 4.67
@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40"]
 entry_date: "2026-09-30"
 entry_price: 4.96
 status: "open"
-abn_now: 0.0165903
-ret_now: 0.0178427
+abn_now: 0.00802541
+ret_now: 0.00806451
 abn_5: 0.0157664
 abn_21: 
 abn_63: 
@@ -35,7 +35,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40"]
 | Company | Coursera, Inc. |
 | Insider | Pale Fire Capital investicni spolecnost a.s. (10% Owner) |
 | Traded / filed | 2026-09-25 to 2026-09-29 / 2026-09-29 |
-| Shares @ price | 2,332,742 @ $4.87 |
+| Shares @ price | 2,332,740 @ $4.87 |
 | Score / cluster | 46 / 1 insider(s) |
 | Insider type / track record | unclassified / no record |
 | Prior 3 months | -17.2% |
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40"]
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| +1.6% | – | – | – | – | +1.7% |
+| +1.6% | – | – | – | – | +0.8% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1651562/000092189526002677/0000921895-26-002677-index.htm)

@@ -7,7 +7,7 @@ role: "Director"
 filed: "2026-09-30"
 traded: "2026-09-28"
 score: 49
-value: 1912218
+value: 1912220
 cluster: 1
 insider_type: "opportunistic"
 price: 12.56
@@ -15,7 +15,7 @@ strategies: ["all_liquid", "score_40", "opportunistic", "proven_insider"]
 entry_date: "2026-10-01"
 entry_price: 12.63
 status: "open"
-abn_now: -0.0317021
+abn_now: -0.0304854
 ret_now: -0.0277118
 abn_5: -0.0350352
 abn_21: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/opportuni
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| -3.5% | – | – | – | – | -3.2% |
+| -3.5% | – | – | – | – | -3.0% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1747172/000118325426000008/0001183254-26-000008-index.htm)

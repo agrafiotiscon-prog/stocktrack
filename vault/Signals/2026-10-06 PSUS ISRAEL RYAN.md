@@ -7,7 +7,7 @@ role: "Chief Investment Officer"
 filed: "2026-10-06"
 traded: "2026-10-06"
 score: 68
-value: 9615216
+value: 9615220
 cluster: 1
 insider_type: "unclassified"
 price: 37.74
@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40", "score_60", "big_stake_up"]
 entry_date: "2026-10-07"
 entry_price: 37.52
 status: "open"
-abn_now: 0.00544594
-ret_now: -0.00533051
+abn_now: 0.0058452
+ret_now: -0.00613005
 abn_5: 0.00484179
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| +0.5% | – | – | – | – | +0.5% |
+| +0.5% | – | – | – | – | +0.6% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/2002660/000119312526415861/0001193125-26-415861-index.htm)

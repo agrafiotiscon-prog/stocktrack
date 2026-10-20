@@ -88,6 +88,15 @@ class PipelineTest(unittest.TestCase):
         self.assertAlmostEqual(rows[0]["abn_63"], ev.abn[63], places=6)
         self.assertEqual(led.update_outcomes(rows, self.store, self.cal, refresh=False), (0, []))
 
+    def test_forward_means_logged_before_the_entry_open(self):
+        def row(logged, entry):
+            return {"logged": logged, "entry_date": entry}
+
+        self.assertTrue(led.is_forward(row("2026-10-20T11:00:00Z", "2026-10-20")))  # morning run, before 9:30 ET
+        self.assertFalse(led.is_forward(row("2026-10-20T20:05:00Z", "2026-10-20")))  # evening run, after the open
+        self.assertTrue(led.is_forward(row("2026-10-20T20:05:00Z", "2026-10-21")))
+        self.assertFalse(led.is_forward(row("2026-10-20T11:00:00Z", "")))  # not entered yet
+
     def test_forward_test_excludes_late_logged_rows(self):
         ev = next(e for e in self.evs if e.priced)
         on_time = dict(led.new_row(ev, logged=ev.filed), entry_date=ev.entry_date, abn_21=0.05)

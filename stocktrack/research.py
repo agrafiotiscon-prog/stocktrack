@@ -60,7 +60,7 @@ def load_history(http: HttpClient, db: ResearchDB, refresh_latest: bool = True, 
 def fetch_prices(http: HttpClient, db: ResearchDB, store: PriceStore, echo=print) -> dict:
     """Prefetch price histories for every company in the research DB that is still listed."""
     tickers = TickerMap.load(http, CACHE)
-    symbols = {BENCHMARK}
+    symbols = {BENCHMARK, HEDGE, "^IRX"}
     how_counts: dict[str, int] = {}
     for e in db.events():
         sym, how = tickers.resolve(e.issuer_cik, e.ticker)
@@ -137,6 +137,26 @@ def git_commit() -> str:
         return ""
 
 
+HEDGE = "IWM"  # Russell 2000 ETF: a tradable small-cap hedge
+
+
+def daily_returns(store: PriceStore, symbol: str, cal: bt.Calendar) -> list[float] | None:
+    """Close-to-close returns of `symbol` on the benchmark calendar (0 on missing days)."""
+    try:
+        h = store.get(symbol)
+    except Exception:  # best effort
+        h = None
+    if h is None:
+        return None
+    closes = dict(zip(h.dates, h.close))
+    out, prev = [], None
+    for d in cal.dates:
+        c = closes.get(d)
+        out.append(c / prev - 1 if c and prev else 0.0)
+        prev = c or prev
+    return out
+
+
 def risk_free(store: PriceStore, cal: bt.Calendar) -> tuple[list[float] | None, str]:
     """Daily T-bill return from Yahoo's ^IRX (13-week yield, %), carried forward; None if unavailable."""
     try:
@@ -169,7 +189,8 @@ def run_full_backtest(http: HttpClient, db: ResearchDB, store: PriceStore, out_d
 
     evs, cal, meta = bt.build_events(buys, store, tickers, progress)
     rf, rf_note = risk_free(store, cal)
-    result = bt.run_backtest(evs, cal, echo=echo, rf_daily=rf)
+    hedge = daily_returns(store, HEDGE, cal)
+    result = bt.run_backtest(evs, cal, echo=echo, rf_daily=rf, hedge_daily=hedge)
     zips = sorted(p.name for p in (CACHE / "sec-bulk").glob("*.zip"))
     snapshot = max((p.stat().st_mtime for p in (CACHE / "prices").glob("*.json.gz")), default=0)
     result["meta"] = {
@@ -362,6 +383,7 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
     ledger = led.load(ledger_path)
     logged = {r["accession"] for r in ledger}
     window = (dt.date.fromisoformat(today) - dt.timedelta(days=scan_days + 3)).isoformat()
+    stamp = led.now_utc()
     spy = store.get(BENCHMARK, refresh=True)
     cal = bt.Calendar(spy)
     added = 0
@@ -381,7 +403,7 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
         aligned, _ = bt.align(hist, cal)
         bt.attach_market_data(ev, aligned, cal)
         if led.qualifies(ev):
-            ledger.append(led.new_row(ev, today))
+            ledger.append(led.new_row(ev, stamp))
             logged.add(ev.buy.accession)
             added += 1
     summary["buys logged to the forward test"] = added

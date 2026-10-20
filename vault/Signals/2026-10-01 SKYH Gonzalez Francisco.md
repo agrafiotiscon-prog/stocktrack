@@ -15,8 +15,8 @@ strategies: ["all_liquid"]
 entry_date: "2026-10-02"
 entry_price: 9.54
 status: "open"
-abn_now: -0.0488212
-ret_now: -0.052935
+abn_now: -0.0449937
+ret_now: -0.0503144
 abn_5: -0.00434734
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid"]
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| -0.4% | – | – | – | – | -4.9% |
+| -0.4% | – | – | – | – | -4.5% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1823587/000143774926031686/0001437749-26-031686-index.htm)

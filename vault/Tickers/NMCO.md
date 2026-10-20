@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +1.8% | open |
+| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +1.6% | open |

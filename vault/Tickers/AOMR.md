@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-09-28 AOMR Fierman Michael\|2026-09-28]] | [[Fierman Michael]] | Director | $290K | 47 | -5.0% | open |
+| [[2026-09-28 AOMR Fierman Michael\|2026-09-28]] | [[Fierman Michael]] | Director | $290K | 47 | -5.3% | open |

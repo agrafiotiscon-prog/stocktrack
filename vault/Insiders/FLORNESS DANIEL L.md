@@ -2,13 +2,13 @@
 type: "insider"
 name: "FLORNESS DANIEL L"
 cik: "1017427"
-past_buys: 8
-past_mean_abn_63: 0.04742
+past_buys: 10
+past_mean_abn_63: 0.03388
 ---
 
 # FLORNESS DANIEL L
 
-Backtest record: 8 earlier buys, average 3-month excess vs SPY +4.7%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+Backtest record: 10 earlier buys, average 3-month excess vs SPY +3.4%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|

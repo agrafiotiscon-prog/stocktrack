@@ -7,7 +7,7 @@ role: "Director"
 filed: "2026-10-05"
 traded: "2026-10-05"
 score: 73
-value: 3408193
+value: 3408190
 cluster: 3
 insider_type: "unclassified"
 price: 12.73
@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40", "score_60", "cluster_3", "big_stake_up"]
 entry_date: "2026-10-06"
 entry_price: 12.7
 status: "open"
-abn_now: -0.0200562
-ret_now: -0.0338582
+abn_now: -0.0204359
+ret_now: -0.0354331
 abn_5: 0.0213242
 abn_21: 
 abn_63: 

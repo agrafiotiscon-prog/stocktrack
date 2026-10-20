@@ -1,0 +1,53 @@
+---
+type: "signal"
+ticker: "XFOR"
+company: "X4 Pharmaceuticals, Inc"
+insider: "Craig Adam R"
+role: "Executive Chairman"
+filed: "2026-10-19"
+traded: "2026-10-16"
+score: 26
+value: 11884
+cluster: 1
+insider_type: "unclassified"
+price: 2.75
+strategies: ["all_liquid"]
+entry_date: ""
+entry_price: 
+status: "pending"
+abn_now: 
+ret_now: 
+abn_5: 
+abn_21: 
+abn_63: 
+abn_126: 
+abn_252: 
+forward_test: false
+tags: ["signal", "strategy/all_liquid"]
+---
+
+# XFOR: Craig Adam R bought $12K
+
+[[XFOR]] · [[Craig Adam R]] · [[Every discretionary insider buy]]
+
+|  |  |
+|---|---|
+| Company | X4 Pharmaceuticals, Inc |
+| Insider | Craig Adam R (Executive Chairman) |
+| Traded / filed | 2026-10-16 to 2026-10-16 / 2026-10-19 |
+| Shares @ price | 4,600 @ $2.58 |
+| Score / cluster | 26 / 1 insider(s) |
+| Insider type / track record | unclassified / 1 earlier buys, -1.6% |
+| Prior 3 months | -25.5% |
+| Entry | awaiting next open |
+| Status | pending |
+
+
+## Outcome vs SPY
+
+| 1 week | 1 month | 3 months | 6 months | 1 year | So far |
+|---|---|---|---|---|---|
+| – | – | – | – | – | – |
+
+
+[SEC filing](https://www.sec.gov/Archives/edgar/data/1501697/000133949826000005/0001339498-26-000005-index.htm)

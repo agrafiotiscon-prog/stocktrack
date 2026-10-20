@@ -3,7 +3,7 @@ type: "insider"
 name: "Oberbeck Christian L"
 cik: "1349483"
 past_buys: 11
-past_mean_abn_63: 0.0846
+past_mean_abn_63: 0.08461
 ---
 
 # Oberbeck Christian L
@@ -12,4 +12,4 @@ Backtest record: 11 earlier buys, average 3-month excess vs SPY +8.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-13 | [[SAR]] | CEO and Director | $446K | 61 | +1.2% |
+| 2026-10-13 | [[SAR]] | CEO and Director | $446K | 61 | +0.5% |

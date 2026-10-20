@@ -7,7 +7,7 @@ role: "10% Owner"
 filed: "2026-09-30"
 traded: "2026-09-30"
 score: 50
-value: 66278235
+value: 66278200
 cluster: 1
 insider_type: "unclassified"
 price: 240.44
@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40"]
 entry_date: "2026-10-01"
 entry_price: 241.84
 status: "open"
-abn_now: -0.0107302
-ret_now: -0.00673995
+abn_now: -0.0133591
+ret_now: -0.0105855
 abn_5: -0.0549902
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40"]
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| -5.5% | – | – | – | – | -1.1% |
+| -5.5% | – | – | – | – | -1.3% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1031203/000090514826004310/0000905148-26-004310-index.htm)

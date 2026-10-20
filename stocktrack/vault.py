@@ -15,7 +15,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from stocktrack.backtest import PRIMARY, STRATEGIES
-from stocktrack.ledger import LEDGER_HORIZONS
+from stocktrack.ledger import LEDGER_HORIZONS, is_forward
 from stocktrack.signals import money
 
 VERDICT_ICON = {"works": "✅", "promising": "🟡", "no evidence": "⚪", "looks negative": "🟠", "hurts": "❌",
@@ -95,8 +95,8 @@ def strategy_title(key: str) -> str:
 
 
 def forward_rows(ledger: list[dict]) -> list[dict]:
-    """Ledger rows logged no later than their entry day: a true out-of-sample test."""
-    return [r for r in ledger if r["entry_date"] and r["logged"] <= r["entry_date"]]
+    """Ledger rows logged before their entry session opened: a true out-of-sample test."""
+    return [r for r in ledger if is_forward(r)]
 
 
 def forward_stats(rows: list[dict], h: int) -> dict:
@@ -179,10 +179,11 @@ def what_works(res: dict, fwd: dict, today: str) -> str:
         f21 = f.get("21", {})
         srows.append([f"[[{strategy_title(key)}]]", f"{s['signals']:,}", pct(p.get("strategy_cagr")),
                       pct(p.get("spy_cagr")), num(p.get("strategy_sharpe")), pct(p.get("strategy_max_drawdown"), 0, False),
+                      f"{pct(p.get('hedged_cagr'))} / {num(p.get('hedged_sharpe'))}",
                       pct(s["holdout"].get("annualized")), f"{f21.get('n', 0)}",
                       pct(f21.get("mean")) if f21.get("n") else "–"])
-    lines.append(table(["Strategy", "Signals", "CAGR", "SPY CAGR", "Sharpe", "Max DD", "2016+ excess /yr",
-                        "Live matured (1 mo)", "Live 1-mo excess"], srows))
+    lines.append(table(["Strategy", "Signals", "CAGR", "SPY CAGR", "Sharpe", "Max DD", "Hedged with IWM (CAGR / Sharpe)",
+                        "2016+ excess /yr", "Live matured (1 mo)", "Live 1-mo excess"], srows))
     lines.append("\n## What could make this wrong\n")
     o = res["overall"]
     lines += [
@@ -436,10 +437,14 @@ def strategy_note(key: str, s: dict, fwd: dict, ledger: list[dict]) -> str:
     for hold, sim in s["portfolio"].items():
         rows.append([hold, pct(sim.get("strategy_cagr")), pct(sim.get("spy_cagr")), num(sim.get("strategy_sharpe")),
                      num(sim.get("spy_sharpe")), pct(sim.get("strategy_max_drawdown"), 0, False), num(sim.get("beta")),
-                     pct(sim.get("years_beating_spy"), 0, False), f"{sim.get('trades', 0):,}",
-                     pct(sim.get("costs_pct_nav_per_year"), 1, False)])
-    lines.append(table(["Hold", "CAGR", "SPY", "Sharpe", "SPY Sharpe", "Max DD", "Beta", "Years beating SPY",
-                        "Trades", "Costs/yr"], rows))
+                     pct(sim.get("alpha_annual")), pct(sim.get("years_beating_spy"), 0, False), f"{sim.get('trades', 0):,}",
+                     pct(sim.get("costs_pct_nav_per_year"), 1, False),
+                     f"{pct(sim.get('hedged_cagr'))} / {num(sim.get('hedged_sharpe'))} / "
+                     f"{pct(sim.get('hedged_max_drawdown'), 0, False)}"])
+    lines.append(table(["Hold", "CAGR", "SPY", "Sharpe", "SPY Sharpe", "Max DD", "Beta", "Alpha/yr", "Years beating SPY",
+                        "Trades", "Costs/yr", "Hedged with IWM (CAGR / Sharpe / Max DD)"], rows))
+    lines.append("\n*Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is "
+                 "the edge over small caps in general. Exploratory (borrow costs ignored).\n")
     c0, c2 = s["portfolio_costs"]["0x"], s["portfolio_costs"]["2x"]
     lines.append(f"\nCost sensitivity (63-session hold): no costs {pct(c0.get('strategy_cagr'))}/yr, double costs "
                  f"{pct(c2.get('strategy_cagr'))}/yr.\n")
@@ -485,7 +490,7 @@ def signal_note(r: dict) -> str:
           "status": r["status"], "abn_now": r.get("abn_now"), "ret_now": r.get("ret_now")}
     for h in LEDGER_HORIZONS:
         fm[f"abn_{h}"] = r.get(f"abn_{h}")
-    fm["forward_test"] = bool(r["entry_date"]) and r["logged"] <= r["entry_date"]
+    fm["forward_test"] = is_forward(r)
     fm["tags"] = ["signal"] + [f"strategy/{k}" for k in strategies]
     lines = [frontmatter(fm),
              f"# {r['ticker'] or r['symbol']}: {r['owner_name']} bought {money(r['value'])}\n",
@@ -549,7 +554,7 @@ def best_insiders_note(res: dict, today: str) -> str:
 
 def research_log(day: str, summary: dict, ledger: list[dict], fwd: dict, existing: str | None,
                  matured: list[tuple[int, dict]]) -> str:
-    new = sorted((r for r in ledger if r["logged"] == day), key=lambda r: -r["score"])
+    new = sorted((r for r in ledger if r["logged"][:10] == day), key=lambda r: -r["score"])
     lines = [frontmatter({"type": "log", "date": day, "new_signals": len(new),
                           "notable": sum(1 for r in new if r["score"] >= SIGNAL_NOTE_MIN_SCORE)}),
              f"# {day}\n", "## Run\n"]

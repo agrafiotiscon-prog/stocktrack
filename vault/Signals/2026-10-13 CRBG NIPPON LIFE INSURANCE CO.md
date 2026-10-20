@@ -7,7 +7,7 @@ role: "10% Owner"
 filed: "2026-10-13"
 traded: "2026-10-08"
 score: 24
-value: 8958804
+value: 8958800
 cluster: 1
 insider_type: "unclassified"
 price: 34.4
@@ -15,8 +15,8 @@ strategies: ["all_liquid"]
 entry_date: "2026-10-14"
 entry_price: 34.04
 status: "open"
-abn_now: 0.0220297
-ret_now: 0.0123384
+abn_now: 0.021761
+ret_now: 0.0108695
 abn_5: 
 abn_21: 
 abn_63: 

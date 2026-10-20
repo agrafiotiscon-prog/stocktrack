@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -5.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-29 | [[FTHY]] | Other | $32K | 31 | +0.7% |
+| 2026-09-29 | [[FTHY]] | Other | $32K | 31 | +0.4% |

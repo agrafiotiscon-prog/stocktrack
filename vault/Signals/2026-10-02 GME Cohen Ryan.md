@@ -7,7 +7,7 @@ role: "President, CEO and Chairman"
 filed: "2026-10-02"
 traded: "2026-10-02"
 score: 79
-value: 17084270
+value: 17084300
 cluster: 3
 insider_type: "unclassified"
 price: 24.7
@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40", "score_60", "ceo_cfo_100k", "cluster_3", 
 entry_date: "2026-10-05"
 entry_price: 24.97
 status: "open"
-abn_now: 0.0588293
-ret_now: 0.0558671
+abn_now: 0.0630412
+ret_now: 0.0588707
 abn_5: 0.0521393
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| +5.2% | – | – | – | – | +5.9% |
+| +5.2% | – | – | – | – | +6.3% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1326380/000092189526002719/0000921895-26-002719-index.htm)
