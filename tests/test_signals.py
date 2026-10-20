@@ -7,6 +7,7 @@ from stocktrack.signals import (
     BuyEvent,
     build_buy,
     cluster_size,
+    count_insiders,
     dedupe_purchases,
     is_listed_stock,
     money,
@@ -192,6 +193,20 @@ class ClusterTest(unittest.TestCase):
         real = make_buy(accession="d", owner_cik="4", shares=400, value=25_000)
         self.assertEqual(cluster_size(me, [small, drip]), 1)
         self.assertEqual(cluster_size(me, [small, drip, real]), 2)
+
+    def test_different_insiders_buying_the_same_lot_stay_separate(self):
+        ceo = make_buy(accession="a", owner_cik="1", role="CEO", shares=10_000, avg_price=7.45, shares_after=90_000)
+        cfo = make_buy(accession="b", owner_cik="2", role="CFO", shares=10_000, avg_price=7.24, shares_after=30_000)
+        self.assertEqual(dedupe_purchases([ceo, cfo]), [ceo, cfo])  # prices differ by 3%
+        cfo2 = make_buy(accession="c", owner_cik="2", role="CFO", shares=10_000, avg_price=7.45, shares_after=30_000)
+        self.assertEqual(dedupe_purchases([ceo, cfo2]), [ceo, cfo2])  # same price, but different holdings
+        self.assertEqual(cluster_size(ceo, [cfo2]), 2)
+
+    def test_joint_filers_count_as_one_insider(self):
+        a = make_buy(accession="a", owner_cik="1", owner_ciks="1;9", shares=100, shares_after=1)
+        b = make_buy(accession="b", owner_cik="2", owner_ciks="2;9", shares=200, shares_after=2)
+        c = make_buy(accession="c", owner_cik="3", owner_ciks="3", shares=300, shares_after=3)
+        self.assertEqual(count_insiders([a, b, c]), 2)  # a and b share reporting owner 9
 
     def test_same_purchase_reported_by_related_filers_counts_once(self):
         fund = make_buy(accession="a", owner_cik="1", shares=5000)

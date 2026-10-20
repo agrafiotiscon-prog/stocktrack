@@ -31,7 +31,6 @@ from __future__ import annotations
 
 import bisect
 import datetime as dt
-import heapq
 import math
 import random
 import statistics
@@ -41,12 +40,13 @@ from dataclasses import dataclass, field
 from typing import Callable, Iterable
 
 from stocktrack.history import BENCHMARK, PriceHistory, PriceStore, TickerMap
-from stocktrack.signals import BuyEvent, dedupe_purchases, is_listed_stock, score_buy
+from stocktrack.signals import BuyEvent, count_insiders, dedupe_purchases, is_listed_stock, score_buy
 
 HORIZONS = (1, 5, 21, 63, 126, 252)
 PRIMARY = 63
 PATH_LEN = 126  # sessions of daily returns kept per event for portfolios
 DISCOVERY_END = "2015-12-31"
+HOLDOUT_START = "2016-01-01"
 MAX_ENTRY_DELAY = 5  # sessions after filing within which the stock must trade
 MAX_STALE = 10  # sessions an exit price may be stale
 PRICE_RATIO = (0.67, 1.5)  # insider price / market close on trade date
@@ -85,8 +85,8 @@ class Ev:
     kind: str = "unclassified"
     track_n: int = 0
     track: float | None = None  # shrunk mean of past 63-session ARs
-    first_in_year_insider: bool = True
-    first_in_year_issuer: bool = True
+    first_in_year_insider: bool | None = True  # None: within a year of the data start
+    first_in_year_issuer: bool | None = True
     score: int = 0
 
     @property
@@ -185,6 +185,9 @@ def attach_market_data(ev: Ev, hist: PriceHistory, cal: Calendar, verify: bool =
     """
     b = ev.buy
     cals = [cal.index[d] for d in hist.dates]
+    if verify and b.last_date and b.last_date > ev.filed:
+        ev.status = "bad_trade_date"  # a trade dated after its own filing is a typo
+        return
 
     # Does the insider's price match this stock's market price on the trade date?
     ti = hist.index_on_or_before(b.last_date) if b.last_date else None
@@ -266,14 +269,19 @@ def placebo_ar(hist: PriceHistory, cal: Calendar, c_entry: int) -> float | None:
     return (hist.close[j] / hist.open[i] - 1) - (cal.spy.close[c_exit] / cal.spy.open[c0] - 1)
 
 
-def _add_to_ew(hist: PriceHistory, cal: Calendar, sums: list[float], counts: list[int]) -> None:
+def _add_to_ew(hist: PriceHistory, cal: Calendar, sums: list[float], counts: list[int], start_cal: int) -> None:
+    """Add a stock's daily returns to the survivor index from `start_cal` on.
+
+    A stock joins only once its first insider filing is public: before that, being
+    in this sample depends on a future insider buy (which tends to follow declines).
+    """
     cals = [cal.index[d] for d in hist.dates]
     window, total = 20, 0.0
     for k in range(1, len(cals)):
         total += hist.dollar_volume_day[k - 1]
         if k > window:
             total -= hist.dollar_volume_day[k - 1 - window]
-        if cals[k] != cals[k - 1] + 1 or hist.raw_close[k - 1] < STUDY_MIN_PRICE:
+        if cals[k] < start_cal or cals[k] != cals[k - 1] + 1 or hist.raw_close[k - 1] < STUDY_MIN_PRICE:
             continue
         if k >= window and total / window >= STUDY_MIN_ADV:
             sums[cals[k]] += hist.close[k] / hist.close[k - 1] - 1
@@ -297,7 +305,10 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
         if ev.symbol:
             by_symbol[ev.symbol].append(ev)
         else:
-            ev.status = ev.resolve  # unlisted / reused
+            ev.status = ev.resolve  # unlisted / class_gone
+    meta["ticker_resolution"] = {}
+    for ev in evs:
+        meta["ticker_resolution"][ev.resolve] = meta["ticker_resolution"].get(ev.resolve, 0) + 1
     sums, counts = [0.0] * len(cal.dates), [0] * len(cal.dates)
     for n, (sym, group) in enumerate(sorted(by_symbol.items()), 1):
         raw = store.load(sym)
@@ -309,15 +320,18 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
         meta["bars_dropped"] += repaired
         if not hist.dates:
             continue
-        _add_to_ew(hist, cal, sums, counts)
+        _add_to_ew(hist, cal, sums, counts, min(cal.first_after(ev.filed) for ev in group))
         for ev in group:
             attach_market_data(ev, hist, cal)
+        # Placebo: the same stock over a window a year AFTER the buy, with no other
+        # signal within 63 sessions. (A window before the buy would be selected on
+        # the future buy, which tends to follow declines.)
         entries = sorted(ev.entry_cal for ev in group if ev.priced)
         for ev in group:
             if ev.priced:
-                p = ev.entry_cal - 252
+                p = ev.entry_cal + 252
                 k = bisect.bisect_left(entries, p - 63)
-                if p > 0 and not (k < len(entries) and entries[k] <= p + 63):
+                if not (k < len(entries) and entries[k] <= p + 63):
                     ev.placebo = placebo_ar(hist, cal, p)
         if progress:
             progress(n, len(by_symbol))
@@ -331,28 +345,29 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
 # --- point-in-time features ----------------------------------------------
 
 
-def add_pit_features(evs: list[Ev]) -> None:
-    """Cluster size, routine/opportunistic, track record and novelty from earlier filings only."""
+def add_pit_features(evs: list[Ev], history_start: str | None = None) -> None:
+    """Cluster size, routine/opportunistic, track record and novelty from earlier filings only.
+
+    `history_start` is the first filing date loaded; within a year of it the
+    "first buy in 12 months" flags are unknown (earlier buys weren't loaded).
+    """
     by_day: dict[str, list[Ev]] = defaultdict(list)
     for ev in evs:
         by_day[ev.filed].append(ev)
+    if not by_day:
+        return
+    start = history_start or min(by_day)
+    novelty_known_from = (dt.date.fromisoformat(start) + dt.timedelta(days=365)).isoformat()
 
     issuer_recent: dict[str, list[Ev]] = defaultdict(list)
     months: dict[str, dict[int, set[int]]] = defaultdict(lambda: defaultdict(set))
     last_owner: dict[str, str] = {}
     last_issuer: dict[str, str] = {}
-    pending: list[tuple[int, int, str, float]] = []  # (exit calendar index, seq, owner, ar63)
-    track: dict[str, list[float]] = defaultdict(lambda: [0, 0.0])
-    seq = 0
+    outcomes: dict[str, list[tuple[int, float]]] = defaultdict(list)  # owner -> sorted (exit index, AR63)
 
     for day in sorted(by_day):
         todays = by_day[day]
-        entry = min((e.entry_cal for e in todays if e.entry_cal >= 0), default=None)
-        # Outcomes that closed before this day's entry are public and usable.
-        while pending and entry is not None and pending[0][0] < entry:
-            _, _, owner, ar = heapq.heappop(pending)
-            track[owner][0] += 1
-            track[owner][1] += ar
+        # Same-day filings are public before the next open, so they count for clusters.
         for ev in todays:
             if ev.buy.counts_toward_cluster:
                 issuer_recent[ev.buy.issuer_cik].append(ev)
@@ -363,19 +378,26 @@ def add_pit_features(evs: list[Ev]) -> None:
             while peers and peers[0].filed < cutoff:
                 peers.pop(0)
             near = [p.buy for p in peers if p is not ev and _days_apart(p.buy.last_date, b.last_date) <= CLUSTER_DAYS]
-            ev.cluster = len({x.owner_cik for x in dedupe_purchases([b, *near])})
+            ev.cluster = count_insiders(dedupe_purchases([b, *near]))
 
-            n, total = track[b.owner_cik]
-            ev.track_n = int(n)
-            ev.track = (n / (n + 5)) * (total / n) if n else None
+            # Track record: earlier buys whose 63-session outcome closed before this entry.
+            past = outcomes[b.owner_cik]
+            if ev.entry_cal >= 0 and past:
+                known = past[:bisect.bisect_left(past, (ev.entry_cal, -math.inf))]
+                n = len(known)
+                ev.track_n = n
+                ev.track = (n / (n + 5)) * (sum(a for _, a in known) / n) if n else None
 
             year, month = int((b.first_date or day)[:4]), int((b.first_date or day)[5:7])
             hist = months[b.owner_cik]
             prior = [hist.get(year - k, set()) for k in (1, 2, 3)]
             if all(prior):
                 ev.kind = "routine" if all(month in p for p in prior) else "opportunistic"
-            ev.first_in_year_insider = _days_apart(last_owner.get(b.owner_cik, ""), day) > 365
-            ev.first_in_year_issuer = _days_apart(last_issuer.get(b.issuer_cik, ""), day) > 365
+            if day >= novelty_known_from:
+                ev.first_in_year_insider = _days_apart(last_owner.get(b.owner_cik, ""), day) > 365
+                ev.first_in_year_issuer = _days_apart(last_issuer.get(b.issuer_cik, ""), day) > 365
+            else:
+                ev.first_in_year_insider = ev.first_in_year_issuer = None
             ev.score = score_buy(b, ev.cluster).total
         for ev in todays:
             b = ev.buy
@@ -383,9 +405,8 @@ def add_pit_features(evs: list[Ev]) -> None:
             last_owner[b.owner_cik] = day
             last_issuer[b.issuer_cik] = day
             if PRIMARY in ev.abn:
-                seq += 1
                 ar = max(-TRACK_CLIP, min(TRACK_CLIP, ev.abn[PRIMARY]))
-                heapq.heappush(pending, (ev.exit_cal[PRIMARY], seq, b.owner_cik, ar))
+                bisect.insort(outcomes[b.owner_cik], (ev.exit_cal[PRIMARY], ar))
 
 
 def _days_apart(a: str, b: str) -> int:
@@ -427,27 +448,43 @@ def unique_signals(evs: Iterable[Ev]) -> list[Ev]:
 
 def event_stats(evs: list[Ev], h: int, bounds: tuple[float, float], key: str = "abn",
                 boot: int = 0, seed: int = SEED) -> dict:
-    """Event-level averages; CIs from a bootstrap that resamples whole months."""
+    """Event-level averages of excess returns (winsorized).
+
+    `stock_return` is the plain stock return and `unwinsorized` the excess
+    before clipping. CIs come from a moving-block bootstrap over consecutive
+    entry months: an h-session window spans about h/21 months, so neighbouring
+    months' returns overlap and must be resampled together.
+    """
     lo, hi = bounds
     pts = [(ev.month, min(max(getattr(ev, key)[h], lo), hi), ev.ret.get(h), getattr(ev, key)[h])
            for ev in unique_signals(evs) if h in getattr(ev, key)]
     if not pts:
         return {"n": 0}
     vals = sorted(a for _, a, _, _ in pts)
+    rets = [r for _, _, r, _ in pts if r is not None]
     out = {"n": len(pts), "mean": sum(vals) / len(vals), "median": percentile(vals, 0.5),
-           "hit": sum(1 for a in vals if a > 0) / len(vals), "raw_mean": sum(r for *_, r in pts) / len(pts)}
+           "hit": sum(1 for a in vals if a > 0) / len(vals),
+           "stock_return": sum(rets) / len(rets) if rets else None,
+           "unwinsorized": sum(u for *_, u in pts) / len(pts)}
     if boot:
         by_month: dict[str, list[float]] = defaultdict(lambda: [0.0, 0])
         for m, a, _, _ in pts:
             by_month[m][0] += a
             by_month[m][1] += 1
-        groups = list(by_month.values())
-        if len(groups) >= 12:
+        groups = [by_month[m] for m in sorted(by_month)]
+        block = max(1, math.ceil(h / 21))
+        if len(groups) >= 4 * block:
             rng = random.Random(seed)
+            nblocks = math.ceil(len(groups) / block)
             means = []
             for _ in range(boot):
-                draw = rng.choices(groups, k=len(groups))
-                means.append(sum(g[0] for g in draw) / sum(g[1] for g in draw))
+                tot = cnt = 0.0
+                for _ in range(nblocks):
+                    s = rng.randrange(0, len(groups) - block + 1)
+                    for g in groups[s:s + block]:
+                        tot += g[0]
+                        cnt += g[1]
+                means.append(tot / cnt)
             means.sort()
             out["ci"] = [percentile(means, 0.025), percentile(means, 0.975)]
     return out
@@ -481,9 +518,10 @@ def block_bootstrap(x: list[float], draws: int = 2000, block: int = 6, seed: int
         sample = sample[:t_len]
         means.append(sum(sample) / t_len)
     means.sort()
-    share_le = sum(1 for m in means if m <= 0) / draws
+    below = sum(1 for m in means if m < 0) + 0.5 * sum(1 for m in means if m == 0)  # mid-p
+    share = below / draws
     return {"ci": [percentile(means, 0.025), percentile(means, 0.975)],
-            "p_boot": min(1.0, 2 * min(share_le, 1 - share_le))}
+            "p_boot": min(1.0, 2 * min(share, 1 - share))}
 
 
 def ols(y: list[float], x: list[float]) -> tuple[float, float]:
@@ -507,16 +545,20 @@ def holm(pvals: dict[str, float]) -> dict[str, float]:
 # --- calendar-time portfolios -------------------------------------------------
 
 
-def calendar_time(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, min_positions: float = 5) -> dict:
-    """Monthly returns of a portfolio holding every signal for `hold` sessions.
+def calendar_time(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, min_positions: float = 5,
+                  bench: str = "spy") -> dict:
+    """Monthly returns of a portfolio holding every signal for `hold` sessions, and its benchmark.
 
     Buy-and-hold weights (each position starts at 1 and drifts with its price),
-    each company held once at a time. Months averaging fewer than
-    `min_positions` positions are dropped.
+    each company held once at a time. The benchmark gets the same weights: SPY
+    from the open on a position's entry day (when the position starts), close to
+    close after; or the survivor index (`bench="ew"`, close to close). Months
+    averaging fewer than `min_positions` positions are dropped.
     """
     n = len(cal.dates)
-    num, den, cnt = [0.0] * n, [0.0] * n, [0] * n
+    num, den, cnt, bnum = [0.0] * n, [0.0] * n, [0] * n, [0.0] * n
     held_until: dict[str, int] = {}
+    daily_bench = cal.ew_daily if bench == "ew" else cal.daily
     for ev in sorted((e for e in evs if e.path is not None and len(e.path)), key=lambda e: e.entry_cal):
         c0 = ev.entry_cal
         if held_until.get(ev.buy.issuer_cik, -1) >= c0:
@@ -525,32 +567,41 @@ def calendar_time(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, min_positio
         held_until[ev.buy.issuer_cik] = c0 + steps - 1
         v = 1.0
         for k in range(steps):
+            c = c0 + k
             r = ev.path[k]
-            num[c0 + k] += v * r
-            den[c0 + k] += v
-            cnt[c0 + k] += 1
+            num[c] += v * r
+            den[c] += v
+            cnt[c] += 1
+            if k == 0 and bench == "spy":
+                bnum[c] += v * (cal.spy.close[c] / cal.spy.open[c] - 1)
+            else:
+                bnum[c] += v * daily_bench[c]
             v *= 1 + r
     months: dict[str, list] = {}
+    daily: dict[int, tuple[float, float]] = {}
     for c in range(n):
         if den[c] <= 0:
             continue
+        rp, rb = num[c] / den[c], bnum[c] / den[c]
+        daily[c] = (rp, rb)
         m = cal.dates[c][:7]
         acc = months.setdefault(m, [1.0, 1.0, 0, 0])
-        acc[0] *= 1 + num[c] / den[c]
-        acc[1] *= 1 + cal.daily[c]
+        acc[0] *= 1 + rp
+        acc[1] *= 1 + rb
         acc[2] += 1
         acc[3] += cnt[c]
     series = []
     dropped = 0
+    last_month = cal.dates[-1][:7] if cal.dates else ""
     for m in sorted(months):
         pr, sr, days, pos = months[m]
         if pos / days < min_positions:
             dropped += 1
             continue
+        if m == last_month:
+            continue  # incomplete final month
         series.append((m, pr - 1, sr - 1))
-    if cal.dates and series and series[-1][0] == cal.dates[-1][:7]:
-        series.pop()  # incomplete final month
-    return {"series": series, "dropped_months": dropped}
+    return {"series": series, "dropped_months": dropped, "daily": daily}
 
 
 def ctp_stats(series: list[tuple[str, float, float]], boot: int = 2000) -> dict:
@@ -577,10 +628,20 @@ def split_series(series, end: str = DISCOVERY_END[:7]):
     return [r for r in series if r[0] <= end], [r for r in series if r[0] > end]
 
 
-def difference_series(a, b):
-    """Monthly (A - B) over months both portfolios cover, as a series ctp_stats can test."""
-    bm = {m: p for m, p, _ in b}
-    return [(m, p - bm[m], 0.0) for m, p, _ in a if m in bm]
+def difference_series(a: dict, b: dict, cal: Calendar) -> list[tuple[str, float, float]]:
+    """Monthly return of portfolio A minus portfolio B (calendar_time outputs), compounded
+    over the days both hold positions, in months both series keep; ctp_stats can test it."""
+    keep = {m for m, _, _ in a["series"]} & {m for m, _, _ in b["series"]}
+    acc: dict[str, list[float]] = {}
+    for c, (ra, _) in a["daily"].items():
+        rb = b["daily"].get(c)
+        m = cal.dates[c][:7]
+        if rb is None or m not in keep:
+            continue
+        x = acc.setdefault(m, [1.0, 1.0])
+        x[0] *= 1 + ra
+        x[1] *= 1 + rb[0]
+    return [(m, x[0] - x[1], 0.0) for m, x in sorted(acc.items())]
 
 
 # --- features --------------------------------------------------------------------
@@ -628,8 +689,10 @@ FEATURES: dict[str, Callable[[Ev], str]] = {
     "plan_purchase": lambda e: "DRIP/plan" if e.buy.plan_purchase else "discretionary",
     "filing_delay": lambda e: _bucket(e.buy.filing_delay_days, [(3, "0-2 days"), (11, "3-10 days"),
                                                                 (math.inf, "11+ days")]),
-    "insider_novelty": lambda e: "first buy in 12m" if e.first_in_year_insider else "repeat buyer",
-    "company_novelty": lambda e: "first insider buy in 12m" if e.first_in_year_issuer else "recent insider buys",
+    "insider_novelty": lambda e: "unknown" if e.first_in_year_insider is None
+    else ("first buy in 12m" if e.first_in_year_insider else "repeat buyer"),
+    "company_novelty": lambda e: "unknown" if e.first_in_year_issuer is None
+    else ("first insider buy in 12m" if e.first_in_year_issuer else "recent insider buys"),
 }
 
 FEATURE_NOTES = {
@@ -656,7 +719,7 @@ STRATEGIES: dict[str, tuple[str, Callable[[Ev], bool]]] = {
                        and (e.track or 0) > 0 and not e.buy.plan_purchase),
     "big_stake_up": ("Exec/director growing stake 25%+ with $100K+", lambda e: e.buy.role not in ("10% Owner", "Other")
                      and (e.buy.stake_increase or 0) >= 0.25 and e.value >= 1e5 and not e.buy.plan_purchase),
-    "first_buy_exec": ("Exec's first buy in a year, $50K+", lambda e: e.first_in_year_insider
+    "first_buy_exec": ("Exec's first buy in a year, $50K+", lambda e: e.first_in_year_insider is True
                        and e.buy.role in ("CEO", "CFO", "President", "Chair", "C-Suite") and e.value >= 5e4
                        and not e.buy.plan_purchase),
 }
@@ -737,13 +800,25 @@ def simulate(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, slots: int = 20,
     out = {"trades": trades, "skipped": skipped, "start": cal.dates[start], "end": cal.dates[-1],
            "avg_positions": positions_sum / len(navs), "final_nav": navs[-1],
            "costs_pct_nav_per_year": costs_paid / (sum(navs) / len(navs)) / (len(navs) / 252)}
-    out.update({f"strategy_{k}": v for k, v in perf(daily, rf_daily[start:n] if rf_daily else None).items()})
-    out.update({f"spy_{k}": v for k, v in perf(spy, rf_daily[start:n] if rf_daily else None).items()})
-    alpha, beta = ols(daily, spy)
-    out["beta"], out["alpha_annual"] = beta, alpha * 252
-    active = [a - b for a, b in zip(daily, spy)]
-    sd = statistics.pstdev(active)
-    out["information_ratio"] = (sum(active) / len(active)) / sd * math.sqrt(252) if sd else 0.0
+    rf = rf_daily[start:n] if rf_daily else [0.0] * len(daily)
+    out.update({f"strategy_{k}": v for k, v in perf(daily, rf).items()})
+    out.update({f"spy_{k}": v for k, v in perf(spy, rf).items()})
+    # Beta and alpha from monthly excess returns: small, thinly traded stocks react
+    # to the market with a lag, which biases daily betas down (and alphas up).
+    months: dict[str, list[float]] = {}
+    for c, r, s, f in zip(range(start, n), daily, spy, rf):
+        m = months.setdefault(cal.dates[c][:7], [1.0, 1.0, 1.0])
+        m[0] *= 1 + r
+        m[1] *= 1 + s
+        m[2] *= 1 + f
+    ys = [a - f for a, _, f in months.values()]
+    xs = [b - f for _, b, f in months.values()]
+    if len(ys) >= 12:
+        alpha, beta = ols(ys, xs)
+        out["beta"], out["alpha_annual"] = beta, (1 + alpha) ** 12 - 1
+        active = [(a - b) for a, b, _ in months.values()]
+        sd = statistics.pstdev(active)
+        out["information_ratio"] = (sum(active) / len(active)) / sd * math.sqrt(12) if sd else 0.0
     years: dict[str, list[list[float]]] = defaultdict(lambda: [[], []])
     for c, r, s in zip(range(start, n), daily, spy):
         years[cal.dates[c][:4]][0].append(r)
@@ -800,12 +875,21 @@ def coverage(evs: list[Ev]) -> dict:
     return {"by_year": {k: dict(v) for k, v in sorted(years.items())}, "status": dict(reasons)}
 
 
-def survivorship_bound(evs: list[Ev], bounds) -> dict:
-    """Headline mean AR63 if the unpriced signals had done like the median / 10th percentile priced one."""
+UNVERIFIABLE = ("unverified", "price_mismatch", "bad_trade_date")
+
+
+def survivorship_bound(evs: list[Ev], bounds, period: tuple[str, str] = ("", "9999")) -> dict:
+    """Mean AR63 if the unpriceable signals had done like the median / 10th-percentile priced one.
+
+    Signals rejected by data checks (unverified prices, typos) aren't dead companies,
+    so they aren't counted as unpriced.
+    """
     lo, hi = bounds
-    pool = [e for e in evs if is_listed_stock(e.buy.ticker) and not e.buy.plan_purchase]
+    pool = [e for e in evs if is_listed_stock(e.buy.ticker) and not e.buy.plan_purchase
+            and period[0] <= e.filed <= period[1]]
     priced = sorted(min(max(e.abn[PRIMARY], lo), hi) for e in unique_signals(pool) if e.in_study and PRIMARY in e.abn)
-    unpriced = len(unique_signals([e for e in pool if not e.priced and e.filed < "2025-07-01"]))
+    unpriced = len(unique_signals([e for e in pool if not e.priced and e.status not in UNVERIFIABLE
+                                   and e.status != "awaiting_entry" and e.filed < "2025-07-01"]))
     if not priced:
         return {}
     mean = sum(priced) / len(priced)
@@ -816,48 +900,54 @@ def survivorship_bound(evs: list[Ev], bounds) -> dict:
             "priced": len(priced), "unpriced": unpriced}
 
 
-def slice_report(groups: dict[str, list[Ev]], base_series, cal: Calendar, bounds: dict) -> dict:
+def _periods(ct: dict, cal: Calendar, sig: list[Ev], boot: int) -> dict:
+    """Discovery/holdout calendar-time stats against SPY and against the survivor index."""
+    d_ser, h_ser = split_series(ct["series"])
+    ew = calendar_time(sig, cal, bench="ew")
+    d_ew, h_ew = split_series(ew["series"])
+    return {"ctp": ctp_stats(ct["series"]), "discovery": ctp_stats(d_ser, boot=boot),
+            "holdout": ctp_stats(h_ser, boot=boot), "ctp_vs_survivors": ctp_stats(ew["series"], boot=0),
+            "discovery_vs_survivors": ctp_stats(d_ew, boot=0), "holdout_vs_survivors": ctp_stats(h_ew, boot=0)}
+
+
+def slice_report(groups: dict[str, list[Ev]], base_ct: dict, cal: Calendar, bounds: dict) -> dict:
     out = {}
     for label, g in sorted(groups.items()):
         sig = unique_signals(g)
         disc = [e for e in sig if e.filed <= DISCOVERY_END]
         ct = calendar_time(sig, cal)
-        d_ser, h_ser = split_series(ct["series"])
         row = {
             "signals": len(sig),
             "events": {str(h): event_stats(sig, h, bounds[h], boot=1000 if h == PRIMARY else 0)
                        for h in (5, 21, 63, 126, 252)},
             "variant_c": event_stats(sig, PRIMARY, bounds[PRIMARY], key="abn_c"),
             "vs_survivors": event_stats(sig, PRIMARY, bounds[PRIMARY], key="abn_ew"),
-            "ctp": ctp_stats(ct["series"]),
-            "discovery": ctp_stats(d_ser, boot=1000),
-            "holdout": ctp_stats(h_ser, boot=1000),
-            "vs_all_buys": ctp_stats(difference_series(ct["series"], base_series), boot=1000),
-            "enough_data": len(disc) >= MIN_SIGNALS and len(d_ser) >= MIN_MONTHS,
+            **_periods(ct, cal, sig, boot=1000),
+            "vs_all_buys": ctp_stats(difference_series(ct, base_ct, cal), boot=1000),
+            "enough_data": len(disc) >= MIN_SIGNALS and len(split_series(ct["series"])[0]) >= MIN_MONTHS,
         }
         out[label] = row
     return out
 
 
 def verdicts(slices: dict) -> None:
-    """Label each slice with the pre-registered verdict rule (mutates `slices`)."""
-    disc_p = {}
-    for feat, rows in slices.items():
-        for label, r in rows.items():
-            if r["enough_data"] and "p" in r["discovery"]:
-                disc_p[f"{feat}|{label}"] = r["discovery"]["p"]
-    disc_adj = holm(disc_p)
-    passed = {k for k, p in disc_adj.items()
-              if p < 0.05 and slices[k.split("|")[0]][k.split("|", 1)[1]]["discovery"]["excess_mean"] > 0}
-    hurt = {k for k, p in disc_adj.items()
-            if p < 0.05 and slices[k.split("|")[0]][k.split("|", 1)[1]]["discovery"]["excess_mean"] < 0}
-    hold_adj = holm({k: slices[k.split("|")[0]][k.split("|", 1)[1]]["holdout"].get("p", 1.0) for k in passed | hurt})
-    diff_p = {}
-    for feat, rows in slices.items():
-        for label, r in rows.items():
-            if r["enough_data"] and "p" in r["vs_all_buys"]:
-                diff_p[f"{feat}|{label}"] = r["vs_all_buys"]["p"]
-    diff_adj = holm(diff_p)
+    """Label each slice with the pre-registered verdict rule (mutates `slices`).
+
+    Holm families: (1) discovery p of every slice with enough data; (2) holdout p of
+    the slices that passed (1), to confirm them; (3) holdout p of every slice, for
+    holdout-only findings; (4) each slice minus all insider buys.
+    """
+    def row(key):
+        feat, label = key.split("|", 1)
+        return slices[feat][label]
+
+    keys = [f"{f}|{lb}" for f, rows in slices.items() for lb, r in rows.items() if r["enough_data"]]
+    disc_adj = holm({k: row(k)["discovery"]["p"] for k in keys if "p" in row(k)["discovery"]})
+    passed = {k for k, p in disc_adj.items() if p < 0.05 and row(k)["discovery"]["excess_mean"] > 0}
+    hurt = {k for k, p in disc_adj.items() if p < 0.05 and row(k)["discovery"]["excess_mean"] < 0}
+    confirm_adj = holm({k: row(k)["holdout"].get("p", 1.0) for k in passed | hurt})
+    hold_adj = holm({k: row(k)["holdout"]["p"] for k in keys if "p" in row(k)["holdout"]})
+    diff_adj = holm({k: row(k)["vs_all_buys"]["p"] for k in keys if "p" in row(k)["vs_all_buys"]})
     for feat, rows in slices.items():
         for label, r in rows.items():
             key = f"{feat}|{label}"
@@ -868,18 +958,22 @@ def verdicts(slices: dict) -> None:
                 r["verdict"] = "not enough data"
                 continue
             h = r["holdout"]
-            same_sign_hold = key in hold_adj and hold_adj[key] < 0.05 and (
-                h.get("excess_mean", 0) > 0) == (key in passed)
+            hold_pos = h.get("excess_mean", 0) > 0
+            confirmed = key in confirm_adj and confirm_adj[key] < 0.05
+            hold_sig = hold_adj.get(key, 1) < 0.05
+            survivors_ok = all(r[p].get("excess_mean", -1) > 0 for p in ("discovery_vs_survivors",
+                                                                         "holdout_vs_survivors"))
             c_ok = r["variant_c"].get("mean", 0) > 0
-            ew_ok = r["vs_survivors"].get("mean", 0) > 0
             years_ok = r["ctp"].get("years_positive", 0) >= 0.6
-            if key in passed and same_sign_hold and c_ok and ew_ok and years_ok:
+            if key in passed and confirmed and hold_pos and c_ok and survivors_ok and years_ok:
                 r["verdict"] = "works"
-            elif key in hurt and same_sign_hold:
+            elif key in hurt and confirmed and not hold_pos:
                 r["verdict"] = "hurts"
-            elif key in passed or (h.get("p", 1) < 0.05 and h.get("excess_mean", 0) > 0):
+            elif (key in passed and hold_sig and not hold_pos) or (key in hurt and hold_sig and hold_pos):
+                r["verdict"] = "reversed"
+            elif key in passed or (hold_sig and hold_pos):
                 r["verdict"] = "promising"
-            elif key in hurt or (h.get("p", 1) < 0.05 and h.get("excess_mean", 0) < 0):
+            elif key in hurt or (hold_sig and not hold_pos):
                 r["verdict"] = "looks negative"
             else:
                 r["verdict"] = "no evidence"
@@ -893,11 +987,12 @@ def verdicts(slices: dict) -> None:
 def walk_forward(evs: list[Ev], cal: Calendar, thresholds=(40, 50, 60, 70), start_year: int = 2011) -> dict:
     """Each year, pick the score threshold whose calendar-time Sharpe was best on outcomes
     known by Jan 1, apply it unchanged to that year's signals, and join the years."""
-    pool = [e for e in unique_signals(evs) if e.liquid and not e.buy.plan_purchase]
+    pool = [e for e in evs if e.liquid and not e.buy.plan_purchase]
     # A calendar-time month's return is realized at month end, and its holdings
     # only include signals filed by then, so on Jan 1 of year Y every month
-    # through December of Y-1 is known.
-    full = {t: calendar_time([e for e in pool if e.score >= t], cal)["series"] for t in thresholds}
+    # through December of Y-1 is known. Filter by score before keeping one
+    # signal per company-day, so a high-score filing isn't lost to a low-score one.
+    full = {t: calendar_time(unique_signals(e for e in pool if e.score >= t), cal)["series"] for t in thresholds}
     chosen, picked = {}, []
     last_year = max((e.year for e in pool), default=start_year)
     for year in range(start_year, last_year + 1):
@@ -911,20 +1006,25 @@ def walk_forward(evs: list[Ev], cal: Calendar, thresholds=(40, 50, 60, 70), star
                 if sharpe > best_sharpe:
                     best, best_sharpe = t, sharpe
         chosen[str(year)] = best
-        picked.extend(e for e in pool if e.year == year and e.score >= best)
+        picked.extend(unique_signals(e for e in pool if e.year == year and e.score >= best))
     ct = calendar_time(picked, cal)
     return {"thresholds": chosen, "signals": len(picked), "ctp": ctp_stats(ct["series"]),
             "events": event_stats(picked, PRIMARY, (-1e9, 1e9))}
 
 
+def _by_owner(evs: list[Ev]) -> dict[str, list[Ev]]:
+    """Each insider's discretionary buys with a known 63-session outcome, one per company-day."""
+    by_owner: dict[str, dict[tuple, Ev]] = defaultdict(dict)
+    for e in evs:
+        if PRIMARY in e.abn and not e.buy.plan_purchase:
+            by_owner[e.buy.owner_cik].setdefault(e.issuer_day, e)
+    return {k: list(v.values()) for k, v in by_owner.items()}
+
+
 def best_insiders(evs: list[Ev], bounds, min_buys: int = 5, top: int = 50) -> list[dict]:
     lo, hi = bounds
-    by_owner: dict[str, list[Ev]] = defaultdict(list)
-    for e in unique_signals(evs):
-        if PRIMARY in e.abn and not e.buy.plan_purchase:
-            by_owner[e.buy.owner_cik].append(e)
     rows = []
-    for owner, g in by_owner.items():
+    for owner, g in _by_owner(evs).items():
         if len(g) < min_buys:
             continue
         a = [min(max(e.abn[PRIMARY], lo), hi) for e in g]
@@ -939,21 +1039,21 @@ def best_insiders(evs: list[Ev], bounds, min_buys: int = 5, top: int = 50) -> li
     return rows[:top]
 
 
-def insider_records(evs: list[Ev], bounds) -> dict[str, tuple[int, float]]:
+def insider_records(evs: list[Ev], bounds=None) -> dict[str, tuple[int, float]]:
     """Every insider's (count, mean clipped 63-session AR) over buys with known outcomes."""
-    acc: dict[str, list[float]] = defaultdict(lambda: [0, 0.0])
-    for e in unique_signals(evs):
-        if PRIMARY in e.abn and not e.buy.plan_purchase:
-            a = acc[e.buy.owner_cik]
-            a[0] += 1
-            a[1] += max(-TRACK_CLIP, min(TRACK_CLIP, e.abn[PRIMARY]))
-    return {k: (int(n), s / n) for k, (n, s) in acc.items() if n}
+    out = {}
+    for owner, g in _by_owner(evs).items():
+        out[owner] = (len(g), sum(max(-TRACK_CLIP, min(TRACK_CLIP, e.abn[PRIMARY])) for e in g) / len(g))
+    return out
 
 
 def run_backtest(evs: list[Ev], cal: Calendar, echo=print, rf_daily: list[float] | None = None) -> dict:
     add_pit_features(evs)
     study = [e for e in evs if e.in_study and is_listed_stock(e.symbol or "")]
-    bounds = {h: winsor_bounds(study, h) for h in HORIZONS}
+    # Winsorizing bounds come from the discovery period only, so holdout returns
+    # don't shape how discovery results are clipped.
+    disc_study = [e for e in study if e.filed <= DISCOVERY_END] or study
+    bounds = {h: winsor_bounds(disc_study, h) for h in HORIZONS}
     echo(f"{len(evs)} signals, {sum(e.priced for e in evs)} priced, {len(study)} in the study sample")
     res: dict = {"horizons": list(HORIZONS), "primary": PRIMARY, "discovery_end": DISCOVERY_END,
                  "coverage": coverage(evs), "winsor": {str(h): bounds[h] for h in HORIZONS}}
@@ -965,12 +1065,12 @@ def run_backtest(evs: list[Ev], cal: Calendar, echo=print, rf_daily: list[float]
         "events": {str(h): event_stats(base, h, bounds[h], boot=2000 if h == PRIMARY else 0) for h in HORIZONS},
         "variant_c": event_stats(base, PRIMARY, bounds[PRIMARY], key="abn_c", boot=1000),
         "vs_survivors": event_stats(base, PRIMARY, bounds[PRIMARY], key="abn_ew", boot=1000),
-        "ctp": ctp_stats(base_ct["series"], boot=5000),
-        "discovery": ctp_stats(split_series(base_ct["series"])[0]),
-        "holdout": ctp_stats(split_series(base_ct["series"])[1]),
+        **_periods(base_ct, cal, base, boot=5000),
         "placebo": _placebo(base, bounds[PRIMARY]),
         "pre_drift_mean": _mean([e.pre_drift for e in base if e.pre_drift is not None and abs(e.pre_drift) < 1]),
         "survivorship": survivorship_bound(evs, bounds[PRIMARY]),
+        "survivorship_discovery": survivorship_bound(evs, bounds[PRIMARY], ("", DISCOVERY_END)),
+        "survivorship_holdout": survivorship_bound(evs, bounds[PRIMARY], (HOLDOUT_START, "9999")),
         "excluded_tail": event_stats([e for e in evs if e.priced and not e.in_study], PRIMARY, bounds[PRIMARY]),
     }
     echo("  overall done")
@@ -980,7 +1080,7 @@ def run_backtest(evs: list[Ev], cal: Calendar, echo=print, rf_daily: list[float]
         groups: dict[str, list[Ev]] = defaultdict(list)
         for e in study:
             groups[fn(e)].append(e)
-        slices[name] = slice_report(groups, base_ct["series"], cal, bounds)
+        slices[name] = slice_report(groups, base_ct, cal, bounds)
         echo(f"  sliced by {name}")
     verdicts(slices)
     res["slices"] = slices
@@ -991,13 +1091,12 @@ def run_backtest(evs: list[Ev], cal: Calendar, echo=print, rf_daily: list[float]
     for key, (desc, pred) in STRATEGIES.items():
         sel = unique_signals([e for e in liquid if pred(e)])
         ct = calendar_time(sel, cal)
-        d_ser, h_ser = split_series(ct["series"])
         strategies[key] = {
             "description": desc, "signals": len(sel),
             "events": {str(h): event_stats(sel, h, bounds[h], boot=1000 if h == PRIMARY else 0) for h in (5, 21, 63, 126)},
             "variant_c": event_stats(sel, PRIMARY, bounds[PRIMARY], key="abn_c"),
             "vs_survivors": event_stats(sel, PRIMARY, bounds[PRIMARY], key="abn_ew"),
-            "ctp": ctp_stats(ct["series"]), "discovery": ctp_stats(d_ser), "holdout": ctp_stats(h_ser),
+            **_periods(ct, cal, sel, boot=1000),
             "portfolio": {f"{h}d": simulate(sel, cal, hold=h, rf_daily=rf_daily) for h in (21, 63, 126)},
             "portfolio_costs": {f"{m}x": _sim_brief(simulate(sel, cal, cost_mult=m, rf_daily=rf_daily))
                                 for m in (0, 2)},

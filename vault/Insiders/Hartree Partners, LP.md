@@ -1,0 +1,15 @@
+---
+type: "insider"
+name: "Hartree Partners, LP"
+cik: "1597857"
+past_buys: 2
+past_mean_abn_63: -0.21027
+---
+
+# Hartree Partners, LP
+
+Backtest record: 2 earlier buys, average 3-month excess vs SPY -21.0%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+
+| Filed | Ticker | Role | Value | Score | vs SPY so far |
+|---|---|---|---|---|---|
+| 2026-09-28 | [[HDSN]] | 10% Owner | $605K | 30 | +0.0% |

@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS buys (
     plan_purchase   INTEGER,
     n_transactions  INTEGER,
     url             TEXT,
+    owner_ciks      TEXT,
     alerted_at      TEXT
 );
 
@@ -66,9 +67,9 @@ class Database:
         self.conn.executescript(SCHEMA)
         # Columns added after a database was created
         existing = {r["name"] for r in self.conn.execute("PRAGMA table_info(buys)")}
-        for name in ("plan_purchase",):
+        for name, kind in (("plan_purchase", "INTEGER"), ("owner_ciks", "TEXT")):
             if name not in existing:
-                self.conn.execute(f"ALTER TABLE buys ADD COLUMN {name} INTEGER")
+                self.conn.execute(f"ALTER TABLE buys ADD COLUMN {name} {kind}")
 
     def close(self) -> None:
         self.conn.close()
@@ -107,6 +108,7 @@ class Database:
         d = {f: row[f] for f in _BUY_FIELDS}
         d["plan_10b5_1"] = bool(d["plan_10b5_1"])
         d["plan_purchase"] = bool(d["plan_purchase"])
+        d["owner_ciks"] = d["owner_ciks"] or ""
         return BuyEvent(**d)
 
     def buys(

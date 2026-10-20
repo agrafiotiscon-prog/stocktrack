@@ -54,6 +54,11 @@ PLAN_PURCHASE_RE = re.compile(
     re.I,
 )
 
+NON_COMMON_RE = re.compile(
+    r"prefer|\bpfd\b|\bnotes?\b|debenture|\bbonds?\b|warrant|\brights?\b|capital securities|convertible",
+    re.I,
+)
+
 # Nasdaq convention: 5-letter symbols ending in X are mutual funds.
 _FUND_TICKER_RE = re.compile(r"^[A-Z]{4}X$")
 
@@ -87,6 +92,7 @@ class BuyEvent:
     plan_purchase: bool  # bought via DRIP, an employee/director stock purchase plan, etc.
     n_transactions: int
     url: str
+    owner_ciks: str = ""  # every reporting owner's CIK, ";"-separated
 
     @property
     def counts_toward_cluster(self) -> bool:
@@ -159,8 +165,12 @@ def owner_role(o: Owner) -> str:
 
 
 def build_buy(form: Form4) -> BuyEvent | None:
-    """Aggregate a filing's open-market purchases into one event, or None if it has none."""
-    buys = form.purchases
+    """Aggregate a filing's open-market purchases into one event, or None if it has none.
+
+    Purchases of preferred stock, notes, warrants and the like are left out:
+    they aren't a bet on the common stock this tool prices.
+    """
+    buys = [t for t in form.purchases if not NON_COMMON_RE.search(t.security or "")]
     if not buys:
         return None
 
@@ -213,24 +223,70 @@ def build_buy(form: Form4) -> BuyEvent | None:
         plan_purchase=bool(PLAN_PURCHASE_RE.search(plan_text)),
         n_transactions=len(buys),
         url=filing_index_url(form.issuer_cik or primary.cik, form.accession) if form.accession else "",
+        owner_ciks=";".join(o.cik.lstrip("0") for o in form.owners),
     )
 
 
-def dedupe_purchases(buys: list[BuyEvent]) -> list[BuyEvent]:
-    """Drop repeat reports of the same purchase, keeping the first.
+ENTITY_ROLES = ("10% Owner", "Other")
 
-    A fund and its manager (or a trust and its trustee) often file separate
-    Form 4s for the same shares; the same issuer, day and share count is
-    treated as one purchase.
+
+def owner_set(b: BuyEvent) -> set[str]:
+    """Reporting-owner CIKs of a filing (falling back to the primary owner)."""
+    ciks = {c for c in (b.owner_ciks or "").split(";") if c}
+    return ciks or {b.owner_cik}
+
+
+def same_purchase(a: BuyEvent, b: BuyEvent) -> bool:
+    """Do two filings report one purchase (e.g. a fund and its manager, or a trust and its trustee)?
+
+    They must match on company, trade date, share count and price, and also be
+    linked: a shared reporting owner, the same post-trade balance, or a fund/entity
+    filer. Two directors who each bought 1,000 shares that day stay separate.
     """
-    seen: set[tuple[str, str, int]] = set()
+    if a.issuer_cik != b.issuer_cik or a.last_date != b.last_date:
+        return False
+    if round(a.shares) == 0 or round(a.shares) != round(b.shares):
+        return False
+    if a.avg_price and b.avg_price and abs(a.avg_price / b.avg_price - 1) > 0.01:
+        return False
+    if owner_set(a) & owner_set(b):
+        return True
+    if a.shares_after is not None and a.shares_after == b.shares_after:
+        return True
+    return a.role in ENTITY_ROLES or b.role in ENTITY_ROLES
+
+
+def dedupe_purchases(buys: list[BuyEvent]) -> list[BuyEvent]:
+    """Drop repeat reports of the same purchase (see same_purchase), keeping the first."""
+    kept: dict[tuple[str, str, int], list[BuyEvent]] = {}
     out = []
     for b in buys:
-        key = (b.issuer_cik, b.last_date, round(b.shares))
-        if key not in seen:
-            seen.add(key)
-            out.append(b)
+        group = kept.setdefault((b.issuer_cik, b.last_date, round(b.shares)), [])
+        if any(same_purchase(k, b) for k in group):
+            continue
+        group.append(b)
+        out.append(b)
     return out
+
+
+def count_insiders(buys: list[BuyEvent]) -> int:
+    """Distinct insiders among filings, treating filings that share any reporting owner
+    (one fund family filing jointly, say) as one insider."""
+    parent: dict[str, str] = {}
+
+    def find(x: str) -> str:
+        while parent.setdefault(x, x) != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    roots = []
+    for b in buys:
+        ciks = sorted(owner_set(b))
+        for c in ciks[1:]:
+            parent[find(c)] = find(ciks[0])
+        roots.append(ciks[0])
+    return len({find(r) for r in roots})
 
 
 def _within(a: str, b: str, days: int) -> bool:
@@ -253,7 +309,7 @@ def cluster_size(buy: BuyEvent, peers: list[BuyEvent], window_days: int = CLUSTE
         and p.counts_toward_cluster
         and _within(p.last_date, buy.last_date, window_days)
     ]
-    return len({b.owner_cik for b in dedupe_purchases([buy, *nearby])})
+    return count_insiders(dedupe_purchases([buy, *nearby]))
 
 
 def score_buy(buy: BuyEvent, cluster: int = 1) -> Score:

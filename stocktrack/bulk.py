@@ -41,6 +41,8 @@ TRADE_FN_COLUMNS = (
     "TRANS_ACQUIRED_DISP_CD_FN",
 )
 
+_RELATIONSHIP_RE = re.compile(r"Director|Officer|TenPercentOwner|Other")
+
 _MONTHS = {m: i for i, m in enumerate(
     ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"], 1)}
 
@@ -82,14 +84,18 @@ def _rows(z: zipfile.ZipFile, name: str) -> Iterator[dict[str, str]]:
 def quarter_forms(zip_path: str | Path, doc_types: tuple[str, ...] = ("4",)) -> Iterator[Form4]:
     """Form4 objects for every filing in the quarter that has an open-market purchase."""
     with zipfile.ZipFile(zip_path) as z:
-        txs: dict[str, list[Transaction]] = defaultdict(list)
+        keyed: dict[str, list[tuple[int, Transaction]]] = defaultdict(list)
         for r in _rows(z, "NONDERIV_TRANS.tsv"):
             if r.get("TRANS_CODE") != "P" or r.get("TRANS_ACQUIRED_DISP_CD") != "A":
                 continue
             ids: list[str] = []
             for col in TRADE_FN_COLUMNS:
                 ids.extend(_fn_ids(r.get(col, "")))
-            txs[r["ACCESSION_NUMBER"]].append(
+            try:
+                order = int(r.get("NONDERIV_TRANS_SK") or 0)
+            except ValueError:
+                order = 0
+            keyed[r["ACCESSION_NUMBER"]].append((order,
                 Transaction(
                     security=r.get("SECURITY_TITLE", ""),
                     date=sec_date(r.get("TRANS_DATE", "")),
@@ -102,9 +108,12 @@ def quarter_forms(zip_path: str | Path, doc_types: tuple[str, ...] = ("4",)) -> 
                     nature=r.get("NATURE_OF_OWNERSHIP", ""),
                     footnote_ids=list(dict.fromkeys(ids)),
                 )
-            )
-        if not txs:
+            ))
+        if not keyed:
             return
+        # The TSV isn't in filing order; the surrogate key is. Balances after each
+        # purchase only make sense in that order.
+        txs = {acc: [t for _, t in sorted(rows, key=lambda x: x[0])] for acc, rows in keyed.items()}
 
         subs: dict[str, dict[str, str]] = {}
         for r in _rows(z, "SUBMISSION.tsv"):
@@ -115,7 +124,9 @@ def quarter_forms(zip_path: str | Path, doc_types: tuple[str, ...] = ("4",)) -> 
         for r in _rows(z, "REPORTINGOWNER.tsv"):
             if r["ACCESSION_NUMBER"] not in subs:
                 continue
-            rel = {x.strip() for x in (r.get("RPTOWNER_RELATIONSHIP") or "").split(",")}
+            # Values look like "Director,Officer" but older years also concatenate:
+            # "TenPercentOwnerOther", "DirectorOther".
+            rel = set(_RELATIONSHIP_RE.findall(r.get("RPTOWNER_RELATIONSHIP") or ""))
             owners[r["ACCESSION_NUMBER"]].append(
                 Owner(
                     cik=r.get("RPTOWNERCIK", ""),

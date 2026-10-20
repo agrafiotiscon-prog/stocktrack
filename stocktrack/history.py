@@ -19,6 +19,7 @@ import datetime as dt
 import gzip
 import json
 import logging
+import re
 import time
 import urllib.error
 import urllib.parse
@@ -85,18 +86,33 @@ def parse_chart(symbol: str, data: dict) -> PriceHistory | None:
         return dt.datetime.fromtimestamp(ts + offset, dt.timezone.utc).date().isoformat()
 
     # Yahoo's open/close/volume are split-adjusted; adjclose also adjusts for dividends.
-    splits = []
+    # Yahoo sometimes lists one split twice a few days apart; keep it once.
+    splits: list[tuple[str, float]] = []
+    raw_splits = []
     for s in ((r.get("events") or {}).get("splits") or {}).values():
         try:
             ratio = float(s["numerator"]) / float(s["denominator"])
-        except (KeyError, ValueError, ZeroDivisionError):
+            raw_splits.append((day_of(int(s["date"])), ratio))
+        except (KeyError, ValueError, ZeroDivisionError, TypeError):
             continue
-        if ratio > 0:
-            splits.append((day_of(int(s["date"])), ratio))
+    for day, ratio in sorted(raw_splits):
+        if ratio <= 0:
+            continue
+        if splits and abs(ratio - splits[-1][1]) < 1e-9 and \
+                (dt.date.fromisoformat(day) - dt.date.fromisoformat(splits[-1][0])).days <= 10:
+            continue
+        splits.append((day, ratio))
+
+    # Drop today's bar while the session is still open: it isn't a close yet.
+    meta = r.get("meta") or {}
+    session = (meta.get("currentTradingPeriod") or {}).get("regular") or {}
+    still_open = bool(session.get("end")) and session.get("start", 0) <= _now() < session["end"]
 
     opens, closes, vols = q.get("open") or [], q.get("close") or [], q.get("volume") or []
     rows: dict[str, tuple[float, float, float, float]] = {}
     for k, ts in enumerate(stamps):
+        if still_open and ts >= session.get("start", 0):
+            continue
         try:
             o, c, a = opens[k], closes[k], (adj[k] if adj else closes[k])
             v = vols[k] or 0
@@ -122,6 +138,10 @@ def parse_chart(symbol: str, data: dict) -> PriceHistory | None:
         dollar_volume_day=[rows[d][2] for d in days],
         raw_close=[rows[d][3] for d in days],
     )
+
+
+def _now() -> float:
+    return time.time()
 
 
 def yahoo_symbol(ticker: str) -> str:
@@ -225,6 +245,10 @@ class PriceStore:
         return stats
 
 
+# Preferred series (BAC-PL), warrants, units and rights (XYZW, XYZU, XYZR, XYZ-WS).
+_NON_COMMON_TICKER = re.compile(r"-P[A-Z]?$|-(W|WS|U|R|RT)$|^[A-Z]{4}[WUR]$")
+
+
 class TickerMap:
     """SEC's current CIK -> ticker assignments (company_tickers_exchange.json)."""
 
@@ -249,19 +273,26 @@ class TickerMap:
     def resolve(self, issuer_cik: str, filing_ticker: str) -> tuple[str | None, str]:
         """(symbol to price with, how it was resolved).
 
-        `how` is one of: "filing" (ticker still belongs to this company), "current"
-        (company now trades under another ticker), "reused" (the filing's ticker now
-        belongs to someone else and the company has no ticker), "unlisted".
+        `how` is one of:
+          "filing"     the ticker still belongs to this company
+          "current"    the company now trades under another (common-stock) ticker
+          "reused"     the filing's ticker now belongs to another CIK; priced only if the
+                       backtest's price check passes (holdco reorganisations keep the symbol)
+          "class_gone" the company only has preferred/warrant/unit lines listed now
+          "unlisted"   no current listing
         """
         cik = str(int(issuer_cik)) if issuer_cik and issuer_cik.isdigit() else issuer_cik
         current = self.by_cik.get(cik, [])
         ft = yahoo_symbol(filing_ticker) if filing_ticker else ""
         if ft and any(yahoo_symbol(t) == ft for t, _ in current):
             return ft, "filing"
+        common = [t for t, _ in current if not _NON_COMMON_TICKER.search(yahoo_symbol(t))]
+        if common:
+            return yahoo_symbol(common[0]), "current"
         if current:
-            return yahoo_symbol(current[0][0]), "current"
+            return None, "class_gone"
         if ft and ft in self.cik_of:
-            return None, "reused"
+            return ft, "reused"
         return None, "unlisted"
 
     def exchange(self, issuer_cik: str) -> str:

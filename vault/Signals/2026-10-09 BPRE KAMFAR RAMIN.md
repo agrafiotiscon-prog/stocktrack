@@ -1,0 +1,53 @@
+---
+type: "signal"
+ticker: "BPRE"
+company: "Bluerock Private Real Estate Fund"
+insider: "KAMFAR RAMIN"
+role: "Director"
+filed: "2026-10-09"
+traded: "2026-10-09"
+score: 81
+value: 8501527
+cluster: 3
+insider_type: "unclassified"
+price: 13.08
+strategies: ["all_liquid", "score_40", "score_60", "cluster_3", "big_stake_up"]
+entry_date: "2026-10-12"
+entry_price: 13.13
+status: "open"
+abn_now: -0.050899
+ret_now: -0.0654988
+abn_5: -0.0402261
+abn_21: 
+abn_63: 
+abn_126: 
+abn_252: 
+forward_test: false
+tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60", "strategy/cluster_3", "strategy/big_stake_up"]
+---
+
+# BPRE: KAMFAR RAMIN bought $8.5M
+
+[[BPRE]] · [[KAMFAR RAMIN]] · [[Every discretionary insider buy]] · [[Live score 40+ (notable)]] · [[Live score 60+ (strong)]] · [[3+ insiders buying within 14 days]] · [[Exec-director growing stake 25%+ with $100K+]]
+
+|  |  |
+|---|---|
+| Company | Bluerock Private Real Estate Fund |
+| Insider | KAMFAR RAMIN (Director) |
+| Traded / filed | 2026-10-06 to 2026-10-09 / 2026-10-09 |
+| Shares @ price | 651,063 @ $13.06 |
+| Score / cluster | 81 / 3 insider(s) |
+| Insider type / track record | unclassified / 4 earlier buys, -11.5% |
+| Prior 3 months | +3.3% |
+| Entry | 2026-10-12 @ $13.13 |
+| Status | open |
+
+
+## Outcome vs SPY
+
+| 1 week | 1 month | 3 months | 6 months | 1 year | So far |
+|---|---|---|---|---|---|
+| -4.0% | – | – | – | – | -5.1% |
+
+
+[SEC filing](https://www.sec.gov/Archives/edgar/data/1551047/000139834426018110/0001398344-26-018110-index.htm)

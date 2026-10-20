@@ -83,6 +83,19 @@ class MarketDataTest(unittest.TestCase):
         unpriced = ev_for(DAYS[10], avg_price=None)
         attach_market_data(unpriced, h, self.cal)
         self.assertEqual(unpriced.status, "unverified")
+        typo = ev_for(DAYS[10], last_date=DAYS[200])  # trade dated after its own filing
+        attach_market_data(typo, h, self.cal)
+        self.assertEqual(typo.status, "bad_trade_date")
+
+    def test_survivor_index_counts_a_stock_only_after_its_first_filing(self):
+        from stocktrack.backtest import _add_to_ew
+
+        closes = [10 * 1.01 ** k for k in range(60)]
+        h = stock(DAYS[:60], closes, closes)
+        sums, counts = [0.0] * 400, [0] * 400
+        _add_to_ew(h, self.cal, sums, counts, start_cal=40)
+        self.assertEqual(sum(counts[:40]), 0)
+        self.assertEqual(sum(counts[40:60]), 20)
 
     def test_abnormal_subtracts_spy_same_window(self):
         spy_close = [100 * 1.001 ** k for k in range(len(DAYS))]
@@ -156,6 +169,13 @@ class PitTest(unittest.TestCase):
         self.assertEqual(evs[0].kind, "unclassified")
         self.assertEqual(evs[3].kind, "routine")
         self.assertEqual(evs[4].kind, "opportunistic")
+
+    def test_novelty_unknown_in_first_year_of_data(self):
+        a = ev_for("2006-01-10", accession="a", owner_cik="1")
+        b = ev_for("2007-03-01", accession="b", owner_cik="1", shares=7)
+        add_pit_features([a, b])
+        self.assertIsNone(a.first_in_year_insider)  # an earlier buy may predate the data
+        self.assertTrue(b.first_in_year_insider)
 
     def test_features_ignore_later_filings(self):
         """Deleting everything filed after a signal must not change its features."""

@@ -19,7 +19,7 @@ from stocktrack.ledger import LEDGER_HORIZONS
 from stocktrack.signals import money
 
 VERDICT_ICON = {"works": "✅", "promising": "🟡", "no evidence": "⚪", "looks negative": "🟠", "hurts": "❌",
-                "not enough data": "❔"}
+                "reversed": "🔁", "not enough data": "❔"}
 FEATURE_TITLES = {
     "role": "Role", "value": "Purchase size", "stake_increase": "Stake increase", "cluster": "Cluster buying",
     "insider_type": "Routine vs opportunistic", "track_record": "Insider track record",
@@ -155,7 +155,8 @@ def what_works(res: dict, fwd: dict, today: str) -> str:
     lines.append("*Excess return* is the 3-month return after the filing, minus SPY's. *vs typical buy* compares the "
                  "kind against all insider buys.\n")
     rows = []
-    order = {"works": 0, "promising": 1, "looks negative": 2, "hurts": 3, "no evidence": 4, "not enough data": 5}
+    order = {"works": 0, "promising": 1, "reversed": 2, "looks negative": 3, "hurts": 4, "no evidence": 5,
+             "not enough data": 6}
     for feat, buckets in res["slices"].items():
         for label, s in buckets.items():
             e = s["events"][str(PRIMARY)]
@@ -186,8 +187,10 @@ def what_works(res: dict, fwd: dict, today: str) -> str:
     o = res["overall"]
     lines += [
         f"- **Survivorship (flatters results).** Only companies still listed today can be priced: coverage is "
-        f"{_coverage_range(res)}. The survivor index test: {pct(o['vs_survivors'].get('mean'))} vs "
-        f"{pct(o['events'][str(PRIMARY)].get('mean'))} against SPY.",
+        f"{_coverage_range(res)}. Against an index of other surviving stocks the edge is "
+        f"{pct(o['discovery_vs_survivors'].get('annualized'))}/yr in 2006-2015 and "
+        f"{pct(o['holdout_vs_survivors'].get('annualized'))}/yr since 2016 (vs SPY: "
+        f"{pct(o['discovery'].get('annualized'))} and {pct(o['holdout'].get('annualized'))}).",
         f"- **The move before you can act.** Between the insider's trade and the first possible entry the stock already "
         f"moved {pct(o.get('pre_drift_mean'))} on average. Entering one session later (variant C): "
         f"{pct(o['variant_c'].get('mean'))}.",
@@ -196,8 +199,8 @@ def what_works(res: dict, fwd: dict, today: str) -> str:
         "- **Costs are assumed**, not measured (0.1-1% per side by price, more for illiquid names). See the 0x/2x cost "
         "runs in each strategy note.",
         "- **Market beta only.** No size or value adjustment; small caps may explain part of any edge.",
-        f"- **Placebo.** The same stocks a year earlier returned {pct(o['placebo'].get('placebo_mean'))}; the insider "
-        f"timing adds {pct(o['placebo'].get('difference'))}.",
+        f"- **Placebo.** The same stocks a year after the buy returned {pct(o['placebo'].get('placebo_mean'))} over 3 "
+        f"months, vs {pct(o['placebo'].get('event_mean'))} right after it.",
     ]
     lines.append("\n## Live forward test\n")
     lines.append(_forward_table(fwd))
@@ -281,6 +284,9 @@ Repeat reports of the same purchase by related filers (a fund and its manager) c
 stock minus SPY over the same window. Returns are winsorized at the 1st/99th percentile. Windows that run past the
 data are left out, never partial. A stock that stops trading for 10+ sessions has no return for later horizons.
 
+**Survivor index.** Equal-weighted daily returns of every priced stock, each joining only after its first insider
+filing is public (joining earlier would select on future insider buys, which tend to follow declines).
+
 **Price checks.** The insider's reported price must be within 0.67-1.5x of the stock's market price on the trade
 date. Otherwise the price series is presumed to be a different security (a reused ticker, another share class, an
 ADR) or the filing a typo, and the signal is dropped. Tickers resolve through SEC's company ID, never the symbol
@@ -292,9 +298,10 @@ block bootstrap. 2006-2015 is the discovery period and 2016 onward the holdout. 
 number of slices tested ({_k(res)} tests per family). Every test ever run is appended to `data/backtest/tests_log.csv`.
 
 **Verdicts.** ✅ works = significant (after Holm) and positive in both periods, positive when entering a session later,
-positive against the survivor index, and positive in 60%+ of years. 🟡 promising = passes in one period only.
-❌ hurts / 🟠 looks negative = significantly negative. ⚪ no evidence = can't tell from zero. ❔ not enough data = fewer
-than 200 signals or 60 months in discovery.
+positive against the survivor index in both periods, and positive in 60%+ of years. 🟡 promising = significant in one
+period only. 🔁 reversed = significant in opposite directions in the two periods. ❌ hurts / 🟠 looks negative =
+significantly negative. ⚪ no evidence = can't tell from zero. ❔ not enough data = fewer than 200 signals or 60 months
+in discovery. Holdout-only findings are Holm-corrected across all slices.
 
 **Portfolio simulation.** $100,000, 20 slots, each signal bought at the next open and held 21/63/126 sessions. When
 signals outnumber free slots, the highest scores win. Position size is the smaller of NAV/20, cash and 2% of daily
@@ -323,9 +330,9 @@ def backtest_report(res: dict) -> str:
              f"# {m['run_date']} Backtest\n"]
     lines += [f"- {s}" for s in headline(res)]
     lines.append("\n## Returns after the filing, by horizon\n")
-    lines.append(table(["Horizon", "Signals", "Mean vs SPY", "Median", "Beat SPY", "Raw mean"],
+    lines.append(table(["Horizon", "Signals", "Mean vs SPY", "Median", "Beat SPY", "Stock return (mean)"],
                        [[f"{h} sessions", f"{s['n']:,}", pct(s.get("mean"), 2), pct(s.get("median"), 2),
-                         pct(s.get("hit"), 0, False), pct(s.get("raw_mean"), 2)]
+                         pct(s.get("hit"), 0, False), pct(s.get("stock_return"), 2)]
                         for h, s in o["events"].items() if s.get("n")]))
     lines.append("\n## Robustness\n")
     c = o["ctp"]
@@ -336,9 +343,11 @@ def backtest_report(res: dict) -> str:
         ["2016+ (holdout)", f"{pct(o['holdout'].get('annualized'))}/yr, p {pval(o['holdout'].get('p'))}"],
         ["Beta to SPY", num(c.get("beta"))],
         ["Entering one session later (variant C)", pct(o["variant_c"].get("mean"), 2)],
-        ["Against surviving stocks instead of SPY", pct(o["vs_survivors"].get("mean"), 2)],
-        ["Same stocks a year earlier (placebo)", f"{pct(o['placebo'].get('placebo_mean'), 2)}; difference "
-                                                 f"{pct(o['placebo'].get('difference'), 2)}"],
+        ["Against surviving stocks instead of SPY (event mean)", pct(o["vs_survivors"].get("mean"), 2)],
+        ["Against surviving stocks: 2006-2015 / 2016+ (per year)",
+         f"{pct(o['discovery_vs_survivors'].get('annualized'))} / {pct(o['holdout_vs_survivors'].get('annualized'))}"],
+        ["Same stocks a year later (placebo)", f"{pct(o['placebo'].get('placebo_mean'), 2)}; event minus placebo "
+                                               f"{pct(o['placebo'].get('difference'), 2)}"],
         ["Move between trade and first possible entry", pct(o.get("pre_drift_mean"), 2)],
         ["Survivorship bound (reported / neutral / pessimistic)",
          " / ".join(pct(o["survivorship"].get(k), 2) for k in ("reported", "neutral", "pessimistic"))],
@@ -388,9 +397,11 @@ def slice_note(feat: str, buckets: dict, res: dict) -> str:
                      pct(e.get("median")), pct(e.get("hit"), 0, False),
                      pct(s["discovery"].get("annualized")) + f" (p {pval(s.get('p_holm_discovery') or s['discovery'].get('p'))})",
                      pct(s["holdout"].get("annualized")) + f" (p {pval(s['holdout'].get('p'))})",
-                     pct(s["variant_c"].get("mean")), pct(s["vs_survivors"].get("mean")), s.get("vs_all_verdict", "–")])
+                     pct(s["variant_c"].get("mean")),
+                     f"{pct(s['discovery_vs_survivors'].get('annualized'))} / {pct(s['holdout_vs_survivors'].get('annualized'))}",
+                     s.get("vs_all_verdict", "–")])
     lines.append(table(["Bucket", "Signals", "3-mo vs SPY", "Median", "Beat SPY", "2006-15 /yr", "2016+ /yr",
-                        "Enter later", "vs survivors", "vs typical buy"], rows))
+                        "Enter later", "vs survivors (06-15 / 16+)", "vs typical buy"], rows))
     lines.append("\nHorizon detail (mean excess vs SPY):\n")
     lines.append(table(["Bucket", "1 week", "1 month", "3 months", "6 months", "1 year"],
                        [[label] + [pct(s["events"][h].get("mean")) for h in ("5", "21", "63", "126", "252")]
