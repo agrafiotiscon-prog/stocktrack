@@ -216,7 +216,8 @@ def what_works(res: dict, fwd: dict, today: str) -> str:
         "runs in each strategy note.",
         "- **Market beta only.** No size or value adjustment; small caps may explain part of any edge.",
         f"- **Placebo.** The same stocks a year after the buy returned {pct(o['placebo'].get('placebo_mean'))} over 3 "
-        f"months, vs {pct(o['placebo'].get('event_mean'))} right after it.",
+        f"months, vs {pct(o['placebo'].get('event_mean'))} right after it (a gap of "
+        f"{pct(o['placebo'].get('difference_no_exclusion'))} to {pct(o['placebo'].get('difference'))}).",
     ]
     lines.append("\n## Live forward test\n")
     lines.append(_forward_table(fwd))
@@ -302,13 +303,22 @@ Repeat reports of the same purchase by related filers (a fund and its manager) c
 stock minus SPY over the same window. Returns are winsorized at the 1st/99th percentile. Windows that run past the
 data are left out, never partial. A stock that stops trading for 10+ sessions has no return for later horizons.
 
-**Survivor index.** Equal-weighted daily returns of every priced stock, each joining only after its first insider
-filing is public (joining earlier would select on future insider buys, which tend to follow declines).
+**Survivor index.** A second benchmark made of the stocks themselves: every priced stock at $1+ trading $100K+/day,
+equal-weighted each month and then held (buy-and-hold, like the signals). Each stock joins only after its company's
+first insider filing is public (joining earlier would select on future buys, which tend to follow declines). A stock
+is left out from the open of each of its own signals' entry sessions for 63 sessions, so the index measures *other*
+stocks. Months when it holds fewer than 100 stocks (early 2006) aren't used.
+
+**Placebo.** The same stocks over 3 months a year after each buy, leaving out windows that overlap an earlier signal.
+The event side uses every event with a placebo window, since which windows overlap depends on later buys. The gap with
+no exclusions at all is reported as a conservative bound.
 
 **Price checks.** The insider's reported price must be within 0.67-1.5x of the stock's market price on the trade
 date. Otherwise the price series is presumed to be a different security (a reused ticker, another share class, an
 ADR) or the filing a typo, and the signal is dropped. Tickers resolve through SEC's company ID, never the symbol
-alone. Isolated bad ticks and sub-penny days are removed.
+alone. Bad ticks (a 4x jump on ordinary volume that reverses within 3 bars) are removed. A step that looks like a split
+Yahoo missed (a 3x rise on ordinary dollar volume, or a fall to a whole-number fraction entirely in the opening gap)
+is a data break: returns spanning it are left out. Other crashes are real and kept, as are sub-penny days.
 
 **Significance.** Each kind of buy becomes a calendar-time portfolio: every signal held 63 sessions, buy-and-hold
 weights, one position per company. Its monthly return minus SPY's is tested with Newey-West t-statistics (3 lags) and a
@@ -368,7 +378,8 @@ def backtest_report(res: dict) -> str:
         ["Against surviving stocks: 2006-2015 / 2016+ (per year)",
          f"{pct(o['discovery_vs_survivors'].get('annualized'))} / {pct(o['holdout_vs_survivors'].get('annualized'))}"],
         ["Same stocks a year later (placebo)", f"{pct(o['placebo'].get('placebo_mean'), 2)}; event minus placebo "
-                                               f"{pct(o['placebo'].get('difference'), 2)}"],
+                                               f"{pct(o['placebo'].get('difference'), 2)} (no exclusions: "
+                                               f"{pct(o['placebo'].get('difference_no_exclusion'), 2)})"],
         ["Move between trade and first possible entry", pct(o.get("pre_drift_mean"), 2)],
         ["Survivorship bound (reported / neutral / pessimistic)",
          " / ".join(pct(o["survivorship"].get(k), 2) for k in ("reported", "neutral", "pessimistic"))],

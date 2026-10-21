@@ -383,10 +383,16 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
     ledger = led.load(ledger_path)
     logged = {r["accession"] for r in ledger}
     window = (dt.date.fromisoformat(today) - dt.timedelta(days=scan_days + 3)).isoformat()
-    stamp = led.now_utc()
-    spy = store.get(BENCHMARK, refresh=True)
+    try:
+        spy = store.get(BENCHMARK, refresh=True)
+    except Exception as e:  # log today's buys anyway; outcomes catch up on the next run
+        log.warning("SPY refresh failed, using the cached history: %s", e)
+        spy = None
+    spy = spy or store.load(BENCHMARK)
+    if spy is None:
+        raise RuntimeError("no SPY history")
     cal = bt.Calendar(spy)
-    added = 0
+    new_rows = []
     for ev in evs:
         if ev.filed < window or ev.buy.accession in logged:
             continue
@@ -407,16 +413,23 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
         aligned, _ = bt.align(hist, cal)
         bt.attach_market_data(ev, aligned, cal)
         if led.qualifies(ev):
-            ledger.append(led.new_row(ev, stamp))
+            new_rows.append(led.new_row(ev, ""))
             logged.add(ev.buy.accession)
-            added += 1
-    summary["buys logged to the forward test"] = added
+    # Stamp the rows when they are written: is_forward() trusts this time.
+    stamp = led.now_utc()
+    for row in new_rows:
+        row["logged"] = stamp
+    ledger += new_rows
+    summary["buys logged to the forward test"] = len(new_rows)
     led.save(ledger_path, ledger)  # keep today's rows even if a later step fails
 
     # 5. Outcomes.
     changed, matured = led.update_outcomes(ledger, store, cal)
     summary["ledger rows updated"] = changed
     summary["outcomes matured"] = len(matured)
+    stopped = sum(1 for r in ledger if r["status"] == "break")
+    if stopped:
+        summary["rows stopped at a data break (check by hand)"] = stopped
     led.save(ledger_path, ledger)
 
     # 6. Vault.

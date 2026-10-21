@@ -51,6 +51,7 @@ MAX_ENTRY_DELAY = 5  # sessions after filing within which the stock must trade
 MAX_STALE = 10  # sessions an exit price may be stale
 PRICE_RATIO = (0.67, 1.5)  # insider price / market close on trade date
 STUDY_MIN_PRICE, STUDY_MIN_ADV = 1.0, 100_000
+EW_MIN_MEMBERS = 100  # sessions with a thinner survivor index don't count as a benchmark
 SIM_MIN_PRICE, SIM_MIN_ADV = 2.0, 1_000_000
 CLUSTER_DAYS = 14
 TRACK_MIN = 3
@@ -79,7 +80,8 @@ class Ev:
     abn_c: dict = field(default_factory=dict)  # vs SPY, entry at close (variant C)
     abn_ew: dict = field(default_factory=dict)  # vs survivor equal-weight index
     exit_cal: dict = field(default_factory=dict)
-    placebo: float | None = None  # same stock, a year earlier, 63-session AR
+    placebo: float | None = None  # same stock a year later, 63-session AR (no earlier signal overlapping)
+    placebo_all: float | None = None  # same, without the overlap exclusion (a conservative bound)
     path: array | None = None
     cluster: int = 1
     kind: str = "unclassified"
@@ -134,17 +136,33 @@ class Calendar:
         self.ew_daily = [0.0] * n
         self.ew_intraday = [0.0] * n
         self.ew_level: list[float] = []
+        self.ew_count = [0] * n  # stocks in the index each session
+        self.ew_thin: list[int] = []  # running count of sessions under EW_MIN_MEMBERS
+        self.ew_thin_months: set[str] = set()
 
     def first_after(self, day: str) -> int:
         return bisect.bisect_right(self.dates, day)
 
-    def finish_ew(self, acc: "EWAccumulator") -> None:
+    def finish_ew(self, acc: "EWAccumulator", min_members: int = EW_MIN_MEMBERS) -> None:
         self.ew_daily = [a / b if b else 0.0 for a, b in zip(acc.num, acc.den)]
         self.ew_intraday = [a / b if b else 0.0 for a, b in zip(acc.intra, acc.count)]
+        self.ew_count = list(acc.count)
+        self.ew_thin_months = set()
         level, self.ew_level = 1.0, []
         for r in self.ew_daily:
             level *= 1 + r
             self.ew_level.append(level)
+        # Sessions with too few stocks (the start of the data) aren't a benchmark.
+        thin, self.ew_thin = 0, []
+        for c, n in enumerate(self.ew_count):
+            if n < min_members:
+                thin += 1
+                self.ew_thin_months.add(self.dates[c][:7])
+            self.ew_thin.append(thin)
+
+    def ew_usable(self, c_from: int, c_to: int) -> bool:
+        """Is the survivor index populated on every session from c_from to c_to?"""
+        return self.ew_thin[c_to] == (self.ew_thin[c_from - 1] if c_from else 0)
 
     def ew_return(self, c_from: int, c_to: int) -> float:
         """Survivor index from the open of session c_from to the close of c_to."""
@@ -157,14 +175,35 @@ class EWAccumulator:
         self.intra, self.count = [0.0] * n, [0] * n
 
 
+def _quiet(hist: PriceHistory, clean: list[int], bars: list[int]) -> bool:
+    """Did these bars trade under 3x the dollar volume of the 20 clean bars before them?"""
+    window = [hist.dollar_volume_day[x] for x in clean[-20:]]
+    avg = sum(window) / len(window) if window else 0.0
+    return avg > 0 and all(hist.dollar_volume_day[x] < 3 * avg for x in bars)
+
+
+def _split_like_drop(hist: PriceHistory, a: int, b: int) -> bool:
+    """A fall to 1/R that looks like a missed R:1 split: R close to a whole number and
+    the whole step in the opening gap with a flat session after it. Real crashes
+    rarely land on a whole ratio and usually keep moving during the day."""
+    jump = hist.close[b] / hist.close[a]
+    ratio = 1 / jump
+    gap = hist.open[b] / hist.close[a]
+    return (abs(ratio - round(ratio)) <= 0.05 * ratio and abs(gap / jump - 1) <= 0.1
+            and abs(hist.close[b] / hist.open[b] - 1) <= 0.1)
+
+
 def align(hist: PriceHistory, cal: Calendar) -> tuple[PriceHistory, int]:
     """Keep bars on benchmark trading days, drop bad ticks and flag data breaks.
 
-    * Bad ticks: a close that jumps 4x up (or to under a quarter) and comes back
-      to within 2x of where it was within 3 bars. The bars in between are dropped.
-    * Data breaks: a 3x step that doesn't come back and isn't traded like news
-      (dollar volume under 3x its 20-day average): typically a split Yahoo didn't
-      adjust for. Returns that span a break are censored (hist.breaks).
+    * Bad ticks: a close that jumps 4x up (or to under a quarter) on ordinary
+      volume and comes back to within 2x of where it was within 3 bars. The bars
+      in between are dropped. Heavily traded spikes are real and kept.
+    * Data breaks: a step Yahoo didn't adjust for, i.e. a missed split. A 3x rise
+      on dollar volume under 3x its 20-day average (a missed reverse split), or a
+      fall to 1/3 or less that also looks like a split: a whole-number ratio, all
+      in the opening gap, on ordinary dollar volume. Other big falls are real
+      crashes and are kept. Returns that span a break are censored (hist.breaks).
     Sub-penny bars are kept, so a near-total loss is recorded rather than lost.
     Returns the cleaned history and the number of bars dropped.
     """
@@ -181,21 +220,19 @@ def align(hist: PriceHistory, cal: Calendar) -> tuple[PriceHistory, int]:
             if jump > 4 or jump < 0.25:
                 back = next((q for q in range(pos + 1, min(pos + 4, len(keep)))
                              if 0.5 <= close[keep[q]] / prev <= 2), None)
-                if back is not None:
+                if back is not None and _quiet(hist, clean, keep[pos:back]):
                     dropped += back - pos
                     pos = back
                     continue
         clean.append(k)
         pos += 1
     breaks = []
-    for a, b in zip(clean, clean[1:]):
+    for q in range(1, len(clean)):
+        a, b = clean[q - 1], clean[q]
         jump = close[b] / close[a]
-        if jump > 3 or jump < 1 / 3:
-            q = clean.index(a)
-            window = [hist.dollar_volume_day[x] for x in clean[max(0, q - 19):q + 1]]
-            avg = sum(window) / len(window) if window else 0.0
-            if avg > 0 and hist.dollar_volume_day[b] < 3 * avg:
-                breaks.append(hist.dates[b])
+        if ((jump > 3 or jump < 1 / 3) and _quiet(hist, clean[:q], [b])
+                and (jump > 3 or _split_like_drop(hist, a, b))):
+            breaks.append(hist.dates[b])
     if len(clean) == len(hist.dates) and not breaks:
         return hist, 0
     out = PriceHistory(hist.symbol, [hist.dates[k] for k in clean], [hist.open[k] for k in clean],
@@ -295,14 +332,17 @@ def _unprice(ev: Ev, status: str) -> None:
     ev.ret, ev.abn, ev.abn_c, ev.abn_ew, ev.exit_cal = {}, {}, {}, {}, {}
 
 
-def placebo_ar(hist: PriceHistory, cal: Calendar, c_entry: int) -> float | None:
-    """63-session AR for the same stock entered at calendar index c_entry."""
-    cals = [cal.index[d] for d in hist.dates]
+def placebo_ar(hist: PriceHistory, cal: Calendar, c_entry: int, cals: list[int] | None = None) -> float | None:
+    """63-session AR for the same stock entered at calendar index c_entry (censored at a data break, as events are)."""
+    if cals is None:
+        cals = [cal.index[d] for d in hist.dates]
     i = bisect.bisect_left(cals, c_entry)
     if i >= len(cals) or cals[i] - c_entry > MAX_ENTRY_DELAY:
         return None
     c0, c_exit = cals[i], cals[i] + PRIMARY - 1
     if c_exit >= len(cal.dates):
+        return None
+    if any(c0 < cal.index[d] <= c_exit for d in hist.breaks if d in cal.index):
         return None
     j = _exit_bar(cals, c_exit, i)
     if j is None:
@@ -318,6 +358,8 @@ def _add_to_ew(hist: PriceHistory, cal: Calendar, acc: EWAccumulator, start_cal:
       this sample depends on a future buy (which tends to follow declines).
     * Days inside its own post-signal windows (entry to entry + 63 sessions) are left
       out, so the index measures *other* stocks; those signals are already public.
+      Membership is point in time: a member is held to the open of its own entry
+      session (the overnight reaction to an after-hours filing counts) and sold there.
     * Weights drift with returns and reset to equal at each month start, matching
       the buy-and-hold returns it is compared with (a daily-rebalanced average of
       returns would be inflated by bid-ask bounce).
@@ -332,13 +374,17 @@ def _add_to_ew(hist: PriceHistory, cal: Calendar, acc: EWAccumulator, start_cal:
             total -= hist.dollar_volume_day[k - 1 - window]
         c = cals[k]
         j = bisect.bisect_right(own_entries, c) - 1
+        own = j >= 0 and c < own_entries[j] + PRIMARY
         member = (c >= start_cal and cals[k] == cals[k - 1] + 1 and hist.raw_close[k - 1] >= STUDY_MIN_PRICE
-                  and k >= window and total / window >= STUDY_MIN_ADV and c not in breaks
-                  and not (j >= 0 and c < own_entries[j] + PRIMARY))
-        if not member:
+                  and k >= window and total / window >= STUDY_MIN_ADV and c not in breaks)
+        m = cal.dates[c][:7]
+        if member and own and weight is not None:  # held overnight into its own entry session
+            w = weight if m == month else 1.0
+            acc.num[c] += w * (hist.open[k] / hist.close[k - 1] - 1)
+            acc.den[c] += w
+        if not member or own:
             weight = None
             continue
-        m = cal.dates[c][:7]
         if weight is None or m != month:
             weight, month = 1.0, m
         r = hist.close[k] / hist.close[k - 1] - 1
@@ -350,7 +396,8 @@ def _add_to_ew(hist: PriceHistory, cal: Calendar, acc: EWAccumulator, start_cal:
 
 
 def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap,
-                 progress: Callable[[int, int], None] | None = None) -> tuple[list[Ev], Calendar, dict]:
+                 progress: Callable[[int, int], None] | None = None,
+                 min_members: int = EW_MIN_MEMBERS) -> tuple[list[Ev], Calendar, dict]:
     spy = store.load(BENCHMARK)
     if spy is None:
         raise RuntimeError("no SPY history; fetch prices first")
@@ -392,25 +439,34 @@ def build_events(buys: Iterable[BuyEvent], store: PriceStore, tickers: TickerMap
             passed = sum(1 for ev in pair if ev.priced or ev.status == "awaiting_entry")
             if not ratios or passed < 0.8 * len(ratios) or not 0.9 <= percentile(ratios, 0.5) <= 1.1:
                 for ev in pair:
-                    _unprice(ev, "price_mismatch")
+                    if ev.status in ("priced", "awaiting_entry", "no_entry_bar"):
+                        _unprice(ev, "price_mismatch")
         entries = sorted(ev.entry_cal for ev in group if ev.priced)
         if entries:
-            _add_to_ew(hist, cal, acc, min(cal.first_after(ev.filed) for ev in group), entries)
-        # Placebo: the same stock over a 63-session window a year after the buy,
-        # unless an earlier signal's post-entry window overlaps it. (Excluding
-        # windows that contain a later buy would select on the future.)
+            # The stock joins the index at its own company's first filing, not at a
+            # filing by a former holder of the ticker.
+            own = {ev.buy.issuer_cik for ev in group if ev.priced}
+            start = min(cal.first_after(ev.filed) for ev in group if ev.buy.issuer_cik in own)
+            _add_to_ew(hist, cal, acc, start, entries)
+        # Placebo: the same stock over a 63-session window a year after the buy.
+        # ev.placebo leaves out windows overlapping an earlier signal's post-entry
+        # window. Which events keep one depends on later buys, so the event side of
+        # the comparison uses every event with a placebo_all (see _placebo).
+        cals = [cal.index[d] for d in hist.dates]
         for ev in group:
             if ev.priced:
                 p = ev.entry_cal + 252
+                ev.placebo_all = placebo_ar(hist, cal, p, cals)
                 k = bisect.bisect_left(entries, p - 62)
                 if not (k < len(entries) and entries[k] < p):
-                    ev.placebo = placebo_ar(hist, cal, p)
+                    ev.placebo = ev.placebo_all
         if progress:
             progress(n, len(by_symbol))
-    cal.finish_ew(acc)
+    cal.finish_ew(acc, min_members)
     for ev in evs:
         for h, c_exit in ev.exit_cal.items():
-            ev.abn_ew[h] = ev.ret[h] - cal.ew_return(ev.entry_cal, c_exit)
+            if cal.ew_usable(ev.entry_cal, c_exit):
+                ev.abn_ew[h] = ev.ret[h] - cal.ew_return(ev.entry_cal, c_exit)
     return evs, cal, meta
 
 
@@ -628,7 +684,8 @@ def calendar_time(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, min_positio
     each company held once at a time. The benchmark gets the same weights: SPY
     from the open on a position's entry day (when the position starts), close to
     close after; or the survivor index (`bench="ew"`, close to close). Months
-    averaging fewer than `min_positions` positions are dropped.
+    averaging fewer than `min_positions` positions are dropped, and so are months
+    when the survivor index is too thin to be a benchmark.
     """
     n = len(cal.dates)
     num, den, cnt, bnum = [0.0] * n, [0.0] * n, [0] * n, [0.0] * n
@@ -671,7 +728,7 @@ def calendar_time(evs: list[Ev], cal: Calendar, hold: int = PRIMARY, min_positio
     last_month = cal.dates[-1][:7] if cal.dates else ""
     for m in sorted(months):
         pr, sr, days, pos = months[m]
-        if pos / days < min_positions:
+        if pos / days < min_positions or (bench == "ew" and m in cal.ew_thin_months):
             dropped += 1
             continue
         if m == last_month:
@@ -1215,10 +1272,23 @@ def _mean(xs: list[float]) -> float | None:
 
 
 def _placebo(evs: list[Ev], bounds) -> dict:
+    """Events vs the same stocks a year later.
+
+    The event side is every event whose placebo window exists. Which placebo windows
+    are clean (no earlier signal overlapping) depends on buys after the event, so
+    restricting events to those pairs would select on the future. The difference
+    without any exclusion is reported as a conservative bound.
+    """
     lo, hi = bounds
-    pairs = [(min(max(e.abn[PRIMARY], lo), hi), min(max(e.placebo, lo), hi))
-             for e in evs if PRIMARY in e.abn and e.placebo is not None]
-    if not pairs:
+
+    def clip(x: float) -> float:
+        return min(max(x, lo), hi)
+
+    eligible = [e for e in evs if PRIMARY in e.abn and e.placebo_all is not None]
+    clean = [clip(e.placebo) for e in eligible if e.placebo is not None]
+    if not clean:
         return {"n": 0}
-    return {"n": len(pairs), "event_mean": _mean([a for a, _ in pairs]), "placebo_mean": _mean([b for _, b in pairs]),
-            "difference": _mean([a - b for a, b in pairs])}
+    event_mean, placebo_mean = _mean([clip(e.abn[PRIMARY]) for e in eligible]), _mean(clean)
+    return {"n": len(eligible), "n_placebo": len(clean), "event_mean": event_mean, "placebo_mean": placebo_mean,
+            "difference": event_mean - placebo_mean,
+            "difference_no_exclusion": _mean([clip(e.abn[PRIMARY]) - clip(e.placebo_all) for e in eligible])}

@@ -75,6 +75,41 @@ A second independent review (return math, plus a check of the run-2 fixes) confi
   longer aborts the daily run, and new ledger rows are saved before outcomes update. The 16 rows
   logged on 2026-10-20 were re-stamped to their commit time (01:56 UTC, before that day's open).
 
+## Run 4 (2026-10-21): third review round
+
+Run 3 raised the edge against the survivor index from +2.7% to +6.4% a year. A third independent review, with
+skeptics re-checking each finding against the data, traced that jump: buy-and-hold weights (+1.2 points) and leaving
+out each stock's own post-signal windows (+2.3 points) are legitimate, but part of the rest came from defects:
+- The index dropped a stock at the close *before* its own filing was public, so the overnight jump on an after-hours
+  filing (+0.9% on average) was in neither the event nor the index. Membership is now point in time: the index holds
+  the stock to the open of its entry session and sells it there (worth about -0.5 points a year on the edge).
+- In January-April 2006 the index held only 3-70 stocks, an odd set (stocks whose first filing failed the price
+  check), because every stock bought in those months sat out its own window. Sessions with fewer than 100 stocks are
+  no longer a benchmark: those months and events have no survivor comparison (about -0.25 points; the 2006 figure
+  of +9.1% vs survivors is withdrawn).
+- A reused ticker joined the index at the *former* company's rejected filings, years before the current company's
+  first filing, selecting on its later buy. The start now comes only from the company priced on that ticker.
+
+Data breaks (run 3): the rule that a 3x step on under 3x normal dollar volume is a missed split mostly caught real
+crashes, because dollar volume is measured at the crashed price (OVV 2020-03-09, Fannie Mae 2008-09-08, IMNN 2013).
+Those losses were censored and portfolios sold the close before the crash. A fall now counts as a break only if it
+looks like a split (a whole-number ratio, all in the opening gap, flat after, ordinary dollar volume). Rises keep the
+old rule (a missed reverse split). Bad-tick removal now skips heavily traded spikes, and the placebo is censored at
+breaks like the events.
+
+Placebo: dropping placebo windows that overlap an earlier signal also dropped the events *followed* by a re-buy
+190-251 sessions later, which tend to be losers, so the paired event mean was too high (+1.26% vs +0.90% for all
+events). The event side is now every event with a placebo window; the difference with no exclusions is reported as
+a conservative bound.
+
+Smaller fixes: the forward-test ledger gives a row stopped by a data break a final "break" status instead of leaving
+it open forever; the daily run stamps new rows when it writes them and falls back to cached SPY prices if the refresh
+fails; a failing reused-ticker issuer no longer relabels never-checked filings as price mismatches. Regression tests
+cover each change, and each was checked to fail when its fix is reverted.
+
+Not changed: the review found no defect in the track-record, reused-ticker or forward-timing fixes from run 3, and
+none of these changes touches a slice, bucket, horizon, benchmark choice or verdict rule.
+
 ## Forward test counting (2026-10-21)
 
 Set before any 63-session forward outcome existed. The forward test now counts one signal per company per entry day,

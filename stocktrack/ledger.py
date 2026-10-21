@@ -123,7 +123,7 @@ def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar,
     """
     changed, matured = 0, []
     for row in rows:
-        if row["status"] == "closed":
+        if row["status"] in ("closed", "break"):
             continue
         try:
             hist = store.get(row["symbol"], refresh=refresh) if row["symbol"] else None
@@ -142,21 +142,26 @@ def update_outcomes(rows: list[dict], store: PriceStore, cal: Calendar,
             continue
         before = (row["entry_date"], row["last_seen"], row["status"])
         entry_px = hist.open[hist.dates.index(ev.entry_date)]
+        # A data break after entry (a split Yahoo missed) ends the row: later prices are wrong.
+        brk = next((d for d in hist.breaks if d > ev.entry_date), None)
+        last = hist.dates.index(brk) - 1 if brk else len(hist.dates) - 1
         row["entry_date"], row["entry_price"] = ev.entry_date, entry_px
-        row["last_seen"], row["last_price"] = hist.dates[-1], hist.close[-1]
+        row["last_seen"], row["last_price"] = hist.dates[last], hist.close[last]
         for h in LEDGER_HORIZONS:
             if h in ev.ret:
                 if row[f"ret_{h}"] is None:
                     matured.append((h, row))
                 row[f"ret_{h}"], row[f"abn_{h}"] = ev.ret[h], ev.abn[h]
         # Mark to market: entry to the latest close, against SPY over the same days.
-        row["ret_now"] = hist.close[-1] / entry_px - 1
-        c_last = cal.index.get(hist.dates[-1])
+        row["ret_now"] = hist.close[last] / entry_px - 1
+        c_last = cal.index.get(hist.dates[last])
         if c_last is not None and c_last >= ev.entry_cal:
             spy_now = cal.spy.close[c_last] / cal.spy.open[ev.entry_cal] - 1
             row["abn_now"] = row["ret_now"] - spy_now
         if row[f"ret_{LEDGER_HORIZONS[-1]}"] is not None:
             row["status"] = "closed"
+        elif brk:
+            row["status"] = "break"  # final; reported in the daily summary for a manual check
         elif c_last is None or c_last < len(cal.dates) - 10:
             row["status"] = "dead"  # stopped trading; ret_now is its final outcome
         else:

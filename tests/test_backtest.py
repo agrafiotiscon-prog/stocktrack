@@ -93,13 +93,41 @@ class MarketDataTest(unittest.TestCase):
         closes = [10 * 1.01 ** k for k in range(200)]
         h = stock(DAYS[:200], closes, closes)
         acc = EWAccumulator(400)
-        _add_to_ew(h, self.cal, acc, start_cal=40, own_entries=[100])
+        _add_to_ew(h, self.cal, acc, start_cal=40, own_entries=[40, 120])
         member = [c for c in range(400) if acc.count[c]]
-        self.assertEqual(member[0], 40)  # joins only after its first filing is public
-        self.assertNotIn(100, member)  # its own post-signal window is left out...
-        self.assertNotIn(162, member)
-        self.assertIn(163, member)  # ...until 63 sessions after entry
+        self.assertEqual(member[0], 103)  # joins only after its first filing is public...
+        self.assertNotIn(120, member)  # ...and its own post-signal windows are left out
+        self.assertNotIn(182, member)
+        self.assertIn(183, member)  # until 63 sessions after entry
         self.assertEqual(member[-1], 199)
+        # Point in time: a member is held overnight into its own entry session and sold at the open...
+        self.assertAlmostEqual(acc.num[120] / acc.den[120], closes[120] / closes[119] - 1)
+        self.assertEqual(acc.intra[120], 0.0)
+        # ...but a stock that wasn't a member the day before (its first filing) earns nothing that night.
+        self.assertEqual(acc.den[40], 0.0)
+
+    def test_thin_survivor_index_is_not_a_benchmark(self):
+        from stocktrack.backtest import EWAccumulator, _add_to_ew
+
+        acc = EWAccumulator(400)
+        for k in range(3):
+            closes = [10 * (1 + 0.001 * k) ** i for i in range(400)]
+            start = 0 if k < 2 else 100  # three stocks from session 100, two before
+            _add_to_ew(stock(DAYS, closes, closes), self.cal, acc, start, [])
+        self.cal.finish_ew(acc, min_members=3)
+        self.assertFalse(self.cal.ew_usable(30, 92))
+        self.assertTrue(self.cal.ew_usable(130, 192))
+        self.assertIn(DAYS[30][:7], self.cal.ew_thin_months)
+        self.assertNotIn(DAYS[130][:7], self.cal.ew_thin_months)
+        evs = []
+        for k in range(0, 300, 7):
+            e = ev_for(DAYS[k], avg_price=10.0)
+            e.buy.issuer_cik = str(k)
+            attach_market_data(e, stock(DAYS, [10.0] * 400, [10.0] * 400), self.cal)
+            evs.append(e)
+        months = {m for m, _, _ in calendar_time(evs, self.cal, min_positions=1, bench="ew")["series"]}
+        self.assertTrue(months)
+        self.assertFalse(months & self.cal.ew_thin_months)
 
     def test_survivor_index_is_buy_and_hold(self):
         from stocktrack.backtest import EWAccumulator, _add_to_ew
@@ -131,6 +159,37 @@ class MarketDataTest(unittest.TestCase):
         h = stock(DAYS, closes, closes)
         h.dollar_volume_day[30] = 5e8  # a real 8x move trades heavily
         self.assertEqual(align(h, self.cal)[0].breaks, [])
+
+    def test_crash_is_kept_but_missed_split_is_a_break(self):
+        # A real crash: opens down, keeps falling during the day; dollar volume ends near normal.
+        closes = [8.0] * 30 + [2.2] * 370
+        opens = [8.0] * 30 + [5.4] + [2.2] * 369
+        crash = stock(DAYS, opens, closes)
+        crash.dollar_volume_day[30] = 7e6  # 1.4x normal dollar volume, about 5x the shares
+        h, _ = align(crash, self.cal)
+        self.assertEqual(h.breaks, [])
+        ev = ev_for(DAYS[10], avg_price=8.0)
+        attach_market_data(ev, h, self.cal)
+        self.assertAlmostEqual(ev.ret[63], 2.2 / 8.0 - 1)  # the loss is recorded, not censored
+        # A missed 4:1 split: the whole step in the opening gap, flat after, ordinary dollar volume.
+        closes = [40.0] * 30 + [10.0] * 370
+        self.assertEqual(align(stock(DAYS, closes, closes), self.cal)[0].breaks, [DAYS[30]])
+
+    def test_heavily_traded_spike_is_kept(self):
+        closes = [10.0, 10.0, 50.0, 10.0, 10.0]
+        h = stock(DAYS[:5], closes, closes)
+        h.dollar_volume_day[2] = 5e8  # a real squeeze, 100x normal dollar volume
+        h, repaired = align(h, self.cal)
+        self.assertEqual(repaired, 0)
+        self.assertEqual(h.close, closes)
+
+    def test_placebo_is_censored_at_a_break(self):
+        from stocktrack.backtest import placebo_ar
+
+        closes = [2.0] * 30 + [16.0] * 370
+        h, _ = align(stock(DAYS, closes, closes), self.cal)
+        self.assertIsNone(placebo_ar(h, self.cal, 10))  # the window spans the unadjusted split
+        self.assertIsNotNone(placebo_ar(h, self.cal, 40))
 
     def test_multi_bar_bad_tick(self):
         closes = [10.0, 10.0, 1.0, 1.1, 10.0, 10.0]  # two-bar dip to a tenth

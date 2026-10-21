@@ -71,6 +71,12 @@ class PipelineTest(unittest.TestCase):
         self.assertIn("verdict", next(iter(r["slices"]["role"].values())))
         self.assertGreater(r["strategies"]["all_liquid"]["portfolio"]["63d"]["trades"], 0)
 
+    def test_no_survivor_benchmark_while_the_index_is_thin(self):
+        self.assertFalse(any(e.abn_ew for e in self.evs))  # six stocks never make a 100-stock index
+        buys, store = synthetic_buys()
+        evs, _, _ = build_events(buys, store, FakeTickers(), min_members=0)
+        self.assertTrue(any(e.abn_ew for e in evs))
+
     def test_ledger_roundtrip_and_outcomes(self):
         ev = next(e for e in self.evs if e.priced)
         row = led.new_row(ev, logged=ev.filed)
@@ -146,6 +152,80 @@ class PipelineTest(unittest.TestCase):
             vlt.build_vault(d, self.res, [row], {}, today=today)
             self.assertIn("- new insider buys: 7", log.read_text())
             self.assertIn("My observation.", log.read_text())
+
+
+class ReusedTickers:
+    """Issuer 900 once used ticker T1 (its filings don't match T1's prices); issuer 901 trades as T1 now."""
+
+    def resolve(self, cik, ticker):
+        return ("T1", "reused") if cik == "900" else ("T1", "filing")
+
+    def exchange(self, cik):
+        return "NYSE"
+
+
+class EdgeCaseTest(unittest.TestCase):
+    def test_placebo_event_side_uses_every_eligible_event(self):
+        from stocktrack.backtest import _placebo
+
+        evs = [Ev(buy=make_buy(), filed=DAYS[0]) for _ in range(3)]
+        evs[0].abn, evs[0].placebo_all, evs[0].placebo = {63: 0.10}, 0.0, None  # placebo window overlapped
+        evs[1].abn, evs[1].placebo_all, evs[1].placebo = {63: -0.10}, 0.02, 0.02
+        evs[2].abn = {63: 0.5}  # no placebo window in the data: not eligible
+        p = _placebo(evs, (-1, 1))
+        self.assertEqual((p["n"], p["n_placebo"]), (2, 1))
+        self.assertAlmostEqual(p["event_mean"], 0.0)
+        self.assertAlmostEqual(p["difference"], -0.02)
+        self.assertAlmostEqual(p["difference_no_exclusion"], (0.10 - 0.0 + -0.10 - 0.02) / 2)
+
+    def test_reused_ticker_needs_consistent_matches_and_starts_index_at_own_filings(self):
+        store = FakeStore()
+        hist = store.hist["T1"]
+        buys = []
+        for n, i in enumerate(range(20, 120, 20)):  # the old company: 1 of 5 filings matches by chance
+            price = hist.close[i - 1] * (1.0 if n == 0 else 5.0)
+            buys.append(make_buy(accession=f"old{n}", issuer_cik="900", ticker="T1", last_date=DAYS[i - 1],
+                                 first_date=DAYS[i - 1], filed_at=DAYS[i], avg_price=price))
+        buys.append(make_buy(accession="old-unverified", issuer_cik="900", ticker="T1", last_date=DAYS[130],
+                             first_date=DAYS[130], filed_at=DAYS[131], avg_price=None))
+        buys.append(make_buy(accession="new", issuer_cik="901", ticker="T1", last_date=DAYS[399],
+                             first_date=DAYS[399], filed_at=DAYS[400], avg_price=hist.close[399]))
+        evs, cal, _ = build_events(buys, store, ReusedTickers(), min_members=1)
+        status = {e.buy.accession: e.status for e in evs}
+        self.assertTrue(all(status[f"old{n}"] == "price_mismatch" for n in range(5)))
+        self.assertEqual(status["old-unverified"], "unverified")  # never compared, so not relabelled
+        self.assertEqual(status["new"], "priced")
+        # The index holds T1 only from the current company's first filing, not the old company's.
+        self.assertEqual(sum(cal.ew_count[:401]), 0)
+
+    def test_ledger_row_stopped_by_a_data_break(self):
+        store = FakeStore()
+        h = store.hist["T2"]
+        closes = list(h.close[:300]) + [c * 4 for c in h.close[300:]]  # a missed 1:4 reverse split
+        store.hist["T2"] = PriceHistory("T2", list(DAYS), closes, closes, [5e7] * len(DAYS), closes)
+        cal = Calendar(store.hist["SPY"])
+        buy = make_buy(accession="x", issuer_cik="102", ticker="T2", last_date=DAYS[249], first_date=DAYS[249],
+                       filed_at=DAYS[250], avg_price=closes[249])
+        ev = Ev(buy=buy, filed=DAYS[250], symbol="T2")
+        row = led.new_row(ev, logged=DAYS[250])
+        led.update_outcomes([row], store, cal, refresh=False)
+        self.assertEqual(row["status"], "break")
+        self.assertEqual(row["last_seen"], DAYS[299])  # marked to the bar before the break
+        self.assertIsNotNone(row["abn_21"])
+        self.assertIsNone(row["abn_63"])
+        self.assertEqual(led.update_outcomes([row], store, cal, refresh=False), (0, []))
+
+    def test_failed_price_download_leaves_the_row_alone(self):
+        class Failing(FakeStore):
+            def get(self, sym, refresh=False):
+                raise OSError("network down")
+
+        store = Failing()
+        ev = Ev(buy=make_buy(ticker="T0", filed_at=DAYS[10]), filed=DAYS[10], symbol="T0")
+        row = led.new_row(ev, logged=DAYS[10])
+        before = dict(row)
+        self.assertEqual(led.update_outcomes([row], store, Calendar(store.hist["SPY"]), refresh=False), (0, []))
+        self.assertEqual(row, before)
 
 
 class FormatTest(unittest.TestCase):
