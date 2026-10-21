@@ -3,7 +3,7 @@ type: "insider"
 name: "WARD JR STEPHEN M"
 cik: "1164644"
 past_buys: 1
-past_mean_abn_63: -0.22032
+past_mean_abn_63: -0.22031
 ---
 
 # WARD JR STEPHEN M

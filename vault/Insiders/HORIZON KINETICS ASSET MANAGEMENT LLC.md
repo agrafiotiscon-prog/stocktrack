@@ -2,13 +2,13 @@
 type: "insider"
 name: "HORIZON KINETICS ASSET MANAGEMENT LLC"
 cik: "1056823"
-past_buys: 869
-past_mean_abn_63: 0.05971
+past_buys: 871
+past_mean_abn_63: 0.05913
 ---
 
 # HORIZON KINETICS ASSET MANAGEMENT LLC
 
-Backtest record: 869 earlier buys, average 3-month excess vs SPY +6.0%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+Backtest record: 871 earlier buys, average 3-month excess vs SPY +5.9%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|

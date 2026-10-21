@@ -1,13 +1,13 @@
 ---
 type: "methodology"
-backtest: "2026-10-20"
+backtest: "2026-10-21"
 ---
 
 # Methodology
 
 **Data.** SEC Insider Transactions Data Sets (2006q1_form345.zip .. 2026q3_form345.zip (83 files)) plus daily EDGAR filings for the latest weeks.
 Only Form 4 open-market purchases (transaction code P) count. Prices are daily, split- and dividend-adjusted, from Yahoo
-Finance (snapshot 2026-10-20, last price date 2026-10-19).
+Finance (snapshot 2026-10-21, last price date 2026-10-20).
 
 **One signal per company per day.** Several insiders filing on the same day share one return, so they count once.
 Repeat reports of the same purchase by related filers (a fund and its manager) count once.
@@ -23,13 +23,22 @@ Repeat reports of the same purchase by related filers (a fund and its manager) c
 stock minus SPY over the same window. Returns are winsorized at the 1st/99th percentile. Windows that run past the
 data are left out, never partial. A stock that stops trading for 10+ sessions has no return for later horizons.
 
-**Survivor index.** Equal-weighted daily returns of every priced stock, each joining only after its first insider
-filing is public (joining earlier would select on future insider buys, which tend to follow declines).
+**Survivor index.** A second benchmark made of the stocks themselves: every priced stock at $1+ trading $100K+/day,
+equal-weighted each month and then held (buy-and-hold, like the signals). Each stock joins only after its company's
+first insider filing is public (joining earlier would select on future buys, which tend to follow declines). A stock
+is left out from the open of each of its own signals' entry sessions for 63 sessions, so the index measures *other*
+stocks. Months when it holds fewer than 100 stocks (early 2006) aren't used.
+
+**Placebo.** The same stocks over 3 months a year after each buy, leaving out windows that overlap an earlier signal.
+The event side uses every event with a placebo window, since which windows overlap depends on later buys. The gap with
+no exclusions at all is reported as a conservative bound.
 
 **Price checks.** The insider's reported price must be within 0.67-1.5x of the stock's market price on the trade
 date. Otherwise the price series is presumed to be a different security (a reused ticker, another share class, an
 ADR) or the filing a typo, and the signal is dropped. Tickers resolve through SEC's company ID, never the symbol
-alone. Isolated bad ticks and sub-penny days are removed.
+alone. Bad ticks (a 4x jump on ordinary volume that reverses within 3 bars) are removed. A step that looks like a split
+Yahoo missed (a 3x rise on ordinary dollar volume, or a fall to a whole-number fraction entirely in the opening gap)
+is a data break: returns spanning it are left out. Other crashes are real and kept, as are sub-penny days.
 
 **Significance.** Each kind of buy becomes a calendar-time portfolio: every signal held 63 sessions, buy-and-hold
 weights, one position per company. Its monthly return minus SPY's is tested with Newey-West t-statistics (3 lags) and a
@@ -55,4 +64,4 @@ size/value factors). The routine/opportunistic split uses purchases only, becaus
 **Changes after the pre-registration** are bug fixes only, each listed in `data/backtest/CHANGES.md`
 (found by an independent adversarial review of the code).
 
-**Reproducibility.** Git commit `7ad7d7d`, config hash `7a43c9e85fe88959`, seed 20061.
+**Reproducibility.** Git commit `f58dfa5`, config hash `cd327b139f8521d7`, seed 20061.

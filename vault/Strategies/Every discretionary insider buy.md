@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "all_liquid"
-signals: 67477
-cagr: 0.0555775
-spy_cagr: 0.110668
-sharpe: 0.27311
+signals: 67489
+cagr: 0.0556971
+spy_cagr: 0.110825
+sharpe: 0.27353
 max_drawdown: 0.584268
-holdout_excess: 0.00330757
+holdout_excess: 0.0031164
 ---
 
 # Every discretionary insider buy
@@ -17,28 +17,28 @@ Rule key: `all_liquid`. Liquid stocks only ($2+, $1M+/day), plan purchases exclu
 
 | Measure | Value |
 |---|---|
-| Signals | 67,477 |
+| Signals | 67,489 |
 | 3-month excess vs SPY (mean / median) | +0.8% / -0.7% |
 | Beat SPY over 3 months | 48% |
 | Entering one session later | +0.6% |
-| vs surviving stocks | +1.2% |
-| 2006-2015 excess /yr | +6.4% (p 0.017) |
-| 2016+ excess /yr | +0.3% (p 0.927) |
+| vs surviving stocks | +1.0% |
+| 2006-2015 excess /yr | +6.4% (p 0.018) |
+| 2016+ excess /yr | +0.3% (p 0.932) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +7.3% | +11.1% | 0.33 | 0.55 | 61% | 1.21 | -3.7% | 38% | 4,977 | 9.2% | -0.9% / -0.12 / 67% |
-| 63d | +5.6% | +11.1% | 0.27 | 0.55 | 58% | 1.18 | -5.5% | 43% | 1,660 | 2.7% | -2.7% / -0.28 / 65% |
-| 126d | +6.6% | +11.1% | 0.31 | 0.55 | 54% | 1.15 | -4.3% | 33% | 840 | 1.5% | -2.0% / -0.21 / 58% |
+| 21d | +7.2% | +11.1% | 0.33 | 0.56 | 61% | 1.21 | -3.7% | 38% | 4,977 | 9.2% | -1.0% / -0.12 / 67% |
+| 63d | +5.6% | +11.1% | 0.27 | 0.56 | 58% | 1.18 | -5.5% | 43% | 1,660 | 2.7% | -2.7% / -0.28 / 65% |
+| 126d | +6.6% | +11.1% | 0.31 | 0.56 | 54% | 1.15 | -4.3% | 33% | 840 | 1.5% | -1.9% / -0.21 / 58% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.8%/yr.
+Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.9%/yr.
 
 
 ### Year by year (63-session hold)
@@ -65,7 +65,7 @@ Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.8%/yr.
 | 2023 | +25.4% | +26.2% | -0.8% |
 | 2024 | -14.2% | +24.9% | -39.1% |
 | 2025 | -4.2% | +17.7% | -21.9% |
-| 2026 | -1.8% | +13.3% | -15.1% |
+| 2026 | -1.6% | +13.7% | -15.2% |
 
 
 ## Live forward test

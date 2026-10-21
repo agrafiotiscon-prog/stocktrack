@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "score_60"
-signals: 7190
-cagr: 0.111434
-spy_cagr: 0.110437
-sharpe: 0.459648
+signals: 7193
+cagr: 0.111632
+spy_cagr: 0.110594
+sharpe: 0.460294
 max_drawdown: 0.619337
-holdout_excess: 0.0205644
+holdout_excess: 0.0203495
 ---
 
 # Live score 60+ (strong)
@@ -17,22 +17,22 @@ Rule key: `score_60`. Liquid stocks only ($2+, $1M+/day), plan purchases exclude
 
 | Measure | Value |
 |---|---|
-| Signals | 7,190 |
+| Signals | 7,193 |
 | 3-month excess vs SPY (mean / median) | +1.7% / -0.5% |
 | Beat SPY over 3 months | 49% |
 | Entering one session later | +1.4% |
-| vs surviving stocks | +2.0% |
+| vs surviving stocks | +1.8% |
 | 2006-2015 excess /yr | +7.4% (p 0.070) |
-| 2016+ excess /yr | +2.1% (p 0.703) |
+| 2016+ excess /yr | +2.0% (p 0.706) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +4.7% | +11.0% | 0.24 | 0.55 | 62% | 0.92 | -4.0% | 33% | 3,296 | 6.2% | +0.4% / -0.05 / 59% |
-| 63d | +11.1% | +11.0% | 0.46 | 0.55 | 62% | 1.24 | -0.1% | 62% | 1,583 | 3.0% | +3.5% / 0.20 / 32% |
-| 126d | +12.1% | +11.0% | 0.49 | 0.55 | 65% | 1.13 | +1.2% | 57% | 822 | 1.6% | +4.2% / 0.24 / 36% |
+| 21d | +4.7% | +11.1% | 0.24 | 0.55 | 62% | 0.92 | -4.0% | 33% | 3,298 | 6.2% | +0.4% / -0.05 / 59% |
+| 63d | +11.2% | +11.1% | 0.46 | 0.55 | 62% | 1.24 | -0.1% | 62% | 1,584 | 3.0% | +3.5% / 0.20 / 32% |
+| 126d | +11.5% | +11.1% | 0.47 | 0.55 | 65% | 1.13 | +0.7% | 57% | 822 | 1.6% | +3.6% / 0.20 / 43% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
@@ -65,7 +65,7 @@ Cost sensitivity (63-session hold): no costs +13.8%/yr, double costs +8.3%/yr.
 | 2023 | +38.3% | +26.2% | +12.1% |
 | 2024 | +3.6% | +24.9% | -21.3% |
 | 2025 | +24.1% | +17.7% | +6.4% |
-| 2026 | +2.0% | +13.3% | -11.2% |
+| 2026 | +2.5% | +13.7% | -11.2% |
 
 
 ## Live forward test
