@@ -20,7 +20,9 @@ trading costs.**
    t 3.8) and 2016+ (+5.5%, t 4.5), and in 19 of 21 years (2007 and 2021 were negative).
 2. **Against the S&P 500 it has faded.** +7.9% a year in 2006-2015 (p 0.006), +1.1% since 2016 (p 0.77).
    The gap between the two comparisons is mostly the size effect: insider buys are mostly in small stocks, and
-   small stocks badly trailed the large-cap S&P 500 in the last decade.
+   small stocks badly trailed the large-cap S&P 500 in the last decade. The comparable-stock index returned 8.8% a
+   year over 2006-2026, a little above the Russell 2000 (8.3%, as survivors should be), against 11.1% for the
+   S&P 500.
 3. **Much of the move happens before you can act.** Between the insider's trade and the first open after the
    filing, the stock is already up about **+1.3%** on average.
 4. **A typical insider buy loses to the market.** The *average* is pulled up by a few big winners. The *median*
@@ -77,7 +79,7 @@ confidence.
   and statistics. All were fixed, and each run is logged in `data/backtest/CHANGES.md`. The edge against SPY barely
   moved through all of it (+4.3% a year). The edge against comparable stocks moved as the comparison index was
   corrected: +2.7% (run 2), +6.4% (run 3), +5.6% (run 4). Run 4 uses the stricter of two reasonable conventions
-  for the overnight reaction to a filing, so treat the edge as roughly +5-6% a year.
+  for the overnight reaction to a filing; the other gives +6.1%. Treat the edge as roughly +5.5-6% a year.
 
 ## Open experiments
 
