@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -46.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-13 | [[FEAM]] | Director | $215K | 45 | -21.7% |
+| 2026-10-13 | [[FEAM]] | Director | $215K | 45 | -22.1% |

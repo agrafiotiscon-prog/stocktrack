@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +9.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[XENE]] | PRESIDENT & CEO | $1.1M | 77 | -9.7% |
+| 2026-10-01 | [[XENE]] | PRESIDENT & CEO | $1.1M | 77 | -7.0% |

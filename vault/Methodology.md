@@ -55,4 +55,4 @@ size/value factors). The routine/opportunistic split uses purchases only, becaus
 **Changes after the pre-registration** are bug fixes only, each listed in `data/backtest/CHANGES.md`
 (found by an independent adversarial review of the code).
 
-**Reproducibility.** Git commit `1adf272`, config hash `bd33faac1733f80c`, seed 20061.
+**Reproducibility.** Git commit `7ad7d7d`, config hash `7a43c9e85fe88959`, seed 20061.

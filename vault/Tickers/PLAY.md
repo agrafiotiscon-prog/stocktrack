@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-09-28 PLAY Hatton Cory\|2026-09-28]] | [[Hatton Cory]] | Interim CFO | $26K | 44 | +17.9% | open |
+| [[2026-09-28 PLAY Hatton Cory\|2026-09-28]] | [[Hatton Cory]] | Interim CFO | $26K | 44 | +18.8% | open |

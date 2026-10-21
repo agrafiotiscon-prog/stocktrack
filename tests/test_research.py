@@ -107,6 +107,15 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(stats["rows"], 1)
         self.assertAlmostEqual(stats["21"]["mean"], 0.05)
 
+    def test_forward_test_counts_one_signal_per_company_day(self):
+        ev = next(e for e in self.evs if e.priced)
+        first = dict(led.new_row(ev, logged=ev.filed), entry_date=ev.entry_date, abn_21=0.05)
+        same_day = dict(first, accession="other", owner_cik="999", owner_name="Another Insider")
+        next_day = dict(first, accession="later", entry_date=DAYS[DAYS.index(ev.entry_date) + 1], abn_21=-0.01)
+        stats = vlt.forward_by_strategy([first, same_day, next_day])["all"]
+        self.assertEqual(stats["rows"], 2)
+        self.assertAlmostEqual(stats["21"]["mean"], 0.02)
+
     def test_vault_build(self):
         ev = [e for e in self.evs if e.priced and e.score >= 40][-1]
         today = ev.filed  # signal notes cover the last 400 days
@@ -130,6 +139,12 @@ class PipelineTest(unittest.TestCase):
             log = root / "Research Log" / f"{today}.md"
             log.write_text(log.read_text() + "My observation.\n")
             vlt.build_vault(d, self.res, [row], {}, today=today)
+            self.assertIn("My observation.", log.read_text())
+
+            # Rebuilding without a run (the `research vault` action) keeps the day's run summary
+            vlt.build_vault(d, self.res, [row], {}, today=today, run_summary={"new insider buys": 7})
+            vlt.build_vault(d, self.res, [row], {}, today=today)
+            self.assertIn("- new insider buys: 7", log.read_text())
             self.assertIn("My observation.", log.read_text())
 
 

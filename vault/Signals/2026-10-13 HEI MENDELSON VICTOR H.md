@@ -1,6 +1,6 @@
 ---
 type: "signal"
-ticker: "HEI, HEI.A"
+ticker: "HEI"
 company: "HEICO CORP"
 insider: "MENDELSON VICTOR H"
 role: "Co-COB and Co-CEO"
@@ -15,9 +15,9 @@ strategies: ["all_liquid", "score_40", "score_60", "ceo_cfo_100k", "big_stake_up
 entry_date: "2026-10-14"
 entry_price: 297.28
 status: "open"
-abn_now: 0.0475236
-ret_now: 0.0366322
-abn_5: 
+abn_now: 0.0342501
+ret_now: 0.0266752
+abn_5: 0.0342501
 abn_21: 
 abn_63: 
 abn_126: 
@@ -26,9 +26,9 @@ forward_test: false
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60", "strategy/ceo_cfo_100k", "strategy/big_stake_up"]
 ---
 
-# HEI, HEI.A: MENDELSON VICTOR H bought $175K
+# HEI: MENDELSON VICTOR H bought $175K
 
-[[HEI, HEI.A]] · [[MENDELSON VICTOR H]] · [[Every discretionary insider buy]] · [[Live score 40+ (notable)]] · [[Live score 60+ (strong)]] · [[CEO or CFO buying $100K+]] · [[Exec-director growing stake 25%+ with $100K+]]
+[[HEI]] · [[MENDELSON VICTOR H]] · [[Every discretionary insider buy]] · [[Live score 40+ (notable)]] · [[Live score 60+ (strong)]] · [[CEO or CFO buying $100K+]] · [[Exec-director growing stake 25%+ with $100K+]]
 
 |  |  |
 |---|---|
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | +4.8% |
+| +3.4% | – | – | – | – | +3.4% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/46619/000103108226000007/0001031082-26-000007-index.htm)

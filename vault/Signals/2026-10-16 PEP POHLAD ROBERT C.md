@@ -15,14 +15,14 @@ strategies: ["all_liquid", "score_40", "score_60", "big_stake_up"]
 entry_date: "2026-10-19"
 entry_price: 130.88
 status: "open"
-abn_now: 0.0215307
-ret_now: 0.0205532
+abn_now: 0.0216193
+ret_now: 0.0239914
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: true
+forward_test: false
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60", "strategy/big_stake_up"]
 ---
 

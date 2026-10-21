@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +47.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-14 | [[NUAI]] | 10% Owner | $1.2M | 33 | -10.6% |
+| 2026-10-14 | [[NUAI]] | 10% Owner | $1.2M | 33 | -15.4% |

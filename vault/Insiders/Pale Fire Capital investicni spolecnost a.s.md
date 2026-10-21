@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-29 | [[COUR]] | 10% Owner | $11.4M | 46 | +0.8% |
+| 2026-09-29 | [[COUR]] | 10% Owner | $11.4M | 46 | +1.9% |

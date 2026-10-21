@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-08 IMMR Singer Eric\|2026-10-08]] | [[Singer Eric]] | President and CEO | $293K | 44 | -1.1% | open |
+| [[2026-10-08 IMMR Singer Eric\|2026-10-08]] | [[Singer Eric]] | President and CEO | $293K | 44 | -0.4% | open |

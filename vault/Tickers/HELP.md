@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-01 HELP Cavers Greg\|2026-10-01]] | [[Cavers Greg]] | Chief Financial Officer | $39K | 60 | -12.5% | open |
+| [[2026-10-01 HELP Cavers Greg\|2026-10-01]] | [[Cavers Greg]] | Chief Financial Officer | $39K | 60 | -10.8% | open |

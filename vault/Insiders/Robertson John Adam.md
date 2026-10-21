@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +3.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[CBK]] | Executive Chairperson | $2K | 13 | -2.0% |
+| 2026-09-28 | [[CBK]] | Executive Chairperson | $2K | 13 | -2.2% |

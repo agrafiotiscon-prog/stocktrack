@@ -1,6 +1,6 @@
 ---
 type: "signal"
-ticker: "HEI, HEI.A"
+ticker: "HEI"
 company: "HEICO CORP"
 insider: "CULLIGAN THOMAS M"
 role: "Director"
@@ -15,9 +15,9 @@ strategies: ["all_liquid", "score_40", "cluster_3", "proven_insider"]
 entry_date: "2026-10-14"
 entry_price: 297.28
 status: "open"
-abn_now: 0.0475236
-ret_now: 0.0366322
-abn_5: 
+abn_now: 0.0342501
+ret_now: 0.0266752
+abn_5: 0.0342501
 abn_21: 
 abn_63: 
 abn_126: 
@@ -26,9 +26,9 @@ forward_test: false
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/cluster_3", "strategy/proven_insider"]
 ---
 
-# HEI, HEI.A: CULLIGAN THOMAS M bought $175K
+# HEI: CULLIGAN THOMAS M bought $175K
 
-[[HEI, HEI.A]] · [[CULLIGAN THOMAS M]] · [[Every discretionary insider buy]] · [[Live score 40+ (notable)]] · [[3+ insiders buying within 14 days]] · [[Insiders whose earlier buys beat SPY]]
+[[HEI]] · [[CULLIGAN THOMAS M]] · [[Every discretionary insider buy]] · [[Live score 40+ (notable)]] · [[3+ insiders buying within 14 days]] · [[Insiders whose earlier buys beat SPY]]
 
 |  |  |
 |---|---|
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/cluster_3
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | +4.8% |
+| +3.4% | – | – | – | – | +3.4% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/46619/000121758526000002/0001217585-26-000002-index.htm)

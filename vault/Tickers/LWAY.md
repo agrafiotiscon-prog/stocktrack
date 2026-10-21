@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-06 | [[Divisadero Street Capital Management, LP]] | 10% Owner | $2.2M | 37 | +3.9% | open |
+| 2026-10-06 | [[Divisadero Street Capital Management, LP]] | 10% Owner | $2.2M | 37 | +4.8% | open |

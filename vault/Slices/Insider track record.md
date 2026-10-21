@@ -2,8 +2,8 @@
 type: "slice"
 feature: "track_record"
 verdict: "no evidence"
-signals: 110381
-holdout_excess: 0.0242334
+signals: 110020
+holdout_excess: 0.023127
 ---
 
 # Insider track record
@@ -12,9 +12,9 @@ Shrunk mean of the insider's earlier 63-session abnormal returns known before en
 
 | Bucket | Signals | 3-mo vs SPY | Median | Beat SPY | 2006-15 /yr | 2016+ /yr | Enter later | vs survivors (06-15 / 16+) | vs typical buy |
 |---|---|---|---|---|---|---|---|---|---|
-| ⚪ good | 31,870 | +0.9% | -0.9% | 47% | +6.5% (p 0.229) | +1.4% (p 0.676) | +0.7% | +1.7% / +3.2% | no different |
-| ⚪ none | 52,967 | +1.0% | -0.7% | 48% | +8.6% (p 0.190) | +2.4% (p 0.530) | +0.7% | +3.3% / +4.2% | no different |
-| ⚪ poor | 25,544 | +0.6% | -1.0% | 47% | +9.3% (p 0.283) | -0.5% (p 0.899) | +0.4% | +4.4% / +1.3% | no different |
+| ⚪ good | 31,021 | +0.9% | -0.9% | 47% | +6.9% (p 0.198) | +1.7% (p 0.604) | +0.7% | +5.3% / +6.9% | no different |
+| ⚪ none | 54,189 | +1.0% | -0.7% | 48% | +8.6% (p 0.191) | +2.3% (p 0.546) | +0.7% | +7.1% / +7.6% | no different |
+| ⚪ poor | 24,810 | +0.6% | -1.1% | 47% | +9.1% (p 0.328) | -0.5% (p 0.885) | +0.4% | +7.4% / +4.6% | no different |
 
 
 Horizon detail (mean excess vs SPY):

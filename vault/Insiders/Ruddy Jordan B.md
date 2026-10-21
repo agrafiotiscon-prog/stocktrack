@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-15 | [[BPRE]] | President | $44K | 63 | -1.5% |
-| 2026-09-30 | [[BPRE]] | President | $60K | 70 | -2.6% |
+| 2026-10-15 | [[BPRE]] | President | $44K | 63 | -0.7% |
+| 2026-09-30 | [[BPRE]] | President | $60K | 70 | -1.7% |

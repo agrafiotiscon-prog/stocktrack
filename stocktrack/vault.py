@@ -57,6 +57,11 @@ def safe(name: str) -> str:
     return re.sub(r"\s+", " ", name)[:120] or "untitled"
 
 
+def ticker(r: dict) -> str:
+    """The symbol a ledger row trades under (filings sometimes list several, e.g. "HEI, HEI.A")."""
+    return r["symbol"] or r["ticker"]
+
+
 def yaml_value(v) -> str:
     if v is None:
         return ""
@@ -108,11 +113,21 @@ def forward_stats(rows: list[dict], h: int) -> dict:
             "hit": sum(1 for v in vals if v > 0) / len(vals)}
 
 
+def unique_rows(rows: list[dict]) -> list[dict]:
+    """One row per company per entry day, as in the backtest: insiders buying together share one return."""
+    seen, out = set(), []
+    for r in rows:
+        if (r["issuer_cik"], r["entry_date"]) not in seen:
+            seen.add((r["issuer_cik"], r["entry_date"]))
+            out.append(r)
+    return out
+
+
 def forward_by_strategy(ledger: list[dict]) -> dict[str, dict]:
     rows = forward_rows(ledger)
-    out = {"all": rows}
+    out = {"all": unique_rows(rows)}
     for key in STRATEGIES:
-        out[key] = [r for r in rows if key in (r["strategies"] or "").split("|")]
+        out[key] = unique_rows([r for r in rows if key in (r["strategies"] or "").split("|")])
     return {k: {"rows": len(v), **{str(h): forward_stats(v, h) for h in (5, 21, 63, 126, 252)},
                 "open_now": forward_stats([dict(r, abn_0=r.get("abn_now")) for r in v if r["status"] in ("open", "dead")], 0)}
             for k, v in out.items()}
@@ -229,8 +244,9 @@ def _forward_table(fwd: dict) -> str:
         cells.append(f"{pct(o['mean'])} (n={o['n']})" if o.get("n") else "–")
         rows.append(cells)
     note = ("The ledger started on 2026-10-19. Results need months to mature; until then this table is mostly empty "
-            "and that is expected.\n\n")
-    return note + table(["Group", "Logged", "1 week vs SPY", "1 month vs SPY", "3 months vs SPY", "Open now vs SPY"], rows)
+            "and that is expected. Only buys logged before their entry session opened count, and insiders buying the "
+            "same company on the same day count once, as in the backtest.\n\n")
+    return note + table(["Group", "Signals", "1 week vs SPY", "1 month vs SPY", "3 months vs SPY", "Open now vs SPY"], rows)
 
 
 def home(res: dict, fwd: dict, ledger: list[dict], today: str) -> str:
@@ -250,7 +266,7 @@ def home(res: dict, fwd: dict, ledger: list[dict], today: str) -> str:
     lines.append("\n## Latest notable buys\n")
     if recent:
         lines.append(table(["Filed", "Ticker", "Insider", "Role", "Value", "Score", "vs SPY so far"],
-                           [[r["filed_at"][:10], f"[[{safe(r['ticker'] or r['symbol'])}]]", f"[[{insider_note(r)}]]",
+                           [[r["filed_at"][:10], f"[[{safe(ticker(r))}]]", f"[[{insider_note(r)}]]",
                              r["officer_title"] or r["role"], money(r["value"]), r["score"], pct(r.get("abn_now"))]
                             for r in recent]))
     else:
@@ -470,7 +486,7 @@ def strategy_note(key: str, s: dict, fwd: dict, ledger: list[dict]) -> str:
     if live:
         lines.append("\n### Latest live signals\n")
         lines.append(table(["Filed", "Ticker", "Insider", "Value", "Score", "vs SPY so far", "Status"],
-                           [[r["filed_at"][:10], f"[[{safe(r['ticker'] or r['symbol'])}]]", f"[[{insider_note(r)}]]",
+                           [[r["filed_at"][:10], f"[[{safe(ticker(r))}]]", f"[[{insider_note(r)}]]",
                              money(r["value"]), r["score"], pct(r.get("abn_now")), r["status"]] for r in live]))
     lines.append(f"\n```dataview\nTABLE ticker, insider, score, abn_now AS \"vs SPY so far\", status\nFROM \"Signals\"\n"
                  f"WHERE contains(strategies, \"{key}\")\nSORT filed DESC\n```\n")
@@ -483,12 +499,12 @@ def insider_note(r: dict) -> str:
 
 
 def signal_title(r: dict) -> str:
-    return safe(f"{r['filed_at'][:10]} {r['ticker'] or r['symbol']} {r['owner_name']}")
+    return safe(f"{r['filed_at'][:10]} {ticker(r)} {r['owner_name']}")
 
 
 def signal_note(r: dict) -> str:
     strategies = [k for k in (r["strategies"] or "").split("|") if k]
-    fm = {"type": "signal", "ticker": r["ticker"] or r["symbol"], "company": r["issuer_name"], "insider": r["owner_name"],
+    fm = {"type": "signal", "ticker": ticker(r), "company": r["issuer_name"], "insider": r["owner_name"],
           "role": r["officer_title"] or r["role"], "filed": r["filed_at"][:10], "traded": r["last_date"],
           "score": r["score"], "value": round(r["value"]), "cluster": r["cluster"], "insider_type": r["kind"],
           "price": r["price"], "strategies": strategies, "entry_date": r["entry_date"], "entry_price": r["entry_price"],
@@ -498,8 +514,8 @@ def signal_note(r: dict) -> str:
     fm["forward_test"] = is_forward(r)
     fm["tags"] = ["signal"] + [f"strategy/{k}" for k in strategies]
     lines = [frontmatter(fm),
-             f"# {r['ticker'] or r['symbol']}: {r['owner_name']} bought {money(r['value'])}\n",
-             f"[[{safe(r['ticker'] or r['symbol'])}]] · [[{insider_note(r)}]] · "
+             f"# {ticker(r)}: {r['owner_name']} bought {money(r['value'])}\n",
+             f"[[{safe(ticker(r))}]] · [[{insider_note(r)}]] · "
              + " · ".join(f"[[{strategy_title(k)}]]" for k in strategies) + "\n",
              table(["", ""], [
                  ["Company", r["issuer_name"]], ["Insider", f"{r['owner_name']} ({r['officer_title'] or r['role']})"],
@@ -540,7 +556,7 @@ def insider_page(name: str, rows: list[dict], record: tuple[int, float] | None) 
                      "(Past winners haven't reliably kept winning; see [[Insider track record]].)\n")
     if rows:
         lines.append(table(["Filed", "Ticker", "Role", "Value", "Score", "vs SPY so far"],
-                           [[r["filed_at"][:10], f"[[{safe(r['ticker'] or r['symbol'])}]]", r["officer_title"] or r["role"],
+                           [[r["filed_at"][:10], f"[[{safe(ticker(r))}]]", r["officer_title"] or r["role"],
                              money(r["value"]), r["score"], pct(r.get("abn_now"))] for r in rows]))
     return "\n".join(lines)
 
@@ -567,7 +583,7 @@ def research_log(day: str, summary: dict, ledger: list[dict], fwd: dict, existin
     lines.append("\n## New buys logged\n")
     if new:
         lines.append(table(["Ticker", "Insider", "Role", "Value", "Score", "Cluster", "Strategies"],
-                           [[f"[[{safe(r['ticker'] or r['symbol'])}]]", f"[[{insider_note(r)}]]", r["officer_title"] or r["role"],
+                           [[f"[[{safe(ticker(r))}]]", f"[[{insider_note(r)}]]", r["officer_title"] or r["role"],
                              money(r["value"]), r["score"], r["cluster"],
                              ", ".join(f"[[{strategy_title(k)}]]" for k in (r["strategies"] or "").split("|") if k)]
                             for r in new[:40]]))
@@ -578,7 +594,7 @@ def research_log(day: str, summary: dict, ledger: list[dict], fwd: dict, existin
     lines.append("\n## Outcomes that matured today\n")
     if matured:
         lines.append(table(["Horizon", "Ticker", "Insider", "Filed", "vs SPY"],
-                           [[f"{h} sessions", r["ticker"] or r["symbol"], r["owner_name"], r["filed_at"][:10],
+                           [[f"{h} sessions", ticker(r), r["owner_name"], r["filed_at"][:10],
                              pct(r[f"abn_{h}"])] for h, r in sorted(matured, key=lambda x: (x[0], x[1]["filed_at"]))]))
     else:
         lines.append("None yet.\n")
@@ -623,7 +639,7 @@ def build_vault(vault: str | Path, res: dict, ledger: list[dict], records: dict[
     by_ticker: dict[str, list[dict]] = defaultdict(list)
     by_insider: dict[str, list[dict]] = defaultdict(list)
     for r in recent:
-        by_ticker[safe(r["ticker"] or r["symbol"])].append(r)
+        by_ticker[safe(ticker(r))].append(r)
         by_insider[insider_note(r)].append(r)
         if r["score"] >= SIGNAL_NOTE_MIN_SCORE or r["strategies"]:
             put(f"Signals/{signal_title(r)}.md", signal_note(r))
@@ -632,7 +648,9 @@ def build_vault(vault: str | Path, res: dict, ledger: list[dict], records: dict[
     for name, rows in by_insider.items():
         put(f"Insiders/{name}.md", insider_page(name, rows, records.get(rows[0]["owner_cik"].lstrip("0"))))
 
+    # A log records one daily run; rebuilding the vault without a run must not blank its summary.
     log_path = root / "Research Log" / f"{today}.md"
     existing = log_path.read_text(encoding="utf-8") if log_path.exists() else None
-    put(f"Research Log/{today}.md", research_log(today, run_summary or {}, ledger, fwd, existing, matured or []))
+    if run_summary is not None or existing is None:
+        put(f"Research Log/{today}.md", research_log(today, run_summary or {}, ledger, fwd, existing, matured or []))
     return n

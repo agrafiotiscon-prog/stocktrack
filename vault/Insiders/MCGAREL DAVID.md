@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +6.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[FTHY]] | Officer-Investment Adviser | $129K | 57 | +0.6% |
+| 2026-09-28 | [[FTHY]] | Officer-Investment Adviser | $129K | 57 | -0.3% |

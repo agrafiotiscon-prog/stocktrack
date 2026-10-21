@@ -74,3 +74,10 @@ A second independent review (return math, plus a check of the run-2 fixes) confi
 - Forward test: a date-only log stamp now counts as the end of that day. One failed price download no
   longer aborts the daily run, and new ledger rows are saved before outcomes update. The 16 rows
   logged on 2026-10-20 were re-stamped to their commit time (01:56 UTC, before that day's open).
+
+## Forward test counting (2026-10-21)
+
+Set before any 63-session forward outcome existed. The forward test now counts one signal per company per entry day,
+as the backtest does: several insiders of one company buying on the same day share one return, so they are one
+observation (the 2026-10-13 HEI filings by eight directors had counted eight times). The "100 matured 63-session
+outcomes" in `hypotheses.json` are counted the same way.

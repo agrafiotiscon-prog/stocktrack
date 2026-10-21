@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "all_liquid"
-signals: 67620
-cagr: 0.0546596
+signals: 67477
+cagr: 0.0555775
 spy_cagr: 0.110668
-sharpe: 0.269767
-max_drawdown: 0.593095
-holdout_excess: 0.00270363
+sharpe: 0.27311
+max_drawdown: 0.584268
+holdout_excess: 0.00330757
 ---
 
 # Every discretionary insider buy
@@ -17,28 +17,28 @@ Rule key: `all_liquid`. Liquid stocks only ($2+, $1M+/day), plan purchases exclu
 
 | Measure | Value |
 |---|---|
-| Signals | 67,620 |
+| Signals | 67,477 |
 | 3-month excess vs SPY (mean / median) | +0.8% / -0.7% |
 | Beat SPY over 3 months | 48% |
 | Entering one session later | +0.6% |
-| vs surviving stocks | +0.1% |
+| vs surviving stocks | +1.2% |
 | 2006-2015 excess /yr | +6.4% (p 0.017) |
-| 2016+ excess /yr | +0.3% (p 0.940) |
+| 2016+ excess /yr | +0.3% (p 0.927) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +6.8% | +11.1% | 0.32 | 0.55 | 61% | 1.22 | -4.1% | 38% | 4,977 | 9.1% | -1.3% / -0.15 / 68% |
-| 63d | +5.5% | +11.1% | 0.27 | 0.55 | 59% | 1.18 | -5.6% | 43% | 1,660 | 2.7% | -2.8% / -0.29 / 66% |
-| 126d | +5.1% | +11.1% | 0.25 | 0.55 | 55% | 1.15 | -5.7% | 29% | 840 | 1.4% | -3.3% / -0.35 / 69% |
+| 21d | +7.3% | +11.1% | 0.33 | 0.55 | 61% | 1.21 | -3.7% | 38% | 4,977 | 9.2% | -0.9% / -0.12 / 67% |
+| 63d | +5.6% | +11.1% | 0.27 | 0.55 | 58% | 1.18 | -5.5% | 43% | 1,660 | 2.7% | -2.7% / -0.28 / 65% |
+| 126d | +6.6% | +11.1% | 0.31 | 0.55 | 54% | 1.15 | -4.3% | 33% | 840 | 1.5% | -2.0% / -0.21 / 58% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +8.4%/yr, double costs +2.7%/yr.
+Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.8%/yr.
 
 
 ### Year by year (63-session hold)
@@ -46,7 +46,7 @@ Cost sensitivity (63-session hold): no costs +8.4%/yr, double costs +2.7%/yr.
 | Year | Strategy | SPY | Difference |
 |---|---|---|---|
 | 2006 | +22.9% | +13.8% | +9.0% |
-| 2007 | -4.6% | +5.1% | -9.8% |
+| 2007 | -5.0% | +5.1% | -10.1% |
 | 2008 | -27.7% | -36.8% | +9.1% |
 | 2009 | +54.7% | +26.4% | +28.3% |
 | 2010 | +22.9% | +15.1% | +7.9% |
@@ -62,41 +62,41 @@ Cost sensitivity (63-session hold): no costs +8.4%/yr, double costs +2.7%/yr.
 | 2020 | +40.6% | +18.3% | +22.2% |
 | 2021 | +0.6% | +28.7% | -28.2% |
 | 2022 | -41.0% | -18.2% | -22.8% |
-| 2023 | +23.7% | +26.2% | -2.4% |
-| 2024 | -14.9% | +24.9% | -39.8% |
+| 2023 | +25.4% | +26.2% | -0.8% |
+| 2024 | -14.2% | +24.9% | -39.1% |
 | 2025 | -4.2% | +17.7% | -21.9% |
 | 2026 | -1.8% | +13.3% | -15.1% |
 
 
 ## Live forward test
 
-13 buys logged so far; none have matured yet.
+11 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | – | pending |
-| 2026-10-19 | [[DSM]] | [[Saba Capital Management, L.P]] | $72K | 18 | – | pending |
-| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | $3.1M | 40 | – | pending |
-| 2026-10-19 | [[HQY]] | [[Rajasekar Sunil]] | $12K | 20 | – | pending |
-| 2026-10-19 | [[EME]] | [[MCEVOY M KEVIN]] | $2K | 2 | – | pending |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | – | pending |
-| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | – | pending |
-| 2026-10-19 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $17.1M | 25 | – | pending |
-| 2026-10-19 | [[XFOR]] | [[Craig Adam R]] | $12K | 26 | – | pending |
-| 2026-10-19 | [[EQBK]] | [[Borck Leon]] | $19K | 16 | – | pending |
-| 2026-10-19 | [[FUL]] | [[Malik Muhammad Shahbaz]] | $25K | 35 | – | pending |
-| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -2.8% | open |
-| 2026-10-16 | [[NAD]] | [[TOTH TERENCE J]] | $72K | 33 | -0.4% | open |
-| 2026-10-16 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $20.5M | 25 | +0.1% | open |
-| 2026-10-16 | [[FIS]] | [[Goldstein Jeffrey A]] | $58K | 13 | +0.8% | open |
-| 2026-10-16 | [[NBIS]] | [[Grimme Arne]] | $50K | 10 | -3.5% | open |
-| 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | $23.7M | 62 | +2.2% | open |
-| 2026-10-16 | [[BYRN]] | [[Roth Adam L]] | $70K | 40 | +2.7% | open |
-| 2026-10-16 | [[PAM]] | [[Mindlin Marcos Marcelo]] | $35.1M | 49 | -2.6% | open |
-| 2026-10-16 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | -1.8% | open |
+| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | – | pending |
+| 2026-10-20 | [[DX]] | [[Sartori Michael Andrew]] | $11K | 39 | – | pending |
+| 2026-10-20 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $12.1M | 24 | – | pending |
+| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | – | pending |
+| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | – | pending |
+| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | – | pending |
+| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | – | pending |
+| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | – | pending |
+| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | – | pending |
+| 2026-10-20 | [[ISBA]] | [[Bourland Jill]] | $300 | 13 | – | pending |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | – | pending |
+| 2026-10-20 | [[NBIS]] | [[Grimme Arne]] | $25K | 5 | – | pending |
+| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -2.3% | open |
+| 2026-10-19 | [[DSM]] | [[Saba Capital Management, L.P]] | $72K | 18 | +0.2% | open |
+| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | $3.1M | 40 | -3.3% | open |
+| 2026-10-19 | [[HQY]] | [[Rajasekar Sunil]] | $12K | 20 | +2.8% | open |
+| 2026-10-19 | [[EME]] | [[MCEVOY M KEVIN]] | $2K | 2 | -0.4% | open |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +0.8% | open |
+| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -10.6% | open |
+| 2026-10-19 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $17.1M | 25 | +0.7% | open |
 
 
 ```dataview

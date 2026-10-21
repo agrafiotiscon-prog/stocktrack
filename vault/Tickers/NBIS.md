@@ -2,11 +2,12 @@
 type: "ticker"
 ticker: "NBIS"
 company: "Nebius Group N.V."
-signals: 1
+signals: 2
 ---
 
 # NBIS: Nebius Group N.V.
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[Grimme Arne]] | Director | $50K | 10 | -3.5% | open |
+| 2026-10-20 | [[Grimme Arne]] | Director | $25K | 5 | – | pending |
+| 2026-10-16 | [[Grimme Arne]] | Director | $50K | 10 | -3.1% | open |

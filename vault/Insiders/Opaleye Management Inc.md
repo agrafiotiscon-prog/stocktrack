@@ -12,4 +12,4 @@ Backtest record: 121 earlier buys, average 3-month excess vs SPY +18.2%. (Past w
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[ACOG]] | 10% Owner | $271K | 25 | -2.4% |
+| 2026-09-28 | [[ACOG]] | 10% Owner | $271K | 25 | -1.4% |

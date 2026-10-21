@@ -12,5 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +7.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[MFM]] | Director | $1K | 32 | +3.8% |
-| 2026-09-30 | [[ASGI]] | Director | $612 | 19 | +1.3% |
+| 2026-10-01 | [[MFM]] | Director | $1K | 32 | +3.9% |
+| 2026-09-30 | [[ASGI]] | Director | $612 | 19 | +1.1% |

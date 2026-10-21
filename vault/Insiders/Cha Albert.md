@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +49.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-15 | [[FLSC]] | Chief Executive Officer | $3.0M | 70 | -2.0% |
+| 2026-10-15 | [[FLSC]] | Chief Executive Officer | $3.0M | 70 | -2.4% |

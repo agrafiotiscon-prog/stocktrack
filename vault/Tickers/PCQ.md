@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | -1.8% | open |
-| 2026-10-13 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +1.7% | open |
+| 2026-10-16 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | -1.6% | open |
+| 2026-10-13 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +1.9% | open |
