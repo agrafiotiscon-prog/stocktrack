@@ -312,9 +312,22 @@ def _live_buys_save(path: Path, buys: list) -> None:
     _write_gz_lines(path, buf.getvalue().splitlines())
 
 
+def write_dashboard(data_dir: str | Path = "data", out_dir: str | Path = "dashboard", today: str | None = None) -> Path:
+    """Regenerate the HTML dashboard from the committed results."""
+    from stocktrack import ledger as led
+    from stocktrack.dashboard import build_dashboard
+
+    data = Path(data_dir)
+    res = json.loads((data / "backtest" / "latest.json").read_text())
+    hyp_path = data / "backtest" / "hypotheses.json"
+    hypotheses = json.loads(hyp_path.read_text()) if hyp_path.exists() else None
+    return build_dashboard(out_dir, res, led.load(data / "picks.csv"), hypotheses, today)
+
+
 def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path = "vault",
-          today: str | None = None, force_backtest: bool = False, scan_days: int = 5, echo=print) -> dict:
-    """One research cycle: collect new buys, log qualifying ones, update outcomes, refresh the vault.
+          today: str | None = None, force_backtest: bool = False, scan_days: int = 5, echo=print,
+          dashboard_dir: str | Path | None = "dashboard") -> dict:
+    """One research cycle: collect new buys, log qualifying ones, update outcomes, refresh the vault and dashboard.
 
     Runs a full backtest too when the last one is older than a week (or when forced).
     """
@@ -435,6 +448,8 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
     # 6. Vault.
     n = vlt.build_vault(vault_dir, res, ledger, records, today=today, run_summary=summary, matured=matured)
     summary["vault notes written"] = n
+    if dashboard_dir:
+        write_dashboard(data, dashboard_dir, today)
     for k, v in summary.items():
         echo(f"{k}: {v}")
     return summary

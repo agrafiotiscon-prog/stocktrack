@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Insider Edge</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Do stocks beat the market after insiders buy them? 20 years of SEC Form 4 purchases, the kinds of buy that work, portfolio simulations and a live forward test.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: a research terminal. A sticky filing bar, then summary-first sections down one 1180px column:
+   verdict, kinds of buy, portfolios, live test, method. Surfaces only where a chart or table needs one. */
+:root {
+  color-scheme: light;
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --sunken: #eceef2;
+  --ink: #0e1218;
+  --ink-2: #485060;
+  --muted: #7d8592;
+  --hair: #e1e4ea;
+  --rule: #c9ced7;
+  --accent: #2a78d6;
+  --accent-text: #1c5cab;
+  --accent-wash: rgba(42, 120, 214, 0.10);
+  --accent-wash-2: rgba(42, 120, 214, 0.18);
+  --neg: #e34948;
+  --neg-wash: rgba(227, 73, 72, 0.10);
+  --spy: #9aa1ad;
+  --good: #0ca30c;
+  --warn: #c98500;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+  --shadow: 0 1px 2px rgba(14, 18, 24, 0.04), 0 4px 16px rgba(14, 18, 24, 0.05);
+  --tip-bg: #0e1218;
+  --tip-ink: #f3f5f8;
+  --tip-muted: #a3abb8;
+  --score-1: #cde2fb; --score-2: #86b6ef; --score-3: #3987e5; --score-4: #256abf; --score-5: #104281;
+  --font-ui: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0b0d11; --surface: #12151b; --sunken: #1a1e26; --ink: #eef1f5; --ink-2: #b4bcc8; --muted: #7c8595;
+    --hair: #222731; --rule: #323844; --accent: #3987e5; --accent-text: #86b6ef; --accent-wash: rgba(57, 135, 229, 0.12);
+    --accent-wash-2: rgba(57, 135, 229, 0.22); --neg: #e66767; --neg-wash: rgba(230, 103, 103, 0.12); --spy: #6b7382;
+    --good: #0ca30c; --warn: #fab219; --serious: #ec835a; --critical: #e05252;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+    --tip-bg: #f3f5f8; --tip-ink: #0e1218; --tip-muted: #4c5463;
+    --score-1: #184f95; --score-2: #1c5cab; --score-3: #2a78d6; --score-4: #5598e7; --score-5: #9ec5f4;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b0d11; --surface: #12151b; --sunken: #1a1e26; --ink: #eef1f5; --ink-2: #b4bcc8; --muted: #7c8595;
+  --hair: #222731; --rule: #323844; --accent: #3987e5; --accent-text: #86b6ef; --accent-wash: rgba(57, 135, 229, 0.12);
+  --accent-wash-2: rgba(57, 135, 229, 0.22); --neg: #e66767; --neg-wash: rgba(230, 103, 103, 0.12); --spy: #6b7382;
+  --good: #0ca30c; --warn: #fab219; --serious: #ec835a; --critical: #e05252;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+  --tip-bg: #f3f5f8; --tip-ink: #0e1218; --tip-muted: #4c5463;
+  --score-1: #184f95; --score-2: #1c5cab; --score-3: #2a78d6; --score-4: #5598e7; --score-5: #9ec5f4;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 120px; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 400 15px/1.55 var(--font-ui); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30;
+  background: var(--bg);
+}
+img, svg { max-width: 100%; }
+a { color: var(--accent-text); text-underline-offset: 3px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+[hidden] { display: none !important; }
+.wrap {
+  max-width: 1180px; margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.mono { font-family: var(--font-mono); }
+.num { font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Top bar */
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in oklab, var(--bg) 84%, transparent);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid var(--hair);
+}
+.topbar .wrap { display: flex; align-items: center; gap: 20px; min-height: 60px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: -0.01em; font-size: 16px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.brand svg { flex: none; }
+.tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab {
+  position: relative; padding: 8px 12px; border-radius: 8px; color: var(--ink-2); text-decoration: none;
+  font-size: 14px; font-weight: 500; white-space: nowrap; transition: background 0.15s, color 0.15s;
+}
+.tab:hover { background: var(--sunken); color: var(--ink); }
+.tab[aria-current="true"] { color: var(--ink); }
+.tab[aria-current="true"]::after {
+  content: ""; position: absolute; left: 12px; right: 12px; bottom: -11px; height: 2px; border-radius: 2px; background: var(--accent);
+}
+.topbar-end { display: flex; align-items: center; gap: 10px; }
+.asof { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.icon-btn {
+  display: grid; place-items: center; width: 36px; height: 36px; border-radius: 9px; border: 1px solid var(--hair);
+  background: var(--surface); cursor: pointer; color: var(--ink-2); transition: border-color 0.15s, color 0.15s;
+}
+.icon-btn:hover { border-color: var(--rule); color: var(--ink); }
+
+/* Sections */
+section { padding-block: 56px 8px; }
+.sec-head { display: grid; gap: 8px; margin-bottom: 24px; max-width: 760px; }
+.eyebrow { font: 500 12px/1.2 var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { margin: 0; text-wrap: balance; letter-spacing: -0.02em; }
+h2 { font-size: clamp(24px, 3vw, 30px); line-height: 1.15; font-weight: 600; }
+h3 { font-size: 16px; font-weight: 600; letter-spacing: -0.01em; }
+.dek { margin: 0; color: var(--ink-2); max-width: 65ch; }
+
+.card { background: var(--surface); border: 1px solid var(--hair); border-radius: var(--radius); }
+.card-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px 0; }
+.card-head .titles { display: grid; gap: 2px; min-width: 0; }
+.card-sub { color: var(--muted); font-size: 13px; }
+.card-body { padding: 16px 20px 20px; }
+
+/* Controls */
+.seg { display: inline-flex; padding: 3px; gap: 2px; background: var(--sunken); border-radius: 10px; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.seg button {
+  border: 0; background: transparent; padding: 6px 12px; border-radius: 7px; font-size: 13px; font-weight: 500;
+  color: var(--ink-2); cursor: pointer; white-space: nowrap; transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+.seg button:hover { color: var(--ink); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 0 0 1px var(--hair); }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.chips::-webkit-scrollbar { display: none; }
+.chips.more-right { -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent); }
+.tabs.more-right { -webkit-mask-image: linear-gradient(to right, #000 80%, transparent); mask-image: linear-gradient(to right, #000 80%, transparent); }
+.chip {
+  border: 1px solid var(--hair); background: var(--surface); color: var(--ink-2); border-radius: 999px; padding: 6px 12px;
+  font-size: 13px; font-weight: 500; cursor: pointer; white-space: nowrap; transition: all 0.15s;
+}
+.chip:hover { border-color: var(--rule); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--accent-wash); border-color: color-mix(in oklab, var(--accent) 45%, transparent); color: var(--accent-text); }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 14px; }
+.toolbar .grow { flex: 1 1 260px; min-width: 0; }
+.select {
+  appearance: none; border: 1px solid var(--hair); background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5l3 3 3-3' fill='none' stroke='%237d8592' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 10px center;
+  border-radius: 9px; padding: 7px 32px 7px 12px; font-size: 13px; font-weight: 500; color: var(--ink); cursor: pointer;
+}
+.search {
+  border: 1px solid var(--hair); background: var(--surface); border-radius: 9px; padding: 8px 12px 8px 34px; font-size: 14px; color: var(--ink);
+  width: 100%; max-width: 320px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='7' cy='7' r='4.5' fill='none' stroke='%237d8592' stroke-width='1.5'/%3E%3Cpath d='M10.5 10.5L14 14' stroke='%237d8592' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: 11px center;
+}
+.search::placeholder { color: var(--muted); }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 28px; align-items: stretch; padding-top: 40px; }
+.hero-copy { display: grid; align-content: center; gap: 16px; min-width: 0; }
+.hero h1 { font-size: clamp(30px, 4.4vw, 48px); line-height: 1.06; font-weight: 650; letter-spacing: -0.035em; }
+.hero h1 .soft { color: var(--ink-2); font-weight: 500; }
+.lead { margin: 0; font-size: 17px; color: var(--ink-2); max-width: 58ch; }
+.stamp { display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 12px/1.4 var(--font-mono); color: var(--muted); }
+.stamp span::before { content: "■ "; color: var(--accent); font-size: 9px; vertical-align: 1px; }
+.hero-card { padding: 22px 22px 18px; display: grid; gap: 10px; box-shadow: var(--shadow); min-width: 0; }
+.hero-card .label { font-size: 13px; font-weight: 500; color: var(--ink-2); }
+.hero-fig { display: flex; align-items: baseline; gap: 6px; }
+.hero-fig .val { font-size: clamp(52px, 7vw, 76px); font-weight: 600; letter-spacing: -0.045em; line-height: 0.95; }
+.hero-fig .unit { font-size: 18px; font-weight: 500; color: var(--ink-2); }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--ink-2); }
+.hero-meta b { color: var(--ink); font-weight: 600; }
+.hero-spark { height: 64px; margin-top: 4px; }
+.hero-spark-cap { display: flex; justify-content: space-between; font: 500 11px var(--font-mono); color: var(--muted); }
+
+/* Stat tiles */
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
+.kpi { padding: 16px 18px; display: grid; gap: 6px; align-content: start; min-width: 0; }
+.kpi .label { font-size: 13px; color: var(--ink-2); font-weight: 500; }
+.kpi .value { font-size: 28px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.1; display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; }
+.kpi .value small { font-size: 14px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; }
+.kpi .foot { font-size: 13px; color: var(--muted); }
+.sig { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500; color: var(--ink-2); }
+.sig i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); display: inline-block; }
+.sig.yes i { background: var(--good); }
+.sig.no i { background: transparent; box-shadow: inset 0 0 0 1.5px var(--muted); }
+
+.grid-2 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.check { padding: 16px 18px; display: grid; gap: 6px; min-width: 0; }
+.check .k { font-size: 13px; color: var(--ink-2); font-weight: 500; }
+.check .v { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
+.check p { margin: 0; font-size: 13px; color: var(--muted); }
+
+/* Charts */
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; overflow: visible; }
+.axis text, .chart-label { fill: var(--muted); font: 500 11px var(--font-mono); font-variant-numeric: tabular-nums; }
+.chart-value { fill: var(--ink); font: 600 11px var(--font-mono); font-variant-numeric: tabular-nums; }
+.grid line { stroke: var(--hair); stroke-width: 1; shape-rendering: crispEdges; }
+.zero { stroke: var(--rule); stroke-width: 1; shape-rendering: crispEdges; }
+.bar { transition: opacity 0.12s; }
+.bars:hover .bar { opacity: 0.55; }
+.bars .bar.on, .bars:hover .bar.on { opacity: 1; }
+.hit { fill: transparent; cursor: default; outline: none; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.key-line { width: 16px; height: 2px; border-radius: 2px; display: inline-block; }
+.key-box { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.tableview { border-top: 1px solid var(--hair); }
+.tableview summary { list-style: none; cursor: pointer; padding: 12px 20px; font-size: 13px; color: var(--ink-2); font-weight: 500; display: flex; align-items: center; gap: 6px; }
+.tableview summary::-webkit-details-marker { display: none; }
+.tableview summary::before { content: ""; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(-45deg); transition: transform 0.15s; margin-right: 4px; }
+.tableview[open] summary::before { transform: rotate(45deg); }
+.tableview .scroll { padding: 0 20px 16px; }
+
+/* Tooltip */
+.tip {
+  position: fixed; z-index: 50; pointer-events: none; background: var(--tip-bg); color: var(--tip-ink);
+  border-radius: 10px; padding: 10px 12px; font-size: 12.5px; line-height: 1.45; min-width: 150px; max-width: 260px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25); opacity: 0; transform: translateY(4px); transition: opacity 0.12s, transform 0.12s;
+}
+.tip.on { opacity: 1; transform: none; }
+.tip .t-head { font: 500 11px var(--font-mono); color: var(--tip-muted); margin-bottom: 6px; letter-spacing: 0.02em; }
+.tip .t-row { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+.tip .t-row .n { display: inline-flex; align-items: center; gap: 7px; color: var(--tip-muted); }
+.tip .t-row b { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* Tables */
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th { text-align: left; font: 500 11.5px var(--font-mono); letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted); padding: 10px 12px; border-bottom: 1px solid var(--hair); white-space: nowrap; }
+td { padding: 11px 12px; border-bottom: 1px solid var(--hair); vertical-align: middle; }
+tr:last-child td { border-bottom: 0; }
+td.r, th.r { text-align: right; font-variant-numeric: tabular-nums; }
+th button { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }
+th button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+th[aria-sort] button::after { content: "↕"; opacity: 0.4; font-size: 10px; }
+th[aria-sort="descending"] button::after { content: "↓"; opacity: 1; }
+th[aria-sort="ascending"] button::after { content: "↑"; opacity: 1; }
+tbody tr { transition: background 0.12s; }
+tbody tr:hover { background: color-mix(in oklab, var(--sunken) 60%, transparent); }
+
+/* Signed values: the number stays in ink, a small mark carries the sign */
+.sv { display: inline-flex; align-items: center; gap: 5px; font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+.sv::before { content: ""; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; }
+.sv.up::before { border-bottom: 6px solid var(--accent); }
+.sv.down::before { border-top: 6px solid var(--neg); }
+.sv.flat::before { width: 8px; height: 2px; border: 0; background: var(--muted); border-radius: 2px; }
+.sv.none { color: var(--muted); font-weight: 500; }
+.sv.none::before { display: none; }
+
+/* Pills */
+.pill { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 3px 10px 3px 8px; font-size: 12px; font-weight: 600; white-space: nowrap; border: 1px solid var(--hair); background: var(--surface); color: var(--ink-2); }
+.pill .ico { width: 14px; height: 14px; border-radius: 50%; display: grid; place-items: center; font-size: 9px; line-height: 1; color: #fff; background: var(--muted); flex: none; }
+.pill.works .ico { background: var(--good); }
+.pill.promising { border-color: color-mix(in oklab, var(--accent) 35%, transparent); color: var(--ink); background: var(--accent-wash); }
+.pill.promising .ico { background: var(--accent); }
+.pill.hurts .ico, .pill.negative .ico { background: var(--critical); }
+.pill.reversed .ico { background: var(--warn); color: #1a1300; }
+.pill.none .ico { background: transparent; box-shadow: inset 0 0 0 1.5px var(--muted); color: var(--muted); }
+.pill.thin { border-style: dashed; color: var(--muted); }
+.pill.thin .ico { background: transparent; color: var(--muted); }
+.tag { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500; color: var(--ink-2); white-space: nowrap; }
+.tag.better { color: var(--ink); }
+.tag.better::before { content: ""; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 6px solid var(--accent); }
+.tag.worse { color: var(--ink); }
+.tag.worse::before { content: ""; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 6px solid var(--neg); }
+.tag.same { color: var(--muted); }
+.badge { display: inline-block; font: 600 10px/1 var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 6px; border-radius: 5px; background: var(--sunken); color: var(--ink-2); white-space: nowrap; }
+.badge.posthoc { background: color-mix(in oklab, var(--warn) 18%, transparent); color: var(--ink); }
+
+/* Kinds of buy */
+.kinds { list-style: none; margin: 0; padding: 0; }
+.kinds-head, .kind-row {
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1.5fr) 206px 168px 118px; gap: 16px; align-items: center;
+}
+.kinds-head { padding: 12px 20px; border-bottom: 1px solid var(--hair); font: 500 11.5px var(--font-mono); letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted); }
+.kind { border-bottom: 1px solid var(--hair); }
+.kind:last-child { border-bottom: 0; }
+.kind-row { width: 100%; text-align: left; border: 0; background: transparent; padding: 14px 20px; cursor: pointer; transition: background 0.12s; }
+.kind-row:hover { background: color-mix(in oklab, var(--sunken) 60%, transparent); }
+.kind-row[aria-expanded="true"] { background: color-mix(in oklab, var(--sunken) 70%, transparent); }
+.kind-name { display: grid; gap: 1px; min-width: 0; }
+.kind-name .f { font: 500 11px var(--font-mono); color: var(--muted); letter-spacing: 0.02em; text-transform: uppercase; }
+.kind-name .b { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.kind-name .s { font-size: 12px; color: var(--muted); }
+.hbar { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.hbar svg { flex: 1; min-width: 0; height: 22px; }
+.hbar .v { width: 76px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; font-size: 14px; }
+.hbar .v small { font-weight: 500; color: var(--muted); font-size: 11px; }
+.strip { display: flex; align-items: center; gap: 8px; }
+.strip .cells { display: grid; grid-auto-flow: column; grid-auto-columns: 5px; gap: 2px; height: 16px; }
+.strip .cells i { border-radius: 2px; background: var(--hair); }
+.strip .cells i.p { background: var(--accent); }
+.strip .cells i.n { background: var(--neg); }
+.strip .count { font: 600 12px var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-2); white-space: nowrap; }
+.kind-detail { padding: 4px 20px 20px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.fact { background: var(--sunken); border-radius: 10px; padding: 12px 14px; display: grid; gap: 4px; min-width: 0; }
+.fact .k { font-size: 12px; color: var(--muted); }
+.fact .v { font-size: 16px; font-weight: 600; letter-spacing: -0.01em; }
+.fact .x { font-size: 12px; color: var(--ink-2); }
+.kind-note { grid-column: 1 / -1; font-size: 13px; color: var(--ink-2); margin: 2px 0 0; }
+.kinds-more { display: flex; justify-content: center; padding: 14px 20px; border-top: 1px solid var(--hair); }
+.kinds-more:empty { display: none; }
+.more-btn { border: 1px solid var(--hair); background: var(--surface); color: var(--ink); border-radius: 9px; padding: 8px 14px; font-size: 13px; font-weight: 500; cursor: pointer; }
+.more-btn:hover { border-color: var(--rule); }
+.kinds-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; padding: 14px 20px; border-top: 1px solid var(--hair); font-size: 12.5px; color: var(--muted); }
+.kinds-foot .legend { font-size: 12.5px; color: var(--muted); }
+
+/* Portfolios */
+.pf { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 16px; align-items: start; }
+.pf-list { padding: 8px; display: grid; gap: 2px; }
+.pf-group { font: 500 11px var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); padding: 12px 10px 6px; }
+.pf-item {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; align-items: center; text-align: left;
+  border: 0; background: transparent; border-radius: 9px; padding: 9px 10px; cursor: pointer; transition: background 0.12s;
+}
+.pf-item:hover { background: var(--sunken); }
+.pf-item[aria-pressed="true"] { background: var(--accent-wash); }
+.pf-item .t { font-size: 13.5px; font-weight: 500; line-height: 1.3; min-width: 0; }
+.pf-item .c { font: 600 12.5px var(--font-mono); font-variant-numeric: tabular-nums; }
+.pf-item .b { grid-column: 1 / -1; height: 3px; border-radius: 3px; background: var(--hair); position: relative; overflow: hidden; }
+.pf-item .b i { position: absolute; inset: 0 auto 0 0; border-radius: 3px; background: var(--spy); }
+.pf-item[aria-pressed="true"] .b i { background: var(--accent); }
+.pf-main { display: grid; gap: 12px; min-width: 0; }
+.pf-chart-card .card-head { align-items: flex-start; }
+.pf-title { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.pf-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.pf-stats .kpi .value { font-size: 24px; }
+.note { font-size: 13px; color: var(--muted); margin: 0; }
+.pf-select { display: none; width: 100%; max-width: 100%; min-width: 0; }
+
+/* Live test */
+.hyps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.hyp { padding: 18px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.hyp p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
+.meter { height: 8px; border-radius: 8px; background: var(--accent-wash-2); overflow: hidden; }
+.meter i { display: block; height: 100%; border-radius: 8px; background: var(--accent); min-width: 2px; }
+.meter-cap { display: flex; justify-content: space-between; font: 500 12px var(--font-mono); color: var(--muted); }
+.live-table td { white-space: nowrap; }
+.live-table td.wrapok { white-space: normal; min-width: 180px; }
+.tick { font: 600 13px var(--font-mono); letter-spacing: 0.01em; color: var(--ink); text-decoration: none; }
+a.tick:hover { color: var(--accent-text); text-decoration: underline; }
+.co { display: block; font-size: 12px; color: var(--muted); max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+.score { display: inline-grid; place-items: center; min-width: 30px; height: 22px; padding: 0 6px; border-radius: 6px; font: 600 12px var(--font-mono); font-variant-numeric: tabular-nums; }
+.grp { display: inline-block; font-size: 11.5px; padding: 2px 7px; border-radius: 6px; background: var(--sunken); color: var(--ink-2); margin: 1px 2px 1px 0; }
+.st { font-size: 12px; font-weight: 500; color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; }
+.st i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.st.open i { background: var(--accent); }
+.st.pending i { background: transparent; box-shadow: inset 0 0 0 1.5px var(--muted); }
+.st.closed i { background: var(--ink-2); }
+.st.dead i, .st.break i { background: var(--critical); }
+.fwd { font: 600 10px/1 var(--font-mono); color: var(--accent-text); border: 1px solid color-mix(in oklab, var(--accent) 40%, transparent); border-radius: 4px; padding: 2px 4px; margin-left: 6px; vertical-align: 1px; }
+.empty { padding: 28px 20px; text-align: center; color: var(--muted); font-size: 14px; }
+
+/* Method */
+.method { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.method .card { padding: 18px 20px; }
+.method ul { margin: 10px 0 0; padding-left: 18px; color: var(--ink-2); font-size: 14px; display: grid; gap: 6px; }
+footer { padding-block: 40px 56px; color: var(--muted); font-size: 12.5px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; border-top: 1px solid var(--hair); padding-top: 20px; }
+
+@media (max-width: 1080px) {
+  .kinds-head, .kind-row { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) 196px 118px; }
+  .kinds-head .c-typ, .kind-row .c-typ { display: none; }
+  .asof { display: none; }
+}
+@media (max-width: 900px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-top: 28px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-2, .hyps { grid-template-columns: minmax(0, 1fr); }
+  .pf { grid-template-columns: minmax(0, 1fr); }
+  .pf-list { display: none; }
+  .pf-select { display: block; }
+  .method { grid-template-columns: minmax(0, 1fr); }
+  .kind-detail { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .topbar .wrap { flex-wrap: wrap; gap: 4px 12px; padding-block: 10px 0; min-height: 0; }
+  .tabs { order: 3; flex-basis: 100%; margin-inline: -8px; }
+  .tab[aria-current="true"]::after { bottom: 0; }
+  .topbar-end { margin-left: auto; }
+  section { padding-block: 40px 4px; }
+  .kinds-head { display: none; }
+  .kind-row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name verdict" "bar bar" "strip typ"; gap: 10px 12px; padding: 14px 16px; }
+  .kind-row .c-name { grid-area: name; }
+  .kind-row .c-bar { grid-area: bar; }
+  .kind-row .c-strip { grid-area: strip; }
+  .kind-row .c-typ { grid-area: typ; display: flex; justify-content: flex-end; }
+  .kind-row .c-ver { grid-area: verdict; }
+  .kind-detail { padding: 4px 16px 16px; }
+  .pf-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card-head { padding: 16px 16px 0; }
+  .card-body { padding: 14px 16px 16px; }
+  .kinds-foot { padding: 14px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+@media (forced-colors: active) {
+  .strip .cells i.p, .strip .cells i.n, .meter i { background: CanvasText; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#overview" aria-label="Insider Edge, back to top">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6.5" fill="var(--accent)"/><path d="M6 16.5h3.5v-3.5H13v-3.5h5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Insider Edge
+    </a>
+    <nav class="tabs" aria-label="Sections">
+      <a class="tab" href="#overview">Overview</a>
+      <a class="tab" href="#works">What works</a>
+      <a class="tab" href="#portfolios">Portfolios</a>
+      <a class="tab" href="#live">Live test</a>
+      <a class="tab" href="#method">Method</a>
+    </nav>
+    <div class="topbar-end">
+      <span class="asof" id="asof"></span>
+      <button class="icon-btn" id="theme" type="button" aria-label="Theme: match system"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="overview" aria-labelledby="verdict-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">The verdict · SEC Form 4 open-market purchases</div>
+          <h1 id="verdict-title"></h1>
+          <p class="lead" id="lead"></p>
+          <div class="stamp" id="stamp"></div>
+        </div>
+        <div class="card hero-card" aria-labelledby="hero-label">
+          <div class="label" id="hero-label">Edge over comparable stocks, 3 months after each buy</div>
+          <div class="hero-fig"><span class="val" id="hero-val"></span><span class="unit">a year</span></div>
+          <div class="hero-meta" id="hero-meta"></div>
+          <div class="hero-spark chart" id="hero-spark" role="img"></div>
+          <div class="hero-spark-cap" id="hero-spark-cap"></div>
+        </div>
+      </div>
+
+      <div class="kpis" id="kpis"></div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="card-head">
+          <div class="titles">
+            <h3 id="years-title">Edge by year</h3>
+            <div class="card-sub" id="years-sub"></div>
+          </div>
+          <div class="seg" role="group" aria-label="Compare with" id="years-bench">
+            <button type="button" data-v="surv" aria-pressed="true">Comparable stocks</button>
+            <button type="button" data-v="spy" aria-pressed="false">S&amp;P 500</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart" id="years-chart"></div>
+        </div>
+        <details class="tableview">
+          <summary>Table view</summary>
+          <div class="scroll" id="years-table"></div>
+        </details>
+      </div>
+
+      <div class="grid-2" id="checks"></div>
+    </div>
+  </section>
+
+  <section id="works" aria-labelledby="works-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">What works · 63 sessions after the filing</div>
+        <h2 id="works-title">Which kinds of insider buy are worth following</h2>
+        <p class="dek">Every kind of buy was turned into a portfolio and tested over 2006–2015 and again on 2016 onward. Bars show the yearly edge; the strip shows each year from 2006, so you can see how steady it was. Tap a row for the detail.</p>
+        <p class="dek" id="strict-note" style="font-size:13.5px;color:var(--muted)"></p>
+      </div>
+      <div class="toolbar">
+        <div class="chips grow" id="feature-chips" role="group" aria-label="Filter by feature"></div>
+      </div>
+      <div class="toolbar">
+        <div class="seg" role="group" aria-label="Compare with" id="works-metric">
+          <button type="button" data-v="surv" aria-pressed="true">vs comparable stocks</button>
+          <button type="button" data-v="spy" aria-pressed="false">vs S&amp;P 500</button>
+        </div>
+        <label class="sr-only" for="works-sort">Sort by</label>
+        <select class="select" id="works-sort">
+          <option value="edge">Sort: biggest edge</option>
+          <option value="steady">Sort: most consistent</option>
+          <option value="typical">Sort: vs the typical buy</option>
+          <option value="signals">Sort: most signals</option>
+        </select>
+        <button class="chip" type="button" id="works-thin" aria-pressed="false">Show thin samples</button>
+      </div>
+      <div class="card">
+        <div class="kinds-head" aria-hidden="true">
+          <span>Kind of buy</span><span>Edge a year</span><span>Each year since 2006</span><span class="c-typ">vs typical buy</span><span>Strict test</span>
+        </div>
+        <ul class="kinds" id="kinds"></ul>
+        <div class="kinds-more" id="kinds-more"></div>
+        <div class="kinds-foot">
+          <span id="kinds-count"></span>
+          <span class="legend"><span><i class="key-box" style="background:var(--accent)"></i>Ahead that year</span><span><i class="key-box" style="background:var(--neg)"></i>Behind</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolios" aria-labelledby="pf-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Portfolios · $100,000, up to 20 positions, after trading costs</div>
+        <h2 id="pf-title">What a real account would have made</h2>
+        <p class="dek">Each strategy buys at the next open after the filing, holds for a fixed number of sessions and pays realistic costs. Idle cash earns T-bill interest. The hedged figure shorts small caps (IWM) to strip out the small-stock market move.</p>
+      </div>
+      <div class="pf">
+        <div class="card pf-list" id="pf-list" role="group" aria-label="Strategy"></div>
+        <div class="pf-main">
+          <label class="sr-only" for="pf-select">Strategy</label>
+          <select class="select pf-select" id="pf-select"></select>
+          <div class="card pf-chart-card">
+            <div class="card-head">
+              <div class="titles">
+                <div class="pf-title"><h3 id="pf-name"></h3><span id="pf-badge"></span></div>
+                <div class="legend" id="pf-legend"></div>
+              </div>
+              <div class="seg" role="group" aria-label="Holding period" id="pf-hold">
+                <button type="button" data-v="21d" aria-pressed="false">1 month</button>
+                <button type="button" data-v="63d" aria-pressed="true">3 months</button>
+                <button type="button" data-v="126d" aria-pressed="false">6 months</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="chart" id="pf-chart" tabindex="0" aria-describedby="pf-chart-help"></div>
+              <p class="sr-only" id="pf-chart-help">Use the left and right arrow keys to read values month by month.</p>
+            </div>
+            <details class="tableview">
+              <summary>Table view</summary>
+              <div class="scroll" id="pf-table"></div>
+            </details>
+          </div>
+          <div class="pf-stats" id="pf-stats"></div>
+          <p class="note" id="pf-note"></p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <div class="card-head"><div class="titles"><h3>All strategies side by side</h3><div class="card-sub" id="all-sub"></div></div></div>
+        <div class="card-body"><div class="scroll" id="all-table"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="live" aria-labelledby="live-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Live test · logged before the market opens</div>
+        <h2 id="live-title">Is it still working on new buys?</h2>
+        <p class="dek">Every qualifying new buy is logged each weekday morning, before its first trading session, then tracked for a year. Only those rows count as a forward test: nobody can tune them after the fact. The leads above get judged here.</p>
+      </div>
+      <div class="kpis" id="live-kpis" style="margin-top:0"></div>
+      <div class="hyps" id="hyps"></div>
+      <div class="card" style="margin-top:12px">
+        <div class="card-head">
+          <div class="titles"><h3>Latest insider buys</h3><div class="card-sub" id="live-sub"></div></div>
+        </div>
+        <div class="card-body" style="padding-bottom:8px">
+          <div class="toolbar" style="margin-bottom:6px">
+            <label class="sr-only" for="live-q">Search buys</label>
+            <input class="search" id="live-q" type="search" placeholder="Search ticker, company or insider" autocomplete="off">
+            <div class="chips grow" id="live-chips" role="group" aria-label="Filter buys"></div>
+          </div>
+        </div>
+        <div class="scroll" id="live-table"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="method" aria-labelledby="method-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Method · how much to trust this</div>
+        <h2 id="method-title">How the numbers were made</h2>
+      </div>
+      <div class="method">
+        <div class="card">
+          <h3>Built to avoid fooling ourselves</h3>
+          <ul>
+            <li>Entry is the open of the first session after the filing, the first price anyone could act on.</li>
+            <li>Every feature uses only filings and outcomes that were public before entry.</li>
+            <li>The test design was written down before the first run. Later changes are bug fixes, each logged.</li>
+            <li>Significance comes from monthly portfolio returns, with corrections for testing many ideas.</li>
+            <li>2006–2015 found the leads; 2016 onward checks them. Leads found by looking are judged only on the live test.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>What it can't tell you</h3>
+          <ul id="limits"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span id="foot-left">Research, not investment advice.</span>
+    <span class="mono" id="foot-right"></span>
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip" aria-hidden="true"></div>
+
+<script id="dashboard-data" type="application/json">/*__DASHBOARD_DATA__*/null</script>
+<script>
+"use strict";
+(function () {
+  const D = JSON.parse(document.getElementById("dashboard-data").textContent);
+  if (!D) return;
+
+  // ---------- helpers ----------
+  const $ = (id) => document.getElementById(id);
+  const SVG = "http://www.w3.org/2000/svg";
+  function el(tag, attrs, ...kids) {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v == null || v === false) continue;
+      if (k === "class") n.className = v;
+      else if (k === "text") n.textContent = v;
+      else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v === true ? "" : v);
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) n.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+    return n;
+  }
+  function sv(tag, attrs) {
+    const n = document.createElementNS(SVG, tag);
+    for (const [k, v] of Object.entries(attrs || {})) if (v != null) n.setAttribute(k, v);
+    return n;
+  }
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem("insider-edge:" + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem("insider-edge:" + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } },
+  };
+  const isNum = (x) => typeof x === "number" && isFinite(x);
+  function pct(x, digits = 1, signed = true) {
+    if (!isNum(x)) return "–";
+    const v = (x * 100).toFixed(digits);
+    return (signed && x > 0 ? "+" : "") + v.replace("-", "−") + "%";
+  }
+  function money(x) {
+    if (!isNum(x)) return "–";
+    const a = Math.abs(x);
+    if (a >= 1e9) return "$" + (x / 1e9).toFixed(1) + "B";
+    if (a >= 1e6) return "$" + (x / 1e6).toFixed(a >= 1e7 ? 0 : 1) + "M";
+    if (a >= 1e3) return "$" + Math.round(x / 1e3) + "K";
+    return "$" + Math.round(x);
+  }
+  const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function day(s) { if (!s) return "–"; const [y, m, d] = s.split("-").map(Number); return `${MONTHS[m - 1]} ${d}, ${y}`; }
+  function shortDay(s) { if (!s) return "–"; const [, m, d] = s.split("-").map(Number); return `${MONTHS[m - 1]} ${d}`; }
+  function month(s) { const [y, m] = s.split("-").map(Number); return `${MONTHS[m - 1]} ${y}`; }
+  function signed(x, fmt = (v) => pct(v)) {
+    const cls = !isNum(x) ? "none" : x > 0.0005 ? "up" : x < -0.0005 ? "down" : "flat";
+    return el("span", { class: "sv " + cls, text: fmt(x) });
+  }
+  function sigDot(p, label) {
+    const yes = isNum(p) && p < 0.05;
+    return el("span", { class: "sig " + (yes ? "yes" : "no") }, el("i"), label || (yes ? "significant" : "not significant"));
+  }
+  const tStat = (c) => (isNum(c.t) ? `t ${c.t.toFixed(1)}` : "");
+
+  // ---------- tooltip ----------
+  const tip = $("tip");
+  function showTip(x, y, head, rows) {
+    tip.replaceChildren(el("div", { class: "t-head", text: head }),
+      ...rows.map((r) => el("div", { class: "t-row" },
+        el("span", { class: "n" }, r.key ? el("i", { class: "key-line", style: `background:${r.key}` }) : null, r.name),
+        el("b", { text: r.value }))));
+    tip.classList.add("on");
+    tip.setAttribute("aria-hidden", "false");
+    const w = tip.offsetWidth, h = tip.offsetHeight, pad = 12;
+    let left = x + 14, top = y - h - 12;
+    if (left + w > innerWidth - pad) left = x - w - 14;
+    if (left < pad) left = pad;
+    if (top < pad) top = y + 16;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  function hideTip() { tip.classList.remove("on"); tip.setAttribute("aria-hidden", "true"); }
+  addEventListener("scroll", hideTip, { passive: true });
+
+  // ---------- scales ----------
+  function niceStep(range, count) {
+    const raw = range / Math.max(1, count), p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p;
+    return (f < 1.5 ? 1 : f < 3 ? 2 : f < 7 ? 5 : 10) * p;
+  }
+  function ticks(lo, hi, count) {
+    const s = niceStep(hi - lo || 1, count), out = [];
+    for (let v = Math.ceil(lo / s - 1e-9) * s; v <= hi + 1e-9; v += s) out.push(Math.round(v / s) * s);
+    return out;
+  }
+  function barPath(x, y0, y1, w, r) { // vertical bar from baseline y0 to data end y1, rounded at the data end
+    const h = Math.abs(y1 - y0); if (h < 0.5) return "";
+    r = Math.min(r, h, w / 2);
+    const s = y1 < y0 ? 1 : -1;
+    return `M${x},${y0}V${y1 + s * r}Q${x},${y1} ${x + r},${y1}H${x + w - r}Q${x + w},${y1} ${x + w},${y1 + s * r}V${y0}Z`;
+  }
+  function hbarPath(x0, x1, y, h, r) { // horizontal bar from zero x0 to data end x1
+    const w = Math.abs(x1 - x0); if (w < 0.5) return "";
+    r = Math.min(r, w, h / 2);
+    const s = x1 > x0 ? -1 : 1;
+    return `M${x0},${y}H${x1 + s * r}Q${x1},${y} ${x1},${y + r}V${y + h - r}Q${x1},${y + h} ${x1 + s * r},${y + h}H${x0}Z`;
+  }
+
+  // Re-draw charts when their container width changes.
+  const redraws = new Map();
+  const ro = "ResizeObserver" in window ? new ResizeObserver((entries) => {
+    for (const e of entries) { const f = redraws.get(e.target); if (f) requestAnimationFrame(f); }
+  }) : null;
+  function onResize(node, draw) { redraws.set(node, draw); if (ro) ro.observe(node); else addEventListener("resize", draw); draw(); }
+
+  // ---------- theme ----------
+  const themeBtn = $("theme");
+  const ICONS = {
+    system: '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor"/></svg>',
+    light: '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6L13 13M3 13l1.4-1.4M11.6 4.4L13 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+    dark: '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>',
+  };
+  const THEME_LABEL = { system: "match system", light: "light", dark: "dark" };
+  function applyTheme(t) {
+    if (t === "system") document.documentElement.removeAttribute("data-theme");
+    else document.documentElement.setAttribute("data-theme", t);
+    themeBtn.innerHTML = ICONS[t];
+    themeBtn.setAttribute("aria-label", "Theme: " + THEME_LABEL[t] + ". Change theme");
+    themeBtn.title = "Theme: " + THEME_LABEL[t];
+  }
+  let theme = store.get("theme", "system");
+  if (!ICONS[theme]) theme = "system";
+  applyTheme(theme);
+  themeBtn.addEventListener("click", () => {
+    theme = { system: "light", light: "dark", dark: "system" }[theme];
+    store.set("theme", theme);
+    applyTheme(theme);
+  });
+
+  function segmented(node, value, onChange) {
+    const btns = [...node.querySelectorAll("button")];
+    const set = (v) => btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === v)));
+    set(value);
+    btns.forEach((b) => b.addEventListener("click", () => { set(b.dataset.v); onChange(b.dataset.v); }));
+  }
+
+  // ---------- overview ----------
+  const O = D.overall, M = D.meta;
+  $("asof").textContent = "Prices to " + day(M.last_price_date);
+  const realEdge = isNum(O.surv.ann) && O.surv.ann > 0 && O.surv_disc.p < 0.05 && O.surv_hold.p < 0.05;
+  const lateBeat = isNum(O.spy_hold.ann) && O.spy_hold.ann > 0 && O.spy_hold.p < 0.05;
+  const h1 = $("verdict-title");
+  h1.append(realEdge ? "Insider buys carry real information. " : "Insider buys show no reliable edge. ",
+    el("span", { class: "soft", text: lateBeat ? "And copying them still beats the S&P 500." : "Copying them hasn't reliably beaten the S&P 500 since 2016." }));
+  $("lead").textContent =
+    `Stocks did better than comparable stocks after insiders bought them, in ${O.surv.years_pos} of ${O.surv.years_n} years. ` +
+    `Against the S&P 500 the gap was large in 2006–2015 and has mostly gone since, because the small companies insiders buy have lagged big ones.`;
+  const nf = new Intl.NumberFormat("en-US");
+  $("stamp").append(el("span", { text: `${nf.format(M.filings || 0)} purchase filings` }),
+    el("span", { text: `${nf.format(M.signals || 0)} signals tested` }),
+    el("span", { text: `Backtest ${day(M.run_date)}` }));
+
+  $("hero-val").textContent = pct(O.surv.ann);
+  $("hero-meta").append(
+    el("span", {}, el("b", { text: `${O.surv.years_pos} of ${O.surv.years_n}` }), " years positive"),
+    el("span", {}, "2006–15 ", el("b", { text: pct(O.surv_disc.ann) }), " · 2016+ ", el("b", { text: pct(O.surv_hold.ann) })),
+    el("span", { text: tStat(O.surv) }));
+  const sparkYears = D.years.filter((y) => isNum(y.surv));
+  if (sparkYears.length) {
+    $("hero-spark-cap").append(el("span", { text: sparkYears[0].year }), el("span", { text: "Each year" }), el("span", { text: sparkYears[sparkYears.length - 1].year }));
+  }
+  const spark = $("hero-spark");
+  spark.setAttribute("aria-label", "Edge over comparable stocks by year: " + sparkYears.map((y) => `${y.year} ${pct(y.surv)}`).join(", "));
+  onResize(spark, () => {
+    const W = spark.clientWidth, H = 64, n = sparkYears.length;
+    if (!W || !n) return;
+    const max = Math.max(...sparkYears.map((y) => Math.abs(y.surv)), 0.01);
+    const lo = Math.min(0, ...sparkYears.map((y) => y.surv)), hi = Math.max(0, ...sparkYears.map((y) => y.surv));
+    const sy = (v) => 2 + (hi - v) / (hi - lo || max) * (H - 4);
+    const band = W / n, bw = Math.min(14, band - 3);
+    const svg = sv("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, "aria-hidden": "true" });
+    svg.append(sv("line", { class: "zero", x1: 0, x2: W, y1: sy(0), y2: sy(0) }));
+    sparkYears.forEach((y, i) => {
+      const x = i * band + (band - bw) / 2;
+      svg.append(sv("path", { d: barPath(x, sy(0), sy(y.surv), bw, 3), fill: y.surv >= 0 ? "var(--accent)" : "var(--neg)" }));
+    });
+    spark.replaceChildren(svg);
+  });
+
+  const copy = O.copy_all, ev = O.event;
+  const kpi = (label, value, unit, foot) => el("div", { class: "card kpi" },
+    el("div", { class: "label", text: label }),
+    el("div", { class: "value" }, value, unit ? el("small", { text: unit }) : null),
+    el("div", { class: "foot" }, foot));
+  $("kpis").append(
+    kpi("vs S&P 500, 2006–2015", pct(O.spy_disc.ann), "a year", sigDot(O.spy_disc.p, isNum(O.spy_disc.p) ? `p ${O.spy_disc.p < 0.001 ? "<0.001" : O.spy_disc.p.toFixed(3)}` : "")),
+    kpi("vs S&P 500, 2016 onward", pct(O.spy_hold.ann), "a year", sigDot(O.spy_hold.p, isNum(O.spy_hold.p) ? `p ${O.spy_hold.p < 0.001 ? "<0.001" : O.spy_hold.p.toFixed(2)}${O.spy_hold.p < 0.05 ? "" : ", could be chance"}` : "")),
+    kpi("Single buys that beat the S&P 500", pct(ev.beat, 0, false), "over 3 months", `The median buy trails by ${pct(Math.abs(ev.median), 1, false)}`),
+    kpi("Copying every buy, after costs", pct(copy.cagr), "a year", `S&P 500 made ${pct(copy.spy_cagr)} · worst drop ${pct(-copy.mdd, 0)}`));
+
+  // Edge by year (diverging columns)
+  let yearsBench = store.get("yearsBench", "surv");
+  if (!["surv", "spy"].includes(yearsBench)) yearsBench = "surv";
+  const yearsChart = $("years-chart");
+  function drawYears() {
+    const key = yearsBench, data = D.years.filter((y) => isNum(y[key]));
+    const W = yearsChart.clientWidth; if (!W || !data.length) return;
+    const H = 280, m = { t: 26, r: 8, b: 28, l: 44 };
+    const vals = data.map((d) => d[key]);
+    let lo = Math.min(0, ...vals), hi = Math.max(0, ...vals);
+    const step = niceStep(hi - lo || 0.01, 5);
+    lo = Math.floor(lo / step - 1e-9) * step; hi = Math.ceil(hi / step + 1e-9) * step;
+    if (lo < 0 && Math.min(...vals) - lo < step * 0.35) lo -= step;
+    const tk = ticks(lo, hi, Math.round((hi - lo) / step));
+    const ih = H - m.t - m.b, iw = W - m.l - m.r;
+    const y = (v) => m.t + (hi - v) / (hi - lo) * ih;
+    const band = iw / data.length, bw = Math.min(24, Math.max(4, band * 0.62));
+    const svg = sv("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `Edge by year vs ${key === "surv" ? "comparable stocks" : "the S&P 500"}` });
+    const g = sv("g", { class: "grid" }), ax = sv("g", { class: "axis" });
+    tk.forEach((v) => {
+      if (Math.abs(v) > 1e-12) g.append(sv("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v) }));
+      const t = sv("text", { x: m.l - 8, y: y(v) + 4, "text-anchor": "end" }); t.textContent = pct(v, 0); ax.append(t);
+    });
+    svg.append(g);
+    // discovery / holdout split
+    const split = data.findIndex((d) => d.year >= "2016");
+    if (split > 0) {
+      const xs = m.l + split * band;
+      svg.append(sv("line", { x1: xs, x2: xs, y1: m.t - 18, y2: H - m.b, stroke: "var(--rule)", "stroke-width": 1 }));
+      const a = sv("text", { x: xs - 6, y: m.t - 10, "text-anchor": "end", class: "chart-label" }); a.textContent = "Found the leads ←";
+      const b = sv("text", { x: xs + 6, y: m.t - 10, class: "chart-label" }); b.textContent = "→ Checked them";
+      if (W > 520) svg.append(a, b);
+    }
+    svg.append(sv("line", { class: "zero", x1: m.l, x2: W - m.r, y1: y(0), y2: y(0) }));
+    const bars = sv("g", { class: "bars" });
+    const maxI = vals.indexOf(Math.max(...vals)), minI = vals.indexOf(Math.min(...vals));
+    const every = band < 22 ? (band < 12 ? 5 : 2) : 1;
+    data.forEach((d, i) => {
+      const x = m.l + i * band + (band - bw) / 2, v = d[key];
+      const bar = sv("path", { class: "bar", d: barPath(x, y(0), y(v), bw, 4), fill: v >= 0 ? "var(--accent)" : "var(--neg)" });
+      bars.append(bar);
+      if ((i === maxI || i === minI || i === data.length - 1) && band >= 16) {
+        const lab = sv("text", { class: "chart-value", x: x + bw / 2, y: v >= 0 ? y(v) - 6 : y(v) + 14, "text-anchor": "middle" });
+        lab.textContent = pct(v, Math.abs(v) < 0.095 ? 1 : 0); svg.append(lab);
+      }
+      if (i % every === 0 || i === data.length - 1) {
+        const t = sv("text", { x: m.l + i * band + band / 2, y: H - m.b + 18, "text-anchor": "middle" });
+        t.textContent = every > 1 ? "’" + d.year.slice(2) : d.year; ax.append(t);
+      }
+      const hit = sv("rect", { class: "hit", x: m.l + i * band, y: m.t, width: band, height: ih, tabindex: 0,
+        "aria-label": `${d.year}: ${pct(d.surv)} vs comparable stocks, ${pct(d.spy)} vs S&P 500` });
+      const show = (cx, cy) => {
+        bar.classList.add("on");
+        showTip(cx, cy, d.year + (d.year === M.last_price_date.slice(0, 4) ? " (to date)" : ""), [
+          { name: "vs comparable stocks", value: pct(d.surv), key: key === "surv" ? "var(--accent)" : null },
+          { name: "vs S&P 500", value: pct(d.spy), key: key === "spy" ? "var(--accent)" : null }]);
+      };
+      hit.addEventListener("pointermove", (e) => show(e.clientX, e.clientY));
+      hit.addEventListener("pointerleave", () => { bar.classList.remove("on"); hideTip(); });
+      hit.addEventListener("focus", () => { const r = hit.getBoundingClientRect(); show(r.left + r.width / 2, r.top + Math.min(y(v), y(0)) - m.t); });
+      hit.addEventListener("blur", () => { bar.classList.remove("on"); hideTip(); });
+      bars.append(hit);
+    });
+    svg.append(bars, ax);
+    yearsChart.replaceChildren(svg);
+  }
+  function yearsText() {
+    const c = yearsBench === "surv" ? O.surv : O.spy;
+    $("years-sub").textContent = `${c.years_pos} of ${c.years_n} years positive · ${pct(c.ann)} a year on average · each buy held 3 months`;
+  }
+  segmented($("years-bench"), yearsBench, (v) => { yearsBench = v; store.set("yearsBench", v); yearsText(); drawYears(); });
+  yearsText();
+  onResize(yearsChart, drawYears);
+  $("years-table").append(table(["Year", "vs comparable stocks", "vs S&P 500"], D.years.map((d) => [d.year, pct(d.surv), pct(d.spy)]), [false, true, true]));
+
+  const pl = O.placebo || {}, sb = O.survivorship || {};
+  const check = (k, v, p) => el("div", { class: "card check" }, el("div", { class: "k", text: k }), el("div", { class: "v", text: v }), el("p", { text: p }));
+  $("checks").append(
+    check("Before you can act", pct(O.pre_drift) + " already gone",
+      "Between the insider's trade and the first open after the filing, the average stock has already moved this much."),
+    check("Same stocks a year later", `${pct(pl.difference_no_exclusion)} to ${pct(pl.difference)} better after a buy`,
+      `A placebo: the same stocks over a similar 3-month window a year after each buy returned ${pct(pl.placebo_mean)} vs the S&P 500.`),
+    check("Companies that disappeared", `${pct(sb.reported)} → ${pct(sb.neutral)}`,
+      "Free prices only exist for companies still listed. If the delisted ones did like a typical buy, the 3-month average falls to this."));
+
+  // ---------- tables ----------
+  function table(headers, rows, right) {
+    return el("table", {},
+      el("thead", {}, el("tr", {}, headers.map((h, i) => el("th", { class: right && right[i] ? "r" : null, scope: "col", text: h })))),
+      el("tbody", {}, rows.map((r) => el("tr", {}, r.map((c, i) => el("td", { class: right && right[i] ? "r" : null }, c))))));
+  }
+
+  // ---------- what works ----------
+  const FEAT = Object.fromEntries(D.features.map((f) => [f.key, f.title]));
+  const VERDICT = {
+    "works": ["works", "✓", "Passed"], "promising": ["promising", "◐", "Promising"], "no evidence": ["none", "", "Not proven"],
+    "looks negative": ["negative", "▼", "Looks negative"], "hurts": ["hurts", "✕", "Hurts"], "reversed": ["reversed", "↺", "Reversed"],
+    "not enough data": ["thin", "…", "Too little data"],
+  };
+  const TYPICAL = { "better than typical": ["better", "Beats the typical buy"], "worse than typical": ["worse", "Lags the typical buy"], "no different": ["same", "Like the typical buy"] };
+  function verdictPill(v) {
+    const [cls, ico, label] = VERDICT[v] || VERDICT["no evidence"];
+    return el("span", { class: "pill " + cls }, el("span", { class: "ico", "aria-hidden": "true", text: ico }), label);
+  }
+  function typicalTag(k) {
+    const [cls, label] = TYPICAL[k.vs_typical] || ["same", "–"];
+    return el("span", { class: "tag " + cls, title: isNum(k.vs_typical_ann) ? `${pct(k.vs_typical_ann)} a year vs all buys` : "" }, label);
+  }
+  const NOTES = {
+    "role:Other": "Owners who are neither an officer, a director nor a 10% holder: often funds and trusts.",
+    "insider_type:routine": "Insiders who buy in the same month year after year. Their trades are scheduled, not informed.",
+    "insider_type:opportunistic": "Insiders who don't buy on a fixed schedule.",
+    "prior_3m_return:up 30%+": "Buys after the stock already rose 30%+ in 3 months. Volatile and found by looking, so it is judged on the live test.",
+    "prior_3m_return:down 30%+": "\"Buying the dip\": averages look fine thanks to a few penny-stock rebounds, but portfolios show no edge.",
+  };
+  let works = { feature: "all", metric: "surv", sort: "edge", thin: false, open: null, ...store.get("works", {}) };
+  if (!["surv", "spy"].includes(works.metric)) works.metric = "surv";
+  const chips = $("feature-chips");
+  [{ key: "all", title: "All" }, ...D.features].forEach((f) => {
+    chips.append(el("button", { class: "chip", type: "button", "data-v": f.key, "aria-pressed": String(works.feature === f.key),
+      onclick: () => { works.feature = f.key; saveWorks(); chips.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.v === f.key))); drawKinds(); },
+      text: f.title }));
+  });
+  segmented($("works-metric"), works.metric, (v) => { works.metric = v; saveWorks(); drawKinds(); });
+  const sortSel = $("works-sort"); sortSel.value = works.sort;
+  sortSel.addEventListener("change", () => { works.sort = sortSel.value; saveWorks(); drawKinds(); });
+  const thinBtn = $("works-thin"); thinBtn.setAttribute("aria-pressed", String(works.thin));
+  thinBtn.addEventListener("click", () => { works.thin = !works.thin; thinBtn.setAttribute("aria-pressed", String(works.thin)); saveWorks(); drawKinds(); });
+  const tested = D.kinds.filter((k) => k.enough).length;
+  const passed = D.kinds.filter((k) => k.verdict === "works").length;
+  $("strict-note").textContent = `The strict test was written down before the first run: beat the S&P 500 in both periods, after correcting for testing ${tested} ideas at once. ` +
+    (passed ? `${passed} passed it.` : "Nothing has passed it yet, which is why the comparisons with similar stocks and with the typical buy matter.");
+  const KIND_PAGE = 12;
+  function saveWorks() { store.set("works", { feature: works.feature, metric: works.metric, sort: works.sort, thin: works.thin }); }
+  const YEARS = D.years.map((y) => y.year);
+  const metricOf = (k) => (works.metric === "surv" ? k.surv : k.spy);
+  const yearsOf = (k) => (works.metric === "surv" ? k.surv_years : k.spy_years);
+
+  function drawKinds() {
+    let rows = D.kinds.filter((k) => (works.feature === "all" || k.feature === works.feature) && (works.thin || (k.enough && isNum(metricOf(k).ann))));
+    const steady = (k) => { const c = metricOf(k); return c.years_n ? c.years_pos / c.years_n : -1; };
+    const by = {
+      edge: (a, b) => (metricOf(b).ann ?? -9) - (metricOf(a).ann ?? -9),
+      steady: (a, b) => steady(b) - steady(a) || (metricOf(b).ann ?? -9) - (metricOf(a).ann ?? -9),
+      typical: (a, b) => (b.vs_typical_ann ?? -9) - (a.vs_typical_ann ?? -9),
+      signals: (a, b) => b.signals - a.signals,
+    }[works.sort];
+    rows = rows.slice().sort(by);
+    const all = rows.length;
+    if (!works.showAll && works.feature === "all") rows = rows.slice(0, KIND_PAGE);
+    const vals = rows.map((k) => metricOf(k).ann).filter(isNum);
+    const lo = Math.min(0, ...vals), hi = Math.max(0.01, ...vals);
+    const list = $("kinds");
+    list.replaceChildren();
+    if (!rows.length) list.append(el("li", { class: "empty", text: "No kinds of buy match. Try All, or show thin samples." }));
+    rows.forEach((k) => {
+      const c = metricOf(k), id = k.feature + ":" + k.bucket, open = works.open === id;
+      const svgBox = el("span", { class: "c-bar hbar" });
+      const barSvg = sv("svg", { "aria-hidden": "true", preserveAspectRatio: "none" });
+      svgBox.append(barSvg, el("span", { class: "v" }, pct(c.ann), el("small", { text: "/yr" })));
+      const cells = el("span", { class: "cells", "aria-hidden": "true" },
+        YEARS.map((y) => { const v = yearsOf(k)[y]; return el("i", { class: !isNum(v) ? "" : v > 0 ? "p" : "n", title: isNum(v) ? `${y}: ${pct(v)}` : `${y}: no data` }); }));
+      const head = el("button", { class: "kind-row", type: "button", "aria-expanded": String(open), "aria-controls": "d-" + id.replace(/[^a-z0-9]/gi, "-") },
+        el("span", { class: "c-name kind-name" }, el("span", { class: "f", text: FEAT[k.feature] || k.feature }), el("span", { class: "b", text: k.bucket }), el("span", { class: "s", text: `${nf.format(k.signals)} signals` })),
+        svgBox,
+        el("span", { class: "c-strip strip", "aria-label": `Ahead in ${c.years_pos} of ${c.years_n} years` }, cells, el("span", { class: "count", text: `${c.years_pos}/${c.years_n}` })),
+        el("span", { class: "c-typ" }, typicalTag(k)),
+        el("span", { class: "c-ver" }, verdictPill(k.verdict)));
+      const detail = el("div", { class: "kind-detail", id: "d-" + id.replace(/[^a-z0-9]/gi, "-"), hidden: !open });
+      const fact = (kk, v, x) => el("div", { class: "fact" }, el("div", { class: "k", text: kk }), el("div", { class: "v" }, v), x ? el("div", { class: "x" }, x) : null);
+      detail.append(
+        fact("2006–2015 vs comparable", signed(k.surv_disc.ann), tStat(k.surv_disc)),
+        fact("2016+ vs comparable", signed(k.surv_hold.ann), tStat(k.surv_hold)),
+        fact("2006–2015 vs S&P 500", signed(k.spy_disc.ann), tStat(k.spy_disc)),
+        fact("2016+ vs S&P 500", signed(k.spy_hold.ann), tStat(k.spy_hold)),
+        fact("Average 3-month result", signed(k.excess), `vs S&P 500 · median ${pct(k.median)}`),
+        fact("Single buys that beat the S&P 500", pct(k.beat, 0, false), "over 3 months"),
+        fact("vs the typical insider buy", signed(k.vs_typical_ann), isNum(k.vs_typical_holm) ? `adjusted p ${k.vs_typical_holm < 0.001 ? "<0.001" : k.vs_typical_holm.toFixed(2)}` : "not tested"),
+        fact("Signals", nf.format(k.signals), "one per company per day"));
+      if (NOTES[id]) detail.append(el("p", { class: "kind-note", text: NOTES[id] }));
+      head.addEventListener("click", () => {
+        const nowOpen = head.getAttribute("aria-expanded") !== "true";
+        works.open = nowOpen ? id : null;
+        list.querySelectorAll(".kind-row[aria-expanded='true']").forEach((b) => { b.setAttribute("aria-expanded", "false"); b.parentElement.querySelector(".kind-detail").hidden = true; });
+        head.setAttribute("aria-expanded", String(nowOpen)); detail.hidden = !nowOpen;
+      });
+      list.append(el("li", { class: "kind" }, head, detail));
+      requestAnimationFrame(() => {
+        const W = barSvg.clientWidth || barSvg.getBoundingClientRect().width; if (!W) return;
+        barSvg.setAttribute("viewBox", `0 0 ${W} 22`);
+        const x = (v) => (v - lo) / (hi - lo) * W, v = c.ann;
+        barSvg.replaceChildren(sv("line", { class: "zero", x1: x(0), x2: x(0), y1: 0, y2: 22 }));
+        if (isNum(v)) barSvg.append(sv("path", { d: hbarPath(x(0), x(v), 5, 12, 4), fill: v >= 0 ? "var(--accent)" : "var(--neg)" }));
+      });
+    });
+    $("kinds-count").textContent = `Showing ${rows.length} of ${all} kinds of buy` + (works.thin ? "" : " with enough data to test");
+    const more = $("kinds-more");
+    more.replaceChildren();
+    if (works.feature === "all" && all > KIND_PAGE) {
+      more.append(el("button", { class: "more-btn", type: "button", "aria-expanded": String(!!works.showAll),
+        onclick: () => { works.showAll = !works.showAll; drawKinds(); if (!works.showAll) $("works").scrollIntoView({ block: "start" }); },
+        text: works.showAll ? "Show the top " + KIND_PAGE : `Show all ${all} kinds of buy` }));
+    }
+  }
+  drawKinds();
+  let kindsW = 0;
+  if (ro) new ResizeObserver(() => { const w = $("kinds").clientWidth; if (Math.abs(w - kindsW) > 2) { kindsW = w; drawKinds(); } }).observe($("kinds"));
+
+  // ---------- portfolios ----------
+  const S = D.strategies;
+  const preReg = S.filter((s) => !s.post_hoc), postHoc = S.filter((s) => s.post_hoc);
+  const cagrOf = (s, hold) => s.holds[hold] ? s.holds[hold].strategy_cagr : null;
+  let pf = { key: "all_liquid", hold: "63d", ...store.get("pf", {}) };
+  if (!S.some((s) => s.key === pf.key)) pf.key = S[0] && S[0].key;
+  if (!["21d", "63d", "126d"].includes(pf.hold)) pf.hold = "63d";
+  const pfList = $("pf-list"), pfSelect = $("pf-select");
+  function drawPfList() {
+    pfList.replaceChildren(); pfSelect.replaceChildren();
+    const maxC = Math.max(0.01, ...S.map((s) => cagrOf(s, pf.hold) || 0));
+    const group = (title, items) => {
+      if (!items.length) return;
+      pfList.append(el("div", { class: "pf-group", text: title }));
+      const og = el("optgroup", { label: title });
+      items.slice().sort((a, b) => (cagrOf(b, pf.hold) ?? -9) - (cagrOf(a, pf.hold) ?? -9)).forEach((s) => {
+        const c = cagrOf(s, pf.hold);
+        pfList.append(el("button", { class: "pf-item", type: "button", "aria-pressed": String(s.key === pf.key), onclick: () => selectPf(s.key) },
+          el("span", { class: "t", text: s.title.replace(" (post-hoc)", "") }), el("span", { class: "c", text: pct(c) }),
+          el("span", { class: "b", "aria-hidden": "true" }, el("i", { style: `width:${Math.max(2, Math.min(100, (c || 0) / maxC * 100))}%` }))));
+        og.append(el("option", { value: s.key, text: `${s.title} · ${pct(c)} a year`, selected: s.key === pf.key }));
+      });
+      pfSelect.append(og);
+    };
+    group("Tested as planned", preReg);
+    group("Found by looking · live test decides", postHoc);
+  }
+  pfSelect.addEventListener("change", () => selectPf(pfSelect.value));
+  function selectPf(key) { pf.key = key; store.set("pf", pf); drawPfList(); drawPf(); }
+  segmented($("pf-hold"), pf.hold, (v) => { pf.hold = v; store.set("pf", pf); drawPfList(); drawPf(); drawAll(); });
+
+  const pfChart = $("pf-chart");
+  let pfCursor = null;
+  function drawPf() {
+    const s = S.find((x) => x.key === pf.key); if (!s) return;
+    const p = s.holds[pf.hold]; if (!p) return;
+    $("pf-name").textContent = s.title.replace(" (post-hoc)", "");
+    $("pf-badge").replaceChildren(s.post_hoc ? el("span", { class: "badge posthoc", title: "Found by looking at this data, so this backtest can't confirm it", text: "Found by looking" }) : el("span", { class: "badge", text: "Tested as planned" }));
+    $("pf-legend").replaceChildren(
+      el("span", {}, el("i", { class: "key-line", style: "background:var(--accent)" }), "This strategy"),
+      el("span", {}, el("i", { class: "key-line", style: "background:var(--spy)" }), "S&P 500 (SPY)"));
+    const curve = p.curve || [];
+    const W = pfChart.clientWidth; if (!W || !curve.length) { pfChart.replaceChildren(el("div", { class: "empty", text: "No portfolio history." })); return; }
+    const narrow = W < 560;
+    const H = narrow ? 260 : 320, m = { t: 16, r: narrow ? 64 : 92, b: 28, l: 52 };
+    const START = 100000;
+    const vals = curve.flatMap((c) => [c[1], c[2]]).filter((v) => isNum(v) && v > 0);
+    const lmin = Math.log(Math.min(...vals) * START), lmax = Math.log(Math.max(...vals) * START);
+    const pad = (lmax - lmin) * 0.06 || 0.1;
+    const lo = lmin - pad, hi = lmax + pad, iw = W - m.l - m.r, ih = H - m.t - m.b;
+    const x = (i) => m.l + (curve.length === 1 ? 0 : i / (curve.length - 1) * iw);
+    const y = (v) => m.t + (hi - Math.log(v * START)) / (hi - lo) * ih;
+    const svg = sv("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: "img",
+      "aria-label": `Growth of $100,000: ${s.title} ${money(curve[curve.length - 1][1] * START)} vs S&P 500 ${money(curve[curve.length - 1][2] * START)}` });
+    const g = sv("g", { class: "grid" }), ax = sv("g", { class: "axis" });
+    const cands = [];
+    for (let e = 4; e <= 8; e++) for (const k of [1, 2, 5]) cands.push(k * Math.pow(10, e));
+    const yt = cands.filter((v) => Math.log(v) >= lo && Math.log(v) <= hi);
+    yt.forEach((v) => {
+      g.append(sv("line", { x1: m.l, x2: W - m.r, y1: y(v / START), y2: y(v / START) }));
+      const t = sv("text", { x: m.l - 8, y: y(v / START) + 4, "text-anchor": "end" }); t.textContent = money(v); ax.append(t);
+    });
+    const years = [...new Set(curve.map((c) => c[0].slice(0, 4)))];
+    const step = W < 480 ? 5 : W < 800 ? 3 : 2;
+    years.forEach((yr, j) => {
+      if (j % step !== 0) return;
+      const i = curve.findIndex((c) => c[0].startsWith(yr));
+      const t = sv("text", { x: x(i), y: H - m.b + 18, "text-anchor": "middle" }); t.textContent = yr; ax.append(t);
+    });
+    svg.append(g, ax);
+    const path = (k) => curve.map((c, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(c[k]).toFixed(1)}`).join("");
+    const area = path(1) + `L${x(curve.length - 1)},${m.t + ih}L${x(0)},${m.t + ih}Z`;
+    svg.append(sv("path", { d: area, fill: "var(--accent-wash)" }));
+    svg.append(sv("path", { d: path(2), fill: "none", stroke: "var(--spy)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    svg.append(sv("path", { d: path(1), fill: "none", stroke: "var(--accent)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    // End labels with leader lines when they would collide
+    const last = curve.length - 1, ex = x(last);
+    const ends = [{ v: curve[last][1], c: "var(--accent)", name: narrow ? "" : "Strategy" }, { v: curve[last][2], c: "var(--spy)", name: narrow ? "" : "S&P 500" }]
+      .map((e) => ({ ...e, y: y(e.v) })).sort((a, b) => a.y - b.y);
+    if (ends[1].y - ends[0].y < 30) { const mid = (ends[0].y + ends[1].y) / 2; ends[0].ly = mid - 15; ends[1].ly = mid + 15; }
+    else { ends[0].ly = ends[0].y; ends[1].ly = ends[1].y; }
+    ends.forEach((e) => {
+      if (Math.abs(e.ly - e.y) > 1) svg.append(sv("path", { d: `M${ex + 6},${e.y}L${ex + 12},${e.ly}`, stroke: "var(--rule)", fill: "none" }));
+      svg.append(sv("circle", { cx: ex, cy: e.y, r: 4, fill: e.c, stroke: "var(--surface)", "stroke-width": 2 }));
+      const t = sv("text", { x: ex + 14, y: e.ly - (e.name ? 2 : -4), class: "chart-value" }); t.textContent = money(e.v * START); svg.append(t);
+      if (e.name) { const n = sv("text", { x: ex + 14, y: e.ly + 11, class: "chart-label" }); n.textContent = e.name; svg.append(n); }
+    });
+    // Crosshair
+    const cross = sv("line", { y1: m.t, y2: m.t + ih, stroke: "var(--rule)", "stroke-width": 1, visibility: "hidden" });
+    const d1 = sv("circle", { r: 4, fill: "var(--accent)", stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" });
+    const d2 = sv("circle", { r: 4, fill: "var(--spy)", stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" });
+    const hit = sv("rect", { x: m.l, y: m.t, width: iw, height: ih, fill: "transparent" });
+    svg.append(cross, d2, d1, hit);
+    const at = (i, cx, cy) => {
+      i = Math.max(0, Math.min(last, i)); pfCursor = i;
+      const c = curve[i];
+      [cross, d1, d2].forEach((n) => n.setAttribute("visibility", "visible"));
+      cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i));
+      d1.setAttribute("cx", x(i)); d1.setAttribute("cy", y(c[1])); d2.setAttribute("cx", x(i)); d2.setAttribute("cy", y(c[2]));
+      const r = svg.getBoundingClientRect();
+      showTip(cx ?? r.left + x(i), cy ?? r.top + Math.min(y(c[1]), y(c[2])), month(c[0]), [
+        { name: "This strategy", value: money(c[1] * START), key: "var(--accent)" },
+        { name: "S&P 500", value: money(c[2] * START), key: "var(--spy)" }]);
+    };
+    const clear = () => { [cross, d1, d2].forEach((n) => n.setAttribute("visibility", "hidden")); hideTip(); };
+    hit.addEventListener("pointermove", (e) => { const r = svg.getBoundingClientRect(); at(Math.round((e.clientX - r.left - m.l) / iw * last), e.clientX, e.clientY); });
+    hit.addEventListener("pointerleave", clear);
+    pfChart.onkeydown = (e) => {
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight" && e.key !== "Home" && e.key !== "End") return;
+      e.preventDefault();
+      const i = e.key === "Home" ? 0 : e.key === "End" ? last : (pfCursor ?? last) + (e.key === "ArrowRight" ? 1 : -1);
+      at(i);
+    };
+    pfChart.onblur = clear;
+    pfChart.replaceChildren(svg);
+
+    const stat = (label, value, foot) => el("div", { class: "card kpi" }, el("div", { class: "label", text: label }), el("div", { class: "value" }, value), el("div", { class: "foot" }, foot));
+    $("pf-stats").replaceChildren(
+      stat("Return a year", pct(p.strategy_cagr), `S&P 500 ${pct(p.spy_cagr)}`),
+      stat("Worst drop", pct(-p.strategy_max_drawdown, 0), `S&P 500 ${pct(-p.spy_max_drawdown, 0)}`),
+      stat("Hedged with IWM", pct(p.hedged_cagr), "a year, small-cap market removed"),
+      stat("Risk-adjusted (Sharpe)", isNum(p.strategy_sharpe) ? p.strategy_sharpe.toFixed(2) : "–", `S&P 500 ${isNum(p.spy_sharpe) ? p.spy_sharpe.toFixed(2) : "–"}`),
+      (() => { const n = new Set(curve.map((c) => c[0].slice(0, 4))).size, k = Math.round((p.years_beating_spy || 0) * n);
+        return stat("Years ahead of the S&P 500", `${k} of ${n}`, "calendar years, including this one so far"); })(),
+      stat("Trading costs", pct(p.costs_pct_nav_per_year, 1, false), "of the account a year"));
+    $("pf-note").textContent = s.post_hoc
+      ? "This strategy was found by looking at this same data, so its backtest can't prove it. The live test below decides."
+      : `${nf.format(Math.round(p.trades || 0))} trades, ${isNum(p.avg_positions) ? p.avg_positions.toFixed(0) : "–"} positions held on average. Without costs it made ${pct(s.cost_free_cagr)} a year; with double costs ${pct(s.double_cost_cagr)}.`;
+    const yr = {};
+    curve.forEach((c) => { yr[c[0].slice(0, 4)] = c; });
+    const ys = Object.keys(yr).sort();
+    $("pf-table").replaceChildren(table(["Year end", "This strategy", "S&P 500"], ys.map((k) => [month(yr[k][0]), money(yr[k][1] * START), money(yr[k][2] * START)]), [false, true, true]));
+  }
+  drawPfList();
+  onResize(pfChart, drawPf);
+
+  // All strategies table (sortable)
+  let allSort = { key: "cagr", dir: -1 };
+  const allCols = [
+    ["Strategy", "title", false], ["Return a year", "cagr", true], ["Hedged", "hedged", true], ["Worst drop", "mdd", true],
+    ["Sharpe", "sharpe", true], ["vs comparable stocks", "surv", true], ["Signals", "signals", true]];
+  function drawAll() {
+    const val = (s, k) => { const p = s.holds[pf.hold] || {}; return { title: s.title, cagr: p.strategy_cagr, hedged: p.hedged_cagr, mdd: -(p.strategy_max_drawdown ?? NaN), sharpe: p.strategy_sharpe, surv: s.surv.ann, signals: s.signals }[k]; };
+    const rows = S.slice().sort((a, b) => {
+      const va = val(a, allSort.key), vb = val(b, allSort.key);
+      if (typeof va === "string") return allSort.dir * va.localeCompare(vb);
+      return allSort.dir * ((isNum(va) ? va : -1e9) - (isNum(vb) ? vb : -1e9));
+    });
+    const head = el("tr", {}, allCols.map(([label, key, r]) => el("th", { class: r ? "r" : null, scope: "col", "aria-sort": allSort.key === key ? (allSort.dir < 0 ? "descending" : "ascending") : "none" },
+      el("button", { type: "button", onclick: () => { allSort = { key, dir: allSort.key === key ? -allSort.dir : (key === "title" ? 1 : -1) }; drawAll(); }, text: label }))));
+    const body = rows.map((s) => {
+      const p = s.holds[pf.hold] || {};
+      return el("tr", {},
+        el("td", {}, el("span", { text: s.title.replace(" (post-hoc)", "") }), s.post_hoc ? el("span", { class: "badge posthoc", style: "margin-left:8px", text: "Found by looking" }) : null),
+        el("td", { class: "r" }, signed(p.strategy_cagr)), el("td", { class: "r" }, signed(p.hedged_cagr)),
+        el("td", { class: "r", text: pct(-p.strategy_max_drawdown, 0) }), el("td", { class: "r", text: isNum(p.strategy_sharpe) ? p.strategy_sharpe.toFixed(2) : "–" }),
+        el("td", { class: "r" }, signed(s.surv.ann)), el("td", { class: "r", text: nf.format(s.signals) }));
+    });
+    const spy = (S.find((s) => s.holds[pf.hold]) || {}).holds;
+    $("all-sub").textContent = `Held ${{ "21d": "1 month", "63d": "3 months", "126d": "6 months" }[pf.hold]} · S&P 500 made ${pct(spy && spy[pf.hold] ? spy[pf.hold].spy_cagr : null)} a year over the same period`;
+    $("all-table").replaceChildren(el("table", {}, el("thead", {}, head), el("tbody", {}, body)));
+  }
+  drawAll();
+
+  // ---------- live test ----------
+  const L = D.live;
+  const fwd = L.forward;
+  const firstLogged = L.rows.length ? L.rows[L.rows.length - 1].filed : null;
+  const needed = (L.hypotheses[0] || {}).needed || 100;
+  $("live-kpis").append(
+    kpi("Buys logged", nf.format(L.logged), "", `${nf.format((L.statuses.open || 0) + (L.statuses.pending || 0))} still being tracked`),
+    kpi("Counting as a forward test", nf.format(fwd.signals), "signals", "logged before their first open"),
+    kpi("Open positions so far", isNum(fwd.open_mean) ? pct(fwd.open_mean) : "–", "vs S&P 500", `average of ${fwd.open} still open`),
+    kpi("3-month outcomes in", nf.format(fwd.matured["63"] || 0), `of ${needed}`, "needed before the leads are judged"));
+  const hyps = $("hyps");
+  if (!L.hypotheses.length) hyps.append(el("div", { class: "card empty", text: "No hypotheses registered yet." }));
+  L.hypotheses.forEach((h) => {
+    const share = Math.min(1, (h.matured || 0) / (h.needed || 100));
+    const status = h.matured >= h.needed ? "Ready to judge" : h.matured ? "Collecting outcomes" : "Waiting for first outcomes";
+    hyps.append(el("div", { class: "card hyp" },
+      el("div", { class: "eyebrow", text: status }),
+      el("h3", { text: h.title.replace(" (post-hoc)", "") }),
+      el("p", { text: h.claim }),
+      el("div", { class: "meter", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": h.needed, "aria-valuenow": h.matured, "aria-label": `${h.matured} of ${h.needed} outcomes` }, el("i", { style: `width:${(share * 100).toFixed(1)}%` })),
+      el("div", { class: "meter-cap" }, el("span", { text: `${h.matured}/${h.needed} outcomes` }), el("span", { text: `${h.logged} logged` })),
+      el("p", { class: "muted", style: "font-size:12.5px" }, "Expected: " + h.expected)));
+  });
+
+  const STRAT_SHORT = {
+    all_liquid: "All", score_40: "Score 40+", score_60: "Score 60+", ceo_cfo_100k: "CEO/CFO $100K+", cluster_3: "3+ insiders",
+    opportunistic: "Opportunistic", contrarian: "After a drop", proven_insider: "Proven insider", big_stake_up: "Stake up 25%+",
+    first_buy_exec: "Exec first buy", cfo_exec_25k: "CFO/exec $25K+", momentum_buy: "After a run-up",
+  };
+  const LIVE_FILTERS = [
+    ["all", "All", () => true], ["s60", "Score 60+", (r) => r.score >= 60],
+    ["exec", "CFO & executives", (r) => r.strategies.includes("cfo_exec_25k")],
+    ["cluster", "3+ insiders", (r) => r.cluster >= 3], ["run", "After a 30% run-up", (r) => r.strategies.includes("momentum_buy")],
+    ["fwd", "In the forward test", (r) => r.forward],
+  ];
+  const LIVE_PAGE = 25;
+  let live = { q: "", filter: "all", sort: "filed", dir: -1, shown: LIVE_PAGE };
+  const liveChips = $("live-chips");
+  LIVE_FILTERS.forEach(([k, label]) => liveChips.append(el("button", { class: "chip", type: "button", "data-v": k, "aria-pressed": String(k === live.filter),
+    onclick: () => { live.filter = k; live.shown = LIVE_PAGE; liveChips.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.v === k))); drawLive(); }, text: label })));
+  $("live-q").addEventListener("input", (e) => { live.q = e.target.value.trim().toLowerCase(); live.shown = LIVE_PAGE; drawLive(); });
+  const scoreStyle = (s) => {
+    const i = s >= 80 ? 5 : s >= 60 ? 4 : s >= 40 ? 3 : s >= 20 ? 2 : 1;
+    const lightText = document.documentElement.getAttribute("data-theme") === "dark" || (!document.documentElement.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches) ? i <= 3 : i >= 3;
+    return `background:var(--score-${i});color:${lightText ? "#fff" : "#0e1218"}`;
+  };
+  const liveCols = [["Filed", "filed", false], ["Ticker", "symbol", false], ["Insider", "insider", false], ["Value", "value", true], ["Score", "score", true], ["Groups", null, false], ["vs S&P so far", "now", true], ["Status", "status", false]];
+  function drawLive() {
+    const f = (LIVE_FILTERS.find((x) => x[0] === live.filter) || LIVE_FILTERS[0])[2];
+    let rows = L.rows.filter((r) => f(r) && (!live.q || [r.symbol, r.company, r.insider].some((s) => (s || "").toLowerCase().includes(live.q))));
+    rows = rows.slice().sort((a, b) => {
+      const va = a[live.sort], vb = b[live.sort];
+      if (typeof va === "string" || typeof vb === "string") return live.dir * String(va || "").localeCompare(String(vb || ""));
+      return live.dir * ((isNum(va) ? va : -1e9) - (isNum(vb) ? vb : -1e9));
+    });
+    $("live-sub").textContent = `${rows.length} of ${L.rows.length} buys from the last ${120} days · tap a ticker for the SEC filing`;
+    const box = $("live-table");
+    if (!rows.length) { box.replaceChildren(el("div", { class: "empty", text: live.q ? `No buys match “${live.q}”.` : "No buys in this group yet." })); return; }
+    const head = el("tr", {}, liveCols.map(([label, key, r]) => el("th", { class: r ? "r" : null, scope: "col", "aria-sort": key ? (live.sort === key ? (live.dir < 0 ? "descending" : "ascending") : "none") : null },
+      key ? el("button", { type: "button", onclick: () => { live = { ...live, sort: key, dir: live.sort === key ? -live.dir : (["filed", "value", "score", "now"].includes(key) ? -1 : 1) }; drawLive(); }, text: label }) : label)));
+    const body = rows.slice(0, live.shown).map((r) => {
+      const url = typeof r.url === "string" && r.url.startsWith("https://www.sec.gov/") ? r.url : null;
+      return el("tr", {},
+        el("td", { class: "num", text: shortDay(r.filed) }),
+        el("td", { class: "wrapok" }, url ? el("a", { class: "tick", href: url, target: "_blank", rel: "noopener noreferrer", text: r.symbol }) : el("span", { class: "tick", text: r.symbol }),
+          r.forward ? el("span", { class: "fwd", title: "Logged before its first open: counts as a forward test", text: "F" }) : null,
+          el("span", { class: "co", text: r.company })),
+        el("td", { class: "wrapok" }, el("span", { text: r.insider }), el("span", { class: "co", text: r.role })),
+        el("td", { class: "r", text: money(r.value) }),
+        el("td", { class: "r" }, el("span", { class: "score", style: scoreStyle(r.score), text: r.score })),
+        el("td", { class: "wrapok" }, r.strategies.filter((k) => k !== "all_liquid").map((k) => el("span", { class: "grp", text: STRAT_SHORT[k] || k }))),
+        el("td", { class: "r" }, r.status === "pending" ? el("span", { class: "muted", text: "enters next open" }) : signed(r.now)),
+        el("td", {}, el("span", { class: "st " + r.status }, el("i"), { pending: "Pending", open: "Open", closed: "Closed", dead: "Stopped trading", "break": "Data break" }[r.status] || r.status)));
+    });
+    box.replaceChildren(el("table", { class: "live-table" }, el("thead", {}, head), el("tbody", {}, body)));
+    if (rows.length > live.shown) {
+      box.append(el("div", { class: "kinds-more" }, el("button", { class: "more-btn", type: "button",
+        onclick: () => { live.shown += LIVE_PAGE; drawLive(); }, text: `Show ${Math.min(LIVE_PAGE, rows.length - live.shown)} more of ${rows.length - live.shown}` })));
+    }
+  }
+  drawLive();
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", drawLive);
+  themeBtn.addEventListener("click", drawLive);
+
+  // ---------- method & footer ----------
+  $("limits").append(
+    el("li", { text: `Prices only exist for companies still listed today, so about half of all buys can't be priced. That flatters every number here.` }),
+    el("li", { text: "The adjustment is for the market only, not for company size or value, and trading costs are estimates." }),
+    el("li", { text: "The best leads were found by looking at this data. Only the live test can confirm them." }),
+    el("li", { text: "This is research, not investment advice." }));
+  $("foot-right").textContent = `Backtest ${M.run_date} · data ${M.datasets ? M.datasets.split(" ")[0].slice(0, 6) : ""}–${M.last_price_date} · ${M.git_commit || ""} · generated ${M.generated}`;
+
+  // ---------- scroll fades on overflowing chip rows and tabs ----------
+  function fade(node) {
+    const update = () => node.classList.toggle("more-right", node.scrollLeft + node.clientWidth < node.scrollWidth - 4);
+    node.addEventListener("scroll", update, { passive: true });
+    if (ro) new ResizeObserver(update).observe(node); else addEventListener("resize", update);
+    update();
+  }
+  document.querySelectorAll(".chips, .tabs").forEach(fade);
+
+  // ---------- section tracking ----------
+  const tabs = [...document.querySelectorAll(".tab")];
+  const setTab = (id) => tabs.forEach((t) => t.setAttribute("aria-current", String(t.getAttribute("href") === "#" + id)));
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) setTab(e.target.id); });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    document.querySelectorAll("main section").forEach((s) => io.observe(s));
+  }
+  setTab((location.hash || "#overview").slice(1));
+})();
+</script>
+</body>
+</html>

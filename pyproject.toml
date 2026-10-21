@@ -15,3 +15,6 @@ stocktrack = "stocktrack.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["stocktrack*"]
+
+[tool.setuptools.package-data]
+stocktrack = ["dashboard.html"]
