@@ -338,7 +338,9 @@ def write_dashboard(data_dir: str | Path = "data", out_dir: str | Path = "dashbo
     res = json.loads((data / "backtest" / "latest.json").read_text())
     hyp_path = data / "backtest" / "hypotheses.json"
     hypotheses = json.loads(hyp_path.read_text()) if hyp_path.exists() else None
-    return build_dashboard(out_dir, res, led.load(data / "picks.csv"), hypotheses, today)
+    adv_path = data / "backtest" / "advisor.json"
+    advisor = json.loads(adv_path.read_text()) if adv_path.exists() else None
+    return build_dashboard(out_dir, res, led.load(data / "picks.csv"), hypotheses, today, advisor)
 
 
 def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path = "vault",

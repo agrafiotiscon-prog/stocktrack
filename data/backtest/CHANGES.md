@@ -116,3 +116,23 @@ Set before any 63-session forward outcome existed. The forward test now counts o
 as the backtest does: several insiders of one company buying on the same day share one return, so they are one
 observation (the 2026-10-13 HEI filings by eight directors had counted eight times). The "100 matured 63-session
 outcomes" in `hypotheses.json` are counted the same way.
+
+## Signal desk (2026-10-21): exploratory, not pre-registered
+
+The dashboard's report cards (`stocktrack/advisor.py`, `data/backtest/advisor.json`) are an added analysis, built
+after seeing the results, so the forward test is their real check. What was tried and what was kept:
+
+- A ridge regression of each buy's 3-month return over comparable stocks on all its features, fit on 2006-2015 with
+  the shrinkage chosen inside that period, predicted nothing on 2016+ (rank correlation -0.01; the chosen shrinkage
+  was the largest tried, i.e. "ignore the features"). It was dropped: individual buys are mostly noise.
+- Kept instead: "tilts", the features that beat or lagged the typical buy (calendar-time portfolios, liquid buys at
+  $2+ and $1M+/day) by at least 1% a year in the same direction in two periods. Each tilt is the smaller of its two
+  edges. A buy's tilts are summed; +2% a year or more is "above typical", -2% or worse "below typical".
+- Out-of-sample check of that procedure: tilts chosen from 2006-2010 vs 2011-2015 only, applied unchanged to 2016+.
+  Above-typical buys beat comparable stocks by +8.0% a year (t 3.0), typical +2.9%, below-typical -0.8%; above minus
+  below +8.9% a year (p 0.02). (Averaging the two periods' edges instead of taking the smaller gave +5.2%, p 0.05;
+  the smaller was adopted because one feature otherwise dominated the live tiers.) In a 20-position simulated
+  account since 2016 the tiers made 11.8%, 11.4% and 3.2% a year against 15.1% for SPY: avoiding below-typical
+  buys helped, above-typical buys barely beat typical ones, and nothing beat the S&P 500.
+- The live tilts use 2006-2015 vs 2016+. Position sizes come from risk (a loss budget over the 1-in-10 bad 3-month
+  return of stocks at a similar price and liquidity), capped at 5% of the account and 2% of daily dollar volume.

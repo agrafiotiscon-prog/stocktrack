@@ -66,6 +66,20 @@ confidence.
 - **Past winners:** an insider's earlier good record didn't predict their next buy (+0.0% vs the typical buy).
 - **Dividend-reinvestment and plan purchases:** no edge beyond the typical buy (expected; they aren't decisions).
 
+## Can we tell a good buy from a bad one?
+
+*Added 2026-10-21 with the dashboard's signal desk.*
+
+Only a little. A model using every feature of a buy couldn't rank individual buys on data it hadn't seen: each
+buy's outcome is mostly noise. What did hold up is a simple profile: add up the features that beat or lagged the
+typical buy in the same direction in both decades (CFO or other executive, 10% owner, 3+ insiders, a run-up, a
+$250K-1M purchase on the plus side; "Other" filers, presidents/chairs, routine buyers, new positions, small
+purchases, buying after a 10-30% fall on the minus side). Built from 2006-2015 alone and tested on 2016+, the
+"above typical" group beat comparable stocks by about 8% a year and the "below typical" group lagged them slightly.
+In a simulated 20-stock account, though, above-typical buys barely beat typical ones (11.8% vs 11.4% a year since
+2016), and every group trailed the S&P 500 (15.1%). The useful rule is to skip below-typical buys and to size by
+risk: a $3 stock trading $2M a day has twice the downside of a large company.
+
 ## How much to trust this
 
 - **Strict verdict: nothing earned ✅.** The pre-registered rule needs a Holm-corrected win against SPY in *both*

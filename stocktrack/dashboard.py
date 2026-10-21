@@ -12,12 +12,15 @@ import json
 import math
 from pathlib import Path
 
-from stocktrack.backtest import POST_HOC, PRIMARY, STRATEGIES
+from stocktrack import advisor as adv
+from stocktrack.backtest import POST_HOC, PRIMARY, STRATEGIES, cost_per_side
 from stocktrack.ledger import is_forward
 from stocktrack.vault import FEATURE_TITLES, forward_by_strategy, forward_stats, unique_rows
 
 TEMPLATE = Path(__file__).with_name("dashboard.html")
 LIVE_DAYS = 120  # recent buys shown in the live table
+DESK_DAYS = 10  # buys shown on the signal desk (calendar days back from the latest filing)
+LEADS = ("cfo_exec_25k", "momentum_buy")  # post-hoc leads being judged on the live test
 HYPOTHESIS_SAMPLE = 100  # matured 63-session outcomes before a hypothesis is judged
 
 
@@ -104,31 +107,93 @@ def _live_rows(ledger: list[dict], today: str) -> list[dict]:
 
 
 def _hypotheses(hyp: dict, ledger: list[dict]) -> list[dict]:
-    """Progress of each registered hypothesis on the forward-test rows that count for it."""
-    if not hyp:
+    """Progress of each registered hypothesis on the forward-test rows that count for it.
+
+    Rows count once their entry shows they were logged before the open; rows logged before an
+    upcoming open (still pending) are included in "logged" but can't have outcomes yet.
+    """
+    if not hyp or not hyp.get("registered"):
         return []
     start = (dt.date.fromisoformat(hyp["registered"]) + dt.timedelta(days=1)).isoformat()
-    rows = [r for r in ledger if is_forward(r) and r["logged"][:10] >= start]
-    everyone = unique_rows(rows)
+    recent = [r for r in ledger if r["logged"][:10] >= start]
+    counted = [r for r in recent if is_forward(r)]
+    logged = [r for r in recent if is_forward(r) or r["status"] == "pending"]
+    everyone = unique_rows(counted)
+
+    def avoid(r: dict) -> bool:
+        return r["role"] == "Other" or r["kind"] == "routine"
+
     out = []
     for h in hyp.get("hypotheses", []):
-        key = h["strategy"]
+        key = h.get("strategy") or ""
         if key in STRATEGIES:
-            group = unique_rows([r for r in rows if key in (r["strategies"] or "").split("|")])
-            title = STRATEGIES[key][0]
-        else:  # the "avoid" hypothesis: Other-role and routine insiders
-            group = unique_rows([r for r in rows if r["role"] == "Other" or r["kind"] == "routine"])
-            title = "Owners filing as \"Other\" and routine insiders"
-        s = forward_stats(group, PRIMARY)
+            match, title = (lambda r, k=key: k in (r["strategies"] or "").split("|")), STRATEGIES[key][0]
+        elif key.startswith("avoid:"):
+            match, title = avoid, "Owners filing as \"Other\" and routine insiders"
+        else:
+            continue  # an unknown group can't be scored
+        s = forward_stats(unique_rows([r for r in counted if match(r)]), PRIMARY)
         base = forward_stats(everyone, PRIMARY)
-        out.append({"key": key, "title": title, "claim": h["claim"], "expected": h["expected"],
-                    "logged": len(group), "matured": s.get("n", 0), "needed": HYPOTHESIS_SAMPLE,
+        out.append({"key": key, "title": title, "claim": h.get("claim", ""), "expected": h.get("expected", ""),
+                    "logged": len(unique_rows([r for r in logged if match(r)])), "since": start,
+                    "matured": s.get("n", 0), "needed": HYPOTHESIS_SAMPLE,
                     "mean": _r(s.get("mean")), "all_mean": _r(base.get("mean"))})
     return out
 
 
+def _desk(ledger: list[dict], model: dict | None) -> dict | None:
+    """Report cards for the latest buys: one per company and filing day."""
+    if not model or not ledger:
+        return None
+    latest = max(r["filed_at"][:10] for r in ledger)
+    cutoff = (dt.date.fromisoformat(latest) - dt.timedelta(days=DESK_DAYS)).isoformat()
+    groups: dict[tuple, list[dict]] = {}
+    for r in ledger:
+        if r["filed_at"][:10] >= cutoff:
+            groups.setdefault((r["issuer_cik"], r["filed_at"][:10]), []).append(r)
+    cards = []
+    for (_, filed), rows in groups.items():
+        scored = [(adv.score(r, model), r) for r in rows]
+        sc, lead = max(scored, key=lambda x: (x[0]["tilt"], x[1]["value"] or 0))
+        entry = lead["entry_date"] or adv.next_market_day(filed)
+        price = lead["entry_price"] or lead["price"]
+        cards.append({
+            "symbol": lead["symbol"] or lead["ticker"], "company": lead["issuer_name"], "filed": filed,
+            "url": lead["url"], "status": lead["status"], "entered": bool(lead["entry_date"]),
+            "entry": entry, "exit": adv.add_market_days(entry, PRIMARY - 1),
+            "entry_price": _r(lead["entry_price"], 5), "last_close": _r(lead["price"], 5), "price": _r(price, 5),
+            "insider_price": _r(lead["avg_price"], 5), "adv": _r(lead["adv"], 4), "prior": _r(lead["prior_ret"], 3),
+            "now": _r(lead.get("abn_now"), 4), "ret_now": _r(lead.get("ret_now"), 4), "forward": is_forward(lead),
+            "cost_side": _r(cost_per_side(lead["price"], lead["adv"]), 3), "cluster": lead["cluster"],
+            "insiders": [{"name": r["owner_name"], "role": r["officer_title"] or r["role"], "value": _r(r["value"], 6)}
+                         for r in sorted(rows, key=lambda r: -(r["value"] or 0))],
+            "value": _r(sum(r["value"] or 0 for r in rows), 6),
+            "leads": sorted({k for r in rows for k in (r["strategies"] or "").split("|") if k in LEADS}),
+            "tier": sc["tier"], "tilt": _r(sc["tilt"], 4),
+            "tilts": [{"feature": t["feature"], "level": t["level"], "tilt": _r(t["tilt"], 4),
+                       "effects": [_r(x, 4) for x in t["effects"]]} for t in sc["tilts"]],
+            "risk": {k: _r(v, 4) for k, v in sc["risk"].items()},
+        })
+    order = {"above": 0, "typical": 1, "below": 2}
+    cards.sort(key=lambda c: (order[c["tier"]], -(c["tilt"] or 0), -(c["value"] or 0)))
+    v = model.get("validation", {})
+    return {
+        "cards": cards, "since": cutoff, "latest": latest,
+        "base": {k: (_r(x) if not isinstance(x, dict) else {kk: _r(vv) for kk, vv in x.items()})
+                 for k, x in model.get("base", {}).items()},
+        "validation": {"tiers": {k: {"ann": _r(t.get("ctp", {}).get("annualized")), "t": _r(t.get("ctp", {}).get("t"), 3),
+                                     "n": t.get("n"), "beat_spy": _r(t.get("beat_spy"), 3)}
+                                 for k, t in v.get("tiers", {}).items()},
+                       "spread": {k: _r(x) for k, x in v.get("above_minus_below", {}).items()},
+                       "portfolios": {k: {kk: _r(vv) for kk, vv in x.items()} for k, x in v.get("portfolios", {}).items()},
+                       "chosen_on": v.get("chosen_on"), "tested_on": v.get("tested_on")},
+        "tier_share": {k: _r(x, 3) for k, x in model.get("tier_share", {}).items()},
+        "rules": model.get("rules", {}), "tier_edge": model.get("tier_edge"), "fitted": model.get("fitted"),
+    }
+
+
 def dashboard_data(res: dict, ledger: list[dict], hypotheses: dict | None = None, today: str | None = None,
-                   generated: str | None = None) -> dict:
+                   generated: str | None = None, advisor: dict | None = None) -> dict:
     today = today or dt.date.today().isoformat()
     o, m = res["overall"], res["meta"]
     ev = o["events"][str(PRIMARY)]
@@ -153,7 +218,8 @@ def dashboard_data(res: dict, ledger: list[dict], hypotheses: dict | None = None
             "survivorship": {k: _r(v) for k, v in o.get("survivorship", {}).items()},
             "copy_all": {"cagr": _r(all_liquid.get("strategy_cagr")), "spy_cagr": _r(all_liquid.get("spy_cagr")),
                          "mdd": _r(all_liquid.get("strategy_max_drawdown")),
-                         "hedged": _r(all_liquid.get("hedged_cagr"))},
+                         "hedged": _r(all_liquid.get("hedged_cagr")), "trades": all_liquid.get("trades"),
+                         "signals": res["strategies"].get("all_liquid", {}).get("signals")},
         },
         "years": [{"year": y, "surv": _r(v, 4), "spy": _r((o.get("ctp") or {}).get("by_year", {}).get(y), 4)}
                   for y, v in sorted(((o.get("ctp_vs_survivors") or {}).get("by_year") or {}).items())],
@@ -169,6 +235,7 @@ def dashboard_data(res: dict, ledger: list[dict], hypotheses: dict | None = None
                         "means": {str(h): _r(fwd["all"][str(h)].get("mean")) for h in (5, 21, 63)}},
             "hypotheses": _hypotheses(hypotheses or {}, ledger),
         },
+        "desk": _desk(ledger, advisor),
     }
 
 
@@ -186,9 +253,9 @@ def render(data: dict) -> str:
 
 
 def build_dashboard(out_dir: str | Path, res: dict, ledger: list[dict], hypotheses: dict | None = None,
-                    today: str | None = None) -> Path:
+                    today: str | None = None, advisor: dict | None = None) -> Path:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     path = out / "index.html"
-    path.write_text(render(dashboard_data(res, ledger, hypotheses, today)), encoding="utf-8")
+    path.write_text(render(dashboard_data(res, ledger, hypotheses, today, advisor=advisor)), encoding="utf-8")
     return path
