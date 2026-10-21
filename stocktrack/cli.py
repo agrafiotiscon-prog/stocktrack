@@ -252,6 +252,8 @@ def cmd_research(args) -> int:
         records = rs.load_insider_records(Path(args.data) / "backtest" / "insider_track.csv.gz")
         n = vault.build_vault(args.vault, res, rows, records)
         print(f"wrote {n} notes to {args.vault}")
+    elif args.action == "advisor":
+        print(f"wrote {rs.refit_advisor(http, rs.research_db(), rs.price_store(max_age_days=365), Path(args.data) / 'backtest')}")
     elif args.action == "dashboard":
         print(f"wrote {rs.write_dashboard(args.data, args.dashboard)}")
     return 0
@@ -332,9 +334,10 @@ def build_parser() -> argparse.ArgumentParser:
     sp.set_defaults(func=cmd_test_alert)
 
     sp = sub.add_parser("research", help="historical backtest, forward-test ledger and Obsidian vault")
-    sp.add_argument("action", choices=["load", "prices", "backtest", "daily", "vault", "dashboard"],
+    sp.add_argument("action", choices=["load", "prices", "backtest", "daily", "vault", "dashboard", "advisor"],
                     help="load: SEC history; prices: price histories; backtest: full run; "
-                         "daily: one research cycle; vault: regenerate notes; dashboard: regenerate the HTML dashboard")
+                         "daily: one research cycle; vault: regenerate notes; dashboard: regenerate the HTML dashboard; "
+                         "advisor: refit the signal-strength model")
     sp.add_argument("--data", default="data", help="committed results directory (default %(default)s)")
     sp.add_argument("--vault", default="vault", help="Obsidian vault directory (default %(default)s)")
     sp.add_argument("--dashboard", default="dashboard", help="dashboard output directory (default %(default)s)")

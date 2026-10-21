@@ -205,8 +205,25 @@ def run_full_backtest(http: HttpClient, db: ResearchDB, store: PriceStore, out_d
     _write_insider_records(out / "insider_track.csv.gz", bt.insider_records(evs, result_bounds(result)))
     _append_tests_log(out / "tests_log.csv", result)
     _write_signals(HOME / "research" / "signals.csv.gz", evs)
+    write_advisor(evs, cal, out, echo)
     echo(f"wrote {out / 'latest.json'}")
     return result
+
+
+def write_advisor(evs: list[bt.Ev], cal: bt.Calendar, out_dir: str | Path, echo=print) -> Path:
+    """Fit and validate the signal-strength model behind the dashboard's report cards."""
+    from stocktrack import advisor
+
+    path = Path(out_dir) / "advisor.json"
+    path.write_text(json.dumps(advisor.fit(evs, cal, echo=echo), indent=1, allow_nan=False))
+    return path
+
+
+def refit_advisor(http: HttpClient, db: ResearchDB, store: PriceStore, out_dir: str | Path, echo=print) -> Path:
+    """Rebuild the events and refit only the advisor (no full backtest)."""
+    evs, cal, _ = bt.build_events(db.events(), store, TickerMap.load(http, CACHE))
+    bt.add_pit_features(evs)
+    return write_advisor(evs, cal, out_dir, echo)
 
 
 def result_bounds(result: dict) -> tuple[float, float]:
