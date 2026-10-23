@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[FUL]] | Director | $23K | 61 | -0.6% |
+| 2026-10-01 | [[FUL]] | Director | $23K | 61 | -1.0% |

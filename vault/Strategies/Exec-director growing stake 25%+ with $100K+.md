@@ -77,26 +77,26 @@ Cost sensitivity (63-session hold): no costs +13.4%/yr, double costs +7.9%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -2.3% | open |
+| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | – | pending |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | – | pending |
+| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -4.1% | open |
 | 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | $23.7M | 62 | +2.2% | open |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -3.7% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.4% | open |
-| 2026-10-15 | [[CXM]] | [[WARD JR STEPHEN M]] | $850K | 51 | +5.6% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -9.8% | open |
-| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | +7.0% | open |
-| 2026-10-13 | [[RTSN]] | [[BERGER FRANKLIN M]] | $120K | 55 | +39.9% | open |
-| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +3.4% | open |
-| 2026-10-13 | [[HEI]] | [[Neitzel Julie]] | $175K | 56 | +3.4% | open |
-| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +3.4% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +3.4% | open |
-| 2026-10-13 | [[FEAM]] | [[vant Hoff Graham]] | $215K | 45 | -22.1% | open |
-| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -4.4% | open |
-| 2026-10-09 | [[BPRE]] | [[KAMFAR RAMIN]] | $8.5M | 81 | -4.3% | open |
+| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -4.2% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.7% | open |
+| 2026-10-15 | [[CXM]] | [[WARD JR STEPHEN M]] | $850K | 51 | +4.6% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -13.0% | open |
+| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | +3.6% | open |
+| 2026-10-13 | [[RTSN]] | [[BERGER FRANKLIN M]] | $120K | 55 | +29.2% | open |
+| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +0.6% | open |
+| 2026-10-13 | [[HEI]] | [[Neitzel Julie]] | $175K | 56 | +0.6% | open |
+| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +0.6% | open |
+| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +0.6% | open |
+| 2026-10-13 | [[FEAM]] | [[vant Hoff Graham]] | $215K | 45 | -18.7% | open |
+| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -8.4% | open |
+| 2026-10-09 | [[BPRE]] | [[KAMFAR RAMIN]] | $8.5M | 81 | -4.5% | open |
 | 2026-10-08 | [[PHK]] | [[FLATTUM DAVID C]] | $249K | 46 | -1.3% | open |
-| 2026-10-08 | [[PDI]] | [[FLATTUM DAVID C]] | $250K | 66 | +0.9% | open |
-| 2026-10-08 | [[FUL]] | [[BAILLY R JEFFREY]] | $500K | 74 | +2.1% | open |
-| 2026-10-06 | [[PSUS]] | [[ISRAEL RYAN]] | $9.6M | 68 | -0.4% | open |
-| 2026-10-05 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.4M | 73 | -1.2% | open |
+| 2026-10-08 | [[PDI]] | [[FLATTUM DAVID C]] | $250K | 66 | +0.3% | open |
 
 
 ```dataview

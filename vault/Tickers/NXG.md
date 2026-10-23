@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[Sunderland Todd]] | Other | $46K | 26 | – | pending |
+| 2026-10-20 | [[Sunderland Todd]] | Other | $46K | 26 | -0.4% | open |

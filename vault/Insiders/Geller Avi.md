@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-20 | [[NVA]] | Director | $5K | 32 | – |
+| 2026-10-20 | [[NVA]] | Director | $5K | 32 | -0.2% |

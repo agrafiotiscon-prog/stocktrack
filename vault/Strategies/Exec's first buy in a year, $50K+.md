@@ -76,23 +76,26 @@ Cost sensitivity (63-session hold): no costs +12.3%/yr, double costs +7.0%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +3.5% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +3.5% | open |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -3.7% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.4% | open |
-| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | -2.5% | open |
-| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +39.9% | open |
-| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -4.4% | open |
-| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | -0.4% | open |
-| 2026-10-07 | [[AGMB]] | [[Knotnerus Tim Jasper]] | $94K | 67 | -0.9% | open |
-| 2026-10-06 | [[HRL]] | [[Newlands William A]] | $201K | 46 | +4.3% | open |
-| 2026-10-01 | [[DKS]] | [[Barnes Matthew]] | $500K | 78 | +6.3% | open |
-| 2026-10-01 | [[XENE]] | [[Kelly Thomas Patrick]] | $560K | 71 | -7.0% | open |
-| 2026-10-01 | [[XENE]] | [[MORTIMER IAN]] | $1.1M | 77 | -7.0% | open |
-| 2026-09-30 | [[BPRE]] | [[Ruddy Jordan B]] | $60K | 70 | -1.7% | open |
-| 2026-09-28 | [[DMRA]] | [[Jarrett Jennifer]] | $253K | 44 | -0.3% | open |
-| 2026-09-28 | [[ZUMZ]] | [[ELLIS ADAM CHRISTOPHER]] | $134K | 44 | +0.1% | open |
-| 2026-09-28 | [[INR]] | [[Baetz Cary D]] | $300K | 69 | +8.3% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | – | pending |
+| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | $97K | 52 | – | pending |
+| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | – | pending |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +11.8% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +11.8% | open |
+| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -4.2% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.7% | open |
+| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | +1.9% | open |
+| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +29.2% | open |
+| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -8.4% | open |
+| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | -0.3% | open |
+| 2026-10-07 | [[AGMB]] | [[Knotnerus Tim Jasper]] | $94K | 67 | +2.8% | open |
+| 2026-10-06 | [[HRL]] | [[Newlands William A]] | $201K | 46 | +3.4% | open |
+| 2026-10-01 | [[DKS]] | [[Barnes Matthew]] | $500K | 78 | +4.9% | open |
+| 2026-10-01 | [[XENE]] | [[Kelly Thomas Patrick]] | $560K | 71 | -8.4% | open |
+| 2026-10-01 | [[XENE]] | [[MORTIMER IAN]] | $1.1M | 77 | -8.4% | open |
+| 2026-09-30 | [[BPRE]] | [[Ruddy Jordan B]] | $60K | 70 | -2.0% | open |
+| 2026-09-28 | [[DMRA]] | [[Jarrett Jennifer]] | $253K | 44 | +3.3% | open |
+| 2026-09-28 | [[ZUMZ]] | [[ELLIS ADAM CHRISTOPHER]] | $134K | 44 | -4.1% | open |
 
 
 ```dataview

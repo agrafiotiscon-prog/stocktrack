@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[GME]] | Director | $255K | 66 | +9.6% |
+| 2026-10-01 | [[GME]] | Director | $255K | 66 | +8.3% |

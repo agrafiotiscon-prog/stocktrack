@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40", "cluster_3", "contrarian"]
 entry_date: "2026-10-16"
 entry_price: 3.24
 status: "open"
-abn_now: -0.130384
-ret_now: -0.135802
+abn_now: -0.0923986
+ret_now: -0.0925926
 abn_5: 
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/cluster_3
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | -13.0% |
+| – | – | – | – | – | -9.2% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/2019804/000119312526423068/0001193125-26-423068-index.htm)

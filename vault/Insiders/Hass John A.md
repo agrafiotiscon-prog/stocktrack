@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +83.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-15 | [[NEOV]] | Director | $65K | 24 | -13.9% |
+| 2026-10-15 | [[NEOV]] | Director | $65K | 24 | -10.7% |

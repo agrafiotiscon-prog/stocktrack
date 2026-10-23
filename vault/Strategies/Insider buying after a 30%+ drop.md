@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.3%/yr.
 
 ## Live forward test
 
-1 buys logged so far; none have matured yet.
+2 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | – | pending |
-| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | – | pending |
-| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -10.6% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +3.5% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +3.5% | open |
-| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -1.1% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -13.0% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -9.8% | open |
-| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | -2.5% | open |
-| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | +7.0% | open |
-| 2026-10-13 | [[IMSR]] | [[BUCKMAN FREDERICK W]] | $39K | 38 | -7.4% | open |
-| 2026-10-09 | [[SAH]] | [[Rusnak Paul P]] | $819K | 29 | +6.4% | open |
-| 2026-10-08 | [[AVR]] | [[L1 Capital Pty Ltd]] | $2.0M | 37 | -5.6% | open |
-| 2026-10-07 | [[SAH]] | [[Rusnak Paul P]] | $67K | 17 | +6.1% | open |
-| 2026-10-07 | [[AGMB]] | [[Epstein David R]] | $86K | 53 | -0.9% | open |
-| 2026-10-07 | [[AGMB]] | [[Knotnerus Tim Jasper]] | $94K | 67 | -0.9% | open |
-| 2026-10-06 | [[LWAY]] | [[Divisadero Street Capital Management, LP]] | $2.2M | 37 | +4.8% | open |
-| 2026-10-06 | [[SAH]] | [[Rusnak Paul P]] | $1.7M | 32 | +5.2% | open |
-| 2026-10-06 | [[DYN]] | [[Posner Brian S]] | $40K | 27 | +6.5% | open |
-| 2026-10-06 | [[SAH]] | [[Rusnak Paul P]] | $1.3M | 31 | +5.2% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
+| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -0.2% | open |
+| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -0.2% | open |
+| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -0.9% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +11.8% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +11.8% | open |
+| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -6.8% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -9.2% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -13.0% | open |
+| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | +1.9% | open |
+| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | +3.6% | open |
+| 2026-10-13 | [[IMSR]] | [[BUCKMAN FREDERICK W]] | $39K | 38 | -3.4% | open |
+| 2026-10-09 | [[SAH]] | [[Rusnak Paul P]] | $819K | 29 | +0.3% | open |
+| 2026-10-08 | [[AVR]] | [[L1 Capital Pty Ltd]] | $2.0M | 37 | -10.3% | open |
+| 2026-10-07 | [[SAH]] | [[Rusnak Paul P]] | $67K | 17 | +0.1% | open |
+| 2026-10-07 | [[AGMB]] | [[Epstein David R]] | $86K | 53 | +2.8% | open |
+| 2026-10-07 | [[AGMB]] | [[Knotnerus Tim Jasper]] | $94K | 67 | +2.8% | open |
+| 2026-10-06 | [[LWAY]] | [[Divisadero Street Capital Management, LP]] | $2.2M | 37 | +3.1% | open |
+| 2026-10-06 | [[SAH]] | [[Rusnak Paul P]] | $1.7M | 32 | -0.8% | open |
+| 2026-10-06 | [[DYN]] | [[Posner Brian S]] | $40K | 27 | +4.7% | open |
 
 
 ```dataview

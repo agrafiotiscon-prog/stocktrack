@@ -77,26 +77,26 @@ Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +3.1%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -2.3% | open |
-| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | $3.1M | 40 | -3.3% | open |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +0.8% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +3.5% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +3.5% | open |
+| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | – | pending |
+| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.3M | 59 | – | pending |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | – | pending |
+| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | $97K | 52 | – | pending |
+| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | – | pending |
+| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -4.1% | open |
+| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | $3.1M | 40 | -5.7% | open |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +0.6% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +11.8% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +11.8% | open |
 | 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | $23.7M | 62 | +2.2% | open |
-| 2026-10-16 | [[BYRN]] | [[Roth Adam L]] | $70K | 40 | -2.4% | open |
-| 2026-10-16 | [[PAM]] | [[Mindlin Marcos Marcelo]] | $35.1M | 49 | -4.9% | open |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -3.7% | open |
-| 2026-10-16 | [[BORR]] | [[Troim Tor Olav]] | $2.3M | 51 | -3.7% | open |
-| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | -0.7% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -13.0% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.4% | open |
-| 2026-10-15 | [[TRXB]] | [[Alexandria Venture Investments, LLC]] | $2.5M | 55 | +2.4% | open |
-| 2026-10-15 | [[CXM]] | [[WARD JR STEPHEN M]] | $850K | 51 | +5.6% | open |
-| 2026-10-15 | [[GOLD]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | $2.7M | 45 | -3.6% | open |
-| 2026-10-15 | [[BORR]] | [[Troim Tor Olav]] | $3.5M | 41 | -10.1% | open |
-| 2026-10-14 | [[INBX]] | [[Lappe Mark]] | $849K | 47 | +8.4% | open |
-| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | -1.9% | open |
-| 2026-10-14 | [[QVCG]] | [[GOLDENTREE ASSET MANAGEMENT LP]] | $16.7M | 48 | -18.3% | open |
+| 2026-10-16 | [[BYRN]] | [[Roth Adam L]] | $70K | 40 | -4.5% | open |
+| 2026-10-16 | [[PAM]] | [[Mindlin Marcos Marcelo]] | $35.1M | 49 | -5.6% | open |
+| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -4.2% | open |
+| 2026-10-16 | [[BORR]] | [[Troim Tor Olav]] | $2.3M | 51 | -4.2% | open |
+| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | -0.9% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -9.2% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.7% | open |
+| 2026-10-15 | [[TRXB]] | [[Alexandria Venture Investments, LLC]] | $2.5M | 55 | +7.6% | open |
 
 
 ```dataview

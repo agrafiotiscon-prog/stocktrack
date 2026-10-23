@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-30 | [[Baird Gordon A]] | Director | $612 | 19 | +1.1% | open |
+| 2026-09-30 | [[Baird Gordon A]] | Director | $612 | 19 | +0.3% | open |

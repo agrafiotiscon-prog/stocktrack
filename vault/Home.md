@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-10-21"
+updated: "2026-10-22"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-10-21 Backtest]]: the latest full backtest
-- [[2026-10-21]]: today's research log
+- [[2026-10-22]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | Director | $11.5M | 60 | -2.3% |
-| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | Director | $3.1M | 40 | -3.3% |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $2.4M | 64 | +0.8% |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | CEO; Chairman | $1.0M | 60 | +3.5% |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | President | $5.7M | 71 | +3.5% |
+| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | Director | $1.5M | 49 | – |
+| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $3.3M | 59 | – |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | Chief Financial Officer | $144K | 54 | – |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | Vice Chairman and President | $118K | 53 | – |
+| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | Vice Chairman and President | $97K | 52 | – |
+| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | Co-CEO & Chairman of the Board | $100K | 50 | – |
+| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | Director | $11.5M | 60 | -4.1% |
+| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | Director | $3.1M | 40 | -5.7% |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $2.4M | 64 | +0.6% |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | CEO; Chairman | $1.0M | 60 | +11.8% |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | President | $5.7M | 71 | +11.8% |
 | 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | Director | $23.7M | 62 | +2.2% |
-| 2026-10-16 | [[BYRN]] | [[Roth Adam L]] | Director | $70K | 40 | -2.4% |
-| 2026-10-16 | [[PAM]] | [[Mindlin Marcos Marcelo]] | Director | $35.1M | 49 | -4.9% |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | Chief Operating Officer | $1.5M | 72 | -3.7% |
-| 2026-10-16 | [[BORR]] | [[Troim Tor Olav]] | Director | $2.3M | 51 | -3.7% |
-| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | President | $44K | 63 | -0.7% |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | Director | $22K | 55 | -13.0% |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | Chief Executive Officer | $3.0M | 70 | -2.4% |
-| 2026-10-15 | [[TRXB]] | [[Alexandria Venture Investments, LLC]] | 10% Owner | $2.5M | 55 | +2.4% |
-| 2026-10-15 | [[CXM]] | [[WARD JR STEPHEN M]] | Director | $850K | 51 | +5.6% |
+| 2026-10-16 | [[BYRN]] | [[Roth Adam L]] | Director | $70K | 40 | -4.5% |
+| 2026-10-16 | [[PAM]] | [[Mindlin Marcos Marcelo]] | Director | $35.1M | 49 | -5.6% |
+| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | Chief Operating Officer | $1.5M | 72 | -4.2% |
 
 
 ## Live queries (Dataview plugin)

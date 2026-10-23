@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.9%/yr.
 
 ## Live forward test
 
-11 buys logged so far; none have matured yet.
+21 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | – | pending |
-| 2026-10-20 | [[DX]] | [[Sartori Michael Andrew]] | $11K | 39 | – | pending |
-| 2026-10-20 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $12.1M | 24 | – | pending |
-| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | – | pending |
-| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | – | pending |
-| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | – | pending |
-| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | – | pending |
-| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | – | pending |
-| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | – | pending |
-| 2026-10-20 | [[ISBA]] | [[Bourland Jill]] | $300 | 13 | – | pending |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | – | pending |
-| 2026-10-20 | [[NBIS]] | [[Grimme Arne]] | $25K | 5 | – | pending |
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -2.3% | open |
-| 2026-10-19 | [[DSM]] | [[Saba Capital Management, L.P]] | $72K | 18 | +0.2% | open |
-| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | $3.1M | 40 | -3.3% | open |
-| 2026-10-19 | [[HQY]] | [[Rajasekar Sunil]] | $12K | 20 | +2.8% | open |
-| 2026-10-19 | [[EME]] | [[MCEVOY M KEVIN]] | $2K | 2 | -0.4% | open |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +0.8% | open |
-| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -10.6% | open |
-| 2026-10-19 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $17.1M | 25 | +0.7% | open |
+| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | – | pending |
+| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.3M | 59 | – | pending |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | – | pending |
+| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | $97K | 52 | – | pending |
+| 2026-10-21 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $5.6M | 21 | – | pending |
+| 2026-10-21 | [[NBIS]] | [[Grimme Arne]] | $50K | 10 | – | pending |
+| 2026-10-21 | [[LEO]] | [[Saba Capital Management, L.P]] | $44K | 15 | – | pending |
+| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | – | pending |
+| 2026-10-21 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | – | pending |
+| 2026-10-21 | [[YORW]] | [[Velazquez David M]] | $40K | 38 | – | pending |
+| 2026-10-21 | [[YORW]] | [[Brossman Douglas S]] | $1,000 | 31 | – | pending |
+| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -1.1% | open |
+| 2026-10-20 | [[DX]] | [[Sartori Michael Andrew]] | $11K | 39 | -1.1% | open |
+| 2026-10-20 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $12.1M | 24 | -0.8% | open |
+| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | -1.3% | open |
+| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -0.2% | open |
+| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -0.2% | open |
+| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | +3.0% | open |
+| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | -0.8% | open |
 
 
 ```dataview

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[Qiu Wenbin]] | Chief Executive Officer | $20K | 30 | -1.6% | open |
+| 2026-10-16 | [[Qiu Wenbin]] | Chief Executive Officer | $20K | 30 | -4.2% | open |

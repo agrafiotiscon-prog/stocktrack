@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[XENE]] | Chief Financial Officer | $560K | 71 | -7.0% |
+| 2026-10-01 | [[XENE]] | Chief Financial Officer | $560K | 71 | -8.4% |

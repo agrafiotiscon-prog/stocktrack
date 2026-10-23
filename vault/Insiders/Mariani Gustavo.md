@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -1.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-29 | [[PAM]] | Vicepresident | $2.0M | 40 | +0.7% |
+| 2026-09-29 | [[PAM]] | Vicepresident | $2.0M | 40 | +0.0% |

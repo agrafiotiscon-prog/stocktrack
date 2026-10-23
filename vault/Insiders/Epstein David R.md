@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-09 | [[AGMB]] | Director | $44K | 50 | -3.7% |
-| 2026-10-07 | [[AGMB]] | Director | $86K | 53 | -0.9% |
+| 2026-10-09 | [[AGMB]] | Director | $44K | 50 | -0.0% |
+| 2026-10-07 | [[AGMB]] | Director | $86K | 53 | +2.8% |

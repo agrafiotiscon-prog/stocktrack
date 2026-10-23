@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +14.1%/yr, double costs +7.2%/yr.
 
 ## Live forward test
 
-2 buys logged so far; none have matured yet.
+8 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | – | pending |
-| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | – | pending |
-| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | – | pending |
-| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | – | pending |
-| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | – | pending |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | – | pending |
-| 2026-10-19 | [[DSM]] | [[Saba Capital Management, L.P]] | $72K | 18 | +0.2% | open |
-| 2026-10-19 | [[EQBK]] | [[Borck Leon]] | $19K | 16 | +0.5% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +3.5% | open |
-| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -1.1% | open |
-| 2026-10-16 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | -1.6% | open |
-| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -3.7% | open |
-| 2026-10-13 | [[HEI]] | [[CULLIGAN THOMAS M]] | $175K | 57 | +3.4% | open |
-| 2026-10-13 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +1.9% | open |
-| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +3.4% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +3.4% | open |
-| 2026-10-13 | [[HEI]] | [[HENRIQUES ADOLFO]] | $175K | 55 | +3.4% | open |
-| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -4.4% | open |
-| 2026-10-09 | [[NEOG]] | [[Nassif Mikheal]] | $6K | 44 | -1.0% | open |
-| 2026-10-09 | [[MWA]] | [[Healy Brian C]] | $30K | 8 | +2.8% | open |
+| 2026-10-21 | [[LEO]] | [[Saba Capital Management, L.P]] | $44K | 15 | – | pending |
+| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | – | pending |
+| 2026-10-21 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | – | pending |
+| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -1.1% | open |
+| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | -1.3% | open |
+| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | +3.0% | open |
+| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | -0.8% | open |
+| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | -0.4% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +5.4% | open |
+| 2026-10-19 | [[DSM]] | [[Saba Capital Management, L.P]] | $72K | 18 | -0.6% | open |
+| 2026-10-19 | [[EQBK]] | [[Borck Leon]] | $19K | 16 | -0.9% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +11.8% | open |
+| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -6.8% | open |
+| 2026-10-16 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | -2.5% | open |
+| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -4.9% | open |
+| 2026-10-13 | [[HEI]] | [[CULLIGAN THOMAS M]] | $175K | 57 | +0.6% | open |
+| 2026-10-13 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +1.0% | open |
+| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +0.6% | open |
+| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +0.6% | open |
+| 2026-10-13 | [[HEI]] | [[HENRIQUES ADOLFO]] | $175K | 55 | +0.6% | open |
 
 
 ```dataview

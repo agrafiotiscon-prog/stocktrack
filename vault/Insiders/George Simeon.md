@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY -20.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-29 | [[ADRX]] | Director | $27.2M | 56 | -14.7% |
+| 2026-09-29 | [[ADRX]] | Director | $27.2M | 56 | -17.9% |

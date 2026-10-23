@@ -68,33 +68,33 @@ Cost sensitivity (63-session hold): no costs +15.8%/yr, double costs +8.8%/yr.
 
 ## Live forward test
 
-0 buys logged so far; none have matured yet.
+2 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | – | pending |
-| 2026-10-20 | [[ISBA]] | [[Bourland Jill]] | $300 | 13 | – | pending |
-| 2026-10-16 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | -1.6% | open |
-| 2026-10-13 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +1.9% | open |
-| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +3.4% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +3.4% | open |
-| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | -0.4% | open |
-| 2026-10-08 | [[CET]] | [[Hill John C]] | $28K | 32 | +1.9% | open |
-| 2026-10-06 | [[AEF]] | [[Clark Anthony S]] | $19K | 31 | -8.6% | open |
-| 2026-10-05 | [[LEN]] | [[BERKSHIRE HATHAWAY INC]] | $192.6M | 70 | +6.8% | open |
-| 2026-10-01 | [[LILA]] | [[MALONE JOHN C]] | $199K | 24 | -4.7% | open |
-| 2026-10-01 | [[TPL]] | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | $1K | 8 | +1.8% | open |
-| 2026-09-30 | [[KBDC]] | [[ROBO JAMES L]] | $1.9M | 49 | -2.0% | open |
-| 2026-09-30 | [[KOD]] | [[667, L.P]] | $63.4M | 82 | -3.2% | open |
-| 2026-09-30 | [[LEN]] | [[BUFFETT WARREN E]] | $53.9M | 70 | -2.5% | open |
-| 2026-09-30 | [[ANIX]] | [[Catelani Michael]] | $16K | 46 | -9.1% | open |
-| 2026-09-29 | [[TPL]] | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | $340 | 8 | +3.4% | open |
-| 2026-09-29 | [[TPL]] | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | $340 | 8 | +3.4% | open |
-| 2026-09-28 | [[LLYVK]] | [[MALONE JOHN C]] | $2.9M | 36 | -0.1% | open |
-| 2026-09-28 | [[ACOG]] | [[Opaleye Management Inc]] | $271K | 25 | -1.4% | open |
+| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | -0.4% | open |
+| 2026-10-20 | [[ISBA]] | [[Bourland Jill]] | $300 | 13 | -1.1% | open |
+| 2026-10-16 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | -2.5% | open |
+| 2026-10-13 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +1.0% | open |
+| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +0.6% | open |
+| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +0.6% | open |
+| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | -0.3% | open |
+| 2026-10-08 | [[CET]] | [[Hill John C]] | $28K | 32 | +1.8% | open |
+| 2026-10-06 | [[AEF]] | [[Clark Anthony S]] | $19K | 31 | -9.9% | open |
+| 2026-10-05 | [[LEN]] | [[BERKSHIRE HATHAWAY INC]] | $192.6M | 70 | +5.0% | open |
+| 2026-10-01 | [[LILA]] | [[MALONE JOHN C]] | $199K | 24 | -5.3% | open |
+| 2026-10-01 | [[TPL]] | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | $1K | 8 | +1.9% | open |
+| 2026-09-30 | [[KBDC]] | [[ROBO JAMES L]] | $1.9M | 49 | -2.5% | open |
+| 2026-09-30 | [[KOD]] | [[667, L.P]] | $63.4M | 82 | -9.2% | open |
+| 2026-09-30 | [[LEN]] | [[BUFFETT WARREN E]] | $53.9M | 70 | -4.2% | open |
+| 2026-09-30 | [[ANIX]] | [[Catelani Michael]] | $16K | 46 | -8.7% | open |
+| 2026-09-29 | [[TPL]] | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | $340 | 8 | +3.5% | open |
+| 2026-09-29 | [[TPL]] | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | $340 | 8 | +3.5% | open |
+| 2026-09-28 | [[LLYVK]] | [[MALONE JOHN C]] | $2.9M | 36 | -0.6% | open |
+| 2026-09-28 | [[ACOG]] | [[Opaleye Management Inc]] | $271K | 25 | -2.3% | open |
 
 
 ```dataview

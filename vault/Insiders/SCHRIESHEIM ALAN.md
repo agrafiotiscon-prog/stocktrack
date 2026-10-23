@@ -12,4 +12,4 @@ Backtest record: 20 earlier buys, average 3-month excess vs SPY +2.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-13 | [[HEI]] | Director | $175K | 69 | +3.4% |
+| 2026-10-13 | [[HEI]] | Director | $175K | 69 | +0.6% |

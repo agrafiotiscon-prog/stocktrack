@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +12.6%/yr, double costs +6.7%/yr.
 
 ## Live forward test
 
-0 buys logged so far; none have matured yet.
+1 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | – | pending |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +3.5% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.4% | open |
-| 2026-10-14 | [[INBX]] | [[Lappe Mark]] | $849K | 47 | +8.4% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -9.8% | open |
-| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +39.9% | open |
-| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -3.7% | open |
-| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +3.4% | open |
-| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -4.4% | open |
-| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | -0.4% | open |
-| 2026-10-02 | [[GME]] | [[Cohen Ryan]] | $17.1M | 79 | +6.1% | open |
-| 2026-10-02 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | -2.4% | open |
-| 2026-10-01 | [[GTLB]] | [[Staples William]] | $125K | 23 | +8.4% | open |
-| 2026-10-01 | [[CRESY]] | [[Elsztain Alejandro Gustavo]] | $199K | 41 | -1.8% | open |
-| 2026-10-01 | [[XENE]] | [[Kelly Thomas Patrick]] | $560K | 71 | -7.0% | open |
-| 2026-10-01 | [[XENE]] | [[MORTIMER IAN]] | $1.1M | 77 | -7.0% | open |
-| 2026-09-30 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | -0.7% | open |
-| 2026-09-29 | [[GME]] | [[Cohen Ryan]] | $10.6M | 70 | +7.8% | open |
-| 2026-09-28 | [[DMRA]] | [[Jarrett Jennifer]] | $253K | 44 | -0.3% | open |
-| 2026-09-28 | [[INBX]] | [[Lappe Mark]] | $999K | 60 | -9.8% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
+| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -1.1% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +11.8% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.7% | open |
+| 2026-10-14 | [[INBX]] | [[Lappe Mark]] | $849K | 47 | +11.2% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -13.0% | open |
+| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +29.2% | open |
+| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -4.9% | open |
+| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +0.6% | open |
+| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -8.4% | open |
+| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | -0.3% | open |
+| 2026-10-02 | [[GME]] | [[Cohen Ryan]] | $17.1M | 79 | +4.8% | open |
+| 2026-10-02 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | -1.8% | open |
+| 2026-10-01 | [[GTLB]] | [[Staples William]] | $125K | 23 | +8.7% | open |
+| 2026-10-01 | [[CRESY]] | [[Elsztain Alejandro Gustavo]] | $199K | 41 | -2.3% | open |
+| 2026-10-01 | [[XENE]] | [[Kelly Thomas Patrick]] | $560K | 71 | -8.4% | open |
+| 2026-10-01 | [[XENE]] | [[MORTIMER IAN]] | $1.1M | 77 | -8.4% | open |
+| 2026-09-30 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | -0.1% | open |
+| 2026-09-29 | [[GME]] | [[Cohen Ryan]] | $10.6M | 70 | +6.6% | open |
+| 2026-09-28 | [[DMRA]] | [[Jarrett Jennifer]] | $253K | 44 | +3.3% | open |
 
 
 ```dataview
