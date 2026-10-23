@@ -12,4 +12,4 @@ Backtest record: 13 earlier buys, average 3-month excess vs SPY -10.4%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-08 | [[IMMR]] | President and CEO | $293K | 44 | -0.3% |
+| 2026-10-08 | [[IMMR]] | President and CEO | $293K | 44 | +0.7% |

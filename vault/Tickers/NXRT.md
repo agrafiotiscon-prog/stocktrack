@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-05 | [[McGraner Matt]] | See Remarks | $201K | 32 | -3.6% | open |
+| 2026-10-05 | [[McGraner Matt]] | See Remarks | $201K | 32 | +2.9% | open |

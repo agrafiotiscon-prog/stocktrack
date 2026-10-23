@@ -73,14 +73,14 @@ Cost sensitivity (63-session hold): no costs +16.7%/yr, double costs +11.0%/yr.
 
 ## Live forward test
 
-0 buys logged so far; none have matured yet.
+1 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +1.7% | open |
 
 
 ```dataview

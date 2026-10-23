@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-21 | [[Velazquez David M]] | Director | $40K | 38 | – | pending |
-| 2026-10-21 | [[Brossman Douglas S]] | Director | $1,000 | 31 | – | pending |
+| 2026-10-21 | [[Velazquez David M]] | Director | $40K | 38 | +3.4% | open |
+| 2026-10-21 | [[Brossman Douglas S]] | Director | $1,000 | 31 | +3.4% | open |

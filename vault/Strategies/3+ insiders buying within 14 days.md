@@ -77,26 +77,26 @@ Cost sensitivity (63-session hold): no costs +9.4%/yr, double costs +3.1%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +0.6% | open |
-| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | -0.9% | open |
-| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | -0.9% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -9.2% | open |
-| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | -2.1% | open |
-| 2026-10-13 | [[HEI]] | [[CULLIGAN THOMAS M]] | $175K | 57 | +0.6% | open |
-| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +0.6% | open |
-| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +0.6% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +0.6% | open |
-| 2026-10-13 | [[HEI]] | [[HENRIQUES ADOLFO]] | $175K | 55 | +0.6% | open |
-| 2026-10-13 | [[HEI]] | [[CHERUVATATH NANDAKUMAR]] | $175K | 62 | +0.6% | open |
-| 2026-10-09 | [[BPRE]] | [[KAMFAR RAMIN]] | $8.5M | 81 | -4.5% | open |
-| 2026-10-08 | [[PDI]] | [[FLATTUM DAVID C]] | $250K | 66 | +0.3% | open |
-| 2026-10-08 | [[FUL]] | [[BAILLY R JEFFREY]] | $500K | 74 | +1.8% | open |
-| 2026-10-05 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.4M | 73 | -1.4% | open |
-| 2026-10-05 | [[BPRE]] | [[MacDonald Ryan S]] | $85K | 54 | -1.4% | open |
-| 2026-10-02 | [[GME]] | [[Cohen Ryan]] | $17.1M | 79 | +4.8% | open |
-| 2026-10-01 | [[GME]] | [[Turner Nat]] | $255K | 66 | +8.3% | open |
-| 2026-10-01 | [[DKS]] | [[Barnes Matthew]] | $500K | 78 | +4.9% | open |
-| 2026-10-01 | [[FUL]] | [[Happe Michael J]] | $99K | 67 | -1.0% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | – | pending |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +2.4% | open |
+| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | +0.9% | open |
+| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +0.9% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -10.5% | open |
+| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | -0.4% | open |
+| 2026-10-13 | [[HEI]] | [[CULLIGAN THOMAS M]] | $175K | 57 | +2.3% | open |
+| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +2.3% | open |
+| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +2.3% | open |
+| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +2.3% | open |
+| 2026-10-13 | [[HEI]] | [[HENRIQUES ADOLFO]] | $175K | 55 | +2.3% | open |
+| 2026-10-13 | [[HEI]] | [[CHERUVATATH NANDAKUMAR]] | $175K | 62 | +2.3% | open |
+| 2026-10-09 | [[BPRE]] | [[KAMFAR RAMIN]] | $8.5M | 81 | -2.8% | open |
+| 2026-10-08 | [[PDI]] | [[FLATTUM DAVID C]] | $250K | 66 | +2.7% | open |
+| 2026-10-08 | [[FUL]] | [[BAILLY R JEFFREY]] | $500K | 74 | +3.4% | open |
+| 2026-10-05 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.4M | 73 | +0.3% | open |
+| 2026-10-05 | [[BPRE]] | [[MacDonald Ryan S]] | $85K | 54 | +0.3% | open |
 
 
 ```dataview

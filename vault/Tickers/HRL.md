@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-06 HRL Newlands William A\|2026-10-06]] | [[Newlands William A]] | Chair | $201K | 46 | +3.4% | open |
+| [[2026-10-06 HRL Newlands William A\|2026-10-06]] | [[Newlands William A]] | Chair | $201K | 46 | +9.2% | open |

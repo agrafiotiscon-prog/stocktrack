@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +13.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[GTLB]] | Chief Executive Officer | $125K | 23 | +8.7% |
+| 2026-10-01 | [[GTLB]] | Chief Executive Officer | $125K | 23 | +8.1% |

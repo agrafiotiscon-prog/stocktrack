@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-07 | [[AGMB]] | Chief Executive Officer | $94K | 67 | +2.8% |
+| 2026-10-07 | [[AGMB]] | Chief Executive Officer | $94K | 67 | +5.7% |

@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-10-22"
+updated: "2026-10-23"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-10-21 Backtest]]: the latest full backtest
-- [[2026-10-22]]: today's research log
+- [[2026-10-23]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | Director | $1.5M | 49 | – |
-| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $3.3M | 59 | – |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | Chief Financial Officer | $144K | 54 | – |
-| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | Vice Chairman and President | $118K | 53 | – |
-| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | Vice Chairman and President | $97K | 52 | – |
-| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | Co-CEO & Chairman of the Board | $100K | 50 | – |
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | Director | $11.5M | 60 | -4.1% |
-| 2026-10-19 | [[CTY]] | [[NELSEN ROBERT]] | Director | $3.1M | 40 | -5.7% |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $2.4M | 64 | +0.6% |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | CEO; Chairman | $1.0M | 60 | +11.8% |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | President | $5.7M | 71 | +11.8% |
-| 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | Director | $23.7M | 62 | +2.2% |
-| 2026-10-16 | [[BYRN]] | [[Roth Adam L]] | Director | $70K | 40 | -4.5% |
-| 2026-10-16 | [[PAM]] | [[Mindlin Marcos Marcelo]] | Director | $35.1M | 49 | -5.6% |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | Chief Operating Officer | $1.5M | 72 | -4.2% |
+| 2026-10-22 | [[DOLE]] | [[Pale Fire Capital SE]] | 10% Owner | $8.6M | 45 | – |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | Director | $100K | 67 | – |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | Director | $100K | 65 | – |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | Director | $974K | 77 | – |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | Director | $249K | 71 | – |
+| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | – |
+| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $1K | 40 | – |
+| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $1K | 40 | – |
+| 2026-10-22 | [[NMCO]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | – |
+| 2026-10-22 | [[AGMB]] | [[Epstein David R]] | Director | $89K | 41 | – |
+| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | Director | $1.5M | 49 | +2.3% |
+| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $3.3M | 59 | +0.5% |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | Chief Financial Officer | $144K | 54 | +1.7% |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | Vice Chairman and President | $118K | 53 | +0.3% |
+| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | Vice Chairman and President | $97K | 52 | -0.5% |
 
 
 ## Live queries (Dataview plugin)

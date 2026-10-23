@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -20.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[HDSN]] | 10% Owner | $605K | 30 | +4.6% |
+| 2026-09-28 | [[HDSN]] | 10% Owner | $605K | 30 | +4.9% |

@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -17.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-06 | [[PSUS]] | Chief Investment Officer | $9.6M | 68 | -0.9% |
+| 2026-10-06 | [[PSUS]] | Chief Investment Officer | $9.6M | 68 | +0.2% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-21 CRF Bradshaw Joshua\|2026-10-21]] | [[Bradshaw Joshua]] | Vice Chairman and President | $118K | 53 | – | pending |
+| [[2026-10-21 CRF Bradshaw Joshua\|2026-10-21]] | [[Bradshaw Joshua]] | Vice Chairman and President | $118K | 53 | +0.3% | open |

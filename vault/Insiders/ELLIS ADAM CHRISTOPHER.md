@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +24.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[ZUMZ]] | President International | $134K | 44 | -4.1% |
+| 2026-09-28 | [[ZUMZ]] | President International | $134K | 44 | +2.2% |

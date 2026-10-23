@@ -12,5 +12,10 @@ Backtest record: 266 earlier buys, average 3-month excess vs SPY +2.9%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-16 | [[PCQ]] | 10% Owner | $16K | 30 | -2.5% |
-| 2026-10-13 | [[PCQ]] | 10% Owner | $16K | 30 | +1.0% |
+| 2026-10-22 | [[VKI]] | 10% Owner | $843 | 28 | – |
+| 2026-10-22 | [[NMCO]] | 10% Owner | $974 | 40 | – |
+| 2026-10-22 | [[NBH]] | 10% Owner | $845 | 28 | – |
+| 2026-10-22 | [[LEO]] | 10% Owner | $1K | 40 | – |
+| 2026-10-22 | [[DSM]] | 10% Owner | $1K | 40 | – |
+| 2026-10-16 | [[PCQ]] | 10% Owner | $16K | 30 | -0.3% |
+| 2026-10-13 | [[PCQ]] | 10% Owner | $16K | 30 | +3.2% |

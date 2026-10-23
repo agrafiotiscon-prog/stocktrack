@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.9%/yr.
 
 ## Live forward test
 
-21 buys logged so far; none have matured yet.
+32 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | – | pending |
-| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.3M | 59 | – | pending |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | – | pending |
-| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | – | pending |
-| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | $97K | 52 | – | pending |
-| 2026-10-21 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $5.6M | 21 | – | pending |
-| 2026-10-21 | [[NBIS]] | [[Grimme Arne]] | $50K | 10 | – | pending |
-| 2026-10-21 | [[LEO]] | [[Saba Capital Management, L.P]] | $44K | 15 | – | pending |
-| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | – | pending |
-| 2026-10-21 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | – | pending |
-| 2026-10-21 | [[YORW]] | [[Velazquez David M]] | $40K | 38 | – | pending |
-| 2026-10-21 | [[YORW]] | [[Brossman Douglas S]] | $1,000 | 31 | – | pending |
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -1.1% | open |
-| 2026-10-20 | [[DX]] | [[Sartori Michael Andrew]] | $11K | 39 | -1.1% | open |
-| 2026-10-20 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $12.1M | 24 | -0.8% | open |
-| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | -1.3% | open |
-| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -0.2% | open |
-| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -0.2% | open |
-| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | +3.0% | open |
-| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | -0.8% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | – | pending |
+| 2026-10-22 | [[DOLE]] | [[Pale Fire Capital SE]] | $8.6M | 45 | – | pending |
+| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | – | pending |
+| 2026-10-22 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.8M | 22 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | – | pending |
+| 2026-10-22 | [[XFLT]] | [[Spence John Yogi]] | $34K | 13 | – | pending |
+| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | – | pending |
+| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | – | pending |
+| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | – | pending |
+| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | – | pending |
+| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | – | pending |
+| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | – | pending |
+| 2026-10-22 | [[NMCO]] | [[Jones Nathaniel T]] | $4K | 40 | – | pending |
+| 2026-10-22 | [[AGMB]] | [[Epstein David R]] | $89K | 41 | – | pending |
+| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | +2.3% | open |
+| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.3M | 59 | +0.5% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +1.7% | open |
 
 
 ```dataview

@@ -12,4 +12,4 @@ Backtest record: 61 earlier buys, average 3-month excess vs SPY +14.4%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-19 | [[APLD]] | CEO; Chairman | $1.0M | 60 | +11.8% |
+| 2026-10-19 | [[APLD]] | CEO; Chairman | $1.0M | 60 | +2.9% |

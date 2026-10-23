@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -9.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-19 | [[XFOR]] | Executive Chairman | $12K | 26 | +6.9% |
+| 2026-10-19 | [[XFOR]] | Executive Chairman | $12K | 26 | +14.9% |

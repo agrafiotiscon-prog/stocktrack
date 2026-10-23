@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-19 | [[IAM]] | Director | $11.5M | 60 | -4.1% |
+| 2026-10-19 | [[IAM]] | Director | $11.5M | 60 | -9.8% |

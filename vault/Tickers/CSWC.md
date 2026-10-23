@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-01 | [[Thomas William R III]] | Director | $50K | 28 | -4.5% | open |
+| 2026-10-01 | [[Thomas William R III]] | Director | $50K | 28 | -3.3% | open |

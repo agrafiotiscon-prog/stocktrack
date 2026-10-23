@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-15 CXM WARD JR STEPHEN M\|2026-10-15]] | [[WARD JR STEPHEN M]] | Director | $850K | 51 | +4.6% | open |
+| [[2026-10-15 CXM WARD JR STEPHEN M\|2026-10-15]] | [[WARD JR STEPHEN M]] | Director | $850K | 51 | +10.2% | open |
