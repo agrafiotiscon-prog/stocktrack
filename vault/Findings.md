@@ -1,6 +1,6 @@
 ---
 type: findings
-updated: 2026-10-21
+updated: 2026-10-23
 backtest: 2026-10-21
 ---
 
@@ -68,17 +68,23 @@ confidence.
 
 ## Can we tell a good buy from a bad one?
 
-*Added 2026-10-21 with the dashboard's signal desk.*
+*Added 2026-10-21 with the dashboard's signal desk; revised 2026-10-23 after three reviews.*
 
-Only a little. A model using every feature of a buy couldn't rank individual buys on data it hadn't seen: each
-buy's outcome is mostly noise. What did hold up is a simple profile: add up the features that beat or lagged the
-typical buy in the same direction in both decades (CFO or other executive, 10% owner, 3+ insiders, a run-up, a
-$250K-1M purchase on the plus side; "Other" filers, presidents/chairs, routine buyers, new positions, small
-purchases, buying after a 10-30% fall on the minus side). Built from 2006-2015 alone and tested on 2016+, the
-"above typical" group beat comparable stocks by about 8% a year and the "below typical" group lagged them slightly.
-In a simulated 20-stock account, though, above-typical buys barely beat typical ones (11.8% vs 11.4% a year since
-2016), and every group trailed the S&P 500 (15.1%). The useful rule is to skip below-typical buys and to size by
-risk: a $3 stock trading $2M a day has twice the downside of a large company.
+Not reliably, and not lately. A model using every feature of a buy couldn't rank individual buys on data it hadn't
+seen: each buy's outcome is mostly noise. A simpler profile adds up the features that beat or lagged the typical buy
+in the same direction in both decades (CFO or other executive, 10% owner, 3+ insiders, a run-up, a $250K-1M
+purchase on the plus side; "Other" filers, presidents/chairs, routine buyers, new positions, small purchases, buying
+after a 10-30% fall on the minus side). Built from 2006-2015 alone and tested on 2016+, "above typical" buys beat
+"below typical" ones by about 9% a year against comparable stocks, **but all of that came in 2016-2020 (+19% a
+year). Since 2021 the gap is about zero (+1%, t 0.2)**, and several of the features reversed. The settings were also
+chosen after looking at 2016+ results, and a different but equally reasonable split date gives a gap that isn't
+significant. In a simulated 20-stock account, above-typical buys barely beat typical ones (11.8% vs 11.4% a year
+since 2016), and every group trailed the S&P 500 (15.1%).
+
+So the profile is a hypothesis, not a tool. From 2026-10-23 each new buy's profile is recorded when it is logged, and
+the forward test will judge "above vs below typical" once both groups have 100 matured outcomes. Until then the
+desk's useful advice is about risk: a $3 stock trading $2M a day has about twice the downside of a large company, so
+size by the bad case, not by the profile.
 
 ## How much to trust this
 
@@ -105,6 +111,7 @@ each, so expect answers from early-to-mid 2027:
 - [[Insider buying after a 30%+ run-up (post-hoc)]]: is the run-up effect real or noise?
 - Do "Other"-role and routine buys keep lagging?
 - Does the live score's 60+ bucket keep beating its 0-39 bucket?
+- Do buys graded "above typical" when logged beat those graded "below typical"? (registered 2026-10-23)
 
 Ideas not yet tested: a size-matched benchmark (market cap); short the Russell 2000 only when the market is falling;
 combining CFO and cluster signals; delisted-stock prices from a paid data source to remove the survivorship bias.

@@ -20,6 +20,14 @@
       "claim": "Buys by owners filing as 'Other' and by routine insiders (same month 3 years running) underperform the typical insider buy.",
       "backtest_evidence": "Other: -4.6%/yr vs survivors, 6 of 21 years positive, worse than typical (Holm p 0.02). Routine: -3%/yr vs survivors.",
       "expected": "below the all-buys forward average"
+    },
+    {
+      "strategy": "tier: above vs below",
+      "registered": "2026-10-23",
+      "claim": "Buys the signal desk graded 'above typical' when they were logged beat buys it graded 'below typical' over the next 63 sessions.",
+      "backtest_evidence": "Profile rule chosen on 2006-2015 and tested on 2016+: above minus below +8.9%/yr vs comparable stocks (p 0.02), but +18.7%/yr in 2016-2020 and +1.0%/yr (t 0.2) since 2021. Its settings were chosen after looking at 2016+ results, so this is exploratory.",
+      "rule": "Judged once both groups have 100 matured 63-session outcomes (one per company per day: its largest buy, with the tier recorded when it was logged): supported if above minus below in mean excess return vs SPY is positive and its 95% CI excludes zero; otherwise not supported.",
+      "expected": "a small gap or none; recent years showed none"
     }
   ]
 }

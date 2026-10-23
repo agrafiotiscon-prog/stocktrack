@@ -25,12 +25,13 @@ log = logging.getLogger(__name__)
 LEDGER_HORIZONS = (5, 21, 63, 126, 252)
 _BUY_FIELDS = [f.name for f in dataclasses.fields(BuyEvent)]
 FEATURE_FIELDS = ["symbol", "score", "cluster", "kind", "track_n", "track", "first_in_year_insider",
-                  "first_in_year_issuer", "prior_ret", "price", "adv", "strategies"]
+                  "first_in_year_issuer", "prior_ret", "price", "adv", "strategies",
+                  "tier", "tilt"]  # signal-desk profile when logged (from 2026-10-23)
 OUTCOME_FIELDS = (["entry_date", "entry_price", "last_seen", "last_price", "status", "ret_now", "abn_now"]
                   + [f"ret_{h}" for h in LEDGER_HORIZONS] + [f"abn_{h}" for h in LEDGER_HORIZONS])
 COLUMNS = ["logged"] + _BUY_FIELDS + FEATURE_FIELDS + OUTCOME_FIELDS
 
-_FLOAT = {"shares", "value", "avg_price", "shares_before", "shares_after", "track", "prior_ret", "price",
+_FLOAT = {"shares", "value", "avg_price", "shares_before", "shares_after", "track", "prior_ret", "price", "tilt",
           "adv", "entry_price", "last_price", "ret_now", "abn_now"} | {f"ret_{h}" for h in LEDGER_HORIZONS} | {
               f"abn_{h}" for h in LEDGER_HORIZONS}
 _INT = {"n_transactions", "score", "cluster", "track_n"}

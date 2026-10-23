@@ -11,9 +11,13 @@ What the evidence supports, and so what this does:
 * The method was tested honestly: tilts picked the same way from the two halves of 2006-2015 alone, then applied
   unchanged to 2016+, separated buys that beat comparable stocks from buys that didn't (reported in
   "validation"). The live tilts use both full periods, so the forward test is their real check.
+* That check is weaker than it looks: the separation came from 2016-2020 and was absent in 2021-2026, and the rule's
+  settings were chosen after looking at 2016+ results (see CHANGES.md). The tier is therefore recorded on each
+  ledger row when it is logged, so the forward test judges it cleanly.
 * Risk (the spread of 3-month outcomes) depends strongly on share price and liquidity, so position size comes
-  from risk, not from the tier: a loss budget the reader sets, over the 1-in-10 bad outcome for similar stocks,
-  capped by the tested rules (5% of the account, 2% of a day's dollar volume).
+  from risk, not from the tier: a loss budget the reader sets, over the 1-in-20 bad outcome for similar past
+  buys (survivors only, so real losses can be worse), capped by the tested rules (5% of the account, 2% of a
+  day's dollar volume).
 
 Nothing here is personal advice.
 """
@@ -136,7 +140,7 @@ def risk_table(evs: list[bt.Ev]) -> dict[str, dict]:
     for key, group in cells.items():
         rets = [e.ret[bt.PRIMARY] for e in group]
         dds = [d for d in (max_drawdown(e.path) for e in group) if d is not None]
-        out[key] = {"n": len(rets), "p10": _q(rets, 0.1), "p25": _q(rets, 0.25), "p50": _q(rets, 0.5),
+        out[key] = {"n": len(rets), "p05": _q(rets, 0.05), "p10": _q(rets, 0.1), "p25": _q(rets, 0.25), "p50": _q(rets, 0.5),
                     "p75": _q(rets, 0.75), "p90": _q(rets, 0.9),
                     "lose20": sum(1 for r in rets if r <= -0.2) / len(rets),
                     "gain20": sum(1 for r in rets if r >= 0.2) / len(rets),
@@ -173,8 +177,14 @@ def fit(evs: list[bt.Ev], cal: bt.Calendar, echo=print) -> dict:
     for name, group in by_tier.items():
         r = bt.simulate(group, cal)
         sims[name] = {k: r.get(k) for k in ("strategy_cagr", "spy_cagr", "strategy_max_drawdown", "trades")}
+    series = bt.difference_series(bt.calendar_time(by_tier["above"], cal), bt.calendar_time(by_tier["below"], cal), cal)
+    by_period = {}
+    for name, (lo, hi) in {"2016-2020": ("2016-01", "2020-12"), "2021 onward": ("2021-01", "9999-12")}.items():
+        st = bt.ctp_stats([r for r in series if lo <= r[0] <= hi], boot=0)
+        by_period[name] = {k: st.get(k) for k in ("annualized", "t", "p", "months")}
     validation = {
         "chosen_on": "2006-2010 vs 2011-2015", "tested_on": "2016 onward",
+        "by_period": by_period, "by_year": spread.get("by_year"),
         "tilts": {f"{f}:{lv}": d["tilt"] for f, lvs in v_effects.items() for lv, d in lvs.items() if d["tilt"]},
         "tiers": {name: {**outcomes(group, bounds), "ctp": _ctp(group, cal)} for name, group in by_tier.items()},
         "above_minus_below": {k: spread.get(k) for k in ("annualized", "t", "p", "months", "years_positive")},
@@ -243,8 +253,8 @@ def score(row: dict, model: dict) -> dict:
 
 
 def position(risk: dict, budget: float, adv: float | None = None, account: float | None = None) -> dict:
-    """Research sizing: the loss budget over the 1-in-10 bad 3-month outcome, capped by the tested rules."""
-    bad = max(abs(min(risk.get("p10") or -0.3, 0.0)), 0.05)
+    """Research sizing: the loss budget over the 1-in-20 bad 3-month outcome, capped by the tested rules."""
+    bad = max(abs(min(risk.get("p05") or risk.get("p10") or -0.3, 0.0)), 0.05)
     share, limit = budget / bad, "loss budget"
     if share > MAX_POSITION:
         share, limit = MAX_POSITION, "5% cap"

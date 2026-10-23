@@ -136,3 +136,64 @@ after seeing the results, so the forward test is their real check. What was trie
   buys helped, above-typical buys barely beat typical ones, and nothing beat the S&P 500.
 - The live tilts use 2006-2015 vs 2016+. Position sizes come from risk (a loss budget over the 1-in-10 bad 3-month
   return of stocks at a similar price and liquidity), capped at 5% of the account and 2% of daily dollar volume.
+  (Changed to 1-in-20 on 2026-10-23; see the review below.)
+
+## Signal desk review (2026-10-23)
+
+Three independent reviews (model validity, card accuracy and UX, wording) checked the desk. The validation
+reproduces exactly and its date splits are clean: no 2016+ data enters the validation tilts. But it is weaker than
+the section above made it sound.
+
+**All of the separation is from 2016-2020.** Above minus below was +18.7% a year in 2016-2020 (t 4.1) and +1.0% a year
+since 2021 (t 0.2). By year: 2016 +18%, 2017 +11%, 2018 +12%, 2019 +12%, 2020 +32%, 2021 0%, 2022 -4%, 2023 +7%,
+2024 -10%, 2025 +2%, 2026 so far +11%. Several live tilts reversed in 2021-2026: price $1-5 (+3.0% live, -8.4% a year
+in 2021-26), 10% owner (+2.2% live, -9.3%) and 3+ insiders (+1.2% live, -1.8%). `advisor.json` now stores the
+validation by period and by year, and the desk shows the split.
+
+**2016+ was looked at several times before the settings were fixed, and the p-value isn't adjusted for that.** In
+order: every level's 2016+ edge for these eight features was printed; averaged tilts were run on 2016+ at a 2%
+threshold (+5.2%, p 0.047) and at 3% (not reported before); the ridge model had been scored on 2016+; the
+smaller-of-two-edges rule was chosen after seeing both results; and the early/late split moved from 2011-12-31 (the
+ridge model's) to 2010-12-31 without a stated reason. With the 2011 split the same procedure gives +5.6% a year,
+t 1.13, p 0.26. Treat p 0.02 as exploratory.
+
+Robustness, above minus below in % a year (t), as computed by the model reviewer. Its sub-periods were cut a little
+differently from `advisor.json`, so the first row differs slightly from the +18.7% and +1.0% above.
+
+| Variant | 2016+ | 2016-20 | 2021-26 |
+|---|---|---|---|
+| Published (min tilt 1%, tier edge 2%, split 2010) | +8.9 (2.36) | +17.5 (3.77) | +0.1 (0.02) |
+| Min tilt 0.5% | +6.9 (2.21) | +13.6 (3.29) | +1.3 (0.33) |
+| Min tilt 1.5% | +8.8 (2.19) | +17.8 (3.56) | -0.4 (-0.07) |
+| Tier edge 1% | +4.3 (2.06) | +3.5 (1.12) | +5.2 (1.86) |
+| Tier edge 3% | +12.8 (2.28) | +25.8 (3.54) | +2.1 (0.28) |
+| Min tilt 0.5%, tier edge 3% | +7.0 (1.47) | +19.7 (3.13) | -3.6 (-0.60) |
+| Without the $1-5 price tilt | +9.3 (2.68) | +18.3 (3.98) | +0.1 (0.04) |
+| Averaged edges, tier edge 2% / 3% | +5.2 (1.99) / +8.8 (2.92) | +5.9 / +12.2 | +3.6 (0.99) / +6.3 (1.53) |
+| Split 2009-12-31 | +8.6 (3.00) | +12.6 | +6.0 (1.37) |
+| Split 2011-12-31 | +5.6 (1.13) | +13.9 | -1.0 (-0.15) |
+| Split 2012-12-31 | +11.1 (1.75) | +22.8 | +0.8 (0.12) |
+| Min sample 200 | +9.7 (2.73) | +15.6 | +3.7 (0.80) |
+
+The 2016+ sign is positive in every variant; its size (+4% to +13%) and significance depend on the settings, and
+2021-26 is about zero in nearly all of them. Leaving out any one tilt keeps 2016+ at +8.5% to +10.0%.
+
+**Survivorship.** Tilts and outcome ranges come only from companies still listed today, and the share of buys that can
+be priced rises from 25% (2006) to 85% (2025). The levels that swing most between periods (low prices, big prior
+falls, unknown prior returns) are the ones survivorship would distort.
+
+**What changed.**
+
+- Sizing uses the 1-in-20 bad 3 months (`p05`) of similar past buys instead of 1-in-10, so sizes are smaller.
+- One card per company: its latest filing day in the window, with everything on the card from that day's largest
+  buy. Before, a card could name one insider and show another's price, link and features, and one company could have
+  up to eight cards. The validation counted each company-day's first filing; the cards and the forward test use its
+  largest, a choice that wasn't validated separately (a reviewer's check of a similar rule moved the 2016+ gap from
+  +8.9% to +8.8%).
+- Entered cards show the latest close from the ledger, not the close before entry.
+- The desk says plainly that the profiles were fitted after seeing the data, that the edges are before costs and
+  from survivors, that no profile beat the S&P 500 since 2016, and what all the example sizes add up to.
+- From 2026-10-23 the daily run records each new buy's profile (`tier`, `tilt`) in `data/picks.csv` when it is
+  logged, and `hypotheses.json` registers "tier: above vs below": judged at 100 matured outcomes per group, counting
+  each company-day once with its largest buy. A later refit can't change what gets judged.
+- The settings (`MIN_EFFECT` 1%, `TIER_EDGE` 2%, `SPLIT_EARLY` 2010-12-31, `MIN_N` 150) are frozen as of this date.

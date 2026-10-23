@@ -447,6 +447,15 @@ def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path
         if led.qualifies(ev):
             new_rows.append(led.new_row(ev, ""))
             logged.add(ev.buy.accession)
+    # Record each row's signal-desk profile as of today, so the forward test judges the profile rule unchanged.
+    adv_path = data / "backtest" / "advisor.json"
+    if adv_path.exists():
+        from stocktrack import advisor
+
+        model = json.loads(adv_path.read_text())
+        for row in new_rows:
+            sc = advisor.score(row, model)
+            row["tier"], row["tilt"] = sc["tier"], sc["tilt"]
     # Stamp the rows when they are written: is_forward() trusts this time.
     stamp = led.now_utc()
     for row in new_rows:

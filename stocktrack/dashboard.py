@@ -106,6 +106,16 @@ def _live_rows(ledger: list[dict], today: str) -> list[dict]:
     } for r in rows]
 
 
+def _largest_per_company_day(rows: list[dict]) -> list[dict]:
+    """One row per company per entry day: the largest buy."""
+    best: dict[tuple, dict] = {}
+    for r in rows:
+        k = (r["issuer_cik"], r["entry_date"])
+        if k not in best or (r["value"] or 0) > (best[k]["value"] or 0):
+            best[k] = r
+    return list(best.values())
+
+
 def _hypotheses(hyp: dict, ledger: list[dict]) -> list[dict]:
     """Progress of each registered hypothesis on the forward-test rows that count for it.
 
@@ -126,49 +136,72 @@ def _hypotheses(hyp: dict, ledger: list[dict]) -> list[dict]:
     out = []
     for h in hyp.get("hypotheses", []):
         key = h.get("strategy") or ""
+        since, rows_c, rows_l = start, counted, logged
+        if h.get("registered"):  # registered later than the file: count rows from the day after
+            since = (dt.date.fromisoformat(h["registered"]) + dt.timedelta(days=1)).isoformat()
+            rows_c = [r for r in counted if r["logged"][:10] >= since]
+            rows_l = [r for r in logged if r["logged"][:10] >= since]
         if key in STRATEGIES:
             match, title = (lambda r, k=key: k in (r["strategies"] or "").split("|")), STRATEGIES[key][0]
         elif key.startswith("avoid:"):
             match, title = avoid, "Owners filing as \"Other\" and routine insiders"
+        elif key.startswith("tier:"):  # above vs below typical, as recorded when logged; the smaller group gates it
+            # Each company-day counts once, with the tier of its largest buy (the row its desk card shows),
+            # so one company can't land in both groups.
+            rows_c, rows_l = _largest_per_company_day(rows_c), _largest_per_company_day(rows_l)
+            match, title = (lambda r: r.get("tier") == "above"), "Above-typical vs below-typical profiles"
+            low = forward_stats([r for r in rows_c if r.get("tier") == "below"], PRIMARY)
+            n_low = len([r for r in rows_l if r.get("tier") == "below"])
         else:
             continue  # an unknown group can't be scored
-        s = forward_stats(unique_rows([r for r in counted if match(r)]), PRIMARY)
+        s = forward_stats(unique_rows([r for r in rows_c if match(r)]), PRIMARY)
         base = forward_stats(everyone, PRIMARY)
+        n_logged = len(unique_rows([r for r in rows_l if match(r)]))
+        matured = s.get("n", 0)
+        if key.startswith("tier:"):
+            n_logged, matured = min(n_logged, n_low), min(matured, low.get("n", 0))
         out.append({"key": key, "title": title, "claim": h.get("claim", ""), "expected": h.get("expected", ""),
-                    "logged": len(unique_rows([r for r in logged if match(r)])), "since": start,
-                    "matured": s.get("n", 0), "needed": HYPOTHESIS_SAMPLE,
+                    "logged": n_logged, "since": since, "matured": matured, "needed": HYPOTHESIS_SAMPLE,
                     "mean": _r(s.get("mean")), "all_mean": _r(base.get("mean"))})
     return out
 
 
 def _desk(ledger: list[dict], model: dict | None) -> dict | None:
-    """Report cards for the latest buys: one per company and filing day."""
+    """Report cards for the latest buys: one per company (its latest filing day in the window).
+
+    Everything on a card comes from one ledger row, the largest buy that day, except the cluster, which takes
+    the largest value any of that day's rows recorded (rows logged early can miss same-day filings).
+    """
     if not model or not ledger:
         return None
     latest = max(r["filed_at"][:10] for r in ledger)
     cutoff = (dt.date.fromisoformat(latest) - dt.timedelta(days=DESK_DAYS)).isoformat()
-    groups: dict[tuple, list[dict]] = {}
+    by_company: dict[str, list[dict]] = {}
     for r in ledger:
         if r["filed_at"][:10] >= cutoff:
-            groups.setdefault((r["issuer_cik"], r["filed_at"][:10]), []).append(r)
+            by_company.setdefault(r["issuer_cik"], []).append(r)
     cards = []
-    for (_, filed), rows in groups.items():
-        scored = [(adv.score(r, model), r) for r in rows]
-        sc, lead = max(scored, key=lambda x: (x[0]["tilt"], x[1]["value"] or 0))
-        entry = lead["entry_date"] or adv.next_market_day(filed)
-        price = lead["entry_price"] or lead["price"]
+    for rows in by_company.values():
+        day = max(r["filed_at"][:10] for r in rows)
+        same_day = [r for r in rows if r["filed_at"][:10] == day]
+        earlier = sorted({r["filed_at"][:10] for r in rows if r["filed_at"][:10] < day})
+        lead = max(same_day, key=lambda r: (r["value"] or 0, r["accession"]))
+        sc = adv.score(dict(lead, cluster=max(r["cluster"] or 1 for r in same_day)), model)
+        entry = lead["entry_date"] or adv.next_market_day(day)
+        now_price = lead.get("last_price") if lead["entry_date"] else None
         cards.append({
-            "symbol": lead["symbol"] or lead["ticker"], "company": lead["issuer_name"], "filed": filed,
-            "url": lead["url"], "status": lead["status"], "entered": bool(lead["entry_date"]),
+            "symbol": lead["symbol"] or lead["ticker"], "company": lead["issuer_name"], "filed": day,
+            "earlier": earlier, "url": lead["url"], "status": lead["status"], "entered": bool(lead["entry_date"]),
             "entry": entry, "exit": adv.add_market_days(entry, PRIMARY - 1),
-            "entry_price": _r(lead["entry_price"], 5), "last_close": _r(lead["price"], 5), "price": _r(price, 5),
+            "entry_price": _r(lead["entry_price"], 5), "pre_close": _r(lead["price"], 5),
+            "close": _r(now_price or lead["price"], 5), "close_date": lead.get("last_seen") if now_price else None,
             "insider_price": _r(lead["avg_price"], 5), "adv": _r(lead["adv"], 4), "prior": _r(lead["prior_ret"], 3),
-            "now": _r(lead.get("abn_now"), 4), "ret_now": _r(lead.get("ret_now"), 4), "forward": is_forward(lead),
-            "cost_side": _r(cost_per_side(lead["price"], lead["adv"]), 3), "cluster": lead["cluster"],
-            "insiders": [{"name": r["owner_name"], "role": r["officer_title"] or r["role"], "value": _r(r["value"], 6)}
-                         for r in sorted(rows, key=lambda r: -(r["value"] or 0))],
-            "value": _r(sum(r["value"] or 0 for r in rows), 6),
-            "leads": sorted({k for r in rows for k in (r["strategies"] or "").split("|") if k in LEADS}),
+            "now": _r(lead.get("abn_now"), 4), "forward": is_forward(lead),
+            "cost_side": _r(cost_per_side(lead["price"], lead["adv"]), 3),
+            "buyer": {"name": lead["owner_name"], "role": lead["officer_title"] or lead["role"], "value": _r(lead["value"], 6)},
+            "others": len({r["owner_cik"] for r in same_day} - {lead["owner_cik"]}),
+            "value": _r(sum(r["value"] or 0 for r in same_day), 6), "cluster": max(r["cluster"] or 1 for r in same_day),
+            "leads": sorted({k for k in (lead["strategies"] or "").split("|") if k in LEADS}),
             "tier": sc["tier"], "tilt": _r(sc["tilt"], 4),
             "tilts": [{"feature": t["feature"], "level": t["level"], "tilt": _r(t["tilt"], 4),
                        "effects": [_r(x, 4) for x in t["effects"]]} for t in sc["tilts"]],
@@ -177,17 +210,19 @@ def _desk(ledger: list[dict], model: dict | None) -> dict | None:
     order = {"above": 0, "typical": 1, "below": 2}
     cards.sort(key=lambda c: (order[c["tier"]], -(c["tilt"] or 0), -(c["value"] or 0)))
     v = model.get("validation", {})
+
+    def stats(d: dict | None) -> dict:
+        return {k: _r(x) for k, x in (d or {}).items() if not isinstance(x, dict)}
+
     return {
         "cards": cards, "since": cutoff, "latest": latest,
-        "base": {k: (_r(x) if not isinstance(x, dict) else {kk: _r(vv) for kk, vv in x.items()})
-                 for k, x in model.get("base", {}).items()},
-        "validation": {"tiers": {k: {"ann": _r(t.get("ctp", {}).get("annualized")), "t": _r(t.get("ctp", {}).get("t"), 3),
-                                     "n": t.get("n"), "beat_spy": _r(t.get("beat_spy"), 3)}
+        "base": {k: (stats(x) if isinstance(x, dict) else _r(x)) for k, x in model.get("base", {}).items()},
+        "validation": {"tiers": {k: {"ann": _r(t.get("ctp", {}).get("annualized")), "t": _r(t.get("ctp", {}).get("t"), 3)}
                                  for k, t in v.get("tiers", {}).items()},
-                       "spread": {k: _r(x) for k, x in v.get("above_minus_below", {}).items()},
-                       "portfolios": {k: {kk: _r(vv) for kk, vv in x.items()} for k, x in v.get("portfolios", {}).items()},
+                       "spread": stats(v.get("above_minus_below")),
+                       "by_period": {k: stats(x) for k, x in (v.get("by_period") or {}).items()},
+                       "portfolios": {k: stats(x) for k, x in v.get("portfolios", {}).items()},
                        "chosen_on": v.get("chosen_on"), "tested_on": v.get("tested_on")},
-        "tier_share": {k: _r(x, 3) for k, x in model.get("tier_share", {}).items()},
         "rules": model.get("rules", {}), "tier_edge": model.get("tier_edge"), "fitted": model.get("fitted"),
     }
 

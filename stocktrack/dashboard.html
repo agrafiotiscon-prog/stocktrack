@@ -146,7 +146,7 @@ h3 { font-size: 16px; font-weight: 600; letter-spacing: -0.01em; }
 }
 .seg button:hover { color: var(--ink); }
 .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 0 0 1px var(--hair); }
-.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 4px; margin: -4px; }
 .chips::-webkit-scrollbar { display: none; }
 .chips.more-right { -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent); }
 .tabs.more-right { -webkit-mask-image: linear-gradient(to right, #000 80%, transparent); mask-image: linear-gradient(to right, #000 80%, transparent); }
@@ -309,6 +309,15 @@ tbody tr:hover { background: color-mix(in oklab, var(--sunken) 60%, transparent)
 .money-in input { border: 0; outline: 0; background: transparent; color: var(--ink); font: 600 15px var(--font-ui); width: 120px; padding: 0 0 0 4px; font-variant-numeric: tabular-nums; }
 .money-in:focus-within { outline: 2px solid var(--accent); outline-offset: 1px; }
 .sizer .hint { flex: 1 1 260px; font-size: 12.5px; color: var(--muted); margin: 0; min-width: 0; }
+.sizer .err { font-size: 12px; font-weight: 500; color: var(--neg); }
+.sizer .err:empty { display: none; }
+.money-in:has(input[aria-invalid="true"]) { border-color: var(--neg); }
+.budget-box { display: grid; gap: 6px; justify-items: start; }
+.budget-box > span { font-size: 12.5px; font-weight: 500; color: var(--ink-2); }
+.desk-status { margin: 0 0 12px; font-size: 13px; color: var(--ink-2); }
+.desk-status b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.sig-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.sig-who small { display: block; margin-top: 2px; font-size: 12.5px; color: var(--muted); }
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .sig-card { display: grid; gap: 14px; padding: 18px; align-content: start; min-width: 0; }
 .sig-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
@@ -332,6 +341,7 @@ tbody tr:hover { background: color-mix(in oklab, var(--sunken) 60%, transparent)
 .range svg { width: 100%; height: 46px; display: block; }
 .range-cap { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--ink-2); }
 .range-cap b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.p05-key { display: inline-block; width: 7px; height: 7px; margin: 0 6px 1px 0; border-radius: 50%; border: 1.5px solid var(--neg); background: var(--surface); vertical-align: middle; }
 .pc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; }
 .pc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; align-content: start; }
 .pc li { display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 8px; font-size: 13px; line-height: 1.4; color: var(--ink); }
@@ -569,29 +579,31 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   <section id="desk" aria-labelledby="desk-title">
     <div class="wrap">
       <div class="sec-head">
-        <div class="eyebrow">Signal desk · the latest buys, checked against 20 years of history</div>
+        <div class="eyebrow">Signal desk · the latest buys, compared with 20 years of history</div>
         <h2 id="desk-title">How the newest insider buys stack up</h2>
-        <p class="dek">Each buy gets a profile from the features that beat or lagged the typical buy in both 2006–2015 and 2016 onward, the range of outcomes for similar stocks, a trade plan and a position size for your account. It's research, not advice: it doesn't know your finances.</p>
+        <p class="dek">One card per company. Each buy gets a profile from the features that beat or lagged the typical buy in both 2006–2015 and 2016 onward, the range of outcomes for similar past buys, the rules the live test trades by, and an example size for the account size you enter. It's research, not advice: it doesn't know your finances or other holdings, and no profile has beaten the S&amp;P 500 since 2016.</p>
       </div>
       <div class="desk-facts" id="desk-facts"></div>
       <div class="card sizer">
         <label for="acct">Account size
-          <span class="money-in"><span>$</span><input id="acct" type="text" inputmode="numeric" autocomplete="off" value="100,000" aria-describedby="sizer-hint"></span>
+          <span class="money-in"><span>$</span><input id="acct" type="text" inputmode="decimal" autocomplete="off" value="100,000" aria-describedby="acct-err sizer-hint"></span>
+          <span class="err" id="acct-err" aria-live="polite"></span>
         </label>
-        <div style="display:grid;gap:6px">
-          <span style="font-size:12.5px;font-weight:500;color:var(--ink-2)" id="budget-label">Most you'd lose on one trade in a bad 3 months</span>
+        <div class="budget-box">
+          <span id="budget-label">Loss you'd accept on one trade in a bad (1-in-20) 3 months</span>
           <div class="seg" role="group" aria-labelledby="budget-label" id="budget">
             <button type="button" data-v="0.005" aria-pressed="false">0.5%</button>
             <button type="button" data-v="0.01" aria-pressed="true">1%</button>
             <button type="button" data-v="0.02" aria-pressed="false">2%</button>
           </div>
         </div>
-        <p class="hint" id="sizer-hint">A bad 3 months is the 1-in-10 worst outcome for similar stocks. Positions are capped at 5% of the account, as in the tested portfolios, and at 2% of a day's trading in the stock.</p>
+        <p class="hint" id="sizer-hint">A bad 3 months is the 1-in-20 worst result for past buys at a similar price and trading volume; 1 time in 20 it was worse, and companies that later delisted are missing. Each position is capped at 5% of the account and 2% of a day's trading in the stock. The tested accounts held at most 20 at a time, one per company.</p>
       </div>
       <div class="toolbar">
         <div class="chips grow" id="desk-chips" role="group" aria-label="Filter signals"></div>
       </div>
-      <div class="cards" id="cards" aria-live="polite"></div>
+      <p class="desk-status" id="desk-status" aria-live="polite"></p>
+      <div class="cards" id="cards"></div>
       <div class="kinds-more" id="cards-more" style="border:0"></div>
       <p class="desk-note" id="desk-note"></p>
     </div>
@@ -782,10 +794,11 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   }
   function money(x) {
     if (!isNum(x)) return "–";
-    const a = Math.abs(x);
-    if (a >= 1e9) return "$" + (x / 1e9).toFixed(1) + "B";
-    if (a >= 1e6) return "$" + (x / 1e6).toFixed(a >= 1e7 ? 0 : 1) + "M";
-    if (a >= 1e3) return "$" + Math.round(x / 1e3) + "K";
+    const a = Math.abs(x); // thresholds sit where rounding would roll over into the next unit
+    if (a >= 999.5e6) return "$" + (x / 1e9).toFixed(1) + "B";
+    if (a >= 9.95e6) return "$" + (x / 1e6).toFixed(0) + "M";
+    if (a >= 999.5e3) return "$" + (x / 1e6).toFixed(1) + "M";
+    if (a >= 999.5) return "$" + Math.round(x / 1e3) + "K";
     return "$" + Math.round(x);
   }
   const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -1068,30 +1081,31 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   const K = D.desk;
   const TIER = { above: "Above typical", typical: "Typical", below: "Below typical" };
   const PHRASE = {
-    role: { "CFO": "The CFO is buying", "Other exec": "A senior executive (not the CEO) is buying", "10% owner": "A 10%+ shareholder is buying",
+    role: { "CFO": "The CFO is buying", "Other exec": "An executive other than the CEO or CFO is buying", "10% owner": "A 10%+ shareholder is buying",
       "Other": "The buyer is neither an officer, a director nor a 10% holder", "President/Chair": "The president or chair is buying",
       "CEO": "The CEO is buying", "Director": "A director is buying" },
     cluster: { "3+ insiders": "3+ insiders bought within 14 days", "2 insiders": "2 insiders bought within 14 days", "1 insider": "Only one insider is buying" },
     insider_type: { "routine": "A routine buyer: same month most years", "opportunistic": "An unscheduled (opportunistic) buyer" },
     prior_3m_return: { "up 30%+": "The stock rose 30%+ in the 3 months before", "up 10-30%": "The stock rose 10-30% in the 3 months before",
       "flat": "The stock was flat for 3 months", "down 10-30%": "The stock fell 10-30% in the 3 months before", "down 30%+": "The stock fell 30%+ in the 3 months before" },
-    price: { "$1-5": "Share price under $5", "$5-20": "Share price $5-20", "$20+": "Share price over $20" },
+    price: { "$1-5": "Share price under $5 (edge is before costs, which are highest here)", "$5-20": "Share price $5-20", "$20+": "Share price over $20" },
     liquidity: { "$1-10M/day": "Trades $1-10M a day", "$10-100M/day": "Trades $10-100M a day", "$100M+/day": "Trades $100M+ a day" },
     value: { "<$25K": "A small purchase (under $25K)", "$25-100K": "A $25-100K purchase", "$100-250K": "A $100-250K purchase", "$250K-1M": "A $250K-1M purchase", "$1M+": "A purchase over $1M" },
     stake_increase: { "new position": "A brand-new position, not adding to one", "100%+": "More than doubled their stake", "25-100%": "Grew their stake 25-100%", "5-25%": "Grew their stake 5-25%", "<5%": "Grew their stake under 5%" },
   };
-  const LEAD_NOTE = { cfo_exec_25k: "Matches the CFO/executive lead being judged on the live test", momentum_buy: "Matches the run-up lead being judged on the live test" };
+  const LEAD_NOTE = { cfo_exec_25k: "Part of the CFO/executive idea being tested live", momentum_buy: "Part of the run-up idea being tested live" };
   let desk = { acct: store.get("acct", 100000), budget: store.get("budget", 0.01), filter: "all", shown: 12 };
-  if (!isNum(desk.acct) || desk.acct <= 0) desk.acct = 100000;
+  if (!isNum(desk.acct) || desk.acct < 1000 || desk.acct > 1e10) desk.acct = 100000;
   if (![0.005, 0.01, 0.02].includes(desk.budget)) desk.budget = 0.01;
   if (!K || !K.cards || !K.cards.length) {
     $("desk-facts").replaceChildren(el("div", { class: "card empty", style: "grid-column:1/-1", text: "No recent signals yet. The desk fills after the next daily run." }));
     document.querySelector("#desk .sizer").hidden = true;
   } else {
-    const B = K.base, V = K.validation, VT = V.tiers || {}, VP = V.portfolios || {}, R = K.rules || { max_position: 0.05, adv_cap: 0.02 };
+    const B = K.base, V = K.validation, VT = V.tiers || {}, VP = V.portfolios || {}, BP = V.by_period || {};
+    const R = K.rules || { max_position: 0.05, adv_cap: 0.02 };
     const fact = (k, v, ...rest) => el("div", { class: "card desk-fact" }, el("div", { class: "k", text: k }), el("div", { class: "v" }, v), ...rest);
     const tierbars = el("div", { class: "tierbars", role: "img",
-      "aria-label": ["above", "typical", "below"].map((t) => `${TIER[t]} ${pct(VT[t] && VT[t].ann)} a year`).join(", ") });
+      "aria-label": ["above", "typical", "below"].map((t) => `${TIER[t]} ${pct(VT[t] && VT[t].ann, 0)} a year`).join(", ") });
     const tvals = ["above", "typical", "below"].map((t) => (VT[t] && VT[t].ann) || 0);
     const tlo = Math.min(0, ...tvals), thi = Math.max(0.01, ...tvals);
     ["above", "typical", "below"].forEach((t, i) => {
@@ -1099,37 +1113,62 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       const x = (v) => (v - tlo) / (thi - tlo) * 100;
       svg.append(sv("line", { class: "zero", x1: x(0), x2: x(0), y1: 0, y2: 12 }),
         sv("path", { d: hbarPath(x(0), x(tvals[i]), 2, 8, 2), fill: tvals[i] >= 0 ? "var(--accent)" : "var(--neg)" }));
-      tierbars.append(el("div", { class: "tierbar" }, el("span", { text: TIER[t] }), svg, el("b", { text: pct(tvals[i]) })));
+      tierbars.append(el("div", { class: "tierbar" }, el("span", { text: TIER[t] }), svg, el("b", { text: pct(tvals[i], 0) })));
     });
     const pfo = (k) => (VP[k] && isNum(VP[k].strategy_cagr) ? pct(VP[k].strategy_cagr) : "–");
+    const spyCagr = VP.above && isNum(VP.above.spy_cagr) ? pct(VP.above.spy_cagr) : "–";
+    const dds = Object.values(VP).map((p) => p.strategy_max_drawdown).filter(isNum);
+    const early = BP["2016-2020"] || {}, late = BP["2021 onward"] || {};
+    const p50 = B.p50_spy;
     $("desk-facts").append(
-      fact("A typical buy", `${pct(B.ctp && B.ctp.annualized)} a year vs comparable stocks`,
-        el("p", { text: `But one buy on its own beat the S&P 500 over 3 months only ${pct(B.beat_spy, 0, false)} of the time. The middle result was ${pct(B.p50_spy)}.` })),
-      fact("Do the profiles help?", "Somewhat, on data they never saw", tierbars,
-        el("p", { text: `Vs comparable stocks in ${V.tested_on || "2016 onward"} (gap p ${isNum(V.spread && V.spread.p) ? V.spread.p.toFixed(2) : "–"}). In a 20-position account: above ${pfo("above")}, typical ${pfo("typical")}, below ${pfo("below")} a year, vs ${VP.above && isNum(VP.above.spy_cagr) ? pct(VP.above.spy_cagr) : "–"} for the S&P 500.` })),
+      fact("A typical buy of the kind shown here", `${pct(B.ctp && B.ctp.annualized)} a year vs comparable stocks, before costs`,
+        el("p", { text: `Liquid buys only ($2+, $1M+ a day), so this differs from the ${pct(O.surv.ann)} above. One buy on its own beat the S&P 500 over 3 months only ${pct(B.beat_spy, 0, false)} of the time` +
+          (isNum(p50) ? `; the middle one ${p50 < 0 ? "trailed" : "beat"} it by ${pct(Math.abs(p50), 1, false)}.` : ".") })),
+      fact("Do the profiles help?", "A little, and not lately", tierbars,
+        el("p", { text: `Yearly edge vs comparable stocks in ${V.tested_on || "2016 onward"}, before costs, for profiles built from 2006–2015 only. ` +
+          `Above beat below by ${pct(early.annualized, 0)} a year in 2016–2020 but ${pct(late.annualized, 0)} since 2021, which could be chance. ` +
+          `The profiles on the cards also used 2016+, so only the live test can check them. In a 20-stock account after costs: above ${pfo("above")}, typical ${pfo("typical")}, ` +
+          `below ${pfo("below")} a year, vs ${spyCagr} for the S&P 500.` +
+          (dds.length ? ` None beat the index, and each fell ${pct(Math.min(...dds), 0, false)}–${pct(Math.max(...dds), 0, false)} at its worst.` : "") })),
       fact("How sizing works", "By risk, not by profile",
-        el("p", { text: "Profiles tilt the odds a little. The spread of outcomes is far bigger, so each position is sized to the loss you can take in a bad 3 months." })));
+        el("p", { text: "Profiles tilt the odds a little. The spread of outcomes is far bigger, so each position is sized to the loss you'd accept in a bad (1-in-20) 3 months. " +
+          "Each size is for one buy on its own and ignores your other holdings. Bad quarters tend to hit many stocks at once, and the tested accounts held at most 20 positions, one per company." })));
 
-    const acctIn = $("acct");
-    const fmtAcct = () => { acctIn.value = nf.format(Math.round(desk.acct)); };
+    // Account size: "250,000", "250k" and "1.5m" all work; anything else is flagged and the last good value stays.
+    const acctIn = $("acct"), acctErr = $("acct-err");
+    const parseAcct = (s) => {
+      const m = String(s).trim().toLowerCase().replace(/[$,\s]/g, "").match(/^(\d+(?:\.\d+)?)([km]?)$/);
+      if (!m) return null;
+      const v = Number(m[1]) * (m[2] === "k" ? 1e3 : m[2] === "m" ? 1e6 : 1);
+      return v >= 1000 && v <= 1e10 ? v : null;
+    };
+    const fmtAcct = () => { acctIn.value = nf.format(Math.round(desk.acct)); acctIn.removeAttribute("aria-invalid"); acctErr.textContent = ""; };
     fmtAcct();
     acctIn.addEventListener("input", () => {
-      const v = Number(acctIn.value.replace(/[^0-9.]/g, ""));
-      if (isNum(v) && v > 0) { desk.acct = v; store.set("acct", v); drawCards(); }
+      const v = parseAcct(acctIn.value);
+      if (v == null) {
+        acctIn.setAttribute("aria-invalid", "true");
+        acctErr.textContent = `Enter an amount of $1,000 or more, like 25,000 or 25k. Sizes still use ${money(desk.acct)}.`;
+        return;
+      }
+      acctIn.removeAttribute("aria-invalid"); acctErr.textContent = "";
+      if (v !== desk.acct) { desk.acct = v; store.set("acct", v); drawCards(); }
     });
     acctIn.addEventListener("blur", fmtAcct);
     segmented($("budget"), String(desk.budget), (v) => { desk.budget = Number(v); store.set("budget", desk.budget); drawCards(); });
 
     const counts = { all: K.cards.length };
     K.cards.forEach((c) => { counts[c.tier] = (counts[c.tier] || 0) + 1; counts.pending = (counts.pending || 0) + (c.entered ? 0 : 1); });
-    const FILTERS = [["all", "All recent"], ["above", "Above typical"], ["typical", "Typical"], ["below", "Below typical"], ["pending", "Not entered yet"]];
+    const FILTERS = [["all", "All recent"], ["above", "Above typical"], ["typical", "Typical"], ["below", "Below typical"], ["pending", "Entry still ahead"]];
     const dchips = $("desk-chips");
     FILTERS.forEach(([k, label]) => dchips.append(el("button", { class: "chip", type: "button", "data-v": k, "aria-pressed": String(k === desk.filter),
       onclick: () => { desk.filter = k; desk.shown = 12; dchips.querySelectorAll(".chip").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === k))); drawCards(); },
       text: `${label} · ${counts[k] || 0}` })));
 
+    // Same rule as advisor.position(): size to the 1-in-20 bad 3 months, then the account and liquidity caps.
     const sizeFor = (c) => {
-      const bad = Math.max(Math.abs(Math.min(isNum(c.risk.p10) ? c.risk.p10 : -0.3, 0)), 0.05);
+      const r = c.risk || {}, worst = isNum(r.p05) ? r.p05 : isNum(r.p10) ? r.p10 : -0.3;
+      const bad = Math.max(Math.abs(Math.min(worst, 0)), 0.05);
       let share = desk.budget / bad, limit = "budget";
       if (share > R.max_position) { share = R.max_position; limit = "cap"; }
       if (isNum(c.adv) && share * desk.acct > R.adv_cap * c.adv) { share = R.adv_cap * c.adv / desk.acct; limit = "liquidity"; }
@@ -1137,11 +1176,14 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     };
     const yearOf = (d) => d.slice(0, 4);
     const dayFull = (d, ref) => (yearOf(d) === yearOf(ref) ? shortDay(d) : day(d));
-    const usd = (x) => (isNum(x) ? "$" + (x >= 100 ? x.toFixed(0) : x.toFixed(2)) : "–");
+    const usd = (x) => (isNum(x) ? "$" + x.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "–");
+    const budgetPct = () => pct(desk.budget, desk.budget < 0.01 ? 1 : 0, false);
+    const dollars = (x) => (isNum(x) && Math.abs(x) < 1e6 ? "$" + nf.format(Math.round(x)) : money(x));
 
     function rangeChart(r) {
       const box = el("div", { class: "range", role: "img",
-        "aria-label": `3-month returns of similar stocks: 1 in 10 ${pct(r.p10, 0)} or worse, middle ${pct(r.p50, 0)}, 1 in 10 ${pct(r.p90, 0)} or better` });
+        "aria-label": `Raw 3-month price change of similar past buys: 1 in 20 ${pct(r.p05, 0)} or worse, 1 in 10 ${pct(r.p10, 0)} or worse, middle ${pct(r.p50, 0)}, 1 in 10 ${pct(r.p90, 0)} or better` });
+      box._risk = r;
       requestAnimationFrame(() => drawRange(box, r));
       return box;
     }
@@ -1152,88 +1194,117 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       const svg = sv("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, "aria-hidden": "true" });
       svg.append(sv("line", { x1: x(0), x2: x(0), y1: 4, y2: 30, stroke: "var(--rule)", "stroke-width": 1 }));
       svg.append(sv("line", { x1: x(r.p10), x2: x(r.p90), y1: 17, y2: 17, stroke: "var(--spy)", "stroke-width": 2, "stroke-linecap": "round" }));
+      if (isNum(r.p05)) svg.append(sv("circle", { cx: x(r.p05), cy: 17, r: 3, fill: "var(--surface)", stroke: "var(--neg)", "stroke-width": 1.5 }));
       svg.append(sv("rect", { x: x(r.p25), y: 10, width: Math.max(2, x(r.p75) - x(r.p25)), height: 14, rx: 4, fill: "var(--accent-wash-2)", stroke: "var(--accent)", "stroke-width": 1 }));
       svg.append(sv("line", { x1: x(r.p50), x2: x(r.p50), y1: 8, y2: 26, stroke: "var(--accent)", "stroke-width": 2.5, "stroke-linecap": "round" }));
-      [[r.p10, "start"], [r.p50, "middle"], [r.p90, "end"]].forEach(([v, a]) => {
-        const t = sv("text", { x: x(v), y: 42, "text-anchor": a, class: "chart-label" }); t.textContent = pct(v, 0); svg.append(t);
-      });
+      // Labels at p10, middle and p90, pushed apart so they never overlap; the middle one is dropped if they can't fit.
+      const labs = [r.p10, r.p50, r.p90].map((v) => ({ v, s: pct(v, 0) }));
+      labs.forEach((l) => { l.w = 6.6 * l.s.length + 2; l.left = Math.max(2, Math.min(W - 2 - l.w, x(l.v) - l.w / 2)); });
+      const gap = 6, fit = (ls) => {
+        for (let i = 1; i < ls.length; i++) ls[i].left = Math.max(ls[i].left, ls[i - 1].left + ls[i - 1].w + gap);
+        const last = ls[ls.length - 1];
+        if (last.left + last.w > W - 2) {
+          last.left = W - 2 - last.w;
+          for (let i = ls.length - 2; i >= 0; i--) ls[i].left = Math.min(ls[i].left, ls[i + 1].left - gap - ls[i].w);
+        }
+        return ls[0].left >= 2;
+      };
+      const shown = fit(labs.map((l) => ({ ...l }))) ? labs : [labs[0], labs[2]];
+      fit(shown);
+      shown.forEach((l) => { const t = sv("text", { x: l.left, y: 42, "text-anchor": "start", class: "chart-label" }); t.textContent = l.s; svg.append(t); });
       box.replaceChildren(svg);
     }
 
     function card(c) {
-      const sz = sizeFor(c), lead = c.insiders[0] || {};
-      const others = c.insiders.length - 1;
-      const pros = [], cons = [];
-      c.tilts.forEach((t) => {
+      const sz = sizeFor(c), who = c.buyer || {};
+      const pros = [], cons = [], notes = [], checks = [];
+      (c.tilts || []).forEach((t) => {
         const ph = (PHRASE[t.feature] || {})[t.level] || `${t.feature}: ${t.level}`;
-        const ev = t.tilt > 0 ? `At least ${pct(t.tilt)} a year better than the typical buy, in both 2006–15 and 2016+`
-          : `At least ${pct(-t.tilt, 1, false)} a year worse than the typical buy, in both periods`;
+        const ev = t.tilt > 0 ? `Beat the typical buy in both 2006–15 and 2016+, by ${pct(t.tilt, 1, false)} a year in the weaker period (before costs; could be chance)`
+          : `Lagged the typical buy in both periods, by ${pct(-t.tilt, 1, false)} a year in the weaker one (could be chance)`;
         (t.tilt > 0 ? pros : cons).push([ph, ev]);
       });
-      if (isNum(c.last_close) && c.last_close < 5) cons.push(["Low-priced stock", `About ${pct(c.cost_side, 1, false)} trading cost each way, and wide swings`]);
-      if (isNum(c.adv) && c.adv < 5e6) cons.push(["Thinly traded", `About ${money(c.adv)} a day: extra cost, and a large order moves the price`]);
-      const gap = isNum(c.insider_price) && isNum(c.last_close) && c.insider_price > 0 ? c.last_close / c.insider_price - 1 : null;
-      if (isNum(gap) && gap > 0.1 && gap <= 0.3)
-        cons.push(["Already up since the insider bought", `${pct(gap, 0)} above the insider's ${usd(c.insider_price)}`]);
-      const notes = c.leads.map((k) => [LEAD_NOTE[k] || k, "Found by looking at past data, so not proven yet"]);
-      if (isNum(gap) && Math.abs(gap) > 0.3)
-        notes.push(["The insider's price is far from the market price", `${usd(c.insider_price)} vs ${usd(c.last_close)}: possibly another share class. Check the filing.`]);
-      const li = (cls, mark, [a, b]) => el("li", { class: cls }, el("span", { class: "m", "aria-hidden": "true", text: mark }), el("span", {}, a, el("small", { text: b })));
-      const status = c.entered
-        ? (c.status === "open" && isNum(c.now) ? ` vs S&P 500 since entry on ${shortDay(c.entry)} at ${usd(c.entry_price)}` : `Entered ${shortDay(c.entry)} at ${usd(c.entry_price)}`)
-        : `Not entered yet: the plan starts at the open on ${shortDay(c.entry)}`;
       const extra = sz.amount > 0.01 * (c.adv || Infinity) ? 0.0025 : 0;
-      const shares = isNum(c.price) && c.price > 0 ? Math.floor(sz.amount / c.price) : null;
-      const why = sz.limit === "budget" ? `A bad 3 months for similar stocks (${pct(-sz.bad, 0)}) would cost about ${money(sz.amount * sz.bad)}, your ${pct(desk.budget, 1, false)} limit.`
-        : sz.limit === "cap" ? `Capped at ${pct(R.max_position, 0, false)} of the account, the tested portfolios' limit. A bad 3 months (${pct(-sz.bad, 0)}) would cost about ${money(sz.amount * sz.bad)}.`
+      const side = (c.cost_side || 0) + extra;
+      if (isNum(c.pre_close) && c.pre_close < 5) cons.push(["Low-priced stock", `About ${pct(side, 1, false)} trading cost each way at this size, and wide swings`]);
+      if (isNum(c.adv) && c.adv < 5e6) cons.push(["Thinly traded", `About ${money(c.adv)} a day: extra cost, and a large order moves the price`]);
+      // Insider's price vs the close before the filing: a big gap usually means another share class.
+      const gap = isNum(c.insider_price) && isNum(c.pre_close) && c.insider_price > 0 ? c.pre_close / c.insider_price - 1 : null;
+      if (!c.entered && isNum(gap) && gap > 0.1 && gap <= 0.3)
+        cons.push(["Already up since the insider bought", `${pct(gap, 0)} above the insider's ${usd(c.insider_price)}`]);
+      if (isNum(gap) && Math.abs(gap) > 0.3)
+        checks.push(["Check the filing: the insider's price is far from the market price", `${usd(c.insider_price)} vs ${usd(c.pre_close)}; possibly another share class`]);
+      (c.leads || []).forEach((k) => notes.push([LEAD_NOTE[k] || k, "Found by looking at past data, so not proven yet"]));
+      const li = (cls, mark, [a, b]) => el("li", { class: cls }, el("span", { class: "m", "aria-hidden": "true", text: mark }), el("span", {}, a, el("small", { text: b })));
+      const open = c.entered && c.status === "open" && isNum(c.now);
+      const status = c.entered
+        ? (open ? ` vs S&P 500 since the live test entered on ${shortDay(c.entry)} at ${usd(c.entry_price)}` : `Live test entered ${shortDay(c.entry)} at ${usd(c.entry_price)}`)
+        : `The live test enters at the open on ${shortDay(c.entry)}`;
+      const shares = isNum(c.close) && c.close > 0 ? Math.floor(sz.amount / c.close) : null;
+      const shareText = shares == null ? "" : shares >= 1 ? ` · about ${nf.format(shares)} share${shares === 1 ? "" : "s"}` : " · less than one share";
+      let why = sz.limit === "budget"
+        ? `A 1-in-20 bad 3 months for similar past buys (${pct(-sz.bad, 0)}) would cost about ${dollars(sz.amount * sz.bad)}, your ${budgetPct()} loss budget. It can lose more.`
+        : sz.limit === "cap" ? `Capped at ${pct(R.max_position, 0, false)} of the account, the tested portfolios' size. A 1-in-20 bad 3 months (${pct(-sz.bad, 0)}) would cost about ${dollars(sz.amount * sz.bad)}; it can lose more.`
           : `Capped at ${pct(R.adv_cap, 0, false)} of a day's trading in the stock (${money(c.adv)} a day).`;
-      return el("article", { class: "card sig-card", "aria-label": `${c.symbol}, ${TIER[c.tier]}` },
+      if (c.entered) why += ` The test entered ${shortDay(c.entry)}; buying later is a different trade from the one tested.`;
+      if (c.tier === "below") why += ` Below-typical buys made ${pfo("below")} a year in the tested account vs ${spyCagr} for the S&P 500; this is a size limit, not a reason to buy.`;
+      const others = c.others || 0;
+      return el("article", { class: "card sig-card", tabindex: "-1", "aria-label": `${c.symbol}, ${TIER[c.tier]}, profile score ${pct(c.tilt, 1)} a year` },
         el("div", { class: "sig-top" },
           el("div", { class: "sig-id" },
             c.url && c.url.startsWith("https://www.sec.gov/") ? el("a", { class: "tk", href: c.url, target: "_blank", rel: "noopener noreferrer", title: "Open the SEC filing", text: c.symbol }) : el("span", { class: "tk", text: c.symbol }),
             el("span", { class: "co", text: c.company })),
-          el("span", { class: "tier " + c.tier, title: `Summed tilt ${pct(c.tilt)} a year vs the typical buy` }, TIER[c.tier])),
-        el("div", { class: "sig-who" }, el("b", { text: lead.name || "–" }), ` · ${lead.role || ""} · bought ${money(c.value)}`,
-          others > 0 ? ` with ${others} other insider${others > 1 ? "s" : ""}` : "", ` · filed ${shortDay(c.filed)}`,
-          el("span", { class: "sig-status" }, c.entered && isNum(c.now) && c.status === "open" ? signed(c.now) : null, status)),
-        el("div", { class: "sig-sec" }, el("h4", { text: "What usually followed: 3-month return of similar stocks" }), rangeChart(c.risk),
+          el("span", { class: "tier " + c.tier, title: `Profile score: tilts add up to ${pct(c.tilt, 2)} a year before costs; not a forecast` }, TIER[c.tier])),
+        el("div", { class: "sig-who" }, el("b", { text: who.name || "–" }), ` · ${who.role || "insider"} · bought ${money(who.value)}`,
+          others > 0 ? ` · with ${others} other insider${others > 1 ? "s" : ""} the same day (${money(c.value)} in all)` : "", ` · filed ${shortDay(c.filed)}`,
+          c.earlier && c.earlier.length ? el("small", { text: `Also filed buys on ${c.earlier.map(shortDay).join(", ")}; this card shows the latest.` }) : null,
+          el("span", { class: "sig-status" }, open ? signed(c.now) : null, status)),
+        el("div", { class: "sig-sec" }, el("h4", { text: "Range for similar past buys: raw 3-month price change, all profiles, before costs" }), rangeChart(c.risk),
           el("div", { class: "range-cap" },
-            el("span", {}, "Middle ", el("b", { text: pct(c.risk.p50) })),
-            el("span", {}, "Typical dip along the way ", el("b", { text: pct(c.risk.dd_median, 0) })),
-            VT[c.tier] && isNum(VT[c.tier].beat_spy) ? el("span", {}, `${c.tier === "above" ? "Even above-typical" : TIER[c.tier]} buys beat the S&P 500 only `, el("b", { text: pct(VT[c.tier].beat_spy, 0, false) }), " of the time (2016+)") : null)),
+            el("span", {}, "Middle ", el("b", { text: pct(c.risk.p50, 0) })),
+            el("span", {}, el("i", { class: "p05-key", "aria-hidden": "true" }), "1 in 20 fell ", el("b", { text: pct(Math.abs(Math.min(c.risk.p05, 0)), 0, false) }), " or more"),
+            el("span", {}, "Typical dip along the way ", el("b", { text: pct(c.risk.dd_median, 0) })))),
         el("div", { class: "pc" },
-          el("div", { class: "sig-sec" }, el("h4", { text: "In its favor" }), pros.length || notes.length ? el("ul", {}, pros.map((x) => li("pro", "✓", x)), notes.map((x) => li("note", "i", x))) : el("div", { class: "none", text: "Nothing with a consistent edge." })),
-          el("div", { class: "sig-sec" }, el("h4", { text: "Against it" }), cons.length ? el("ul", {}, cons.map((x) => li("con", "✕", x))) : el("div", { class: "none", text: "No consistent warning signs." }))),
-        el("div", { class: "ticket", "aria-label": "Trade plan" },
-          el("div", {}, el("span", { class: "k", text: "Entry" }), el("span", { class: "v", text: c.entered ? `${shortDay(c.entry)} · ${usd(c.entry_price)}` : `Open, ${shortDay(c.entry)}` })),
-          el("div", {}, el("span", { class: "k", text: "Planned exit, at the close" }), el("span", { class: "v", text: `~${dayFull(c.exit, c.entry)}` })),
-          el("div", {}, el("span", { class: "k", text: "Hold" }), el("span", { class: "v", text: "63 sessions" })),
-          el("div", {}, el("span", { class: "k", text: "Last close" }), el("span", { class: "v", text: usd(c.last_close) })),
+          el("div", { class: "sig-sec" }, el("h4", { text: "In its favor" }), pros.length || notes.length ? el("ul", {}, pros.map((x) => li("pro", "✓", x)), notes.map((x) => li("note", "i", x))) : el("div", { class: "none", text: "No tested feature beat the typical buy in both periods." })),
+          el("div", { class: "sig-sec" }, el("h4", { text: "Against it" }), cons.length || checks.length ? el("ul", {}, cons.map((x) => li("con", "✕", x)), checks.map((x) => li("note", "!", x))) : el("div", { class: "none", text: "No tested feature lagged in both periods. The usual risks still apply." }))),
+        el("div", { class: "ticket", role: "group", "aria-label": "Live test rules" },
+          el("div", {}, el("span", { class: "k", text: "Test entry" }), el("span", { class: "v", text: c.entered ? `${shortDay(c.entry)} · ${usd(c.entry_price)}` : `Open, ${shortDay(c.entry)}` })),
+          el("div", {}, el("span", { class: "k", text: "Test exit, at the close" }), el("span", { class: "v", text: `~${dayFull(c.exit, c.entry)}` })),
+          el("div", {}, el("span", { class: "k", text: "Hold, ~3 months" }), el("span", { class: "v", text: "63 trading days" })),
+          el("div", {}, el("span", { class: "k", text: c.close_date ? `Close, ${shortDay(c.close_date)}` : "Last close" }), el("span", { class: "v", text: usd(c.close) })),
           el("div", {}, el("span", { class: "k", text: "Insider paid" }), el("span", { class: "v", text: usd(c.insider_price) })),
-          el("div", {}, el("span", { class: "k", text: "Cost, round trip" }), el("span", { class: "v", text: `~${pct(2 * (c.cost_side + extra), 1, false)}` }))),
+          el("div", {}, el("span", { class: "k", text: "Cost, round trip" }), el("span", { class: "v", text: `~${pct(2 * side, 1, false)}` }))),
         el("div", { class: "size-line" },
-          el("span", { class: "amt", text: money(sz.amount) }),
-          el("span", { class: "sub", text: `${pct(sz.share, 1, false)} of your account${shares != null ? ` · about ${nf.format(shares)} shares` : ""}` }),
+          el("span", { class: "amt", text: dollars(sz.amount) }),
+          el("span", { class: "sub", text: `Example: ${pct(sz.share, 1, false)} of the account size entered${shareText}` }),
           el("span", { class: "why", text: why })));
     }
 
-    function drawCards() {
+    function drawCards(focusFrom) {
       const f = desk.filter;
       const rows = K.cards.filter((c) => f === "all" || c.tier === f || (f === "pending" && !c.entered));
       const box = $("cards");
-      box.replaceChildren(...rows.slice(0, desk.shown).map(card));
+      const shownCards = rows.slice(0, desk.shown).map(card);
+      box.replaceChildren(...shownCards);
       if (!rows.length) box.append(el("div", { class: "card empty", style: "grid-column:1/-1", text: "No signals in this group right now." }));
       const more = $("cards-more");
       more.replaceChildren();
-      if (rows.length > desk.shown) more.append(el("button", { class: "more-btn", type: "button", "data-focus": "cards-more", onclick: () => { desk.shown += 12; keepFocus(drawCards); },
+      if (rows.length > desk.shown) more.append(el("button", { class: "more-btn", type: "button", onclick: () => { const from = desk.shown; desk.shown += 12; drawCards(from); },
         text: `Show ${Math.min(12, rows.length - desk.shown)} more of ${rows.length - desk.shown}` }));
+      if (isNum(focusFrom) && shownCards[focusFrom]) shownCards[focusFrom].focus();
+      const total = rows.reduce((s, c) => s + sizeFor(c).share, 0);
+      $("desk-status").replaceChildren(
+        `${rows.length} ${rows.length === 1 ? "company" : "companies"}${f === "all" ? "" : " in this group"}${rows.length > desk.shown ? `, ${desk.shown} shown` : ""}. `,
+        rows.length > 1 ? el("span", {}, "Sized one by one, they add up to ", el("b", { text: pct(total, 0, false) }), ` of a ${money(desk.acct)} account; the tested accounts held at most 20 positions.`) : "");
     }
     drawCards();
     let cardsW = 0;
-    if (ro) new ResizeObserver(() => { const w = $("cards").clientWidth; if (Math.abs(w - cardsW) > 2) { cardsW = w; drawCards(); } }).observe($("cards"));
-    $("desk-note").textContent = `Buys filed ${shortDay(K.since)} to ${day(K.latest)}, one card per company and filing day. ` +
+    if (ro) new ResizeObserver(() => { const w = $("cards").clientWidth; if (Math.abs(w - cardsW) > 2) { cardsW = w; $("cards").querySelectorAll(".range").forEach((b) => drawRange(b, b._risk)); } }).observe($("cards"));
+    $("desk-note").textContent = `Buys filed ${shortDay(K.since)} to ${day(K.latest)}; each card is one company's latest filing day, and everything on it comes from that day's largest buy. ` +
       `Profiles sum the features that beat or lagged the typical buy by at least 1% a year in both periods; a total of ${pct(K.tier_edge, 0)} a year or more is above typical, ${pct(-K.tier_edge, 0)} or worse below. ` +
-      `Outcome ranges are raw 3-month returns of stocks at a similar price and trading volume, 2006–2026. Model fitted ${day(K.fitted)}. Research, not personal advice.`;
+      `Outcome ranges are raw 3-month price changes (not vs the market) of past insider buys at a similar price and trading volume, 2006–2026, whatever their profile. ` +
+      `Profiles fitted ${day(K.fitted)}, after seeing the data (exploratory); each new buy's profile is recorded when it's logged, and the live test is the real check. ` +
+      `Edges and ranges are before costs and cover only companies still listed today, which flatters them. Research, not personal advice.`;
   }
 
   // ---------- what works ----------
