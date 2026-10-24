@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +14.1%/yr, double costs +7.2%/yr.
 
 ## Live forward test
 
-11 buys logged so far; none have matured yet.
+17 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | – | pending |
-| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | – | pending |
-| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | – | pending |
-| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | – | pending |
-| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | – | pending |
-| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | – | pending |
-| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | – | pending |
-| 2026-10-21 | [[LEO]] | [[Saba Capital Management, L.P]] | $44K | 15 | +0.3% | open |
-| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | +1.4% | open |
-| 2026-10-21 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | +0.5% | open |
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | +1.6% | open |
-| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | +0.2% | open |
-| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | +4.3% | open |
-| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | +0.9% | open |
-| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | -3.8% | open |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +1.2% | open |
-| 2026-10-19 | [[DSM]] | [[Saba Capital Management, L.P]] | $72K | 18 | +1.2% | open |
-| 2026-10-19 | [[EQBK]] | [[Borck Leon]] | $19K | 16 | +2.6% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +2.9% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | – | pending |
+| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | – | pending |
+| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | -1.1% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -5.9% | open |
+| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | -1.9% | open |
+| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | -2.4% | open |
+| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | -0.8% | open |
+| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | -1.2% | open |
+| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | -1.1% | open |
+| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | -0.8% | open |
+| 2026-10-21 | [[LEO]] | [[Saba Capital Management, L.P]] | $44K | 15 | +0.7% | open |
+| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | +0.7% | open |
+| 2026-10-21 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | +0.6% | open |
+| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | +0.9% | open |
+| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | +0.6% | open |
+| 2026-10-20 | [[AYI]] | [[O'Shaughnessy Laura]] | $22K | 20 | +5.4% | open |
+| 2026-10-20 | [[DSM]] | [[Saba Capital Management, L.P]] | $1.1M | 34 | +1.1% | open |
+| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | -2.1% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -1.1% | open |
+| 2026-10-19 | [[DSM]] | [[Saba Capital Management, L.P]] | $72K | 18 | +1.3% | open |
 
 
 ```dataview

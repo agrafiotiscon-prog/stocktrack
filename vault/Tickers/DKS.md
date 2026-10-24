@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-01 DKS Barnes Matthew\|2026-10-01]] | [[Barnes Matthew]] | President - Foot Locker Intl | $500K | 78 | +11.1% | open |
+| [[2026-10-01 DKS Barnes Matthew\|2026-10-01]] | [[Barnes Matthew]] | President - Foot Locker Intl | $500K | 78 | +8.6% | open |

@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +5.5%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-09 | [[NEOG]] | CEO | $6K | 44 | +1.8% |
+| 2026-10-09 | [[NEOG]] | CEO | $6K | 44 | +4.1% |

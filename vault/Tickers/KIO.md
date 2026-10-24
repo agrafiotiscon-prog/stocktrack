@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-14 KIO Pimentel Rudy\|2026-10-14]] | [[Pimentel Rudy]] | President | $41K | 45 | -0.5% | open |
+| [[2026-10-14 KIO Pimentel Rudy\|2026-10-14]] | [[Pimentel Rudy]] | President | $41K | 45 | -0.6% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-28 | [[Opaleye Management Inc]] | 10% Owner | $271K | 25 | -4.2% | open |
+| 2026-09-28 | [[Opaleye Management Inc]] | 10% Owner | $271K | 25 | -3.4% | open |

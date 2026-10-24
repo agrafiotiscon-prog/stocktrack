@@ -81,7 +81,7 @@ Cost sensitivity (63-session hold): no costs +22.2%/yr, double costs +17.3%/yr.
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
 | 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | – | pending |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +1.2% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -1.1% | open |
 
 
 ```dataview

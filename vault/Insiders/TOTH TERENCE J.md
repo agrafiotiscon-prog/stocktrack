@@ -12,4 +12,4 @@ Backtest record: 16 earlier buys, average 3-month excess vs SPY -1.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-16 | [[NAD]] | Other | $72K | 33 | +0.9% |
+| 2026-10-16 | [[NAD]] | Other | $72K | 33 | +0.2% |

@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -2.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-21 | [[RAPP]] | Chief Financial Officer | $144K | 54 | +1.7% |
+| 2026-10-21 | [[RAPP]] | Chief Financial Officer | $144K | 54 | -0.1% |

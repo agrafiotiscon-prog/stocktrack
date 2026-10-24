@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-21 | [[Grimme Arne]] | Director | $50K | 10 | -3.1% | open |
-| 2026-10-20 | [[Grimme Arne]] | Director | $25K | 5 | -8.9% | open |
-| 2026-10-16 | [[Grimme Arne]] | Director | $50K | 10 | -9.4% | open |
+| 2026-10-21 | [[Grimme Arne]] | Director | $50K | 10 | -2.8% | open |
+| 2026-10-20 | [[Grimme Arne]] | Director | $25K | 5 | -8.6% | open |
+| 2026-10-16 | [[Grimme Arne]] | Director | $50K | 10 | -9.1% | open |

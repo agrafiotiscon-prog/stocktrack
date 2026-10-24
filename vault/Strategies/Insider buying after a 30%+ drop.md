@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.3%/yr.
 
 ## Live forward test
 
-3 buys logged so far; none have matured yet.
+4 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | – | pending |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +1.7% | open |
-| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -3.7% | open |
-| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -3.7% | open |
-| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -0.7% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +2.9% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +2.9% | open |
-| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -1.8% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -10.5% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -10.8% | open |
-| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | +0.3% | open |
-| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | -1.1% | open |
-| 2026-10-13 | [[IMSR]] | [[BUCKMAN FREDERICK W]] | $39K | 38 | -4.8% | open |
-| 2026-10-09 | [[SAH]] | [[Rusnak Paul P]] | $819K | 29 | +5.5% | open |
-| 2026-10-08 | [[AVR]] | [[L1 Capital Pty Ltd]] | $2.0M | 37 | -9.3% | open |
-| 2026-10-07 | [[SAH]] | [[Rusnak Paul P]] | $67K | 17 | +5.3% | open |
-| 2026-10-07 | [[AGMB]] | [[Epstein David R]] | $86K | 53 | +5.7% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | – | pending |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -5.9% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -5.9% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -5.9% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -5.9% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -0.1% | open |
+| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -9.4% | open |
+| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -9.4% | open |
+| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -6.1% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -1.1% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -1.1% | open |
+| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -4.2% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -11.9% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -17.6% | open |
+| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | -1.3% | open |
+| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | -4.7% | open |
+| 2026-10-13 | [[IMSR]] | [[BUCKMAN FREDERICK W]] | $39K | 38 | -6.3% | open |
+| 2026-10-09 | [[SAH]] | [[Rusnak Paul P]] | $819K | 29 | +3.0% | open |
+| 2026-10-08 | [[AVR]] | [[L1 Capital Pty Ltd]] | $2.0M | 37 | -10.7% | open |
+| 2026-10-07 | [[SAH]] | [[Rusnak Paul P]] | $67K | 17 | +2.8% | open |
 
 
 ```dataview

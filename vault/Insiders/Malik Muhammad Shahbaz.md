@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-19 | [[FUL]] | Senior VP, BAS | $25K | 35 | +0.1% |
+| 2026-10-19 | [[FUL]] | Senior VP, BAS | $25K | 35 | -1.9% |

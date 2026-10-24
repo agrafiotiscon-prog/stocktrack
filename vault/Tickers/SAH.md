@@ -9,8 +9,8 @@ signals: 5
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[Rusnak Paul P]] | 10% Owner | $752K | 28 | -1.8% | open |
-| 2026-10-09 | [[Rusnak Paul P]] | 10% Owner | $819K | 29 | +5.5% | open |
-| 2026-10-07 | [[Rusnak Paul P]] | 10% Owner | $67K | 17 | +5.3% | open |
-| 2026-10-06 | [[Rusnak Paul P]] | 10% Owner | $1.7M | 32 | +4.4% | open |
-| 2026-10-06 | [[Rusnak Paul P]] | 10% Owner | $1.3M | 31 | +4.4% | open |
+| 2026-10-16 | [[Rusnak Paul P]] | 10% Owner | $752K | 28 | -4.2% | open |
+| 2026-10-09 | [[Rusnak Paul P]] | 10% Owner | $819K | 29 | +3.0% | open |
+| 2026-10-07 | [[Rusnak Paul P]] | 10% Owner | $67K | 17 | +2.8% | open |
+| 2026-10-06 | [[Rusnak Paul P]] | 10% Owner | $1.7M | 32 | +1.9% | open |
+| 2026-10-06 | [[Rusnak Paul P]] | 10% Owner | $1.3M | 31 | +1.9% | open |

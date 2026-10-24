@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-22 NMCO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | – | pending |
-| [[2026-10-22 NMCO Jones Nathaniel T\|2026-10-22]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | – | pending |
-| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +2.9% | open |
+| [[2026-10-22 NMCO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | -2.4% | open |
+| [[2026-10-22 NMCO Jones Nathaniel T\|2026-10-22]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | -2.4% | open |
+| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +1.8% | open |

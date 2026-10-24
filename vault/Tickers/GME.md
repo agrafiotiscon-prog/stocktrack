@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-13 GME Cohen Ryan\|2026-10-13]] | [[Cohen Ryan]] | President, CEO and Chairman | $22.8M | 71 | -7.0% | open |
-| [[2026-10-02 GME Cohen Ryan\|2026-10-02]] | [[Cohen Ryan]] | President, CEO and Chairman | $17.1M | 79 | +2.4% | open |
-| [[2026-10-01 GME Turner Nat\|2026-10-01]] | [[Turner Nat]] | Director | $255K | 66 | +5.8% | open |
-| [[2026-09-29 GME Cohen Ryan\|2026-09-29]] | [[Cohen Ryan]] | President, CEO and Chairman | $10.6M | 70 | +4.1% | open |
+| [[2026-10-13 GME Cohen Ryan\|2026-10-13]] | [[Cohen Ryan]] | President, CEO and Chairman | $22.8M | 71 | -8.5% | open |
+| [[2026-10-02 GME Cohen Ryan\|2026-10-02]] | [[Cohen Ryan]] | President, CEO and Chairman | $17.1M | 79 | +0.7% | open |
+| [[2026-10-01 GME Turner Nat\|2026-10-01]] | [[Turner Nat]] | Director | $255K | 66 | +3.9% | open |
+| [[2026-09-29 GME Cohen Ryan\|2026-09-29]] | [[Cohen Ryan]] | President, CEO and Chairman | $10.6M | 70 | +2.3% | open |

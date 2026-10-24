@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[DX]] | Chief Investment Officer | $28K | 28 | -0.7% |
+| 2026-09-28 | [[DX]] | Chief Investment Officer | $28K | 28 | -1.4% |

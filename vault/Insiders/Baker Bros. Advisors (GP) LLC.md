@@ -12,4 +12,4 @@ Backtest record: 14 earlier buys, average 3-month excess vs SPY -0.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-30 | [[KOD]] | Director | $58.6M | 68 | -10.0% |
+| 2026-09-30 | [[KOD]] | Director | $58.6M | 68 | -7.6% |

@@ -80,7 +80,9 @@ Cost sensitivity (63-session hold): no costs +16.7%/yr, double costs +11.0%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +1.7% | open |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | – | pending |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | – | pending |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -0.1% | open |
 
 
 ```dataview

@@ -12,5 +12,5 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -15.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-14 | [[INBX]] | Chief Executive Officer | $849K | 47 | +11.1% |
-| 2026-09-28 | [[INBX]] | Chief Executive Officer | $999K | 60 | -7.4% |
+| 2026-10-14 | [[INBX]] | Chief Executive Officer | $849K | 47 | +7.4% |
+| 2026-09-28 | [[INBX]] | Chief Executive Officer | $999K | 60 | -10.4% |

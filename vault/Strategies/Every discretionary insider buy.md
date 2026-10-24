@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.9%/yr.
 
 ## Live forward test
 
-32 buys logged so far; none have matured yet.
+42 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
+| 2026-10-23 | [[BPRE]] | [[Ruddy Jordan B]] | $25K | 48 | – | pending |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | – | pending |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | – | pending |
+| 2026-10-23 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $7.7M | 23 | – | pending |
+| 2026-10-23 | [[CHCO]] | [[STRONG-TREISTER DIANE W]] | $17K | 4 | – | pending |
+| 2026-10-23 | [[CHCO]] | [[Reyes Javier A]] | $14K | 4 | – | pending |
+| 2026-10-23 | [[CHCO]] | [[Hoyer James A]] | $14K | 9 | – | pending |
+| 2026-10-23 | [[CHCO]] | [[FISHER ROBERT D]] | $23K | 2 | – | pending |
+| 2026-10-23 | [[MSM]] | [[Slone Reuben E]] | $50K | 39 | – | pending |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | – | pending |
+| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | – | pending |
+| 2026-10-23 | [[CLF]] | [[Camara Edilson]] | $100K | 32 | – | pending |
 | 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | – | pending |
-| 2026-10-22 | [[DOLE]] | [[Pale Fire Capital SE]] | $8.6M | 45 | – | pending |
-| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | – | pending |
-| 2026-10-22 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.8M | 22 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | – | pending |
-| 2026-10-22 | [[XFLT]] | [[Spence John Yogi]] | $34K | 13 | – | pending |
-| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | – | pending |
-| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | – | pending |
-| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | – | pending |
-| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | – | pending |
-| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | – | pending |
-| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | – | pending |
-| 2026-10-22 | [[NMCO]] | [[Jones Nathaniel T]] | $4K | 40 | – | pending |
-| 2026-10-22 | [[AGMB]] | [[Epstein David R]] | $89K | 41 | – | pending |
-| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | +2.3% | open |
-| 2026-10-21 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.3M | 59 | +0.5% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +1.7% | open |
+| 2026-10-22 | [[DOLE]] | [[Pale Fire Capital SE]] | $8.6M | 45 | -0.8% | open |
+| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | -1.1% | open |
+| 2026-10-22 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.8M | 22 | -2.5% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -5.9% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -5.9% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -5.9% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -5.9% | open |
 
 
 ```dataview
