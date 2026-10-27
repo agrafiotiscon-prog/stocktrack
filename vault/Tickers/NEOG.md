@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-09 NEOG Nassif Mikheal\|2026-10-09]] | [[Nassif Mikheal]] | CEO | $6K | 44 | +4.1% | open |
+| [[2026-10-09 NEOG Nassif Mikheal\|2026-10-09]] | [[Nassif Mikheal]] | CEO | $6K | 44 | +3.6% | open |

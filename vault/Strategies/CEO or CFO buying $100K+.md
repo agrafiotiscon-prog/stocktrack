@@ -77,26 +77,26 @@ Cost sensitivity (63-session hold): no costs +12.6%/yr, double costs +6.7%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -0.1% | open |
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | +0.9% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -1.1% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.0% | open |
-| 2026-10-14 | [[INBX]] | [[Lappe Mark]] | $849K | 47 | +7.4% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -17.6% | open |
-| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +33.1% | open |
-| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -8.5% | open |
-| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +2.0% | open |
-| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -7.5% | open |
-| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | +0.3% | open |
-| 2026-10-02 | [[GME]] | [[Cohen Ryan]] | $17.1M | 79 | +0.7% | open |
-| 2026-10-02 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | -1.4% | open |
+| 2026-10-26 | [[THRM]] | [[Presley William T]] | $130K | 53 | – | pending |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -3.1% | open |
+| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -0.1% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -4.1% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.9% | open |
+| 2026-10-14 | [[INBX]] | [[Lappe Mark]] | $849K | 47 | +1.3% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -20.9% | open |
+| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +23.7% | open |
+| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -12.5% | open |
+| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +5.4% | open |
+| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -9.9% | open |
+| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | -0.6% | open |
+| 2026-10-02 | [[GME]] | [[Cohen Ryan]] | $17.1M | 79 | -3.7% | open |
+| 2026-10-02 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | +1.7% | open |
 | 2026-10-01 | [[GTLB]] | [[Staples William]] | $125K | 23 | +12.1% | open |
-| 2026-10-01 | [[CRESY]] | [[Elsztain Alejandro Gustavo]] | $199K | 41 | +2.0% | open |
-| 2026-10-01 | [[XENE]] | [[Kelly Thomas Patrick]] | $560K | 71 | -8.2% | open |
-| 2026-10-01 | [[XENE]] | [[MORTIMER IAN]] | $1.1M | 77 | -8.2% | open |
-| 2026-09-30 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | +0.2% | open |
-| 2026-09-29 | [[GME]] | [[Cohen Ryan]] | $10.6M | 70 | +2.3% | open |
-| 2026-09-28 | [[DMRA]] | [[Jarrett Jennifer]] | $253K | 44 | +2.9% | open |
+| 2026-10-01 | [[CRESY]] | [[Elsztain Alejandro Gustavo]] | $199K | 41 | -4.5% | open |
+| 2026-10-01 | [[XENE]] | [[Kelly Thomas Patrick]] | $560K | 71 | -7.8% | open |
+| 2026-10-01 | [[XENE]] | [[MORTIMER IAN]] | $1.1M | 77 | -7.8% | open |
+| 2026-09-30 | [[NYAX]] | [[Nechmad Yair]] | $2.1M | 62 | +3.5% | open |
+| 2026-09-29 | [[GME]] | [[Cohen Ryan]] | $10.6M | 70 | -2.2% | open |
 
 
 ```dataview

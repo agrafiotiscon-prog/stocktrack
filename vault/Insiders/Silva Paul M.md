@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-22 | [[RAPP]] | Director | $100K | 67 | -5.9% |
+| 2026-10-22 | [[RAPP]] | Director | $100K | 67 | -8.7% |

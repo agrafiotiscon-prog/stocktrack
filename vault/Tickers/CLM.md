@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-21 CLM Bradshaw Joshua\|2026-10-21]] | [[Bradshaw Joshua]] | Vice Chairman and President | $97K | 52 | -1.4% | open |
+| [[2026-10-21 CLM Bradshaw Joshua\|2026-10-21]] | [[Bradshaw Joshua]] | Vice Chairman and President | $97K | 52 | -5.9% | open |

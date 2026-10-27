@@ -70,33 +70,35 @@ Cost sensitivity (63-session hold): no costs +8.5%/yr, double costs +2.9%/yr.
 
 ## Live forward test
 
-42 buys logged so far; none have matured yet.
+| Horizon | Matured | Mean vs SPY | Median | Beat SPY |
+|---|---|---|---|---|
+| 5 sessions | 11 | +0.2% | +0.4% | 55% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[BPRE]] | [[Ruddy Jordan B]] | $25K | 48 | – | pending |
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | – | pending |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | – | pending |
-| 2026-10-23 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $7.7M | 23 | – | pending |
-| 2026-10-23 | [[CHCO]] | [[STRONG-TREISTER DIANE W]] | $17K | 4 | – | pending |
-| 2026-10-23 | [[CHCO]] | [[Reyes Javier A]] | $14K | 4 | – | pending |
-| 2026-10-23 | [[CHCO]] | [[Hoyer James A]] | $14K | 9 | – | pending |
-| 2026-10-23 | [[CHCO]] | [[FISHER ROBERT D]] | $23K | 2 | – | pending |
-| 2026-10-23 | [[MSM]] | [[Slone Reuben E]] | $50K | 39 | – | pending |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | – | pending |
-| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | – | pending |
-| 2026-10-23 | [[CLF]] | [[Camara Edilson]] | $100K | 32 | – | pending |
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | – | pending |
-| 2026-10-22 | [[DOLE]] | [[Pale Fire Capital SE]] | $8.6M | 45 | -0.8% | open |
-| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | -1.1% | open |
-| 2026-10-22 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.8M | 22 | -2.5% | open |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -5.9% | open |
+| 2026-10-26 | [[RVI]] | [[Whitney Meredith]] | $23K | 36 | – | pending |
+| 2026-10-26 | [[RVII]] | [[Whitney Meredith]] | $27K | 36 | – | pending |
+| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | – | pending |
+| 2026-10-26 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $8.7M | 24 | – | pending |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | – | pending |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | – | pending |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | – | pending |
+| 2026-10-26 | [[KRRO]] | [[Lynx1 Capital Management LP]] | $885K | 34 | – | pending |
+| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | – | pending |
+| 2026-10-26 | [[LEO]] | [[Saba Capital Management, L.P]] | $369K | 27 | – | pending |
+| 2026-10-26 | [[THRM]] | [[Presley William T]] | $130K | 53 | – | pending |
+| 2026-10-26 | [[BY]] | [[Stewart Pamela C]] | $45K | 31 | – | pending |
+| 2026-10-26 | [[OIG]] | [[Darling Craig]] | $116K | 10 | – | pending |
+| 2026-10-26 | [[NBIS]] | [[Grimme Arne]] | $122K | 18 | – | pending |
+| 2026-10-26 | [[PEBK]] | [[PRICE BILLY L JR DR]] | $8K | 15 | – | pending |
+| 2026-10-26 | [[CCBG]] | [[Butler William F]] | $20K | 22 | – | pending |
+| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | – | pending |
+| 2026-10-26 | [[PRTA]] | [[SCULLY WILLIAM P]] | $1.2M | 40 | – | pending |
+| 2026-10-26 | [[LXU]] | [[Ackerman Jonathan Z]] | $10K | 0 | – | pending |
+| 2026-10-26 | [[BBT]] | [[Hollister Thomas J]] | $105K | 33 | – | pending |
 
 
 ```dataview

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-15 GOLD Tether Global Investments Fund, S.I.C.A.F., S.A\|2026-10-15]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $2.7M | 45 | -1.7% | open |
-| 2026-10-13 | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $1.3M | 38 | -0.7% | open |
+| [[2026-10-15 GOLD Tether Global Investments Fund, S.I.C.A.F., S.A\|2026-10-15]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $2.7M | 45 | -2.0% | open |
+| 2026-10-13 | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $1.3M | 38 | -1.0% | open |

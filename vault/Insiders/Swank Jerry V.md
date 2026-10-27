@@ -12,4 +12,4 @@ Backtest record: 8 earlier buys, average 3-month excess vs SPY -0.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-23 | [[NXG]] | See Remarks | $439K | 64 | – |
+| 2026-10-23 | [[NXG]] | See Remarks | $439K | 64 | +1.0% |

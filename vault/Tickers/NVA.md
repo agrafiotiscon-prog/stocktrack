@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[Geller Avi]] | Director | $5K | 32 | -9.4% | open |
-| 2026-10-20 | [[Gerteisen Christopher]] | Chief Executive Officer | $22K | 35 | -9.4% | open |
+| 2026-10-20 | [[Geller Avi]] | Director | $5K | 32 | -6.7% | open |
+| 2026-10-20 | [[Gerteisen Christopher]] | Chief Executive Officer | $22K | 35 | -6.7% | open |

@@ -12,8 +12,8 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY +18.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-16 | [[SAH]] | 10% Owner | $752K | 28 | -4.2% |
-| 2026-10-09 | [[SAH]] | 10% Owner | $819K | 29 | +3.0% |
-| 2026-10-07 | [[SAH]] | 10% Owner | $67K | 17 | +2.8% |
-| 2026-10-06 | [[SAH]] | 10% Owner | $1.7M | 32 | +1.9% |
-| 2026-10-06 | [[SAH]] | 10% Owner | $1.3M | 31 | +1.9% |
+| 2026-10-16 | [[SAH]] | 10% Owner | $752K | 28 | -4.9% |
+| 2026-10-09 | [[SAH]] | 10% Owner | $819K | 29 | +2.3% |
+| 2026-10-07 | [[SAH]] | 10% Owner | $67K | 17 | +2.0% |
+| 2026-10-06 | [[SAH]] | 10% Owner | $1.7M | 32 | +1.2% |
+| 2026-10-06 | [[SAH]] | 10% Owner | $1.3M | 31 | +1.2% |

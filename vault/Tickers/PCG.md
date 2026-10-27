@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-01 | [[LARSEN JOHN O]] | Director | $92K | 36 | +3.7% | open |
+| 2026-10-01 | [[LARSEN JOHN O]] | Director | $92K | 36 | +4.8% | open |

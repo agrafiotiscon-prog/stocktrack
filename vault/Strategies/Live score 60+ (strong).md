@@ -70,33 +70,35 @@ Cost sensitivity (63-session hold): no costs +13.8%/yr, double costs +8.3%/yr.
 
 ## Live forward test
 
-3 buys logged so far; none have matured yet.
+| Horizon | Matured | Mean vs SPY | Median | Beat SPY |
+|---|---|---|---|---|
+| 5 sessions | 2 | -3.9% | +3.7% | 50% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | – | pending |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | – | pending |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -5.9% | open |
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -11.8% | open |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +3.5% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -1.1% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -1.1% | open |
-| 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | $23.7M | 62 | +4.7% | open |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | +1.6% | open |
-| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +2.0% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.0% | open |
-| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | +0.8% | open |
-| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -8.5% | open |
-| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +2.0% | open |
-| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +2.0% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +2.0% | open |
+| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | – | pending |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +1.0% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +1.0% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -3.1% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -8.7% | open |
+| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -11.6% | open |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +3.7% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -4.1% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -4.1% | open |
+| 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | $23.7M | 62 | +3.7% | open |
+| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -9.1% | open |
+| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +2.2% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.9% | open |
+| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | +1.0% | open |
+| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -12.5% | open |
+| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +5.4% | open |
+| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +5.4% | open |
 
 
 ```dataview

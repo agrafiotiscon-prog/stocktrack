@@ -15,8 +15,8 @@ strategies: ["all_liquid", "opportunistic"]
 entry_date: "2026-10-21"
 entry_price: 37.44
 status: "open"
-abn_now: 0.0479102
-ret_now: 0.0333868
+abn_now: 0.0483865
+ret_now: 0.0408655
 abn_5: 
 abn_21: 
 abn_63: 

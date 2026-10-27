@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-05 LEN BERKSHIRE HATHAWAY INC\|2026-10-05]] | [[BERKSHIRE HATHAWAY INC]] | 10% Owner | $192.6M | 70 | +16.4% | open |
-| [[2026-09-30 LEN BUFFETT WARREN E\|2026-09-30]] | [[BUFFETT WARREN E]] | 10% Owner | $53.9M | 70 | +6.5% | open |
+| [[2026-10-05 LEN BERKSHIRE HATHAWAY INC\|2026-10-05]] | [[BERKSHIRE HATHAWAY INC]] | 10% Owner | $192.6M | 70 | +14.4% | open |
+| [[2026-09-30 LEN BUFFETT WARREN E\|2026-09-30]] | [[BUFFETT WARREN E]] | 10% Owner | $53.9M | 70 | +4.6% | open |

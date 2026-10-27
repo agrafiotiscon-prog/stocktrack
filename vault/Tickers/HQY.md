@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[Rajasekar Sunil]] | EVP Chief Prod & Strat Officer | $12K | 20 | +11.8% | open |
+| 2026-10-19 | [[Rajasekar Sunil]] | EVP Chief Prod & Strat Officer | $12K | 20 | +10.9% | open |

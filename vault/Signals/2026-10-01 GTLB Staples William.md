@@ -15,8 +15,8 @@ strategies: ["all_liquid", "ceo_cfo_100k", "proven_insider"]
 entry_date: "2026-10-02"
 entry_price: 50.85
 status: "open"
-abn_now: 0.120554
-ret_now: 0.106785
+abn_now: 0.120822
+ret_now: 0.114061
 abn_5: 0.0489467
 abn_21: 
 abn_63: 

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-15 FLSC Cha Albert\|2026-10-15]] | [[Cha Albert]] | Chief Executive Officer | $3.0M | 70 | -1.0% | open |
+| [[2026-10-15 FLSC Cha Albert\|2026-10-15]] | [[Cha Albert]] | Chief Executive Officer | $3.0M | 70 | -1.9% | open |

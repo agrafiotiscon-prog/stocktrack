@@ -12,4 +12,4 @@ Backtest record: 13 earlier buys, average 3-month excess vs SPY -8.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[ANIX]] | Director | $14K | 31 | +8.1% |
+| 2026-09-28 | [[ANIX]] | Director | $14K | 31 | +5.2% |

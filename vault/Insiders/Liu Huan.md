@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -99.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-13 | [[CTNT]] | See Remarks | $330K | 49 | -4.7% |
+| 2026-10-13 | [[CTNT]] | See Remarks | $330K | 49 | -7.9% |

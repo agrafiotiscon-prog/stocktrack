@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[Slone Reuben E]] | Director | $50K | 39 | – | pending |
+| 2026-10-23 | [[Slone Reuben E]] | Director | $50K | 39 | +1.5% | open |

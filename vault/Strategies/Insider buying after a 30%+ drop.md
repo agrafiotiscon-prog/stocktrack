@@ -70,33 +70,35 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.3%/yr.
 
 ## Live forward test
 
-4 buys logged so far; none have matured yet.
+| Horizon | Matured | Mean vs SPY | Median | Beat SPY |
+|---|---|---|---|---|
+| 5 sessions | 1 | -11.6% | -11.6% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -5.9% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -0.1% | open |
-| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -9.4% | open |
-| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -9.4% | open |
-| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -6.1% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -1.1% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -1.1% | open |
-| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -4.2% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -11.9% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -17.6% | open |
-| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | -1.3% | open |
-| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | -4.7% | open |
-| 2026-10-13 | [[IMSR]] | [[BUCKMAN FREDERICK W]] | $39K | 38 | -6.3% | open |
-| 2026-10-09 | [[SAH]] | [[Rusnak Paul P]] | $819K | 29 | +3.0% | open |
-| 2026-10-08 | [[AVR]] | [[L1 Capital Pty Ltd]] | $2.0M | 37 | -10.7% | open |
-| 2026-10-07 | [[SAH]] | [[Rusnak Paul P]] | $67K | 17 | +2.8% | open |
+| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | – | pending |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | – | pending |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | – | pending |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | – | pending |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -3.1% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -8.7% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -3.1% | open |
+| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -6.7% | open |
+| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -6.7% | open |
+| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -11.6% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -4.1% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -4.1% | open |
+| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -4.9% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -8.2% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -20.9% | open |
+| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | +2.9% | open |
+| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | -7.9% | open |
 
 
 ```dataview

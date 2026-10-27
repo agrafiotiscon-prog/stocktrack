@@ -73,15 +73,15 @@ Cost sensitivity (63-session hold): no costs +22.2%/yr, double costs +17.3%/yr.
 
 ## Live forward test
 
-1 buys logged so far; none have matured yet.
+2 buys logged so far; none have matured yet.
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | – | pending |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -1.1% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | +1.3% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +0.9% | open |
 
 
 ```dataview

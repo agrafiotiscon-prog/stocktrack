@@ -1,6 +1,6 @@
 ---
 type: "leaderboard"
-updated: "2026-10-24"
+updated: "2026-10-27"
 ---
 
 # Best Insiders

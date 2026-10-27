@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-13 | [[IMSR]] | Director | $39K | 38 | -6.3% |
+| 2026-10-13 | [[IMSR]] | Director | $39K | 38 | -2.4% |

@@ -70,33 +70,35 @@ Cost sensitivity (63-session hold): no costs +9.4%/yr, double costs +3.1%/yr.
 
 ## Live forward test
 
-2 buys logged so far; none have matured yet.
+| Horizon | Matured | Mean vs SPY | Median | Beat SPY |
+|---|---|---|---|---|
+| 5 sessions | 1 | +3.7% | +3.7% | 100% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | – | pending |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | – | pending |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | – | pending |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -5.9% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -5.9% | open |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +3.5% | open |
-| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | +2.0% | open |
-| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +2.0% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -11.9% | open |
-| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | +0.8% | open |
-| 2026-10-13 | [[HEI]] | [[CULLIGAN THOMAS M]] | $175K | 57 | +2.0% | open |
-| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +2.0% | open |
-| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +2.0% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +2.0% | open |
-| 2026-10-13 | [[HEI]] | [[HENRIQUES ADOLFO]] | $175K | 55 | +2.0% | open |
-| 2026-10-13 | [[HEI]] | [[CHERUVATATH NANDAKUMAR]] | $175K | 62 | +2.0% | open |
-| 2026-10-09 | [[BPRE]] | [[KAMFAR RAMIN]] | $8.5M | 81 | -1.7% | open |
-| 2026-10-08 | [[PDI]] | [[FLATTUM DAVID C]] | $250K | 66 | +3.3% | open |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | – | pending |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | – | pending |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | – | pending |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +1.0% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +1.0% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -3.1% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -8.7% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -8.7% | open |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +3.7% | open |
+| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | +2.2% | open |
+| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +2.2% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -8.2% | open |
+| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | +1.0% | open |
+| 2026-10-13 | [[HEI]] | [[CULLIGAN THOMAS M]] | $175K | 57 | +5.4% | open |
+| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +5.4% | open |
+| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +5.4% | open |
+| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +5.4% | open |
+| 2026-10-13 | [[HEI]] | [[HENRIQUES ADOLFO]] | $175K | 55 | +5.4% | open |
 
 
 ```dataview

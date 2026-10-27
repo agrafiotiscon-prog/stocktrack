@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-10-24"
+updated: "2026-10-27"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-10-21 Backtest]]: the latest full backtest
-- [[2026-10-24]]: today's research log
+- [[2026-10-27]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[BPRE]] | [[Ruddy Jordan B]] | President | $25K | 48 | – |
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | See Remarks | $439K | 64 | – |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | CFO & Treasurer | $40K | 68 | – |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | Director | $98K | 67 | – |
-| 2026-10-22 | [[DOLE]] | [[Pale Fire Capital SE]] | 10% Owner | $8.6M | 45 | -0.8% |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | Director | $100K | 67 | -5.9% |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | Director | $100K | 65 | -5.9% |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | Director | $974K | 77 | -5.9% |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | Director | $249K | 71 | -5.9% |
-| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | -2.4% |
-| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $1K | 40 | -1.1% |
-| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $1K | 40 | -0.8% |
-| 2026-10-22 | [[NMCO]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | -2.4% |
-| 2026-10-22 | [[AGMB]] | [[Epstein David R]] | Director | $89K | 41 | -1.1% |
-| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | Director | $1.5M | 49 | +2.5% |
+| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | 10% Owner | $24.2M | 44 | – |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | Director | $95K | 48 | – |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | Director | $94K | 54 | – |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | Director | $95K | 50 | – |
+| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | Director | $533K | 61 | – |
+| 2026-10-26 | [[THRM]] | [[Presley William T]] | President & CEO | $130K | 53 | – |
+| 2026-10-26 | [[PRTA]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.2M | 40 | – |
+| 2026-10-26 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $2.1M | 54 | – |
+| 2026-10-23 | [[BPRE]] | [[Ruddy Jordan B]] | President | $25K | 48 | -0.1% |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | See Remarks | $439K | 64 | +1.0% |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | CFO & Treasurer | $40K | 68 | +1.0% |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | Director | $98K | 67 | -3.1% |
+| 2026-10-22 | [[DOLE]] | [[Pale Fire Capital SE]] | 10% Owner | $8.6M | 45 | -2.6% |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | Director | $100K | 67 | -8.7% |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | Director | $100K | 65 | -8.7% |
 
 
 ## Live queries (Dataview plugin)

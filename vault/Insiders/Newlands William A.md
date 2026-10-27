@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-06 | [[HRL]] | Chair | $201K | 46 | +8.2% |
+| 2026-10-06 | [[HRL]] | Chair | $201K | 46 | +7.0% |
