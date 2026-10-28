@@ -10,6 +10,6 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-05 | [[SKYH]] | Chief Financial Officer | $36K | 30 | +2.6% |
-| 2026-10-02 | [[SKYH]] | Chief Financial Officer | $15K | 25 | +1.5% |
-| 2026-10-01 | [[SKYH]] | Chief Financial Officer | $15K | 25 | +0.5% |
+| 2026-10-05 | [[SKYH]] | Chief Financial Officer | $36K | 30 | +5.0% |
+| 2026-10-02 | [[SKYH]] | Chief Financial Officer | $15K | 25 | +3.9% |
+| 2026-10-01 | [[SKYH]] | Chief Financial Officer | $15K | 25 | +2.8% |

@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "contrarian"
-signals: 8148
-cagr: 0.0192422
-spy_cagr: 0.110244
-sharpe: 0.181578
-max_drawdown: 0.738498
-holdout_excess: -0.0516017
+signals: 8130
+cagr: 0.0198328
+spy_cagr: 0.110174
+sharpe: 0.183214
+max_drawdown: 0.72189
+holdout_excess: -0.0473747
 ---
 
 # Insider buying after a 30%+ drop
@@ -17,28 +17,28 @@ Rule key: `contrarian`. Liquid stocks only ($2+, $1M+/day), plan purchases exclu
 
 | Measure | Value |
 |---|---|
-| Signals | 8,148 |
-| 3-month excess vs SPY (mean / median) | +5.2% / +2.1% |
+| Signals | 8,130 |
+| 3-month excess vs SPY (mean / median) | +5.3% / +2.1% |
 | Beat SPY over 3 months | 53% |
 | Entering one session later | +4.8% |
 | vs surviving stocks | +3.9% |
-| 2006-2015 excess /yr | +13.4% (p 0.157) |
-| 2016+ excess /yr | -5.2% (p 0.456) |
+| 2006-2015 excess /yr | +12.9% (p 0.170) |
+| 2016+ excess /yr | -4.7% (p 0.498) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +2.7% | +11.0% | 0.18 | 0.55 | 72% | 1.14 | -6.8% | 33% | 2,239 | 6.1% | +1.3% / 0.07 / 65% |
-| 63d | +1.9% | +11.0% | 0.18 | 0.55 | 74% | 1.58 | -9.6% | 24% | 1,180 | 3.3% | -1.8% / -0.07 / 66% |
-| 126d | +6.2% | +11.0% | 0.30 | 0.55 | 67% | 1.62 | -6.1% | 48% | 716 | 2.0% | +0.7% / 0.05 / 67% |
+| 21d | +2.4% | +11.0% | 0.17 | 0.55 | 72% | 1.13 | -7.0% | 33% | 2,242 | 6.1% | +0.9% / 0.04 / 67% |
+| 63d | +2.0% | +11.0% | 0.18 | 0.55 | 72% | 1.57 | -9.5% | 24% | 1,181 | 3.3% | -1.9% / -0.07 / 68% |
+| 126d | +5.8% | +11.0% | 0.29 | 0.55 | 67% | 1.65 | -6.6% | 48% | 714 | 2.0% | +0.2% / 0.03 / 69% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.3%/yr.
+Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.2%/yr.
 
 
 ### Year by year (63-session hold)
@@ -47,58 +47,58 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.3%/yr.
 |---|---|---|---|
 | 2006 | +22.1% | +9.7% | +12.4% |
 | 2007 | +6.6% | +5.1% | +1.4% |
-| 2008 | -47.6% | -36.8% | -10.8% |
-| 2009 | +24.2% | +26.4% | -2.1% |
+| 2008 | -44.2% | -36.8% | -7.5% |
+| 2009 | +25.0% | +26.4% | -1.4% |
 | 2010 | +21.5% | +15.1% | +6.4% |
 | 2011 | -8.2% | +1.9% | -10.1% |
 | 2012 | +28.4% | +16.0% | +12.4% |
 | 2013 | +26.1% | +32.3% | -6.2% |
 | 2014 | -2.0% | +13.5% | -15.5% |
 | 2015 | -21.6% | +1.2% | -22.8% |
-| 2016 | +38.9% | +12.0% | +26.9% |
-| 2017 | +14.8% | +21.7% | -6.9% |
-| 2018 | -11.8% | -4.6% | -7.2% |
-| 2019 | +30.6% | +31.2% | -0.6% |
+| 2016 | +40.0% | +12.0% | +28.0% |
+| 2017 | +15.0% | +21.7% | -6.7% |
+| 2018 | -12.1% | -4.6% | -7.5% |
+| 2019 | +30.5% | +31.2% | -0.7% |
 | 2020 | +14.9% | +18.3% | -3.4% |
-| 2021 | -12.3% | +28.7% | -41.0% |
+| 2021 | -10.2% | +28.7% | -38.9% |
 | 2022 | -47.2% | -18.2% | -29.0% |
-| 2023 | +11.8% | +26.2% | -14.4% |
-| 2024 | -2.1% | +24.9% | -26.9% |
-| 2025 | +8.3% | +17.7% | -9.4% |
-| 2026 | +8.8% | +13.7% | -4.9% |
+| 2023 | +10.3% | +26.2% | -15.9% |
+| 2024 | -5.1% | +24.9% | -29.9% |
+| 2025 | +4.6% | +17.7% | -13.1% |
+| 2026 | +8.1% | +13.7% | -5.7% |
 
 
 ## Live forward test
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 1 | -11.6% | -11.6% | 0% |
+| 5 sessions | 2 | -6.3% | -1.0% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | – | pending |
-| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | – | pending |
-| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | – | pending |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | – | pending |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -3.1% | open |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -8.7% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -8.7% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -8.7% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -8.7% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -3.1% | open |
-| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -6.7% | open |
-| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -6.7% | open |
-| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -11.6% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -4.1% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -4.1% | open |
-| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -4.9% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -8.2% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -20.9% | open |
-| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | +2.9% | open |
-| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | -7.9% | open |
+| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | – | pending |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | – | pending |
+| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | +2.3% | open |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | -1.2% | open |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | -1.2% | open |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | -1.2% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | +4.9% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -1.3% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -1.3% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -1.3% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -1.3% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +4.8% | open |
+| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | -1.0% | open |
+| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | -1.0% | open |
+| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -11.9% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | +4.4% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | +4.4% | open |
+| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -1.8% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | +2.0% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -9.9% | open |
 
 
 ```dataview

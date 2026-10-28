@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-13 | [[RTSN]] | CHIEF EXECUTIVE OFFICER | $250K | 57 | +23.7% |
+| 2026-10-13 | [[RTSN]] | CHIEF EXECUTIVE OFFICER | $250K | 57 | +16.9% |

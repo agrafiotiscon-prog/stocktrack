@@ -12,5 +12,5 @@ Backtest record: 30 earlier buys, average 3-month excess vs SPY +2.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[RMT]] | President | $13K | 27 | -5.4% |
-| 2026-09-30 | [[RVT]] | President | $20K | 29 | -3.0% |
+| 2026-10-01 | [[RMT]] | President | $13K | 27 | -4.7% |
+| 2026-09-30 | [[RVT]] | President | $20K | 29 | -2.7% |

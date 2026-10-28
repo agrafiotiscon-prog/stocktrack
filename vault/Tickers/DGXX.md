@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-15 | [[Amar Michel]] | Chief Executive Officer | $55K | 35 | -19.7% | open |
+| 2026-10-15 | [[Amar Michel]] | Chief Executive Officer | $55K | 35 | -12.8% | open |

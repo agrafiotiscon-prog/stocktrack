@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-06 | [[Posner Brian S]] | Director | $40K | 27 | +3.4% | open |
+| 2026-10-06 | [[Posner Brian S]] | Director | $40K | 27 | +10.8% | open |

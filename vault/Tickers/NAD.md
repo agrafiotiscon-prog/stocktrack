@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[TOTH TERENCE J]] | Other | $72K | 33 | +1.8% | open |
+| 2026-10-16 | [[TOTH TERENCE J]] | Other | $72K | 33 | +1.3% | open |

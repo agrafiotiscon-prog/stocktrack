@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-16 | [[BYRN]] | Director | $70K | 40 | -4.9% |
+| 2026-10-16 | [[BYRN]] | Director | $70K | 40 | -6.5% |

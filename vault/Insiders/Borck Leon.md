@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +1.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-19 | [[EQBK]] | Director | $19K | 16 | +2.8% |
+| 2026-10-19 | [[EQBK]] | Director | $19K | 16 | +1.7% |

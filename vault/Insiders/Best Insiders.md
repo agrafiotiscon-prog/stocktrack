@@ -1,6 +1,6 @@
 ---
 type: "leaderboard"
-updated: "2026-10-27"
+updated: "2026-10-28"
 ---
 
 # Best Insiders
@@ -53,9 +53,9 @@ Insiders whose purchases most consistently beat SPY over the next 3 months (5+ b
 | Birch Robert S. | 10% Owner | 23 | +47.2% | 87% | 6.9 | NSLR | 2020-07-02 |
 | Tolman Gary Charles | Director | 10 | +16.4% | 90% | 6.8 | GBLI, WTM | 2022-12-16 |
 | LINEHAN EARL L | Director | 5 | +48.3% | 100% | 6.8 | SRI | 2009-03-17 |
-| Callen David R | SVP & CFO | 6 | +23.8% | 100% | 6.6 | ETD, SNBRQ | 2019-05-23 |
 | Smith Gerald F JR | Director | 22 | +8.5% | 86% | 6.6 | FXNC | 2023-10-02 |
 | Stock Harald F. | Director | 10 | +65.7% | 90% | 6.5 | TPST | 2014-09-25 |
 | Beaumont Lee G | EVP, COO | 7 | +18.7% | 100% | 6.4 | WLFC | 2007-11-28 |
 | Markley John D Jr | Director | 5 | +14.3% | 100% | 6.4 | CHTR | 2013-03-06 |
 | ZEITZ JOCHEN | President and CEO | 5 | +23.0% | 100% | 6.3 | HOG | 2022-09-06 |
+| SIMMONS HAROLD C | Chairman of the Board | 374 | +9.5% | 59% | 6.3 | CIX, KRO, NL, VHI | 2013-02-07 |

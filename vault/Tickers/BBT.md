@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Hollister Thomas J]] | Director | $105K | 33 | – | pending |
+| 2026-10-26 | [[Hollister Thomas J]] | Director | $105K | 33 | -1.4% | open |

@@ -2,12 +2,13 @@
 type: "ticker"
 ticker: "PDI"
 company: "PIMCO Dynamic Income Fund"
-signals: 2
+signals: 3
 ---
 
 # PDI: PIMCO Dynamic Income Fund
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-08 PDI FLATTUM DAVID C\|2026-10-08]] | [[FLATTUM DAVID C]] | Director | $250K | 66 | +1.3% | open |
-| [[2026-09-28 PDI Rappaport Alan\|2026-09-28]] | [[Rappaport Alan]] | Director | $76K | 53 | +2.9% | open |
+| [[2026-10-27 PDI Morris Sonya\|2026-10-27]] | [[Morris Sonya]] | Director | $82K | 41 | – | pending |
+| [[2026-10-08 PDI FLATTUM DAVID C\|2026-10-08]] | [[FLATTUM DAVID C]] | Director | $250K | 66 | +0.4% | open |
+| [[2026-09-28 PDI Rappaport Alan\|2026-09-28]] | [[Rappaport Alan]] | Director | $76K | 53 | +1.9% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-15 TRXB Alexandria Venture Investments, LLC\|2026-10-15]] | [[Alexandria Venture Investments, LLC]] | 10% Owner | $2.5M | 55 | -1.1% | open |
+| [[2026-10-15 TRXB Alexandria Venture Investments, LLC\|2026-10-15]] | [[Alexandria Venture Investments, LLC]] | 10% Owner | $2.5M | 55 | -2.2% | open |

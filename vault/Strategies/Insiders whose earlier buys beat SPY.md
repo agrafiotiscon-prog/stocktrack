@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "proven_insider"
-signals: 20153
-cagr: 0.10422
-spy_cagr: 0.112598
-sharpe: 0.444537
+signals: 20169
+cagr: 0.089958
+spy_cagr: 0.112525
+sharpe: 0.394825
 max_drawdown: 0.609637
-holdout_excess: 0.00621904
+holdout_excess: 0.00578577
 ---
 
 # Insiders whose earlier buys beat SPY
@@ -17,88 +17,88 @@ Rule key: `proven_insider`. Liquid stocks only ($2+, $1M+/day), plan purchases e
 
 | Measure | Value |
 |---|---|
-| Signals | 20,153 |
-| 3-month excess vs SPY (mean / median) | +0.8% / -0.9% |
+| Signals | 20,169 |
+| 3-month excess vs SPY (mean / median) | +0.7% / -0.9% |
 | Beat SPY over 3 months | 47% |
 | Entering one session later | +0.6% |
 | vs surviving stocks | +1.1% |
-| 2006-2015 excess /yr | +5.8% (p 0.023) |
-| 2016+ excess /yr | +0.6% (p 0.850) |
+| 2006-2015 excess /yr | +5.7% (p 0.027) |
+| 2016+ excess /yr | +0.6% (p 0.861) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +8.1% | +11.3% | 0.37 | 0.56 | 52% | 1.10 | -2.8% | 24% | 4,539 | 8.7% | +0.1% / -0.09 / 43% |
-| 63d | +10.4% | +11.3% | 0.44 | 0.56 | 61% | 1.20 | -1.2% | 43% | 1,613 | 3.1% | +2.1% / 0.09 / 34% |
-| 126d | +9.3% | +11.3% | 0.41 | 0.56 | 56% | 1.10 | -1.5% | 43% | 817 | 1.6% | +0.7% / -0.02 / 35% |
+| 21d | +8.1% | +11.3% | 0.37 | 0.56 | 52% | 1.10 | -2.7% | 29% | 4,544 | 8.6% | -0.0% / -0.10 / 43% |
+| 63d | +9.0% | +11.3% | 0.39 | 0.56 | 61% | 1.18 | -2.4% | 48% | 1,615 | 3.1% | +0.8% / -0.01 / 50% |
+| 126d | +9.6% | +11.3% | 0.43 | 0.56 | 56% | 1.12 | -1.5% | 48% | 819 | 1.6% | +0.8% / -0.01 / 31% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +14.1%/yr, double costs +7.2%/yr.
+Cost sensitivity (63-session hold): no costs +12.6%/yr, double costs +5.9%/yr.
 
 
 ### Year by year (63-session hold)
 
 | Year | Strategy | SPY | Difference |
 |---|---|---|---|
-| 2006 | +16.1% | +13.0% | +3.1% |
+| 2006 | +16.0% | +13.0% | +3.0% |
 | 2007 | -0.0% | +5.1% | -5.1% |
 | 2008 | -20.0% | -36.8% | +16.8% |
 | 2009 | +15.4% | +26.4% | -11.0% |
-| 2010 | +44.4% | +15.1% | +29.3% |
-| 2011 | +4.5% | +1.9% | +2.6% |
-| 2012 | +25.5% | +16.0% | +9.5% |
-| 2013 | +38.7% | +32.3% | +6.4% |
-| 2014 | +18.2% | +13.5% | +4.7% |
-| 2015 | -13.0% | +1.2% | -14.2% |
-| 2016 | +17.3% | +12.0% | +5.3% |
-| 2017 | +18.2% | +21.7% | -3.6% |
-| 2018 | -14.3% | -4.6% | -9.7% |
-| 2019 | +26.6% | +31.2% | -4.7% |
-| 2020 | +22.2% | +18.3% | +3.9% |
-| 2021 | +5.4% | +28.7% | -23.3% |
-| 2022 | -20.5% | -18.2% | -2.4% |
-| 2023 | +25.9% | +26.2% | -0.2% |
-| 2024 | +21.4% | +24.9% | -3.5% |
-| 2025 | +15.7% | +17.7% | -2.0% |
-| 2026 | -4.4% | +13.7% | -18.0% |
+| 2010 | +39.2% | +15.1% | +24.2% |
+| 2011 | +7.8% | +1.9% | +5.9% |
+| 2012 | +21.3% | +16.0% | +5.3% |
+| 2013 | +39.8% | +32.3% | +7.5% |
+| 2014 | +16.3% | +13.5% | +2.9% |
+| 2015 | -15.1% | +1.2% | -16.3% |
+| 2016 | +26.8% | +12.0% | +14.8% |
+| 2017 | +10.0% | +21.7% | -11.7% |
+| 2018 | -16.6% | -4.6% | -12.1% |
+| 2019 | +10.4% | +31.2% | -20.8% |
+| 2020 | +10.0% | +18.3% | -8.4% |
+| 2021 | +6.1% | +28.7% | -22.6% |
+| 2022 | -25.8% | -18.2% | -7.6% |
+| 2023 | +31.9% | +26.2% | +5.8% |
+| 2024 | +12.3% | +24.9% | -12.6% |
+| 2025 | +17.8% | +17.7% | +0.1% |
+| 2026 | +10.9% | +13.7% | -2.8% |
 
 
 ## Live forward test
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 2 | +2.9% | +2.9% | 100% |
+| 5 sessions | 8 | +3.5% | +3.3% | 88% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | – | pending |
-| 2026-10-26 | [[KRRO]] | [[Lynx1 Capital Management LP]] | $885K | 34 | – | pending |
-| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | – | pending |
-| 2026-10-26 | [[LEO]] | [[Saba Capital Management, L.P]] | $369K | 27 | – | pending |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | – | pending |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +1.0% | open |
-| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | -1.2% | open |
-| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | +0.8% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -8.7% | open |
-| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | -1.8% | open |
-| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | -0.0% | open |
-| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | +0.8% | open |
-| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | +0.8% | open |
-| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +0.8% | open |
-| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +0.8% | open |
-| 2026-10-21 | [[LEO]] | [[Saba Capital Management, L.P]] | $44K | 15 | +2.6% | open |
-| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | -0.2% | open |
-| 2026-10-21 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | +2.2% | open |
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -0.1% | open |
-| 2026-10-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $1.9M | 37 | +2.5% | open |
+| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | – | pending |
+| 2026-10-27 | [[LEO]] | [[Saba Capital Management, L.P]] | $72K | 18 | – | pending |
+| 2026-10-27 | [[DSM]] | [[Saba Capital Management, L.P]] | $111K | 20 | – | pending |
+| 2026-10-27 | [[MSM]] | [[JACOBSON MITCHELL]] | $29.0M | 63 | – | pending |
+| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | – | pending |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | -1.2% | open |
+| 2026-10-26 | [[KRRO]] | [[Lynx1 Capital Management LP]] | $885K | 34 | +4.2% | open |
+| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | +6.5% | open |
+| 2026-10-26 | [[LEO]] | [[Saba Capital Management, L.P]] | $369K | 27 | +0.9% | open |
+| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -1.4% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +6.1% | open |
+| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | -0.0% | open |
+| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | +1.7% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -1.3% | open |
+| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | -1.5% | open |
+| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | -0.6% | open |
+| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | +1.3% | open |
+| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | +1.0% | open |
+| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +1.7% | open |
+| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +1.3% | open |
 
 
 ```dataview

@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +12.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-26 | [[BY]] | Director | $45K | 31 | – |
+| 2026-10-26 | [[BY]] | Director | $45K | 31 | -0.2% |

@@ -1,0 +1,53 @@
+---
+type: "signal"
+ticker: "BHRB"
+company: "Burke & Herbert Financial Services Corp."
+insider: "WILSON DAVID"
+role: "Director"
+filed: "2026-10-27"
+traded: "2026-10-27"
+score: 27
+value: 7274
+cluster: 1
+insider_type: "unclassified"
+price: 70.47
+strategies: ["all_liquid"]
+entry_date: ""
+entry_price: 
+status: "pending"
+abn_now: 
+ret_now: 
+abn_5: 
+abn_21: 
+abn_63: 
+abn_126: 
+abn_252: 
+forward_test: false
+tags: ["signal", "strategy/all_liquid"]
+---
+
+# BHRB: WILSON DAVID bought $7K
+
+[[BHRB]] · [[WILSON DAVID]] · [[Every discretionary insider buy]]
+
+|  |  |
+|---|---|
+| Company | Burke & Herbert Financial Services Corp. |
+| Insider | WILSON DAVID (Director) |
+| Traded / filed | 2026-10-27 to 2026-10-27 / 2026-10-27 |
+| Shares @ price | 104 @ $69.94 |
+| Score / cluster | 27 / 1 insider(s) |
+| Insider type / track record | unclassified / no record |
+| Prior 3 months | -3.6% |
+| Entry | awaiting next open |
+| Status | pending |
+
+
+## Outcome vs SPY
+
+| 1 week | 1 month | 3 months | 6 months | 1 year | So far |
+|---|---|---|---|---|---|
+| – | – | – | – | – | – |
+
+
+[SEC filing](https://www.sec.gov/Archives/edgar/data/1964333/000120884226000014/0001208842-26-000014-index.htm)

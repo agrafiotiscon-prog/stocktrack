@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[PRICE BILLY L JR DR]] | Director | $8K | 15 | – | pending |
+| 2026-10-26 | [[PRICE BILLY L JR DR]] | Director | $8K | 15 | -0.7% | open |

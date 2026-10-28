@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Whitney Meredith]] | Director | $23K | 36 | – | pending |
+| 2026-10-26 | [[Whitney Meredith]] | Director | $23K | 36 | +0.1% | open |

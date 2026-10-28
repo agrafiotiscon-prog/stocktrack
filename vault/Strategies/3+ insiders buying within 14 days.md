@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "cluster_3"
-signals: 7455
-cagr: 0.0603797
-spy_cagr: 0.110594
-sharpe: 0.289693
+signals: 7453
+cagr: 0.0669319
+spy_cagr: 0.110525
+sharpe: 0.3123
 max_drawdown: 0.59275
-holdout_excess: 0.00895897
+holdout_excess: 0.0066015
 ---
 
 # 3+ insiders buying within 14 days
@@ -17,28 +17,28 @@ Rule key: `cluster_3`. Liquid stocks only ($2+, $1M+/day), plan purchases exclud
 
 | Measure | Value |
 |---|---|
-| Signals | 7,455 |
+| Signals | 7,453 |
 | 3-month excess vs SPY (mean / median) | +2.1% / +0.1% |
 | Beat SPY over 3 months | 50% |
-| Entering one session later | +2.1% |
+| Entering one session later | +2.0% |
 | vs surviving stocks | +2.0% |
 | 2006-2015 excess /yr | +8.8% (p 0.029) |
-| 2016+ excess /yr | +0.9% (p 0.864) |
+| 2016+ excess /yr | +0.7% (p 0.900) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +6.1% | +11.1% | 0.30 | 0.55 | 52% | 0.74 | -1.5% | 24% | 2,846 | 6.0% | +1.6% / 0.04 / 36% |
-| 63d | +6.0% | +11.1% | 0.29 | 0.55 | 59% | 1.13 | -4.4% | 33% | 1,538 | 3.0% | -1.0% / -0.12 / 54% |
-| 126d | +10.7% | +11.1% | 0.45 | 0.55 | 67% | 1.14 | -0.0% | 52% | 821 | 1.7% | +2.8% / 0.15 / 46% |
+| 21d | +6.2% | +11.1% | 0.31 | 0.55 | 52% | 0.74 | -1.4% | 24% | 2,847 | 5.9% | +1.6% / 0.04 / 36% |
+| 63d | +6.7% | +11.1% | 0.31 | 0.55 | 59% | 1.13 | -3.8% | 33% | 1,539 | 3.0% | -0.6% / -0.09 / 51% |
+| 126d | +10.9% | +11.1% | 0.45 | 0.55 | 67% | 1.14 | +0.1% | 52% | 822 | 1.7% | +2.8% / 0.15 / 46% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +9.4%/yr, double costs +3.1%/yr.
+Cost sensitivity (63-session hold): no costs +10.0%/yr, double costs +3.7%/yr.
 
 
 ### Year by year (63-session hold)
@@ -53,19 +53,19 @@ Cost sensitivity (63-session hold): no costs +9.4%/yr, double costs +3.1%/yr.
 | 2011 | -2.6% | +1.9% | -4.5% |
 | 2012 | +32.5% | +16.0% | +16.5% |
 | 2013 | +30.5% | +32.3% | -1.8% |
-| 2014 | +2.4% | +13.5% | -11.1% |
-| 2015 | -9.7% | +1.2% | -10.9% |
-| 2016 | +24.1% | +12.0% | +12.1% |
-| 2017 | +18.6% | +21.7% | -3.1% |
-| 2018 | -14.7% | -4.6% | -10.1% |
+| 2014 | +2.0% | +13.5% | -11.5% |
+| 2015 | -9.9% | +1.2% | -11.2% |
+| 2016 | +26.3% | +12.0% | +14.3% |
+| 2017 | +18.8% | +21.7% | -3.0% |
+| 2018 | -14.8% | -4.6% | -10.2% |
 | 2019 | +18.3% | +31.2% | -12.9% |
 | 2020 | +35.0% | +18.3% | +16.7% |
-| 2021 | +10.1% | +28.7% | -18.6% |
-| 2022 | -35.2% | -18.2% | -17.1% |
+| 2021 | +10.2% | +28.7% | -18.6% |
+| 2022 | -35.3% | -18.2% | -17.1% |
 | 2023 | +16.8% | +26.2% | -9.4% |
 | 2024 | +0.7% | +24.9% | -24.2% |
-| 2025 | +3.3% | +17.7% | -14.5% |
-| 2026 | -2.7% | +13.7% | -16.4% |
+| 2025 | +8.0% | +17.7% | -9.7% |
+| 2026 | +4.7% | +13.7% | -9.0% |
 
 
 ## Live forward test
@@ -79,26 +79,26 @@ Cost sensitivity (63-session hold): no costs +9.4%/yr, double costs +3.1%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | – | pending |
-| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | – | pending |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | – | pending |
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +1.0% | open |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +1.0% | open |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -3.1% | open |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -8.7% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -8.7% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -8.7% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -8.7% | open |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +3.7% | open |
-| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | +2.2% | open |
-| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +2.2% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | -8.2% | open |
-| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | +1.0% | open |
-| 2026-10-13 | [[HEI]] | [[CULLIGAN THOMAS M]] | $175K | 57 | +5.4% | open |
-| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +5.4% | open |
-| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +5.4% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +5.4% | open |
-| 2026-10-13 | [[HEI]] | [[HENRIQUES ADOLFO]] | $175K | 55 | +5.4% | open |
+| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | – | pending |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | – | pending |
+| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | – | pending |
+| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | – | pending |
+| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | – | pending |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | -1.2% | open |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | -1.2% | open |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | -1.2% | open |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +6.1% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +6.1% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | +4.9% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -1.3% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -1.3% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -1.3% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -1.3% | open |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +2.8% | open |
+| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | +1.3% | open |
+| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +1.3% | open |
+| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | +2.0% | open |
+| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | +0.1% | open |
 
 
 ```dataview
