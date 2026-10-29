@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[Smith Dwight Eric]] | Director | $12K | 17 | – | pending |
+| 2026-10-27 | [[Smith Dwight Eric]] | Director | $12K | 17 | -0.2% | open |

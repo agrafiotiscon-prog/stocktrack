@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-19 | [[APLD]] | President | $5.7M | 71 | +4.4% |
+| 2026-10-19 | [[APLD]] | President | $5.7M | 71 | +8.8% |

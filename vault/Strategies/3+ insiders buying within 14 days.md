@@ -79,26 +79,26 @@ Cost sensitivity (63-session hold): no costs +10.0%/yr, double costs +3.7%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | – | pending |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | – | pending |
-| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | – | pending |
-| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | – | pending |
-| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | – | pending |
-| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | -1.2% | open |
-| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | -1.2% | open |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | -1.2% | open |
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +6.1% | open |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +6.1% | open |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | +4.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -1.3% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -1.3% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -1.3% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -1.3% | open |
-| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +2.8% | open |
-| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | +1.3% | open |
-| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +1.3% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | +2.0% | open |
-| 2026-10-14 | [[BPRE]] | [[KAMFAR RAMIN]] | $5.5M | 73 | +0.1% | open |
+| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | – | pending |
+| 2026-10-28 | [[BBT]] | [[Fitzgerald Margaret Boles]] | $10K | 36 | – | pending |
+| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +0.8% | open |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +0.8% | open |
+| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | -0.8% | open |
+| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | -0.8% | open |
+| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | -0.8% | open |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +0.3% | open |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +0.3% | open |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +0.3% | open |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +7.4% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +7.4% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -14.8% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -19.9% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -19.9% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -19.9% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -19.9% | open |
+| 2026-10-19 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.4M | 64 | +1.8% | open |
+| 2026-10-15 | [[BPRE]] | [[MacDonald Ryan S]] | $2K | 34 | +0.3% | open |
+| 2026-10-15 | [[BPRE]] | [[Ruddy Jordan B]] | $44K | 63 | +0.3% | open |
 
 
 ```dataview

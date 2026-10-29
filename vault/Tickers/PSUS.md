@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-06 PSUS ISRAEL RYAN\|2026-10-06]] | [[ISRAEL RYAN]] | Chief Investment Officer | $9.6M | 68 | +1.7% | open |
+| [[2026-10-06 PSUS ISRAEL RYAN\|2026-10-06]] | [[ISRAEL RYAN]] | Chief Investment Officer | $9.6M | 68 | +2.0% | open |

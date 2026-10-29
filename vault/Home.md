@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-10-28"
+updated: "2026-10-29"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-10-28 Backtest]]: the latest full backtest
-- [[2026-10-28]]: today's research log
+- [[2026-10-29]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
+| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | President and CEO | $440K | 62 | – |
+| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | Director | $902K | 61 | – |
+| 2026-10-28 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $2.2M | 55 | – |
+| 2026-10-28 | [[GOLD]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $3.9M | 48 | – |
+| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | Director | $242K | 46 | – |
+| 2026-10-28 | [[BBT]] | [[Polito Karyn]] | Director | $31K | 49 | – |
+| 2026-10-28 | [[WS]] | [[Ganem George John III]] | CEO Americas Kloeckner Metals | $31K | 40 | – |
+| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | Director | $21K | 44 | – |
+| 2026-10-28 | [[HBAN]] | [[ROLLINS JAMES D III]] | Director | $254K | 46 | – |
 | 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | Chair and CEO | $3.0M | 78 | – |
 | 2026-10-28 | [[ACN]] | [[Price Paula A]] | Director | $200K | 46 | – |
-| 2026-10-27 | [[PDI]] | [[Morris Sonya]] | Director | $82K | 41 | – |
-| 2026-10-27 | [[LRN]] | [[Haggart Dylan G]] | Director | $12.2M | 50 | – |
-| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | Director | $12.0M | 48 | – |
-| 2026-10-27 | [[LYCA]] | [[Venrock Healthcare Capital Partners III, L.P]] | 10% Owner | $37.7M | 57 | – |
-| 2026-10-27 | [[AIOK]] | [[Panagiotidis Petros Panagiotis]] | Chief Executive Officer | $1.1M | 51 | – |
-| 2026-10-27 | [[MSM]] | [[JACOBSON MITCHELL]] | Director | $29.0M | 63 | – |
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | Director | $44K | 63 | – |
-| 2026-10-27 | [[NMCO]] | [[Robert Young L]] | Other | $249K | 50 | – |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | Chief Executive Officer | $133K | 65 | – |
-| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | Chief Operating Officer | $50K | 65 | – |
-| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | Director | $185K | 65 | – |
-| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | CHAIRMAN & CEO | $1.5M | 73 | – |
-| 2026-10-27 | [[KIO]] | [[Takao Justin]] | Treasurer, CAO & CFO | $78K | 51 | – |
+| 2026-10-27 | [[PDI]] | [[Morris Sonya]] | Director | $82K | 41 | -0.4% |
+| 2026-10-27 | [[LRN]] | [[Haggart Dylan G]] | Director | $12.2M | 50 | -1.2% |
+| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | Director | $12.0M | 48 | -1.4% |
+| 2026-10-27 | [[LYCA]] | [[Venrock Healthcare Capital Partners III, L.P]] | 10% Owner | $37.7M | 57 | -5.5% |
 
 
 ## Live queries (Dataview plugin)

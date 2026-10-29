@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-19 IAM Rachlin Evan Lockwood\|2026-10-19]] | [[Rachlin Evan Lockwood]] | Director | $11.5M | 60 | -14.7% | open |
+| [[2026-10-19 IAM Rachlin Evan Lockwood\|2026-10-19]] | [[Rachlin Evan Lockwood]] | Director | $11.5M | 60 | -10.2% | open |

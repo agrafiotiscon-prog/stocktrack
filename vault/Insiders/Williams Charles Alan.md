@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -6.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[NPB]] | CHAIRMAN & CEO | $1.5M | 73 | – |
+| 2026-10-27 | [[NPB]] | CHAIRMAN & CEO | $1.5M | 73 | -0.8% |

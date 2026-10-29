@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[WILSON DAVID]] | Director | $7K | 27 | – | pending |
+| 2026-10-27 | [[WILSON DAVID]] | Director | $7K | 27 | -0.4% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Darling Craig]] | 10% Owner | $116K | 10 | +2.6% | open |
+| 2026-10-26 | [[Darling Craig]] | 10% Owner | $116K | 10 | +5.2% | open |

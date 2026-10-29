@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +2.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-30 | [[UTI]] | Director | $20K | 17 | +15.2% |
+| 2026-09-30 | [[UTI]] | Director | $20K | 17 | +14.9% |

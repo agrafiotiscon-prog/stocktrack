@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[BHRB]] | Director | $7K | 27 | – |
+| 2026-10-27 | [[BHRB]] | Director | $7K | 27 | -0.4% |

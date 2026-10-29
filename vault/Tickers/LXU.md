@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Ackerman Jonathan Z]] | Director | $10K | 0 | +1.8% | open |
+| 2026-10-26 | [[Ackerman Jonathan Z]] | Director | $10K | 0 | +0.6% | open |

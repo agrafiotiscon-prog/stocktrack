@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-05 | [[Hattersley Gavin]] | Director | $45K | 35 | +6.0% | open |
+| 2026-10-05 | [[Hattersley Gavin]] | Director | $45K | 35 | +2.5% | open |

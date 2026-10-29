@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -32.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[AIOK]] | Chief Executive Officer | $1.1M | 51 | – |
+| 2026-10-27 | [[AIOK]] | Chief Executive Officer | $1.1M | 51 | +60.4% |

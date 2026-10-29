@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +12.6%/yr, double costs +5.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 8 | +3.5% | +3.3% | 88% |
+| 5 sessions | 11 | +2.7% | +2.9% | 82% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | – | pending |
-| 2026-10-27 | [[LEO]] | [[Saba Capital Management, L.P]] | $72K | 18 | – | pending |
-| 2026-10-27 | [[DSM]] | [[Saba Capital Management, L.P]] | $111K | 20 | – | pending |
-| 2026-10-27 | [[MSM]] | [[JACOBSON MITCHELL]] | $29.0M | 63 | – | pending |
-| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | – | pending |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | -1.2% | open |
-| 2026-10-26 | [[KRRO]] | [[Lynx1 Capital Management LP]] | $885K | 34 | +4.2% | open |
-| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | +6.5% | open |
-| 2026-10-26 | [[LEO]] | [[Saba Capital Management, L.P]] | $369K | 27 | +0.9% | open |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -1.4% | open |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +6.1% | open |
-| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | -0.0% | open |
-| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | +1.7% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -1.3% | open |
+| 2026-10-28 | [[DSM]] | [[Saba Capital Management, L.P]] | $77K | 18 | – | pending |
+| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | – | pending |
+| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | -1.4% | open |
+| 2026-10-27 | [[LEO]] | [[Saba Capital Management, L.P]] | $72K | 18 | -1.5% | open |
+| 2026-10-27 | [[DSM]] | [[Saba Capital Management, L.P]] | $111K | 20 | -1.2% | open |
+| 2026-10-27 | [[MSM]] | [[JACOBSON MITCHELL]] | $29.0M | 63 | +1.8% | open |
+| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | -0.2% | open |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +0.3% | open |
+| 2026-10-26 | [[KRRO]] | [[Lynx1 Capital Management LP]] | $885K | 34 | +8.2% | open |
+| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | +10.6% | open |
+| 2026-10-26 | [[LEO]] | [[Saba Capital Management, L.P]] | $369K | 27 | -0.8% | open |
+| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -1.5% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +7.4% | open |
+| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | -1.6% | open |
+| 2026-10-22 | [[LEO]] | [[Saba Capital Management, L.P]] | $263K | 25 | -0.1% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -19.9% | open |
 | 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | -1.5% | open |
-| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | -0.6% | open |
-| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | +1.3% | open |
-| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | +1.0% | open |
-| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +1.7% | open |
-| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +1.3% | open |
+| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | -1.9% | open |
+| 2026-10-22 | [[DSM]] | [[Saba Capital Management, L.P]] | $109K | 20 | -0.1% | open |
+| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | -0.6% | open |
 
 
 ```dataview

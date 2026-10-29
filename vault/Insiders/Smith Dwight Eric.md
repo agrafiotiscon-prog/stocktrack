@@ -12,4 +12,4 @@ Backtest record: 18 earlier buys, average 3-month excess vs SPY +7.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[PEBO]] | Director | $12K | 17 | – |
+| 2026-10-27 | [[PEBO]] | Director | $12K | 17 | -0.2% |

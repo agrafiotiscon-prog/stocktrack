@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-14 | [[KIO]] | President | $41K | 45 | -1.0% |
+| 2026-10-14 | [[KIO]] | President | $41K | 45 | -0.7% |

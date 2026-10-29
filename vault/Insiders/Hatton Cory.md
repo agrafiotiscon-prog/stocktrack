@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[PLAY]] | Interim CFO | $26K | 44 | +15.5% |
+| 2026-09-28 | [[PLAY]] | Interim CFO | $26K | 44 | +17.2% |

@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +4.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-23 | [[NXG]] | CFO & Treasurer | $40K | 68 | +6.1% |
+| 2026-10-23 | [[NXG]] | CFO & Treasurer | $40K | 68 | +7.4% |

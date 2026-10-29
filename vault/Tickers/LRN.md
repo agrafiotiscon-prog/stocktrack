@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-27 LRN Haggart Dylan G\|2026-10-27]] | [[Haggart Dylan G]] | Director | $12.2M | 50 | – | pending |
+| [[2026-10-27 LRN Haggart Dylan G\|2026-10-27]] | [[Haggart Dylan G]] | Director | $12.2M | 50 | -1.2% | open |

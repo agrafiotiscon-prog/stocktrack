@@ -12,4 +12,4 @@ Backtest record: 9 earlier buys, average 3-month excess vs SPY -0.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[STC]] | Chief Executive Officer | $133K | 65 | – |
+| 2026-10-27 | [[STC]] | Chief Executive Officer | $133K | 65 | +0.8% |

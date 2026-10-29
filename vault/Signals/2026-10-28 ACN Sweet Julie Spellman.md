@@ -7,7 +7,7 @@ role: "Chair and CEO"
 filed: "2026-10-28"
 traded: "2026-10-26"
 score: 78
-value: 3001041
+value: 3001040
 cluster: 2
 insider_type: "unclassified"
 price: 235.16

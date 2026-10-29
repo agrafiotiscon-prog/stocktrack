@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-30 | [[CLARK CHRISTOPHER D]] | President | $20K | 29 | -2.7% | open |
+| 2026-09-30 | [[CLARK CHRISTOPHER D]] | President | $20K | 29 | -2.6% | open |

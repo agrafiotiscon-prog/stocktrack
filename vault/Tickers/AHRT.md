@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-29 | [[Wittman Lori]] | Director | $18K | 35 | +1.8% | open |
+| 2026-09-29 | [[Wittman Lori]] | Director | $18K | 35 | +0.6% | open |

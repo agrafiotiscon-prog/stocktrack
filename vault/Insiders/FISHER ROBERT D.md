@@ -12,4 +12,4 @@ Backtest record: 40 earlier buys, average 3-month excess vs SPY -0.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-23 | [[CHCO]] | Director | $23K | 2 | -2.8% |
+| 2026-10-23 | [[CHCO]] | Director | $23K | 2 | -2.7% |

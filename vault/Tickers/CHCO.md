@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[STRONG-TREISTER DIANE W]] | Director | $17K | 4 | -2.8% | open |
-| 2026-10-23 | [[Reyes Javier A]] | Director | $14K | 4 | -2.8% | open |
-| 2026-10-23 | [[Hoyer James A]] | Director | $14K | 9 | -2.8% | open |
-| 2026-10-23 | [[FISHER ROBERT D]] | Director | $23K | 2 | -2.8% | open |
+| 2026-10-23 | [[STRONG-TREISTER DIANE W]] | Director | $17K | 4 | -2.7% | open |
+| 2026-10-23 | [[Reyes Javier A]] | Director | $14K | 4 | -2.7% | open |
+| 2026-10-23 | [[Hoyer James A]] | Director | $14K | 9 | -2.7% | open |
+| 2026-10-23 | [[FISHER ROBERT D]] | Director | $23K | 2 | -2.7% | open |

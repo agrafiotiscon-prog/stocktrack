@@ -12,4 +12,4 @@ Backtest record: 14 earlier buys, average 3-month excess vs SPY -2.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-22 | [[NMCO]] | Vice President | $4K | 40 | -0.6% |
+| 2026-10-22 | [[NMCO]] | Vice President | $4K | 40 | -1.9% |

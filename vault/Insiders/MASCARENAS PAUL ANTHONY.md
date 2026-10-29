@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +12.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-26 | [[THRM]] | Director | $533K | 61 | +6.5% |
+| 2026-10-26 | [[THRM]] | Director | $533K | 61 | +10.6% |

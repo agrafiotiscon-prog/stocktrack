@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-14 INBX Lappe Mark\|2026-10-14]] | [[Lappe Mark]] | Chief Executive Officer | $849K | 47 | +8.8% | open |
-| [[2026-09-28 INBX Lappe Mark\|2026-09-28]] | [[Lappe Mark]] | Chief Executive Officer | $999K | 60 | -9.5% | open |
+| [[2026-10-14 INBX Lappe Mark\|2026-10-14]] | [[Lappe Mark]] | Chief Executive Officer | $849K | 47 | -17.1% | open |
+| [[2026-09-28 INBX Lappe Mark\|2026-09-28]] | [[Lappe Mark]] | Chief Executive Officer | $999K | 60 | -31.1% | open |

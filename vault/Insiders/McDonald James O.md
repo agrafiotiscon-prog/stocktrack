@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY +0.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-23 | [[THFF]] | Director | $6K | 14 | -0.0% |
+| 2026-10-23 | [[THFF]] | Director | $6K | 14 | -1.6% |

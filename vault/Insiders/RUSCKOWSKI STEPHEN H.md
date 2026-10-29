@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -0.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[ORCL]] | Director | $3.5M | 57 | -7.7% |
+| 2026-10-01 | [[ORCL]] | Director | $3.5M | 57 | +1.9% |

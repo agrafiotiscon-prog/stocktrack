@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.4%/yr, double costs +7.8%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 1 | -11.6% | -11.6% | 0% |
+| 5 sessions | 4 | -7.3% | -2.6% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
+| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | $902K | 61 | – | pending |
+| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | – | pending |
+| 2026-10-28 | [[HBAN]] | [[ROLLINS JAMES D III]] | $254K | 46 | – | pending |
 | 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | – | pending |
-| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | – | pending |
-| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | +6.5% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -1.3% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -1.3% | open |
-| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | +1.2% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +4.8% | open |
-| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | -4.5% | open |
-| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -14.7% | open |
-| 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | $23.7M | 62 | +1.7% | open |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -6.7% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -2.9% | open |
-| 2026-10-15 | [[CXM]] | [[WARD JR STEPHEN M]] | $850K | 51 | +9.3% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -9.9% | open |
-| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | -12.2% | open |
-| 2026-10-13 | [[RTSN]] | [[BERGER FRANKLIN M]] | $120K | 55 | +16.9% | open |
-| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +4.6% | open |
-| 2026-10-13 | [[HEI]] | [[Neitzel Julie]] | $175K | 56 | +4.6% | open |
-| 2026-10-13 | [[HEI]] | [[Fine Carol F]] | $175K | 69 | +4.6% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +4.6% | open |
+| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | -0.8% | open |
+| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | +10.6% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -19.9% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -19.9% | open |
+| 2026-10-21 | [[FBK]] | [[INGRAM ORRIN H II]] | $1.5M | 49 | -0.1% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -14.8% | open |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | -2.6% | open |
+| 2026-10-19 | [[IAM]] | [[Rachlin Evan Lockwood]] | $11.5M | 60 | -10.2% | open |
+| 2026-10-16 | [[PEP]] | [[POHLAD ROBERT C]] | $23.7M | 62 | +0.7% | open |
+| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -0.2% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -3.3% | open |
+| 2026-10-15 | [[CXM]] | [[WARD JR STEPHEN M]] | $850K | 51 | +12.7% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -8.2% | open |
+| 2026-10-13 | [[CTNT]] | [[Liu Huan]] | $330K | 49 | -9.2% | open |
+| 2026-10-13 | [[RTSN]] | [[BERGER FRANKLIN M]] | $120K | 55 | +12.9% | open |
+| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +4.9% | open |
 
 
 ```dataview

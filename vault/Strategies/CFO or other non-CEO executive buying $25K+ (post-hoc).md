@@ -73,19 +73,21 @@ Cost sensitivity (63-session hold): no costs +16.7%/yr, double costs +11.1%/yr.
 
 ## Live forward test
 
-3 buys logged so far; none have matured yet.
+| Horizon | Matured | Mean vs SPY | Median | Beat SPY |
+|---|---|---|---|---|
+| 5 sessions | 1 | -14.8% | -14.8% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | – | pending |
-| 2026-10-27 | [[KIO]] | [[Takao Justin]] | $78K | 51 | – | pending |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -1.4% | open |
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +6.1% | open |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +6.1% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | +4.8% | open |
+| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | -0.8% | open |
+| 2026-10-27 | [[KIO]] | [[Takao Justin]] | $78K | 51 | +0.8% | open |
+| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -1.5% | open |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +7.4% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +7.4% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -14.8% | open |
 
 
 ```dataview

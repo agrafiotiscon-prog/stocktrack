@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-01 | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | 10% Owner | $1K | 8 | -1.8% | open |
-| 2026-09-29 | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | 10% Owner | $340 | 8 | -0.2% | open |
-| 2026-09-29 | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | 10% Owner | $340 | 8 | -0.2% | open |
+| 2026-10-01 | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | 10% Owner | $1K | 8 | -1.6% | open |
+| 2026-09-29 | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | 10% Owner | $340 | 8 | -0.1% | open |
+| 2026-09-29 | [[HORIZON KINETICS ASSET MANAGEMENT LLC]] | 10% Owner | $340 | 8 | -0.1% | open |

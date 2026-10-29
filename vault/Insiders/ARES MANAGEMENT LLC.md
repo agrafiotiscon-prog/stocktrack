@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[CTEV]] | 10% Owner | $1.7M | 36 | – |
+| 2026-10-27 | [[CTEV]] | 10% Owner | $1.7M | 36 | -2.4% |

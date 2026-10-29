@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-21 DX BOSTON BYRON L\|2026-10-21]] | [[BOSTON BYRON L]] | Co-CEO & Chairman of the Board | $100K | 50 | -0.5% | open |
-| 2026-10-20 | [[Popenoe Smriti Laxman]] | Co-CEO and President | $106K | 39 | -0.3% | open |
-| 2026-10-20 | [[Sartori Michael Andrew]] | Chief Financial Officer | $11K | 39 | -0.3% | open |
-| 2026-09-28 | [[Connelly Terrence John JR]] | Chief Investment Officer | $28K | 28 | -2.7% | open |
+| [[2026-10-21 DX BOSTON BYRON L\|2026-10-21]] | [[BOSTON BYRON L]] | Co-CEO & Chairman of the Board | $100K | 50 | -1.7% | open |
+| 2026-10-20 | [[Popenoe Smriti Laxman]] | Co-CEO and President | $106K | 39 | -1.5% | open |
+| 2026-10-20 | [[Sartori Michael Andrew]] | Chief Financial Officer | $11K | 39 | -1.5% | open |
+| 2026-09-28 | [[Connelly Terrence John JR]] | Chief Investment Officer | $28K | 28 | -3.8% | open |
