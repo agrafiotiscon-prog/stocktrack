@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[TTMI]] | President and CEO | $440K | 62 | – |
+| 2026-10-28 | [[TTMI]] | President and CEO | $440K | 62 | -3.4% |

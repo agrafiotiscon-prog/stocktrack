@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-15 | [[BPRE]] | Director | $2K | 34 | +0.3% |
-| 2026-10-05 | [[BPRE]] | Director | $85K | 54 | -0.3% |
+| 2026-10-15 | [[BPRE]] | Director | $2K | 34 | +1.7% |
+| 2026-10-05 | [[BPRE]] | Director | $85K | 54 | +1.1% |

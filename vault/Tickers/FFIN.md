@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[Nickles Robert Clark Jr]] | Director | $25K | 19 | +0.2% | open |
+| 2026-10-27 | [[Nickles Robert Clark Jr]] | Director | $25K | 19 | +2.1% | open |

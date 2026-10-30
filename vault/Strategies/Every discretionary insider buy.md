@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +9.0%/yr, double costs +3.4%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 32 | +0.4% | +0.4% | 50% |
+| 5 sessions | 42 | -0.5% | -0.1% | 48% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | – | pending |
-| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | $902K | 61 | – | pending |
-| 2026-10-28 | [[NVA]] | [[Girnun Joshua I]] | $20K | 35 | – | pending |
-| 2026-10-28 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.2M | 55 | – | pending |
-| 2026-10-28 | [[DSM]] | [[Saba Capital Management, L.P]] | $77K | 18 | – | pending |
-| 2026-10-28 | [[GOLD]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | $3.9M | 48 | – | pending |
-| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | – | pending |
-| 2026-10-28 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.4M | 22 | – | pending |
-| 2026-10-28 | [[BBT]] | [[Polito Karyn]] | $31K | 49 | – | pending |
-| 2026-10-28 | [[WS]] | [[Ganem George John III]] | $31K | 40 | – | pending |
-| 2026-10-28 | [[LBRT]] | [[Babcock Ken]] | $223K | 38 | – | pending |
-| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | – | pending |
-| 2026-10-28 | [[THM]] | [[Wiens David Victor]] | $6K | 30 | – | pending |
-| 2026-10-28 | [[HBAN]] | [[ROLLINS JAMES D III]] | $254K | 46 | – | pending |
-| 2026-10-28 | [[HYMC]] | [[Rhodes Blake]] | $50K | 39 | – | pending |
-| 2026-10-28 | [[FLG]] | [[Frank Alan L]] | $101K | 33 | – | pending |
-| 2026-10-28 | [[BBT]] | [[Fitzgerald Margaret Boles]] | $10K | 36 | – | pending |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | – | pending |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | – | pending |
-| 2026-10-27 | [[PDI]] | [[Morris Sonya]] | $82K | 41 | -0.4% | open |
+| 2026-10-29 | [[LRN]] | [[Haggart Dylan G]] | $62K | 21 | – | pending |
+| 2026-10-29 | [[ARCC]] | [[HENSON MARY BETH]] | $46K | 26 | – | pending |
+| 2026-10-29 | [[DSM]] | [[Saba Capital Management, L.P]] | $11K | 9 | – | pending |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | – | pending |
+| 2026-10-29 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.3M | 22 | – | pending |
+| 2026-10-29 | [[UTMD]] | [[CORNWELL KEVIN L]] | $67K | 35 | – | pending |
+| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | – | pending |
+| 2026-10-29 | [[PNFP]] | [[INGRAM DAVID B]] | $992K | 43 | – | pending |
+| 2026-10-29 | [[HBAN]] | [[TORGOW GARY]] | $200K | 40 | – | pending |
+| 2026-10-29 | [[XYL]] | [[KOCH D CHRISTIAN]] | $986K | 52 | – | pending |
+| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | – | pending |
+| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | – | pending |
+| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | – | pending |
+| 2026-10-29 | [[BFC]] | [[Sprang Todd A]] | $59K | 32 | – | pending |
+| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | – | pending |
+| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | – | pending |
+| 2026-10-29 | [[NBIS]] | [[Grimme Arne]] | $58K | 11 | – | pending |
+| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | -3.4% | open |
+| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | $902K | 61 | -3.4% | open |
+| 2026-10-28 | [[NVA]] | [[Girnun Joshua I]] | $20K | 35 | +2.0% | open |
 
 
 ```dataview

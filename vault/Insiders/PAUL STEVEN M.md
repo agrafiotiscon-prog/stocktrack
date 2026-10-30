@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -0.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-22 | [[RAPP]] | Director | $974K | 77 | -19.9% |
+| 2026-10-22 | [[RAPP]] | Director | $974K | 77 | -13.3% |

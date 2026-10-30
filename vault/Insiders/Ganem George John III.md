@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[WS]] | CEO Americas Kloeckner Metals | $31K | 40 | – |
+| 2026-10-28 | [[WS]] | CEO Americas Kloeckner Metals | $31K | 40 | -2.5% |

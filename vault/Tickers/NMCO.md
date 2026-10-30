@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-27 NMCO Robert Young L\|2026-10-27]] | [[Robert Young L]] | Other | $249K | 50 | -1.3% | open |
-| [[2026-10-22 NMCO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | -1.9% | open |
-| [[2026-10-22 NMCO Jones Nathaniel T\|2026-10-22]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | -1.9% | open |
-| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +2.4% | open |
+| [[2026-10-27 NMCO Robert Young L\|2026-10-27]] | [[Robert Young L]] | Other | $249K | 50 | -0.2% | open |
+| [[2026-10-22 NMCO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | -0.7% | open |
+| [[2026-10-22 NMCO Jones Nathaniel T\|2026-10-22]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | -0.7% | open |
+| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +3.6% | open |

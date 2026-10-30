@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +5.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[ACN]] | Director | $200K | 46 | – |
+| 2026-10-28 | [[ACN]] | Director | $200K | 46 | +3.2% |

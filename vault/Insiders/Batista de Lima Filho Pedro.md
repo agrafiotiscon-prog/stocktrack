@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-06 | [[AXIAY]] | Director | $5.3M | 48 | -22.4% |
+| 2026-10-06 | [[AXIAY]] | Director | $5.3M | 48 | -24.4% |

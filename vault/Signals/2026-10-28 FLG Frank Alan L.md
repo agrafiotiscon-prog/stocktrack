@@ -12,17 +12,17 @@ cluster: 1
 insider_type: "unclassified"
 price: 10.16
 strategies: ["all_liquid"]
-entry_date: ""
-entry_price: 
-status: "pending"
-abn_now: 
-ret_now: 
+entry_date: "2026-10-29"
+entry_price: 10.28
+status: "open"
+abn_now: 0.0177411
+ret_now: 0.0184825
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: false
+forward_test: true
 tags: ["signal", "strategy/all_liquid"]
 ---
 
@@ -39,15 +39,15 @@ tags: ["signal", "strategy/all_liquid"]
 | Score / cluster | 33 / 1 insider(s) |
 | Insider type / track record | unclassified / no record |
 | Prior 3 months | -28.6% |
-| Entry | awaiting next open |
-| Status | pending |
+| Entry | 2026-10-29 @ $10.28 |
+| Status | open |
 
 
 ## Outcome vs SPY
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | – |
+| – | – | – | – | – | +1.8% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/910073/000164947126000006/0001649471-26-000006-index.htm)

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-02 NYAX Nechmad Yair\|2026-10-02]] | [[Nechmad Yair]] | CEO, Co Founder & Chairman | $2.1M | 62 | +0.6% | open |
-| [[2026-09-30 NYAX Nechmad Yair\|2026-09-30]] | [[Nechmad Yair]] | CEO, Co Founder & Chairman | $2.1M | 62 | +2.4% | open |
+| [[2026-10-02 NYAX Nechmad Yair\|2026-10-02]] | [[Nechmad Yair]] | CEO, Co Founder & Chairman | $2.1M | 62 | +1.0% | open |
+| [[2026-09-30 NYAX Nechmad Yair\|2026-09-30]] | [[Nechmad Yair]] | CEO, Co Founder & Chairman | $2.1M | 62 | +2.7% | open |

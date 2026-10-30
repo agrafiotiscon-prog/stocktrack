@@ -12,5 +12,5 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -37.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-22 | [[DOLE]] | 10% Owner | $8.6M | 45 | -4.7% |
-| 2026-10-14 | [[DOLE]] | 10% Owner | $76K | 17 | -5.6% |
+| 2026-10-22 | [[DOLE]] | 10% Owner | $8.6M | 45 | -4.2% |
+| 2026-10-14 | [[DOLE]] | 10% Owner | $76K | 17 | -5.1% |

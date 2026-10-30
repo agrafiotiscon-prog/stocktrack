@@ -12,17 +12,17 @@ cluster: 2
 insider_type: "unclassified"
 price: 235.16
 strategies: ["all_liquid", "score_40", "momentum_buy"]
-entry_date: ""
-entry_price: 
-status: "pending"
-abn_now: 
-ret_now: 
+entry_date: "2026-10-29"
+entry_price: 239.3
+status: "open"
+abn_now: 0.0323551
+ret_now: 0.0330965
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: false
+forward_test: true
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/momentum_buy"]
 ---
 
@@ -39,15 +39,15 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/momentum_
 | Score / cluster | 46 / 2 insider(s) |
 | Insider type / track record | unclassified / 1 earlier buys, +0.9% |
 | Prior 3 months | +36.9% |
-| Entry | awaiting next open |
-| Status | pending |
+| Entry | 2026-10-29 @ $239.30 |
+| Status | open |
 
 
 ## Outcome vs SPY
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | – |
+| – | – | – | – | – | +3.2% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1467373/000136924026000014/0001369240-26-000014-index.htm)

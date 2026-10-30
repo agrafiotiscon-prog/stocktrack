@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-13 CTNT Liu Huan\|2026-10-13]] | [[Liu Huan]] | See Remarks | $330K | 49 | -9.2% | open |
+| [[2026-10-13 CTNT Liu Huan\|2026-10-13]] | [[Liu Huan]] | See Remarks | $330K | 49 | -6.4% | open |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.8%/yr, double costs +3.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 9 | -3.8% | -2.6% | 11% |
+| 5 sessions | 15 | -4.2% | -2.6% | 20% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | – | pending |
-| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | $902K | 61 | – | pending |
-| 2026-10-28 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.2M | 55 | – | pending |
-| 2026-10-28 | [[GOLD]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | $3.9M | 48 | – | pending |
-| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | – | pending |
-| 2026-10-28 | [[BBT]] | [[Polito Karyn]] | $31K | 49 | – | pending |
-| 2026-10-28 | [[WS]] | [[Ganem George John III]] | $31K | 40 | – | pending |
-| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | – | pending |
-| 2026-10-28 | [[HBAN]] | [[ROLLINS JAMES D III]] | $254K | 46 | – | pending |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | – | pending |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | – | pending |
-| 2026-10-27 | [[PDI]] | [[Morris Sonya]] | $82K | 41 | -0.4% | open |
-| 2026-10-27 | [[LRN]] | [[Haggart Dylan G]] | $12.2M | 50 | -1.2% | open |
-| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | -1.4% | open |
-| 2026-10-27 | [[LYCA]] | [[Venrock Healthcare Capital Partners III, L.P]] | $37.7M | 57 | -5.5% | open |
-| 2026-10-27 | [[AIOK]] | [[Panagiotidis Petros Panagiotis]] | $1.1M | 51 | +60.4% | open |
-| 2026-10-27 | [[MSM]] | [[JACOBSON MITCHELL]] | $29.0M | 63 | +1.8% | open |
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +0.8% | open |
-| 2026-10-27 | [[NMCO]] | [[Robert Young L]] | $249K | 50 | -1.3% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +0.8% | open |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | – | pending |
+| 2026-10-29 | [[PNFP]] | [[INGRAM DAVID B]] | $992K | 43 | – | pending |
+| 2026-10-29 | [[HBAN]] | [[TORGOW GARY]] | $200K | 40 | – | pending |
+| 2026-10-29 | [[XYL]] | [[KOCH D CHRISTIAN]] | $986K | 52 | – | pending |
+| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | – | pending |
+| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | – | pending |
+| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | – | pending |
+| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | -3.4% | open |
+| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | $902K | 61 | -3.4% | open |
+| 2026-10-28 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.2M | 55 | +1.2% | open |
+| 2026-10-28 | [[GOLD]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | $3.9M | 48 | -2.4% | open |
+| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | -0.2% | open |
+| 2026-10-28 | [[BBT]] | [[Polito Karyn]] | $31K | 49 | -1.1% | open |
+| 2026-10-28 | [[WS]] | [[Ganem George John III]] | $31K | 40 | -2.5% | open |
+| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | -1.1% | open |
+| 2026-10-28 | [[HBAN]] | [[ROLLINS JAMES D III]] | $254K | 46 | +0.1% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +3.2% | open |
+| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +3.2% | open |
+| 2026-10-27 | [[PDI]] | [[Morris Sonya]] | $82K | 41 | +1.6% | open |
+| 2026-10-27 | [[LRN]] | [[Haggart Dylan G]] | $12.2M | 50 | -0.1% | open |
 
 
 ```dataview

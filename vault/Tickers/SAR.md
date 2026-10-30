@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-13 SAR Oberbeck Christian L\|2026-10-13]] | [[Oberbeck Christian L]] | CEO and Director | $446K | 61 | -9.1% | open |
+| [[2026-10-13 SAR Oberbeck Christian L\|2026-10-13]] | [[Oberbeck Christian L]] | CEO and Director | $446K | 61 | -6.3% | open |

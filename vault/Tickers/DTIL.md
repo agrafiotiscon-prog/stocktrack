@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-30 | [[Frankel Stanley]] | Director | $6K | 16 | +17.0% | open |
+| 2026-09-30 | [[Frankel Stanley]] | Director | $6K | 16 | +16.9% | open |
 | 2026-09-29 | [[Germano Geno J]] | Director | $16K | 21 | +18.9% | open |
 | 2026-09-29 | [[Brown Melinda]] | Director | $7K | 17 | +18.9% | open |

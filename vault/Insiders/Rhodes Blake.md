@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[HYMC]] | Director | $50K | 39 | – |
+| 2026-10-28 | [[HYMC]] | Director | $50K | 39 | +3.1% |

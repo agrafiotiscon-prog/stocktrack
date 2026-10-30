@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-30 | [[ARR]] | Co-Chief Investment Officer | $10K | 26 | -7.9% |
+| 2026-09-30 | [[ARR]] | Co-Chief Investment Officer | $10K | 26 | -6.6% |

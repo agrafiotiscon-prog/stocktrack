@@ -12,4 +12,4 @@ Backtest record: 21 earlier buys, average 3-month excess vs SPY +14.5%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[SRRK]] | Director | $12.0M | 48 | -1.4% |
+| 2026-10-27 | [[SRRK]] | Director | $12.0M | 48 | +1.1% |

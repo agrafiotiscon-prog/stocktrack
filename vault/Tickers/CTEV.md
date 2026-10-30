@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[ARES MANAGEMENT LLC]] | 10% Owner | $1.7M | 36 | -2.4% | open |
+| 2026-10-27 | [[ARES MANAGEMENT LLC]] | 10% Owner | $1.7M | 36 | +2.2% | open |

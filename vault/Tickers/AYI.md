@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[O'Shaughnessy Laura]] | Director | $22K | 20 | +3.2% | open |
+| 2026-10-20 | [[O'Shaughnessy Laura]] | Director | $22K | 20 | +7.0% | open |
