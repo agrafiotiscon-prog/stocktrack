@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY +1.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[HXL]] | Director | $242K | 46 | -0.2% |
+| 2026-10-28 | [[HXL]] | Director | $242K | 46 | -0.5% |

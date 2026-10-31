@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-28 | [[Buchanan Michael Carlton]] | Other | $59K | 28 | -0.4% | open |
+| 2026-09-28 | [[Buchanan Michael Carlton]] | Other | $59K | 28 | +0.6% | open |

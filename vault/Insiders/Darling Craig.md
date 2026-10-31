@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-26 | [[OIG]] | 10% Owner | $116K | 10 | +9.1% |
+| 2026-10-26 | [[OIG]] | 10% Owner | $116K | 10 | +10.4% |

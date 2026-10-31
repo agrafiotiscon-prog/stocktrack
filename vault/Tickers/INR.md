@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-09-28 INR Baetz Cary D\|2026-09-28]] | [[Baetz Cary D]] | EVP and CFO | $300K | 69 | +14.6% | open |
+| [[2026-09-28 INR Baetz Cary D\|2026-09-28]] | [[Baetz Cary D]] | EVP and CFO | $300K | 69 | +16.7% | open |

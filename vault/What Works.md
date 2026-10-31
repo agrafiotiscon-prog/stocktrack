@@ -1,6 +1,6 @@
 ---
 type: "scoreboard"
-updated: "2026-10-30"
+updated: "2026-10-31"
 backtest: "2026-10-28"
 ---
 
@@ -114,17 +114,17 @@ The ledger started on 2026-10-19. Results need months to mature; until then this
 
 | Group | Signals | 1 week vs SPY | 1 month vs SPY | 3 months vs SPY | Open now vs SPY |
 |---|---|---|---|---|---|
-| All logged buys | 106 | -0.5% (n=42, 48% won) | – | – | +1.2% (n=106) |
-| [[Every discretionary insider buy]] | 106 | -0.5% (n=42, 48% won) | – | – | +1.2% (n=106) |
-| [[Live score 40+ (notable)]] | 41 | -4.2% (n=15, 20% won) | – | – | -0.1% (n=41) |
-| [[Live score 60+ (strong)]] | 11 | -7.1% (n=3, 33% won) | – | – | -0.8% (n=11) |
-| [[CEO or CFO buying $100K+]] | 9 | -7.6% (n=2, 0% won) | – | – | +1.5% (n=9) |
-| [[3+ insiders buying within 14 days]] | 8 | -4.8% (n=2, 50% won) | – | – | -0.4% (n=8) |
-| [[Opportunistic insiders (Cohen-Malloy-Pomorski)]] | 11 | +2.1% (n=7, 86% won) | – | – | +2.1% (n=11) |
-| [[Insider buying after a 30%+ drop]] | 8 | -10.2% (n=4, 0% won) | – | – | -3.0% (n=8) |
-| [[Insiders whose earlier buys beat SPY]] | 31 | +1.2% (n=17, 76% won) | – | – | +2.7% (n=31) |
-| [[Exec-director growing stake 25%+ with $100K+]] | 11 | -8.5% (n=5, 0% won) | – | – | -2.4% (n=11) |
-| [[Exec's first buy in a year, $50K+]] | 9 | -5.9% (n=4, 0% won) | – | – | +0.9% (n=9) |
-| [[CFO or other non-CEO executive buying $25K+ (post-hoc)]] | 5 | -14.8% (n=1, 0% won) | – | – | +0.4% (n=5) |
-| [[Insider buying after a 30%+ run-up (post-hoc)]] | 3 | +4.5% (n=1, 100% won) | – | – | +4.4% (n=3) |
+| All logged buys | 123 | -0.3% (n=51, 49% won) | – | – | +1.5% (n=123) |
+| [[Every discretionary insider buy]] | 123 | -0.3% (n=51, 49% won) | – | – | +1.5% (n=123) |
+| [[Live score 40+ (notable)]] | 48 | -3.3% (n=18, 22% won) | – | – | +0.8% (n=48) |
+| [[Live score 60+ (strong)]] | 13 | -3.3% (n=5, 40% won) | – | – | -0.5% (n=13) |
+| [[CEO or CFO buying $100K+]] | 11 | -7.6% (n=2, 0% won) | – | – | +4.7% (n=11) |
+| [[3+ insiders buying within 14 days]] | 10 | -1.3% (n=4, 50% won) | – | – | +0.3% (n=10) |
+| [[Opportunistic insiders (Cohen-Malloy-Pomorski)]] | 14 | +2.1% (n=7, 86% won) | – | – | +2.8% (n=14) |
+| [[Insider buying after a 30%+ drop]] | 8 | -8.7% (n=5, 0% won) | – | – | -0.4% (n=8) |
+| [[Insiders whose earlier buys beat SPY]] | 36 | +1.5% (n=19, 79% won) | – | – | +3.3% (n=36) |
+| [[Exec-director growing stake 25%+ with $100K+]] | 13 | -8.5% (n=5, 0% won) | – | – | -1.3% (n=13) |
+| [[Exec's first buy in a year, $50K+]] | 10 | -5.9% (n=4, 0% won) | – | – | +2.3% (n=10) |
+| [[CFO or other non-CEO executive buying $25K+ (post-hoc)]] | 5 | -3.7% (n=2, 50% won) | – | – | +1.4% (n=5) |
+| [[Insider buying after a 30%+ run-up (post-hoc)]] | 4 | -1.5% (n=2, 50% won) | – | – | +3.3% (n=4) |
 

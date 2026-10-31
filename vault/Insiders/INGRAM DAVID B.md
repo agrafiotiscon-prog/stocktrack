@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -9.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[PNFP]] | Director | $992K | 43 | – |
+| 2026-10-29 | [[PNFP]] | Director | $992K | 43 | -0.6% |

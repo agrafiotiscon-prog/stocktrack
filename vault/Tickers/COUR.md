@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-09-29 COUR Pale Fire Capital investicni spolecnost a.s\|2026-09-29]] | [[Pale Fire Capital investicni spolecnost a.s]] | 10% Owner | $11.4M | 46 | -6.4% | open |
+| [[2026-09-29 COUR Pale Fire Capital investicni spolecnost a.s\|2026-09-29]] | [[Pale Fire Capital investicni spolecnost a.s]] | 10% Owner | $11.4M | 46 | -28.6% | open |

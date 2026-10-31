@@ -12,4 +12,4 @@ Backtest record: 65 earlier buys, average 3-month excess vs SPY +3.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[DINO]] | CEO | $1.1M | 52 | – |
+| 2026-10-29 | [[DINO]] | CEO | $1.1M | 52 | +1.8% |

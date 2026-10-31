@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[FLG]] | Director | $101K | 33 | +1.8% |
+| 2026-10-28 | [[FLG]] | Director | $101K | 33 | +3.9% |

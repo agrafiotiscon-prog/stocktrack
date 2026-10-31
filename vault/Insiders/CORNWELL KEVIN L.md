@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +1.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[UTMD]] | Chairman, CEO | $67K | 35 | – |
+| 2026-10-29 | [[UTMD]] | Chairman, CEO | $67K | 35 | +1.4% |

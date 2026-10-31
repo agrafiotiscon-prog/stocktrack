@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -22.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-15 | [[CXM]] | Director | $850K | 51 | +11.4% |
+| 2026-10-15 | [[CXM]] | Director | $850K | 51 | +13.2% |

@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-28 | [[Girnun Joshua I]] | Director | $20K | 35 | +2.0% | open |
-| 2026-10-20 | [[Geller Avi]] | Director | $5K | 32 | +8.9% | open |
-| 2026-10-20 | [[Gerteisen Christopher]] | Chief Executive Officer | $22K | 35 | +8.9% | open |
+| 2026-10-28 | [[Girnun Joshua I]] | Director | $20K | 35 | +12.8% | open |
+| 2026-10-20 | [[Geller Avi]] | Director | $5K | 32 | +20.3% | open |
+| 2026-10-20 | [[Gerteisen Christopher]] | Chief Executive Officer | $22K | 35 | +20.3% | open |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-08 | [[NRXS]] | CRO, CCO, CPO | $2K | 19 | +9.4% |
+| 2026-10-08 | [[NRXS]] | CRO, CCO, CPO | $2K | 19 | +5.1% |

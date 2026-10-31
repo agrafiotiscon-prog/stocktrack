@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-15 | [[VMO]] | Other | $26K | 28 | +3.1% |
+| 2026-10-15 | [[VMO]] | Other | $26K | 28 | +5.8% |

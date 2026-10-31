@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[Robert Young L]] | Other | $300K | 39 | +1.3% | open |
+| 2026-10-27 | [[Robert Young L]] | Other | $300K | 39 | +3.2% | open |

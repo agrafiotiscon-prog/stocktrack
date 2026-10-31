@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -0.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[BFC]] | Director | $59K | 32 | – |
+| 2026-10-29 | [[BFC]] | Director | $59K | 32 | -1.0% |

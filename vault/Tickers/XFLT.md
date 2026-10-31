@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Spence John Yogi]] | Vice President | $16K | 19 | -3.3% | open |
-| 2026-10-22 | [[Spence John Yogi]] | Other | $34K | 13 | -6.9% | open |
+| 2026-10-26 | [[Spence John Yogi]] | Vice President | $16K | 19 | -0.8% | open |
+| 2026-10-22 | [[Spence John Yogi]] | Other | $34K | 13 | -4.3% | open |

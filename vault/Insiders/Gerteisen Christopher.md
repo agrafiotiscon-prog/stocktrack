@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -29.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-20 | [[NVA]] | Chief Executive Officer | $22K | 35 | +8.9% |
+| 2026-10-20 | [[NVA]] | Chief Executive Officer | $22K | 35 | +20.3% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-15 | [[Hass John A]] | Director | $65K | 24 | -4.5% | open |
+| 2026-10-15 | [[Hass John A]] | Director | $65K | 24 | -8.5% | open |

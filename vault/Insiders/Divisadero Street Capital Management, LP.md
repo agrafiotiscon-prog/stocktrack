@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +0.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-06 | [[LWAY]] | 10% Owner | $2.2M | 37 | +8.4% |
+| 2026-10-06 | [[LWAY]] | 10% Owner | $2.2M | 37 | +8.8% |

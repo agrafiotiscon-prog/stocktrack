@@ -77,26 +77,26 @@ Cost sensitivity (63-session hold): no costs +15.9%/yr, double costs +8.9%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | – | pending |
-| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | – | pending |
-| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | – | pending |
-| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +1.1% | open |
-| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | +1.3% | open |
-| 2026-10-27 | [[FFIN]] | [[Nickles Robert Clark Jr]] | $25K | 19 | +2.1% | open |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -0.8% | open |
-| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | +0.2% | open |
-| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | -0.7% | open |
-| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | +0.9% | open |
-| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +1.7% | open |
-| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +2.5% | open |
-| 2026-10-22 | [[NMCO]] | [[Jones Nathaniel T]] | $4K | 40 | -0.7% | open |
-| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | +8.9% | open |
-| 2026-10-20 | [[ISBA]] | [[Bourland Jill]] | $300 | 13 | +6.2% | open |
-| 2026-10-16 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +1.6% | open |
-| 2026-10-13 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +5.2% | open |
-| 2026-10-13 | [[HEI]] | [[Hildebrandt Mark H]] | $175K | 53 | +10.5% | open |
-| 2026-10-13 | [[HEI]] | [[SCHRIESHEIM ALAN]] | $175K | 69 | +10.5% | open |
-| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | +1.5% | open |
+| 2026-10-30 | [[PKBK]] | [[PANTILIONE VITO S]] | $43K | 33 | – | pending |
+| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | – | pending |
+| 2026-10-30 | [[BHRB]] | [[McLaughlin Shawn Patrick]] | $36K | 20 | – | pending |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | +1.8% | open |
+| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +1.6% | open |
+| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | -1.1% | open |
+| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +2.2% | open |
+| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | +2.4% | open |
+| 2026-10-27 | [[FFIN]] | [[Nickles Robert Clark Jr]] | $25K | 19 | +3.3% | open |
+| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -0.3% | open |
+| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | +1.9% | open |
+| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | +1.2% | open |
+| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | +2.4% | open |
+| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +4.0% | open |
+| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +4.1% | open |
+| 2026-10-22 | [[NMCO]] | [[Jones Nathaniel T]] | $4K | 40 | +1.2% | open |
+| 2026-10-20 | [[NXG]] | [[Sunderland Todd]] | $46K | 26 | +7.4% | open |
+| 2026-10-20 | [[ISBA]] | [[Bourland Jill]] | $300 | 13 | +7.9% | open |
+| 2026-10-16 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +4.0% | open |
+| 2026-10-13 | [[PCQ]] | [[BANK OF AMERICA CORP -DE-]] | $16K | 30 | +7.6% | open |
 
 
 ```dataview

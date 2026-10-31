@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-29 PNFP INGRAM DAVID B\|2026-10-29]] | [[INGRAM DAVID B]] | Director | $992K | 43 | – | pending |
+| [[2026-10-29 PNFP INGRAM DAVID B\|2026-10-29]] | [[INGRAM DAVID B]] | Director | $992K | 43 | -0.6% | open |

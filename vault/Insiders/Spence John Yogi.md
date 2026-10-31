@@ -12,5 +12,5 @@ Backtest record: 21 earlier buys, average 3-month excess vs SPY -3.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-26 | [[XFLT]] | Vice President | $16K | 19 | -3.3% |
-| 2026-10-22 | [[XFLT]] | Other | $34K | 13 | -6.9% |
+| 2026-10-26 | [[XFLT]] | Vice President | $16K | 19 | -0.8% |
+| 2026-10-22 | [[XFLT]] | Other | $34K | 13 | -4.3% |

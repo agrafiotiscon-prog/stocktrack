@@ -12,6 +12,6 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY -1.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[NMCO]] | Other | $249K | 50 | -0.2% |
-| 2026-10-27 | [[NUV]] | Other | $300K | 39 | +0.3% |
-| 2026-10-27 | [[NXP]] | Other | $300K | 39 | +1.3% |
+| 2026-10-27 | [[NMCO]] | Other | $249K | 50 | +1.7% |
+| 2026-10-27 | [[NUV]] | Other | $300K | 39 | +3.0% |
+| 2026-10-27 | [[NXP]] | Other | $300K | 39 | +3.2% |

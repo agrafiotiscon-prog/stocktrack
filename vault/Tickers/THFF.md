@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[McDonald James O]] | Director | $6K | 14 | -0.3% | open |
+| 2026-10-23 | [[McDonald James O]] | Director | $6K | 14 | +0.2% | open |

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-29 HBAN TORGOW GARY\|2026-10-29]] | [[TORGOW GARY]] | Director | $200K | 40 | – | pending |
-| [[2026-10-28 HBAN ROLLINS JAMES D III\|2026-10-28]] | [[ROLLINS JAMES D III]] | Director | $254K | 46 | +0.1% | open |
+| [[2026-10-29 HBAN TORGOW GARY\|2026-10-29]] | [[TORGOW GARY]] | Director | $200K | 40 | -0.7% | open |
+| [[2026-10-28 HBAN ROLLINS JAMES D III\|2026-10-28]] | [[ROLLINS JAMES D III]] | Director | $254K | 46 | +0.6% | open |

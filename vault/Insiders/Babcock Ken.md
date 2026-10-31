@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -9.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[LBRT]] | Director | $223K | 38 | -0.8% |
+| 2026-10-28 | [[LBRT]] | Director | $223K | 38 | -2.1% |

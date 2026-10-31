@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Bobbora William]] | See Remarks | $40K | 24 | -0.8% | open |
+| 2026-10-26 | [[Bobbora William]] | See Remarks | $40K | 24 | -0.3% | open |

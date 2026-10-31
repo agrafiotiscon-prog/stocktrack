@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[INR]] | EVP and CFO | $300K | 69 | +14.6% |
+| 2026-09-28 | [[INR]] | EVP and CFO | $300K | 69 | +16.7% |

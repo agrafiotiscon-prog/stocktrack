@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-01 | [[Staples William]] | Chief Executive Officer | $125K | 23 | +11.6% | open |
+| 2026-10-01 | [[Staples William]] | Chief Executive Officer | $125K | 23 | +8.3% | open |

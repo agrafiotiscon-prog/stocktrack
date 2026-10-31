@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[NPB]] | Director | $47K | 64 | – |
+| 2026-10-29 | [[NPB]] | Director | $47K | 64 | -2.3% |

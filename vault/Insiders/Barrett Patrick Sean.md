@@ -1,0 +1,15 @@
+---
+type: "insider"
+name: "Barrett Patrick Sean"
+cik: "1591893"
+past_buys: 2
+past_mean_abn_63: 0.08082
+---
+
+# Barrett Patrick Sean
+
+Backtest record: 2 earlier buys, average 3-month excess vs SPY +8.1%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+
+| Filed | Ticker | Role | Value | Score | vs SPY so far |
+|---|---|---|---|---|---|
+| 2026-10-30 | [[OCFC]] | Senior EVP & CFO | $90K | 37 | – |

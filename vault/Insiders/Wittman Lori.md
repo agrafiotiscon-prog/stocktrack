@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -0.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-29 | [[AHRT]] | Director | $18K | 35 | +2.1% |
+| 2026-09-29 | [[AHRT]] | Director | $18K | 35 | +3.4% |

@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -4.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[NPB]] | Chief Operating Officer | $50K | 65 | -0.5% |
+| 2026-10-27 | [[NPB]] | Chief Operating Officer | $50K | 65 | -1.1% |

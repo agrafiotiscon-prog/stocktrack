@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -0.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[ARCC]] | Director | $46K | 26 | – |
+| 2026-10-29 | [[ARCC]] | Director | $46K | 26 | +0.3% |

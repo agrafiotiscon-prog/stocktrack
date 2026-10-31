@@ -12,4 +12,4 @@ Backtest record: 12 earlier buys, average 3-month excess vs SPY +0.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-30 | [[KBDC]] | Director | $1.9M | 49 | +2.6% |
+| 2026-09-30 | [[KBDC]] | Director | $1.9M | 49 | +3.1% |

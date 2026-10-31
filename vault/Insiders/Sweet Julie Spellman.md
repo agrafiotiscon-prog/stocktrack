@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[ACN]] | Chair and CEO | $3.0M | 78 | +3.2% |
+| 2026-10-28 | [[ACN]] | Chair and CEO | $3.0M | 78 | +9.6% |

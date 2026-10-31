@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-19 | [[HQY]] | EVP Chief Prod & Strat Officer | $12K | 20 | +7.8% |
+| 2026-10-19 | [[HQY]] | EVP Chief Prod & Strat Officer | $12K | 20 | +10.8% |

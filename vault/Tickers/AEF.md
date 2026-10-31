@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-06 | [[Clark Anthony S]] | Director | $19K | 31 | -11.2% | open |
+| 2026-10-06 | [[Clark Anthony S]] | Director | $19K | 31 | -12.5% | open |

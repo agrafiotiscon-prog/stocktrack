@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-14 | [[IMSR]] | Chief Executive Officer | $51K | 46 | +20.4% |
+| 2026-10-14 | [[IMSR]] | Chief Executive Officer | $51K | 46 | +14.0% |

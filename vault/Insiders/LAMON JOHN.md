@@ -12,4 +12,4 @@ Backtest record: 13 earlier buys, average 3-month excess vs SPY -3.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[SHBI]] | Director | $8K | 14 | – |
+| 2026-10-29 | [[SHBI]] | Director | $8K | 14 | -1.1% |

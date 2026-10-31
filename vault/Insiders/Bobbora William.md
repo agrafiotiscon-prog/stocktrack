@@ -12,4 +12,4 @@ Backtest record: 15 earlier buys, average 3-month excess vs SPY +5.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-26 | [[TCBX]] | See Remarks | $40K | 24 | -0.8% |
+| 2026-10-26 | [[TCBX]] | See Remarks | $40K | 24 | -0.3% |

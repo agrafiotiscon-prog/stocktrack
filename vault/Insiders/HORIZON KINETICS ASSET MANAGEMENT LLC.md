@@ -12,6 +12,6 @@ Backtest record: 881 earlier buys, average 3-month excess vs SPY +5.7%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[TPL]] | 10% Owner | $1K | 8 | -2.4% |
-| 2026-09-29 | [[TPL]] | 10% Owner | $340 | 8 | -1.0% |
-| 2026-09-29 | [[TPL]] | 10% Owner | $340 | 8 | -1.0% |
+| 2026-10-01 | [[TPL]] | 10% Owner | $1K | 8 | +0.4% |
+| 2026-09-29 | [[TPL]] | 10% Owner | $340 | 8 | +2.0% |
+| 2026-09-29 | [[TPL]] | 10% Owner | $340 | 8 | +2.0% |

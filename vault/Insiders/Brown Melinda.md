@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY +4.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-29 | [[DTIL]] | Director | $7K | 17 | +18.9% |
+| 2026-09-29 | [[DTIL]] | Director | $7K | 17 | +14.5% |

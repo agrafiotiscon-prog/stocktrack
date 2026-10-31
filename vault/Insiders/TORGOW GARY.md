@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY -2.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[HBAN]] | Director | $200K | 40 | – |
+| 2026-10-29 | [[HBAN]] | Director | $200K | 40 | -0.7% |

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-27 MSM JACOBSON MITCHELL\|2026-10-27]] | [[JACOBSON MITCHELL]] | Director | $29.0M | 63 | +2.4% | open |
-| 2026-10-23 | [[Slone Reuben E]] | Director | $50K | 39 | +4.6% | open |
+| [[2026-10-27 MSM JACOBSON MITCHELL\|2026-10-27]] | [[JACOBSON MITCHELL]] | Director | $29.0M | 63 | +2.6% | open |
+| 2026-10-23 | [[Slone Reuben E]] | Director | $50K | 39 | +4.7% | open |
