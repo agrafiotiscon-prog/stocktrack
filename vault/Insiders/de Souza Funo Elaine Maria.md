@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[VALE]] | Accounting Officer | $3K | 16 | – |
+| 2026-10-30 | [[VALE]] | Accounting Officer | $3K | 16 | -1.0% |

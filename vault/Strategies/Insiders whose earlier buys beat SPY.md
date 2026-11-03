@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +12.6%/yr, double costs +5.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 19 | +1.5% | +1.7% | 79% |
+| 5 sessions | 24 | +3.1% | +2.8% | 83% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[PEBK]] | [[HOWARD DOUGLAS S]] | $22K | 20 | – | pending |
-| 2026-10-29 | [[DSM]] | [[Saba Capital Management, L.P]] | $11K | 9 | -0.5% | open |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | +1.8% | open |
-| 2026-10-29 | [[UTMD]] | [[CORNWELL KEVIN L]] | $67K | 35 | +1.4% | open |
-| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +1.6% | open |
-| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | -0.4% | open |
-| 2026-10-28 | [[DSM]] | [[Saba Capital Management, L.P]] | $77K | 18 | +3.0% | open |
-| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | -0.5% | open |
-| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +2.2% | open |
-| 2026-10-27 | [[LEO]] | [[Saba Capital Management, L.P]] | $72K | 18 | +2.5% | open |
-| 2026-10-27 | [[DSM]] | [[Saba Capital Management, L.P]] | $111K | 20 | +2.9% | open |
-| 2026-10-27 | [[MSM]] | [[JACOBSON MITCHELL]] | $29.0M | 63 | +2.6% | open |
-| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | +2.4% | open |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +2.9% | open |
-| 2026-10-26 | [[KRRO]] | [[Lynx1 Capital Management LP]] | $885K | 34 | +14.0% | open |
-| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | +5.4% | open |
-| 2026-10-26 | [[LEO]] | [[Saba Capital Management, L.P]] | $369K | 27 | +3.2% | open |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -0.3% | open |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +7.5% | open |
-| 2026-10-23 | [[THFF]] | [[McDonald James O]] | $6K | 14 | +0.2% | open |
+| 2026-11-02 | [[NTRS]] | [[Moritz Robert Edward Jr]] | $40K | 23 | – | pending |
+| 2026-11-02 | [[JOF]] | [[Saba Capital Management, L.P]] | $702K | 31 | – | pending |
+| 2026-11-02 | [[ROL]] | [[LOR INC]] | $50.0M | 41 | – | pending |
+| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | – | pending |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | – | pending |
+| 2026-11-02 | [[BANC]] | [[WOLFF JARED M]] | $100K | 39 | – | pending |
+| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | $6K | 40 | – | pending |
+| 2026-11-02 | [[ATEC]] | [[Demski David M]] | $409K | 24 | – | pending |
+| 2026-11-02 | [[OCFC]] | [[Katsoulis Nicos]] | $178K | 53 | – | pending |
+| 2026-11-02 | [[STIM]] | [[Chernett Jorey]] | $41K | 15 | – | pending |
+| 2026-10-30 | [[PEBK]] | [[HOWARD DOUGLAS S]] | $22K | 20 | +1.5% | open |
+| 2026-10-29 | [[DSM]] | [[Saba Capital Management, L.P]] | $11K | 9 | -0.0% | open |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -0.7% | open |
+| 2026-10-29 | [[UTMD]] | [[CORNWELL KEVIN L]] | $67K | 35 | +5.6% | open |
+| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +1.7% | open |
+| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | +3.2% | open |
+| 2026-10-28 | [[DSM]] | [[Saba Capital Management, L.P]] | $77K | 18 | +3.5% | open |
+| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | +4.4% | open |
+| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +0.4% | open |
+| 2026-10-27 | [[LEO]] | [[Saba Capital Management, L.P]] | $72K | 18 | +3.2% | open |
 
 
 ```dataview

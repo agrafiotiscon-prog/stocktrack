@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +10.0%/yr, double costs +3.7%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 4 | -1.3% | +3.7% | 50% |
+| 5 sessions | 5 | +0.2% | +3.7% | 60% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | – | pending |
-| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | $11K | 57 | – | pending |
-| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | -2.3% | open |
-| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | -0.4% | open |
-| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | +0.6% | open |
-| 2026-10-28 | [[BBT]] | [[Fitzgerald Margaret Boles]] | $10K | 36 | +0.6% | open |
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +3.4% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +3.4% | open |
-| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | -1.1% | open |
-| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | -1.1% | open |
-| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | -1.1% | open |
-| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +2.9% | open |
-| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +2.9% | open |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +2.9% | open |
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +7.5% | open |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +7.5% | open |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -2.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -8.5% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -8.5% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -8.5% | open |
+| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | $6K | 40 | – | pending |
+| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +0.8% | open |
+| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | $11K | 57 | +4.9% | open |
+| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | -1.2% | open |
+| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | +3.2% | open |
+| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | +4.1% | open |
+| 2026-10-28 | [[BBT]] | [[Fitzgerald Margaret Boles]] | $10K | 36 | +4.1% | open |
+| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +6.6% | open |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +6.6% | open |
+| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | -0.0% | open |
+| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | -0.0% | open |
+| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | -0.0% | open |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +6.2% | open |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +6.2% | open |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +6.2% | open |
+| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | +4.3% | open |
+| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | +4.3% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -2.1% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -7.7% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -7.7% | open |
 
 
 ```dataview

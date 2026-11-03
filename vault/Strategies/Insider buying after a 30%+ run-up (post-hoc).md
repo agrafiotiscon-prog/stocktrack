@@ -82,11 +82,12 @@ Cost sensitivity (63-session hold): no costs +22.2%/yr, double costs +17.5%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -6.0% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +9.6% | open |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +9.6% | open |
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -7.5% | open |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +17.2% | open |
+| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | – | pending |
+| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -3.2% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +11.2% | open |
+| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +11.2% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -9.9% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +14.9% | open |
 
 
 ```dataview

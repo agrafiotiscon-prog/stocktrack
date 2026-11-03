@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.8%/yr, double costs +3.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 18 | -3.3% | -1.7% | 22% |
+| 5 sessions | 23 | -1.4% | -0.3% | 39% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | – | pending |
-| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | – | pending |
-| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | $11K | 57 | – | pending |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | +1.8% | open |
-| 2026-10-29 | [[PNFP]] | [[INGRAM DAVID B]] | $992K | 43 | -0.6% | open |
-| 2026-10-29 | [[HBAN]] | [[TORGOW GARY]] | $200K | 40 | -0.7% | open |
-| 2026-10-29 | [[XYL]] | [[KOCH D CHRISTIAN]] | $986K | 52 | +1.1% | open |
-| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | -2.3% | open |
-| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | -0.8% | open |
-| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | -0.4% | open |
-| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | -6.8% | open |
-| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | $902K | 61 | -6.8% | open |
-| 2026-10-28 | [[BPRE]] | [[KAMFAR RAMIN]] | $2.2M | 55 | +1.5% | open |
-| 2026-10-28 | [[GOLD]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | $3.9M | 48 | -2.0% | open |
-| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | $242K | 46 | -0.5% | open |
-| 2026-10-28 | [[BBT]] | [[Polito Karyn]] | $31K | 49 | +0.6% | open |
-| 2026-10-28 | [[WS]] | [[Ganem George John III]] | $31K | 40 | -4.0% | open |
-| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | +0.6% | open |
-| 2026-10-28 | [[HBAN]] | [[ROLLINS JAMES D III]] | $254K | 46 | +0.6% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +9.6% | open |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Fund X, L.P]] | $20.0M | 70 | – | pending |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Partners XIV, L.P]] | $18.0M | 70 | – | pending |
+| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | – | pending |
+| 2026-11-02 | [[ROL]] | [[LOR INC]] | $50.0M | 41 | – | pending |
+| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | – | pending |
+| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | – | pending |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | – | pending |
+| 2026-11-02 | [[SEVN]] | [[Lorenzini Thomas J]] | $33K | 48 | – | pending |
+| 2026-11-02 | [[SEVN]] | [[Jordan Matthew P]] | $66K | 40 | – | pending |
+| 2026-11-02 | [[BBTX]] | [[Jeggle Helmut Wolfgang]] | $6.0M | 46 | – | pending |
+| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | $6K | 40 | – | pending |
+| 2026-11-02 | [[OCFC]] | [[Katsoulis Nicos]] | $178K | 53 | – | pending |
+| 2026-11-02 | [[LSTR]] | [[Lonegro Frank A]] | $715K | 57 | – | pending |
+| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +0.8% | open |
+| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | +2.7% | open |
+| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | $11K | 57 | +4.9% | open |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -0.7% | open |
+| 2026-10-29 | [[SCQCU]] | [[Das Soumen]] | $2.7M | 56 | +1.2% | open |
+| 2026-10-29 | [[PNFP]] | [[INGRAM DAVID B]] | $992K | 43 | +2.4% | open |
+| 2026-10-29 | [[HBAN]] | [[TORGOW GARY]] | $200K | 40 | +1.2% | open |
 
 
 ```dataview

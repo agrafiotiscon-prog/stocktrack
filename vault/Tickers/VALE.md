@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[de Souza Funo Elaine Maria]] | Accounting Officer | $3K | 16 | – | pending |
+| 2026-10-30 | [[de Souza Funo Elaine Maria]] | Accounting Officer | $3K | 16 | -1.0% | open |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +12.8%/yr, double costs +6.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 2 | -7.6% | -0.3% | 0% |
+| 5 sessions | 3 | -2.6% | -0.3% | 33% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | +1.8% | open |
-| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | -0.8% | open |
-| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | -6.8% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +9.6% | open |
-| 2026-10-27 | [[AIOK]] | [[Panagiotidis Petros Panagiotis]] | $1.1M | 51 | +39.9% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +3.4% | open |
-| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | -1.1% | open |
-| 2026-10-27 | [[TIPT]] | [[Barnes Michael Gene]] | $502K | 29 | +3.8% | open |
-| 2026-10-26 | [[THRM]] | [[Presley William T]] | $130K | 53 | +5.4% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -2.9% | open |
-| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -1.0% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -2.9% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.7% | open |
-| 2026-10-14 | [[INBX]] | [[Lappe Mark]] | $849K | 47 | -16.7% | open |
-| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -6.5% | open |
-| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +0.2% | open |
-| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -10.1% | open |
-| 2026-10-13 | [[HEI]] | [[MENDELSON VICTOR H]] | $175K | 69 | +10.6% | open |
-| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -6.7% | open |
-| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | +1.9% | open |
+| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | – | pending |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | – | pending |
+| 2026-11-02 | [[LSTR]] | [[Lonegro Frank A]] | $715K | 57 | – | pending |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -0.7% | open |
+| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | +2.4% | open |
+| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | -13.4% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +11.2% | open |
+| 2026-10-27 | [[AIOK]] | [[Panagiotidis Petros Panagiotis]] | $1.1M | 51 | -25.4% | open |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +6.6% | open |
+| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | -0.0% | open |
+| 2026-10-27 | [[TIPT]] | [[Barnes Michael Gene]] | $502K | 29 | +7.6% | open |
+| 2026-10-26 | [[THRM]] | [[Presley William T]] | $130K | 53 | +7.3% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -2.1% | open |
+| 2026-10-20 | [[DX]] | [[Popenoe Smriti Laxman]] | $106K | 39 | -1.2% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -11.0% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.3% | open |
+| 2026-10-14 | [[INBX]] | [[Lappe Mark]] | $849K | 47 | -15.8% | open |
+| 2026-10-14 | [[TDIC]] | [[Seto Wai Yue]] | $600K | 58 | -6.6% | open |
+| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +0.1% | open |
+| 2026-10-13 | [[GME]] | [[Cohen Ryan]] | $22.8M | 71 | -9.8% | open |
 
 
 ```dataview

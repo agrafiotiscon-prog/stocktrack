@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +9.0%/yr, double costs +3.4%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 51 | -0.3% | -0.1% | 49% |
+| 5 sessions | 70 | +0.8% | +1.3% | 59% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | – | pending |
-| 2026-10-30 | [[LYCA]] | [[Venrock Healthcare Capital Partners III, L.P]] | $645K | 28 | – | pending |
-| 2026-10-30 | [[NBIS]] | [[Grimme Arne]] | $25K | 5 | – | pending |
-| 2026-10-30 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $8.7M | 24 | – | pending |
-| 2026-10-30 | [[VALE]] | [[de Souza Funo Elaine Maria]] | $3K | 16 | – | pending |
-| 2026-10-30 | [[PEBK]] | [[HOWARD DOUGLAS S]] | $22K | 20 | – | pending |
-| 2026-10-30 | [[PEO]] | [[Nelson Jane Musser]] | $30K | 33 | – | pending |
-| 2026-10-30 | [[OCFC]] | [[Barrett Patrick Sean]] | $90K | 37 | – | pending |
-| 2026-10-30 | [[PKBK]] | [[PANTILIONE VITO S]] | $43K | 33 | – | pending |
-| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | – | pending |
-| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | $11K | 57 | – | pending |
-| 2026-10-30 | [[BMRC]] | [[Anderson Nicolas C]] | $1K | 14 | – | pending |
-| 2026-10-30 | [[MED]] | [[Kiai Parsa]] | $68K | 38 | – | pending |
-| 2026-10-30 | [[BHRB]] | [[McLaughlin Shawn Patrick]] | $36K | 20 | – | pending |
-| 2026-10-30 | [[USCB]] | [[Rodriguez Ramon M]] | $20K | 35 | – | pending |
-| 2026-10-29 | [[LRN]] | [[Haggart Dylan G]] | $62K | 21 | -2.3% | open |
-| 2026-10-29 | [[ARCC]] | [[HENSON MARY BETH]] | $46K | 26 | +0.3% | open |
-| 2026-10-29 | [[DSM]] | [[Saba Capital Management, L.P]] | $11K | 9 | -0.5% | open |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | +1.8% | open |
-| 2026-10-29 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.3M | 22 | -1.4% | open |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Fund X, L.P]] | $20.0M | 70 | – | pending |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Partners XIV, L.P]] | $18.0M | 70 | – | pending |
+| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | – | pending |
+| 2026-11-02 | [[NTRS]] | [[Moritz Robert Edward Jr]] | $40K | 23 | – | pending |
+| 2026-11-02 | [[JOF]] | [[Saba Capital Management, L.P]] | $702K | 31 | – | pending |
+| 2026-11-02 | [[ROL]] | [[LOR INC]] | $50.0M | 41 | – | pending |
+| 2026-11-02 | [[NARA]] | [[LeComte Brian]] | $1K | 32 | – | pending |
+| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | – | pending |
+| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | – | pending |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | – | pending |
+| 2026-11-02 | [[HDSN]] | [[Hartree Partners, LP]] | $1.3M | 36 | – | pending |
+| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | – | pending |
+| 2026-11-02 | [[PUMP]] | [[Weatherl Caleb Lyle]] | $16K | 32 | – | pending |
+| 2026-11-02 | [[BANC]] | [[WOLFF JARED M]] | $100K | 39 | – | pending |
+| 2026-11-02 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $8.8M | 24 | – | pending |
+| 2026-11-02 | [[SEVN]] | [[Lorenzini Thomas J]] | $33K | 48 | – | pending |
+| 2026-11-02 | [[SEVN]] | [[Jordan Matthew P]] | $66K | 40 | – | pending |
+| 2026-11-02 | [[BBTX]] | [[Jeggle Helmut Wolfgang]] | $6.0M | 46 | – | pending |
+| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | $6K | 40 | – | pending |
+| 2026-11-02 | [[ATEC]] | [[Demski David M]] | $409K | 24 | – | pending |
 
 
 ```dataview

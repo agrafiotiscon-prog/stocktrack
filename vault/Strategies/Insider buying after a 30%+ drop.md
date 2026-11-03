@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 5 | -8.7% | -11.6% | 0% |
+| 5 sessions | 7 | -3.8% | -2.9% | 29% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | – | pending |
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +3.4% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +3.4% | open |
-| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | +6.8% | open |
-| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +2.9% | open |
-| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +2.9% | open |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +2.9% | open |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -2.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -8.5% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -8.5% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -8.5% | open |
-| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -8.5% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -2.9% | open |
-| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | +20.3% | open |
-| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | +20.3% | open |
-| 2026-10-19 | [[CNXU]] | [[Purcell Lynn Sebastian]] | $500K | 36 | -22.4% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -2.9% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -2.9% | open |
-| 2026-10-16 | [[SAH]] | [[Rusnak Paul P]] | $752K | 28 | -0.6% | open |
-| 2026-10-15 | [[IMSR]] | [[Pardee Charles G]] | $22K | 55 | +1.6% | open |
+| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | – | pending |
+| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | – | pending |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | – | pending |
+| 2026-11-02 | [[HDSN]] | [[Hartree Partners, LP]] | $1.3M | 36 | – | pending |
+| 2026-11-02 | [[PUMP]] | [[Weatherl Caleb Lyle]] | $16K | 32 | – | pending |
+| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +0.8% | open |
+| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +6.6% | open |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +6.6% | open |
+| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | +10.9% | open |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +6.2% | open |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +6.2% | open |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +6.2% | open |
+| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -2.1% | open |
+| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -7.7% | open |
+| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -7.7% | open |
+| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -7.7% | open |
+| 2026-10-22 | [[RAPP]] | [[MARAGANORE JOHN]] | $249K | 71 | -7.7% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -2.1% | open |
+| 2026-10-20 | [[NVA]] | [[Geller Avi]] | $5K | 32 | +47.2% | open |
+| 2026-10-20 | [[NVA]] | [[Gerteisen Christopher]] | $22K | 35 | +47.2% | open |
 
 
 ```dataview

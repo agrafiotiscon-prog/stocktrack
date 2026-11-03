@@ -71,33 +71,33 @@ Cost sensitivity (63-session hold): no costs +12.1%/yr, double costs +6.8%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 4 | -5.9% | -2.6% | 0% |
+| 5 sessions | 5 | -3.2% | -2.6% | 20% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[OCFC]] | [[Barrett Patrick Sean]] | $90K | 37 | – | pending |
-| 2026-10-29 | [[UTMD]] | [[CORNWELL KEVIN L]] | $67K | 35 | +1.4% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +9.6% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +3.4% | open |
-| 2026-10-27 | [[TIPT]] | [[Barnes Michael Gene]] | $502K | 29 | +3.8% | open |
-| 2026-10-27 | [[KIO]] | [[Takao Justin]] | $78K | 51 | +3.7% | open |
-| 2026-10-26 | [[THRM]] | [[Presley William T]] | $130K | 53 | +5.4% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -2.9% | open |
-| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | +0.4% | open |
-| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | $97K | 52 | -1.0% | open |
-| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | -1.2% | open |
-| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -2.9% | open |
-| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -2.9% | open |
-| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -6.5% | open |
-| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.7% | open |
-| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | +14.0% | open |
-| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +0.2% | open |
-| 2026-10-13 | [[SAR]] | [[Oberbeck Christian L]] | $446K | 61 | -6.7% | open |
-| 2026-10-08 | [[IMMR]] | [[Singer Eric]] | $293K | 44 | +1.9% | open |
-| 2026-10-07 | [[AGMB]] | [[Knotnerus Tim Jasper]] | $94K | 67 | -13.2% | open |
+| 2026-11-02 | [[BANC]] | [[WOLFF JARED M]] | $100K | 39 | – | pending |
+| 2026-11-02 | [[BLX]] | [[Diaz Adriana Lizzeth]] | $94K | 38 | – | pending |
+| 2026-11-02 | [[LSTR]] | [[Lonegro Frank A]] | $715K | 57 | – | pending |
+| 2026-10-30 | [[OCFC]] | [[Barrett Patrick Sean]] | $90K | 37 | +4.2% | open |
+| 2026-10-29 | [[UTMD]] | [[CORNWELL KEVIN L]] | $67K | 35 | +5.6% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +11.2% | open |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +6.6% | open |
+| 2026-10-27 | [[TIPT]] | [[Barnes Michael Gene]] | $502K | 29 | +7.6% | open |
+| 2026-10-27 | [[KIO]] | [[Takao Justin]] | $78K | 51 | +3.5% | open |
+| 2026-10-26 | [[THRM]] | [[Presley William T]] | $130K | 53 | +7.3% | open |
+| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -2.1% | open |
+| 2026-10-21 | [[CRF]] | [[Bradshaw Joshua]] | $118K | 53 | +0.5% | open |
+| 2026-10-21 | [[CLM]] | [[Bradshaw Joshua]] | $97K | 52 | -0.9% | open |
+| 2026-10-21 | [[DX]] | [[BOSTON BYRON L]] | $100K | 50 | -1.3% | open |
+| 2026-10-19 | [[APLD]] | [[Cummins Wes]] | $1.0M | 60 | -11.0% | open |
+| 2026-10-19 | [[APLD]] | [[Zhang Jason Gechen]] | $5.7M | 71 | -11.0% | open |
+| 2026-10-16 | [[BORR]] | [[Snowling Harvey Edward]] | $1.5M | 72 | -13.8% | open |
+| 2026-10-15 | [[FLSC]] | [[Cha Albert]] | $3.0M | 70 | -1.3% | open |
+| 2026-10-14 | [[IMSR]] | [[Irish Simon]] | $51K | 46 | +6.4% | open |
+| 2026-10-13 | [[RTSN]] | [[Keller Eric L]] | $250K | 57 | +0.1% | open |
 
 
 ```dataview

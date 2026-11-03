@@ -12,6 +12,6 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -6.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[GOLD]] | 10% Owner | $3.9M | 48 | -2.0% |
-| 2026-10-15 | [[GOLD]] | 10% Owner | $2.7M | 45 | -2.3% |
-| 2026-10-13 | [[GOLD]] | 10% Owner | $1.3M | 38 | -1.3% |
+| 2026-10-28 | [[GOLD]] | 10% Owner | $3.9M | 48 | +3.8% |
+| 2026-10-15 | [[GOLD]] | 10% Owner | $2.7M | 45 | +3.5% |
+| 2026-10-13 | [[GOLD]] | 10% Owner | $1.3M | 38 | +4.5% |

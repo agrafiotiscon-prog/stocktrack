@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-10-31"
+updated: "2026-11-03"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-10-28 Backtest]]: the latest full backtest
-- [[2026-10-31]]: today's research log
+- [[2026-11-03]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | Director | $20.4M | 87 | – |
-| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | Director | $100K | 42 | – |
-| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | Director | $11K | 57 | – |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | CEO | $1.1M | 52 | +1.8% |
-| 2026-10-29 | [[PNFP]] | [[INGRAM DAVID B]] | Director | $992K | 43 | -0.6% |
-| 2026-10-29 | [[HBAN]] | [[TORGOW GARY]] | Director | $200K | 40 | -0.7% |
-| 2026-10-29 | [[XYL]] | [[KOCH D CHRISTIAN]] | Director | $986K | 52 | +1.1% |
-| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | Director | $47K | 64 | -2.3% |
-| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | President & CEO | $1.2M | 66 | -0.8% |
-| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | Director | $97K | 54 | -0.4% |
-| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | President and CEO | $440K | 62 | -6.8% |
-| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | Director | $902K | 61 | -6.8% |
-| 2026-10-28 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $2.2M | 55 | +1.5% |
-| 2026-10-28 | [[GOLD]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $3.9M | 48 | -2.0% |
-| 2026-10-28 | [[HXL]] | [[KEATING NEAL J]] | Director | $242K | 46 | -0.5% |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Fund X, L.P]] | 10% Owner | $20.0M | 70 | – |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Partners XIV, L.P]] | 10% Owner | $18.0M | 70 | – |
+| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | Director | $118K | 42 | – |
+| 2026-11-02 | [[ROL]] | [[LOR INC]] | 10% Owner | $50.0M | 41 | – |
+| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | Director | $300K | 47 | – |
+| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | President and CEO | $226K | 42 | – |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | President & CEO | $268K | 41 | – |
+| 2026-11-02 | [[SEVN]] | [[Lorenzini Thomas J]] | President and CIO | $33K | 48 | – |
+| 2026-11-02 | [[SEVN]] | [[Jordan Matthew P]] | Director | $66K | 40 | – |
+| 2026-11-02 | [[BBTX]] | [[Jeggle Helmut Wolfgang]] | Director | $6.0M | 46 | – |
+| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | Director | $6K | 40 | – |
+| 2026-11-02 | [[OCFC]] | [[Katsoulis Nicos]] | Director | $178K | 53 | – |
+| 2026-11-02 | [[LSTR]] | [[Lonegro Frank A]] | President & CEO | $715K | 57 | – |
+| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | Director | $20.4M | 87 | +0.8% |
+| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | Director | $100K | 42 | +2.7% |
 
 
 ## Live queries (Dataview plugin)
