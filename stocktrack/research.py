@@ -343,6 +343,23 @@ def write_dashboard(data_dir: str | Path = "data", out_dir: str | Path = "dashbo
     return build_dashboard(out_dir, res, led.load(data / "picks.csv"), hypotheses, today, advisor)
 
 
+def write_paper(data_dir: str | Path = "data", out_dir: str | Path = "paper", today: str | None = None) -> list[Path]:
+    """Write the forward-test interim report (HTML, and PDF when a local Chromium can print it)."""
+    from stocktrack import ledger as led
+    from stocktrack.paper import build_paper
+
+    data = Path(data_dir)
+    res = json.loads((data / "backtest" / "latest.json").read_text())
+    hyp_path = data / "backtest" / "hypotheses.json"
+    hypotheses = json.loads(hyp_path.read_text()) if hyp_path.exists() else None
+    try:
+        commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True,
+                                check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        commit = None
+    return build_paper(out_dir, led.load(data / "picks.csv"), res, hypotheses, today, commit)
+
+
 def daily(http: HttpClient, data_dir: str | Path = "data", vault_dir: str | Path = "vault",
           today: str | None = None, force_backtest: bool = False, scan_days: int = 5, echo=print,
           dashboard_dir: str | Path | None = "dashboard") -> dict:
