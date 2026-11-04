@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-27 PDI Morris Sonya\|2026-10-27]] | [[Morris Sonya]] | Director | $82K | 41 | +4.7% | open |
-| [[2026-10-08 PDI FLATTUM DAVID C\|2026-10-08]] | [[FLATTUM DAVID C]] | Director | $250K | 66 | +5.3% | open |
-| [[2026-09-28 PDI Rappaport Alan\|2026-09-28]] | [[Rappaport Alan]] | Director | $76K | 53 | +7.0% | open |
+| [[2026-10-27 PDI Morris Sonya\|2026-10-27]] | [[Morris Sonya]] | Director | $82K | 41 | +6.4% | open |
+| [[2026-10-08 PDI FLATTUM DAVID C\|2026-10-08]] | [[FLATTUM DAVID C]] | Director | $250K | 66 | +7.0% | open |
+| [[2026-09-28 PDI Rappaport Alan\|2026-09-28]] | [[Rappaport Alan]] | Director | $76K | 53 | +8.7% | open |

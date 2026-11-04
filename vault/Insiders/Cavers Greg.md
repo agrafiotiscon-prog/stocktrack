@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[HELP]] | Chief Financial Officer | $39K | 60 | -26.0% |
+| 2026-10-01 | [[HELP]] | Chief Financial Officer | $39K | 60 | -24.4% |

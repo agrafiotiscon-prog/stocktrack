@@ -10,5 +10,6 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[LRN]] | Director | $62K | 21 | -5.1% |
-| 2026-10-27 | [[LRN]] | Director | $12.2M | 50 | -4.0% |
+| 2026-11-03 | [[LRN]] | Director | $17.6M | 52 | – |
+| 2026-10-29 | [[LRN]] | Director | $62K | 21 | -6.2% |
+| 2026-10-27 | [[LRN]] | Director | $12.2M | 50 | -5.1% |

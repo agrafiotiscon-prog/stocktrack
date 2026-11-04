@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-02 JBLU BONEPARTH PETER\|2026-11-02]] | [[BONEPARTH PETER]] | Director | $300K | 47 | – | pending |
+| [[2026-11-02 JBLU BONEPARTH PETER\|2026-11-02]] | [[BONEPARTH PETER]] | Director | $300K | 47 | -3.3% | open |

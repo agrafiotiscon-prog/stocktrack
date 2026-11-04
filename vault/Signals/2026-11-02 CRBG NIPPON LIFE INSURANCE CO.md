@@ -7,22 +7,22 @@ role: "10% Owner"
 filed: "2026-11-02"
 traded: "2026-10-29"
 score: 24
-value: 8750953
+value: 8750950
 cluster: 1
 insider_type: "unclassified"
 price: 35.04
 strategies: ["all_liquid"]
-entry_date: ""
-entry_price: 
-status: "pending"
-abn_now: 
-ret_now: 
+entry_date: "2026-11-03"
+entry_price: 35.57
+status: "open"
+abn_now: 0.0026272
+ret_now: 0.00477936
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: false
+forward_test: true
 tags: ["signal", "strategy/all_liquid"]
 ---
 
@@ -39,15 +39,15 @@ tags: ["signal", "strategy/all_liquid"]
 | Score / cluster | 24 / 1 insider(s) |
 | Insider type / track record | unclassified / no record |
 | Prior 3 months | +11.7% |
-| Entry | awaiting next open |
-| Status | pending |
+| Entry | 2026-11-03 @ $35.57 |
+| Status | open |
 
 
 ## Outcome vs SPY
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | – |
+| – | – | – | – | – | +0.3% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1889539/000119312526443677/0001193125-26-443677-index.htm)

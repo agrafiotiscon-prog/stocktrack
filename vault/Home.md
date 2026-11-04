@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-03"
+updated: "2026-11-04"
 ---
 
 # Insider Buying Research
@@ -9,36 +9,36 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
-- [[2026-10-28 Backtest]]: the latest full backtest
-- [[2026-11-03]]: today's research log
+- [[2026-11-04 Backtest]]: the latest full backtest
+- [[2026-11-04]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
 
-- On average a stock beat the S&P 500 by **+0.8%** over the 3 months after an insider purchase was filed (95% CI -0.1% to +2.0%, 101,022 signals since 2006). That is roughly +3.4% a year, but the median stock *lagged* by 0.9%.
-- The edge was real in **2006-2015** (+7.9% a year, p 0.006) and has **faded since 2016** (+1.1% a year, p 0.768).
-- The best simulated portfolio (*Insider buying after a 30%+ run-up (post-hoc)*) returned +20.1% a year after costs with a 40% max drawdown, against SPY's +11.1% and 55%.
+- On average a stock beat the S&P 500 by **+0.8%** over the 3 months after an insider purchase was filed (95% CI -0.1% to +2.0%, 100,883 signals since 2006). That is roughly +3.4% a year, but the median stock *lagged* by 0.9%.
+- The edge was real in **2006-2015** (+7.8% a year, p 0.006) and has **faded since 2016** (+0.8% a year, p 0.827).
+- The best simulated portfolio (*Insider buying after a 30%+ run-up (post-hoc)*) returned +19.9% a year after costs with a 40% max drawdown, against SPY's +10.9% and 55%.
 - Survivorship: about half of all insider buys are in companies that no longer trade and can't be priced. If those did like a typical priced buy, the average falls from +0.9% to -0.1%; if they did badly, to -12.6%.
 
 ## Latest notable buys
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[ASPE]] | [[ARCH Venture Fund X, L.P]] | 10% Owner | $20.0M | 70 | – |
-| 2026-11-02 | [[ASPE]] | [[ARCH Venture Partners XIV, L.P]] | 10% Owner | $18.0M | 70 | – |
-| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | Director | $118K | 42 | – |
-| 2026-11-02 | [[ROL]] | [[LOR INC]] | 10% Owner | $50.0M | 41 | – |
-| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | Director | $300K | 47 | – |
-| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | President and CEO | $226K | 42 | – |
-| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | President & CEO | $268K | 41 | – |
-| 2026-11-02 | [[SEVN]] | [[Lorenzini Thomas J]] | President and CIO | $33K | 48 | – |
-| 2026-11-02 | [[SEVN]] | [[Jordan Matthew P]] | Director | $66K | 40 | – |
-| 2026-11-02 | [[BBTX]] | [[Jeggle Helmut Wolfgang]] | Director | $6.0M | 46 | – |
-| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | Director | $6K | 40 | – |
-| 2026-11-02 | [[OCFC]] | [[Katsoulis Nicos]] | Director | $178K | 53 | – |
-| 2026-11-02 | [[LSTR]] | [[Lonegro Frank A]] | President & CEO | $715K | 57 | – |
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | Director | $20.4M | 87 | +0.8% |
-| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | Director | $100K | 42 | +2.7% |
+| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | 10% Owner | $26.9M | 40 | – |
+| 2026-11-03 | [[LRN]] | [[Haggart Dylan G]] | Director | $17.6M | 52 | – |
+| 2026-11-03 | [[BA]] | [[Buckley Mortimer J]] | Director | $998K | 64 | – |
+| 2026-11-03 | [[BA]] | [[MOLLENKOPF STEVEN M]] | Director | $510K | 61 | – |
+| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | CEO | $1.0M | 62 | – |
+| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $46.6M | 74 | – |
+| 2026-11-03 | [[ENPH]] | [[Trivedi Shanker]] | Director | $31K | 49 | – |
+| 2026-11-03 | [[RNST]] | [[LEVY JONATHAN A]] | Director | $82K | 41 | – |
+| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | Director | $51.7M | 58 | – |
+| 2026-11-03 | [[STRZ]] | [[MACDONALD SCOTT D]] | CFO and Treasurer | $56K | 48 | – |
+| 2026-11-03 | [[LKQ]] | [[Powell Michael Scott]] | Director | $192K | 57 | – |
+| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | Director | $400K | 60 | – |
+| 2026-11-03 | [[CAT]] | [[Fish James C Jr]] | Director | $620K | 45 | – |
+| 2026-11-03 | [[TRTX]] | [[SILVERSTEIN WENDY]] | Director | $253K | 58 | – |
+| 2026-11-03 | [[TRTX]] | [[Gillmore Michael]] | Director | $13K | 53 | – |
 
 
 ## Live queries (Dataview plugin)

@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[CLH]] | Director | $39K | 23 | – |
-| 2026-10-28 | [[BBT]] | Director | $31K | 49 | +4.1% |
+| 2026-11-02 | [[CLH]] | Director | $39K | 23 | -0.3% |
+| 2026-10-28 | [[BBT]] | Director | $31K | 49 | +1.5% |

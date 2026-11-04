@@ -12,4 +12,4 @@ Backtest record: 47 earlier buys, average 3-month excess vs SPY -0.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-20 | [[ISBA]] | Director | $300 | 13 | +11.5% |
+| 2026-10-20 | [[ISBA]] | Director | $300 | 13 | +8.7% |

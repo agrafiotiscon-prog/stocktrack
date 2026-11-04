@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-28 | [[Babcock Ken]] | Director | $223K | 38 | -14.1% | open |
+| 2026-10-28 | [[Babcock Ken]] | Director | $223K | 38 | -13.7% | open |

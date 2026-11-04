@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[ASPE]] | 10% Owner | $18.0M | 70 | – |
+| 2026-11-02 | [[ASPE]] | 10% Owner | $18.0M | 70 | -5.7% |

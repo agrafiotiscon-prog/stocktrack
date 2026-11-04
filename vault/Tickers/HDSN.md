@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[Hartree Partners, LP]] | 10% Owner | $1.3M | 36 | – | pending |
-| 2026-09-28 | [[Hartree Partners, LP]] | 10% Owner | $605K | 30 | -15.6% | open |
+| 2026-11-02 | [[Hartree Partners, LP]] | 10% Owner | $1.3M | 36 | -0.2% | open |
+| 2026-09-28 | [[Hartree Partners, LP]] | 10% Owner | $605K | 30 | -14.2% | open |

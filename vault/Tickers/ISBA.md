@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-20 | [[Bourland Jill]] | Director | $300 | 13 | +11.5% | open |
+| 2026-10-20 | [[Bourland Jill]] | Director | $300 | 13 | +8.7% | open |

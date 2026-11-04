@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "momentum_buy"
-signals: 3924
-cagr: 0.201426
-spy_cagr: 0.110525
-sharpe: 0.831829
+signals: 3921
+cagr: 0.199353
+spy_cagr: 0.109342
+sharpe: 0.823839
 max_drawdown: 0.401829
-holdout_excess: 0.218881
+holdout_excess: 0.207925
 ---
 
 # Insider buying after a 30%+ run-up (post-hoc)
@@ -20,55 +20,55 @@ Rule key: `momentum_buy`. Liquid stocks only ($2+, $1M+/day), plan purchases exc
 
 | Measure | Value |
 |---|---|
-| Signals | 3,924 |
-| 3-month excess vs SPY (mean / median) | +2.7% / -1.9% |
+| Signals | 3,921 |
+| 3-month excess vs SPY (mean / median) | +2.6% / -1.9% |
 | Beat SPY over 3 months | 47% |
 | Entering one session later | +2.2% |
 | vs surviving stocks | +3.2% |
-| 2006-2015 excess /yr | +9.6% (p 0.163) |
-| 2016+ excess /yr | +21.9% (p 0.020) |
+| 2006-2015 excess /yr | +9.3% (p 0.173) |
+| 2016+ excess /yr | +20.8% (p 0.027) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +12.1% | +11.1% | 0.66 | 0.55 | 47% | 0.47 | +6.3% | 29% | 2,007 | 6.5% | +8.4% / 0.59 / 31% |
-| 63d | +20.1% | +11.1% | 0.83 | 0.55 | 40% | 0.93 | +10.4% | 52% | 1,231 | 3.1% | +13.6% / 0.78 / 26% |
-| 126d | +14.4% | +11.1% | 0.56 | 0.55 | 56% | 1.17 | +3.6% | 52% | 748 | 2.1% | +7.7% / 0.41 / 38% |
+| 21d | +12.2% | +10.9% | 0.66 | 0.55 | 47% | 0.48 | +6.4% | 33% | 2,006 | 6.5% | +8.4% / 0.60 / 31% |
+| 63d | +19.9% | +10.9% | 0.82 | 0.55 | 40% | 0.93 | +10.2% | 52% | 1,229 | 3.1% | +13.4% / 0.77 / 26% |
+| 126d | +14.0% | +10.9% | 0.54 | 0.55 | 56% | 1.17 | +3.3% | 52% | 747 | 2.1% | +7.3% / 0.39 / 37% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +22.2%/yr, double costs +17.5%/yr.
+Cost sensitivity (63-session hold): no costs +22.0%/yr, double costs +17.2%/yr.
 
 
 ### Year by year (63-session hold)
 
 | Year | Strategy | SPY | Difference |
 |---|---|---|---|
-| 2006 | +10.8% | +13.3% | -2.5% |
-| 2007 | +14.0% | +5.1% | +8.8% |
+| 2006 | +12.1% | +13.3% | -1.2% |
+| 2007 | +15.2% | +5.1% | +10.1% |
 | 2008 | -18.6% | -36.8% | +18.2% |
-| 2009 | +76.5% | +26.4% | +50.2% |
-| 2010 | +12.7% | +15.1% | -2.4% |
+| 2009 | +78.3% | +26.4% | +52.0% |
+| 2010 | +11.2% | +15.1% | -3.8% |
 | 2011 | -6.4% | +1.9% | -8.3% |
 | 2012 | +13.3% | +16.0% | -2.7% |
 | 2013 | +54.5% | +32.3% | +22.2% |
-| 2014 | -3.7% | +13.5% | -17.1% |
-| 2015 | -11.1% | +1.2% | -12.3% |
-| 2016 | +7.3% | +12.0% | -4.7% |
+| 2014 | -5.7% | +13.5% | -19.1% |
+| 2015 | -11.4% | +1.2% | -12.6% |
+| 2016 | +7.9% | +12.0% | -4.1% |
 | 2017 | +31.3% | +21.7% | +9.6% |
 | 2018 | +29.9% | -4.6% | +34.5% |
 | 2019 | +25.5% | +31.2% | -5.7% |
 | 2020 | +131.0% | +18.3% | +112.7% |
-| 2021 | +32.6% | +28.7% | +3.9% |
-| 2022 | -6.0% | -18.2% | +12.1% |
-| 2023 | +0.8% | +26.2% | -25.4% |
+| 2021 | +31.0% | +28.7% | +2.3% |
+| 2022 | -7.1% | -18.2% | +11.1% |
+| 2023 | +0.5% | +26.2% | -25.7% |
 | 2024 | +6.4% | +24.9% | -18.5% |
-| 2025 | +88.8% | +17.7% | +71.1% |
-| 2026 | +17.7% | +13.7% | +4.0% |
+| 2025 | +90.1% | +17.7% | +72.4% |
+| 2026 | +16.2% | +11.5% | +4.7% |
 
 
 ## Live forward test
@@ -82,12 +82,12 @@ Cost sensitivity (63-session hold): no costs +22.2%/yr, double costs +17.5%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | – | pending |
-| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -3.2% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +11.2% | open |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +11.2% | open |
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -9.9% | open |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +14.9% | open |
+| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | +1.4% | open |
+| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -1.8% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +8.3% | open |
+| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +8.3% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -8.8% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +14.0% | open |
 
 
 ```dataview

@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +98.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[PUMP]] | Chief Financial Officer | $16K | 32 | – |
+| 2026-11-02 | [[PUMP]] | Chief Financial Officer | $16K | 32 | +1.1% |

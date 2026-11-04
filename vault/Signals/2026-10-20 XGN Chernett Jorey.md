@@ -15,8 +15,8 @@ strategies: ["all_liquid", "proven_insider", "momentum_buy"]
 entry_date: "2026-10-21"
 entry_price: 7.46
 status: "open"
-abn_now: 0.149394
-ret_now: 0.124665
+abn_now: 0.139774
+ret_now: 0.117962
 abn_5: 0.0448535
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/proven_insider", "strategy/mom
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| +4.5% | – | – | – | – | +14.9% |
+| +4.5% | – | – | – | – | +14.0% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1274737/000119380526001382/0001193805-26-001382-index.htm)

@@ -9,9 +9,9 @@ signals: 6
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[Saba Capital Management, L.P]] | 10% Owner | $72K | 18 | +3.2% | open |
-| 2026-10-26 | [[Saba Capital Management, L.P]] | 10% Owner | $369K | 27 | +3.9% | open |
-| 2026-10-22 | [[Saba Capital Management, L.P]] | 10% Owner | $263K | 25 | +4.7% | open |
-| [[2026-10-22 LEO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $1K | 40 | +4.7% | open |
-| 2026-10-21 | [[Saba Capital Management, L.P]] | 10% Owner | $44K | 15 | +6.4% | open |
-| 2026-10-20 | [[Saba Capital Management, L.P]] | 10% Owner | $1.9M | 37 | +6.3% | open |
+| 2026-10-27 | [[Saba Capital Management, L.P]] | 10% Owner | $72K | 18 | +2.9% | open |
+| 2026-10-26 | [[Saba Capital Management, L.P]] | 10% Owner | $369K | 27 | +3.6% | open |
+| 2026-10-22 | [[Saba Capital Management, L.P]] | 10% Owner | $263K | 25 | +4.4% | open |
+| [[2026-10-22 LEO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $1K | 40 | +4.4% | open |
+| 2026-10-21 | [[Saba Capital Management, L.P]] | 10% Owner | $44K | 15 | +6.1% | open |
+| 2026-10-20 | [[Saba Capital Management, L.P]] | 10% Owner | $1.9M | 37 | +6.0% | open |
