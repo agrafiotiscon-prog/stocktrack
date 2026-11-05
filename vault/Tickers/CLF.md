@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-23 | [[Camara Edilson]] | Director | $100K | 32 | +3.1% | open |
+| 2026-10-23 | [[Camara Edilson]] | Director | $100K | 32 | -8.0% | open |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.6%/yr, double costs +7.6%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 9 | -0.5% | +2.2% | 56% |
+| 5 sessions | 11 | -1.1% | +2.2% | 55% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[BA]] | [[Buckley Mortimer J]] | $998K | 64 | – | pending |
-| 2026-11-03 | [[BA]] | [[MOLLENKOPF STEVEN M]] | $510K | 61 | – | pending |
-| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | – | pending |
-| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | – | pending |
-| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | $400K | 60 | – | pending |
-| 2026-11-02 | [[ASPE]] | [[ARCH Venture Fund X, L.P]] | $20.0M | 70 | -5.7% | open |
-| 2026-11-02 | [[ASPE]] | [[ARCH Venture Partners XIV, L.P]] | $18.0M | 70 | -5.7% | open |
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +1.8% | open |
-| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | -2.3% | open |
-| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | +0.6% | open |
-| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | -8.1% | open |
-| 2026-10-28 | [[TTMI]] | [[Ali Wajid]] | $902K | 61 | -8.1% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +8.3% | open |
-| 2026-10-27 | [[MSM]] | [[JACOBSON MITCHELL]] | $29.0M | 63 | +2.2% | open |
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +4.1% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +4.1% | open |
-| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | -1.2% | open |
-| 2026-10-27 | [[NPB]] | [[Boer Carrie L]] | $185K | 65 | -1.2% | open |
-| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | -1.2% | open |
-| 2026-10-26 | [[THRM]] | [[MASCARENAS PAUL ANTHONY]] | $533K | 61 | +3.4% | open |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
+| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | $50K | 64 | – | pending |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
+| 2026-11-04 | [[AN]] | [[Manley Michael Mark]] | $1.0M | 71 | – | pending |
+| 2026-11-04 | [[LSCC]] | [[Tamer Ford]] | $1.0M | 65 | – | pending |
+| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | – | pending |
+| 2026-11-03 | [[BA]] | [[Buckley Mortimer J]] | $998K | 64 | -0.5% | open |
+| 2026-11-03 | [[BA]] | [[MOLLENKOPF STEVEN M]] | $510K | 61 | -0.5% | open |
+| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | +0.1% | open |
+| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | +0.2% | open |
+| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | $400K | 60 | +3.1% | open |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Fund X, L.P]] | $20.0M | 70 | -3.7% | open |
+| 2026-11-02 | [[ASPE]] | [[ARCH Venture Partners XIV, L.P]] | $18.0M | 70 | -3.7% | open |
+| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +2.1% | open |
 
 
 ```dataview

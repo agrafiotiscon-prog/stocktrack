@@ -1,0 +1,12 @@
+---
+type: "ticker"
+ticker: "FBRT"
+company: "Franklin BSP Realty Trust, Inc."
+signals: 1
+---
+
+# FBRT: Franklin BSP Realty Trust, Inc.
+
+| Filed | Insider | Role | Value | Score | vs SPY so far | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-04 | [[ORTALE BUFORD H]] | Director | $5K | 15 | – | pending |

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-05 | [[Shattuck Katherine W]] | Director | $204 | 0 | +13.3% | open |
-| 2026-10-05 | [[Pellegrino Frank G]] | Director | $6K | 0 | +13.3% | open |
+| 2026-10-05 | [[Shattuck Katherine W]] | Director | $204 | 0 | +14.2% | open |
+| 2026-10-05 | [[Pellegrino Frank G]] | Director | $6K | 0 | +14.2% | open |

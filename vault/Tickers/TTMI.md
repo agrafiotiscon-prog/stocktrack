@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-28 TTMI Roks Edwin\|2026-10-28]] | [[Roks Edwin]] | President and CEO | $440K | 62 | -8.1% | open |
-| [[2026-10-28 TTMI Ali Wajid\|2026-10-28]] | [[Ali Wajid]] | Director | $902K | 61 | -8.1% | open |
+| [[2026-10-28 TTMI Roks Edwin\|2026-10-28]] | [[Roks Edwin]] | President and CEO | $440K | 62 | -18.8% | open |
+| [[2026-10-28 TTMI Ali Wajid\|2026-10-28]] | [[Ali Wajid]] | Director | $902K | 61 | -18.8% | open |

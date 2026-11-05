@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +8.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[OCFC]] | Senior EVP & CFO | $90K | 37 | +2.1% |
+| 2026-10-30 | [[OCFC]] | Senior EVP & CFO | $90K | 37 | +4.1% |

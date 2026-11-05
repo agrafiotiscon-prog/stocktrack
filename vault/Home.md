@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-04"
+updated: "2026-11-05"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-04 Backtest]]: the latest full backtest
-- [[2026-11-04]]: today's research log
+- [[2026-11-05]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | 10% Owner | $26.9M | 40 | – |
-| 2026-11-03 | [[LRN]] | [[Haggart Dylan G]] | Director | $17.6M | 52 | – |
-| 2026-11-03 | [[BA]] | [[Buckley Mortimer J]] | Director | $998K | 64 | – |
-| 2026-11-03 | [[BA]] | [[MOLLENKOPF STEVEN M]] | Director | $510K | 61 | – |
-| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | CEO | $1.0M | 62 | – |
-| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $46.6M | 74 | – |
-| 2026-11-03 | [[ENPH]] | [[Trivedi Shanker]] | Director | $31K | 49 | – |
-| 2026-11-03 | [[RNST]] | [[LEVY JONATHAN A]] | Director | $82K | 41 | – |
-| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | Director | $51.7M | 58 | – |
-| 2026-11-03 | [[STRZ]] | [[MACDONALD SCOTT D]] | CFO and Treasurer | $56K | 48 | – |
-| 2026-11-03 | [[LKQ]] | [[Powell Michael Scott]] | Director | $192K | 57 | – |
-| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | Director | $400K | 60 | – |
-| 2026-11-03 | [[CAT]] | [[Fish James C Jr]] | Director | $620K | 45 | – |
-| 2026-11-03 | [[TRTX]] | [[SILVERSTEIN WENDY]] | Director | $253K | 58 | – |
-| 2026-11-03 | [[TRTX]] | [[Gillmore Michael]] | Director | $13K | 53 | – |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | Director | $15.0M | 80 | – |
+| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | Chief Financial Officer | $207K | 55 | – |
+| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | Director | $1.7M | 66 | – |
+| 2026-11-04 | [[DOLE]] | [[Pale Fire Capital SE]] | 10% Owner | $12.9M | 47 | – |
+| 2026-11-04 | [[HGV]] | [[Wang Mark D]] | See Remarks | $499K | 46 | – |
+| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | Director | $324K | 59 | – |
+| 2026-11-04 | [[PRLB]] | [[Krishna Suresh]] | President and CEO | $52K | 49 | – |
+| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | EVP, Chief Financial Officer | $251K | 70 | – |
+| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | Director | $393K | 73 | – |
+| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | EVP, Chief Growth Officer | $99K | 67 | – |
+| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | EVP, Chief Technology Officer | $50K | 61 | – |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | Director | $400K | 65 | – |
+| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | Director | $50K | 64 | – |
+| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | EVP, Gen Counsel & Corp Sec | $101K | 48 | – |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | EVP & CFO | $300K | 65 | – |
 
 
 ## Live queries (Dataview plugin)

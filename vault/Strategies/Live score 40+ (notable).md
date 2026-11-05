@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.6%/yr, double costs +3.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 33 | -1.6% | -0.1% | 48% |
+| 5 sessions | 41 | -1.3% | +0.9% | 54% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | – | pending |
-| 2026-11-03 | [[LRN]] | [[Haggart Dylan G]] | $17.6M | 52 | – | pending |
-| 2026-11-03 | [[BA]] | [[Buckley Mortimer J]] | $998K | 64 | – | pending |
-| 2026-11-03 | [[BA]] | [[MOLLENKOPF STEVEN M]] | $510K | 61 | – | pending |
-| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | – | pending |
-| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | – | pending |
-| 2026-11-03 | [[ENPH]] | [[Trivedi Shanker]] | $31K | 49 | – | pending |
-| 2026-11-03 | [[RNST]] | [[LEVY JONATHAN A]] | $82K | 41 | – | pending |
-| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | – | pending |
-| 2026-11-03 | [[STRZ]] | [[MACDONALD SCOTT D]] | $56K | 48 | – | pending |
-| 2026-11-03 | [[LKQ]] | [[Powell Michael Scott]] | $192K | 57 | – | pending |
-| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | $400K | 60 | – | pending |
-| 2026-11-03 | [[CAT]] | [[Fish James C Jr]] | $620K | 45 | – | pending |
-| 2026-11-03 | [[TRTX]] | [[SILVERSTEIN WENDY]] | $253K | 58 | – | pending |
-| 2026-11-03 | [[TRTX]] | [[Gillmore Michael]] | $13K | 53 | – | pending |
-| 2026-11-03 | [[STRZ]] | [[Kapenstein James M]] | $11K | 40 | – | pending |
-| 2026-11-03 | [[STRZ]] | [[Hirsch Jeffrey]] | $111K | 55 | – | pending |
-| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | – | pending |
-| 2026-11-02 | [[ASPE]] | [[ARCH Venture Fund X, L.P]] | $20.0M | 70 | -5.7% | open |
-| 2026-11-02 | [[ASPE]] | [[ARCH Venture Partners XIV, L.P]] | $18.0M | 70 | -5.7% | open |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
+| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | – | pending |
+| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | – | pending |
+| 2026-11-04 | [[DOLE]] | [[Pale Fire Capital SE]] | $12.9M | 47 | – | pending |
+| 2026-11-04 | [[HGV]] | [[Wang Mark D]] | $499K | 46 | – | pending |
+| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | – | pending |
+| 2026-11-04 | [[PRLB]] | [[Krishna Suresh]] | $52K | 49 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | $50K | 64 | – | pending |
+| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | $101K | 48 | – | pending |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
+| 2026-11-04 | [[AN]] | [[Manley Michael Mark]] | $1.0M | 71 | – | pending |
+| 2026-11-04 | [[CACC]] | [[TRYFOROS THOMAS N]] | $1.5M | 54 | – | pending |
+| 2026-11-04 | [[LSCC]] | [[Tamer Ford]] | $1.0M | 65 | – | pending |
+| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | – | pending |
+| 2026-11-04 | [[SPTX]] | [[Torres Denice]] | $99K | 42 | – | pending |
 
 
 ```dataview

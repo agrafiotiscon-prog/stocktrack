@@ -77,26 +77,26 @@ Cost sensitivity (63-session hold): no costs +16.0%/yr, double costs +8.9%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | – | pending |
-| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | – | pending |
-| 2026-11-03 | [[FFIN]] | [[Edwards Murray Hamilton]] | $24K | 32 | – | pending |
-| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | -1.3% | open |
-| 2026-10-30 | [[PKBK]] | [[PANTILIONE VITO S]] | $43K | 33 | +1.1% | open |
-| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | +1.2% | open |
-| 2026-10-30 | [[BHRB]] | [[McLaughlin Shawn Patrick]] | $36K | 20 | +0.1% | open |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | +0.5% | open |
-| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +1.5% | open |
-| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | +0.9% | open |
-| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +2.6% | open |
-| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | +4.7% | open |
-| 2026-10-27 | [[FFIN]] | [[Nickles Robert Clark Jr]] | $25K | 19 | +5.0% | open |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -0.1% | open |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | – | pending |
+| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | – | pending |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
+| 2026-11-04 | [[UMH]] | [[Carus Jeffrey A]] | $8K | 32 | – | pending |
+| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | +5.6% | open |
+| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | +0.2% | open |
+| 2026-11-03 | [[FFIN]] | [[Edwards Murray Hamilton]] | $24K | 32 | -1.9% | open |
+| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | -0.6% | open |
+| 2026-10-30 | [[PKBK]] | [[PANTILIONE VITO S]] | $43K | 33 | +1.0% | open |
+| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | +0.7% | open |
+| 2026-10-30 | [[BHRB]] | [[McLaughlin Shawn Patrick]] | $36K | 20 | +0.3% | open |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -8.9% | open |
+| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +1.4% | open |
+| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | +0.7% | open |
+| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +5.8% | open |
+| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | +5.4% | open |
+| 2026-10-27 | [[FFIN]] | [[Nickles Robert Clark Jr]] | $25K | 19 | +4.6% | open |
+| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -0.3% | open |
 | 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | +1.6% | open |
-| 2026-10-22 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $974 | 40 | +1.1% | open |
-| 2026-10-22 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $845 | 28 | +1.9% | open |
-| 2026-10-22 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +4.4% | open |
-| 2026-10-22 | [[DSM]] | [[BANK OF AMERICA CORP -DE-]] | $1K | 40 | +4.3% | open |
-| 2026-10-22 | [[NMCO]] | [[Jones Nathaniel T]] | $4K | 40 | +1.1% | open |
 
 
 ```dataview

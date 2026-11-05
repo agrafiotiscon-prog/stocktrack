@@ -12,9 +12,9 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY -5.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-26 | [[PRTA]] | 10% Owner | $1.2M | 40 | -0.6% |
-| 2026-10-15 | [[PRTA]] | 10% Owner | $920K | 37 | -1.9% |
-| 2026-10-09 | [[PRTA]] | 10% Owner | $1.8M | 51 | -3.7% |
-| 2026-10-06 | [[PRTA]] | 10% Owner | $857K | 47 | +6.3% |
-| 2026-09-30 | [[PRTA]] | 10% Owner | $1.4M | 49 | -2.6% |
-| 2026-09-29 | [[PRTA]] | 10% Owner | $890K | 47 | -7.0% |
+| 2026-10-26 | [[PRTA]] | 10% Owner | $1.2M | 40 | -0.0% |
+| 2026-10-15 | [[PRTA]] | 10% Owner | $920K | 37 | -1.4% |
+| 2026-10-09 | [[PRTA]] | 10% Owner | $1.8M | 51 | -3.2% |
+| 2026-10-06 | [[PRTA]] | 10% Owner | $857K | 47 | +7.0% |
+| 2026-09-30 | [[PRTA]] | 10% Owner | $1.4M | 49 | -2.1% |
+| 2026-09-29 | [[PRTA]] | 10% Owner | $890K | 47 | -6.6% |

@@ -12,4 +12,4 @@ Backtest record: 19 earlier buys, average 3-month excess vs SPY +10.1%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[MGM]] | Director | $51.7M | 58 | – |
+| 2026-11-03 | [[MGM]] | Director | $51.7M | 58 | +1.3% |

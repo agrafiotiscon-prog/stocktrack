@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-29 | [[HOUSEY WILLIAM A JR]] | Other | $32K | 31 | +3.6% | open |
-| [[2026-09-28 FTHY MCGAREL DAVID\|2026-09-28]] | [[MCGAREL DAVID]] | Officer-Investment Adviser | $129K | 57 | +3.9% | open |
+| 2026-09-29 | [[HOUSEY WILLIAM A JR]] | Other | $32K | 31 | +2.6% | open |
+| [[2026-09-28 FTHY MCGAREL DAVID\|2026-09-28]] | [[MCGAREL DAVID]] | Officer-Investment Adviser | $129K | 57 | +2.9% | open |

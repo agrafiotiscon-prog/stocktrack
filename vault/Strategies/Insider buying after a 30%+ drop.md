@@ -79,26 +79,26 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.2%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | – | pending |
-| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | – | pending |
-| 2026-11-03 | [[PMN]] | [[Williams Eugene]] | $5K | 33 | – | pending |
-| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | – | pending |
-| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | +5.0% | open |
-| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | -3.3% | open |
-| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | +7.4% | open |
-| 2026-11-02 | [[HDSN]] | [[Hartree Partners, LP]] | $1.3M | 36 | -0.2% | open |
-| 2026-11-02 | [[PUMP]] | [[Weatherl Caleb Lyle]] | $16K | 32 | +1.1% | open |
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +1.8% | open |
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +4.1% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +4.1% | open |
-| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | +8.7% | open |
-| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +3.7% | open |
-| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +3.7% | open |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +3.7% | open |
-| 2026-10-23 | [[RAPP]] | [[Sanchez Ramiro]] | $98K | 67 | -1.2% | open |
-| 2026-10-22 | [[RAPP]] | [[Silva Paul M]] | $100K | 67 | -6.9% | open |
-| 2026-10-22 | [[RAPP]] | [[Young Wendy B]] | $100K | 65 | -6.9% | open |
-| 2026-10-22 | [[RAPP]] | [[PAUL STEVEN M]] | $974K | 77 | -6.9% | open |
+| 2026-11-04 | [[JBSS]] | [[Finn Michael J]] | $16K | 22 | – | pending |
+| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | – | pending |
+| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | – | pending |
+| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | – | pending |
+| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | -4.3% | open |
+| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | +1.3% | open |
+| 2026-11-03 | [[PMN]] | [[Williams Eugene]] | $5K | 33 | +2.7% | open |
+| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | +2.7% | open |
+| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | +1.8% | open |
+| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | +6.7% | open |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | +9.7% | open |
+| 2026-11-02 | [[HDSN]] | [[Hartree Partners, LP]] | $1.3M | 36 | +0.2% | open |
+| 2026-11-02 | [[PUMP]] | [[Weatherl Caleb Lyle]] | $16K | 32 | -11.3% | open |
+| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +2.1% | open |
+| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +7.8% | open |
+| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +7.8% | open |
+| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | +10.2% | open |
+| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +7.4% | open |
+| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +7.4% | open |
+| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +7.4% | open |
 
 
 ```dataview

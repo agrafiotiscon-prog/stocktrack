@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-16 BYRN Roth Adam L\|2026-10-16]] | [[Roth Adam L]] | Director | $70K | 40 | -15.6% | open |
+| [[2026-10-16 BYRN Roth Adam L\|2026-10-16]] | [[Roth Adam L]] | Director | $70K | 40 | -17.4% | open |

@@ -15,8 +15,8 @@ strategies: ["all_liquid", "score_40", "opportunistic", "proven_insider"]
 entry_date: "2026-10-28"
 entry_price: 43.82
 status: "open"
-abn_now: 0.025792
-ret_now: 0.0036513
+abn_now: 0.0577917
+ret_now: 0.0518028
 abn_5: 0.025792
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/opportuni
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| +2.6% | – | – | – | – | +2.6% |
+| +2.6% | – | – | – | – | +5.8% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1727196/000125317026000014/0001253170-26-000014-index.htm)

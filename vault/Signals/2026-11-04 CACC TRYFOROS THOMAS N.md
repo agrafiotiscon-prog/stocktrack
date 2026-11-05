@@ -1,0 +1,53 @@
+---
+type: "signal"
+ticker: "CACC"
+company: "CREDIT ACCEPTANCE CORP"
+insider: "TRYFOROS THOMAS N"
+role: "Director"
+filed: "2026-11-04"
+traded: "2026-11-02"
+score: 54
+value: 1455600
+cluster: 1
+insider_type: "unclassified"
+price: 498.68
+strategies: ["all_liquid", "score_40", "big_stake_up"]
+entry_date: ""
+entry_price: 
+status: "pending"
+abn_now: 
+ret_now: 
+abn_5: 
+abn_21: 
+abn_63: 
+abn_126: 
+abn_252: 
+forward_test: false
+tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/big_stake_up"]
+---
+
+# CACC: TRYFOROS THOMAS N bought $1.5M
+
+[[CACC]] · [[TRYFOROS THOMAS N]] · [[Every discretionary insider buy]] · [[Live score 40+ (notable)]] · [[Exec-director growing stake 25%+ with $100K+]]
+
+|  |  |
+|---|---|
+| Company | CREDIT ACCEPTANCE CORP |
+| Insider | TRYFOROS THOMAS N (Director) |
+| Traded / filed | 2026-11-02 to 2026-11-02 / 2026-11-04 |
+| Shares @ price | 3,000 @ $485.20 |
+| Score / cluster | 54 / 1 insider(s) |
+| Insider type / track record | unclassified / 5 earlier buys, -3.0% |
+| Prior 3 months | -14.2% |
+| Entry | awaiting next open |
+| Status | pending |
+
+
+## Outcome vs SPY
+
+| 1 week | 1 month | 3 months | 6 months | 1 year | So far |
+|---|---|---|---|---|---|
+| – | – | – | – | – | – |
+
+
+[SEC filing](https://www.sec.gov/Archives/edgar/data/885550/000088555026000203/0000885550-26-000203-index.htm)

@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -3.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[CSTM]] | Director | $42K | 24 | – |
+| 2026-11-03 | [[CSTM]] | Director | $42K | 24 | -2.7% |

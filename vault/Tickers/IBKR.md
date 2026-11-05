@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[Conkling Lori A]] | Director | $2K | 0 | – | pending |
-| 2026-10-05 | [[Conkling Lori A]] | Director | $2K | 0 | -10.3% | open |
+| 2026-11-03 | [[Conkling Lori A]] | Director | $2K | 0 | -0.3% | open |
+| 2026-10-05 | [[Conkling Lori A]] | Director | $2K | 0 | -11.4% | open |

@@ -7,22 +7,22 @@ role: "Director"
 filed: "2026-11-03"
 traded: "2026-11-02"
 score: 74
-value: 46639957
+value: 46640000
 cluster: 2
 insider_type: "opportunistic"
 price: 16
 strategies: ["all_liquid", "score_40", "score_60", "opportunistic", "big_stake_up"]
-entry_date: ""
-entry_price: 
-status: "pending"
-abn_now: 
-ret_now: 
+entry_date: "2026-11-04"
+entry_price: 15.96
+status: "open"
+abn_now: 0.00188558
+ret_now: 0.00689221
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: false
+forward_test: true
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60", "strategy/opportunistic", "strategy/big_stake_up"]
 ---
 
@@ -39,15 +39,15 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 | Score / cluster | 74 / 2 insider(s) |
 | Insider type / track record | opportunistic / 25 earlier buys, -3.3% |
 | Prior 3 months | – |
-| Entry | awaiting next open |
-| Status | pending |
+| Entry | 2026-11-04 @ $15.96 |
+| Status | open |
 
 
 ## Outcome vs SPY
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | – |
+| – | – | – | – | – | +0.2% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/2044950/000123191926001533/0001231919-26-001533-index.htm)

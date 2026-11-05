@@ -2,11 +2,12 @@
 type: "ticker"
 ticker: "JBLU"
 company: "JETBLUE AIRWAYS CORP"
-signals: 1
+signals: 2
 ---
 
 # JBLU: JETBLUE AIRWAYS CORP
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-02 JBLU BONEPARTH PETER\|2026-11-02]] | [[BONEPARTH PETER]] | Director | $300K | 47 | -3.3% | open |
+| [[2026-11-04 JBLU Mittal Nik\|2026-11-04]] | [[Mittal Nik]] | Director | $324K | 59 | – | pending |
+| [[2026-11-02 JBLU BONEPARTH PETER\|2026-11-02]] | [[BONEPARTH PETER]] | Director | $300K | 47 | +6.7% | open |
