@@ -12,6 +12,6 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY +13.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-13 | [[GME]] | President, CEO and Chairman | $22.8M | 71 | -8.2% |
-| 2026-10-02 | [[GME]] | President, CEO and Chairman | $17.1M | 79 | +1.1% |
-| 2026-09-29 | [[GME]] | President, CEO and Chairman | $10.6M | 70 | +2.7% |
+| 2026-10-13 | [[GME]] | President, CEO and Chairman | $22.8M | 71 | -7.4% |
+| 2026-10-02 | [[GME]] | President, CEO and Chairman | $17.1M | 79 | +1.6% |
+| 2026-09-29 | [[GME]] | President, CEO and Chairman | $10.6M | 70 | +3.1% |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +11.7%/yr, double costs +6.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 11 | -3.5% | -1.2% | 36% |
+| 5 sessions | 13 | -1.7% | -0.1% | 46% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
-| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | – | pending |
-| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | – | pending |
-| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | – | pending |
-| 2026-11-04 | [[CACC]] | [[TRYFOROS THOMAS N]] | $1.5M | 54 | – | pending |
-| 2026-11-04 | [[LSCC]] | [[Tamer Ford]] | $1.0M | 65 | – | pending |
-| 2026-11-03 | [[BA]] | [[Buckley Mortimer J]] | $998K | 64 | -0.5% | open |
-| 2026-11-03 | [[BA]] | [[MOLLENKOPF STEVEN M]] | $510K | 61 | -0.5% | open |
-| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | +0.1% | open |
-| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | +0.2% | open |
-| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | +1.3% | open |
-| 2026-11-03 | [[LKQ]] | [[Powell Michael Scott]] | $192K | 57 | +3.1% | open |
-| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | $400K | 60 | +3.1% | open |
-| 2026-11-03 | [[CAT]] | [[Fish James C Jr]] | $620K | 45 | -3.5% | open |
-| 2026-11-03 | [[TRTX]] | [[SILVERSTEIN WENDY]] | $253K | 58 | +3.2% | open |
-| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | +1.8% | open |
-| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | +6.7% | open |
-| 2026-11-02 | [[OCFC]] | [[Katsoulis Nicos]] | $178K | 53 | +0.1% | open |
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +2.1% | open |
+| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | – | pending |
+| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | $293K | 47 | – | pending |
+| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | – | pending |
+| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | – | pending |
+| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | – | pending |
+| 2026-11-05 | [[SYY]] | [[Ondrof Thomas Gerard]] | $192K | 45 | – | pending |
+| 2026-11-05 | [[SPXC]] | [[Deck Brian A]] | $493K | 49 | – | pending |
+| 2026-11-05 | [[TTMI]] | [[Ali Wajid]] | $632K | 57 | – | pending |
+| 2026-11-05 | [[LBTYA]] | [[Rodriguez Enrique]] | $2.0M | 73 | – | pending |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -6.1% | open |
+| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | +1.8% | open |
+| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | -2.5% | open |
+| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | -2.7% | open |
+| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | +4.2% | open |
+| 2026-11-04 | [[CACC]] | [[TRYFOROS THOMAS N]] | $1.5M | 54 | +5.3% | open |
+| 2026-11-04 | [[LSCC]] | [[Tamer Ford]] | $1.0M | 65 | +0.4% | open |
+| 2026-11-03 | [[BA]] | [[Buckley Mortimer J]] | $998K | 64 | +1.4% | open |
+| 2026-11-03 | [[BA]] | [[MOLLENKOPF STEVEN M]] | $510K | 61 | +1.4% | open |
+| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | +1.0% | open |
+| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | +3.2% | open |
 
 
 ```dataview

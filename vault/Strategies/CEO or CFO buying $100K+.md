@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +12.7%/yr, double costs +6.8%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 9 | -5.1% | -0.3% | 44% |
+| 5 sessions | 11 | -4.7% | -0.3% | 45% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | – | pending |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
-| 2026-11-04 | [[AN]] | [[Manley Michael Mark]] | $1.0M | 71 | – | pending |
-| 2026-11-04 | [[LSCC]] | [[Tamer Ford]] | $1.0M | 65 | – | pending |
-| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | – | pending |
-| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | +0.1% | open |
-| 2026-11-03 | [[STRZ]] | [[Hirsch Jeffrey]] | $111K | 55 | +2.2% | open |
-| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | -0.6% | open |
-| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | +9.7% | open |
-| 2026-11-02 | [[LSTR]] | [[Lonegro Frank A]] | $715K | 57 | +0.8% | open |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -8.9% | open |
-| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | +1.9% | open |
-| 2026-10-28 | [[TTMI]] | [[Roks Edwin]] | $440K | 62 | -18.8% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +10.7% | open |
-| 2026-10-27 | [[AIOK]] | [[Panagiotidis Petros Panagiotis]] | $1.1M | 51 | -35.5% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +7.8% | open |
-| 2026-10-27 | [[NPB]] | [[Williams Charles Alan]] | $1.5M | 73 | -0.4% | open |
-| 2026-10-27 | [[TIPT]] | [[Barnes Michael Gene]] | $502K | 29 | +7.8% | open |
-| 2026-10-26 | [[THRM]] | [[Presley William T]] | $130K | 53 | +4.5% | open |
+| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | – | pending |
+| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | – | pending |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | – | pending |
+| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | – | pending |
+| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | – | pending |
+| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | – | pending |
+| 2026-11-05 | [[LBTYA]] | [[FRIES MICHAEL T]] | $1.0M | 66 | – | pending |
+| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | +1.8% | open |
+| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | +4.2% | open |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +3.6% | open |
+| 2026-11-04 | [[AN]] | [[Manley Michael Mark]] | $1.0M | 71 | +3.6% | open |
+| 2026-11-04 | [[LSCC]] | [[Tamer Ford]] | $1.0M | 65 | +0.4% | open |
+| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | -3.3% | open |
+| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | +1.0% | open |
+| 2026-11-03 | [[STRZ]] | [[Hirsch Jeffrey]] | $111K | 55 | +2.4% | open |
+| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | +3.8% | open |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | +5.1% | open |
+| 2026-11-02 | [[LSTR]] | [[Lonegro Frank A]] | $715K | 57 | +1.4% | open |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -10.4% | open |
+| 2026-10-29 | [[TFC]] | [[Lyons Michael P]] | $1.2M | 66 | +4.3% | open |
 
 
 ```dataview

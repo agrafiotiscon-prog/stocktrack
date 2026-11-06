@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[Cohn Matthew]] | Director | $46K | 22 | – | pending |
+| 2026-11-04 | [[Cohn Matthew]] | Director | $46K | 22 | +2.8% | open |

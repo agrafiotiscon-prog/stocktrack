@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[STRZ]] | SEE REMARKS | $11K | 40 | +2.2% |
+| 2026-11-03 | [[STRZ]] | SEE REMARKS | $11K | 40 | +2.4% |

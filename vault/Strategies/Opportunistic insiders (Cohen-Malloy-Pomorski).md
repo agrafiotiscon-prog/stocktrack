@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +16.0%/yr, double costs +8.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 11 | +2.6% | +2.5% | 91% |
+| 5 sessions | 14 | +1.9% | +2.5% | 86% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | – | pending |
-| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | – | pending |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
-| 2026-11-04 | [[UMH]] | [[Carus Jeffrey A]] | $8K | 32 | – | pending |
-| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | +5.6% | open |
-| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | +0.2% | open |
-| 2026-11-03 | [[FFIN]] | [[Edwards Murray Hamilton]] | $24K | 32 | -1.9% | open |
-| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | -0.6% | open |
-| 2026-10-30 | [[PKBK]] | [[PANTILIONE VITO S]] | $43K | 33 | +1.0% | open |
-| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | +0.7% | open |
-| 2026-10-30 | [[BHRB]] | [[McLaughlin Shawn Patrick]] | $36K | 20 | +0.3% | open |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -8.9% | open |
-| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +1.4% | open |
-| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | +0.7% | open |
-| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +5.8% | open |
-| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | +5.4% | open |
-| 2026-10-27 | [[FFIN]] | [[Nickles Robert Clark Jr]] | $25K | 19 | +4.6% | open |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -0.3% | open |
-| 2026-10-22 | [[VKI]] | [[BANK OF AMERICA CORP -DE-]] | $843 | 28 | +1.6% | open |
+| 2026-11-05 | [[BXMT]] | [[NASSAU HENRY N]] | $114K | 41 | – | pending |
+| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | – | pending |
+| 2026-11-05 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $282K | 23 | – | pending |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -6.1% | open |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | +4.2% | open |
+| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | +2.8% | open |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +3.6% | open |
+| 2026-11-04 | [[UMH]] | [[Carus Jeffrey A]] | $8K | 32 | +1.7% | open |
+| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | +9.5% | open |
+| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | +3.2% | open |
+| 2026-11-03 | [[FFIN]] | [[Edwards Murray Hamilton]] | $24K | 32 | +0.2% | open |
+| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | +3.8% | open |
+| 2026-10-30 | [[PKBK]] | [[PANTILIONE VITO S]] | $43K | 33 | +2.6% | open |
+| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | +2.8% | open |
+| 2026-10-30 | [[BHRB]] | [[McLaughlin Shawn Patrick]] | $36K | 20 | +1.9% | open |
+| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -10.4% | open |
+| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +6.8% | open |
+| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | +1.9% | open |
+| 2026-10-27 | [[SRRK]] | [[AKKARAJU SRINIVAS]] | $12.0M | 48 | +8.8% | open |
+| 2026-10-27 | [[PEBO]] | [[Smith Dwight Eric]] | $12K | 17 | +7.0% | open |
 
 
 ```dataview

@@ -12,4 +12,4 @@ Backtest record: 9 earlier buys, average 3-month excess vs SPY +7.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[RNST]] | Director | $82K | 41 | -1.2% |
+| 2026-11-03 | [[RNST]] | Director | $82K | 41 | +1.0% |

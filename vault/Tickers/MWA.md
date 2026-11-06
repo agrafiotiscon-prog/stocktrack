@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-09 | [[Healy Brian C]] | Director | $30K | 8 | +12.6% | open |
+| 2026-10-09 | [[Healy Brian C]] | Director | $30K | 8 | +19.6% | open |

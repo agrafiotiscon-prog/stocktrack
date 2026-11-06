@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +37.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[ATEC]] | Director | $409K | 24 | +10.0% |
+| 2026-11-02 | [[ATEC]] | Director | $409K | 24 | +8.0% |

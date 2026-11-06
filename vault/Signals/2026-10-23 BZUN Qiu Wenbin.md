@@ -15,8 +15,8 @@ strategies: ["all_liquid", "momentum_buy"]
 entry_date: "2026-10-26"
 entry_price: 3.57
 status: "open"
-abn_now: -0.0367946
-ret_now: -0.0308123
+abn_now: 0.00195871
+ret_now: -0.0364145
 abn_5: -0.0754668
 abn_21: 
 abn_63: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/momentum_buy"]
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| -7.5% | – | – | – | – | -3.7% |
+| -7.5% | – | – | – | – | +0.2% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1625414/000110465926118281/0001104659-26-118281-index.htm)

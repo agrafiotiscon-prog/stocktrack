@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +15.8%/yr, double costs +9.1%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 31 | +3.1% | +2.8% | 87% |
+| 5 sessions | 36 | +3.0% | +2.8% | 86% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | – | pending |
-| 2026-11-04 | [[UMBF]] | [[Peterman Tamara]] | $27K | 32 | – | pending |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
-| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | – | pending |
-| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | +5.6% | open |
-| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | -4.3% | open |
-| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | +0.1% | open |
-| 2026-11-03 | [[JOF]] | [[Saba Capital Management, L.P]] | $30K | 14 | -0.5% | open |
-| 2026-11-03 | [[RNST]] | [[LEVY JONATHAN A]] | $82K | 41 | -1.2% | open |
-| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | +1.3% | open |
-| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | $400K | 60 | +3.1% | open |
-| 2026-11-03 | [[FISI]] | [[DORN ANDREW W JR]] | $63K | 26 | -0.6% | open |
-| 2026-11-03 | [[IBKR]] | [[Conkling Lori A]] | $2K | 0 | -0.3% | open |
-| 2026-11-02 | [[NTRS]] | [[Moritz Robert Edward Jr]] | $40K | 23 | +1.9% | open |
-| 2026-11-02 | [[JOF]] | [[Saba Capital Management, L.P]] | $702K | 31 | -2.1% | open |
-| 2026-11-02 | [[ROL]] | [[LOR INC]] | $50.0M | 41 | +3.3% | open |
-| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | +6.7% | open |
-| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | +9.7% | open |
-| 2026-11-02 | [[BANC]] | [[WOLFF JARED M]] | $100K | 39 | -1.7% | open |
+| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | $26K | 40 | – | pending |
+| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | – | pending |
+| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | – | pending |
+| 2026-11-05 | [[CBAN]] | [[Canup Edward G]] | $61K | 33 | – | pending |
+| 2026-11-05 | [[CLX]] | [[Breber Pierre R]] | $400K | 41 | – | pending |
+| 2026-11-05 | [[SPXC]] | [[Deck Brian A]] | $493K | 49 | – | pending |
+| 2026-11-05 | [[BKR]] | [[RICE JOHN G]] | $531K | 40 | – | pending |
+| 2026-11-05 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $282K | 23 | – | pending |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -6.1% | open |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | +4.2% | open |
+| 2026-11-04 | [[UMBF]] | [[Peterman Tamara]] | $28K | 32 | +0.1% | open |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +3.6% | open |
+| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | -3.3% | open |
+| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | +9.5% | open |
+| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | -4.4% | open |
+| 2026-11-03 | [[SITE]] | [[BLACK DOUG]] | $1.0M | 62 | +1.0% | open |
+| 2026-11-03 | [[JOF]] | [[Saba Capital Management, L.P]] | $30K | 14 | -0.7% | open |
+| 2026-11-03 | [[RNST]] | [[LEVY JONATHAN A]] | $82K | 41 | +1.0% | open |
+| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | +4.8% | open |
+| 2026-11-03 | [[LKQ]] | [[CLARKE ANDREW C]] | $400K | 60 | +5.5% | open |
 
 
 ```dataview

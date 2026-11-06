@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[Williams Eugene]] | Director | $5K | 33 | +2.7% | open |
-| [[2026-11-03 PMN Cashman Neil\|2026-11-03]] | [[Cashman Neil]] | Chief Scientific Officer | $39K | 44 | +2.7% | open |
+| 2026-11-03 | [[Williams Eugene]] | Director | $5K | 33 | +11.0% | open |
+| [[2026-11-03 PMN Cashman Neil\|2026-11-03]] | [[Cashman Neil]] | Chief Scientific Officer | $39K | 44 | +11.0% | open |

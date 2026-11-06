@@ -79,26 +79,26 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.2%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[JBSS]] | [[Finn Michael J]] | $16K | 22 | – | pending |
-| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | – | pending |
-| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | – | pending |
-| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | – | pending |
-| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | -4.3% | open |
-| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | +1.3% | open |
-| 2026-11-03 | [[PMN]] | [[Williams Eugene]] | $5K | 33 | +2.7% | open |
-| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | +2.7% | open |
-| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | +1.8% | open |
-| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | +6.7% | open |
-| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | +9.7% | open |
-| 2026-11-02 | [[HDSN]] | [[Hartree Partners, LP]] | $1.3M | 36 | +0.2% | open |
-| 2026-11-02 | [[PUMP]] | [[Weatherl Caleb Lyle]] | $16K | 32 | -11.3% | open |
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +2.1% | open |
-| 2026-10-27 | [[STC]] | [[Matz Deborah Jane]] | $44K | 63 | +7.8% | open |
-| 2026-10-27 | [[STC]] | [[EPPINGER FREDERICK H]] | $133K | 65 | +7.8% | open |
-| 2026-10-26 | [[GPI]] | [[Conifer Management, L.L.C]] | $24.2M | 44 | +10.2% | open |
-| 2026-10-26 | [[STC]] | [[Apel Thomas G]] | $95K | 48 | +7.4% | open |
-| 2026-10-26 | [[STC]] | [[Corey William S. Jr]] | $94K | 54 | +7.4% | open |
-| 2026-10-26 | [[STC]] | [[BRADLEY C ALLEN JR]] | $95K | 50 | +7.4% | open |
+| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | – | pending |
+| 2026-11-05 | [[COUR]] | [[Pale Fire Capital SE]] | $31.5M | 53 | – | pending |
+| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | – | pending |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | – | pending |
+| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | – | pending |
+| 2026-11-05 | [[SPXC]] | [[Deck Brian A]] | $493K | 49 | – | pending |
+| 2026-11-05 | [[JBSS]] | [[Finn Michael J]] | $11K | 19 | – | pending |
+| 2026-11-05 | [[TTMI]] | [[Ali Wajid]] | $632K | 57 | – | pending |
+| 2026-11-04 | [[JBSS]] | [[Finn Michael J]] | $16K | 22 | +1.5% | open |
+| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | -2.7% | open |
+| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | +2.8% | open |
+| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | -3.3% | open |
+| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | -4.4% | open |
+| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | +4.8% | open |
+| 2026-11-03 | [[PMN]] | [[Williams Eugene]] | $5K | 33 | +11.0% | open |
+| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | +11.0% | open |
+| 2026-11-02 | [[RSI]] | [[Winter Thomas]] | $118K | 42 | +2.5% | open |
+| 2026-11-02 | [[JBLU]] | [[BONEPARTH PETER]] | $300K | 47 | +9.0% | open |
+| 2026-11-02 | [[ENPH]] | [[Kothandaraman Badrinarayanan]] | $268K | 41 | +5.1% | open |
+| 2026-11-02 | [[HDSN]] | [[Hartree Partners, LP]] | $1.3M | 36 | -2.7% | open |
 
 
 ```dataview

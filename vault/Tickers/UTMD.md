@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-29 | [[CORNWELL KEVIN L]] | Chairman, CEO | $67K | 35 | +6.4% | open |
+| 2026-10-29 | [[CORNWELL KEVIN L]] | Chairman, CEO | $67K | 35 | +8.8% | open |

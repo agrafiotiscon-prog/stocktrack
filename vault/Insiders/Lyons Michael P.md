@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[TFC]] | President & CEO | $1.2M | 66 | +1.9% |
+| 2026-10-29 | [[TFC]] | President & CEO | $1.2M | 66 | +4.3% |

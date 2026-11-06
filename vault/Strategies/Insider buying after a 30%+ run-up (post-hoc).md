@@ -75,20 +75,20 @@ Cost sensitivity (63-session hold): no costs +22.0%/yr, double costs +17.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 3 | +2.5% | +4.5% | 67% |
+| 5 sessions | 4 | -0.6% | +4.5% | 50% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | – | pending |
-| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | -5.5% | open |
-| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -8.4% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +10.7% | open |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +10.7% | open |
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -3.7% | open |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +14.6% | open |
+| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | -2.3% | open |
+| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | -7.2% | open |
+| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -9.9% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +15.5% | open |
+| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +15.5% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | +0.2% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | +6.8% | open |
 
 
 ```dataview

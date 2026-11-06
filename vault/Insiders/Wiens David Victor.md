@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-28 | [[THM]] | Chief Executive Officer | $6K | 30 | -13.2% |
+| 2026-10-28 | [[THM]] | Chief Executive Officer | $6K | 30 | -35.1% |

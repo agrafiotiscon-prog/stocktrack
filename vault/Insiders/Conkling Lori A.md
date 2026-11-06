@@ -12,5 +12,5 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY +4.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[IBKR]] | Director | $2K | 0 | -0.3% |
-| 2026-10-05 | [[IBKR]] | Director | $2K | 0 | -11.4% |
+| 2026-11-03 | [[IBKR]] | Director | $2K | 0 | -2.5% |
+| 2026-10-05 | [[IBKR]] | Director | $2K | 0 | -12.8% |

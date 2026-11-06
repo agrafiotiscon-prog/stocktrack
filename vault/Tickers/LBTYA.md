@@ -1,0 +1,13 @@
+---
+type: "ticker"
+ticker: "LBTYA"
+company: "Liberty Global Ltd."
+signals: 2
+---
+
+# LBTYA: Liberty Global Ltd.
+
+| Filed | Insider | Role | Value | Score | vs SPY so far | Status |
+|---|---|---|---|---|---|---|
+| [[2026-11-05 LBTYA Rodriguez Enrique\|2026-11-05]] | [[Rodriguez Enrique]] | EVP, Chief Technology Officer | $2.0M | 73 | – | pending |
+| [[2026-11-05 LBTYA FRIES MICHAEL T\|2026-11-05]] | [[FRIES MICHAEL T]] | President & CEO | $1.0M | 66 | – | pending |

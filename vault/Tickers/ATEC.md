@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[Demski David M]] | Director | $409K | 24 | +10.0% | open |
+| 2026-11-02 | [[Demski David M]] | Director | $409K | 24 | +8.0% | open |

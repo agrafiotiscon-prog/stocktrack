@@ -12,4 +12,4 @@ Backtest record: 9 earlier buys, average 3-month excess vs SPY +6.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[NTRS]] | Director | $40K | 23 | +1.9% |
+| 2026-11-02 | [[NTRS]] | Director | $40K | 23 | +2.5% |

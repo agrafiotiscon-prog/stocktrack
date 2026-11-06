@@ -82,24 +82,26 @@ Cost sensitivity (63-session hold): no costs +16.8%/yr, double costs +11.1%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | – | pending |
-| 2026-11-04 | [[HGV]] | [[Wang Mark D]] | $499K | 46 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | – | pending |
-| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | $101K | 48 | – | pending |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
-| 2026-11-03 | [[STRZ]] | [[MACDONALD SCOTT D]] | $56K | 48 | +2.2% | open |
-| 2026-11-03 | [[MAA]] | [[Hill Adrian]] | $100K | 31 | +1.5% | open |
-| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | +2.7% | open |
-| 2026-11-02 | [[BLX]] | [[Diaz Adriana Lizzeth]] | $94K | 38 | -1.0% | open |
-| 2026-10-30 | [[OCFC]] | [[Barrett Patrick Sean]] | $90K | 37 | +4.1% | open |
-| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | -0.4% | open |
-| 2026-10-27 | [[KIO]] | [[Takao Justin]] | $78K | 51 | +2.8% | open |
-| 2026-10-26 | [[TCBX]] | [[Bobbora William]] | $40K | 24 | -0.3% | open |
-| 2026-10-23 | [[NXG]] | [[Swank Jerry V]] | $439K | 64 | -0.9% | open |
-| 2026-10-23 | [[NXG]] | [[Nelson Blake]] | $40K | 68 | -0.9% | open |
-| 2026-10-21 | [[RAPP]] | [[Ignelzi Troy A]] | $144K | 54 | -1.0% | open |
+| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | $26K | 40 | – | pending |
+| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | – | pending |
+| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | – | pending |
+| 2026-11-05 | [[CBAN]] | [[Canup Edward G]] | $61K | 33 | – | pending |
+| 2026-11-05 | [[PAM]] | [[Mindlin Damian Miguel]] | $2.6M | 57 | – | pending |
+| 2026-11-05 | [[LBTYA]] | [[Rodriguez Enrique]] | $2.0M | 73 | – | pending |
+| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | +1.8% | open |
+| 2026-11-04 | [[HGV]] | [[Wang Mark D]] | $499K | 46 | +1.5% | open |
+| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | +4.2% | open |
+| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | +4.2% | open |
+| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | +4.2% | open |
+| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | $101K | 48 | +3.6% | open |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +3.6% | open |
+| 2026-11-03 | [[STRZ]] | [[MACDONALD SCOTT D]] | $56K | 48 | +2.4% | open |
+| 2026-11-03 | [[MAA]] | [[Hill Adrian]] | $100K | 31 | +5.5% | open |
+| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | +11.0% | open |
+| 2026-11-02 | [[BLX]] | [[Diaz Adriana Lizzeth]] | $94K | 38 | +2.0% | open |
+| 2026-10-30 | [[OCFC]] | [[Barrett Patrick Sean]] | $90K | 37 | +4.9% | open |
+| 2026-10-27 | [[NPB]] | [[Long Joseph B]] | $50K | 65 | +2.4% | open |
+| 2026-10-27 | [[KIO]] | [[Takao Justin]] | $78K | 51 | +5.8% | open |
 
 
 ```dataview

@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY +4.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[UPBD]] | Director | $400K | 65 | – |
+| 2026-11-04 | [[UPBD]] | Director | $400K | 65 | +4.2% |

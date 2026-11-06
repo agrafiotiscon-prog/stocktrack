@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-05"
+updated: "2026-11-06"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-04 Backtest]]: the latest full backtest
-- [[2026-11-05]]: today's research log
+- [[2026-11-06]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | Director | $15.0M | 80 | – |
-| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | Chief Financial Officer | $207K | 55 | – |
-| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | Director | $1.7M | 66 | – |
-| 2026-11-04 | [[DOLE]] | [[Pale Fire Capital SE]] | 10% Owner | $12.9M | 47 | – |
-| 2026-11-04 | [[HGV]] | [[Wang Mark D]] | See Remarks | $499K | 46 | – |
-| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | Director | $324K | 59 | – |
-| 2026-11-04 | [[PRLB]] | [[Krishna Suresh]] | President and CEO | $52K | 49 | – |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | EVP, Chief Financial Officer | $251K | 70 | – |
-| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | Director | $393K | 73 | – |
-| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | EVP, Chief Growth Officer | $99K | 67 | – |
-| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | EVP, Chief Technology Officer | $50K | 61 | – |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | Director | $400K | 65 | – |
-| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | Director | $50K | 64 | – |
-| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | EVP, Gen Counsel & Corp Sec | $101K | 48 | – |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | EVP & CFO | $300K | 65 | – |
+| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | Director | $104K | 42 | – |
+| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | Director | $293K | 47 | – |
+| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | SVP & Chief Accounting Officer | $26K | 40 | – |
+| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | EVP and CFO | $105K | 50 | – |
+| 2026-11-05 | [[BXMT]] | [[NASSAU HENRY N]] | Director | $114K | 41 | – |
+| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | Chief Executive Officer | $1.0M | 69 | – |
+| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | Director | $3.6M | 53 | – |
+| 2026-11-05 | [[LYEL]] | [[ARCH Venture Fund XIII, L.P]] | 10% Owner | $25.0M | 58 | – |
+| 2026-11-05 | [[COUR]] | [[Pale Fire Capital SE]] | 10% Owner | $31.5M | 53 | – |
+| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | Chief Accounting Officer | $45K | 48 | – |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | CEO and President | $377K | 65 | – |
+| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | Chief Executive Officer | $9.9M | 75 | – |
+| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | Chairman and CEO | $998K | 65 | – |
+| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | Chief Executive Officer | $100K | 64 | – |
+| 2026-11-05 | [[SYY]] | [[Ondrof Thomas Gerard]] | Director | $192K | 45 | – |
 
 
 ## Live queries (Dataview plugin)

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[Hill Adrian]] | EVP, Chief Investment Officer | $100K | 31 | +1.5% | open |
+| 2026-11-03 | [[Hill Adrian]] | EVP, Chief Investment Officer | $100K | 31 | +5.5% | open |

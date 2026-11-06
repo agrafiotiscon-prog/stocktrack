@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +7.9%/yr, double costs +2.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 106 | +0.9% | +1.7% | 65% |
+| 5 sessions | 123 | +0.8% | +1.7% | 66% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
-| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | – | pending |
-| 2026-11-04 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $6.7M | 22 | – | pending |
-| 2026-11-04 | [[JBSS]] | [[Finn Michael J]] | $16K | 22 | – | pending |
-| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | – | pending |
-| 2026-11-04 | [[LYCA]] | [[Venrock Healthcare Capital Partners III, L.P]] | $224K | 22 | – | pending |
-| 2026-11-04 | [[DOLE]] | [[Pale Fire Capital SE]] | $12.9M | 47 | – | pending |
-| 2026-11-04 | [[HGV]] | [[Potter Leonard]] | $104K | 39 | – | pending |
-| 2026-11-04 | [[HGV]] | [[Wang Mark D]] | $499K | 46 | – | pending |
-| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | – | pending |
-| 2026-11-04 | [[PRLB]] | [[Krishna Suresh]] | $52K | 49 | – | pending |
-| 2026-11-04 | [[PRLB]] | [[Gawlick Rainer]] | $49K | 34 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | – | pending |
-| 2026-11-04 | [[FBRT]] | [[ORTALE BUFORD H]] | $5K | 15 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | $50K | 64 | – | pending |
-| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | – | pending |
+| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | – | pending |
+| 2026-11-05 | [[MTUS]] | [[RICE RONALD A]] | $166K | 31 | – | pending |
+| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | $293K | 47 | – | pending |
+| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | $26K | 40 | – | pending |
+| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | – | pending |
+| 2026-11-05 | [[BXMT]] | [[NASSAU HENRY N]] | $114K | 41 | – | pending |
+| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | – | pending |
+| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | – | pending |
+| 2026-11-05 | [[LYEL]] | [[ARCH Venture Fund XIII, L.P]] | $25.0M | 58 | – | pending |
+| 2026-11-05 | [[COUR]] | [[Pale Fire Capital SE]] | $31.5M | 53 | – | pending |
+| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | – | pending |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | – | pending |
+| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | – | pending |
+| 2026-11-05 | [[BB]] | [[Chaikof David]] | $41K | 38 | – | pending |
+| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | – | pending |
+| 2026-11-05 | [[CRBG]] | [[NIPPON LIFE INSURANCE CO]] | $12.9M | 24 | – | pending |
+| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | – | pending |
+| 2026-11-05 | [[SHEN]] | [[McKay Edward H]] | $10K | 27 | – | pending |
+| 2026-11-05 | [[SHEN]] | [[Lytle Glenn E Jr]] | $5K | 21 | – | pending |
+| 2026-11-05 | [[SYY]] | [[Ondrof Thomas Gerard]] | $192K | 45 | – | pending |
 
 
 ```dataview

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +9.6%/yr, double costs +3.5%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 8 | +0.7% | +3.7% | 62% |
+| 5 sessions | 10 | +0.9% | +2.5% | 70% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | – | pending |
-| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | $50K | 64 | – | pending |
-| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | $101K | 48 | – | pending |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | – | pending |
-| 2026-11-04 | [[AN]] | [[Manley Michael Mark]] | $1.0M | 71 | – | pending |
-| 2026-11-03 | [[OCFC]] | [[Farris Jack M]] | $10K | 36 | +0.2% | open |
-| 2026-11-03 | [[TRTX]] | [[Gillmore Michael]] | $13K | 53 | +3.2% | open |
-| 2026-11-03 | [[STRZ]] | [[Kapenstein James M]] | $11K | 40 | +2.2% | open |
-| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | $6K | 40 | -2.3% | open |
-| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | +2.1% | open |
-| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | $11K | 57 | +2.2% | open |
-| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | -1.6% | open |
-| 2026-10-29 | [[BBT]] | [[Callahan Mary Anne]] | $97K | 54 | +0.5% | open |
-| 2026-10-28 | [[BBT]] | [[Rosengren Eric S]] | $21K | 44 | +1.5% | open |
-| 2026-10-28 | [[BBT]] | [[Fitzgerald Margaret Boles]] | $10K | 36 | +1.5% | open |
+| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | – | pending |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | – | pending |
+| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | – | pending |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -6.1% | open |
+| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | +4.2% | open |
+| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | +4.2% | open |
+| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | +4.2% | open |
+| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | +4.2% | open |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | +4.2% | open |
+| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | $50K | 64 | +4.2% | open |
+| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | $101K | 48 | +3.6% | open |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +3.6% | open |
+| 2026-11-04 | [[AN]] | [[Manley Michael Mark]] | $1.0M | 71 | +3.6% | open |
+| 2026-11-03 | [[OCFC]] | [[Farris Jack M]] | $10K | 36 | +1.1% | open |
+| 2026-11-03 | [[TRTX]] | [[Gillmore Michael]] | $13K | 53 | +4.2% | open |
+| 2026-11-03 | [[STRZ]] | [[Kapenstein James M]] | $11K | 40 | +2.4% | open |
+| 2026-11-02 | [[BBT]] | [[Hughes William H III]] | $6K | 40 | -0.2% | open |
+| 2026-10-30 | [[RAPP]] | [[HEALY JAMES]] | $20.4M | 87 | -2.2% | open |
+| 2026-10-30 | [[BBT]] | [[Charnley Nina A]] | $11K | 57 | +4.2% | open |
+| 2026-10-29 | [[NPB]] | [[Chaudhary Rajeev Kumar]] | $47K | 64 | +1.3% | open |
 
 
 ```dataview

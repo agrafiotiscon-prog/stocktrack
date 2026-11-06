@@ -12,6 +12,6 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +6.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-08 | [[AVR]] | 10% Owner | $2.0M | 37 | -7.8% |
-| 2026-10-06 | [[AVR]] | 10% Owner | $6.7M | 44 | -9.2% |
-| 2026-10-01 | [[AVR]] | 10% Owner | $3.0M | 41 | -22.7% |
+| 2026-10-08 | [[AVR]] | 10% Owner | $2.0M | 37 | -11.5% |
+| 2026-10-06 | [[AVR]] | 10% Owner | $6.7M | 44 | -12.8% |
+| 2026-10-01 | [[AVR]] | 10% Owner | $3.0M | 41 | -25.1% |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[UPBD]] | EVP, Chief Growth Officer | $99K | 67 | – |
+| 2026-11-04 | [[UPBD]] | EVP, Chief Growth Officer | $99K | 67 | +4.2% |
