@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-28 WS Ganem George John III\|2026-10-28]] | [[Ganem George John III]] | CEO Americas Kloeckner Metals | $31K | 40 | -12.1% | open |
+| [[2026-10-28 WS Ganem George John III\|2026-10-28]] | [[Ganem George John III]] | CEO Americas Kloeckner Metals | $31K | 40 | -10.5% | open |

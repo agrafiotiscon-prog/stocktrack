@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-03 BBTX RA CAPITAL MANAGEMENT, L.P\|2026-11-03]] | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $46.6M | 74 | +3.2% | open |
-| [[2026-11-02 BBTX Jeggle Helmut Wolfgang\|2026-11-02]] | [[Jeggle Helmut Wolfgang]] | Director | $6.0M | 46 | +0.7% | open |
+| [[2026-11-03 BBTX RA CAPITAL MANAGEMENT, L.P\|2026-11-03]] | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $46.6M | 74 | +2.2% | open |
+| [[2026-11-02 BBTX Jeggle Helmut Wolfgang\|2026-11-02]] | [[Jeggle Helmut Wolfgang]] | Director | $6.0M | 46 | -0.3% | open |

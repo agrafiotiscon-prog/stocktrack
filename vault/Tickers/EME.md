@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[MCEVOY M KEVIN]] | Director | $2K | 2 | -11.0% | open |
+| 2026-10-19 | [[MCEVOY M KEVIN]] | Director | $2K | 2 | -9.4% | open |

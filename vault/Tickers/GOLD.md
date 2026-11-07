@@ -11,4 +11,4 @@ signals: 3
 |---|---|---|---|---|---|---|
 | [[2026-10-28 GOLD Tether Global Investments Fund, S.I.C.A.F., S.A\|2026-10-28]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $3.9M | 48 | -0.3% | open |
 | [[2026-10-15 GOLD Tether Global Investments Fund, S.I.C.A.F., S.A\|2026-10-15]] | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $2.7M | 45 | -0.6% | open |
-| 2026-10-13 | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $1.3M | 38 | +0.3% | open |
+| 2026-10-13 | [[Tether Global Investments Fund, S.I.C.A.F., S.A]] | 10% Owner | $1.3M | 38 | +0.4% | open |

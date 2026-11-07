@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[PAM]] | Vicepresident | $2.6M | 57 | – |
+| 2026-11-05 | [[PAM]] | Vicepresident | $2.6M | 57 | -0.8% |

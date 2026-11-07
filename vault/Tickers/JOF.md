@@ -2,12 +2,13 @@
 type: "ticker"
 ticker: "JOF"
 company: "JAPAN SMALLER CAPITALIZATION FUND INC"
-signals: 2
+signals: 3
 ---
 
 # JOF: JAPAN SMALLER CAPITALIZATION FUND INC
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[Saba Capital Management, L.P]] | 10% Owner | $30K | 14 | -0.7% | open |
-| 2026-11-02 | [[Saba Capital Management, L.P]] | 10% Owner | $702K | 31 | -2.1% | open |
+| 2026-11-06 | [[Saba Capital Management, L.P]] | 10% Owner | $299K | 26 | – | pending |
+| 2026-11-03 | [[Saba Capital Management, L.P]] | 10% Owner | $30K | 14 | +0.4% | open |
+| 2026-11-02 | [[Saba Capital Management, L.P]] | 10% Owner | $702K | 31 | -1.1% | open |

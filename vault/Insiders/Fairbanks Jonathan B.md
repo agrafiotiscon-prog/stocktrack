@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -24.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[FLOC]] | Director | $293K | 47 | – |
+| 2026-11-05 | [[FLOC]] | Director | $293K | 47 | +3.4% |

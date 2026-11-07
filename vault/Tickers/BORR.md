@@ -9,11 +9,11 @@ signals: 8
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-16 BORR Snowling Harvey Edward\|2026-10-16]] | [[Snowling Harvey Edward]] | Chief Operating Officer | $1.5M | 72 | -24.1% | open |
-| [[2026-10-16 BORR Troim Tor Olav\|2026-10-16]] | [[Troim Tor Olav]] | Director | $2.3M | 51 | -24.1% | open |
-| [[2026-10-15 BORR Troim Tor Olav\|2026-10-15]] | [[Troim Tor Olav]] | Director | $3.5M | 41 | -28.7% | open |
-| [[2026-10-14 BORR Troim Tor Olav\|2026-10-14]] | [[Troim Tor Olav]] | Director | $7.4M | 46 | -29.4% | open |
-| [[2026-10-13 BORR Troim Tor Olav\|2026-10-13]] | [[Troim Tor Olav]] | Director | $11.8M | 50 | -32.2% | open |
-| [[2026-10-08 BORR Troim Tor Olav\|2026-10-08]] | [[Troim Tor Olav]] | Director | $5.4M | 45 | -26.3% | open |
-| [[2026-10-07 BORR Troim Tor Olav\|2026-10-07]] | [[Troim Tor Olav]] | Director | $6.4M | 46 | -23.7% | open |
-| [[2026-10-06 BORR Troim Tor Olav\|2026-10-06]] | [[Troim Tor Olav]] | Director | $6.2M | 46 | -21.4% | open |
+| [[2026-10-16 BORR Snowling Harvey Edward\|2026-10-16]] | [[Snowling Harvey Edward]] | Chief Operating Officer | $1.5M | 72 | -21.7% | open |
+| [[2026-10-16 BORR Troim Tor Olav\|2026-10-16]] | [[Troim Tor Olav]] | Director | $2.3M | 51 | -21.7% | open |
+| [[2026-10-15 BORR Troim Tor Olav\|2026-10-15]] | [[Troim Tor Olav]] | Director | $3.5M | 41 | -26.4% | open |
+| [[2026-10-14 BORR Troim Tor Olav\|2026-10-14]] | [[Troim Tor Olav]] | Director | $7.4M | 46 | -27.2% | open |
+| [[2026-10-13 BORR Troim Tor Olav\|2026-10-13]] | [[Troim Tor Olav]] | Director | $11.8M | 50 | -30.1% | open |
+| [[2026-10-08 BORR Troim Tor Olav\|2026-10-08]] | [[Troim Tor Olav]] | Director | $5.4M | 45 | -24.0% | open |
+| [[2026-10-07 BORR Troim Tor Olav\|2026-10-07]] | [[Troim Tor Olav]] | Director | $6.4M | 46 | -21.3% | open |
+| [[2026-10-06 BORR Troim Tor Olav\|2026-10-06]] | [[Troim Tor Olav]] | Director | $6.2M | 46 | -18.9% | open |

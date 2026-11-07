@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-04 PRLB Krishna Suresh\|2026-11-04]] | [[Krishna Suresh]] | President and CEO | $52K | 49 | -2.1% | open |
-| 2026-11-04 | [[Gawlick Rainer]] | Director | $49K | 34 | -2.1% | open |
+| [[2026-11-04 PRLB Krishna Suresh\|2026-11-04]] | [[Krishna Suresh]] | President and CEO | $52K | 49 | +1.5% | open |
+| 2026-11-04 | [[Gawlick Rainer]] | Director | $49K | 34 | +1.5% | open |

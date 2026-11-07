@@ -12,4 +12,4 @@ Backtest record: 16 earlier buys, average 3-month excess vs SPY +20.6%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[ENPH]] | President & CEO | $268K | 41 | +5.1% |
+| 2026-11-02 | [[ENPH]] | President & CEO | $268K | 41 | +3.0% |

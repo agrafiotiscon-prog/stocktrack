@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[Moritz Robert Edward Jr]] | Director | $40K | 23 | +2.5% | open |
+| 2026-11-02 | [[Moritz Robert Edward Jr]] | Director | $40K | 23 | +3.0% | open |

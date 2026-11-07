@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[Diaz Adriana Lizzeth]] | Chief Audit Officer | $94K | 38 | +2.0% | open |
+| 2026-11-02 | [[Diaz Adriana Lizzeth]] | Chief Audit Officer | $94K | 38 | +1.8% | open |

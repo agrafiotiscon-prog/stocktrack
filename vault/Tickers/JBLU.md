@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-04 JBLU Mittal Nik\|2026-11-04]] | [[Mittal Nik]] | Director | $324K | 59 | -2.7% | open |
-| [[2026-11-02 JBLU BONEPARTH PETER\|2026-11-02]] | [[BONEPARTH PETER]] | Director | $300K | 47 | +9.0% | open |
+| [[2026-11-04 JBLU Mittal Nik\|2026-11-04]] | [[Mittal Nik]] | Director | $324K | 59 | +1.8% | open |
+| [[2026-11-02 JBLU BONEPARTH PETER\|2026-11-02]] | [[BONEPARTH PETER]] | Director | $300K | 47 | +14.2% | open |

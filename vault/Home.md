@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-06"
+updated: "2026-11-07"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-04 Backtest]]: the latest full backtest
-- [[2026-11-06]]: today's research log
+- [[2026-11-07]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
+| 2026-11-06 | [[KMI]] | [[KINDER RICHARD D]] | Executive Chairman | $15.0M | 53 | – |
+| 2026-11-06 | [[GFS]] | [[MOORTHY GANESH]] | Director | $94K | 42 | – |
+| 2026-11-06 | [[MDGL]] | [[BAKER BROS. ADVISORS LP]] | Director | $35.0M | 48 | – |
+| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | Director | $24.3M | 45 | – |
+| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | EVP and Group President | $2.0M | 54 | – |
+| 2026-11-06 | [[TRNS]] | [[IRICK JAIME A]] | President and CEO | $230K | 59 | – |
+| 2026-11-06 | [[KYN]] | [[Little Harrison James]] | Executive Vice President | $52K | 45 | – |
+| 2026-11-06 | [[KYN]] | [[Baker James C]] | President | $331K | 54 | – |
+| 2026-11-06 | [[KMT]] | [[Chowbey Sanjay]] | President and CEO | $165K | 42 | – |
+| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | Director | $201K | 65 | – |
+| 2026-11-06 | [[PMN]] | [[Williams Eugene]] | Director | $91K | 54 | – |
+| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | EVP, Reservoir Engineering | $46K | 48 | – |
+| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | President | $46K | 67 | – |
 | 2026-11-06 | [[AGMB]] | [[Epstein David R]] | Director | $104K | 42 | – |
-| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | Director | $293K | 47 | – |
-| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | SVP & Chief Accounting Officer | $26K | 40 | – |
-| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | EVP and CFO | $105K | 50 | – |
-| 2026-11-05 | [[BXMT]] | [[NASSAU HENRY N]] | Director | $114K | 41 | – |
-| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | Chief Executive Officer | $1.0M | 69 | – |
-| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | Director | $3.6M | 53 | – |
-| 2026-11-05 | [[LYEL]] | [[ARCH Venture Fund XIII, L.P]] | 10% Owner | $25.0M | 58 | – |
-| 2026-11-05 | [[COUR]] | [[Pale Fire Capital SE]] | 10% Owner | $31.5M | 53 | – |
-| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | Chief Accounting Officer | $45K | 48 | – |
-| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | CEO and President | $377K | 65 | – |
-| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | Chief Executive Officer | $9.9M | 75 | – |
-| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | Chairman and CEO | $998K | 65 | – |
-| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | Chief Executive Officer | $100K | 64 | – |
-| 2026-11-05 | [[SYY]] | [[Ondrof Thomas Gerard]] | Director | $192K | 45 | – |
+| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | Director | $293K | 47 | +3.4% |
 
 
 ## Live queries (Dataview plugin)

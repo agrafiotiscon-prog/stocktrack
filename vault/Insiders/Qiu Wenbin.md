@@ -12,5 +12,5 @@ Backtest record: 15 earlier buys, average 3-month excess vs SPY -2.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-23 | [[BZUN]] | Chief Executive Officer | $40K | 33 | +0.2% |
-| 2026-10-16 | [[BZUN]] | Chief Executive Officer | $20K | 30 | -3.8% |
+| 2026-10-23 | [[BZUN]] | Chief Executive Officer | $40K | 33 | +0.5% |
+| 2026-10-16 | [[BZUN]] | Chief Executive Officer | $20K | 30 | -3.6% |

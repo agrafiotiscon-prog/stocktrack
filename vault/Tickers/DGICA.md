@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-05 | [[DONEGAL MUTUAL INSURANCE CO]] | 10% Owner | $282K | 23 | – | pending |
+| 2026-11-05 | [[DONEGAL MUTUAL INSURANCE CO]] | 10% Owner | $282K | 23 | -0.5% | open |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[UPBD]] | EVP, Chief Technology Officer | $50K | 61 | +4.2% |
+| 2026-11-04 | [[UPBD]] | EVP, Chief Technology Officer | $50K | 61 | +1.3% |

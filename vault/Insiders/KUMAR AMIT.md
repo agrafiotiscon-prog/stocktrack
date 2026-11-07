@@ -12,4 +12,4 @@ Backtest record: 53 earlier buys, average 3-month excess vs SPY -1.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[ANIX]] | Chief Executive Officer | $19K | 43 | +13.0% |
+| 2026-09-28 | [[ANIX]] | Chief Executive Officer | $19K | 43 | +18.1% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[DORN ANDREW W JR]] | Director | $63K | 26 | +1.5% | open |
+| 2026-11-03 | [[DORN ANDREW W JR]] | Director | $63K | 26 | +1.8% | open |

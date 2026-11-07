@@ -7,22 +7,22 @@ role: "Chief Executive Officer"
 filed: "2026-11-05"
 traded: "2026-11-04"
 score: 69
-value: 1035351
+value: 1035350
 cluster: 2
 insider_type: "unclassified"
 price: 11.45
 strategies: ["all_liquid", "score_40", "score_60", "ceo_cfo_100k", "first_buy_exec"]
-entry_date: ""
-entry_price: 
-status: "pending"
-abn_now: 
-ret_now: 
+entry_date: "2026-11-06"
+entry_price: 11.49
+status: "open"
+abn_now: -0.0293602
+ret_now: -0.0287206
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: false
+forward_test: true
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60", "strategy/ceo_cfo_100k", "strategy/first_buy_exec"]
 ---
 
@@ -39,15 +39,15 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/score_60"
 | Score / cluster | 69 / 2 insider(s) |
 | Insider type / track record | unclassified / 1 earlier buys, -0.3% |
 | Prior 3 months | -15.9% |
-| Entry | awaiting next open |
-| Status | pending |
+| Entry | 2026-11-06 @ $11.49 |
+| Status | open |
 
 
 ## Outcome vs SPY
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | – |
+| – | – | – | – | – | -2.9% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1061630/000106163026000102/0001061630-26-000102-index.htm)

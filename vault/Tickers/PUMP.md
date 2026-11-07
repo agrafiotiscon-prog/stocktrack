@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[Weatherl Caleb Lyle]] | Chief Financial Officer | $16K | 32 | -12.6% | open |
+| 2026-11-02 | [[Weatherl Caleb Lyle]] | Chief Financial Officer | $16K | 32 | -7.6% | open |

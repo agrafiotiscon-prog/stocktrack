@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[Goldstein Jeffrey A]] | Director | $58K | 13 | -13.3% | open |
+| 2026-10-16 | [[Goldstein Jeffrey A]] | Director | $58K | 13 | -15.5% | open |
