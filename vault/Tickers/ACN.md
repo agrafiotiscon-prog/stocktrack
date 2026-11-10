@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-28 ACN Sweet Julie Spellman\|2026-10-28]] | [[Sweet Julie Spellman]] | Chair and CEO | $3.0M | 78 | +13.2% | open |
-| [[2026-10-28 ACN Price Paula A\|2026-10-28]] | [[Price Paula A]] | Director | $200K | 46 | +13.2% | open |
+| [[2026-10-28 ACN Sweet Julie Spellman\|2026-10-28]] | [[Sweet Julie Spellman]] | Chair and CEO | $3.0M | 78 | +8.4% | open |
+| [[2026-10-28 ACN Price Paula A\|2026-10-28]] | [[Price Paula A]] | Director | $200K | 46 | +8.4% | open |

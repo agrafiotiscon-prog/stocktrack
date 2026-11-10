@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[BCBP]] | Director | $502 | 17 | +0.9% |
+| 2026-11-05 | [[BCBP]] | Director | $502 | 17 | -1.4% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-02 | [[Chernett Jorey]] | 10% Owner | $41K | 15 | +4.2% | open |
+| 2026-11-02 | [[Chernett Jorey]] | 10% Owner | $41K | 15 | +3.3% | open |

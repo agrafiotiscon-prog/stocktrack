@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-02 RSI Winter Thomas\|2026-11-02]] | [[Winter Thomas]] | Director | $118K | 42 | +5.4% | open |
+| [[2026-11-02 RSI Winter Thomas\|2026-11-02]] | [[Winter Thomas]] | Director | $118K | 42 | +1.7% | open |

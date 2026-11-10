@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[Nelson Jane Musser]] | Director | $30K | 33 | -5.3% | open |
+| 2026-10-30 | [[Nelson Jane Musser]] | Director | $30K | 33 | -7.5% | open |

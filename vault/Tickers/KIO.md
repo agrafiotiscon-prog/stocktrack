@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-27 KIO Takao Justin\|2026-10-27]] | [[Takao Justin]] | Treasurer, CAO & CFO | $78K | 51 | +6.4% | open |
-| [[2026-10-14 KIO Pimentel Rudy\|2026-10-14]] | [[Pimentel Rudy]] | President | $41K | 45 | +5.0% | open |
+| [[2026-10-27 KIO Takao Justin\|2026-10-27]] | [[Takao Justin]] | Treasurer, CAO & CFO | $78K | 51 | +5.8% | open |
+| [[2026-10-14 KIO Pimentel Rudy\|2026-10-14]] | [[Pimentel Rudy]] | President | $41K | 45 | +4.3% | open |

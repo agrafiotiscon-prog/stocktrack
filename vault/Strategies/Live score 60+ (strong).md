@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.6%/yr, double costs +7.6%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 14 | -0.5% | +2.2% | 64% |
+| 5 sessions | 15 | -0.7% | +1.3% | 60% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | – | pending |
-| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | $46K | 67 | – | pending |
-| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | -2.9% | open |
-| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | -0.1% | open |
-| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | -4.7% | open |
-| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | -3.2% | open |
-| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | -1.1% | open |
-| 2026-11-05 | [[LBTYA]] | [[Rodriguez Enrique]] | $2.0M | 73 | +3.3% | open |
-| 2026-11-05 | [[LBTYA]] | [[FRIES MICHAEL T]] | $1.0M | 66 | +3.3% | open |
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -1.2% | open |
-| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | -2.6% | open |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | +1.3% | open |
-| 2026-11-04 | [[UPBD]] | [[MARINO GLENN P]] | $393K | 73 | +1.3% | open |
-| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | +1.3% | open |
-| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | +1.3% | open |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | +1.3% | open |
-| 2026-11-04 | [[UPBD]] | [[LANGENSTEIN MOLLY]] | $50K | 64 | +1.3% | open |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +1.1% | open |
-| 2026-11-04 | [[AN]] | [[Manley Michael Mark]] | $1.0M | 71 | +1.1% | open |
-| 2026-11-04 | [[LSCC]] | [[Tamer Ford]] | $1.0M | 65 | +7.0% | open |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | – | pending |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | – | pending |
+| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | – | pending |
+| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | – | pending |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | – | pending |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | – | pending |
+| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | +0.3% | open |
+| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | $46K | 67 | -1.1% | open |
+| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | -5.1% | open |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | +5.6% | open |
+| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | -1.1% | open |
+| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | -2.4% | open |
+| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | -1.7% | open |
+| 2026-11-05 | [[LBTYA]] | [[Rodriguez Enrique]] | $2.0M | 73 | +1.8% | open |
+| 2026-11-05 | [[LBTYA]] | [[FRIES MICHAEL T]] | $1.0M | 66 | +1.8% | open |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -3.7% | open |
+| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | -4.0% | open |
+| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | +0.8% | open |
 
 
 ```dataview

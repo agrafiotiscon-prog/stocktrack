@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -1.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[PRLB]] | President and CEO | $52K | 49 | +1.5% |
+| 2026-11-04 | [[PRLB]] | President and CEO | $52K | 49 | +4.3% |

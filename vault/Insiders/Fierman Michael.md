@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -10.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[AOMR]] | Director | $290K | 47 | -16.1% |
+| 2026-09-28 | [[AOMR]] | Director | $290K | 47 | -14.5% |

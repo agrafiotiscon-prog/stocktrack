@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +15.8%/yr, double costs +9.1%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 37 | +2.8% | +2.7% | 84% |
+| 5 sessions | 47 | +2.8% | +2.7% | 77% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[MDGL]] | [[BAKER BROS. ADVISORS LP]] | $35.0M | 48 | – | pending |
-| 2026-11-06 | [[DSM]] | [[Saba Capital Management, L.P]] | $555 | 8 | – | pending |
-| 2026-11-06 | [[JOF]] | [[Saba Capital Management, L.P]] | $299K | 26 | – | pending |
-| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | – | pending |
-| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | – | pending |
-| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | $26K | 40 | +0.9% | open |
-| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | +0.9% | open |
-| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | +1.0% | open |
-| 2026-11-05 | [[CBAN]] | [[Canup Edward G]] | $61K | 33 | +1.1% | open |
-| 2026-11-05 | [[CLX]] | [[Breber Pierre R]] | $400K | 41 | +3.3% | open |
-| 2026-11-05 | [[SPXC]] | [[Deck Brian A]] | $493K | 49 | -2.2% | open |
-| 2026-11-05 | [[BKR]] | [[RICE JOHN G]] | $531K | 40 | +2.9% | open |
-| 2026-11-05 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $282K | 23 | -0.5% | open |
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -1.2% | open |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | +1.3% | open |
-| 2026-11-04 | [[UMBF]] | [[Peterman Tamara]] | $28K | 32 | -0.8% | open |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +1.1% | open |
-| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | +3.5% | open |
-| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | +7.4% | open |
-| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | -4.5% | open |
+| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | – | pending |
+| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | – | pending |
+| 2026-11-09 | [[NATR]] | [[PRESCOTT GROUP CAPITAL MANAGEMENT, L.L.C]] | $2.8M | 44 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | $51K | 53 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | – | pending |
+| 2026-11-09 | [[OBIO]] | [[Hochman David P]] | $25K | 41 | – | pending |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | – | pending |
+| 2026-11-09 | [[CPS]] | [[Banas Jonathan P]] | $17K | 28 | – | pending |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | – | pending |
+| 2026-11-09 | [[LKFN]] | [[BARTELS ROBERT E JR]] | $117K | 30 | – | pending |
+| 2026-11-09 | [[TTMI]] | [[FRANKLIN PHILIP G]] | $310K | 52 | – | pending |
+| 2026-11-09 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $622K | 27 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | – | pending |
+| 2026-11-06 | [[MDGL]] | [[BAKER BROS. ADVISORS LP]] | $35.0M | 48 | +3.7% | open |
+| 2026-11-06 | [[DSM]] | [[Saba Capital Management, L.P]] | $555 | 8 | -1.3% | open |
+| 2026-11-06 | [[JOF]] | [[Saba Capital Management, L.P]] | $299K | 26 | -1.0% | open |
+| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | +3.8% | open |
+| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | -1.1% | open |
 
 
 ```dataview

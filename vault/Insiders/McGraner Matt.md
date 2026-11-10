@@ -12,4 +12,5 @@ Backtest record: 30 earlier buys, average 3-month excess vs SPY +9.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-05 | [[NXRT]] | See Remarks | $201K | 32 | -8.4% |
+| 2026-11-09 | [[NXRT]] | See Remarks | $199K | 44 | – |
+| 2026-10-05 | [[NXRT]] | See Remarks | $201K | 32 | -13.4% |

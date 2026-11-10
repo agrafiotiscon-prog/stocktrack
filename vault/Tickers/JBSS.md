@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-05 | [[Finn Michael J]] | Sr. VP, Corporate Controller | $11K | 19 | +2.5% | open |
-| 2026-11-04 | [[Finn Michael J]] | Sr. VP, Corporate Controller | $16K | 22 | +1.9% | open |
+| 2026-11-05 | [[Finn Michael J]] | Sr. VP, Corporate Controller | $11K | 19 | +4.1% | open |
+| 2026-11-04 | [[Finn Michael J]] | Sr. VP, Corporate Controller | $16K | 22 | +3.5% | open |

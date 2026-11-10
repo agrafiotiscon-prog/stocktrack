@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +16.0%/yr, double costs +8.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 17 | +1.9% | +2.1% | 88% |
+| 5 sessions | 18 | +1.9% | +2.1% | 89% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[KYN]] | [[Baker James C]] | $331K | 54 | – | pending |
-| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | – | pending |
-| 2026-11-05 | [[BXMT]] | [[NASSAU HENRY N]] | $114K | 41 | -2.9% | open |
-| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | +1.0% | open |
-| 2026-11-05 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $282K | 23 | -0.5% | open |
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -1.2% | open |
-| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | +1.3% | open |
-| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | +3.6% | open |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +1.1% | open |
-| 2026-11-04 | [[UMH]] | [[Carus Jeffrey A]] | $8K | 32 | +0.1% | open |
-| 2026-11-03 | [[SIRI]] | [[BERKSHIRE HATHAWAY INC]] | $26.9M | 40 | +7.4% | open |
-| 2026-11-03 | [[BBTX]] | [[RA CAPITAL MANAGEMENT, L.P]] | $46.6M | 74 | +2.2% | open |
-| 2026-11-03 | [[FFIN]] | [[Edwards Murray Hamilton]] | $24K | 32 | -1.0% | open |
-| 2026-11-02 | [[FCPT]] | [[Lenehan William H]] | $226K | 42 | +2.4% | open |
-| 2026-10-30 | [[PKBK]] | [[PANTILIONE VITO S]] | $43K | 33 | +2.7% | open |
-| 2026-10-30 | [[FFIN]] | [[Denny Michael B]] | $100K | 42 | +1.6% | open |
-| 2026-10-30 | [[BHRB]] | [[McLaughlin Shawn Patrick]] | $36K | 20 | +1.6% | open |
-| 2026-10-29 | [[DINO]] | [[MYERS FRANKLIN]] | $1.1M | 52 | -11.2% | open |
-| 2026-10-29 | [[BMN]] | [[BANK OF AMERICA CORP -DE-]] | $71K | 36 | +7.8% | open |
-| 2026-10-29 | [[SHBI]] | [[LAMON JOHN]] | $8K | 14 | +1.8% | open |
+| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | – | pending |
+| 2026-11-09 | [[UFCS]] | [[MILLIGAN GEORGE D]] | $237K | 32 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | – | pending |
+| 2026-11-09 | [[MTCH]] | [[Schiffman Glenn]] | $97K | 27 | – | pending |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | – | pending |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | – | pending |
+| 2026-11-09 | [[BOTJ]] | [[BRYANT WILLIAM C III]] | $17K | 17 | – | pending |
+| 2026-11-09 | [[LKFN]] | [[BARTELS ROBERT E JR]] | $117K | 30 | – | pending |
+| 2026-11-09 | [[CZNC]] | [[Shattuck Katherine W]] | $198 | 0 | – | pending |
+| 2026-11-09 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $622K | 27 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | – | pending |
+| 2026-11-06 | [[KYN]] | [[Baker James C]] | $331K | 54 | -0.0% | open |
+| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | -1.1% | open |
+| 2026-11-05 | [[BXMT]] | [[NASSAU HENRY N]] | $114K | 41 | -5.1% | open |
+| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | +4.0% | open |
+| 2026-11-05 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $282K | 23 | -2.9% | open |
+| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -3.7% | open |
+| 2026-11-04 | [[UPBD]] | [[BROWN JEFFREY J]] | $400K | 65 | +0.8% | open |
+| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | +4.5% | open |
+| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | -0.1% | open |
 
 
 ```dataview

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-29 | [[Sprang Todd A]] | Director | $59K | 32 | +0.9% | open |
+| 2026-10-29 | [[Sprang Todd A]] | Director | $59K | 32 | +0.4% | open |

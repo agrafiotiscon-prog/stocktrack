@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[Rodriguez Ramon M]] | Director | $20K | 35 | +1.2% | open |
+| 2026-10-30 | [[Rodriguez Ramon M]] | Director | $20K | 35 | +0.0% | open |

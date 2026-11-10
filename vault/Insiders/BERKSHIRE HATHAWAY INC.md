@@ -12,5 +12,5 @@ Backtest record: 55 earlier buys, average 3-month excess vs SPY +2.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[SIRI]] | 10% Owner | $26.9M | 40 | +7.4% |
-| 2026-10-05 | [[LEN]] | 10% Owner | $192.6M | 70 | +24.7% |
+| 2026-11-03 | [[SIRI]] | 10% Owner | $26.9M | 40 | +6.0% |
+| 2026-10-05 | [[LEN]] | 10% Owner | $192.6M | 70 | +26.3% |

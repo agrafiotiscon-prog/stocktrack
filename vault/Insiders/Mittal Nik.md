@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -20.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[JBLU]] | Director | $324K | 59 | +1.8% |
+| 2026-11-04 | [[JBLU]] | Director | $324K | 59 | +6.7% |

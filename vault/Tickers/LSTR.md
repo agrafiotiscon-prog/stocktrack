@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-02 LSTR Lonegro Frank A\|2026-11-02]] | [[Lonegro Frank A]] | President & CEO | $715K | 57 | -0.4% | open |
+| [[2026-11-02 LSTR Lonegro Frank A\|2026-11-02]] | [[Lonegro Frank A]] | President & CEO | $715K | 57 | -0.6% | open |

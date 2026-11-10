@@ -12,4 +12,4 @@ Backtest record: 8 earlier buys, average 3-month excess vs SPY +0.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[MTDR]] | EVP, Reservoir Engineering | $46K | 48 | – |
+| 2026-11-06 | [[MTDR]] | EVP, Reservoir Engineering | $46K | 48 | -1.1% |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.6%/yr, double costs +3.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 51 | -0.6% | +1.5% | 61% |
+| 5 sessions | 62 | -0.0% | +1.5% | 61% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[KMI]] | [[KINDER RICHARD D]] | $15.0M | 53 | – | pending |
-| 2026-11-06 | [[GFS]] | [[MOORTHY GANESH]] | $94K | 42 | – | pending |
-| 2026-11-06 | [[MDGL]] | [[BAKER BROS. ADVISORS LP]] | $35.0M | 48 | – | pending |
-| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | – | pending |
-| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | $2.0M | 54 | – | pending |
-| 2026-11-06 | [[TRNS]] | [[IRICK JAIME A]] | $230K | 59 | – | pending |
-| 2026-11-06 | [[KYN]] | [[Little Harrison James]] | $52K | 45 | – | pending |
-| 2026-11-06 | [[KYN]] | [[Baker James C]] | $331K | 54 | – | pending |
-| 2026-11-06 | [[KMT]] | [[Chowbey Sanjay]] | $165K | 42 | – | pending |
-| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | – | pending |
-| 2026-11-06 | [[PMN]] | [[Williams Eugene]] | $91K | 54 | – | pending |
-| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | – | pending |
-| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | $46K | 67 | – | pending |
-| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | – | pending |
-| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | $293K | 47 | +3.4% | open |
-| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | $26K | 40 | +0.9% | open |
-| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | +0.9% | open |
-| 2026-11-05 | [[BXMT]] | [[NASSAU HENRY N]] | $114K | 41 | -2.9% | open |
-| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | -2.9% | open |
-| 2026-11-05 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $3.6M | 53 | +1.0% | open |
+| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | – | pending |
+| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | – | pending |
+| 2026-11-09 | [[KRT]] | [[Guo Jian]] | $6K | 42 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | – | pending |
+| 2026-11-09 | [[ROK]] | [[Moret Blake D]] | $1.5M | 53 | – | pending |
+| 2026-11-09 | [[LRN]] | [[Haggart Dylan G]] | $8.1M | 59 | – | pending |
+| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | – | pending |
+| 2026-11-09 | [[NATR]] | [[PRESCOTT GROUP CAPITAL MANAGEMENT, L.L.C]] | $2.8M | 44 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | $51K | 53 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | – | pending |
+| 2026-11-09 | [[WCC]] | [[Marino Anthony S]] | $100K | 52 | – | pending |
+| 2026-11-09 | [[ADM]] | [[McAtee David R II]] | $197K | 45 | – | pending |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | – | pending |
+| 2026-11-09 | [[OBIO]] | [[Fain Eric S]] | $100K | 55 | – | pending |
+| 2026-11-09 | [[OBIO]] | [[Pacitti David]] | $100K | 59 | – | pending |
+| 2026-11-09 | [[OBIO]] | [[Hochman David P]] | $25K | 41 | – | pending |
+| 2026-11-09 | [[OBIO]] | [[Taylor Andrew Lawrence]] | $5K | 48 | – | pending |
 
 
 ```dataview

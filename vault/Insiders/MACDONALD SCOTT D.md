@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +13.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[STRZ]] | CFO and Treasurer | $56K | 48 | +3.3% |
+| 2026-11-03 | [[STRZ]] | CFO and Treasurer | $56K | 48 | +6.7% |

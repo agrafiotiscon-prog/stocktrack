@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-29 TFC Lyons Michael P\|2026-10-29]] | [[Lyons Michael P]] | President & CEO | $1.2M | 66 | +3.0% | open |
+| [[2026-10-29 TFC Lyons Michael P\|2026-10-29]] | [[Lyons Michael P]] | President & CEO | $1.2M | 66 | +2.7% | open |

@@ -12,5 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +54.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[TTMI]] | Director | $632K | 57 | -3.7% |
-| 2026-10-28 | [[TTMI]] | Director | $902K | 61 | -22.3% |
+| 2026-11-05 | [[TTMI]] | Director | $632K | 57 | +6.7% |
+| 2026-10-28 | [[TTMI]] | Director | $902K | 61 | -14.8% |

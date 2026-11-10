@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +7.9%/yr, double costs +2.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 138 | +0.9% | +1.7% | 67% |
+| 5 sessions | 161 | +0.9% | +1.6% | 65% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[FICO]] | [[Rey David A]] | $20K | 7 | – | pending |
-| 2026-11-06 | [[KMI]] | [[KINDER RICHARD D]] | $15.0M | 53 | – | pending |
-| 2026-11-06 | [[GFS]] | [[MOORTHY GANESH]] | $94K | 42 | – | pending |
-| 2026-11-06 | [[MDGL]] | [[BAKER BROS. ADVISORS LP]] | $35.0M | 48 | – | pending |
-| 2026-11-06 | [[DSM]] | [[Saba Capital Management, L.P]] | $555 | 8 | – | pending |
-| 2026-11-06 | [[JOF]] | [[Saba Capital Management, L.P]] | $299K | 26 | – | pending |
-| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | – | pending |
-| 2026-11-06 | [[DFH]] | [[Sturm Len]] | $11K | 17 | – | pending |
-| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | $2.0M | 54 | – | pending |
-| 2026-11-06 | [[TRNS]] | [[IRICK JAIME A]] | $230K | 59 | – | pending |
-| 2026-11-06 | [[ROAD]] | [[Skelly Noreen E]] | $8K | 17 | – | pending |
-| 2026-11-06 | [[TBBK]] | [[Mudick Stephanie B]] | $47K | 35 | – | pending |
-| 2026-11-06 | [[MED]] | [[Kiai Parsa]] | $9K | 17 | – | pending |
-| 2026-11-06 | [[KYN]] | [[Little Harrison James]] | $52K | 45 | – | pending |
-| 2026-11-06 | [[KYN]] | [[Baker James C]] | $331K | 54 | – | pending |
-| 2026-11-06 | [[KMT]] | [[Chowbey Sanjay]] | $165K | 42 | – | pending |
-| 2026-11-06 | [[YPF]] | [[Francos Guillermo Alberto]] | $356K | 32 | – | pending |
-| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | – | pending |
-| 2026-11-06 | [[APOG]] | [[Alvord Christina M]] | $2K | 14 | – | pending |
-| 2026-11-06 | [[PMN]] | [[Williams Eugene]] | $91K | 54 | – | pending |
+| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | – | pending |
+| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | – | pending |
+| 2026-11-09 | [[LAW]] | [[Friedrichsen Eric]] | $24K | 30 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | – | pending |
+| 2026-11-09 | [[KRT]] | [[Guo Jian]] | $6K | 42 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | – | pending |
+| 2026-11-09 | [[ECHO]] | [[Wall William P]] | $90K | 39 | – | pending |
+| 2026-11-09 | [[UFCS]] | [[MILLIGAN GEORGE D]] | $237K | 32 | – | pending |
+| 2026-11-09 | [[ROK]] | [[Moret Blake D]] | $1.5M | 53 | – | pending |
+| 2026-11-09 | [[LRN]] | [[Haggart Dylan G]] | $8.1M | 59 | – | pending |
+| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | – | pending |
+| 2026-11-09 | [[NATR]] | [[PRESCOTT GROUP CAPITAL MANAGEMENT, L.L.C]] | $2.8M | 44 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | $51K | 53 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | – | pending |
+| 2026-11-09 | [[WCC]] | [[Marino Anthony S]] | $100K | 52 | – | pending |
+| 2026-11-09 | [[ADM]] | [[McAtee David R II]] | $197K | 45 | – | pending |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | – | pending |
+| 2026-11-09 | [[MTCH]] | [[Schiffman Glenn]] | $97K | 27 | – | pending |
 
 
 ```dataview

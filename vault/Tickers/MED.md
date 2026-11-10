@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Kiai Parsa]] | Director | $9K | 17 | – | pending |
-| 2026-10-30 | [[Kiai Parsa]] | Director | $68K | 38 | +6.8% | open |
+| 2026-11-06 | [[Kiai Parsa]] | Director | $9K | 17 | +2.0% | open |
+| 2026-10-30 | [[Kiai Parsa]] | Director | $68K | 38 | +9.1% | open |

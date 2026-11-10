@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-07"
+updated: "2026-11-10"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-04 Backtest]]: the latest full backtest
-- [[2026-11-07]]: today's research log
+- [[2026-11-10]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[KMI]] | [[KINDER RICHARD D]] | Executive Chairman | $15.0M | 53 | – |
-| 2026-11-06 | [[GFS]] | [[MOORTHY GANESH]] | Director | $94K | 42 | – |
-| 2026-11-06 | [[MDGL]] | [[BAKER BROS. ADVISORS LP]] | Director | $35.0M | 48 | – |
-| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | Director | $24.3M | 45 | – |
-| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | EVP and Group President | $2.0M | 54 | – |
-| 2026-11-06 | [[TRNS]] | [[IRICK JAIME A]] | President and CEO | $230K | 59 | – |
-| 2026-11-06 | [[KYN]] | [[Little Harrison James]] | Executive Vice President | $52K | 45 | – |
-| 2026-11-06 | [[KYN]] | [[Baker James C]] | President | $331K | 54 | – |
-| 2026-11-06 | [[KMT]] | [[Chowbey Sanjay]] | President and CEO | $165K | 42 | – |
-| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | Director | $201K | 65 | – |
-| 2026-11-06 | [[PMN]] | [[Williams Eugene]] | Director | $91K | 54 | – |
-| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | EVP, Reservoir Engineering | $46K | 48 | – |
-| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | President | $46K | 67 | – |
-| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | Director | $104K | 42 | – |
-| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | Director | $293K | 47 | +3.4% |
+| 2026-11-10 | [[MX]] | [[LEE CHAE]] | Chief Executive Officer | $155K | 49 | – |
+| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | 10% Owner | $1.5M | 53 | – |
+| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | See Remarks | $199K | 44 | – |
+| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | See Remarks | $103K | 49 | – |
+| 2026-11-09 | [[KRT]] | [[Guo Jian]] | Chief Financial Officer | $6K | 42 | – |
+| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | SVP of Finance; CFO | $74K | 58 | – |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | Chairman & CEO | $601K | 65 | – |
+| 2026-11-09 | [[ROK]] | [[Moret Blake D]] | President and CEO | $1.5M | 53 | – |
+| 2026-11-09 | [[LRN]] | [[Haggart Dylan G]] | Director | $8.1M | 59 | – |
+| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | Director | $380K | 57 | – |
+| 2026-11-09 | [[NATR]] | [[PRESCOTT GROUP CAPITAL MANAGEMENT, L.L.C]] | 10% Owner | $2.8M | 44 | – |
+| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | EVP and COO | $51K | 53 | – |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | Director | $68K | 60 | – |
+| 2026-11-09 | [[WCC]] | [[Marino Anthony S]] | EVP & CHRO | $100K | 52 | – |
+| 2026-11-09 | [[ADM]] | [[McAtee David R II]] | Director | $197K | 45 | – |
 
 
 ## Live queries (Dataview plugin)

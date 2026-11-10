@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-29 XYL KOCH D CHRISTIAN\|2026-10-29]] | [[KOCH D CHRISTIAN]] | Director | $986K | 52 | +9.6% | open |
+| [[2026-10-29 XYL KOCH D CHRISTIAN\|2026-10-29]] | [[KOCH D CHRISTIAN]] | Director | $986K | 52 | +8.9% | open |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +5.3%/yr, double costs -1.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 9 | -2.5% | -1.0% | 44% |
+| 5 sessions | 14 | +0.0% | +1.6% | 57% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[FICO]] | [[Rey David A]] | $20K | 7 | – | pending |
-| 2026-11-06 | [[ROAD]] | [[Skelly Noreen E]] | $8K | 17 | – | pending |
-| 2026-11-06 | [[TBBK]] | [[Mudick Stephanie B]] | $47K | 35 | – | pending |
-| 2026-11-06 | [[PMN]] | [[Williams Eugene]] | $91K | 54 | – | pending |
-| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | – | pending |
-| 2026-11-05 | [[COUR]] | [[Pale Fire Capital SE]] | $31.5M | 53 | -4.2% | open |
-| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | -0.1% | open |
-| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | -0.1% | open |
-| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | -4.7% | open |
-| 2026-11-05 | [[SPXC]] | [[Deck Brian A]] | $493K | 49 | -2.2% | open |
-| 2026-11-05 | [[JBSS]] | [[Finn Michael J]] | $11K | 19 | +2.5% | open |
-| 2026-11-05 | [[TTMI]] | [[Ali Wajid]] | $632K | 57 | -3.7% | open |
-| 2026-11-04 | [[JBSS]] | [[Finn Michael J]] | $16K | 22 | +1.9% | open |
-| 2026-11-04 | [[JBLU]] | [[Mittal Nik]] | $324K | 59 | +1.8% | open |
-| 2026-11-04 | [[TBBK]] | [[Cohn Matthew]] | $46K | 22 | +3.6% | open |
-| 2026-11-04 | [[INTC]] | [[TAN LIP BU]] | $9.7M | 64 | +3.5% | open |
-| 2026-11-03 | [[NPKI]] | [[MINGE JOHN C]] | $139K | 30 | -4.5% | open |
-| 2026-11-03 | [[MGM]] | [[Meister Keith A]] | $51.7M | 58 | +3.9% | open |
-| 2026-11-03 | [[PMN]] | [[Williams Eugene]] | $5K | 33 | +25.6% | open |
-| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | +25.6% | open |
+| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | – | pending |
+| 2026-11-09 | [[NATR]] | [[PRESCOTT GROUP CAPITAL MANAGEMENT, L.L.C]] | $2.8M | 44 | – | pending |
+| 2026-11-09 | [[FUN]] | [[Bennett Christopher Lawrence]] | $47K | 34 | – | pending |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | – | pending |
+| 2026-11-09 | [[LUMN]] | [[GOLDBERG MICHELLE J]] | $98K | 50 | – | pending |
+| 2026-11-09 | [[CPS]] | [[Banas Jonathan P]] | $17K | 28 | – | pending |
+| 2026-11-09 | [[NSLR]] | [[Potter Leonard]] | $115K | 35 | – | pending |
+| 2026-11-09 | [[TTMI]] | [[FRANKLIN PHILIP G]] | $310K | 52 | – | pending |
+| 2026-11-06 | [[FICO]] | [[Rey David A]] | $20K | 7 | +1.3% | open |
+| 2026-11-06 | [[ROAD]] | [[Skelly Noreen E]] | $8K | 17 | +4.2% | open |
+| 2026-11-06 | [[TBBK]] | [[Mudick Stephanie B]] | $47K | 35 | -0.4% | open |
+| 2026-11-06 | [[PMN]] | [[Williams Eugene]] | $91K | 54 | -5.9% | open |
+| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | -3.6% | open |
+| 2026-11-05 | [[COUR]] | [[Pale Fire Capital SE]] | $31.5M | 53 | -6.3% | open |
+| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | +5.6% | open |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | +5.6% | open |
 
 
 ```dataview

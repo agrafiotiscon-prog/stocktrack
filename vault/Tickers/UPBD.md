@@ -2,17 +2,18 @@
 type: "ticker"
 ticker: "UPBD"
 company: "UPBOUND GROUP, INC."
-signals: 7
+signals: 8
 ---
 
 # UPBD: UPBOUND GROUP, INC.
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-05 UPBD Karam Fahmi\|2026-11-05]] | [[Karam Fahmi]] | Chief Executive Officer | $100K | 64 | -1.1% | open |
-| [[2026-11-04 UPBD Khouri Halim\|2026-11-04]] | [[Khouri Halim]] | EVP, Chief Financial Officer | $251K | 70 | +1.3% | open |
-| [[2026-11-04 UPBD MARINO GLENN P\|2026-11-04]] | [[MARINO GLENN P]] | Director | $393K | 73 | +1.3% | open |
-| [[2026-11-04 UPBD Wooters Rebecca\|2026-11-04]] | [[Wooters Rebecca]] | EVP, Chief Growth Officer | $99K | 67 | +1.3% | open |
-| [[2026-11-04 UPBD Kumar Balaji\|2026-11-04]] | [[Kumar Balaji]] | EVP, Chief Technology Officer | $50K | 61 | +1.3% | open |
-| [[2026-11-04 UPBD BROWN JEFFREY J\|2026-11-04]] | [[BROWN JEFFREY J]] | Director | $400K | 65 | +1.3% | open |
-| [[2026-11-04 UPBD LANGENSTEIN MOLLY\|2026-11-04]] | [[LANGENSTEIN MOLLY]] | Director | $50K | 64 | +1.3% | open |
+| [[2026-11-09 UPBD Karam Fahmi\|2026-11-09]] | [[Karam Fahmi]] | Chief Executive Officer | $300K | 71 | – | pending |
+| [[2026-11-05 UPBD Karam Fahmi\|2026-11-05]] | [[Karam Fahmi]] | Chief Executive Officer | $100K | 64 | -1.7% | open |
+| [[2026-11-04 UPBD Khouri Halim\|2026-11-04]] | [[Khouri Halim]] | EVP, Chief Financial Officer | $251K | 70 | +0.8% | open |
+| [[2026-11-04 UPBD MARINO GLENN P\|2026-11-04]] | [[MARINO GLENN P]] | Director | $393K | 73 | +0.8% | open |
+| [[2026-11-04 UPBD Wooters Rebecca\|2026-11-04]] | [[Wooters Rebecca]] | EVP, Chief Growth Officer | $99K | 67 | +0.8% | open |
+| [[2026-11-04 UPBD Kumar Balaji\|2026-11-04]] | [[Kumar Balaji]] | EVP, Chief Technology Officer | $50K | 61 | +0.8% | open |
+| [[2026-11-04 UPBD BROWN JEFFREY J\|2026-11-04]] | [[BROWN JEFFREY J]] | Director | $400K | 65 | +0.8% | open |
+| [[2026-11-04 UPBD LANGENSTEIN MOLLY\|2026-11-04]] | [[LANGENSTEIN MOLLY]] | Director | $50K | 64 | +0.8% | open |

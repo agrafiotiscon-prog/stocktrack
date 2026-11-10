@@ -75,21 +75,24 @@ Cost sensitivity (63-session hold): no costs +22.0%/yr, double costs +17.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 4 | -0.6% | +4.5% | 50% |
+| 5 sessions | 5 | -1.1% | -3.1% | 40% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | – | pending |
-| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | -0.2% | open |
-| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | -5.2% | open |
-| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -8.0% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +13.2% | open |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +13.2% | open |
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | +0.5% | open |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -17.5% | open |
+| 2026-11-09 | [[LAW]] | [[Friedrichsen Eric]] | $24K | 30 | – | pending |
+| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | – | pending |
+| 2026-11-09 | [[EAF]] | [[Shivaram Sachin M]] | $50K | 39 | – | pending |
+| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | +3.8% | open |
+| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | +2.1% | open |
+| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | -3.1% | open |
+| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -6.1% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +8.4% | open |
+| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +8.4% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -2.4% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -2.4% | open |
 
 
 ```dataview

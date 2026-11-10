@@ -12,5 +12,6 @@ Backtest record: 36 earlier buys, average 3-month excess vs SPY +2.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-01 | [[LILA]] | 10% Owner | $199K | 24 | +10.1% |
-| 2026-09-28 | [[LLYVK]] | 10% Owner | $2.9M | 36 | +10.1% |
+| 2026-11-10 | [[LBTYA]] | 10% Owner | $1.5M | 53 | – |
+| 2026-10-01 | [[LILA]] | 10% Owner | $199K | 24 | +12.4% |
+| 2026-09-28 | [[LLYVK]] | 10% Owner | $2.9M | 36 | +8.3% |

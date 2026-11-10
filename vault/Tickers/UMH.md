@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[Carus Jeffrey A]] | Director | $8K | 32 | +0.1% | open |
-| 2026-11-04 | [[Mitchell William Edward]] | Director | $20K | 20 | +0.1% | open |
+| 2026-11-04 | [[Carus Jeffrey A]] | Director | $8K | 32 | -3.4% | open |
+| 2026-11-04 | [[Mitchell William Edward]] | Director | $20K | 20 | -3.4% | open |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[USCB]] | Director | $20K | 35 | +1.2% |
+| 2026-10-30 | [[USCB]] | Director | $20K | 35 | +0.0% |

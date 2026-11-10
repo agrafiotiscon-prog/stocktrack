@@ -12,4 +12,4 @@ Backtest record: 17 earlier buys, average 3-month excess vs SPY +5.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[INTC]] | CEO | $9.7M | 64 | +3.5% |
+| 2026-11-04 | [[INTC]] | CEO | $9.7M | 64 | +6.7% |

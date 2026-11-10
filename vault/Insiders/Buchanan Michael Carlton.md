@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-09-28 | [[WDI]] | Other | $59K | 28 | +4.0% |
+| 2026-09-28 | [[WDI]] | Other | $59K | 28 | +3.1% |

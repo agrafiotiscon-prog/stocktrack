@@ -75,33 +75,33 @@ Cost sensitivity (63-session hold): no costs +16.8%/yr, double costs +11.1%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 6 | +0.1% | +3.4% | 67% |
+| 5 sessions | 7 | +0.3% | +2.1% | 71% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | $2.0M | 54 | – | pending |
-| 2026-11-06 | [[KYN]] | [[Little Harrison James]] | $52K | 45 | – | pending |
-| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | – | pending |
-| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | $26K | 40 | +0.9% | open |
-| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | +0.9% | open |
-| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | -0.1% | open |
-| 2026-11-05 | [[CBAN]] | [[Canup Edward G]] | $61K | 33 | +1.1% | open |
-| 2026-11-05 | [[PAM]] | [[Mindlin Damian Miguel]] | $2.6M | 57 | -0.8% | open |
-| 2026-11-05 | [[LBTYA]] | [[Rodriguez Enrique]] | $2.0M | 73 | +3.3% | open |
-| 2026-11-04 | [[PAM]] | [[Zuberbuhler Adolfo Fernando]] | $207K | 55 | +0.8% | open |
-| 2026-11-04 | [[HGV]] | [[Wang Mark D]] | $499K | 46 | +2.0% | open |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | +1.3% | open |
-| 2026-11-04 | [[UPBD]] | [[Wooters Rebecca]] | $99K | 67 | +1.3% | open |
-| 2026-11-04 | [[UPBD]] | [[Kumar Balaji]] | $50K | 61 | +1.3% | open |
-| 2026-11-04 | [[AN]] | [[EDMUNDS C COLEMAN]] | $101K | 48 | +1.1% | open |
-| 2026-11-04 | [[AN]] | [[Szlosek Thomas A]] | $300K | 65 | +1.1% | open |
-| 2026-11-03 | [[STRZ]] | [[MACDONALD SCOTT D]] | $56K | 48 | +3.3% | open |
-| 2026-11-03 | [[MAA]] | [[Hill Adrian]] | $100K | 31 | +2.9% | open |
-| 2026-11-03 | [[PMN]] | [[Cashman Neil]] | $39K | 44 | +25.6% | open |
-| 2026-11-02 | [[BLX]] | [[Diaz Adriana Lizzeth]] | $94K | 38 | +1.8% | open |
+| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | – | pending |
+| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | – | pending |
+| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | $51K | 53 | – | pending |
+| 2026-11-09 | [[WCC]] | [[Marino Anthony S]] | $100K | 52 | – | pending |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | – | pending |
+| 2026-11-09 | [[FUN]] | [[Bennett Christopher Lawrence]] | $47K | 34 | – | pending |
+| 2026-11-09 | [[OBIO]] | [[Hochman David P]] | $25K | 41 | – | pending |
+| 2026-11-09 | [[DKNG]] | [[Ellingson Alan Wayne]] | $350K | 46 | – | pending |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | – | pending |
+| 2026-11-09 | [[SOPH]] | [[CARDOZA GEORGE]] | $141K | 53 | – | pending |
+| 2026-11-09 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.3M | 52 | – | pending |
+| 2026-11-09 | [[KMT]] | [[Watson Patrick S]] | $47K | 45 | – | pending |
+| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | $2.0M | 54 | -0.7% | open |
+| 2026-11-06 | [[KYN]] | [[Little Harrison James]] | $52K | 45 | -0.0% | open |
+| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | -1.1% | open |
+| 2026-11-05 | [[MTDR]] | [[Colodney Benjamin T]] | $26K | 40 | -2.3% | open |
+| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | -2.3% | open |
+| 2026-11-05 | [[LBRT]] | [[Gosney Ryan T]] | $45K | 48 | +5.6% | open |
+| 2026-11-05 | [[CBAN]] | [[Canup Edward G]] | $61K | 33 | +0.4% | open |
 
 
 ```dataview

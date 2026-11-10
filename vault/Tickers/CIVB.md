@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-05 | [[Macioce Mark J]] | Director | $6K | 32 | +1.0% | open |
+| 2026-11-05 | [[Macioce Mark J]] | Director | $6K | 32 | +0.1% | open |

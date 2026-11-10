@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[Barnes Michael Gene]] | Chairman and CEO | $502K | 29 | +9.4% | open |
+| 2026-10-27 | [[Barnes Michael Gene]] | Chairman and CEO | $502K | 29 | +7.9% | open |

@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY -4.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[MTDR]] | President | $46K | 67 | – |
+| 2026-11-06 | [[MTDR]] | President | $46K | 67 | -1.1% |

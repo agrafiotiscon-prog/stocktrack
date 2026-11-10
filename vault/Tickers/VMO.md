@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-15 | [[Setcavage Rebecca]] | Other | $26K | 28 | +8.7% | open |
+| 2026-10-15 | [[Setcavage Rebecca]] | Other | $26K | 28 | +6.4% | open |
