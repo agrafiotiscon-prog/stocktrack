@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[KMT]] | Vice President and CFO | $47K | 45 | – |
+| 2026-11-09 | [[KMT]] | Vice President and CFO | $47K | 45 | -0.0% |

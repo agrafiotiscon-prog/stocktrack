@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[Schiffman Glenn]] | Director | $97K | 27 | – | pending |
+| 2026-11-09 | [[Schiffman Glenn]] | Director | $97K | 27 | +1.0% | open |

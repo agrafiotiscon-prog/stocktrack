@@ -13,10 +13,10 @@ insider_type: "unclassified"
 price: 19.95
 strategies: ["all_liquid", "proven_insider", "cfo_exec_25k"]
 entry_date: "2026-11-06"
-entry_price: 20.01
+entry_price: 19.8933
 status: "open"
-abn_now: 0.00366711
-ret_now: 0.027986
+abn_now: 0.000399172
+ret_now: 0.0209484
 abn_5: 
 abn_21: 
 abn_63: 
@@ -39,7 +39,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/proven_insider", "strategy/cfo
 | Score / cluster | 33 / 1 insider(s) |
 | Insider type / track record | unclassified / 14 earlier buys, +3.2% |
 | Prior 3 months | -9.4% |
-| Entry | 2026-11-06 @ $20.01 |
+| Entry | 2026-11-06 @ $19.89 |
 | Status | open |
 
 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/proven_insider", "strategy/cfo
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | +0.4% |
+| – | – | – | – | – | +0.0% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/711669/000205132726000020/0002051327-26-000020-index.htm)

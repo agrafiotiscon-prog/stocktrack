@@ -7,22 +7,22 @@ role: "10% Owner"
 filed: "2026-11-09"
 traded: "2026-11-05"
 score: 44
-value: 2849811
+value: 2849810
 cluster: 1
 insider_type: "unclassified"
 price: 11.02
 strategies: ["all_liquid", "score_40", "contrarian", "proven_insider"]
-entry_date: ""
-entry_price: 
-status: "pending"
-abn_now: 
-ret_now: 
+entry_date: "2026-11-10"
+entry_price: 11.33
+status: "open"
+abn_now: -0.0379517
+ret_now: -0.0353045
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: false
+forward_test: true
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/contrarian", "strategy/proven_insider"]
 ---
 
@@ -39,15 +39,15 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/contraria
 | Score / cluster | 44 / 1 insider(s) |
 | Insider type / track record | unclassified / 3 earlier buys, +5.0% |
 | Prior 3 months | -31.1% |
-| Entry | awaiting next open |
-| Status | pending |
+| Entry | 2026-11-10 @ $11.33 |
+| Status | open |
 
 
 ## Outcome vs SPY
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | – |
+| – | – | – | – | – | -3.8% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/275053/000116615226000014/0001166152-26-000014-index.htm)

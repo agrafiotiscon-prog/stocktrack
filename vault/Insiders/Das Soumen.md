@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-29 | [[SCQCU]] | Director | $2.7M | 56 | +1.6% |
+| 2026-10-29 | [[SCQCU]] | Director | $2.7M | 56 | +2.0% |

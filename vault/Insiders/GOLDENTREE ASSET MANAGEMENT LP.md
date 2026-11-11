@@ -2,16 +2,16 @@
 type: "insider"
 name: "GOLDENTREE ASSET MANAGEMENT LP"
 cik: "1278951"
-past_buys: 1
-past_mean_abn_63: 0.13485
+past_buys: 2
+past_mean_abn_63: -0.16723
 ---
 
 # GOLDENTREE ASSET MANAGEMENT LP
 
-Backtest record: 1 earlier buys, average 3-month excess vs SPY +13.5%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+Backtest record: 2 earlier buys, average 3-month excess vs SPY -16.7%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-14 | [[QVCG]] | 10% Owner | $16.7M | 48 | -21.3% |
+| 2026-10-14 | [[QVCG]] | 10% Owner | $16.7M | 48 | -21.4% |
 | 2026-10-06 | [[QVCG]] | 10% Owner | $3.5M | 50 | -36.2% |
 | 2026-10-02 | [[QVCG]] | 10% Owner | $79K | 30 | -42.5% |

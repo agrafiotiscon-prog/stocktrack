@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[TRTX]] | Director | $33K | 35 | -2.4% |
+| 2026-11-03 | [[TRTX]] | Director | $33K | 35 | -4.7% |

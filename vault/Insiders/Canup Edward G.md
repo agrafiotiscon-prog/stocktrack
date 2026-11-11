@@ -12,4 +12,4 @@ Backtest record: 14 earlier buys, average 3-month excess vs SPY +4.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[CBAN]] | CHIEF BANKING OFFICER | $61K | 33 | +0.4% |
+| 2026-11-05 | [[CBAN]] | CHIEF BANKING OFFICER | $61K | 33 | +0.0% |

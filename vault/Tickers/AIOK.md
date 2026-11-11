@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-27 AIOK Panagiotidis Petros Panagiotis\|2026-10-27]] | [[Panagiotidis Petros Panagiotis]] | Chief Executive Officer | $1.1M | 51 | -32.3% | open |
+| [[2026-10-27 AIOK Panagiotidis Petros Panagiotis\|2026-10-27]] | [[Panagiotidis Petros Panagiotis]] | Chief Executive Officer | $1.1M | 51 | -33.9% | open |

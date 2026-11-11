@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "score_40"
-signals: 32309
-cagr: 0.0587494
-spy_cagr: 0.109572
-sharpe: 0.283645
-max_drawdown: 0.574297
-holdout_excess: 0.0134349
+signals: 32311
+cagr: 0.0595145
+spy_cagr: 0.109148
+sharpe: 0.286169
+max_drawdown: 0.571525
+holdout_excess: 0.0130353
 ---
 
 # Live score 40+ (notable)
@@ -17,28 +17,28 @@ Rule key: `score_40`. Liquid stocks only ($2+, $1M+/day), plan purchases exclude
 
 | Measure | Value |
 |---|---|
-| Signals | 32,309 |
-| 3-month excess vs SPY (mean / median) | +1.1% / -0.6% |
+| Signals | 32,311 |
+| 3-month excess vs SPY (mean / median) | +1.0% / -0.7% |
 | Beat SPY over 3 months | 48% |
 | Entering one session later | +0.8% |
 | vs surviving stocks | +1.2% |
-| 2006-2015 excess /yr | +7.9% (p 0.011) |
-| 2016+ excess /yr | +1.3% (p 0.749) |
+| 2006-2015 excess /yr | +7.8% (p 0.011) |
+| 2016+ excess /yr | +1.3% (p 0.755) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +6.5% | +11.0% | 0.31 | 0.55 | 57% | 1.26 | -4.6% | 33% | 4,878 | 8.6% | -1.0% / -0.12 / 61% |
-| 63d | +5.9% | +11.0% | 0.28 | 0.55 | 57% | 1.24 | -5.2% | 38% | 1,660 | 2.6% | -2.0% / -0.20 / 59% |
-| 126d | +4.9% | +11.0% | 0.25 | 0.55 | 68% | 1.20 | -5.7% | 29% | 840 | 1.3% | -3.1% / -0.29 / 57% |
+| 21d | +6.8% | +10.9% | 0.32 | 0.55 | 58% | 1.25 | -4.3% | 33% | 4,879 | 8.7% | -0.7% / -0.10 / 61% |
+| 63d | +6.0% | +10.9% | 0.29 | 0.55 | 57% | 1.25 | -5.2% | 38% | 1,662 | 2.6% | -2.0% / -0.20 / 57% |
+| 126d | +5.3% | +10.9% | 0.26 | 0.55 | 69% | 1.17 | -5.1% | 24% | 840 | 1.3% | -2.7% / -0.27 / 51% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +8.6%/yr, double costs +3.2%/yr.
+Cost sensitivity (63-session hold): no costs +8.7%/yr, double costs +3.3%/yr.
 
 
 ### Year by year (63-session hold)
@@ -46,59 +46,59 @@ Cost sensitivity (63-session hold): no costs +8.6%/yr, double costs +3.2%/yr.
 | Year | Strategy | SPY | Difference |
 |---|---|---|---|
 | 2006 | +12.7% | +13.8% | -1.1% |
-| 2007 | -11.1% | +5.1% | -16.2% |
-| 2008 | -19.3% | -36.8% | +17.5% |
-| 2009 | +36.1% | +26.4% | +9.7% |
-| 2010 | +31.8% | +15.1% | +16.8% |
-| 2011 | -13.7% | +1.9% | -15.6% |
-| 2012 | +17.5% | +16.0% | +1.5% |
-| 2013 | +35.5% | +32.3% | +3.2% |
-| 2014 | +1.1% | +13.5% | -12.3% |
-| 2015 | -10.7% | +1.2% | -11.9% |
-| 2016 | +21.1% | +12.0% | +9.1% |
-| 2017 | +19.2% | +21.7% | -2.5% |
-| 2018 | -19.5% | -4.6% | -15.0% |
-| 2019 | +45.6% | +31.2% | +14.4% |
-| 2020 | +10.3% | +18.3% | -8.1% |
-| 2021 | +4.0% | +28.7% | -24.7% |
-| 2022 | -20.6% | -18.2% | -2.5% |
-| 2023 | +30.0% | +26.2% | +3.8% |
-| 2024 | -10.3% | +24.9% | -35.2% |
-| 2025 | -7.5% | +17.7% | -25.2% |
-| 2026 | +9.4% | +11.5% | -2.1% |
+| 2007 | -8.8% | +5.1% | -13.9% |
+| 2008 | -19.8% | -36.8% | +17.0% |
+| 2009 | +31.4% | +26.4% | +5.0% |
+| 2010 | +31.7% | +15.1% | +16.7% |
+| 2011 | -13.6% | +1.9% | -15.5% |
+| 2012 | +16.7% | +16.0% | +0.7% |
+| 2013 | +34.7% | +32.3% | +2.4% |
+| 2014 | +2.1% | +13.5% | -11.4% |
+| 2015 | -7.8% | +1.2% | -9.0% |
+| 2016 | +20.5% | +12.0% | +8.5% |
+| 2017 | +20.6% | +21.7% | -1.1% |
+| 2018 | -18.0% | -4.6% | -13.4% |
+| 2019 | +42.3% | +31.2% | +11.1% |
+| 2020 | +11.1% | +18.3% | -7.2% |
+| 2021 | +3.9% | +28.7% | -24.8% |
+| 2022 | -20.2% | -18.2% | -2.0% |
+| 2023 | +27.8% | +26.2% | +1.6% |
+| 2024 | -11.3% | +24.9% | -36.2% |
+| 2025 | -5.7% | +17.7% | -23.4% |
+| 2026 | +9.3% | +10.8% | -1.5% |
 
 
 ## Live forward test
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 62 | -0.0% | +1.5% | 61% |
+| 5 sessions | 75 | +0.3% | +1.3% | 61% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | – | pending |
-| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | – | pending |
-| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | – | pending |
-| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | – | pending |
-| 2026-11-09 | [[KRT]] | [[Guo Jian]] | $6K | 42 | – | pending |
-| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | – | pending |
-| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | – | pending |
-| 2026-11-09 | [[ROK]] | [[Moret Blake D]] | $1.5M | 53 | – | pending |
-| 2026-11-09 | [[LRN]] | [[Haggart Dylan G]] | $8.1M | 59 | – | pending |
-| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | – | pending |
-| 2026-11-09 | [[NATR]] | [[PRESCOTT GROUP CAPITAL MANAGEMENT, L.L.C]] | $2.8M | 44 | – | pending |
-| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | $51K | 53 | – | pending |
-| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | – | pending |
-| 2026-11-09 | [[WCC]] | [[Marino Anthony S]] | $100K | 52 | – | pending |
-| 2026-11-09 | [[ADM]] | [[McAtee David R II]] | $197K | 45 | – | pending |
-| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | – | pending |
-| 2026-11-09 | [[OBIO]] | [[Fain Eric S]] | $100K | 55 | – | pending |
-| 2026-11-09 | [[OBIO]] | [[Pacitti David]] | $100K | 59 | – | pending |
-| 2026-11-09 | [[OBIO]] | [[Hochman David P]] | $25K | 41 | – | pending |
-| 2026-11-09 | [[OBIO]] | [[Taylor Andrew Lawrence]] | $5K | 48 | – | pending |
+| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | – | pending |
+| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | $243K | 48 | – | pending |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | – | pending |
+| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | $55K | 51 | – | pending |
+| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | – | pending |
+| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | $70K | 40 | – | pending |
+| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | $686K | 44 | – | pending |
+| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | – | pending |
+| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | – | pending |
+| 2026-11-10 | [[FUN]] | [[HADDRILL RICHARD M]] | $91K | 57 | – | pending |
+| 2026-11-10 | [[WD]] | [[Pinkus Gary S]] | $201K | 45 | – | pending |
+| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | – | pending |
+| 2026-11-10 | [[MCY]] | [[Braunegg George Gwyer]] | $50K | 43 | – | pending |
+| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | – | pending |
+| 2026-11-10 | [[SUNC]] | [[Skidmore David K]] | $94K | 42 | – | pending |
+| 2026-11-10 | [[CNXN]] | [[Zafirovski Matthew David]] | $200K | 55 | – | pending |
+| 2026-11-10 | [[PRTA]] | [[SCULLY WILLIAM P]] | $1.2M | 40 | – | pending |
+| 2026-11-10 | [[STRA]] | [[Slocum William J]] | $65K | 43 | – | pending |
+| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | – | pending |
+| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | – | pending |
 
 
 ```dataview

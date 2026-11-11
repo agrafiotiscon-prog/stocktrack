@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-04 CACC TRYFOROS THOMAS N\|2026-11-04]] | [[TRYFOROS THOMAS N]] | Director | $1.5M | 54 | +5.3% | open |
+| [[2026-11-04 CACC TRYFOROS THOMAS N\|2026-11-04]] | [[TRYFOROS THOMAS N]] | Director | $1.5M | 54 | +1.7% | open |

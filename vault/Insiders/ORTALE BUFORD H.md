@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -0.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[FBRT]] | Director | $5K | 15 | -0.8% |
+| 2026-11-04 | [[FBRT]] | Director | $5K | 15 | -1.0% |

@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -9.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[CIVB]] | Director | $6K | 32 | +0.1% |
+| 2026-11-05 | [[CIVB]] | Director | $6K | 32 | +0.5% |

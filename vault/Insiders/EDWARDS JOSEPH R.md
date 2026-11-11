@@ -12,4 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -24.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[FLOC]] | President and CEO | $798K | 76 | – |
+| 2026-11-10 | [[FLOC]] | President and CEO | $390K | 60 | – |
+| 2026-11-09 | [[FLOC]] | President and CEO | $798K | 76 | -1.8% |

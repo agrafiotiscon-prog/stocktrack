@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Alvord Christina M]] | Director | $2K | 14 | +1.5% | open |
+| 2026-11-06 | [[Alvord Christina M]] | Director | $2K | 14 | +1.4% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Sturm Len]] | Director | $11K | 17 | -1.8% | open |
+| 2026-11-06 | [[Sturm Len]] | Director | $11K | 17 | -9.1% | open |

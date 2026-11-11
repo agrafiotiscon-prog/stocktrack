@@ -12,4 +12,4 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY +3.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[CLX]] | Director | $400K | 41 | +6.7% |
+| 2026-11-05 | [[CLX]] | Director | $400K | 41 | +8.1% |

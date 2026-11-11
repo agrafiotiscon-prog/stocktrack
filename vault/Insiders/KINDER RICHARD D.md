@@ -12,4 +12,4 @@ Backtest record: 62 earlier buys, average 3-month excess vs SPY -1.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[KMI]] | Executive Chairman | $15.0M | 53 | +0.3% |
+| 2026-11-06 | [[KMI]] | Executive Chairman | $15.0M | 53 | +2.7% |

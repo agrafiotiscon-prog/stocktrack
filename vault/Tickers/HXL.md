@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-28 HXL KEATING NEAL J\|2026-10-28]] | [[KEATING NEAL J]] | Director | $242K | 46 | +4.4% | open |
+| [[2026-10-28 HXL KEATING NEAL J\|2026-10-28]] | [[KEATING NEAL J]] | Director | $242K | 46 | +5.3% | open |

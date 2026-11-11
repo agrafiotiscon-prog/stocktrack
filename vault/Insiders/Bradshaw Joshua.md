@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-21 | [[CRF]] | Vice Chairman and President | $118K | 53 | +3.7% |
-| 2026-10-21 | [[CLM]] | Vice Chairman and President | $97K | 52 | +1.5% |
+| 2026-10-21 | [[CRF]] | Vice Chairman and President | $118K | 53 | +4.2% |
+| 2026-10-21 | [[CLM]] | Vice Chairman and President | $97K | 52 | +2.1% |

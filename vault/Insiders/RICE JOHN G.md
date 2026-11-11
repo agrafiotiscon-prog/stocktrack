@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +13.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[BKR]] | Director | $531K | 40 | +1.8% |
+| 2026-11-05 | [[BKR]] | Director | $531K | 40 | +1.2% |

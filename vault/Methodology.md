@@ -1,13 +1,13 @@
 ---
 type: "methodology"
-backtest: "2026-11-04"
+backtest: "2026-11-11"
 ---
 
 # Methodology
 
 **Data.** SEC Insider Transactions Data Sets (2006q1_form345.zip .. 2026q3_form345.zip (83 files)) plus daily EDGAR filings for the latest weeks.
 Only Form 4 open-market purchases (transaction code P) count. Prices are daily, split- and dividend-adjusted, from Yahoo
-Finance (snapshot 2026-11-04, last price date 2026-11-03).
+Finance (snapshot 2026-11-11, last price date 2026-11-10).
 
 **One signal per company per day.** Several insiders filing on the same day share one return, so they count once.
 Repeat reports of the same purchase by related filers (a fund and its manager) count once.
@@ -64,4 +64,4 @@ size/value factors). The routine/opportunistic split uses purchases only, becaus
 **Changes after the pre-registration** are bug fixes only, each listed in `data/backtest/CHANGES.md`
 (found by an independent adversarial review of the code).
 
-**Reproducibility.** Git commit `3278e31`, config hash `cd327b139f8521d7`, seed 20061.
+**Reproducibility.** Git commit `3dba952`, config hash `cd327b139f8521d7`, seed 20061.

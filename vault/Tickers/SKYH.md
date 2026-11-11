@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-05 | [[Gonzalez Francisco]] | Chief Financial Officer | $36K | 30 | +18.8% | open |
-| 2026-10-02 | [[Gonzalez Francisco]] | Chief Financial Officer | $15K | 25 | +17.7% | open |
-| 2026-10-01 | [[Gonzalez Francisco]] | Chief Financial Officer | $15K | 25 | +16.5% | open |
+| 2026-10-05 | [[Gonzalez Francisco]] | Chief Financial Officer | $36K | 30 | +15.9% | open |
+| 2026-10-02 | [[Gonzalez Francisco]] | Chief Financial Officer | $15K | 25 | +14.9% | open |
+| 2026-10-01 | [[Gonzalez Francisco]] | Chief Financial Officer | $15K | 25 | +13.7% | open |

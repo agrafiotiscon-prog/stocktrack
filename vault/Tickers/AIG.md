@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[Inglis John C]] | Director | $10K | 18 | – | pending |
+| 2026-11-09 | [[Inglis John C]] | Director | $10K | 18 | +2.4% | open |

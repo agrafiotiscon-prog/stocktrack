@@ -12,17 +12,17 @@ cluster: 3
 insider_type: "unclassified"
 price: 75.33
 strategies: ["all_liquid", "score_40", "cluster_3", "contrarian", "proven_insider"]
-entry_date: ""
-entry_price: 
-status: "pending"
-abn_now: 
-ret_now: 
+entry_date: "2026-11-10"
+entry_price: 75.72
+status: "open"
+abn_now: -0.0487381
+ret_now: -0.0460908
 abn_5: 
 abn_21: 
 abn_63: 
 abn_126: 
 abn_252: 
-forward_test: false
+forward_test: true
 tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/cluster_3", "strategy/contrarian", "strategy/proven_insider"]
 ---
 
@@ -39,15 +39,15 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/cluster_3
 | Score / cluster | 52 / 3 insider(s) |
 | Insider type / track record | unclassified / 4 earlier buys, +0.7% |
 | Prior 3 months | -42.4% |
-| Entry | awaiting next open |
-| Status | pending |
+| Entry | 2026-11-10 @ $75.72 |
+| Status | open |
 
 
 ## Outcome vs SPY
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | – |
+| – | – | – | – | – | -4.9% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1116942/000119312526452897/0001193125-26-452897-index.htm)

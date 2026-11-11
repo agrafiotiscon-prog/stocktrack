@@ -12,6 +12,6 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -23.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[LYCA]] | 10% Owner | $224K | 22 | +5.8% |
-| 2026-10-30 | [[LYCA]] | 10% Owner | $645K | 28 | +12.8% |
-| 2026-10-27 | [[LYCA]] | 10% Owner | $37.7M | 57 | +17.1% |
+| 2026-11-04 | [[LYCA]] | 10% Owner | $224K | 22 | +9.4% |
+| 2026-10-30 | [[LYCA]] | 10% Owner | $645K | 28 | +16.6% |
+| 2026-10-27 | [[LYCA]] | 10% Owner | $37.7M | 57 | +21.0% |

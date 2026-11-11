@@ -1,6 +1,6 @@
 ---
 type: "leaderboard"
-updated: "2026-11-10"
+updated: "2026-11-11"
 ---
 
 # Best Insiders
@@ -12,7 +12,6 @@ Insiders whose purchases most consistently beat SPY over the next 3 months (5+ b
 | KARABOTS NICK G | Director | 7 | +79.1% | 100% | 41.7 | AXR | 2008-01-11 |
 | Zavaglia Joseph P. | Director | 5 | +19.1% | 100% | 27.4 | FSBW | 2012-08-30 |
 | DIGIANDOMENICO ANTHONY | Director | 5 | +58.2% | 100% | 23.7 | CUE | 2019-01-04 |
-| Kohlrus Mark J. | Director | 7 | +21.7% | 100% | 23.7 | LARK | 2025-03-07 |
 | ALICO HOLDINGS LLC | 10% Owner | 27 | +20.4% | 100% | 22.4 | ALCO | 2006-04-25 |
 | ATKINSON DENNIS | Senior Vice President- Farming | 5 | +17.5% | 100% | 18.6 | TRC | 2016-05-19 |
 | Mansfield Michael J. | Director | 6 | +18.0% | 100% | 17.0 | FSBW | 2012-08-30 |
@@ -29,6 +28,7 @@ Insiders whose purchases most consistently beat SPY over the next 3 months (5+ b
 | Patten Jarrod M | Director | 8 | +55.5% | 100% | 9.5 | CORZ | 2024-09-16 |
 | Rice Calvin | Chief Financial Officer & CAO | 5 | +20.5% | 100% | 9.3 | SPOK | 2023-06-01 |
 | DST SYSTEMS INC | Other | 12 | +3.9% | 100% | 9.2 | ASG, USA | 2011-12-29 |
+| Kohlrus Mark J. | Director | 8 | +19.7% | 100% | 9.1 | LARK | 2026-08-07 |
 | DARRETTA ROBERT J | Director | 5 | +8.5% | 100% | 9.0 | PCF, PIM, PMM, PMO, PPT | 2008-05-01 |
 | Arturi Emanuel | Director | 8 | +9.7% | 100% | 8.8 | DCOM | 2013-10-04 |
 | AMERICAS MINING CORP | 10% Owner | 14 | +24.7% | 100% | 8.5 | SCCO | 2009-03-30 |
@@ -54,7 +54,7 @@ Insiders whose purchases most consistently beat SPY over the next 3 months (5+ b
 | Tolman Gary Charles | Director | 10 | +16.4% | 90% | 6.8 | GBLI, WTM | 2022-12-16 |
 | LINEHAN EARL L | Director | 5 | +48.3% | 100% | 6.8 | SRI | 2009-03-17 |
 | Smith Gerald F JR | Director | 22 | +8.5% | 86% | 6.6 | FXNC | 2023-10-02 |
-| Stock Harald F. | Director | 10 | +65.6% | 90% | 6.5 | TPST | 2014-09-25 |
+| Stock Harald F. | Director | 10 | +65.7% | 90% | 6.5 | TPST | 2014-09-25 |
 | Beaumont Lee G | EVP, COO | 7 | +18.7% | 100% | 6.4 | WLFC | 2007-11-28 |
 | Markley John D Jr | Director | 5 | +14.3% | 100% | 6.4 | CHTR | 2013-03-06 |
 | ZEITZ JOCHEN | President and CEO | 5 | +23.0% | 100% | 6.3 | HOG | 2022-09-06 |

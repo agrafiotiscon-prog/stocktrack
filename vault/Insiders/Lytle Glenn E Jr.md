@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -10.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[SHEN]] | SVP Commercial Sales | $5K | 21 | +2.6% |
+| 2026-11-05 | [[SHEN]] | SVP Commercial Sales | $5K | 21 | +4.9% |

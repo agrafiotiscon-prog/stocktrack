@@ -12,4 +12,5 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +11.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[SPXC]] | Director | $493K | 49 | +1.1% |
+| 2026-11-10 | [[SPXC]] | Director | $141K | 38 | – |
+| 2026-11-05 | [[SPXC]] | Director | $493K | 49 | +0.9% |

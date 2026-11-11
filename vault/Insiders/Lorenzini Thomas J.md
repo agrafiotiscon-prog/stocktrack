@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +17.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[SEVN]] | President and CIO | $33K | 48 | +0.2% |
+| 2026-11-02 | [[SEVN]] | President and CIO | $33K | 48 | +1.1% |

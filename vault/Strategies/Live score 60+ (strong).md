@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "score_60"
-signals: 7189
-cagr: 0.105882
-spy_cagr: 0.109342
-sharpe: 0.441953
+signals: 7191
+cagr: 0.106573
+spy_cagr: 0.108918
+sharpe: 0.443859
 max_drawdown: 0.612357
-holdout_excess: 0.0180999
+holdout_excess: 0.0176435
 ---
 
 # Live score 60+ (strong)
@@ -17,88 +17,88 @@ Rule key: `score_60`. Liquid stocks only ($2+, $1M+/day), plan purchases exclude
 
 | Measure | Value |
 |---|---|
-| Signals | 7,189 |
-| 3-month excess vs SPY (mean / median) | +1.6% / -0.5% |
+| Signals | 7,191 |
+| 3-month excess vs SPY (mean / median) | +1.6% / -0.6% |
 | Beat SPY over 3 months | 49% |
-| Entering one session later | +1.4% |
+| Entering one session later | +1.3% |
 | vs surviving stocks | +1.8% |
-| 2006-2015 excess /yr | +6.9% (p 0.097) |
-| 2016+ excess /yr | +1.8% (p 0.735) |
+| 2006-2015 excess /yr | +6.7% (p 0.104) |
+| 2016+ excess /yr | +1.8% (p 0.740) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +4.7% | +10.9% | 0.24 | 0.55 | 62% | 0.92 | -4.0% | 33% | 3,303 | 6.2% | +0.3% / -0.05 / 59% |
-| 63d | +10.6% | +10.9% | 0.44 | 0.55 | 61% | 1.22 | -0.5% | 57% | 1,586 | 2.9% | +2.8% / 0.15 / 31% |
-| 126d | +12.5% | +10.9% | 0.51 | 0.55 | 63% | 1.12 | +1.8% | 57% | 822 | 1.6% | +4.4% / 0.26 / 42% |
+| 21d | +4.7% | +10.9% | 0.24 | 0.55 | 62% | 0.93 | -3.9% | 29% | 3,301 | 6.2% | +0.3% / -0.05 / 59% |
+| 63d | +10.7% | +10.9% | 0.44 | 0.55 | 61% | 1.21 | -0.4% | 57% | 1,587 | 2.9% | +3.0% / 0.16 / 31% |
+| 126d | +11.5% | +10.9% | 0.47 | 0.55 | 65% | 1.11 | +1.0% | 57% | 823 | 1.6% | +3.5% / 0.19 / 41% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +13.6%/yr, double costs +7.6%/yr.
+Cost sensitivity (63-session hold): no costs +13.7%/yr, double costs +7.8%/yr.
 
 
 ### Year by year (63-session hold)
 
 | Year | Strategy | SPY | Difference |
 |---|---|---|---|
-| 2006 | +16.4% | +13.3% | +3.1% |
+| 2006 | +14.4% | +13.3% | +1.1% |
 | 2007 | -11.8% | +5.1% | -16.9% |
 | 2008 | -29.0% | -36.8% | +7.8% |
 | 2009 | +41.3% | +26.4% | +14.9% |
-| 2010 | +30.2% | +15.1% | +15.1% |
+| 2010 | +29.0% | +15.1% | +13.9% |
 | 2011 | -2.9% | +1.9% | -4.8% |
 | 2012 | +14.5% | +16.0% | -1.4% |
 | 2013 | +48.3% | +32.3% | +16.0% |
 | 2014 | +7.4% | +13.5% | -6.1% |
-| 2015 | -12.9% | +1.2% | -14.2% |
+| 2015 | -12.7% | +1.2% | -13.9% |
 | 2016 | +28.9% | +12.0% | +16.9% |
 | 2017 | +28.0% | +21.7% | +6.3% |
 | 2018 | -10.8% | -4.6% | -6.3% |
-| 2019 | +47.2% | +31.2% | +16.0% |
+| 2019 | +47.3% | +31.2% | +16.1% |
 | 2020 | +18.4% | +18.3% | +0.1% |
-| 2021 | -1.2% | +28.7% | -30.0% |
-| 2022 | -8.9% | -18.2% | +9.3% |
-| 2023 | +34.5% | +26.2% | +8.3% |
-| 2024 | +2.2% | +24.9% | -22.7% |
-| 2025 | +23.3% | +17.7% | +5.6% |
-| 2026 | +0.3% | +11.5% | -11.2% |
+| 2021 | -1.5% | +28.7% | -30.2% |
+| 2022 | -7.0% | -18.2% | +11.2% |
+| 2023 | +34.4% | +26.2% | +8.3% |
+| 2024 | +2.3% | +24.9% | -22.6% |
+| 2025 | +23.2% | +17.7% | +5.5% |
+| 2026 | +2.3% | +10.8% | -8.5% |
 
 
 ## Live forward test
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 15 | -0.7% | +1.3% | 60% |
+| 5 sessions | 19 | -0.0% | +1.3% | 63% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | – | pending |
-| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | – | pending |
-| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | – | pending |
-| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | – | pending |
-| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | – | pending |
-| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | – | pending |
-| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | – | pending |
-| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | – | pending |
-| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | +0.3% | open |
-| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | $46K | 67 | -1.1% | open |
-| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | -5.1% | open |
-| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | +5.6% | open |
-| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | -1.1% | open |
-| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | -2.4% | open |
-| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | -1.7% | open |
-| 2026-11-05 | [[LBTYA]] | [[Rodriguez Enrique]] | $2.0M | 73 | +1.8% | open |
-| 2026-11-05 | [[LBTYA]] | [[FRIES MICHAEL T]] | $1.0M | 66 | +1.8% | open |
-| 2026-11-04 | [[ASPE]] | [[ORBIMED ADVISORS LLC]] | $15.0M | 80 | -3.7% | open |
-| 2026-11-04 | [[LRN]] | [[Shepherd Brian A]] | $1.7M | 66 | -4.0% | open |
-| 2026-11-04 | [[UPBD]] | [[Khouri Halim]] | $251K | 70 | +0.8% | open |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | – | pending |
+| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | – | pending |
+| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | – | pending |
+| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | – | pending |
+| 2026-11-10 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $390K | 60 | – | pending |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | -3.6% | open |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | +2.8% | open |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | -1.0% | open |
+| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | -1.8% | open |
+| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | -1.2% | open |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | +5.6% | open |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.5% | open |
+| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +2.8% | open |
+| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | -0.4% | open |
+| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | $46K | 67 | +0.9% | open |
+| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | -5.4% | open |
+| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | +2.3% | open |
+| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | -3.6% | open |
+| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | -2.7% | open |
+| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | -1.4% | open |
 
 
 ```dataview

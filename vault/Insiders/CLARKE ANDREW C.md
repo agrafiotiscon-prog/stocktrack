@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +4.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[LKQ]] | Director | $400K | 60 | +2.3% |
+| 2026-11-03 | [[LKQ]] | Director | $400K | 60 | +1.6% |

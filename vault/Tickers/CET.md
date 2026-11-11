@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-08 | [[Hill John C]] | CEO & President | $28K | 32 | +4.8% | open |
+| 2026-10-08 | [[Hill John C]] | CEO & President | $28K | 32 | +4.9% | open |

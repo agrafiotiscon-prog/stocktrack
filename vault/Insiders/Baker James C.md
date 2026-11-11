@@ -12,4 +12,4 @@ Backtest record: 32 earlier buys, average 3-month excess vs SPY -3.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[KYN]] | President | $331K | 54 | -0.0% |
+| 2026-11-06 | [[KYN]] | President | $331K | 54 | +1.3% |
