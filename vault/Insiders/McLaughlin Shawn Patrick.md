@@ -12,4 +12,4 @@ Backtest record: 21 earlier buys, average 3-month excess vs SPY -0.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[BHRB]] | Director | $36K | 20 | +0.7% |
+| 2026-10-30 | [[BHRB]] | Director | $36K | 20 | -0.0% |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[CNXN]] | President & COO | $200K | 55 | – |
+| 2026-11-10 | [[CNXN]] | President & COO | $200K | 55 | -1.7% |

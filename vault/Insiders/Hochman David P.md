@@ -12,4 +12,4 @@ Backtest record: 23 earlier buys, average 3-month excess vs SPY +0.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[OBIO]] | See Remarks | $25K | 41 | -2.0% |
+| 2026-11-09 | [[OBIO]] | See Remarks | $25K | 41 | +1.5% |

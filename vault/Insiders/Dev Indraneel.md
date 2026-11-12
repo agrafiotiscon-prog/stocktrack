@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -3.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[WCC]] | EVP & CFO | $504K | 60 | -1.0% |
+| 2026-11-09 | [[WCC]] | EVP & CFO | $504K | 60 | +1.0% |

@@ -12,4 +12,4 @@ Backtest record: 69 earlier buys, average 3-month excess vs SPY +7.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[MTDR]] | Chairman and CEO | $257K | 84 | +2.8% |
+| 2026-11-09 | [[MTDR]] | Chairman and CEO | $257K | 84 | +5.0% |

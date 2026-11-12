@@ -75,33 +75,33 @@ Cost sensitivity (63-session hold): no costs +16.6%/yr, double costs +11.0%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 10 | +2.9% | +3.4% | 80% |
+| 5 sessions | 14 | +2.1% | +2.1% | 71% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | – | pending |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | – | pending |
-| 2026-11-10 | [[EMN]] | [[McAlindon Julie A]] | $160K | 36 | – | pending |
-| 2026-11-10 | [[OBK]] | [[Crotwell Jim]] | $107K | 36 | – | pending |
-| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | – | pending |
-| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | -0.5% | open |
-| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | -0.5% | open |
-| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | -3.6% | open |
-| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | $51K | 53 | +2.8% | open |
-| 2026-11-09 | [[WCC]] | [[Marino Anthony S]] | $100K | 52 | -1.0% | open |
-| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | -1.0% | open |
-| 2026-11-09 | [[FUN]] | [[Bennett Christopher Lawrence]] | $47K | 34 | -5.8% | open |
-| 2026-11-09 | [[OBIO]] | [[Hochman David P]] | $25K | 41 | -2.0% | open |
-| 2026-11-09 | [[DKNG]] | [[Ellingson Alan Wayne]] | $350K | 46 | +3.7% | open |
-| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.5% | open |
-| 2026-11-09 | [[SOPH]] | [[CARDOZA GEORGE]] | $141K | 53 | -0.8% | open |
-| 2026-11-09 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.3M | 52 | -1.3% | open |
-| 2026-11-09 | [[KMT]] | [[Watson Patrick S]] | $47K | 45 | -0.0% | open |
-| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | $2.0M | 54 | +4.1% | open |
-| 2026-11-06 | [[KYN]] | [[Little Harrison James]] | $52K | 45 | +1.3% | open |
+| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
+| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
+| 2026-11-12 | [[MNR]] | [[WARD TOM L]] | $1.0M | 37 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | $41K | 55 | – | pending |
+| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +0.2% | open |
+| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | +1.6% | open |
+| 2026-11-10 | [[EMN]] | [[McAlindon Julie A]] | $160K | 36 | -0.2% | open |
+| 2026-11-10 | [[OBK]] | [[Crotwell Jim]] | $107K | 36 | -0.7% | open |
+| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | +0.1% | open |
+| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | -4.1% | open |
+| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | -4.1% | open |
+| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | +1.3% | open |
+| 2026-11-09 | [[MTDR]] | [[Stetson Glenn W]] | $51K | 53 | +5.0% | open |
+| 2026-11-09 | [[WCC]] | [[Marino Anthony S]] | $100K | 52 | +1.0% | open |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | +1.0% | open |
+| 2026-11-09 | [[FUN]] | [[Bennett Christopher Lawrence]] | $47K | 34 | +1.6% | open |
+| 2026-11-09 | [[OBIO]] | [[Hochman David P]] | $25K | 41 | +1.5% | open |
+| 2026-11-09 | [[DKNG]] | [[Ellingson Alan Wayne]] | $350K | 46 | +3.8% | open |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.2% | open |
+| 2026-11-09 | [[SOPH]] | [[CARDOZA GEORGE]] | $141K | 53 | -7.1% | open |
 
 
 ```dataview

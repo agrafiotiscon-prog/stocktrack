@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Lyons Billy J Jr]] | Director | $572 | 13 | – | pending |
+| 2026-11-10 | [[Lyons Billy J Jr]] | Director | $572 | 13 | -0.3% | open |

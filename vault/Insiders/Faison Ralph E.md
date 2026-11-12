@@ -12,4 +12,4 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY -11.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[ARLO]] | Director | $100K | 26 | – |
+| 2026-11-10 | [[ARLO]] | Director | $100K | 26 | -2.7% |

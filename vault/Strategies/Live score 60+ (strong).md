@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.7%/yr, double costs +7.8%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 19 | -0.0% | +1.3% | 63% |
+| 5 sessions | 25 | +1.5% | +1.6% | 64% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | – | pending |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | – | pending |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | – | pending |
-| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | – | pending |
-| 2026-11-10 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $390K | 60 | – | pending |
-| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | -3.6% | open |
-| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | +2.8% | open |
-| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | -1.0% | open |
-| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | -1.8% | open |
-| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | -1.2% | open |
-| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | +5.6% | open |
-| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.5% | open |
-| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +2.8% | open |
-| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | -0.4% | open |
-| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | $46K | 67 | +0.9% | open |
-| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | -5.4% | open |
-| 2026-11-05 | [[LBRT]] | [[Gusek Ron]] | $377K | 65 | +2.3% | open |
-| 2026-11-05 | [[GLXY]] | [[Novogratz Michael]] | $9.9M | 75 | -3.6% | open |
-| 2026-11-05 | [[FBRT]] | [[Byrne Richard J]] | $998K | 65 | -2.7% | open |
-| 2026-11-05 | [[UPBD]] | [[Karam Fahmi]] | $100K | 64 | -1.4% | open |
+| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
+| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
+| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | $75K | 66 | – | pending |
+| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -2.5% | open |
+| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | -0.2% | open |
+| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | +1.6% | open |
+| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | +0.1% | open |
+| 2026-11-10 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $390K | 60 | -1.2% | open |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | +1.3% | open |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | +5.0% | open |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | +1.0% | open |
+| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | -2.1% | open |
+| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | -0.1% | open |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | -1.6% | open |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.2% | open |
+| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +5.0% | open |
+| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | -2.7% | open |
+| 2026-11-06 | [[MTDR]] | [[Erman Bryan A]] | $46K | 67 | +3.1% | open |
 
 
 ```dataview

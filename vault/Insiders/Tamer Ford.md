@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +56.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[LSCC]] | President & CEO | $1.0M | 65 | +11.2% |
+| 2026-11-04 | [[LSCC]] | President & CEO | $1.0M | 65 | +21.2% |

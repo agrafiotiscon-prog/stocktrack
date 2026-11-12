@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +2.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[NATR]] | 10% Owner | $2.8M | 44 | -3.8% |
+| 2026-11-09 | [[NATR]] | 10% Owner | $2.8M | 44 | -10.6% |

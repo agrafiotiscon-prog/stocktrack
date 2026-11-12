@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[Potter Leonard]] | Director | $104K | 39 | +3.7% | open |
-| [[2026-11-04 HGV Wang Mark D\|2026-11-04]] | [[Wang Mark D]] | See Remarks | $499K | 46 | +3.7% | open |
+| 2026-11-04 | [[Potter Leonard]] | Director | $104K | 39 | +2.1% | open |
+| [[2026-11-04 HGV Wang Mark D\|2026-11-04]] | [[Wang Mark D]] | See Remarks | $499K | 46 | +2.1% | open |

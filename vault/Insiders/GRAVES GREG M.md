@@ -12,4 +12,4 @@ Backtest record: 96 earlier buys, average 3-month excess vs SPY -0.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[UMBF]] | Director | $40K | 32 | -1.3% |
+| 2026-11-04 | [[UMBF]] | Director | $40K | 32 | -3.4% |

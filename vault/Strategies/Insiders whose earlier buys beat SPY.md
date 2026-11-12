@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +16.3%/yr, double costs +9.4%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 56 | +2.5% | +2.6% | 75% |
+| 5 sessions | 61 | +2.6% | +2.5% | 74% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | – | pending |
-| 2026-11-10 | [[XGN]] | [[Chernett Jorey]] | $91K | 20 | – | pending |
-| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | – | pending |
-| 2026-11-10 | [[NVT]] | [[Parker Herbert K]] | $339K | 39 | – | pending |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | – | pending |
-| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | – | pending |
-| 2026-11-10 | [[MCY]] | [[Braunegg George Gwyer]] | $50K | 43 | – | pending |
-| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | – | pending |
-| 2026-11-10 | [[BOLT]] | [[Coastlands Capital LP]] | $319K | 33 | – | pending |
-| 2026-11-10 | [[OBK]] | [[Crotwell Jim]] | $107K | 36 | – | pending |
-| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | – | pending |
-| 2026-11-10 | [[OSBC]] | [[Lyons Billy J Jr]] | $572 | 13 | – | pending |
-| 2026-11-10 | [[BOTJ]] | [[ADDISON LEWIS C]] | $2K | 14 | – | pending |
-| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | – | pending |
-| 2026-11-10 | [[MTDR]] | [[Ehrman Monika U]] | $17K | 42 | – | pending |
-| 2026-11-10 | [[CRH]] | [[FEARON RICHARD H]] | $570K | 47 | – | pending |
-| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | – | pending |
-| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | -0.5% | open |
-| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | -0.5% | open |
-| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | +1.3% | open |
+| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
+| 2026-11-12 | [[MNR]] | [[WARD TOM L]] | $1.0M | 37 | – | pending |
+| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
+| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | +14.1% | open |
+| 2026-11-10 | [[XGN]] | [[Chernett Jorey]] | $91K | 20 | -10.3% | open |
+| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | -13.1% | open |
+| 2026-11-10 | [[NVT]] | [[Parker Herbert K]] | $339K | 39 | -3.2% | open |
+| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +0.2% | open |
+| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | -0.8% | open |
+| 2026-11-10 | [[MCY]] | [[Braunegg George Gwyer]] | $50K | 43 | +1.8% | open |
+| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | -1.2% | open |
+| 2026-11-10 | [[BOLT]] | [[Coastlands Capital LP]] | $319K | 33 | -2.3% | open |
+| 2026-11-10 | [[OBK]] | [[Crotwell Jim]] | $107K | 36 | -0.7% | open |
+| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | -2.2% | open |
+| 2026-11-10 | [[OSBC]] | [[Lyons Billy J Jr]] | $572 | 13 | -0.3% | open |
+| 2026-11-10 | [[BOTJ]] | [[ADDISON LEWIS C]] | $2K | 14 | -2.3% | open |
+| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | +0.1% | open |
+| 2026-11-10 | [[MTDR]] | [[Ehrman Monika U]] | $17K | 42 | +1.3% | open |
+| 2026-11-10 | [[CRH]] | [[FEARON RICHARD H]] | $570K | 47 | -0.1% | open |
+| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | +4.2% | open |
 
 
 ```dataview

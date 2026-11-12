@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-03 | [[MINGE JOHN C]] | Director | $139K | 30 | -1.8% | open |
+| 2026-11-03 | [[MINGE JOHN C]] | Director | $139K | 30 | -0.0% | open |

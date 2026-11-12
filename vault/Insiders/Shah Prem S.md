@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[CVS]] | EVP and Group President | $2.0M | 54 | +4.1% |
+| 2026-11-06 | [[CVS]] | EVP and Group President | $2.0M | 54 | +3.4% |

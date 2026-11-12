@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[ADLERSBERG SHABTAI]] | President and CEO | $126K | 38 | +0.3% | open |
+| 2026-11-09 | [[ADLERSBERG SHABTAI]] | President and CEO | $126K | 38 | +1.6% | open |

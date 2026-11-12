@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Lynx1 Capital Management LP]] | 10% Owner | $885K | 34 | +25.8% | open |
+| 2026-10-26 | [[Lynx1 Capital Management LP]] | 10% Owner | $885K | 34 | +14.2% | open |

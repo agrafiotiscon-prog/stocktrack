@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +2.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[BMRC]] | Director | $1K | 14 | +1.9% |
+| 2026-10-30 | [[BMRC]] | Director | $1K | 14 | +0.1% |

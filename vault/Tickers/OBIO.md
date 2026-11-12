@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-09 OBIO Fain Eric S\|2026-11-09]] | [[Fain Eric S]] | Director | $100K | 55 | -2.0% | open |
-| [[2026-11-09 OBIO Pacitti David\|2026-11-09]] | [[Pacitti David]] | Director | $100K | 59 | -2.0% | open |
-| [[2026-11-09 OBIO Hochman David P\|2026-11-09]] | [[Hochman David P]] | See Remarks | $25K | 41 | -2.0% | open |
-| [[2026-11-09 OBIO Taylor Andrew Lawrence\|2026-11-09]] | [[Taylor Andrew Lawrence]] | Chief Financial Officer | $5K | 48 | -2.0% | open |
+| [[2026-11-09 OBIO Fain Eric S\|2026-11-09]] | [[Fain Eric S]] | Director | $100K | 55 | +1.5% | open |
+| [[2026-11-09 OBIO Pacitti David\|2026-11-09]] | [[Pacitti David]] | Director | $100K | 59 | +1.5% | open |
+| [[2026-11-09 OBIO Hochman David P\|2026-11-09]] | [[Hochman David P]] | See Remarks | $25K | 41 | +1.5% | open |
+| [[2026-11-09 OBIO Taylor Andrew Lawrence\|2026-11-09]] | [[Taylor Andrew Lawrence]] | Chief Financial Officer | $5K | 48 | +1.5% | open |

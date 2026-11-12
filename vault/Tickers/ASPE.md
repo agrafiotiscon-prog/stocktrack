@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-04 ASPE ORBIMED ADVISORS LLC\|2026-11-04]] | [[ORBIMED ADVISORS LLC]] | Director | $15.0M | 80 | -0.3% | open |
-| [[2026-11-02 ASPE ARCH Venture Fund X, L.P\|2026-11-02]] | [[ARCH Venture Fund X, L.P]] | 10% Owner | $20.0M | 70 | -1.1% | open |
-| [[2026-11-02 ASPE ARCH Venture Partners XIV, L.P\|2026-11-02]] | [[ARCH Venture Partners XIV, L.P]] | 10% Owner | $18.0M | 70 | -1.1% | open |
+| [[2026-11-04 ASPE ORBIMED ADVISORS LLC\|2026-11-04]] | [[ORBIMED ADVISORS LLC]] | Director | $15.0M | 80 | +6.2% | open |
+| [[2026-11-02 ASPE ARCH Venture Fund X, L.P\|2026-11-02]] | [[ARCH Venture Fund X, L.P]] | 10% Owner | $20.0M | 70 | +5.4% | open |
+| [[2026-11-02 ASPE ARCH Venture Partners XIV, L.P\|2026-11-02]] | [[ARCH Venture Partners XIV, L.P]] | 10% Owner | $18.0M | 70 | +5.4% | open |

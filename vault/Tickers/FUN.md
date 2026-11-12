@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 FUN JAFFER REHAN\|2026-11-10]] | [[JAFFER REHAN]] | Director | $14.9M | 77 | – | pending |
-| [[2026-11-10 FUN HADDRILL RICHARD M\|2026-11-10]] | [[HADDRILL RICHARD M]] | Executive Chair | $91K | 57 | – | pending |
-| 2026-11-09 | [[Bennett Christopher Lawrence]] | Chief Legal Officer | $47K | 34 | -5.8% | open |
+| [[2026-11-10 FUN JAFFER REHAN\|2026-11-10]] | [[JAFFER REHAN]] | Director | $14.9M | 77 | -0.2% | open |
+| [[2026-11-10 FUN HADDRILL RICHARD M\|2026-11-10]] | [[HADDRILL RICHARD M]] | Executive Chair | $91K | 57 | -0.2% | open |
+| 2026-11-09 | [[Bennett Christopher Lawrence]] | Chief Legal Officer | $47K | 34 | +1.6% | open |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +7.9%/yr, double costs +2.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 183 | +0.9% | +1.5% | 64% |
+| 5 sessions | 204 | +1.1% | +1.5% | 64% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | – | pending |
-| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | – | pending |
-| 2026-11-10 | [[XGN]] | [[Chernett Jorey]] | $91K | 20 | – | pending |
-| 2026-11-10 | [[ENOV]] | [[Wienbar Sharon L]] | $50K | 25 | – | pending |
-| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | $243K | 48 | – | pending |
-| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | – | pending |
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | – | pending |
-| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | $55K | 51 | – | pending |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | – | pending |
-| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | $70K | 40 | – | pending |
-| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | $686K | 44 | – | pending |
-| 2026-11-10 | [[NVT]] | [[Parker Herbert K]] | $339K | 39 | – | pending |
-| 2026-11-10 | [[FIP]] | [[Fletcher Carl Russell IV]] | $19K | 35 | – | pending |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | – | pending |
-| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | – | pending |
-| 2026-11-10 | [[FUN]] | [[HADDRILL RICHARD M]] | $91K | 57 | – | pending |
-| 2026-11-10 | [[SMCI]] | [[Angel Scott]] | $50K | 33 | – | pending |
-| 2026-11-10 | [[WD]] | [[Pinkus Gary S]] | $201K | 45 | – | pending |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | – | pending |
-| 2026-11-10 | [[MCY]] | [[Braunegg George Gwyer]] | $50K | 43 | – | pending |
+| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
+| 2026-11-12 | [[TH]] | [[Archer James Bradley]] | $313K | 43 | – | pending |
+| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
+| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
+| 2026-11-12 | [[MNR]] | [[WARD TOM L]] | $1.0M | 37 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | $41K | 55 | – | pending |
+| 2026-11-12 | [[GSM]] | [[CROCKETT BRUCE LARMOUR]] | $21K | 52 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | $75K | 66 | – | pending |
+| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Levi Marco]] | $51K | 56 | – | pending |
+| 2026-11-12 | [[CSQR]] | [[MULLEE SPENCER EDWARD]] | $247K | 41 | – | pending |
+| 2026-11-12 | [[COHR]] | [[Digirolomo Enrico]] | $223K | 46 | – | pending |
+| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | +7.6% | open |
+| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | +14.1% | open |
+| 2026-11-10 | [[XGN]] | [[Chernett Jorey]] | $91K | 20 | -10.3% | open |
+| 2026-11-10 | [[ENOV]] | [[Wienbar Sharon L]] | $50K | 25 | +1.5% | open |
+| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | $243K | 48 | +1.7% | open |
+| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | -13.1% | open |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -2.5% | open |
+| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | $55K | 51 | -2.5% | open |
 
 
 ```dataview

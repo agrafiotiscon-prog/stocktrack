@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-04 SPTX Torres Denice\|2026-11-04]] | [[Torres Denice]] | Director | $99K | 42 | +6.3% | open |
+| [[2026-11-04 SPTX Torres Denice\|2026-11-04]] | [[Torres Denice]] | Director | $99K | 42 | +1.9% | open |

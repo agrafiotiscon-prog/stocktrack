@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.5%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 17 | +1.3% | +1.6% | 59% |
+| 5 sessions | 21 | +2.1% | +1.7% | 67% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | – | pending |
-| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | – | pending |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | – | pending |
-| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | $70K | 40 | – | pending |
-| 2026-11-10 | [[NVT]] | [[Parker Herbert K]] | $339K | 39 | – | pending |
-| 2026-11-10 | [[FUN]] | [[HADDRILL RICHARD M]] | $91K | 57 | – | pending |
-| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | – | pending |
-| 2026-11-10 | [[FIS]] | [[Gibson Kourtney]] | $52K | 38 | – | pending |
-| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | – | pending |
-| 2026-11-10 | [[STRA]] | [[Slocum William J]] | $65K | 43 | – | pending |
-| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | – | pending |
-| 2026-11-10 | [[TROX]] | [[Johnston Peter]] | $53K | 28 | – | pending |
-| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | – | pending |
-| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | -0.5% | open |
-| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | -0.5% | open |
-| 2026-11-09 | [[ADTN]] | [[Santo Timothy P]] | $74K | 58 | -3.6% | open |
-| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | -3.6% | open |
-| 2026-11-09 | [[NATR]] | [[PRESCOTT GROUP CAPITAL MANAGEMENT, L.L.C]] | $2.8M | 44 | -3.8% | open |
-| 2026-11-09 | [[FUN]] | [[Bennett Christopher Lawrence]] | $47K | 34 | -5.8% | open |
-| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | +5.6% | open |
+| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
+| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
+| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | $41K | 55 | – | pending |
+| 2026-11-12 | [[GSM]] | [[CROCKETT BRUCE LARMOUR]] | $21K | 52 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | $75K | 66 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Levi Marco]] | $51K | 56 | – | pending |
+| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | +7.6% | open |
+| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | -13.1% | open |
+| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | -0.2% | open |
+| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | $70K | 40 | +3.7% | open |
+| 2026-11-10 | [[NVT]] | [[Parker Herbert K]] | $339K | 39 | -3.2% | open |
+| 2026-11-10 | [[FUN]] | [[HADDRILL RICHARD M]] | $91K | 57 | -0.2% | open |
+| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | -0.6% | open |
+| 2026-11-10 | [[FIS]] | [[Gibson Kourtney]] | $52K | 38 | +7.2% | open |
+| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | -1.2% | open |
+| 2026-11-10 | [[STRA]] | [[Slocum William J]] | $65K | 43 | -2.2% | open |
+| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | -2.2% | open |
+| 2026-11-10 | [[TROX]] | [[Johnston Peter]] | $53K | 28 | -0.8% | open |
+| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | +7.6% | open |
 
 
 ```dataview

@@ -10,9 +10,9 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[NBIS]] | Director | $25K | 5 | -12.0% |
-| 2026-10-29 | [[NBIS]] | Director | $58K | 11 | -13.2% |
-| 2026-10-26 | [[NBIS]] | Director | $122K | 18 | -13.5% |
-| 2026-10-21 | [[NBIS]] | Director | $50K | 10 | -16.5% |
-| 2026-10-20 | [[NBIS]] | Director | $25K | 5 | -21.3% |
-| 2026-10-16 | [[NBIS]] | Director | $50K | 10 | -21.8% |
+| 2026-10-30 | [[NBIS]] | Director | $25K | 5 | +0.0% |
+| 2026-10-29 | [[NBIS]] | Director | $58K | 11 | -1.3% |
+| 2026-10-26 | [[NBIS]] | Director | $122K | 18 | -1.7% |
+| 2026-10-21 | [[NBIS]] | Director | $50K | 10 | -5.3% |
+| 2026-10-20 | [[NBIS]] | Director | $25K | 5 | -10.9% |
+| 2026-10-16 | [[NBIS]] | Director | $50K | 10 | -11.4% |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[UPBD]] | EVP, Chief Financial Officer | $251K | 70 | +1.1% |
+| 2026-11-04 | [[UPBD]] | EVP, Chief Financial Officer | $251K | 70 | +2.3% |

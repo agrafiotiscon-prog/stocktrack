@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-02 | [[NYAX]] | CEO, Co Founder & Chairman | $2.1M | 62 | +0.6% |
-| 2026-09-30 | [[NYAX]] | CEO, Co Founder & Chairman | $2.1M | 62 | +2.3% |
+| 2026-10-02 | [[NYAX]] | CEO, Co Founder & Chairman | $2.1M | 62 | +7.7% |
+| 2026-09-30 | [[NYAX]] | CEO, Co Founder & Chairman | $2.1M | 62 | +9.6% |

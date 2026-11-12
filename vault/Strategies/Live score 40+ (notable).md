@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.7%/yr, double costs +3.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 75 | +0.3% | +1.3% | 61% |
+| 5 sessions | 88 | +0.9% | +1.5% | 64% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | – | pending |
-| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | $243K | 48 | – | pending |
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | – | pending |
-| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | $55K | 51 | – | pending |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | – | pending |
-| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | $70K | 40 | – | pending |
-| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | $686K | 44 | – | pending |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | – | pending |
-| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | – | pending |
-| 2026-11-10 | [[FUN]] | [[HADDRILL RICHARD M]] | $91K | 57 | – | pending |
-| 2026-11-10 | [[WD]] | [[Pinkus Gary S]] | $201K | 45 | – | pending |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | – | pending |
-| 2026-11-10 | [[MCY]] | [[Braunegg George Gwyer]] | $50K | 43 | – | pending |
-| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | – | pending |
-| 2026-11-10 | [[SUNC]] | [[Skidmore David K]] | $94K | 42 | – | pending |
-| 2026-11-10 | [[CNXN]] | [[Zafirovski Matthew David]] | $200K | 55 | – | pending |
-| 2026-11-10 | [[PRTA]] | [[SCULLY WILLIAM P]] | $1.2M | 40 | – | pending |
-| 2026-11-10 | [[STRA]] | [[Slocum William J]] | $65K | 43 | – | pending |
-| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | – | pending |
-| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | – | pending |
+| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
+| 2026-11-12 | [[TH]] | [[Archer James Bradley]] | $313K | 43 | – | pending |
+| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
+| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | $41K | 55 | – | pending |
+| 2026-11-12 | [[GSM]] | [[CROCKETT BRUCE LARMOUR]] | $21K | 52 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | $75K | 66 | – | pending |
+| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
+| 2026-11-12 | [[GSM]] | [[Levi Marco]] | $51K | 56 | – | pending |
+| 2026-11-12 | [[CSQR]] | [[MULLEE SPENCER EDWARD]] | $247K | 41 | – | pending |
+| 2026-11-12 | [[COHR]] | [[Digirolomo Enrico]] | $223K | 46 | – | pending |
+| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | +7.6% | open |
+| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | $243K | 48 | +1.7% | open |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -2.5% | open |
+| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | $55K | 51 | -2.5% | open |
+| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | -0.2% | open |
+| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | $70K | 40 | +3.7% | open |
+| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | $686K | 44 | +0.2% | open |
+| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +0.2% | open |
+| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | -0.8% | open |
 
 
 ```dataview

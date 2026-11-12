@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-08 | [[L1 Capital Pty Ltd]] | 10% Owner | $2.0M | 37 | -9.1% | open |
-| [[2026-10-06 AVR L1 Capital Pty Ltd\|2026-10-06]] | [[L1 Capital Pty Ltd]] | 10% Owner | $6.7M | 44 | -10.4% | open |
-| [[2026-10-01 AVR L1 Capital Pty Ltd\|2026-10-01]] | [[L1 Capital Pty Ltd]] | 10% Owner | $3.0M | 41 | -23.4% | open |
+| 2026-10-08 | [[L1 Capital Pty Ltd]] | 10% Owner | $2.0M | 37 | -5.8% | open |
+| [[2026-10-06 AVR L1 Capital Pty Ltd\|2026-10-06]] | [[L1 Capital Pty Ltd]] | 10% Owner | $6.7M | 44 | -7.2% | open |
+| [[2026-10-01 AVR L1 Capital Pty Ltd\|2026-10-01]] | [[L1 Capital Pty Ltd]] | 10% Owner | $3.0M | 41 | -20.8% | open |

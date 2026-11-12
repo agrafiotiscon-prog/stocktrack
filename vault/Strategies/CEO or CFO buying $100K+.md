@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.1%/yr, double costs +7.1%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 16 | -2.6% | +0.6% | 56% |
+| 5 sessions | 21 | -0.5% | +0.6% | 57% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | – | pending |
-| 2026-11-10 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $390K | 60 | – | pending |
-| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | – | pending |
-| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | -3.6% | open |
-| 2026-11-09 | [[ROK]] | [[Moret Blake D]] | $1.5M | 53 | +1.1% | open |
-| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | -1.0% | open |
-| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | -1.8% | open |
-| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | -1.2% | open |
-| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | +5.6% | open |
-| 2026-11-09 | [[DKNG]] | [[Ellingson Alan Wayne]] | $350K | 46 | +3.7% | open |
-| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.5% | open |
-| 2026-11-09 | [[SOPH]] | [[CARDOZA GEORGE]] | $141K | 53 | -0.8% | open |
-| 2026-11-09 | [[SOPH]] | [[Muken Ross]] | $137K | 53 | -0.8% | open |
-| 2026-11-09 | [[CMCO]] | [[Wilson David J]] | $551K | 52 | +5.5% | open |
-| 2026-11-09 | [[AUDC]] | [[ADLERSBERG SHABTAI]] | $126K | 38 | +0.3% | open |
-| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +2.8% | open |
-| 2026-11-06 | [[TRNS]] | [[IRICK JAIME A]] | $230K | 59 | -3.0% | open |
-| 2026-11-06 | [[KMT]] | [[Chowbey Sanjay]] | $165K | 42 | +1.0% | open |
-| 2026-11-05 | [[MTDR]] | [[Calvert Christopher P]] | $105K | 50 | -0.3% | open |
-| 2026-11-05 | [[BXMT]] | [[Johnson Timothy Steven]] | $1.0M | 69 | -5.4% | open |
+| 2026-11-12 | [[TH]] | [[Archer James Bradley]] | $313K | 43 | – | pending |
+| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
+| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
+| 2026-11-12 | [[CSQR]] | [[MULLEE SPENCER EDWARD]] | $247K | 41 | – | pending |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -2.5% | open |
+| 2026-11-10 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $390K | 60 | -1.2% | open |
+| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | +7.6% | open |
+| 2026-11-09 | [[ADTN]] | [[STANTON THOMAS R]] | $601K | 65 | +1.3% | open |
+| 2026-11-09 | [[ROK]] | [[Moret Blake D]] | $1.5M | 53 | +2.0% | open |
+| 2026-11-09 | [[WCC]] | [[Dev Indraneel]] | $504K | 60 | +1.0% | open |
+| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | -2.1% | open |
+| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | -0.1% | open |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | -1.6% | open |
+| 2026-11-09 | [[DKNG]] | [[Ellingson Alan Wayne]] | $350K | 46 | +3.8% | open |
+| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.2% | open |
+| 2026-11-09 | [[SOPH]] | [[CARDOZA GEORGE]] | $141K | 53 | -7.1% | open |
+| 2026-11-09 | [[SOPH]] | [[Muken Ross]] | $137K | 53 | -7.1% | open |
+| 2026-11-09 | [[CMCO]] | [[Wilson David J]] | $551K | 52 | +11.9% | open |
+| 2026-11-09 | [[AUDC]] | [[ADLERSBERG SHABTAI]] | $126K | 38 | +1.6% | open |
+| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +5.0% | open |
 
 
 ```dataview

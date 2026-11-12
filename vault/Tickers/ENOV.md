@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Wienbar Sharon L]] | Director | $50K | 25 | – | pending |
+| 2026-11-10 | [[Wienbar Sharon L]] | Director | $50K | 25 | +1.5% | open |

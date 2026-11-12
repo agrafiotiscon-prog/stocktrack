@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +11.7%/yr, double costs +6.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 24 | +0.3% | +0.6% | 54% |
+| 5 sessions | 31 | +1.3% | +0.6% | 58% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | – | pending |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | – | pending |
-| 2026-11-10 | [[WD]] | [[Pinkus Gary S]] | $201K | 45 | – | pending |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | – | pending |
-| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | – | pending |
-| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | – | pending |
-| 2026-11-10 | [[CNXN]] | [[Zafirovski Matthew David]] | $200K | 55 | – | pending |
-| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | +1.3% | open |
-| 2026-11-09 | [[ADM]] | [[McAtee David R II]] | $197K | 45 | -0.9% | open |
-| 2026-11-09 | [[OBIO]] | [[Pacitti David]] | $100K | 59 | -2.0% | open |
-| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | -1.8% | open |
-| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | +5.6% | open |
-| 2026-11-09 | [[NLY]] | [[Wede Scott]] | $940K | 52 | -0.4% | open |
-| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +2.8% | open |
-| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | $2.0M | 54 | +4.1% | open |
-| 2026-11-06 | [[TRNS]] | [[IRICK JAIME A]] | $230K | 59 | -3.0% | open |
-| 2026-11-06 | [[YPF]] | [[Francos Guillermo Alberto]] | $356K | 32 | -3.8% | open |
-| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | -0.4% | open |
-| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | -10.5% | open |
-| 2026-11-05 | [[FLOC]] | [[Fairbanks Jonathan B]] | $293K | 47 | +4.5% | open |
+| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -2.5% | open |
+| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | -0.2% | open |
+| 2026-11-10 | [[WD]] | [[Pinkus Gary S]] | $201K | 45 | -2.9% | open |
+| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | +1.6% | open |
+| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | -0.6% | open |
+| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | -1.2% | open |
+| 2026-11-10 | [[CNXN]] | [[Zafirovski Matthew David]] | $200K | 55 | -1.7% | open |
+| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | +5.6% | open |
+| 2026-11-09 | [[ADM]] | [[McAtee David R II]] | $197K | 45 | +0.1% | open |
+| 2026-11-09 | [[OBIO]] | [[Pacitti David]] | $100K | 59 | +1.5% | open |
+| 2026-11-09 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $798K | 76 | -2.1% | open |
+| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | -1.6% | open |
+| 2026-11-09 | [[NLY]] | [[Wede Scott]] | $940K | 52 | -3.8% | open |
+| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +5.0% | open |
+| 2026-11-06 | [[CVS]] | [[Shah Prem S]] | $2.0M | 54 | +3.4% | open |
+| 2026-11-06 | [[TRNS]] | [[IRICK JAIME A]] | $230K | 59 | -5.7% | open |
+| 2026-11-06 | [[YPF]] | [[Francos Guillermo Alberto]] | $356K | 32 | -4.9% | open |
+| 2026-11-06 | [[LKQ]] | [[GOVE SUE]] | $201K | 65 | -2.7% | open |
+| 2026-11-06 | [[AGMB]] | [[Epstein David R]] | $104K | 42 | -11.9% | open |
 
 
 ```dataview

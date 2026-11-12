@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[LYEL]] | 10% Owner | $25.0M | 58 | +4.3% |
+| 2026-11-05 | [[LYEL]] | 10% Owner | $25.0M | 58 | +3.6% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 STVN MOREL DONALD E JR\|2026-11-10]] | [[MOREL DONALD E JR]] | Director | $327K | 47 | – | pending |
+| [[2026-11-10 STVN MOREL DONALD E JR\|2026-11-10]] | [[MOREL DONALD E JR]] | Director | $327K | 47 | -0.6% | open |

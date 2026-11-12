@@ -12,4 +12,4 @@ Backtest record: 67 earlier buys, average 3-month excess vs SPY -2.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[BOTJ]] | Director | $17K | 17 | +3.1% |
+| 2026-11-09 | [[BOTJ]] | Director | $17K | 17 | +0.7% |

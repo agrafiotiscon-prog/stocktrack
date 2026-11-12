@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[BLX]] | Chief Audit Officer | $94K | 38 | +1.5% |
+| 2026-11-02 | [[BLX]] | Chief Audit Officer | $94K | 38 | +0.4% |

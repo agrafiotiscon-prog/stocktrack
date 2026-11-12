@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 TXO SIMPSON BOB R\|2026-11-10]] | [[SIMPSON BOB R]] | Director | $3.1M | 41 | – | pending |
+| [[2026-11-10 TXO SIMPSON BOB R\|2026-11-10]] | [[SIMPSON BOB R]] | Director | $3.1M | 41 | -0.8% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-09-30 | [[DEVINCENZI ROBERT THOMAS]] | Director | $20K | 17 | +23.3% | open |
+| 2026-09-30 | [[DEVINCENZI ROBERT THOMAS]] | Director | $20K | 17 | +21.0% | open |

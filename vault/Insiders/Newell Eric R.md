@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY +5.5%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[EGBN]] | Senior EVP, CFO | $50K | 41 | – |
+| 2026-11-10 | [[EGBN]] | Senior EVP, CFO | $50K | 41 | +0.2% |

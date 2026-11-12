@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +6.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[SRTA]] | Director | $10K | 15 | +0.9% |
+| 2026-11-09 | [[SRTA]] | Director | $10K | 15 | -0.6% |

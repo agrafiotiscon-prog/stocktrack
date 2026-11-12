@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-09 ADM McAtee David R II\|2026-11-09]] | [[McAtee David R II]] | Director | $197K | 45 | -0.9% | open |
+| [[2026-11-09 ADM McAtee David R II\|2026-11-09]] | [[McAtee David R II]] | Director | $197K | 45 | +0.1% | open |

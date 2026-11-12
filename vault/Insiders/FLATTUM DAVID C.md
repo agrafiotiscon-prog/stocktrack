@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-08 | [[PHK]] | Director | $249K | 46 | +3.6% |
-| 2026-10-08 | [[PDI]] | Director | $250K | 66 | +9.1% |
+| 2026-10-08 | [[PHK]] | Director | $249K | 46 | +1.1% |
+| 2026-10-08 | [[PDI]] | Director | $250K | 66 | +5.9% |

@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -4.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[KYN]] | Executive Vice President | $52K | 45 | +1.3% |
+| 2026-11-06 | [[KYN]] | Executive Vice President | $52K | 45 | +2.3% |

@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-11"
+updated: "2026-11-12"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-11 Backtest]]: the latest full backtest
-- [[2026-11-11]]: today's research log
+- [[2026-11-12]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | Director | $1.4M | 58 | – |
-| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | Director | $243K | 48 | – |
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | President and CEO | $138K | 68 | – |
-| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | Director | $55K | 51 | – |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | Director | $14.9M | 77 | – |
-| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | Director | $70K | 40 | – |
-| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | Executive Chairman | $686K | 44 | – |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | Senior EVP, CFO | $50K | 41 | – |
-| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | Director | $3.1M | 41 | – |
-| 2026-11-10 | [[FUN]] | [[HADDRILL RICHARD M]] | Executive Chair | $91K | 57 | – |
-| 2026-11-10 | [[WD]] | [[Pinkus Gary S]] | Director | $201K | 45 | – |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | EVP, Chief Operating Officer | $150K | 75 | – |
-| 2026-11-10 | [[MCY]] | [[Braunegg George Gwyer]] | Director | $50K | 43 | – |
-| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | Director | $327K | 47 | – |
-| 2026-11-10 | [[SUNC]] | [[Skidmore David K]] | Director | $94K | 42 | – |
+| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | Chief Operating Officer | $1.2M | 63 | – |
+| 2026-11-12 | [[TH]] | [[Archer James Bradley]] | Director and CEO and President | $313K | 43 | – |
+| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | Director | $2.0M | 72 | – |
+| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | Chief Financial Officer | $199K | 61 | – |
+| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | SEE REMARKS | $41K | 55 | – |
+| 2026-11-12 | [[GSM]] | [[CROCKETT BRUCE LARMOUR]] | Director | $21K | 52 | – |
+| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | EXECUTIVE CHAIRMAN | $75K | 66 | – |
+| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | CEO | $997K | 62 | – |
+| 2026-11-12 | [[GSM]] | [[Levi Marco]] | CHIEF EXECUTIVE OFFICER | $51K | 56 | – |
+| 2026-11-12 | [[CSQR]] | [[MULLEE SPENCER EDWARD]] | Chief Executive Officer | $247K | 41 | – |
+| 2026-11-12 | [[COHR]] | [[Digirolomo Enrico]] | Director | $223K | 46 | – |
+| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | Director | $1.4M | 58 | +7.6% |
+| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | Director | $243K | 48 | +1.7% |
+| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | President and CEO | $138K | 68 | -2.5% |
+| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | Director | $55K | 51 | -2.5% |
 
 
 ## Live queries (Dataview plugin)

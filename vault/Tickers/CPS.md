@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[Banas Jonathan P]] | EVP and CFO | $17K | 28 | +5.4% | open |
+| 2026-11-09 | [[Banas Jonathan P]] | EVP and CFO | $17K | 28 | -0.3% | open |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[FBRT]] | Chairman and CEO | $998K | 65 | -2.7% |
+| 2026-11-05 | [[FBRT]] | Chairman and CEO | $998K | 65 | -5.0% |

@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -1.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[PRLB]] | Director | $49K | 34 | +2.9% |
+| 2026-11-04 | [[PRLB]] | Director | $49K | 34 | +3.4% |

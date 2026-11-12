@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Faison Ralph E]] | Director | $100K | 26 | – | pending |
+| 2026-11-10 | [[Faison Ralph E]] | Director | $100K | 26 | -2.7% | open |

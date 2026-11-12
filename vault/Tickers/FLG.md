@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-28 | [[Frank Alan L]] | Director | $101K | 33 | +4.7% | open |
+| 2026-10-28 | [[Frank Alan L]] | Director | $101K | 33 | +2.8% | open |
