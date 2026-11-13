@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +30.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[OBIO]] | Chief Financial Officer | $5K | 48 | +1.5% |
+| 2026-11-09 | [[OBIO]] | Chief Financial Officer | $5K | 48 | +4.3% |

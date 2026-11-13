@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-19 CTY NELSEN ROBERT\|2026-10-19]] | [[NELSEN ROBERT]] | Director | $3.1M | 40 | -19.9% | open |
+| [[2026-10-19 CTY NELSEN ROBERT\|2026-10-19]] | [[NELSEN ROBERT]] | Director | $3.1M | 40 | -10.3% | open |

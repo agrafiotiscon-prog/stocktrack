@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +8.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[STRZ]] | SEE REMARKS | $11K | 40 | +8.6% |
+| 2026-11-03 | [[STRZ]] | SEE REMARKS | $11K | 40 | +7.2% |

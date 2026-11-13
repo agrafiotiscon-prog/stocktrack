@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +17.2%/yr, double costs +10.1%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 26 | +1.9% | +2.1% | 81% |
+| 5 sessions | 29 | +1.9% | +1.9% | 76% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | +14.1% | open |
-| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | $686K | 44 | +0.2% | open |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +0.2% | open |
-| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | -0.8% | open |
-| 2026-11-10 | [[BOTJ]] | [[ADDISON LEWIS C]] | $2K | 14 | -2.3% | open |
-| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | +0.1% | open |
-| 2026-11-10 | [[MTDR]] | [[Ehrman Monika U]] | $17K | 42 | +1.3% | open |
-| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | +4.2% | open |
-| 2026-11-09 | [[UFCS]] | [[MILLIGAN GEORGE D]] | $237K | 32 | +1.7% | open |
-| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | +5.0% | open |
-| 2026-11-09 | [[MTCH]] | [[Schiffman Glenn]] | $97K | 27 | +4.0% | open |
-| 2026-11-09 | [[LUMN]] | [[Johnson Kathleen E]] | $397K | 73 | -1.6% | open |
-| 2026-11-09 | [[AN]] | [[Szlosek Thomas A]] | $200K | 67 | -1.2% | open |
-| 2026-11-09 | [[BOTJ]] | [[BRYANT WILLIAM C III]] | $17K | 17 | +0.7% | open |
-| 2026-11-09 | [[LKFN]] | [[BARTELS ROBERT E JR]] | $117K | 30 | -1.8% | open |
-| 2026-11-09 | [[CZNC]] | [[Shattuck Katherine W]] | $198 | 0 | -2.5% | open |
-| 2026-11-09 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $622K | 27 | -0.5% | open |
-| 2026-11-09 | [[MTDR]] | [[Foran Joseph Wm]] | $257K | 84 | +5.0% | open |
-| 2026-11-06 | [[KYN]] | [[Baker James C]] | $331K | 54 | +2.3% | open |
-| 2026-11-06 | [[MTDR]] | [[Elsener William Thomas]] | $46K | 48 | +3.1% | open |
+| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | – | pending |
+| 2026-11-12 | [[IOSP]] | [[PARRETTE LESLIE J]] | $27K | 23 | – | pending |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
+| 2026-11-12 | [[ECL]] | [[MacLennan David]] | $185K | 29 | – | pending |
+| 2026-11-12 | [[ILPT]] | [[PHELAN KEVIN C]] | $12K | 27 | – | pending |
+| 2026-11-12 | [[SEI]] | [[TEAGUE AJ]] | $41K | 20 | – | pending |
+| 2026-11-12 | [[ABCL]] | [[Thermopylae Holdings Ltd]] | $699K | 27 | – | pending |
+| 2026-11-12 | [[BDSX]] | [[SCHULER JACK W]] | $1.0M | 40 | – | pending |
+| 2026-11-12 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $424K | 25 | – | pending |
+| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | +10.4% | open |
+| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | $686K | 44 | +1.1% | open |
+| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +0.8% | open |
+| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | +0.0% | open |
+| 2026-11-10 | [[BOTJ]] | [[ADDISON LEWIS C]] | $2K | 14 | -4.3% | open |
+| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | -2.2% | open |
+| 2026-11-10 | [[MTDR]] | [[Ehrman Monika U]] | $17K | 42 | +3.1% | open |
+| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | +4.6% | open |
+| 2026-11-09 | [[UFCS]] | [[MILLIGAN GEORGE D]] | $237K | 32 | +2.4% | open |
+| 2026-11-09 | [[MTDR]] | [[Appel Shelley F]] | $68K | 60 | +6.9% | open |
+| 2026-11-09 | [[MTCH]] | [[Schiffman Glenn]] | $97K | 27 | +4.7% | open |
 
 
 ```dataview

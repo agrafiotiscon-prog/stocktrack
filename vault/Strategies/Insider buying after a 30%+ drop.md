@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.5%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 21 | +2.1% | +1.7% | 67% |
+| 5 sessions | 27 | +1.8% | +1.8% | 70% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
-| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
-| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
-| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | $41K | 55 | – | pending |
-| 2026-11-12 | [[GSM]] | [[CROCKETT BRUCE LARMOUR]] | $21K | 52 | – | pending |
-| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | $75K | 66 | – | pending |
-| 2026-11-12 | [[GSM]] | [[Levi Marco]] | $51K | 56 | – | pending |
-| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | $1.4M | 58 | +7.6% | open |
-| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | -13.1% | open |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | -0.2% | open |
-| 2026-11-10 | [[GLXY]] | [[DEASON DOUGLAS R]] | $70K | 40 | +3.7% | open |
-| 2026-11-10 | [[NVT]] | [[Parker Herbert K]] | $339K | 39 | -3.2% | open |
-| 2026-11-10 | [[FUN]] | [[HADDRILL RICHARD M]] | $91K | 57 | -0.2% | open |
-| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | -0.6% | open |
-| 2026-11-10 | [[FIS]] | [[Gibson Kourtney]] | $52K | 38 | +7.2% | open |
-| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | -1.2% | open |
-| 2026-11-10 | [[STRA]] | [[Slocum William J]] | $65K | 43 | -2.2% | open |
-| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | -2.2% | open |
-| 2026-11-10 | [[TROX]] | [[Johnston Peter]] | $53K | 28 | -0.8% | open |
-| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | +7.6% | open |
+| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | – | pending |
+| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | – | pending |
+| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | $10K | 57 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Shankar Gopi]] | $14K | 52 | – | pending |
+| 2026-11-12 | [[KGS]] | [[Montana Margaret C]] | $44K | 24 | – | pending |
+| 2026-11-12 | [[OFIX]] | [[Juniper Investment Company, LLC]] | $5.1M | 47 | – | pending |
+| 2026-11-12 | [[BW]] | [[Howe Alan B]] | $5K | 32 | – | pending |
+| 2026-11-12 | [[FMC]] | [[Tack Luc Jules R]] | $14K | 14 | – | pending |
+| 2026-11-12 | [[ILPT]] | [[PHELAN KEVIN C]] | $12K | 27 | – | pending |
+| 2026-11-12 | [[STVN]] | [[FEDERICI WILLIAM J]] | $274K | 58 | – | pending |
+| 2026-11-12 | [[ALNY]] | [[Sigal Charles Elliott]] | $244K | 58 | – | pending |
+| 2026-11-12 | [[ADTN]] | [[STANTON THOMAS R]] | $172K | 54 | – | pending |
+| 2026-11-12 | [[ALNY]] | [[SCHULMAN AMY W]] | $300K | 47 | – | pending |
+| 2026-11-12 | [[NSLR]] | [[Mazur Marc]] | $30K | 36 | – | pending |
+| 2026-11-12 | [[BDSX]] | [[SCHULER JACK W]] | $1.0M | 40 | – | pending |
 
 
 ```dataview

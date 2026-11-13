@@ -2,12 +2,13 @@
 type: "ticker"
 ticker: "XGN"
 company: "EXAGEN INC."
-signals: 2
+signals: 3
 ---
 
 # XGN: EXAGEN INC.
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Chernett Jorey]] | 10% Owner | $91K | 20 | -10.3% | open |
-| 2026-10-20 | [[Chernett Jorey]] | 10% Owner | $104K | 20 | -31.0% | open |
+| 2026-11-12 | [[Chernett Jorey]] | 10% Owner | $373K | 28 | – | pending |
+| 2026-11-10 | [[Chernett Jorey]] | 10% Owner | $91K | 20 | -21.2% | open |
+| 2026-10-20 | [[Chernett Jorey]] | 10% Owner | $104K | 20 | -39.1% | open |

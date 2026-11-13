@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +16.3%/yr, double costs +9.4%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 61 | +2.6% | +2.5% | 74% |
+| 5 sessions | 68 | +2.7% | +2.6% | 74% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
-| 2026-11-12 | [[MNR]] | [[WARD TOM L]] | $1.0M | 37 | – | pending |
-| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
-| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | +14.1% | open |
-| 2026-11-10 | [[XGN]] | [[Chernett Jorey]] | $91K | 20 | -10.3% | open |
-| 2026-11-10 | [[STLN]] | [[Chernett Jorey]] | $176K | 23 | -13.1% | open |
-| 2026-11-10 | [[NVT]] | [[Parker Herbert K]] | $339K | 39 | -3.2% | open |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +0.2% | open |
-| 2026-11-10 | [[TXO]] | [[SIMPSON BOB R]] | $3.1M | 41 | -0.8% | open |
-| 2026-11-10 | [[MCY]] | [[Braunegg George Gwyer]] | $50K | 43 | +1.8% | open |
-| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | -1.2% | open |
-| 2026-11-10 | [[BOLT]] | [[Coastlands Capital LP]] | $319K | 33 | -2.3% | open |
-| 2026-11-10 | [[OBK]] | [[Crotwell Jim]] | $107K | 36 | -0.7% | open |
-| 2026-11-10 | [[STRA]] | [[Thawley Michael]] | $98K | 45 | -2.2% | open |
-| 2026-11-10 | [[OSBC]] | [[Lyons Billy J Jr]] | $572 | 13 | -0.3% | open |
-| 2026-11-10 | [[BOTJ]] | [[ADDISON LEWIS C]] | $2K | 14 | -2.3% | open |
-| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | +0.1% | open |
-| 2026-11-10 | [[MTDR]] | [[Ehrman Monika U]] | $17K | 42 | +1.3% | open |
-| 2026-11-10 | [[CRH]] | [[FEARON RICHARD H]] | $570K | 47 | -0.1% | open |
-| 2026-11-10 | [[LBTYA]] | [[MALONE JOHN C]] | $1.5M | 53 | +4.2% | open |
+| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
+| 2026-11-12 | [[FNRN]] | [[Servat Jean-Luc]] | $5K | 19 | – | pending |
+| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | – | pending |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
+| 2026-11-12 | [[JOF]] | [[Saba Capital Management, L.P]] | $14K | 10 | – | pending |
+| 2026-11-12 | [[OFIX]] | [[Juniper Investment Company, LLC]] | $5.1M | 47 | – | pending |
+| 2026-11-12 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | – | pending |
+| 2026-11-12 | [[BW]] | [[Howe Alan B]] | $5K | 32 | – | pending |
+| 2026-11-12 | [[HXL]] | [[KEATING NEAL J]] | $81K | 37 | – | pending |
+| 2026-11-12 | [[DAR]] | [[Adair Charles L]] | $26K | 19 | – | pending |
+| 2026-11-12 | [[BOOT]] | [[Watkins James M]] | $271K | 44 | – | pending |
+| 2026-11-12 | [[FRPH]] | [[Baker John D. III]] | $99K | 24 | – | pending |
+| 2026-11-12 | [[SEI]] | [[TEAGUE AJ]] | $41K | 20 | – | pending |
+| 2026-11-12 | [[ABCL]] | [[Thermopylae Holdings Ltd]] | $699K | 27 | – | pending |
+| 2026-11-12 | [[RM]] | [[BASSWOOD CAPITAL MANAGEMENT, L.L.C]] | $359K | 37 | – | pending |
+| 2026-11-12 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $424K | 25 | – | pending |
+| 2026-11-12 | [[XGN]] | [[Chernett Jorey]] | $373K | 28 | – | pending |
+| 2026-11-12 | [[FIP]] | [[Nicholson Kenneth J]] | $1.5M | 59 | – | pending |
+| 2026-11-12 | [[BW]] | [[BRC Group Holdings, Inc]] | $648K | 46 | – | pending |
 
 
 ```dataview

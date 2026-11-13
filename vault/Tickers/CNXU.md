@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[Purcell Lynn Sebastian]] | Director | $500K | 36 | -31.3% | open |
+| 2026-10-19 | [[Purcell Lynn Sebastian]] | Director | $500K | 36 | -33.4% | open |

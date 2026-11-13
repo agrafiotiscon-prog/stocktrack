@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[LBRT]] | CEO and President | $377K | 65 | +4.4% |
+| 2026-11-05 | [[LBRT]] | CEO and President | $377K | 65 | +4.9% |

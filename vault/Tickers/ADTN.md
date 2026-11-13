@@ -2,12 +2,13 @@
 type: "ticker"
 ticker: "ADTN"
 company: "ADTRAN Holdings, Inc."
-signals: 2
+signals: 3
 ---
 
 # ADTN: ADTRAN Holdings, Inc.
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-09 ADTN Santo Timothy P\|2026-11-09]] | [[Santo Timothy P]] | SVP of Finance; CFO | $74K | 58 | +1.3% | open |
-| [[2026-11-09 ADTN STANTON THOMAS R\|2026-11-09]] | [[STANTON THOMAS R]] | Chairman & CEO | $601K | 65 | +1.3% | open |
+| [[2026-11-12 ADTN STANTON THOMAS R\|2026-11-12]] | [[STANTON THOMAS R]] | Chairman & CEO | $172K | 54 | – | pending |
+| [[2026-11-09 ADTN Santo Timothy P\|2026-11-09]] | [[Santo Timothy P]] | SVP of Finance; CFO | $74K | 58 | +5.4% | open |
+| [[2026-11-09 ADTN STANTON THOMAS R\|2026-11-09]] | [[STANTON THOMAS R]] | Chairman & CEO | $601K | 65 | +5.4% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-05 LYEL ARCH Venture Fund XIII, L.P\|2026-11-05]] | [[ARCH Venture Fund XIII, L.P]] | 10% Owner | $25.0M | 58 | +3.6% | open |
+| [[2026-11-05 LYEL ARCH Venture Fund XIII, L.P\|2026-11-05]] | [[ARCH Venture Fund XIII, L.P]] | 10% Owner | $25.0M | 58 | -3.7% | open |

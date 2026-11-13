@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-03 ENPH Trivedi Shanker\|2026-11-03]] | [[Trivedi Shanker]] | Director | $31K | 49 | -12.0% | open |
-| [[2026-11-02 ENPH Kothandaraman Badrinarayanan\|2026-11-02]] | [[Kothandaraman Badrinarayanan]] | President & CEO | $268K | 41 | -0.9% | open |
+| [[2026-11-03 ENPH Trivedi Shanker\|2026-11-03]] | [[Trivedi Shanker]] | Director | $31K | 49 | -16.3% | open |
+| [[2026-11-02 ENPH Kothandaraman Badrinarayanan\|2026-11-02]] | [[Kothandaraman Badrinarayanan]] | President & CEO | $268K | 41 | -5.9% | open |

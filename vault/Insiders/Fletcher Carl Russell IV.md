@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -19.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[FIP]] | CFO  and CAO | $19K | 35 | +9.9% |
+| 2026-11-10 | [[FIP]] | CFO  and CAO | $19K | 35 | +6.5% |

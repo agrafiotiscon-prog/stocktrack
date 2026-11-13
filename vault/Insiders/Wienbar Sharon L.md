@@ -12,4 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -8.5%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[ENOV]] | Director | $50K | 25 | +1.5% |
+| 2026-11-12 | [[ENOV]] | Director | $50K | 37 | – |
+| 2026-11-10 | [[ENOV]] | Director | $50K | 25 | -1.4% |

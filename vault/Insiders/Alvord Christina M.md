@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[APOG]] | Director | $2K | 14 | +0.2% |
+| 2026-11-06 | [[APOG]] | Director | $2K | 14 | -0.5% |

@@ -12,4 +12,4 @@ Backtest record: 13 earlier buys, average 3-month excess vs SPY -1.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[MCY]] | Director | $62K | 34 | +2.3% |
+| 2026-11-09 | [[MCY]] | Director | $62K | 34 | +2.9% |

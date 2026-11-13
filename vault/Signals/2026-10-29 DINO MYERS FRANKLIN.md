@@ -13,10 +13,10 @@ insider_type: "opportunistic"
 price: 111.89
 strategies: ["all_liquid", "score_40", "ceo_cfo_100k", "opportunistic", "proven_insider"]
 entry_date: "2026-10-30"
-entry_price: 113.85
+entry_price: 113.262
 status: "open"
-abn_now: -0.104394
-ret_now: -0.106456
+abn_now: -0.0925173
+ret_now: -0.0981124
 abn_5: -0.103964
 abn_21: 
 abn_63: 
@@ -39,7 +39,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/ceo_cfo_1
 | Score / cluster | 52 / 1 insider(s) |
 | Insider type / track record | opportunistic / 65 earlier buys, +3.2% |
 | Prior 3 months | +23.1% |
-| Entry | 2026-10-30 @ $113.85 |
+| Entry | 2026-10-30 @ $113.26 |
 | Status | open |
 
 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/ceo_cfo_1
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| -10.4% | – | – | – | – | -10.4% |
+| -10.4% | – | – | – | – | -9.3% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1915657/000119312526438100/0001193125-26-438100-index.htm)

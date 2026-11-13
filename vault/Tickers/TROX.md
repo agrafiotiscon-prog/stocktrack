@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Johnston Peter]] | Director | $53K | 28 | -0.8% | open |
+| 2026-11-10 | [[Johnston Peter]] | Director | $53K | 28 | -7.5% | open |

@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY +2.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[OCFC]] | Director | $178K | 53 | -2.0% |
+| 2026-11-02 | [[OCFC]] | Director | $178K | 53 | -2.5% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Rey David A]] | Director | $20K | 7 | +1.0% | open |
+| 2026-11-06 | [[Rey David A]] | Director | $20K | 7 | -0.2% | open |

@@ -12,5 +12,5 @@ Backtest record: 12 earlier buys, average 3-month excess vs SPY +10.7%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[MDGL]] | Director | $35.0M | 48 | +2.8% |
-| 2026-11-06 | [[KOD]] | Director | $24.3M | 45 | +5.1% |
+| 2026-11-06 | [[MDGL]] | Director | $35.0M | 48 | +1.3% |
+| 2026-11-06 | [[KOD]] | Director | $24.3M | 45 | +4.4% |

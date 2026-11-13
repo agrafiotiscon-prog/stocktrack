@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -5.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[CMCO]] | President & CEO | $551K | 52 | +11.9% |
+| 2026-11-09 | [[CMCO]] | President & CEO | $551K | 52 | +8.9% |

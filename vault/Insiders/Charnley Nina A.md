@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[BBT]] | Director | $11K | 57 | +2.9% |
+| 2026-10-30 | [[BBT]] | Director | $11K | 57 | +2.4% |

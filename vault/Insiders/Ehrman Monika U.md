@@ -12,4 +12,4 @@ Backtest record: 19 earlier buys, average 3-month excess vs SPY +6.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[MTDR]] | Director | $17K | 42 | +1.3% |
+| 2026-11-10 | [[MTDR]] | Director | $17K | 42 | +3.1% |

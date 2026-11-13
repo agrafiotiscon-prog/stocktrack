@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +7.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[CPS]] | EVP and CFO | $17K | 28 | -0.3% |
+| 2026-11-09 | [[CPS]] | EVP and CFO | $17K | 28 | -4.0% |

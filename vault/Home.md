@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-12"
+updated: "2026-11-13"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-11 Backtest]]: the latest full backtest
-- [[2026-11-12]]: today's research log
+- [[2026-11-13]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | Chief Operating Officer | $1.2M | 63 | – |
-| 2026-11-12 | [[TH]] | [[Archer James Bradley]] | Director and CEO and President | $313K | 43 | – |
-| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | Director | $2.0M | 72 | – |
-| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | Chief Financial Officer | $199K | 61 | – |
-| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | SEE REMARKS | $41K | 55 | – |
-| 2026-11-12 | [[GSM]] | [[CROCKETT BRUCE LARMOUR]] | Director | $21K | 52 | – |
-| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | EXECUTIVE CHAIRMAN | $75K | 66 | – |
-| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | CEO | $997K | 62 | – |
-| 2026-11-12 | [[GSM]] | [[Levi Marco]] | CHIEF EXECUTIVE OFFICER | $51K | 56 | – |
-| 2026-11-12 | [[CSQR]] | [[MULLEE SPENCER EDWARD]] | Chief Executive Officer | $247K | 41 | – |
-| 2026-11-12 | [[COHR]] | [[Digirolomo Enrico]] | Director | $223K | 46 | – |
-| 2026-11-10 | [[MX]] | [[Amoruso Cristiano]] | Director | $1.4M | 58 | +7.6% |
-| 2026-11-10 | [[ATEC]] | [[Valentine Keith]] | Director | $243K | 48 | +1.7% |
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | President and CEO | $138K | 68 | -2.5% |
-| 2026-11-10 | [[WW]] | [[Gavales Lisa A]] | Director | $55K | 51 | -2.5% |
+| 2026-11-12 | [[ASR]] | [[Perez Anton Jose Antonio]] | Director | $498K | 49 | – |
+| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | Director | $187K | 70 | – |
+| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | Director | $680K | 62 | – |
+| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | Chief Executive Officer | $182K | 62 | – |
+| 2026-11-12 | [[VISN]] | [[Watts Claudius E. IV]] | Director | $831K | 42 | – |
+| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | Founder & CEO | $250K | 61 | – |
+| 2026-11-12 | [[BKD]] | [[WINKLE C CHRISTIAN]] | Director | $358K | 48 | – |
+| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | CEO | $502K | 55 | – |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | Chairman and CEO | $123K | 75 | – |
+| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | President and CEO | $50K | 63 | – |
+| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | Director | $22K | 60 | – |
+| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | Director | $10K | 57 | – |
+| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | President and COO | $50K | 71 | – |
+| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | Chief Financial Officer | $50K | 62 | – |
+| 2026-11-12 | [[LRMR]] | [[Shankar Gopi]] | Chief Development Officer | $14K | 52 | – |
 
 
 ## Live queries (Dataview plugin)

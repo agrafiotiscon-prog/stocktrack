@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -8.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[ADTN]] | SVP of Finance; CFO | $74K | 58 | +1.3% |
+| 2026-11-09 | [[ADTN]] | SVP of Finance; CFO | $74K | 58 | +5.4% |

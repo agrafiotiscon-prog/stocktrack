@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[Wall William P]] | Director | $90K | 39 | +0.0% | open |
+| 2026-11-09 | [[Wall William P]] | Director | $90K | 39 | -3.7% | open |

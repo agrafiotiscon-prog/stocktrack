@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-08 | [[NRXS]] | Chief Financial Officer | $9K | 36 | -11.2% |
+| 2026-10-08 | [[NRXS]] | Chief Financial Officer | $9K | 36 | -14.9% |

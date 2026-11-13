@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-09-28 DMRA Jarrett Jennifer\|2026-09-28]] | [[Jarrett Jennifer]] | Director, President and CEO | $253K | 44 | +13.4% | open |
+| [[2026-09-28 DMRA Jarrett Jennifer\|2026-09-28]] | [[Jarrett Jennifer]] | Director, President and CEO | $253K | 44 | +7.9% | open |

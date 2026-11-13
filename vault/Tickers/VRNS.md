@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-05 | [[Prishkolnik Rachel]] | Director | $26K | 11 | -2.9% | open |
+| 2026-11-05 | [[Prishkolnik Rachel]] | Director | $26K | 11 | -2.4% | open |

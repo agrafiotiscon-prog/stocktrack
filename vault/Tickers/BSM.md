@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 BSM Carter Thomas L Jr\|2026-11-10]] | [[Carter Thomas L Jr]] | Executive Chairman | $686K | 44 | +0.2% | open |
+| [[2026-11-10 BSM Carter Thomas L Jr\|2026-11-10]] | [[Carter Thomas L Jr]] | Executive Chairman | $686K | 44 | +1.1% | open |

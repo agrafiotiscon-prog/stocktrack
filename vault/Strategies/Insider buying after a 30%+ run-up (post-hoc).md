@@ -82,19 +82,20 @@ Cost sensitivity (63-session hold): no costs +22.2%/yr, double costs +17.3%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | +1.6% | open |
-| 2026-11-10 | [[BOLT]] | [[Coastlands Capital LP]] | $319K | 33 | -2.3% | open |
-| 2026-11-09 | [[LAW]] | [[Friedrichsen Eric]] | $24K | 30 | +6.7% | open |
-| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | -0.1% | open |
-| 2026-11-09 | [[EAF]] | [[Shivaram Sachin M]] | $50K | 39 | +6.2% | open |
-| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | +5.1% | open |
-| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | +7.4% | open |
-| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | +2.1% | open |
-| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -1.2% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +7.2% | open |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +7.2% | open |
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | +1.3% | open |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -31.0% | open |
+| 2026-11-12 | [[OBIO]] | [[RTW INVESTMENTS, LP]] | $6.0M | 71 | – | pending |
+| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | -3.6% | open |
+| 2026-11-10 | [[BOLT]] | [[Coastlands Capital LP]] | $319K | 33 | -7.4% | open |
+| 2026-11-09 | [[LAW]] | [[Friedrichsen Eric]] | $24K | 30 | +14.2% | open |
+| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | -5.3% | open |
+| 2026-11-09 | [[EAF]] | [[Shivaram Sachin M]] | $50K | 39 | +4.9% | open |
+| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | +4.4% | open |
+| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | +11.9% | open |
+| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | +6.4% | open |
+| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | +2.9% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +6.0% | open |
+| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +6.0% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -1.8% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -39.1% | open |
 
 
 ```dataview

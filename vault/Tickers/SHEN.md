@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[QUAGLIO KENNETH L]] | Director | $5K | 15 | +0.4% | open |
-| 2026-11-05 | [[McKay Edward H]] | President & CEO | $10K | 27 | +3.5% | open |
-| 2026-11-05 | [[Lytle Glenn E Jr]] | SVP Commercial Sales | $5K | 21 | +3.5% | open |
+| 2026-11-09 | [[QUAGLIO KENNETH L]] | Director | $5K | 15 | -0.5% | open |
+| 2026-11-05 | [[McKay Edward H]] | President & CEO | $10K | 27 | +2.5% | open |
+| 2026-11-05 | [[Lytle Glenn E Jr]] | SVP Commercial Sales | $5K | 21 | +2.5% | open |

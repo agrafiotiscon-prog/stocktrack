@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -5.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[GOOD]] | CEO & President | $100K | 50 | -2.4% |
+| 2026-11-09 | [[GOOD]] | CEO & President | $100K | 50 | -4.7% |

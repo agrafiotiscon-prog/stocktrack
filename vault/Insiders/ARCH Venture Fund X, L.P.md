@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +16.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[ASPE]] | 10% Owner | $20.0M | 70 | +5.4% |
+| 2026-11-02 | [[ASPE]] | 10% Owner | $20.0M | 70 | +4.1% |

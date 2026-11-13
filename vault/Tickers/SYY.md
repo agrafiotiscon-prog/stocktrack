@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-05 SYY Ondrof Thomas Gerard\|2026-11-05]] | [[Ondrof Thomas Gerard]] | Director | $192K | 45 | -0.9% | open |
+| [[2026-11-05 SYY Ondrof Thomas Gerard\|2026-11-05]] | [[Ondrof Thomas Gerard]] | Director | $192K | 45 | -1.5% | open |
