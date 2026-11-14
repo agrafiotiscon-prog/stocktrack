@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 TH Archer James Bradley\|2026-11-12]] | [[Archer James Bradley]] | Director and CEO and President | $313K | 43 | – | pending |
+| [[2026-11-12 TH Archer James Bradley\|2026-11-12]] | [[Archer James Bradley]] | Director and CEO and President | $313K | 43 | -2.5% | open |

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.1%/yr, double costs +7.1%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 28 | -0.4% | +2.3% | 57% |
+| 5 sessions | 30 | -0.6% | +0.6% | 57% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
-| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 61 | – | pending |
-| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | – | pending |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
-| 2026-11-12 | [[TEAM]] | [[Cannon-Brookes Michael]] | $2.0M | 39 | – | pending |
-| 2026-11-12 | [[FLG]] | [[Otting Joseph M]] | $496K | 60 | – | pending |
-| 2026-11-12 | [[BOOT]] | [[Watkins James M]] | $271K | 44 | – | pending |
-| 2026-11-12 | [[NOMD]] | [[BALDEW RUBEN]] | $100K | 36 | – | pending |
-| 2026-11-12 | [[ADTN]] | [[STANTON THOMAS R]] | $172K | 54 | – | pending |
-| 2026-11-12 | [[EGBN]] | [[Curley Stephen Russell]] | $150K | 57 | – | pending |
-| 2026-11-12 | [[HOS]] | [[HORNBECK TODD M]] | $1.5M | 53 | – | pending |
-| 2026-11-12 | [[AUDC]] | [[ADLERSBERG SHABTAI]] | $143K | 38 | – | pending |
-| 2026-11-12 | [[FIP]] | [[Nicholson Kenneth J]] | $1.5M | 59 | – | pending |
-| 2026-11-12 | [[TH]] | [[Archer James Bradley]] | $313K | 43 | – | pending |
-| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
-| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
-| 2026-11-12 | [[CSQR]] | [[MULLEE SPENCER EDWARD]] | $247K | 41 | – | pending |
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -8.0% | open |
-| 2026-11-10 | [[FLOC]] | [[EDWARDS JOSEPH R]] | $390K | 60 | +0.1% | open |
-| 2026-11-10 | [[MX]] | [[LEE CHAE]] | $155K | 49 | +2.9% | open |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
+| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | $150K | 58 | – | pending |
+| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
+| 2026-11-13 | [[FCPT]] | [[Lenehan William H]] | $150K | 39 | – | pending |
+| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | – | pending |
+| 2026-11-13 | [[TEAM]] | [[Cannon-Brookes Michael]] | $2.0M | 39 | – | pending |
+| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
+| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | -5.2% | open |
+| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 61 | -5.3% | open |
+| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | -0.2% | open |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
+| 2026-11-12 | [[TEAM]] | [[Cannon-Brookes Michael]] | $2.0M | 39 | -2.0% | open |
+| 2026-11-12 | [[FLG]] | [[Otting Joseph M]] | $496K | 60 | +0.6% | open |
+| 2026-11-12 | [[BOOT]] | [[Watkins James M]] | $271K | 44 | +0.4% | open |
+| 2026-11-12 | [[NOMD]] | [[BALDEW RUBEN]] | $100K | 36 | +1.3% | open |
+| 2026-11-12 | [[ADTN]] | [[STANTON THOMAS R]] | $172K | 54 | -1.7% | open |
+| 2026-11-12 | [[EGBN]] | [[Curley Stephen Russell]] | $150K | 57 | +1.7% | open |
+| 2026-11-12 | [[HOS]] | [[HORNBECK TODD M]] | $1.5M | 53 | +1.1% | open |
+| 2026-11-12 | [[AUDC]] | [[ADLERSBERG SHABTAI]] | $143K | 38 | +0.4% | open |
+| 2026-11-12 | [[FIP]] | [[Nicholson Kenneth J]] | $1.5M | 59 | -6.2% | open |
 
 
 ```dataview

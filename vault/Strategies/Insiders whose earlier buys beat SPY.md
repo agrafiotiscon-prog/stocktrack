@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +16.3%/yr, double costs +9.4%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 68 | +2.7% | +2.6% | 74% |
+| 5 sessions | 73 | +2.7% | +2.5% | 73% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
-| 2026-11-12 | [[FNRN]] | [[Servat Jean-Luc]] | $5K | 19 | – | pending |
-| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | – | pending |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
-| 2026-11-12 | [[JOF]] | [[Saba Capital Management, L.P]] | $14K | 10 | – | pending |
-| 2026-11-12 | [[OFIX]] | [[Juniper Investment Company, LLC]] | $5.1M | 47 | – | pending |
-| 2026-11-12 | [[DSM]] | [[Saba Capital Management, L.P]] | $78K | 18 | – | pending |
-| 2026-11-12 | [[BW]] | [[Howe Alan B]] | $5K | 32 | – | pending |
-| 2026-11-12 | [[HXL]] | [[KEATING NEAL J]] | $81K | 37 | – | pending |
-| 2026-11-12 | [[DAR]] | [[Adair Charles L]] | $26K | 19 | – | pending |
-| 2026-11-12 | [[BOOT]] | [[Watkins James M]] | $271K | 44 | – | pending |
-| 2026-11-12 | [[FRPH]] | [[Baker John D. III]] | $99K | 24 | – | pending |
-| 2026-11-12 | [[SEI]] | [[TEAGUE AJ]] | $41K | 20 | – | pending |
-| 2026-11-12 | [[ABCL]] | [[Thermopylae Holdings Ltd]] | $699K | 27 | – | pending |
-| 2026-11-12 | [[RM]] | [[BASSWOOD CAPITAL MANAGEMENT, L.L.C]] | $359K | 37 | – | pending |
-| 2026-11-12 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $424K | 25 | – | pending |
-| 2026-11-12 | [[XGN]] | [[Chernett Jorey]] | $373K | 28 | – | pending |
-| 2026-11-12 | [[FIP]] | [[Nicholson Kenneth J]] | $1.5M | 59 | – | pending |
-| 2026-11-12 | [[BW]] | [[BRC Group Holdings, Inc]] | $648K | 46 | – | pending |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
+| 2026-11-13 | [[FRPH]] | [[Baker John D. III]] | $930 | 10 | – | pending |
+| 2026-11-13 | [[TRS]] | [[Tredwell Daniel P]] | $3K | 13 | – | pending |
+| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | $150K | 58 | – | pending |
+| 2026-11-13 | [[GLP]] | [[Global GP LLC]] | $442K | 27 | – | pending |
+| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
+| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
+| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
+| 2026-11-13 | [[TRIN]] | [[Brown Kyle Steven]] | $58K | 35 | – | pending |
+| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | – | pending |
+| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
+| 2026-11-13 | [[TXO]] | [[SIMPSON BOB R]] | $945K | 34 | – | pending |
+| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
+| 2026-11-13 | [[NGS]] | [[JACKSON JOHN EARL]] | $58K | 40 | – | pending |
+| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | – | pending |
+| 2026-11-13 | [[ABCL]] | [[Booth Andrew]] | $97K | 48 | – | pending |
+| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | -5.2% | open |
+| 2026-11-12 | [[FNRN]] | [[Servat Jean-Luc]] | $5K | 19 | +2.0% | open |
+| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | -0.2% | open |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
 
 
 ```dataview

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[WARD TOM L]] | See Remarks | $1.0M | 37 | – | pending |
+| 2026-11-12 | [[WARD TOM L]] | See Remarks | $1.0M | 37 | -0.5% | open |

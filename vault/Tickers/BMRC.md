@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[Anderson Nicolas C]] | Director | $1K | 14 | +0.5% | open |
+| 2026-10-30 | [[Anderson Nicolas C]] | Director | $1K | 14 | +0.8% | open |

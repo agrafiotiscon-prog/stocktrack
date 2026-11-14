@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 BOOT Watkins James M\|2026-11-12]] | [[Watkins James M]] | CFO & SECRETARY | $271K | 44 | – | pending |
+| [[2026-11-12 BOOT Watkins James M\|2026-11-12]] | [[Watkins James M]] | CFO & SECRETARY | $271K | 44 | +0.4% | open |

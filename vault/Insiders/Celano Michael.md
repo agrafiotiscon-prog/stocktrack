@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +11.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[LRMR]] | Chief Financial Officer | $50K | 62 | – |
+| 2026-11-12 | [[LRMR]] | Chief Financial Officer | $50K | 62 | +1.1% |

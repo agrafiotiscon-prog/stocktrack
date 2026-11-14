@@ -12,4 +12,5 @@ Backtest record: 11 earlier buys, average 3-month excess vs SPY +2.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[TXO]] | Director | $3.1M | 41 | +0.0% |
+| 2026-11-13 | [[TXO]] | Director | $945K | 34 | – |
+| 2026-11-10 | [[TXO]] | Director | $3.1M | 41 | -1.2% |

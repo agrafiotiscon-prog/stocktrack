@@ -12,10 +12,10 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -27.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-16 | [[BORR]] | Director | $2.3M | 51 | -20.9% |
-| 2026-10-15 | [[BORR]] | Director | $3.5M | 41 | -25.9% |
-| 2026-10-14 | [[BORR]] | Director | $7.4M | 46 | -26.6% |
-| 2026-10-13 | [[BORR]] | Director | $11.8M | 50 | -29.7% |
-| 2026-10-08 | [[BORR]] | Director | $5.4M | 45 | -23.3% |
-| 2026-10-07 | [[BORR]] | Director | $6.4M | 46 | -20.4% |
-| 2026-10-06 | [[BORR]] | Director | $6.2M | 46 | -18.0% |
+| 2026-10-16 | [[BORR]] | Director | $2.3M | 51 | -20.1% |
+| 2026-10-15 | [[BORR]] | Director | $3.5M | 41 | -25.1% |
+| 2026-10-14 | [[BORR]] | Director | $7.4M | 46 | -25.8% |
+| 2026-10-13 | [[BORR]] | Director | $11.8M | 50 | -28.9% |
+| 2026-10-08 | [[BORR]] | Director | $5.4M | 45 | -22.5% |
+| 2026-10-07 | [[BORR]] | Director | $6.4M | 46 | -19.6% |
+| 2026-10-06 | [[BORR]] | Director | $6.2M | 46 | -17.1% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Francos Guillermo Alberto]] | Director | $356K | 32 | -5.0% | open |
+| 2026-11-06 | [[Francos Guillermo Alberto]] | Director | $356K | 32 | -2.8% | open |

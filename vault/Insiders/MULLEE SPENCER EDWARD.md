@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[CSQR]] | Chief Executive Officer | $247K | 41 | – |
+| 2026-11-12 | [[CSQR]] | Chief Executive Officer | $247K | 41 | -3.1% |

@@ -12,4 +12,4 @@ Backtest record: 10 earlier buys, average 3-month excess vs SPY -16.8%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[OBIO]] | 10% Owner | $6.0M | 71 | – |
+| 2026-11-12 | [[OBIO]] | 10% Owner | $6.0M | 71 | +16.7% |

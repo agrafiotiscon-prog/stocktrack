@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.7%/yr, double costs +7.8%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 31 | +1.0% | +1.6% | 61% |
+| 5 sessions | 33 | +1.0% | +1.6% | 61% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | – | pending |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | – | pending |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
-| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 61 | – | pending |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
-| 2026-11-12 | [[EQPT]] | [[HILL W BRYAN]] | $554K | 61 | – | pending |
-| 2026-11-12 | [[FLG]] | [[Otting Joseph M]] | $496K | 60 | – | pending |
-| 2026-11-12 | [[OBIO]] | [[RTW INVESTMENTS, LP]] | $6.0M | 71 | – | pending |
-| 2026-11-12 | [[DOX]] | [[Genish Amos]] | $150K | 60 | – | pending |
-| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
-| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
-| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
-| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | $75K | 66 | – | pending |
-| 2026-11-12 | [[COHR]] | [[ANDERSON JAMES ROBERT]] | $997K | 62 | – | pending |
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -8.0% | open |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | +1.0% | open |
+| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | – | pending |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
+| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
+| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | – | pending |
+| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
+| 2026-11-13 | [[FF]] | [[Butcher Pamela R]] | $28K | 62 | – | pending |
+| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
+| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
+| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
+| 2026-11-13 | [[HPP]] | [[LAMMAS MARK T]] | $44K | 62 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
+| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | -5.2% | open |
+| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | -5.2% | open |
+| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 61 | -5.3% | open |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
+| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | +1.1% | open |
+| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | +1.1% | open |
+| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | +1.1% | open |
+| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | +1.1% | open |
+| 2026-11-12 | [[EQPT]] | [[HILL W BRYAN]] | $554K | 61 | -5.3% | open |
 
 
 ```dataview

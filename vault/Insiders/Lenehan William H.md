@@ -12,4 +12,5 @@ Backtest record: 20 earlier buys, average 3-month excess vs SPY -1.9%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[FCPT]] | President and CEO | $226K | 42 | -2.0% |
+| 2026-11-13 | [[FCPT]] | President and CEO | $150K | 39 | – |
+| 2026-11-02 | [[FCPT]] | President and CEO | $226K | 42 | -0.6% |

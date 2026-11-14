@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.5%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 27 | +1.8% | +1.8% | 70% |
+| 5 sessions | 32 | +0.1% | +1.6% | 62% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | – | pending |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | – | pending |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | $10K | 57 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Shankar Gopi]] | $14K | 52 | – | pending |
-| 2026-11-12 | [[KGS]] | [[Montana Margaret C]] | $44K | 24 | – | pending |
-| 2026-11-12 | [[OFIX]] | [[Juniper Investment Company, LLC]] | $5.1M | 47 | – | pending |
-| 2026-11-12 | [[BW]] | [[Howe Alan B]] | $5K | 32 | – | pending |
-| 2026-11-12 | [[FMC]] | [[Tack Luc Jules R]] | $14K | 14 | – | pending |
-| 2026-11-12 | [[ILPT]] | [[PHELAN KEVIN C]] | $12K | 27 | – | pending |
-| 2026-11-12 | [[STVN]] | [[FEDERICI WILLIAM J]] | $274K | 58 | – | pending |
-| 2026-11-12 | [[ALNY]] | [[Sigal Charles Elliott]] | $244K | 58 | – | pending |
-| 2026-11-12 | [[ADTN]] | [[STANTON THOMAS R]] | $172K | 54 | – | pending |
-| 2026-11-12 | [[ALNY]] | [[SCHULMAN AMY W]] | $300K | 47 | – | pending |
-| 2026-11-12 | [[NSLR]] | [[Mazur Marc]] | $30K | 36 | – | pending |
-| 2026-11-12 | [[BDSX]] | [[SCHULER JACK W]] | $1.0M | 40 | – | pending |
+| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | – | pending |
+| 2026-11-13 | [[FISN]] | [[Muller Elizabeth]] | $22K | 48 | – | pending |
+| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
+| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
+| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
+| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
+| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | – | pending |
+| 2026-11-13 | [[CAT]] | [[MacLennan David]] | $209K | 43 | – | pending |
+| 2026-11-13 | [[IONS]] | [[Hayden Michael R]] | $148K | 37 | – | pending |
+| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
+| 2026-11-13 | [[FF]] | [[Butcher Pamela R]] | $28K | 62 | – | pending |
+| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
+| 2026-11-13 | [[KGS]] | [[Holloway Gretchen Lynn]] | $50K | 46 | – | pending |
+| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
+| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
+| 2026-11-13 | [[HPP]] | [[LAMMAS MARK T]] | $44K | 62 | – | pending |
+| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
+| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | -5.2% | open |
+| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | -5.2% | open |
 
 
 ```dataview

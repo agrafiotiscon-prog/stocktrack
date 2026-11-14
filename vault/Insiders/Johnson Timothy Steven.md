@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -1.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[BXMT]] | Chief Executive Officer | $1.0M | 69 | -8.9% |
+| 2026-11-05 | [[BXMT]] | Chief Executive Officer | $1.0M | 69 | -9.6% |

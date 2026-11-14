@@ -12,4 +12,4 @@ Backtest record: 70 earlier buys, average 3-month excess vs SPY -1.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[PKBK]] | President & CEO | $43K | 33 | +0.2% |
+| 2026-10-30 | [[PKBK]] | President & CEO | $43K | 33 | -0.0% |

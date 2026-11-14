@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[GLXY]] | Chief Executive Officer | $9.9M | 75 | +2.9% |
+| 2026-11-05 | [[GLXY]] | Chief Executive Officer | $9.9M | 75 | -2.3% |

@@ -12,4 +12,5 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY +2.5%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[FRPH]] | CEO | $99K | 24 | – |
+| 2026-11-13 | [[FRPH]] | CEO | $930 | 10 | – |
+| 2026-11-12 | [[FRPH]] | CEO | $99K | 24 | -0.0% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-09 NLY Wede Scott\|2026-11-09]] | [[Wede Scott]] | Director | $940K | 52 | -7.5% | open |
+| [[2026-11-09 NLY Wede Scott\|2026-11-09]] | [[Wede Scott]] | Director | $940K | 52 | -6.7% | open |

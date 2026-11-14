@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[Leon Francisco]] | President and CEO | $37K | 32 | +2.6% | open |
+| 2026-11-09 | [[Leon Francisco]] | President and CEO | $37K | 32 | +3.9% | open |

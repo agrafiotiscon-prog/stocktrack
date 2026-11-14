@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +17.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[ITIC]] | Director | $133K | 34 | – |
+| 2026-11-12 | [[ITIC]] | Director | $133K | 34 | +1.1% |

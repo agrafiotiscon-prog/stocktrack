@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +9.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[MNR]] | See Remarks | $1.0M | 37 | – |
+| 2026-11-12 | [[MNR]] | See Remarks | $1.0M | 37 | -0.5% |

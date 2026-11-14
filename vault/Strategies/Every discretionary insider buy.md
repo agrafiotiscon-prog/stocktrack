@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +7.9%/yr, double costs +2.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 234 | +1.1% | +1.5% | 63% |
+| 5 sessions | 255 | +0.8% | +1.3% | 61% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[ASR]] | [[Perez Anton Jose Antonio]] | $498K | 49 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | – | pending |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | – | pending |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
-| 2026-11-12 | [[VISN]] | [[Watts Claudius E. IV]] | $198K | 30 | – | pending |
-| 2026-11-12 | [[VISN]] | [[Watts Claudius E. IV]] | $831K | 42 | – | pending |
-| 2026-11-12 | [[FNRN]] | [[Servat Jean-Luc]] | $5K | 19 | – | pending |
-| 2026-11-12 | [[ENOV]] | [[Wienbar Sharon L]] | $50K | 37 | – | pending |
-| 2026-11-12 | [[ENOV]] | [[Lalor Angela S]] | $50K | 38 | – | pending |
-| 2026-11-12 | [[IOSP]] | [[PARRETTE LESLIE J]] | $27K | 23 | – | pending |
-| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 61 | – | pending |
-| 2026-11-12 | [[BKD]] | [[WINKLE C CHRISTIAN]] | $358K | 48 | – | pending |
-| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | – | pending |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | $10K | 57 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
-| 2026-11-12 | [[JOF]] | [[Saba Capital Management, L.P]] | $14K | 10 | – | pending |
+| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | – | pending |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
+| 2026-11-13 | [[FRPH]] | [[Baker John D. III]] | $930 | 10 | – | pending |
+| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | – | pending |
+| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | $250K | 55 | – | pending |
+| 2026-11-13 | [[IOND]] | [[Abbate Michael]] | $1.3M | 53 | – | pending |
+| 2026-11-13 | [[TRS]] | [[Tredwell Daniel P]] | $3K | 13 | – | pending |
+| 2026-11-13 | [[FISN]] | [[Muller Elizabeth]] | $22K | 48 | – | pending |
+| 2026-11-13 | [[CRVS]] | [[Arcara Jeffrey]] | $50K | 45 | – | pending |
+| 2026-11-13 | [[ZLAB]] | [[GAYNOR RICHARD]] | $33K | 6 | – | pending |
+| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | $150K | 58 | – | pending |
+| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
+| 2026-11-13 | [[GLP]] | [[Global GP LLC]] | $442K | 27 | – | pending |
+| 2026-11-13 | [[MRBK]] | [[Warriner Kenneth Thomas]] | $16K | 30 | – | pending |
+| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | – | pending |
+| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
+| 2026-11-13 | [[AEBI]] | [[Schroeder Henning]] | $12K | 30 | – | pending |
+| 2026-11-13 | [[ARR]] | [[Macauley Desmond]] | $12K | 28 | – | pending |
+| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
+| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
 
 
 ```dataview

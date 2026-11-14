@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -10.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[TROX]] | Director | $53K | 28 | -7.5% |
+| 2026-11-10 | [[TROX]] | Director | $53K | 28 | -7.1% |

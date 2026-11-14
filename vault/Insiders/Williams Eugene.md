@@ -12,5 +12,5 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -24.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-06 | [[PMN]] | Director | $91K | 54 | -20.0% |
-| 2026-11-03 | [[PMN]] | Director | $5K | 33 | +2.8% |
+| 2026-11-06 | [[PMN]] | Director | $91K | 54 | -24.1% |
+| 2026-11-03 | [[PMN]] | Director | $5K | 33 | -2.4% |

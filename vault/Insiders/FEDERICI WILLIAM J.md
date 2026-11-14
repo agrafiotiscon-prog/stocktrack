@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[STVN]] | Director | $274K | 58 | – |
+| 2026-11-12 | [[STVN]] | Director | $274K | 58 | +8.5% |

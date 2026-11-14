@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +76.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[GSM]] | CHIEF EXECUTIVE OFFICER | $51K | 56 | – |
+| 2026-11-12 | [[GSM]] | CHIEF EXECUTIVE OFFICER | $51K | 56 | -1.2% |

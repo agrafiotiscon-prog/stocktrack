@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 BKD WINKLE C CHRISTIAN\|2026-11-12]] | [[WINKLE C CHRISTIAN]] | Director | $358K | 48 | – | pending |
+| [[2026-11-12 BKD WINKLE C CHRISTIAN\|2026-11-12]] | [[WINKLE C CHRISTIAN]] | Director | $358K | 48 | -0.3% | open |

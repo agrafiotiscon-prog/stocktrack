@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -3.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[LBTYA]] | President & CEO | $1.0M | 66 | +8.0% |
+| 2026-11-05 | [[LBTYA]] | President & CEO | $1.0M | 66 | +9.8% |

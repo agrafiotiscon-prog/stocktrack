@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-04 | [[HAWKINS JAMES B]] | Director | $38K | 21 | +11.9% | open |
-| 2026-11-02 | [[HAWKINS JAMES B]] | Director | $53K | 23 | +6.4% | open |
-| 2026-10-29 | [[HAWKINS JAMES B]] | Director | $37K | 21 | +2.9% | open |
+| 2026-11-04 | [[HAWKINS JAMES B]] | Director | $38K | 21 | +5.8% | open |
+| 2026-11-02 | [[HAWKINS JAMES B]] | Director | $53K | 23 | +0.5% | open |
+| 2026-10-29 | [[HAWKINS JAMES B]] | Director | $37K | 21 | -2.7% | open |

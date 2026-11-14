@@ -13,10 +13,10 @@ insider_type: "routine"
 price: 5.73
 strategies: ["all_liquid", "proven_insider"]
 entry_date: "2026-10-21"
-entry_price: 5.74
+entry_price: 5.71071
 status: "open"
-abn_now: 0.0426094
-ret_now: 0.0243903
+abn_now: 0.0409221
+ret_now: 0.0191371
 abn_5: 0.033317
 abn_21: 
 abn_63: 
@@ -39,7 +39,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/proven_insider"]
 | Score / cluster | 37 / 1 insider(s) |
 | Insider type / track record | routine / 866 earlier buys, +1.0% |
 | Prior 3 months | -7.6% |
-| Entry | 2026-10-21 @ $5.74 |
+| Entry | 2026-10-21 @ $5.71 |
 | Status | open |
 
 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/proven_insider"]
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| +3.3% | – | – | – | – | +4.3% |
+| +3.3% | – | – | – | – | +4.1% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/818972/000151028126000365/0001510281-26-000365-index.htm)

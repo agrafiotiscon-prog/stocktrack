@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -15.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-30 | [[VALE]] | Accounting Officer | $3K | 16 | -2.2% |
+| 2026-10-30 | [[VALE]] | Accounting Officer | $3K | 16 | -2.4% |

@@ -12,4 +12,4 @@ Backtest record: 9 earlier buys, average 3-month excess vs SPY +0.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[LKFN]] | Director | $117K | 30 | -1.8% |
+| 2026-11-09 | [[LKFN]] | Director | $117K | 30 | -0.7% |

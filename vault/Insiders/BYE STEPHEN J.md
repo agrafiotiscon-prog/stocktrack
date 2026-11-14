@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[WW]] | President and CEO | $138K | 68 | -8.0% |
+| 2026-11-10 | [[WW]] | President and CEO | $138K | 68 | -21.9% |

@@ -12,4 +12,4 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY -3.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[IOSP]] | Director | $27K | 23 | – |
+| 2026-11-12 | [[IOSP]] | Director | $27K | 23 | +1.3% |

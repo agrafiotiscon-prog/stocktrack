@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +52.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[OBIO]] | Director | $100K | 55 | +4.3% |
+| 2026-11-09 | [[OBIO]] | Director | $100K | 55 | +23.5% |

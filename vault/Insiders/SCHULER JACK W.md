@@ -12,4 +12,4 @@ Backtest record: 62 earlier buys, average 3-month excess vs SPY -11.2%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[BDSX]] | 10% Owner | $1.0M | 40 | – |
+| 2026-11-12 | [[BDSX]] | 10% Owner | $1.0M | 40 | -1.0% |

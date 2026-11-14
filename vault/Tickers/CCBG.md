@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Butler William F]] | Director | $20K | 22 | +0.8% | open |
+| 2026-10-26 | [[Butler William F]] | Director | $20K | 22 | +1.0% | open |

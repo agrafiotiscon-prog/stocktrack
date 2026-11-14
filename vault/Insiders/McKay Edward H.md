@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -13.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[SHEN]] | President & CEO | $10K | 27 | +2.5% |
+| 2026-11-05 | [[SHEN]] | President & CEO | $10K | 27 | +2.0% |

@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -30.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[DKNG]] | Director | $99K | 49 | – |
+| 2026-11-12 | [[DKNG]] | Director | $99K | 49 | -1.4% |

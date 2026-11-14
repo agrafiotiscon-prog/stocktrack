@@ -12,5 +12,5 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +14.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[ADTN]] | Chairman & CEO | $172K | 54 | – |
-| 2026-11-09 | [[ADTN]] | Chairman & CEO | $601K | 65 | +5.4% |
+| 2026-11-12 | [[ADTN]] | Chairman & CEO | $172K | 54 | -1.7% |
+| 2026-11-09 | [[ADTN]] | Chairman & CEO | $601K | 65 | +5.1% |

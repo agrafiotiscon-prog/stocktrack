@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-13"
+updated: "2026-11-14"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-11 Backtest]]: the latest full backtest
-- [[2026-11-13]]: today's research log
+- [[2026-11-14]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[ASR]] | [[Perez Anton Jose Antonio]] | Director | $498K | 49 | – |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | Director | $187K | 70 | – |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | Director | $680K | 62 | – |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | Chief Executive Officer | $182K | 62 | – |
-| 2026-11-12 | [[VISN]] | [[Watts Claudius E. IV]] | Director | $831K | 42 | – |
-| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | Founder & CEO | $250K | 61 | – |
-| 2026-11-12 | [[BKD]] | [[WINKLE C CHRISTIAN]] | Director | $358K | 48 | – |
-| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | CEO | $502K | 55 | – |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | Chairman and CEO | $123K | 75 | – |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | President and CEO | $50K | 63 | – |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | Director | $22K | 60 | – |
-| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | Director | $10K | 57 | – |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | President and COO | $50K | 71 | – |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | Chief Financial Officer | $50K | 62 | – |
-| 2026-11-12 | [[LRMR]] | [[Shankar Gopi]] | Chief Development Officer | $14K | 52 | – |
+| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | Director | $2.0M | 67 | – |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | CEO, Chairman of the Board | $14.7M | 87 | – |
+| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | Director | $299K | 47 | – |
+| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | Director | $250K | 55 | – |
+| 2026-11-13 | [[IOND]] | [[Abbate Michael]] | Director | $1.3M | 53 | – |
+| 2026-11-13 | [[FISN]] | [[Muller Elizabeth]] | CEO, President | $22K | 48 | – |
+| 2026-11-13 | [[CRVS]] | [[Arcara Jeffrey]] | Chief Business Officer | $50K | 45 | – |
+| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | Pres., CEO & Executive Chair | $150K | 58 | – |
+| 2026-11-13 | [[UPST]] | [[Gu Paul]] | Chief Executive Officer | $1.0M | 63 | – |
+| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | Director | $9.2M | 72 | – |
+| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | See Remarks | $100K | 40 | – |
+| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | Director | $14K | 42 | – |
+| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | Director | $53K | 45 | – |
+| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | Chief Executive Officer | $2.6M | 52 | – |
+| 2026-11-13 | [[CAT]] | [[MacLennan David]] | Director | $209K | 43 | – |
 
 
 ## Live queries (Dataview plugin)

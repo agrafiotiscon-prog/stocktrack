@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +11.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[FNRN]] | Director | $5K | 19 | – |
+| 2026-11-12 | [[FNRN]] | Director | $5K | 19 | +2.0% |

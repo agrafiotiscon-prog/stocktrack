@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -2.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[EQPT]] | Director | $554K | 61 | – |
+| 2026-11-12 | [[EQPT]] | Director | $554K | 61 | -5.3% |

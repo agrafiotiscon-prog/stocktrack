@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -47.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[FLG]] | Exec Chairman and CEO | $496K | 60 | – |
+| 2026-11-12 | [[FLG]] | Exec Chairman and CEO | $496K | 60 | +0.6% |

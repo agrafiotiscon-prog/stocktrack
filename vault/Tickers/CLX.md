@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-05 CLX Breber Pierre R\|2026-11-05]] | [[Breber Pierre R]] | Director | $400K | 41 | +8.8% | open |
+| [[2026-11-05 CLX Breber Pierre R\|2026-11-05]] | [[Breber Pierre R]] | Director | $400K | 41 | +10.5% | open |

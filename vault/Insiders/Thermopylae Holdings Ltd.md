@@ -12,4 +12,4 @@ Backtest record: 12 earlier buys, average 3-month excess vs SPY +21.6%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[ABCL]] | 10% Owner | $699K | 27 | – |
+| 2026-11-12 | [[ABCL]] | 10% Owner | $699K | 27 | -1.5% |

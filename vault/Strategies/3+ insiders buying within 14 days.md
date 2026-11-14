@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.9%/yr, double costs +2.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 21 | +1.0% | +1.5% | 62% |
+| 5 sessions | 23 | +1.0% | +1.5% | 61% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | – | pending |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | $10K | 57 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Shankar Gopi]] | $14K | 52 | – | pending |
-| 2026-11-12 | [[OBIO]] | [[RTW INVESTMENTS, LP]] | $6.0M | 71 | – | pending |
-| 2026-11-12 | [[DOX]] | [[Kanouff Yvette]] | $101K | 51 | – | pending |
-| 2026-11-12 | [[DOX]] | [[Genish Amos]] | $150K | 60 | – | pending |
-| 2026-11-12 | [[DOX]] | [[MacDonald John Anthony]] | $42K | 44 | – | pending |
-| 2026-11-12 | [[DOX]] | [[MORALI VERONIQUE]] | $6K | 40 | – | pending |
-| 2026-11-12 | [[GOOD]] | [[Beckhorn Jay]] | $3K | 46 | – | pending |
-| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | – | pending |
-| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
-| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | – | pending |
-| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | $41K | 55 | – | pending |
-| 2026-11-12 | [[GSM]] | [[CROCKETT BRUCE LARMOUR]] | $21K | 52 | – | pending |
-| 2026-11-12 | [[GSM]] | [[Lopez Madrid Javier]] | $75K | 66 | – | pending |
+| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | – | pending |
+| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
+| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
+| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
+| 2026-11-13 | [[FF]] | [[Butcher Pamela R]] | $28K | 62 | – | pending |
+| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
+| 2026-11-13 | [[KGS]] | [[Holloway Gretchen Lynn]] | $50K | 46 | – | pending |
+| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
+| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
+| 2026-11-13 | [[TRTX]] | [[Gillmore Michael]] | $16K | 54 | – | pending |
+| 2026-11-13 | [[HPP]] | [[LAMMAS MARK T]] | $44K | 62 | – | pending |
+| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | – | pending |
+| 2026-11-13 | [[CSQR]] | [[Cook Steven R. E]] | $35K | 50 | – | pending |
+| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
+| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | +1.1% | open |
+| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | +1.1% | open |
+| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | $10K | 57 | +1.1% | open |
+| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | +1.1% | open |
+| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | +1.1% | open |
 
 
 ```dataview

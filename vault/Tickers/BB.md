@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-05 | [[Chaikof David]] | Director | $41K | 38 | +2.3% | open |
+| 2026-11-05 | [[Chaikof David]] | Director | $41K | 38 | +0.1% | open |

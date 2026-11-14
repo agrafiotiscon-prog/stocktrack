@@ -12,5 +12,5 @@ Backtest record: 9 earlier buys, average 3-month excess vs SPY -1.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[NSLR]] | Director | $115K | 35 | -2.5% |
-| 2026-11-04 | [[HGV]] | Director | $104K | 39 | -0.9% |
+| 2026-11-09 | [[NSLR]] | Director | $115K | 35 | -2.8% |
+| 2026-11-04 | [[HGV]] | Director | $104K | 39 | -0.5% |

@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY -21.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[MTUS]] | Director | $166K | 31 | +3.0% |
+| 2026-11-05 | [[MTUS]] | Director | $166K | 31 | +0.7% |

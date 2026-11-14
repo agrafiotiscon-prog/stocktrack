@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-04 LSCC Tamer Ford\|2026-11-04]] | [[Tamer Ford]] | President & CEO | $1.0M | 65 | +17.7% | open |
+| [[2026-11-04 LSCC Tamer Ford\|2026-11-04]] | [[Tamer Ford]] | President & CEO | $1.0M | 65 | +11.7% | open |

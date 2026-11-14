@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[Mazur Marc]] | Director | $30K | 36 | – | pending |
-| 2026-11-09 | [[Potter Leonard]] | Director | $115K | 35 | -2.5% | open |
+| 2026-11-12 | [[Mazur Marc]] | Director | $30K | 36 | -0.9% | open |
+| 2026-11-09 | [[Potter Leonard]] | Director | $115K | 35 | -2.8% | open |

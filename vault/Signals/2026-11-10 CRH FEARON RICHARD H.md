@@ -13,10 +13,10 @@ insider_type: "unclassified"
 price: 96.86
 strategies: ["all_liquid", "score_40", "proven_insider"]
 entry_date: "2026-11-11"
-entry_price: 95.96
+entry_price: 95.5615
 status: "open"
-abn_now: -0.0216817
-ret_now: -0.0212589
+abn_now: -0.0219198
+ret_now: -0.0251306
 abn_5: 
 abn_21: 
 abn_63: 
@@ -39,7 +39,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/score_40", "strategy/proven_in
 | Score / cluster | 47 / 2 insider(s) |
 | Insider type / track record | unclassified / 9 earlier buys, +15.8% |
 | Prior 3 months | -0.8% |
-| Entry | 2026-11-11 @ $95.96 |
+| Entry | 2026-11-11 @ $95.56 |
 | Status | open |
 
 

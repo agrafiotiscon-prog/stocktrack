@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 WW BYE STEPHEN J\|2026-11-10]] | [[BYE STEPHEN J]] | President and CEO | $138K | 68 | -8.0% | open |
-| [[2026-11-10 WW Gavales Lisa A\|2026-11-10]] | [[Gavales Lisa A]] | Director | $55K | 51 | -8.0% | open |
+| [[2026-11-10 WW BYE STEPHEN J\|2026-11-10]] | [[BYE STEPHEN J]] | President and CEO | $138K | 68 | -21.9% | open |
+| [[2026-11-10 WW Gavales Lisa A\|2026-11-10]] | [[Gavales Lisa A]] | Director | $55K | 51 | -21.9% | open |

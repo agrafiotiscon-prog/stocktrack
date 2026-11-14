@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[DOX]] | Director | $42K | 44 | – |
+| 2026-11-12 | [[DOX]] | Director | $42K | 44 | +1.3% |

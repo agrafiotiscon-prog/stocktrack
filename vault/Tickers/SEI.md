@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[TEAGUE AJ]] | Director | $41K | 20 | – | pending |
+| 2026-11-12 | [[TEAGUE AJ]] | Director | $41K | 20 | -1.8% | open |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[RSI]] | Director | $118K | 42 | -1.5% |
+| 2026-11-02 | [[RSI]] | Director | $118K | 42 | -0.6% |

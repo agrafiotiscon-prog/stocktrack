@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -2.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[GOOD]] | Treasurer | $3K | 46 | – |
+| 2026-11-12 | [[GOOD]] | Treasurer | $3K | 46 | +1.4% |

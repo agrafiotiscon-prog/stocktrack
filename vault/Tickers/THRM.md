@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-26 THRM MASCARENAS PAUL ANTHONY\|2026-10-26]] | [[MASCARENAS PAUL ANTHONY]] | Director | $533K | 61 | -2.1% | open |
-| [[2026-10-26 THRM Presley William T\|2026-10-26]] | [[Presley William T]] | President & CEO | $130K | 53 | -2.1% | open |
+| [[2026-10-26 THRM MASCARENAS PAUL ANTHONY\|2026-10-26]] | [[MASCARENAS PAUL ANTHONY]] | Director | $533K | 61 | -0.7% | open |
+| [[2026-10-26 THRM Presley William T\|2026-10-26]] | [[Presley William T]] | President & CEO | $130K | 53 | -0.7% | open |

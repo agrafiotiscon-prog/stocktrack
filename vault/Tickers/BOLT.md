@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Coastlands Capital LP]] | 10% Owner | $319K | 33 | -7.4% | open |
+| 2026-11-10 | [[Coastlands Capital LP]] | 10% Owner | $319K | 33 | -4.4% | open |

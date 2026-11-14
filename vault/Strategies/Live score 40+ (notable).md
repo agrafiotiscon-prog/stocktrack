@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.7%/yr, double costs +3.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 105 | +0.9% | +1.5% | 63% |
+| 5 sessions | 117 | +0.6% | +1.5% | 63% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[ASR]] | [[Perez Anton Jose Antonio]] | $498K | 49 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | – | pending |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | – | pending |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | – | pending |
-| 2026-11-12 | [[VISN]] | [[Watts Claudius E. IV]] | $831K | 42 | – | pending |
-| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 61 | – | pending |
-| 2026-11-12 | [[BKD]] | [[WINKLE C CHRISTIAN]] | $358K | 48 | – | pending |
-| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | – | pending |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | $10K | 57 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Shankar Gopi]] | $14K | 52 | – | pending |
-| 2026-11-12 | [[OFIX]] | [[Juniper Investment Company, LLC]] | $5.1M | 47 | – | pending |
-| 2026-11-12 | [[EQPT]] | [[HILL W BRYAN]] | $554K | 61 | – | pending |
-| 2026-11-12 | [[FLG]] | [[Otting Joseph M]] | $496K | 60 | – | pending |
-| 2026-11-12 | [[CSQR]] | [[Kelley Philip M]] | $172K | 56 | – | pending |
-| 2026-11-12 | [[BOOT]] | [[Watkins James M]] | $271K | 44 | – | pending |
+| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | – | pending |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
+| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | – | pending |
+| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | $250K | 55 | – | pending |
+| 2026-11-13 | [[IOND]] | [[Abbate Michael]] | $1.3M | 53 | – | pending |
+| 2026-11-13 | [[FISN]] | [[Muller Elizabeth]] | $22K | 48 | – | pending |
+| 2026-11-13 | [[CRVS]] | [[Arcara Jeffrey]] | $50K | 45 | – | pending |
+| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | $150K | 58 | – | pending |
+| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
+| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | – | pending |
+| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
+| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
+| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
+| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | – | pending |
+| 2026-11-13 | [[CAT]] | [[MacLennan David]] | $209K | 43 | – | pending |
+| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
+| 2026-11-13 | [[FF]] | [[Butcher Pamela R]] | $28K | 62 | – | pending |
+| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
+| 2026-11-13 | [[KGS]] | [[Holloway Gretchen Lynn]] | $50K | 46 | – | pending |
+| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
 
 
 ```dataview

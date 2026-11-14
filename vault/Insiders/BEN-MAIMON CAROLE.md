@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +14.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[LRMR]] | President and CEO | $50K | 63 | – |
+| 2026-11-12 | [[LRMR]] | President and CEO | $50K | 63 | +1.1% |

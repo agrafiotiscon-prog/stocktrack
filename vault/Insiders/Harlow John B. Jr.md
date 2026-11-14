@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[LRMR]] | President and COO | $50K | 71 | – |
+| 2026-11-12 | [[LRMR]] | President and COO | $50K | 71 | +1.1% |

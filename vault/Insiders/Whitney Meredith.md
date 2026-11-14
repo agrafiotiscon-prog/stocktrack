@@ -11,4 +11,4 @@ past_mean_abn_63:
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
 | 2026-10-26 | [[RVI]] | Director | $23K | 36 | -13.3% |
-| 2026-10-26 | [[RVII]] | Director | $27K | 36 | -17.3% |
+| 2026-10-26 | [[RVII]] | Director | $27K | 36 | -15.7% |

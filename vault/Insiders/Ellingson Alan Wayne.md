@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[DKNG]] | Chief Financial Officer | $350K | 46 | +1.4% |
+| 2026-11-09 | [[DKNG]] | Chief Financial Officer | $350K | 46 | +0.5% |

@@ -10,4 +10,4 @@ signals: 2
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
 | [[2026-11-05 FBRT Byrne Richard J\|2026-11-05]] | [[Byrne Richard J]] | Chairman and CEO | $998K | 65 | -6.6% | open |
-| 2026-11-04 | [[ORTALE BUFORD H]] | Director | $5K | 15 | -4.9% | open |
+| 2026-11-04 | [[ORTALE BUFORD H]] | Director | $5K | 15 | -4.8% | open |

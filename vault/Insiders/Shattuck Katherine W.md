@@ -12,5 +12,5 @@ Backtest record: 46 earlier buys, average 3-month excess vs SPY -1.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[CZNC]] | Director | $198 | 0 | -2.6% |
-| 2026-10-05 | [[CZNC]] | Director | $204 | 0 | +13.3% |
+| 2026-11-09 | [[CZNC]] | Director | $198 | 0 | -1.8% |
+| 2026-10-05 | [[CZNC]] | Director | $204 | 0 | +14.0% |

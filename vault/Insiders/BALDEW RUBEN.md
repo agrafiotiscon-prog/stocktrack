@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +5.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[NOMD]] | Chief Financial Officer | $100K | 36 | – |
+| 2026-11-12 | [[NOMD]] | Chief Financial Officer | $100K | 36 | +1.3% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 CNXN Zafirovski Matthew David\|2026-11-10]] | [[Zafirovski Matthew David]] | President & COO | $200K | 55 | -1.7% | open |
+| [[2026-11-10 CNXN Zafirovski Matthew David\|2026-11-10]] | [[Zafirovski Matthew David]] | President & COO | $200K | 55 | -1.6% | open |

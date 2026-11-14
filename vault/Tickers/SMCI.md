@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Angel Scott]] | Director | $50K | 33 | -8.9% | open |
+| 2026-11-10 | [[Angel Scott]] | Director | $50K | 33 | -9.0% | open |

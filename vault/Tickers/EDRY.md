@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[Pittas Aristeidis P]] | Director | $29K | 19 | -8.9% | open |
-| 2026-10-14 | [[Pittas Aristeidis P]] | Director | $36K | 20 | -14.6% | open |
+| 2026-10-16 | [[Pittas Aristeidis P]] | Director | $29K | 19 | -21.1% | open |
+| 2026-10-14 | [[Pittas Aristeidis P]] | Director | $36K | 20 | -26.1% | open |

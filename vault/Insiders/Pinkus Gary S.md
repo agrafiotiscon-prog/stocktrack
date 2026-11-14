@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[WD]] | Director | $201K | 45 | -4.6% |
+| 2026-11-10 | [[WD]] | Director | $201K | 45 | -5.0% |

@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-07 | [[VRA]] | Director | $50K | 39 | +49.4% |
-| 2026-09-29 | [[VRA]] | Director | $10K | 32 | +77.0% |
+| 2026-10-07 | [[VRA]] | Director | $50K | 39 | +50.7% |
+| 2026-09-29 | [[VRA]] | Director | $10K | 32 | +78.6% |

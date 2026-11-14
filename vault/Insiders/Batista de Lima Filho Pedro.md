@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -0.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-06 | [[AXIAY]] | Director | $5.3M | 48 | -26.0% |
+| 2026-10-06 | [[AXIAY]] | Director | $5.3M | 48 | -23.5% |

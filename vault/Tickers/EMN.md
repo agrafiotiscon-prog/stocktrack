@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[McAlindon Julie A]] | SVP, Regions & Chf SupChn Ofcr | $160K | 36 | -1.2% | open |
+| 2026-11-10 | [[McAlindon Julie A]] | SVP, Regions & Chf SupChn Ofcr | $160K | 36 | -1.7% | open |

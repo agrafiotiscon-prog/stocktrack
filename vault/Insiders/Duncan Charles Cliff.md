@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[VNDA]] | Director | $38K | 27 | +5.8% |
+| 2026-11-05 | [[VNDA]] | Director | $38K | 27 | +7.3% |

@@ -12,4 +12,4 @@ Backtest record: 36 earlier buys, average 3-month excess vs SPY -21.5%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[TNXP]] | Chief Executive Officer | $20K | 47 | – |
+| 2026-11-12 | [[TNXP]] | Chief Executive Officer | $20K | 47 | -6.6% |

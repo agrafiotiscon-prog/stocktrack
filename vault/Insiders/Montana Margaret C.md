@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -5.1%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[KGS]] | Director | $44K | 24 | – |
+| 2026-11-12 | [[KGS]] | Director | $44K | 24 | -0.2% |

@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -12.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[ILPT]] | Director | $12K | 27 | – |
+| 2026-11-12 | [[ILPT]] | Director | $12K | 27 | -0.2% |

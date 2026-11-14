@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-19 | [[Borck Leon]] | Director | $19K | 16 | +4.4% | open |
+| 2026-10-19 | [[Borck Leon]] | Director | $19K | 16 | +5.3% | open |

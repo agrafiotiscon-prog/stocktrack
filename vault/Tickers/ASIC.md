@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-27 | [[Schenk Chris]] | See Remarks | $24K | 36 | +5.4% | open |
+| 2026-10-27 | [[Schenk Chris]] | See Remarks | $24K | 36 | +5.8% | open |

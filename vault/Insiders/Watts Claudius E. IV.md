@@ -12,5 +12,5 @@ Backtest record: 20 earlier buys, average 3-month excess vs SPY -12.3%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[VISN]] | Director | $198K | 30 | – |
-| 2026-11-12 | [[VISN]] | Director | $831K | 42 | – |
+| 2026-11-12 | [[VISN]] | Director | $198K | 30 | +1.3% |
+| 2026-11-12 | [[VISN]] | Director | $831K | 42 | +1.3% |

@@ -12,4 +12,4 @@ Backtest record: 328 earlier buys, average 3-month excess vs SPY -3.6%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-27 | [[TIPT]] | Chairman and CEO | $502K | 29 | +6.5% |
+| 2026-10-27 | [[TIPT]] | Chairman and CEO | $502K | 29 | +7.1% |

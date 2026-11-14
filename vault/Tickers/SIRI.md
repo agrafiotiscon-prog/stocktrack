@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-03 SIRI BERKSHIRE HATHAWAY INC\|2026-11-03]] | [[BERKSHIRE HATHAWAY INC]] | 10% Owner | $26.9M | 40 | +2.4% | open |
+| [[2026-11-03 SIRI BERKSHIRE HATHAWAY INC\|2026-11-03]] | [[BERKSHIRE HATHAWAY INC]] | 10% Owner | $26.9M | 40 | +3.1% | open |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[HOS]] | PRESIDENT & CEO | $1.5M | 53 | – |
+| 2026-11-12 | [[HOS]] | PRESIDENT & CEO | $1.5M | 53 | +1.1% |

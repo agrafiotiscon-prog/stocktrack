@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[Adair Charles L]] | Director | $26K | 19 | – | pending |
+| 2026-11-12 | [[Adair Charles L]] | Director | $26K | 19 | +1.4% | open |

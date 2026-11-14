@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -1.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[MAA]] | EVP, Chief Investment Officer | $100K | 31 | -1.9% |
+| 2026-11-03 | [[MAA]] | EVP, Chief Investment Officer | $100K | 31 | -0.4% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 ASR Perez Anton Jose Antonio\|2026-11-12]] | [[Perez Anton Jose Antonio]] | Director | $498K | 49 | – | pending |
+| [[2026-11-12 ASR Perez Anton Jose Antonio\|2026-11-12]] | [[Perez Anton Jose Antonio]] | Director | $498K | 49 | -0.7% | open |

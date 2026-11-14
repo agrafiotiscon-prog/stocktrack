@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-29 SCQCU Das Soumen\|2026-10-29]] | [[Das Soumen]] | Director | $2.7M | 56 | +1.0% | open |
+| [[2026-10-29 SCQCU Das Soumen\|2026-10-29]] | [[Das Soumen]] | Director | $2.7M | 56 | +1.3% | open |

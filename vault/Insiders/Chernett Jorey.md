@@ -12,8 +12,8 @@ Backtest record: 33 earlier buys, average 3-month excess vs SPY +41.4%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[XGN]] | 10% Owner | $373K | 28 | – |
-| 2026-11-10 | [[XGN]] | 10% Owner | $91K | 20 | -21.2% |
-| 2026-11-10 | [[STLN]] | 10% Owner | $176K | 23 | -22.1% |
-| 2026-11-02 | [[STIM]] | 10% Owner | $41K | 15 | -32.8% |
-| 2026-10-20 | [[XGN]] | 10% Owner | $104K | 20 | -39.1% |
+| 2026-11-12 | [[XGN]] | 10% Owner | $373K | 28 | -4.7% |
+| 2026-11-10 | [[XGN]] | 10% Owner | $91K | 20 | -25.8% |
+| 2026-11-10 | [[STLN]] | 10% Owner | $176K | 23 | -26.9% |
+| 2026-11-02 | [[STIM]] | 10% Owner | $41K | 15 | -34.3% |
+| 2026-10-20 | [[XGN]] | 10% Owner | $104K | 20 | -42.5% |

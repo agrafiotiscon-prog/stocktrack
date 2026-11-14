@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -1.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[MP]] | Chief Operating Officer | $1.2M | 63 | – |
+| 2026-11-12 | [[MP]] | Chief Operating Officer | $1.2M | 63 | +4.6% |

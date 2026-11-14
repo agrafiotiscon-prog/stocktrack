@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -4.5%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[AQST]] | Director | $99K | 42 | – |
+| 2026-11-12 | [[AQST]] | Director | $99K | 42 | +8.2% |

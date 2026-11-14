@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +7.5%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[OFIX]] | 10% Owner | $5.1M | 47 | – |
+| 2026-11-12 | [[OFIX]] | 10% Owner | $5.1M | 47 | +0.5% |

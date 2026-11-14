@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-29 DINO MYERS FRANKLIN\|2026-10-29]] | [[MYERS FRANKLIN]] | CEO | $1.1M | 52 | -9.3% | open |
+| [[2026-10-29 DINO MYERS FRANKLIN\|2026-10-29]] | [[MYERS FRANKLIN]] | CEO | $1.1M | 52 | -8.9% | open |

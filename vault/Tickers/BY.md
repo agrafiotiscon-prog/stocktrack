@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | [[Stewart Pamela C]] | Director | $45K | 31 | +2.8% | open |
+| 2026-10-26 | [[Stewart Pamela C]] | Director | $45K | 31 | +3.5% | open |

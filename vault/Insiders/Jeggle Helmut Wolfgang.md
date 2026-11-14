@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-02 | [[BBTX]] | Director | $6.0M | 46 | +3.1% |
+| 2026-11-02 | [[BBTX]] | Director | $6.0M | 46 | -0.7% |

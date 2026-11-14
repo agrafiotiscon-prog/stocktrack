@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[HLLY]] | Chief Financial Officer | $23K | 29 | – |
+| 2026-11-12 | [[HLLY]] | Chief Financial Officer | $23K | 29 | +0.3% |

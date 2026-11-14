@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-09 TSM SPLINTER MICHAEL R\|2026-11-09]] | [[SPLINTER MICHAEL R]] | Director | $300K | 48 | +3.2% | open |
+| [[2026-11-09 TSM SPLINTER MICHAEL R\|2026-11-09]] | [[SPLINTER MICHAEL R]] | Director | $300K | 48 | +1.8% | open |

@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -5.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[ALNY]] | Director | $244K | 58 | – |
+| 2026-11-12 | [[ALNY]] | Director | $244K | 58 | +4.4% |

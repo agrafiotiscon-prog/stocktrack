@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -5.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[LRMR]] | Director | $187K | 70 | – |
+| 2026-11-12 | [[LRMR]] | Director | $187K | 70 | +1.1% |

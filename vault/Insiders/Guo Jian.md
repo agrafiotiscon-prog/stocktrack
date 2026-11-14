@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +14.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[KRT]] | Chief Financial Officer | $6K | 42 | -6.0% |
+| 2026-11-09 | [[KRT]] | Chief Financial Officer | $6K | 42 | -10.7% |

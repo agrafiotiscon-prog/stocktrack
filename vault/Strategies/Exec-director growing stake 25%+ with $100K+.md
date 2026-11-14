@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +11.7%/yr, double costs +6.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 39 | +1.8% | +0.9% | 62% |
+| 5 sessions | 44 | +0.9% | +0.6% | 57% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[ASR]] | [[Perez Anton Jose Antonio]] | $498K | 49 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | – | pending |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | – | pending |
-| 2026-11-12 | [[BKD]] | [[WINKLE C CHRISTIAN]] | $358K | 48 | – | pending |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | – | pending |
-| 2026-11-12 | [[EQPT]] | [[HILL W BRYAN]] | $554K | 61 | – | pending |
-| 2026-11-12 | [[CSQR]] | [[Kelley Philip M]] | $172K | 56 | – | pending |
-| 2026-11-12 | [[STVN]] | [[FEDERICI WILLIAM J]] | $274K | 58 | – | pending |
-| 2026-11-12 | [[ALNY]] | [[Sigal Charles Elliott]] | $244K | 58 | – | pending |
-| 2026-11-12 | [[DOX]] | [[Genish Amos]] | $150K | 60 | – | pending |
-| 2026-11-12 | [[MP]] | [[WEISENBURGER RANDALL J]] | $2.0M | 72 | – | pending |
-| 2026-11-10 | [[WW]] | [[BYE STEPHEN J]] | $138K | 68 | -8.0% | open |
-| 2026-11-10 | [[FUN]] | [[JAFFER REHAN]] | $14.9M | 77 | +1.0% | open |
-| 2026-11-10 | [[WD]] | [[Pinkus Gary S]] | $201K | 45 | -4.6% | open |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | -3.6% | open |
-| 2026-11-10 | [[STVN]] | [[MOREL DONALD E JR]] | $327K | 47 | +3.0% | open |
-| 2026-11-10 | [[SPXC]] | [[Deck Brian A]] | $141K | 38 | -2.9% | open |
-| 2026-11-10 | [[CNXN]] | [[Zafirovski Matthew David]] | $200K | 55 | -1.7% | open |
-| 2026-11-09 | [[GFS]] | [[LAZAR JACK R]] | $380K | 57 | +5.3% | open |
-| 2026-11-09 | [[ADM]] | [[McAtee David R II]] | $197K | 45 | +0.5% | open |
+| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | – | pending |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
+| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | – | pending |
+| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | $250K | 55 | – | pending |
+| 2026-11-13 | [[IOND]] | [[Abbate Michael]] | $1.3M | 53 | – | pending |
+| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
+| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
+| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
+| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
+| 2026-11-13 | [[WY]] | [[BECKWITT RICHARD]] | $307K | 46 | – | pending |
+| 2026-11-12 | [[ASR]] | [[Perez Anton Jose Antonio]] | $498K | 49 | -0.7% | open |
+| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
+| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | -5.2% | open |
+| 2026-11-12 | [[BKD]] | [[WINKLE C CHRISTIAN]] | $358K | 48 | -0.3% | open |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
+| 2026-11-12 | [[EQPT]] | [[HILL W BRYAN]] | $554K | 61 | -5.3% | open |
+| 2026-11-12 | [[CSQR]] | [[Kelley Philip M]] | $172K | 56 | -3.1% | open |
+| 2026-11-12 | [[STVN]] | [[FEDERICI WILLIAM J]] | $274K | 58 | +8.5% | open |
+| 2026-11-12 | [[ALNY]] | [[Sigal Charles Elliott]] | $244K | 58 | +4.4% | open |
+| 2026-11-12 | [[DOX]] | [[Genish Amos]] | $150K | 60 | +1.3% | open |
 
 
 ```dataview
