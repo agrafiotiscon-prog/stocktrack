@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +8.9%/yr, double costs +2.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 23 | +1.0% | +1.5% | 61% |
+| 5 sessions | 29 | +1.5% | +1.3% | 62% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | – | pending |
-| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
-| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
-| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
-| 2026-11-13 | [[FF]] | [[Butcher Pamela R]] | $28K | 62 | – | pending |
-| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
-| 2026-11-13 | [[KGS]] | [[Holloway Gretchen Lynn]] | $50K | 46 | – | pending |
-| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
-| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
-| 2026-11-13 | [[TRTX]] | [[Gillmore Michael]] | $16K | 54 | – | pending |
-| 2026-11-13 | [[HPP]] | [[LAMMAS MARK T]] | $44K | 62 | – | pending |
-| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | – | pending |
-| 2026-11-13 | [[CSQR]] | [[Cook Steven R. E]] | $35K | 50 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | +1.1% | open |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | +1.1% | open |
-| 2026-11-12 | [[LRMR]] | [[Truitt Joseph]] | $10K | 57 | +1.1% | open |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | +1.1% | open |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | +1.1% | open |
+| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
+| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | – | pending |
+| 2026-11-16 | [[LRMR]] | [[SHERMAN JEFFREY W]] | $10K | 57 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Bhatia Neel]] | $199K | 61 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Niederpruem Gary John]] | $334K | 77 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Ard Amy E]] | $300K | 75 | – | pending |
+| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
+| 2026-11-16 | [[FF]] | [[KRUSZEWSKI RONALD J]] | $284K | 72 | – | pending |
+| 2026-11-16 | [[DOX]] | [[Gardner Adrian]] | $215K | 64 | – | pending |
+| 2026-11-16 | [[BW]] | [[Frymyer Cameron M]] | $42K | 58 | – | pending |
+| 2026-11-16 | [[CSQR]] | [[PIZZUTO TERRI]] | $34K | 62 | – | pending |
+| 2026-11-16 | [[DOX]] | [[DE LA VEGA RAFAEL]] | $102K | 54 | – | pending |
+| 2026-11-16 | [[DOX]] | [[Gelman Eliahu Meir]] | $104K | 50 | – | pending |
+| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | +1.2% | open |
 
 
 ```dataview

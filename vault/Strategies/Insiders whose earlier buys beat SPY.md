@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +16.3%/yr, double costs +9.4%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 73 | +2.7% | +2.5% | 73% |
+| 5 sessions | 84 | +2.4% | +2.3% | 68% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
-| 2026-11-13 | [[FRPH]] | [[Baker John D. III]] | $930 | 10 | – | pending |
-| 2026-11-13 | [[TRS]] | [[Tredwell Daniel P]] | $3K | 13 | – | pending |
-| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | $150K | 58 | – | pending |
-| 2026-11-13 | [[GLP]] | [[Global GP LLC]] | $442K | 27 | – | pending |
-| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
-| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
-| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
-| 2026-11-13 | [[TRIN]] | [[Brown Kyle Steven]] | $58K | 35 | – | pending |
-| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | – | pending |
-| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
-| 2026-11-13 | [[TXO]] | [[SIMPSON BOB R]] | $945K | 34 | – | pending |
-| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
-| 2026-11-13 | [[NGS]] | [[JACKSON JOHN EARL]] | $58K | 40 | – | pending |
-| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | – | pending |
-| 2026-11-13 | [[ABCL]] | [[Booth Andrew]] | $97K | 48 | – | pending |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | -5.2% | open |
-| 2026-11-12 | [[FNRN]] | [[Servat Jean-Luc]] | $5K | 19 | +2.0% | open |
-| 2026-11-12 | [[BLMN]] | [[Spanos Mike]] | $502K | 55 | -0.2% | open |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
+| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
+| 2026-11-16 | [[JOF]] | [[Saba Capital Management, L.P]] | $73K | 18 | – | pending |
+| 2026-11-16 | [[LEO]] | [[Saba Capital Management, L.P]] | $796K | 31 | – | pending |
+| 2026-11-16 | [[KODK]] | [[Katz Philippe D]] | $25K | 20 | – | pending |
+| 2026-11-16 | [[CTVA]] | [[PAGE GREGORY R]] | $185K | 57 | – | pending |
+| 2026-11-16 | [[LPTH]] | [[Rubin Shmuel]] | $19K | 31 | – | pending |
+| 2026-11-16 | [[CTVA]] | [[KISSAM LUTHER C IV]] | $300K | 65 | – | pending |
+| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
+| 2026-11-16 | [[EVLV]] | [[Charlton Kevin M]] | $40K | 23 | – | pending |
+| 2026-11-16 | [[SENS]] | [[ROEDER DOUGLAS A]] | $176K | 33 | – | pending |
+| 2026-11-16 | [[SEI]] | [[TEAGUE AJ]] | $35K | 19 | – | pending |
+| 2026-11-16 | [[CACC]] | [[Quinn Sean Edward]] | $252K | 54 | – | pending |
+| 2026-11-16 | [[BW]] | [[Frymyer Cameron M]] | $42K | 58 | – | pending |
+| 2026-11-16 | [[NTWK]] | [[GHAURI NAJEEB]] | $22K | 30 | – | pending |
+| 2026-11-16 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $285K | 23 | – | pending |
+| 2026-11-16 | [[DX]] | [[BOSTON BYRON L]] | $50K | 46 | – | pending |
+| 2026-11-16 | [[DX]] | [[Popenoe Smriti Laxman]] | $26K | 43 | – | pending |
+| 2026-11-16 | [[ECOR]] | [[Errico Thomas J]] | $54K | 24 | – | pending |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | +1.3% | open |
+| 2026-11-13 | [[FRPH]] | [[Baker John D. III]] | $930 | 10 | -0.2% | open |
 
 
 ```dataview

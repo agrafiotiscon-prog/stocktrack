@@ -75,33 +75,33 @@ Cost sensitivity (63-session hold): no costs +16.6%/yr, double costs +11.0%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 22 | +2.5% | +3.4% | 73% |
+| 5 sessions | 33 | +2.4% | +2.1% | 61% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[CRVS]] | [[Arcara Jeffrey]] | $50K | 45 | – | pending |
-| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
-| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
-| 2026-11-13 | [[ABCL]] | [[Booth Andrew]] | $97K | 48 | – | pending |
-| 2026-11-13 | [[CSQR]] | [[Cook Steven R. E]] | $35K | 50 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | +1.1% | open |
-| 2026-11-12 | [[BOOT]] | [[Watkins James M]] | $271K | 44 | +0.4% | open |
-| 2026-11-12 | [[NOMD]] | [[BALDEW RUBEN]] | $100K | 36 | +1.3% | open |
-| 2026-11-12 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.3M | 52 | +4.1% | open |
-| 2026-11-12 | [[MP]] | [[Rosenthal Michael Stuart]] | $1.2M | 63 | +4.6% | open |
-| 2026-11-12 | [[MP]] | [[Corbett Ryan]] | $199K | 61 | +4.6% | open |
-| 2026-11-12 | [[MNR]] | [[WARD TOM L]] | $1.0M | 37 | -0.5% | open |
-| 2026-11-12 | [[GSM]] | [[Girardeau David Marie, Gabriel]] | $41K | 55 | -1.2% | open |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +1.3% | open |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | +1.6% | open |
-| 2026-11-10 | [[EMN]] | [[McAlindon Julie A]] | $160K | 36 | -1.7% | open |
-| 2026-11-10 | [[OBK]] | [[Crotwell Jim]] | $107K | 36 | +0.7% | open |
-| 2026-11-10 | [[GOOD]] | [[Gerson Gary]] | $86K | 60 | -0.7% | open |
-| 2026-11-09 | [[NXRT]] | [[McGraner Matt]] | $199K | 44 | -2.9% | open |
-| 2026-11-09 | [[NXRT]] | [[Richards Paul]] | $103K | 49 | -2.9% | open |
+| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | – | pending |
+| 2026-11-16 | [[BRK-B]] | [[O'Sullivan Michael J]] | $250K | 45 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Ard Amy E]] | $300K | 75 | – | pending |
+| 2026-11-16 | [[TG]] | [[DasGupta Arijit]] | $97K | 34 | – | pending |
+| 2026-11-16 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.4M | 52 | – | pending |
+| 2026-11-16 | [[IMRX]] | [[Gengos Andrew]] | $90K | 41 | – | pending |
+| 2026-11-16 | [[BW]] | [[Frymyer Cameron M]] | $42K | 58 | – | pending |
+| 2026-11-16 | [[TH]] | [[Schrenk Troy C]] | $250K | 53 | – | pending |
+| 2026-11-13 | [[CRVS]] | [[Arcara Jeffrey]] | $50K | 45 | -0.4% | open |
+| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | -1.5% | open |
+| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | -1.2% | open |
+| 2026-11-13 | [[ABCL]] | [[Booth Andrew]] | $97K | 48 | +0.3% | open |
+| 2026-11-13 | [[CSQR]] | [[Cook Steven R. E]] | $35K | 50 | -0.4% | open |
+| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | +2.3% | open |
+| 2026-11-12 | [[BOOT]] | [[Watkins James M]] | $271K | 44 | +0.2% | open |
 
 
 ```dataview

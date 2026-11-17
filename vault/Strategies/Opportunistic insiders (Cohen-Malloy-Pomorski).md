@@ -70,33 +70,33 @@ Cost sensitivity (63-session hold): no costs +17.2%/yr, double costs +10.1%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 31 | +2.1% | +2.1% | 77% |
+| 5 sessions | 40 | +1.8% | +2.1% | 75% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[FCPT]] | [[Lenehan William H]] | $150K | 39 | – | pending |
-| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | – | pending |
-| 2026-11-13 | [[CAT]] | [[MacLennan David]] | $209K | 43 | – | pending |
-| 2026-11-13 | [[IONS]] | [[Hayden Michael R]] | $148K | 37 | – | pending |
-| 2026-11-13 | [[TXO]] | [[SIMPSON BOB R]] | $945K | 34 | – | pending |
-| 2026-11-13 | [[CCNE]] | [[Peduzzi Michael D]] | $18K | 30 | – | pending |
-| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | – | pending |
-| 2026-11-13 | [[CCNE]] | [[POWELL JEFFREY S]] | $20K | 17 | – | pending |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | -5.2% | open |
-| 2026-11-12 | [[IOSP]] | [[PARRETTE LESLIE J]] | $27K | 23 | +1.3% | open |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
-| 2026-11-12 | [[ECL]] | [[MacLennan David]] | $185K | 29 | +0.7% | open |
-| 2026-11-12 | [[ILPT]] | [[PHELAN KEVIN C]] | $12K | 27 | -0.2% | open |
-| 2026-11-12 | [[SEI]] | [[TEAGUE AJ]] | $41K | 20 | -1.8% | open |
-| 2026-11-12 | [[ABCL]] | [[Thermopylae Holdings Ltd]] | $699K | 27 | -1.5% | open |
-| 2026-11-12 | [[BDSX]] | [[SCHULER JACK W]] | $1.0M | 40 | -1.0% | open |
-| 2026-11-12 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $424K | 25 | +0.0% | open |
-| 2026-11-10 | [[ETRA]] | [[ORBIMED ADVISORS LLC]] | $745K | 37 | +7.5% | open |
-| 2026-11-10 | [[BSM]] | [[Carter Thomas L Jr]] | $686K | 44 | +2.6% | open |
-| 2026-11-10 | [[EGBN]] | [[Newell Eric R]] | $50K | 41 | +1.3% | open |
+| 2026-11-16 | [[KODK]] | [[Katz Philippe D]] | $25K | 20 | – | pending |
+| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
+| 2026-11-16 | [[SENS]] | [[ROEDER DOUGLAS A]] | $176K | 33 | – | pending |
+| 2026-11-16 | [[SEI]] | [[TEAGUE AJ]] | $35K | 19 | – | pending |
+| 2026-11-16 | [[ORRF]] | [[Joiner Cindy Jeannette]] | $11K | 15 | – | pending |
+| 2026-11-16 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $285K | 23 | – | pending |
+| 2026-11-13 | [[FCPT]] | [[Lenehan William H]] | $150K | 39 | -0.5% | open |
+| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | +0.1% | open |
+| 2026-11-13 | [[CAT]] | [[MacLennan David]] | $209K | 43 | -1.7% | open |
+| 2026-11-13 | [[IONS]] | [[Hayden Michael R]] | $148K | 37 | -5.0% | open |
+| 2026-11-13 | [[TXO]] | [[SIMPSON BOB R]] | $945K | 34 | -2.4% | open |
+| 2026-11-13 | [[CCNE]] | [[Peduzzi Michael D]] | $18K | 30 | +0.1% | open |
+| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | +2.0% | open |
+| 2026-11-13 | [[CCNE]] | [[POWELL JEFFREY S]] | $20K | 17 | +0.1% | open |
+| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | +3.7% | open |
+| 2026-11-12 | [[IOSP]] | [[PARRETTE LESLIE J]] | $27K | 23 | +1.7% | open |
+| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | -1.2% | open |
+| 2026-11-12 | [[ECL]] | [[MacLennan David]] | $185K | 29 | +2.3% | open |
+| 2026-11-12 | [[ILPT]] | [[PHELAN KEVIN C]] | $12K | 27 | +0.5% | open |
+| 2026-11-12 | [[SEI]] | [[TEAGUE AJ]] | $41K | 20 | -4.2% | open |
 
 
 ```dataview

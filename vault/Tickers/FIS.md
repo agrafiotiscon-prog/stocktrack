@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Gibson Kourtney]] | Director | $52K | 38 | +5.5% | open |
-| 2026-10-16 | [[Goldstein Jeffrey A]] | Director | $58K | 13 | -15.7% | open |
+| 2026-11-10 | [[Gibson Kourtney]] | Director | $52K | 38 | +3.0% | open |
+| 2026-10-16 | [[Goldstein Jeffrey A]] | Director | $58K | 13 | -17.3% | open |

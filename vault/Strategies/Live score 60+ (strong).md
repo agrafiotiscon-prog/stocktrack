@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +13.7%/yr, double costs +7.8%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 33 | +1.0% | +1.6% | 61% |
+| 5 sessions | 40 | +0.8% | +1.3% | 60% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | – | pending |
-| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
-| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
-| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | – | pending |
-| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
-| 2026-11-13 | [[FF]] | [[Butcher Pamela R]] | $28K | 62 | – | pending |
-| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
-| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
-| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
-| 2026-11-13 | [[HPP]] | [[LAMMAS MARK T]] | $44K | 62 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | -5.2% | open |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | -5.2% | open |
-| 2026-11-12 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 61 | -5.3% | open |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
-| 2026-11-12 | [[LRMR]] | [[BEN-MAIMON CAROLE]] | $50K | 63 | +1.1% | open |
-| 2026-11-12 | [[LRMR]] | [[THOMAS FRANK E]] | $22K | 60 | +1.1% | open |
-| 2026-11-12 | [[LRMR]] | [[Harlow John B. Jr]] | $50K | 71 | +1.1% | open |
-| 2026-11-12 | [[LRMR]] | [[Celano Michael]] | $50K | 62 | +1.1% | open |
-| 2026-11-12 | [[EQPT]] | [[HILL W BRYAN]] | $554K | 61 | -5.3% | open |
+| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
+| 2026-11-16 | [[MX]] | [[LEE CHAE]] | $218K | 63 | – | pending |
+| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | $1.5M | 66 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Bhatia Neel]] | $199K | 61 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Niederpruem Gary John]] | $334K | 77 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Ard Amy E]] | $300K | 75 | – | pending |
+| 2026-11-16 | [[CTVA]] | [[KISSAM LUTHER C IV]] | $300K | 65 | – | pending |
+| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
+| 2026-11-16 | [[FF]] | [[KRUSZEWSKI RONALD J]] | $284K | 72 | – | pending |
+| 2026-11-16 | [[DOX]] | [[Gardner Adrian]] | $215K | 64 | – | pending |
+| 2026-11-16 | [[GOOD]] | [[Cooper Arthur S]] | $100K | 60 | – | pending |
+| 2026-11-16 | [[CSQR]] | [[PIZZUTO TERRI]] | $34K | 62 | – | pending |
+| 2026-11-16 | [[HUBS]] | [[Halligan Brian]] | $5.0M | 70 | – | pending |
+| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | +1.3% | open |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | +1.3% | open |
 
 
 ```dataview

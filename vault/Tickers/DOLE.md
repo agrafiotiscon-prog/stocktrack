@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-04 DOLE Pale Fire Capital SE\|2026-11-04]] | [[Pale Fire Capital SE]] | 10% Owner | $12.9M | 47 | +3.4% | open |
-| [[2026-10-22 DOLE Pale Fire Capital SE\|2026-10-22]] | [[Pale Fire Capital SE]] | 10% Owner | $8.6M | 45 | +6.4% | open |
-| 2026-10-14 | [[Pale Fire Capital SE]] | 10% Owner | $76K | 17 | +5.3% | open |
+| [[2026-11-04 DOLE Pale Fire Capital SE\|2026-11-04]] | [[Pale Fire Capital SE]] | 10% Owner | $12.9M | 47 | +3.9% | open |
+| [[2026-10-22 DOLE Pale Fire Capital SE\|2026-10-22]] | [[Pale Fire Capital SE]] | 10% Owner | $8.6M | 45 | +6.8% | open |
+| 2026-10-14 | [[Pale Fire Capital SE]] | 10% Owner | $76K | 17 | +5.8% | open |

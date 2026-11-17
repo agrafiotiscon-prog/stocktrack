@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-14"
+updated: "2026-11-17"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-11 Backtest]]: the latest full backtest
-- [[2026-11-14]]: today's research log
+- [[2026-11-17]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | Director | $2.0M | 67 | – |
-| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | CEO, Chairman of the Board | $14.7M | 87 | – |
-| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | Director | $299K | 47 | – |
-| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | Director | $250K | 55 | – |
-| 2026-11-13 | [[IOND]] | [[Abbate Michael]] | Director | $1.3M | 53 | – |
-| 2026-11-13 | [[FISN]] | [[Muller Elizabeth]] | CEO, President | $22K | 48 | – |
-| 2026-11-13 | [[CRVS]] | [[Arcara Jeffrey]] | Chief Business Officer | $50K | 45 | – |
-| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | Pres., CEO & Executive Chair | $150K | 58 | – |
-| 2026-11-13 | [[UPST]] | [[Gu Paul]] | Chief Executive Officer | $1.0M | 63 | – |
-| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | Director | $9.2M | 72 | – |
-| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | See Remarks | $100K | 40 | – |
-| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | Director | $14K | 42 | – |
-| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | Director | $53K | 45 | – |
-| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | Chief Executive Officer | $2.6M | 52 | – |
-| 2026-11-13 | [[CAT]] | [[MacLennan David]] | Director | $209K | 43 | – |
+| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | 10% Owner | $212K | 66 | – |
+| 2026-11-16 | [[MX]] | [[LEE CHAE]] | Chief Executive Officer | $218K | 63 | – |
+| 2026-11-16 | [[EQPT]] | [[Schlacks Jabbok]] | Founder & CEO | $63K | 50 | – |
+| 2026-11-16 | [[SKYD]] | [[Cardinale Gerald J]] | Director | $1.0M | 52 | – |
+| 2026-11-16 | [[KTOS]] | [[King David Arnold]] | Director | $201K | 45 | – |
+| 2026-11-16 | [[BRSP]] | [[Mazzei Michael]] | CEO | $1.0M | 58 | – |
+| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | Chief Financial Officer | $129K | 58 | – |
+| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | President and CEO | $1.5M | 66 | – |
+| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | Executive VP, CFO | $100K | 71 | – |
+| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | Executive VP and CMO | $25K | 61 | – |
+| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | Exec. VP, GC, Corp. Sec. & CCO | $50K | 57 | – |
+| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | President and CEO | $100K | 68 | – |
+| 2026-11-16 | [[HL]] | [[Andres Dale]] | Director | $125K | 43 | – |
+| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | Executive VP and COO | $51K | 70 | – |
+| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | Chief Legal Officer | $245K | 77 | – |
 
 
 ## Live queries (Dataview plugin)

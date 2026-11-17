@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +2.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[ARR]] | Co-Chief Investment Officer | $12K | 28 | – |
+| 2026-11-13 | [[ARR]] | Co-Chief Investment Officer | $12K | 28 | -0.5% |

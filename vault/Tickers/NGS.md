@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 NGS JACKSON JOHN EARL\|2026-11-13]] | [[JACKSON JOHN EARL]] | Director | $58K | 40 | – | pending |
+| [[2026-11-13 NGS JACKSON JOHN EARL\|2026-11-13]] | [[JACKSON JOHN EARL]] | Director | $58K | 40 | -1.9% | open |

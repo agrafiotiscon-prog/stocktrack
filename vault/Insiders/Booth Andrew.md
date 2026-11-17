@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +14.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[ABCL]] | Chief Financial Officer | $97K | 48 | – |
+| 2026-11-13 | [[ABCL]] | Chief Financial Officer | $97K | 48 | +0.3% |

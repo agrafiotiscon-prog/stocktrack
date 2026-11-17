@@ -12,6 +12,7 @@ Backtest record: 260 earlier buys, average 3-month excess vs SPY +0.6%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[DGICA]] | 10% Owner | $424K | 25 | +0.0% |
-| 2026-11-09 | [[DGICA]] | 10% Owner | $622K | 27 | +0.8% |
-| 2026-11-05 | [[DGICA]] | 10% Owner | $282K | 23 | -1.3% |
+| 2026-11-16 | [[DGICA]] | 10% Owner | $285K | 23 | – |
+| 2026-11-12 | [[DGICA]] | 10% Owner | $424K | 25 | +2.5% |
+| 2026-11-09 | [[DGICA]] | 10% Owner | $622K | 27 | +3.4% |
+| 2026-11-05 | [[DGICA]] | 10% Owner | $282K | 23 | +1.3% |

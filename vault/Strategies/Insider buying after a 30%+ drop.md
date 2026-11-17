@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.5%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 32 | +0.1% | +1.6% | 62% |
+| 5 sessions | 40 | -0.6% | +0.5% | 55% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | – | pending |
-| 2026-11-13 | [[FISN]] | [[Muller Elizabeth]] | $22K | 48 | – | pending |
-| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
-| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
-| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
-| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
-| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | – | pending |
-| 2026-11-13 | [[CAT]] | [[MacLennan David]] | $209K | 43 | – | pending |
-| 2026-11-13 | [[IONS]] | [[Hayden Michael R]] | $148K | 37 | – | pending |
-| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
-| 2026-11-13 | [[FF]] | [[Butcher Pamela R]] | $28K | 62 | – | pending |
-| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
-| 2026-11-13 | [[KGS]] | [[Holloway Gretchen Lynn]] | $50K | 46 | – | pending |
-| 2026-11-13 | [[FF]] | [[SPARKS ROSE]] | $30K | 71 | – | pending |
-| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
-| 2026-11-13 | [[HPP]] | [[LAMMAS MARK T]] | $44K | 62 | – | pending |
-| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | – | pending |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | -5.2% | open |
-| 2026-11-12 | [[HPP]] | [[COLEMAN VICTOR J]] | $182K | 62 | -5.2% | open |
+| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
+| 2026-11-16 | [[MX]] | [[LEE CHAE]] | $218K | 63 | – | pending |
+| 2026-11-16 | [[SKYD]] | [[Cardinale Gerald J]] | $1.0M | 52 | – | pending |
+| 2026-11-16 | [[KTOS]] | [[King David Arnold]] | $201K | 45 | – | pending |
+| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | – | pending |
+| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | $1.5M | 66 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | – | pending |
+| 2026-11-16 | [[HL]] | [[Andres Dale]] | $125K | 43 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | – | pending |
+| 2026-11-16 | [[FISN]] | [[Goldman Tepper Leslie]] | $10K | 32 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Bhatia Neel]] | $199K | 61 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Niederpruem Gary John]] | $334K | 77 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Ard Amy E]] | $300K | 75 | – | pending |
+| 2026-11-16 | [[LPTH]] | [[Rubin Shmuel]] | $19K | 31 | – | pending |
+| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
+| 2026-11-16 | [[IMRX]] | [[Gengos Andrew]] | $90K | 41 | – | pending |
 
 
 ```dataview

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 AKAM LEIGHTON F THOMSON\|2026-11-13]] | [[LEIGHTON F THOMSON]] | Chief Executive Officer | $2.6M | 52 | – | pending |
+| [[2026-11-13 AKAM LEIGHTON F THOMSON\|2026-11-13]] | [[LEIGHTON F THOMSON]] | Chief Executive Officer | $2.6M | 52 | +0.1% | open |

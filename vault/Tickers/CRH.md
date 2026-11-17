@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 CRH FEARON RICHARD H\|2026-11-10]] | [[FEARON RICHARD H]] | Director | $570K | 47 | -2.2% | open |
-| 2026-11-05 | [[Talbot Siobhan]] | Director | $189K | 38 | -1.9% | open |
+| [[2026-11-10 CRH FEARON RICHARD H\|2026-11-10]] | [[FEARON RICHARD H]] | Director | $570K | 47 | -1.1% | open |
+| 2026-11-05 | [[Talbot Siobhan]] | Director | $189K | 38 | -0.8% | open |

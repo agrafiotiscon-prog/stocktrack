@@ -1,0 +1,53 @@
+---
+type: "signal"
+ticker: "OTF"
+company: "Blue Owl Technology Finance Corp."
+insider: "Kaye Eric A."
+role: "Director"
+filed: "2026-11-16"
+traded: "2026-11-13"
+score: 28
+value: 9440
+cluster: 1
+insider_type: "unclassified"
+price: 9.42
+strategies: ["all_liquid"]
+entry_date: ""
+entry_price: 
+status: "pending"
+abn_now: 
+ret_now: 
+abn_5: 
+abn_21: 
+abn_63: 
+abn_126: 
+abn_252: 
+forward_test: false
+tags: ["signal", "strategy/all_liquid"]
+---
+
+# OTF: Kaye Eric A. bought $9K
+
+[[OTF]] · [[Kaye Eric A]] · [[Every discretionary insider buy]]
+
+|  |  |
+|---|---|
+| Company | Blue Owl Technology Finance Corp. |
+| Insider | Kaye Eric A. (Director) |
+| Traded / filed | 2026-11-13 to 2026-11-13 / 2026-11-16 |
+| Shares @ price | 1,000 @ $9.44 |
+| Score / cluster | 28 / 1 insider(s) |
+| Insider type / track record | unclassified / 6 earlier buys, -1.5% |
+| Prior 3 months | -11.9% |
+| Entry | awaiting next open |
+| Status | pending |
+
+
+## Outcome vs SPY
+
+| 1 week | 1 month | 3 months | 6 months | 1 year | So far |
+|---|---|---|---|---|---|
+| – | – | – | – | – | – |
+
+
+[SEC filing](https://www.sec.gov/Archives/edgar/data/1747777/000119312526463546/0001193125-26-463546-index.htm)

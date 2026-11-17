@@ -2,12 +2,13 @@
 type: "ticker"
 ticker: "PCQ"
 company: "PIMCO CALIFORNIA MUNICIPAL INCOME FUND"
-signals: 2
+signals: 3
 ---
 
 # PCQ: PIMCO CALIFORNIA MUNICIPAL INCOME FUND
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-16 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +2.6% | open |
-| 2026-10-13 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +6.2% | open |
+| [[2026-11-16 PCQ MITTAL MOHIT\|2026-11-16]] | [[MITTAL MOHIT]] | Other | $809K | 43 | – | pending |
+| 2026-10-16 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +4.1% | open |
+| 2026-10-13 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +7.7% | open |

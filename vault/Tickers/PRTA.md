@@ -9,10 +9,10 @@ signals: 7
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-10 PRTA SCULLY WILLIAM P\|2026-11-10]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.2M | 40 | -4.2% | open |
-| [[2026-10-26 PRTA SCULLY WILLIAM P\|2026-10-26]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.2M | 40 | -1.2% | open |
-| 2026-10-15 | [[SCULLY WILLIAM P]] | 10% Owner | $920K | 37 | -2.5% | open |
-| [[2026-10-09 PRTA SCULLY WILLIAM P\|2026-10-09]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.8M | 51 | -4.2% | open |
-| [[2026-10-06 PRTA SCULLY WILLIAM P\|2026-10-06]] | [[SCULLY WILLIAM P]] | 10% Owner | $857K | 47 | +5.7% | open |
-| [[2026-09-30 PRTA SCULLY WILLIAM P\|2026-09-30]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.4M | 49 | -3.1% | open |
-| [[2026-09-29 PRTA SCULLY WILLIAM P\|2026-09-29]] | [[SCULLY WILLIAM P]] | 10% Owner | $890K | 47 | -7.6% | open |
+| [[2026-11-10 PRTA SCULLY WILLIAM P\|2026-11-10]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.2M | 40 | -4.6% | open |
+| [[2026-10-26 PRTA SCULLY WILLIAM P\|2026-10-26]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.2M | 40 | -1.5% | open |
+| 2026-10-15 | [[SCULLY WILLIAM P]] | 10% Owner | $920K | 37 | -2.8% | open |
+| [[2026-10-09 PRTA SCULLY WILLIAM P\|2026-10-09]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.8M | 51 | -4.5% | open |
+| [[2026-10-06 PRTA SCULLY WILLIAM P\|2026-10-06]] | [[SCULLY WILLIAM P]] | 10% Owner | $857K | 47 | +5.1% | open |
+| [[2026-09-30 PRTA SCULLY WILLIAM P\|2026-09-30]] | [[SCULLY WILLIAM P]] | 10% Owner | $1.4M | 49 | -3.5% | open |
+| [[2026-09-29 PRTA SCULLY WILLIAM P\|2026-09-29]] | [[SCULLY WILLIAM P]] | 10% Owner | $890K | 47 | -7.8% | open |

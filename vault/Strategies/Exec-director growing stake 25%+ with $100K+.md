@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +11.7%/yr, double costs +6.3%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 44 | +0.9% | +0.6% | 57% |
+| 5 sessions | 51 | +1.2% | +0.6% | 57% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | – | pending |
-| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
-| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | – | pending |
-| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | $250K | 55 | – | pending |
-| 2026-11-13 | [[IOND]] | [[Abbate Michael]] | $1.3M | 53 | – | pending |
-| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
-| 2026-11-13 | [[FF]] | [[Bedell Donald C]] | $113K | 68 | – | pending |
-| 2026-11-13 | [[FF]] | [[Polet Roeland]] | $136K | 81 | – | pending |
-| 2026-11-13 | [[KGS]] | [[Darden Alexander Newsom]] | $450K | 69 | – | pending |
-| 2026-11-13 | [[WY]] | [[BECKWITT RICHARD]] | $307K | 46 | – | pending |
-| 2026-11-12 | [[ASR]] | [[Perez Anton Jose Antonio]] | $498K | 49 | -0.7% | open |
-| 2026-11-12 | [[LRMR]] | [[Hamilton Thomas Edward]] | $187K | 70 | +1.1% | open |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | -5.2% | open |
-| 2026-11-12 | [[BKD]] | [[WINKLE C CHRISTIAN]] | $358K | 48 | -0.3% | open |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | +0.5% | open |
-| 2026-11-12 | [[EQPT]] | [[HILL W BRYAN]] | $554K | 61 | -5.3% | open |
-| 2026-11-12 | [[CSQR]] | [[Kelley Philip M]] | $172K | 56 | -3.1% | open |
-| 2026-11-12 | [[STVN]] | [[FEDERICI WILLIAM J]] | $274K | 58 | +8.5% | open |
-| 2026-11-12 | [[ALNY]] | [[Sigal Charles Elliott]] | $244K | 58 | +4.4% | open |
-| 2026-11-12 | [[DOX]] | [[Genish Amos]] | $150K | 60 | +1.3% | open |
+| 2026-11-16 | [[SKYD]] | [[Cardinale Gerald J]] | $1.0M | 52 | – | pending |
+| 2026-11-16 | [[KTOS]] | [[King David Arnold]] | $201K | 45 | – | pending |
+| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | $1.5M | 66 | – | pending |
+| 2026-11-16 | [[HL]] | [[Andres Dale]] | $125K | 43 | – | pending |
+| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | – | pending |
+| 2026-11-16 | [[BRK-B]] | [[O'Sullivan Michael J]] | $250K | 45 | – | pending |
+| 2026-11-16 | [[CNH]] | [[Simonelli Lorenzo]] | $567K | 50 | – | pending |
+| 2026-11-16 | [[AMG]] | [[Cates G. Staley]] | $1.0M | 50 | – | pending |
+| 2026-11-16 | [[CTVA]] | [[PAGE GREGORY R]] | $185K | 57 | – | pending |
+| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
+| 2026-11-16 | [[FF]] | [[KRUSZEWSKI RONALD J]] | $284K | 72 | – | pending |
+| 2026-11-16 | [[CACC]] | [[Quinn Sean Edward]] | $252K | 54 | – | pending |
+| 2026-11-16 | [[DOX]] | [[Gardner Adrian]] | $215K | 64 | – | pending |
+| 2026-11-16 | [[SONO]] | [[Kennedy Joseph Jude]] | $1.9M | 55 | – | pending |
+| 2026-11-16 | [[HUBS]] | [[Halligan Brian]] | $5.0M | 70 | – | pending |
+| 2026-11-16 | [[YUMC]] | [[DIMITRIEF ALEXANDER]] | $248K | 46 | – | pending |
+| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | +1.3% | open |
+| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | +1.3% | open |
+| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | -6.5% | open |
+| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | $250K | 55 | +1.1% | open |
 
 
 ```dataview

@@ -72,33 +72,33 @@ Cost sensitivity (63-session hold): no costs +7.9%/yr, double costs +2.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 255 | +0.8% | +1.3% | 61% |
+| 5 sessions | 297 | +0.7% | +1.1% | 59% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[STWD]] | [[Pollack Jonathan Lee]] | $2.0M | 67 | – | pending |
-| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | – | pending |
-| 2026-11-13 | [[FRPH]] | [[Baker John D. III]] | $930 | 10 | – | pending |
-| 2026-11-13 | [[INDI]] | [[ALDRICH DAVID J]] | $299K | 47 | – | pending |
-| 2026-11-13 | [[CTRI]] | [[Patton Charles R]] | $250K | 55 | – | pending |
-| 2026-11-13 | [[IOND]] | [[Abbate Michael]] | $1.3M | 53 | – | pending |
-| 2026-11-13 | [[TRS]] | [[Tredwell Daniel P]] | $3K | 13 | – | pending |
-| 2026-11-13 | [[FISN]] | [[Muller Elizabeth]] | $22K | 48 | – | pending |
-| 2026-11-13 | [[CRVS]] | [[Arcara Jeffrey]] | $50K | 45 | – | pending |
-| 2026-11-13 | [[ZLAB]] | [[GAYNOR RICHARD]] | $33K | 6 | – | pending |
-| 2026-11-13 | [[CTEV]] | [[Dalton Travis]] | $150K | 58 | – | pending |
-| 2026-11-13 | [[UPST]] | [[Gu Paul]] | $1.0M | 63 | – | pending |
-| 2026-11-13 | [[GLP]] | [[Global GP LLC]] | $442K | 27 | – | pending |
-| 2026-11-13 | [[MRBK]] | [[Warriner Kenneth Thomas]] | $16K | 30 | – | pending |
-| 2026-11-13 | [[FUN]] | [[JAFFER REHAN]] | $9.2M | 72 | – | pending |
-| 2026-11-13 | [[NXRT]] | [[McGraner Matt]] | $100K | 40 | – | pending |
-| 2026-11-13 | [[AEBI]] | [[Schroeder Henning]] | $12K | 30 | – | pending |
-| 2026-11-13 | [[ARR]] | [[Macauley Desmond]] | $12K | 28 | – | pending |
-| 2026-11-13 | [[BW]] | [[Moeller Philip D]] | $14K | 42 | – | pending |
-| 2026-11-13 | [[BW]] | [[Tato Joseph A]] | $53K | 45 | – | pending |
+| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
+| 2026-11-16 | [[MX]] | [[LEE CHAE]] | $218K | 63 | – | pending |
+| 2026-11-16 | [[EQPT]] | [[Schlacks Jabbok]] | $63K | 50 | – | pending |
+| 2026-11-16 | [[SKYD]] | [[Cardinale Gerald J]] | $1.0M | 52 | – | pending |
+| 2026-11-16 | [[ENOV]] | [[Lalor Angela S]] | $49K | 37 | – | pending |
+| 2026-11-16 | [[JOF]] | [[Saba Capital Management, L.P]] | $73K | 18 | – | pending |
+| 2026-11-16 | [[KTOS]] | [[King David Arnold]] | $201K | 45 | – | pending |
+| 2026-11-16 | [[LEO]] | [[Saba Capital Management, L.P]] | $796K | 31 | – | pending |
+| 2026-11-16 | [[BRSP]] | [[Mazzei Michael]] | $1.0M | 58 | – | pending |
+| 2026-11-16 | [[HAWK]] | [[Fox Alex J]] | $10K | 17 | – | pending |
+| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | – | pending |
+| 2026-11-16 | [[HAWK]] | [[Probert Todd]] | $15K | 23 | – | pending |
+| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | $1.5M | 66 | – | pending |
+| 2026-11-16 | [[CTEV]] | [[ARES MANAGEMENT LLC]] | $390K | 38 | – | pending |
+| 2026-11-16 | [[HAWK]] | [[Searle Craig Chih-Meng]] | $10K | 23 | – | pending |
+| 2026-11-16 | [[HAWK]] | [[Serafini John Sheldon]] | $25K | 30 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | – | pending |
+| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | – | pending |
 
 
 ```dataview
