@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[Charles Faith L]] | Director | $34K | 26 | – | pending |
+| 2026-11-16 | [[Charles Faith L]] | Director | $34K | 26 | +0.8% | open |

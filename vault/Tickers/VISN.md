@@ -2,13 +2,14 @@
 type: "ticker"
 ticker: "VISN"
 company: "Vistance Networks, Inc."
-signals: 3
+signals: 4
 ---
 
 # VISN: Vistance Networks, Inc.
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 VISN Yates Timothy T\|2026-11-13]] | [[Yates Timothy T]] | Director | $99K | 43 | -3.3% | open |
-| 2026-11-12 | [[Watts Claudius E. IV]] | Director | $198K | 30 | -3.6% | open |
-| [[2026-11-12 VISN Watts Claudius E. IV\|2026-11-12]] | [[Watts Claudius E. IV]] | Director | $831K | 42 | -3.6% | open |
+| [[2026-11-17 VISN Gilstrap Charles A\|2026-11-17]] | [[Gilstrap Charles A]] | SVP, Treasury, Tax & CAO | $20K | 45 | – | pending |
+| [[2026-11-13 VISN Yates Timothy T\|2026-11-13]] | [[Yates Timothy T]] | Director | $99K | 43 | -2.5% | open |
+| 2026-11-12 | [[Watts Claudius E. IV]] | Director | $198K | 30 | -2.9% | open |
+| [[2026-11-12 VISN Watts Claudius E. IV\|2026-11-12]] | [[Watts Claudius E. IV]] | Director | $831K | 42 | -2.9% | open |

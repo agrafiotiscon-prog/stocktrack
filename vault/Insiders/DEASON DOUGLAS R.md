@@ -2,14 +2,15 @@
 type: "insider"
 name: "DEASON DOUGLAS R"
 cik: "1079500"
-past_buys: 3
-past_mean_abn_63: -0.0426
+past_buys: 4
+past_mean_abn_63: -0.10023
 ---
 
 # DEASON DOUGLAS R
 
-Backtest record: 3 earlier buys, average 3-month excess vs SPY -4.3%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+Backtest record: 4 earlier buys, average 3-month excess vs SPY -10.0%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[GLXY]] | Director | $70K | 40 | -12.1% |
+| 2026-11-17 | [[GLXY]] | Director | $201K | 50 | – |
+| 2026-11-10 | [[GLXY]] | Director | $70K | 40 | -11.8% |

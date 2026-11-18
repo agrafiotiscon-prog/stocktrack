@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[MX]] | Chief Executive Officer | $218K | 63 | – |
-| 2026-11-10 | [[MX]] | Chief Executive Officer | $155K | 49 | -12.4% |
+| 2026-11-16 | [[MX]] | Chief Executive Officer | $218K | 63 | -2.9% |
+| 2026-11-10 | [[MX]] | Chief Executive Officer | $155K | 49 | -11.0% |

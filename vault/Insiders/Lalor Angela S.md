@@ -10,5 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[ENOV]] | Director | $49K | 37 | – |
-| 2026-11-12 | [[ENOV]] | Director | $50K | 38 | +0.1% |
+| 2026-11-16 | [[ENOV]] | Director | $49K | 37 | -1.2% |
+| 2026-11-12 | [[ENOV]] | Director | $50K | 38 | -1.4% |

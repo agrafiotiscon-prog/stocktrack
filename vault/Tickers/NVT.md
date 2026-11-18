@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Parker Herbert K]] | Director | $339K | 39 | -6.7% | open |
+| 2026-11-10 | [[Parker Herbert K]] | Director | $339K | 39 | -5.9% | open |

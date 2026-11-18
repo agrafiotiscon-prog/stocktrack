@@ -12,4 +12,5 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +16.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[BOLT]] | 10% Owner | $319K | 33 | -6.9% |
+| 2026-11-17 | [[BOLT]] | 10% Owner | $310K | 32 | – |
+| 2026-11-10 | [[BOLT]] | 10% Owner | $319K | 33 | -8.2% |

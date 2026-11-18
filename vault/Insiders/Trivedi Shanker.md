@@ -12,4 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -30.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[ENPH]] | Director | $31K | 49 | -19.8% |
+| 2026-11-17 | [[SANM]] | Director | $53K | 39 | – |
+| 2026-11-03 | [[ENPH]] | Director | $31K | 49 | -24.6% |

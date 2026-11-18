@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 TNXP LEDERMAN SETH\|2026-11-12]] | [[LEDERMAN SETH]] | Chief Executive Officer | $20K | 47 | -8.7% | open |
+| [[2026-11-12 TNXP LEDERMAN SETH\|2026-11-12]] | [[LEDERMAN SETH]] | Chief Executive Officer | $20K | 47 | -5.9% | open |

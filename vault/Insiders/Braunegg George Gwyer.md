@@ -3,7 +3,7 @@ type: "insider"
 name: "Braunegg George Gwyer"
 cik: "1762520"
 past_buys: 5
-past_mean_abn_63: 0.00049
+past_mean_abn_63: 0.00048
 ---
 
 # Braunegg George Gwyer
@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY +0.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[MCY]] | Director | $50K | 43 | +3.7% |
+| 2026-11-10 | [[MCY]] | Director | $50K | 43 | +2.8% |

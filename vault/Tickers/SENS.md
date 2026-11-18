@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[ROEDER DOUGLAS A]] | Director | $176K | 33 | – | pending |
+| 2026-11-16 | [[ROEDER DOUGLAS A]] | Director | $176K | 33 | -10.3% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 HL Andres Dale\|2026-11-16]] | [[Andres Dale]] | Director | $125K | 43 | – | pending |
+| [[2026-11-16 HL Andres Dale\|2026-11-16]] | [[Andres Dale]] | Director | $125K | 43 | +1.0% | open |

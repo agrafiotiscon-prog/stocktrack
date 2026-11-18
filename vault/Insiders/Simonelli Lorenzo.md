@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY -0.5%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[CNH]] | Director | $567K | 50 | – |
+| 2026-11-16 | [[CNH]] | Director | $567K | 50 | -0.6% |

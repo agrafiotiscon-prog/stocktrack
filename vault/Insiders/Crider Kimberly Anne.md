@@ -1,0 +1,15 @@
+---
+type: "insider"
+name: "Crider Kimberly Anne"
+cik: "2011553"
+past_buys: 1
+past_mean_abn_63: 0.02853
+---
+
+# Crider Kimberly Anne
+
+Backtest record: 1 earlier buys, average 3-month excess vs SPY +2.9%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+
+| Filed | Ticker | Role | Value | Score | vs SPY so far |
+|---|---|---|---|---|---|
+| 2026-11-17 | [[LPTH]] | Director | $636 | 13 | – |

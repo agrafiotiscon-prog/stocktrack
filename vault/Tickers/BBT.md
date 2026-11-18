@@ -9,7 +9,7 @@ signals: 7
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-02 BBT Hughes William H III\|2026-11-02]] | [[Hughes William H III]] | Director | $6K | 40 | +0.6% | open |
+| [[2026-11-02 BBT Hughes William H III\|2026-11-02]] | [[Hughes William H III]] | Director | $6K | 40 | +0.7% | open |
 | [[2026-10-30 BBT Charnley Nina A\|2026-10-30]] | [[Charnley Nina A]] | Director | $11K | 57 | +5.1% | open |
 | [[2026-10-29 BBT Callahan Mary Anne\|2026-10-29]] | [[Callahan Mary Anne]] | Director | $97K | 54 | +3.4% | open |
 | [[2026-10-28 BBT Polito Karyn\|2026-10-28]] | [[Polito Karyn]] | Director | $31K | 49 | +4.3% | open |

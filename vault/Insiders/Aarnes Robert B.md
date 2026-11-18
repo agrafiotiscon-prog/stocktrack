@@ -12,4 +12,4 @@ Backtest record: 13 earlier buys, average 3-month excess vs SPY -24.7%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[ADIG]] | President and CEO | $100K | 68 | – |
+| 2026-11-16 | [[ADIG]] | President and CEO | $100K | 68 | -4.0% |

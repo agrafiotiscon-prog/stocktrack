@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[IOND]] | Director | $1.3M | 53 | +4.7% |
+| 2026-11-13 | [[IOND]] | Director | $1.3M | 53 | +3.4% |

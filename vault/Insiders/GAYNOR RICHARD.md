@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +4.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[ZLAB]] | Director | $33K | 6 | -1.6% |
+| 2026-11-13 | [[ZLAB]] | Director | $33K | 6 | -0.3% |

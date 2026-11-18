@@ -10,6 +10,7 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[TEAM]] | CEO, Co-Founder | $2.0M | 39 | – |
-| 2026-11-13 | [[TEAM]] | CEO, Co-Founder | $2.0M | 39 | +1.9% |
-| 2026-11-12 | [[TEAM]] | CEO, Co-Founder | $2.0M | 39 | -0.1% |
+| 2026-11-17 | [[TEAM]] | CEO, Co-Founder | $2.0M | 39 | – |
+| 2026-11-16 | [[TEAM]] | CEO, Co-Founder | $2.0M | 39 | -4.2% |
+| 2026-11-13 | [[TEAM]] | CEO, Co-Founder | $2.0M | 39 | -3.1% |
+| 2026-11-12 | [[TEAM]] | CEO, Co-Founder | $2.0M | 39 | -5.0% |

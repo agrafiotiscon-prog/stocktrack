@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[Lalor Angela S]] | Director | $49K | 37 | – | pending |
-| 2026-11-12 | [[Wienbar Sharon L]] | Director | $50K | 37 | +0.1% | open |
-| 2026-11-12 | [[Lalor Angela S]] | Director | $50K | 38 | +0.1% | open |
-| 2026-11-10 | [[Wienbar Sharon L]] | Director | $50K | 25 | +1.9% | open |
+| 2026-11-16 | [[Lalor Angela S]] | Director | $49K | 37 | -1.2% | open |
+| 2026-11-12 | [[Wienbar Sharon L]] | Director | $50K | 37 | -1.4% | open |
+| 2026-11-12 | [[Lalor Angela S]] | Director | $50K | 38 | -1.4% | open |
+| 2026-11-10 | [[Wienbar Sharon L]] | Director | $50K | 25 | +0.4% | open |

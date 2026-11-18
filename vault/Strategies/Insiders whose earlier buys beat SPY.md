@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "proven_insider"
-signals: 20084
-cagr: 0.129009
-spy_cagr: 0.11135
-sharpe: 0.527923
-max_drawdown: 0.601494
-holdout_excess: 0.00385895
+signals: 20163
+cagr: 0.0985475
+spy_cagr: 0.109955
+sharpe: 0.425576
+max_drawdown: 0.614364
+holdout_excess: 0.00444686
 ---
 
 # Insiders whose earlier buys beat SPY
@@ -17,88 +17,89 @@ Rule key: `proven_insider`. Liquid stocks only ($2+, $1M+/day), plan purchases e
 
 | Measure | Value |
 |---|---|
-| Signals | 20,084 |
+| Signals | 20,163 |
 | 3-month excess vs SPY (mean / median) | +0.7% / -0.9% |
 | Beat SPY over 3 months | 47% |
 | Entering one session later | +0.5% |
 | vs surviving stocks | +1.1% |
-| 2006-2015 excess /yr | +6.0% (p 0.022) |
-| 2016+ excess /yr | +0.4% (p 0.906) |
+| 2006-2015 excess /yr | +6.0% (p 0.019) |
+| 2016+ excess /yr | +0.4% (p 0.892) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +7.6% | +11.1% | 0.35 | 0.56 | 52% | 1.09 | -3.0% | 29% | 4,538 | 8.6% | -0.5% / -0.14 / 45% |
-| 63d | +12.9% | +11.1% | 0.53 | 0.56 | 60% | 1.22 | +0.9% | 48% | 1,612 | 3.1% | +4.3% / 0.27 / 30% |
-| 126d | +9.1% | +11.1% | 0.41 | 0.56 | 57% | 1.12 | -1.8% | 43% | 817 | 1.5% | +0.5% / -0.04 / 39% |
+| 21d | +6.5% | +11.0% | 0.31 | 0.55 | 52% | 1.07 | -3.7% | 24% | 4,543 | 8.4% | -1.2% / -0.20 / 51% |
+| 63d | +9.9% | +11.0% | 0.43 | 0.55 | 61% | 1.19 | -1.4% | 48% | 1,617 | 3.2% | +1.8% / 0.07 / 43% |
+| 126d | +8.3% | +11.0% | 0.38 | 0.55 | 57% | 1.17 | -2.8% | 33% | 820 | 1.5% | -0.1% / -0.09 / 39% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +16.3%/yr, double costs +9.4%/yr.
+Cost sensitivity (63-session hold): no costs +13.6%/yr, double costs +6.6%/yr.
 
 
 ### Year by year (63-session hold)
 
 | Year | Strategy | SPY | Difference |
 |---|---|---|---|
-| 2006 | +15.5% | +13.9% | +1.7% |
-| 2007 | +4.3% | +5.1% | -0.8% |
-| 2008 | -19.2% | -36.8% | +17.6% |
-| 2009 | +24.8% | +26.4% | -1.6% |
-| 2010 | +42.2% | +15.1% | +27.1% |
-| 2011 | +7.7% | +1.9% | +5.8% |
-| 2012 | +14.9% | +16.0% | -1.1% |
-| 2013 | +39.1% | +32.3% | +6.8% |
-| 2014 | +13.8% | +13.5% | +0.3% |
-| 2015 | -13.8% | +1.2% | -15.0% |
-| 2016 | +25.3% | +12.0% | +13.3% |
-| 2017 | +11.2% | +21.7% | -10.5% |
-| 2018 | -12.9% | -4.6% | -8.3% |
-| 2019 | +30.6% | +31.2% | -0.6% |
-| 2020 | +38.8% | +18.3% | +20.5% |
-| 2021 | +14.5% | +28.7% | -14.2% |
-| 2022 | -25.4% | -18.2% | -7.2% |
-| 2023 | +40.3% | +26.2% | +14.1% |
-| 2024 | +15.7% | +24.9% | -9.2% |
-| 2025 | +25.0% | +17.7% | +7.3% |
-| 2026 | +6.9% | +10.8% | -3.9% |
+| 2006 | +16.9% | +13.9% | +3.0% |
+| 2007 | +1.5% | +5.1% | -3.6% |
+| 2008 | -22.3% | -36.8% | +14.5% |
+| 2009 | +23.9% | +26.4% | -2.5% |
+| 2010 | +41.5% | +15.1% | +26.4% |
+| 2011 | +11.8% | +1.9% | +9.9% |
+| 2012 | +15.2% | +16.0% | -0.8% |
+| 2013 | +35.5% | +32.3% | +3.2% |
+| 2014 | +15.1% | +13.5% | +1.7% |
+| 2015 | -15.6% | +1.2% | -16.8% |
+| 2016 | +23.4% | +12.0% | +11.4% |
+| 2017 | +9.6% | +21.7% | -12.1% |
+| 2018 | -18.5% | -4.6% | -14.0% |
+| 2019 | +15.0% | +31.2% | -16.2% |
+| 2020 | +28.3% | +18.3% | +10.0% |
+| 2021 | +6.0% | +28.7% | -22.7% |
+| 2022 | -24.5% | -18.2% | -6.3% |
+| 2023 | +23.8% | +26.2% | -2.4% |
+| 2024 | +8.1% | +24.9% | -16.8% |
+| 2025 | +21.4% | +17.7% | +3.6% |
+| 2026 | +18.0% | +8.2% | +9.7% |
 
 
 ## Live forward test
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 84 | +2.4% | +2.3% | 68% |
+| 5 sessions | 101 | +1.3% | +1.7% | 64% |
+| 21 sessions | 2 | +7.0% | +8.0% | 100% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
+| 2026-11-18 | [[TSM]] | [[BURNS URSULA M]] | $500K | 60 | – | pending |
+| 2026-11-17 | [[HFRO]] | [[Saba Capital Management, L.P]] | $6K | 8 | – | pending |
+| 2026-11-17 | [[JOF]] | [[Saba Capital Management, L.P]] | $6K | 8 | – | pending |
+| 2026-11-17 | [[BOLT]] | [[Coastlands Capital LP]] | $310K | 32 | – | pending |
+| 2026-11-17 | [[LEO]] | [[Saba Capital Management, L.P]] | $272K | 25 | – | pending |
+| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | – | pending |
+| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | – | pending |
+| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | – | pending |
+| 2026-11-17 | [[FRPH]] | [[BAKER JOHN D II]] | $103K | 20 | – | pending |
+| 2026-11-17 | [[LPG]] | [[HADJIPATERAS JOHN C]] | $961K | 55 | – | pending |
+| 2026-11-17 | [[ANGX]] | [[Sarowitz Steven I]] | $4.6M | 59 | – | pending |
+| 2026-11-17 | [[UMH]] | [[HIRSCH MATTHEW I]] | $42K | 24 | – | pending |
+| 2026-11-17 | [[HNRG]] | [[Wesley Charles Ray IV]] | $1.1M | 48 | – | pending |
+| 2026-11-17 | [[LAND]] | [[Parrish Lewis]] | $6K | 37 | – | pending |
 | 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
-| 2026-11-16 | [[JOF]] | [[Saba Capital Management, L.P]] | $73K | 18 | – | pending |
-| 2026-11-16 | [[LEO]] | [[Saba Capital Management, L.P]] | $796K | 31 | – | pending |
-| 2026-11-16 | [[KODK]] | [[Katz Philippe D]] | $25K | 20 | – | pending |
-| 2026-11-16 | [[CTVA]] | [[PAGE GREGORY R]] | $185K | 57 | – | pending |
-| 2026-11-16 | [[LPTH]] | [[Rubin Shmuel]] | $19K | 31 | – | pending |
-| 2026-11-16 | [[CTVA]] | [[KISSAM LUTHER C IV]] | $300K | 65 | – | pending |
-| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
-| 2026-11-16 | [[EVLV]] | [[Charlton Kevin M]] | $40K | 23 | – | pending |
-| 2026-11-16 | [[SENS]] | [[ROEDER DOUGLAS A]] | $176K | 33 | – | pending |
-| 2026-11-16 | [[SEI]] | [[TEAGUE AJ]] | $35K | 19 | – | pending |
-| 2026-11-16 | [[CACC]] | [[Quinn Sean Edward]] | $252K | 54 | – | pending |
-| 2026-11-16 | [[BW]] | [[Frymyer Cameron M]] | $42K | 58 | – | pending |
-| 2026-11-16 | [[NTWK]] | [[GHAURI NAJEEB]] | $22K | 30 | – | pending |
-| 2026-11-16 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $285K | 23 | – | pending |
-| 2026-11-16 | [[DX]] | [[BOSTON BYRON L]] | $50K | 46 | – | pending |
-| 2026-11-16 | [[DX]] | [[Popenoe Smriti Laxman]] | $26K | 43 | – | pending |
-| 2026-11-16 | [[ECOR]] | [[Errico Thomas J]] | $54K | 24 | – | pending |
-| 2026-11-13 | [[STWD]] | [[STERNLICHT BARRY S]] | $14.7M | 87 | +1.3% | open |
-| 2026-11-13 | [[FRPH]] | [[Baker John D. III]] | $930 | 10 | -0.2% | open |
+| 2026-11-16 | [[JOF]] | [[Saba Capital Management, L.P]] | $73K | 18 | -0.6% | open |
+| 2026-11-16 | [[LEO]] | [[Saba Capital Management, L.P]] | $796K | 31 | +0.6% | open |
+| 2026-11-16 | [[KODK]] | [[Katz Philippe D]] | $25K | 20 | -0.6% | open |
+| 2026-11-16 | [[CTVA]] | [[PAGE GREGORY R]] | $185K | 57 | -3.8% | open |
+| 2026-11-16 | [[LPTH]] | [[Rubin Shmuel]] | $19K | 31 | -0.6% | open |
 
 
 ```dataview

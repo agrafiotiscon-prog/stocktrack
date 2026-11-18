@@ -2,14 +2,15 @@
 type: "insider"
 name: "RA CAPITAL MANAGEMENT, L.P"
 cik: "1346824"
-past_buys: 25
-past_mean_abn_63: -0.03957
+past_buys: 23
+past_mean_abn_63: -0.02992
 ---
 
 # RA CAPITAL MANAGEMENT, L.P
 
-Backtest record: 25 earlier buys, average 3-month excess vs SPY -4.0%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+Backtest record: 23 earlier buys, average 3-month excess vs SPY -3.0%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[BBTX]] | Director | $46.6M | 74 | +3.1% |
+| 2026-11-17 | [[PEPG]] | Director | $43.1M | 61 | – |
+| 2026-11-03 | [[BBTX]] | Director | $46.6M | 74 | +6.4% |

@@ -10,4 +10,5 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-16 | [[PAM]] | Director | $35.1M | 49 | -22.0% |
+| 2026-11-17 | [[PAM]] | Director | $541K | 55 | – |
+| 2026-10-16 | [[PAM]] | Director | $35.1M | 49 | -19.1% |

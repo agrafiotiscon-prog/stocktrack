@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[CSQR]] | Chief Financial Officer | $35K | 50 | -0.4% |
+| 2026-11-13 | [[CSQR]] | Chief Financial Officer | $35K | 50 | -2.9% |

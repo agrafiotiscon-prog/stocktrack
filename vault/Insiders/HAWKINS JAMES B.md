@@ -12,6 +12,6 @@ Backtest record: 18 earlier buys, average 3-month excess vs SPY -5.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[AEYE]] | Director | $38K | 21 | +1.9% |
-| 2026-11-02 | [[AEYE]] | Director | $53K | 23 | -3.2% |
-| 2026-10-29 | [[AEYE]] | Director | $37K | 21 | -6.1% |
+| 2026-11-04 | [[AEYE]] | Director | $38K | 21 | -10.0% |
+| 2026-11-02 | [[AEYE]] | Director | $53K | 23 | -14.6% |
+| 2026-10-29 | [[AEYE]] | Director | $37K | 21 | -17.0% |

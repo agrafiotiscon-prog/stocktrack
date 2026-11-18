@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[FISN]] | Director | $10K | 32 | – |
+| 2026-11-16 | [[FISN]] | Director | $10K | 32 | +17.2% |

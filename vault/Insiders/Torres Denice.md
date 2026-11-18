@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[SPTX]] | Director | $99K | 42 | -5.9% |
+| 2026-11-04 | [[SPTX]] | Director | $99K | 42 | -9.4% |

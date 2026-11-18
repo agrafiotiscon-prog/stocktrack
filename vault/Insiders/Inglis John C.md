@@ -12,4 +12,4 @@ Backtest record: 13 earlier buys, average 3-month excess vs SPY -2.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[AIG]] | Director | $10K | 18 | +4.3% |
+| 2026-11-09 | [[AIG]] | Director | $10K | 18 | +3.5% |

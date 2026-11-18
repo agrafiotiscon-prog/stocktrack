@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[Deck Brian A]] | Director | $141K | 38 | -3.6% | open |
-| [[2026-11-05 SPXC Deck Brian A\|2026-11-05]] | [[Deck Brian A]] | Director | $493K | 49 | -0.5% | open |
+| 2026-11-10 | [[Deck Brian A]] | Director | $141K | 38 | -3.7% | open |
+| [[2026-11-05 SPXC Deck Brian A\|2026-11-05]] | [[Deck Brian A]] | Director | $493K | 49 | -0.7% | open |

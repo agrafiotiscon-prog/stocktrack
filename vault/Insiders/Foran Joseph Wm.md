@@ -2,15 +2,15 @@
 type: "insider"
 name: "Foran Joseph Wm"
 cik: "1540655"
-past_buys: 69
-past_mean_abn_63: 0.07101
+past_buys: 71
+past_mean_abn_63: 0.06778
 ---
 
 # Foran Joseph Wm
 
-Backtest record: 69 earlier buys, average 3-month excess vs SPY +7.1%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
+Backtest record: 71 earlier buys, average 3-month excess vs SPY +6.8%. (Past winners haven't reliably kept winning; see [[Insider track record]].)
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[MTDR]] | Chairman and CEO | $123K | 75 | -1.2% |
-| 2026-11-09 | [[MTDR]] | Chairman and CEO | $257K | 84 | +6.6% |
+| 2026-11-12 | [[MTDR]] | Chairman and CEO | $123K | 75 | -2.2% |
+| 2026-11-09 | [[MTDR]] | Chairman and CEO | $257K | 84 | +5.4% |

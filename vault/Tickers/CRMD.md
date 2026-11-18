@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 CRMD Todisco Joseph\|2026-11-16]] | [[Todisco Joseph]] | Chief Executive Officer | $391K | 50 | – | pending |
+| [[2026-11-16 CRMD Todisco Joseph\|2026-11-16]] | [[Todisco Joseph]] | Chief Executive Officer | $391K | 50 | -1.7% | open |

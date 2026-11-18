@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 YUMC DIMITRIEF ALEXANDER\|2026-11-16]] | [[DIMITRIEF ALEXANDER]] | Director | $248K | 46 | – | pending |
+| [[2026-11-16 YUMC DIMITRIEF ALEXANDER\|2026-11-16]] | [[DIMITRIEF ALEXANDER]] | Director | $248K | 46 | +0.7% | open |

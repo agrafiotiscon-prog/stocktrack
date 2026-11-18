@@ -1,12 +1,12 @@
 ---
 type: "strategy"
 key: "contrarian"
-signals: 8134
-cagr: 0.0167198
-spy_cagr: 0.108549
-sharpe: 0.174638
-max_drawdown: 0.72227
-holdout_excess: -0.0582116
+signals: 8184
+cagr: 0.0164114
+spy_cagr: 0.107169
+sharpe: 0.173855
+max_drawdown: 0.72189
+holdout_excess: -0.0580197
 ---
 
 # Insider buying after a 30%+ drop
@@ -17,28 +17,28 @@ Rule key: `contrarian`. Liquid stocks only ($2+, $1M+/day), plan purchases exclu
 
 | Measure | Value |
 |---|---|
-| Signals | 8,134 |
+| Signals | 8,184 |
 | 3-month excess vs SPY (mean / median) | +5.2% / +2.0% |
 | Beat SPY over 3 months | 53% |
-| Entering one session later | +4.8% |
+| Entering one session later | +4.7% |
 | vs surviving stocks | +3.8% |
-| 2006-2015 excess /yr | +13.7% (p 0.149) |
-| 2016+ excess /yr | -5.8% (p 0.407) |
+| 2006-2015 excess /yr | +14.0% (p 0.144) |
+| 2016+ excess /yr | -5.8% (p 0.408) |
 
 
 ## Simulated portfolio ($100K, 20 slots, after costs)
 
 | Hold | CAGR | SPY | Sharpe | SPY Sharpe | Max DD | Beta | Alpha/yr | Years beating SPY | Trades | Costs/yr | Hedged with IWM (CAGR / Sharpe / Max DD) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 21d | +2.5% | +10.9% | 0.17 | 0.54 | 72% | 1.14 | -6.9% | 33% | 2,248 | 6.1% | +0.9% / 0.04 / 66% |
-| 63d | +1.7% | +10.9% | 0.17 | 0.54 | 72% | 1.56 | -9.6% | 19% | 1,183 | 3.3% | -2.2% / -0.08 / 67% |
-| 126d | +5.8% | +10.9% | 0.29 | 0.54 | 66% | 1.62 | -6.2% | 48% | 714 | 2.0% | +0.1% / 0.02 / 71% |
+| 21d | +1.9% | +10.7% | 0.16 | 0.54 | 72% | 1.14 | -7.2% | 33% | 2,247 | 6.1% | +0.6% / 0.02 / 69% |
+| 63d | +1.6% | +10.7% | 0.17 | 0.54 | 72% | 1.57 | -9.5% | 29% | 1,186 | 3.4% | -2.0% / -0.08 / 66% |
+| 126d | +5.9% | +10.7% | 0.29 | 0.54 | 67% | 1.63 | -5.9% | 43% | 715 | 2.0% | +0.5% / 0.04 / 69% |
 
 
 *Hedged* shorts the Russell 2000 ETF (IWM) against the invested fraction each day: what's left is the edge over small caps in general. Exploratory (borrow costs ignored).
 
 
-Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.5%/yr.
+Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.6%/yr.
 
 
 ### Year by year (63-session hold)
@@ -46,59 +46,60 @@ Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.5%/yr.
 | Year | Strategy | SPY | Difference |
 |---|---|---|---|
 | 2006 | +22.1% | +9.7% | +12.4% |
-| 2007 | +4.5% | +5.1% | -0.7% |
-| 2008 | -44.1% | -36.8% | -7.3% |
-| 2009 | +24.9% | +26.4% | -1.4% |
+| 2007 | +6.6% | +5.1% | +1.4% |
+| 2008 | -44.2% | -36.8% | -7.5% |
+| 2009 | +25.0% | +26.4% | -1.4% |
 | 2010 | +21.5% | +15.1% | +6.4% |
 | 2011 | -8.2% | +1.9% | -10.1% |
 | 2012 | +29.1% | +16.0% | +13.1% |
 | 2013 | +24.0% | +32.3% | -8.3% |
-| 2014 | -2.0% | +13.5% | -15.5% |
+| 2014 | -4.1% | +13.5% | -17.5% |
 | 2015 | -21.6% | +1.2% | -22.8% |
-| 2016 | +38.5% | +12.0% | +26.5% |
+| 2016 | +38.0% | +12.0% | +26.0% |
 | 2017 | +15.0% | +21.7% | -6.7% |
-| 2018 | -11.5% | -4.6% | -6.9% |
-| 2019 | +31.1% | +31.2% | -0.1% |
+| 2018 | -10.5% | -4.6% | -5.9% |
+| 2019 | +34.4% | +31.2% | +3.2% |
 | 2020 | +14.9% | +18.3% | -3.4% |
-| 2021 | -10.2% | +28.7% | -38.9% |
+| 2021 | -7.5% | +28.7% | -36.2% |
 | 2022 | -44.4% | -18.2% | -26.2% |
-| 2023 | +10.2% | +26.2% | -15.9% |
-| 2024 | -7.9% | +24.9% | -32.8% |
+| 2023 | +11.6% | +26.2% | -14.5% |
+| 2024 | -7.9% | +24.9% | -32.7% |
 | 2025 | +4.6% | +17.7% | -13.1% |
-| 2026 | +2.2% | +10.8% | -8.6% |
+| 2026 | -5.4% | +8.2% | -13.6% |
 
 
 ## Live forward test
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 40 | -0.6% | +0.5% | 55% |
+| 5 sessions | 50 | -1.9% | +0.3% | 52% |
+| 21 sessions | 1 | -35.6% | -35.6% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
-| 2026-11-16 | [[MX]] | [[LEE CHAE]] | $218K | 63 | – | pending |
-| 2026-11-16 | [[SKYD]] | [[Cardinale Gerald J]] | $1.0M | 52 | – | pending |
-| 2026-11-16 | [[KTOS]] | [[King David Arnold]] | $201K | 45 | – | pending |
-| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | – | pending |
-| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | $1.5M | 66 | – | pending |
-| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | – | pending |
-| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | – | pending |
-| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | – | pending |
-| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | – | pending |
-| 2026-11-16 | [[HL]] | [[Andres Dale]] | $125K | 43 | – | pending |
-| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | – | pending |
-| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | – | pending |
-| 2026-11-16 | [[FISN]] | [[Goldman Tepper Leslie]] | $10K | 32 | – | pending |
-| 2026-11-16 | [[FPS]] | [[Bhatia Neel]] | $199K | 61 | – | pending |
-| 2026-11-16 | [[FPS]] | [[Niederpruem Gary John]] | $334K | 77 | – | pending |
-| 2026-11-16 | [[FPS]] | [[Ard Amy E]] | $300K | 75 | – | pending |
-| 2026-11-16 | [[LPTH]] | [[Rubin Shmuel]] | $19K | 31 | – | pending |
-| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | – | pending |
-| 2026-11-16 | [[IMRX]] | [[Gengos Andrew]] | $90K | 41 | – | pending |
+| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | $92K | 56 | – | pending |
+| 2026-11-17 | [[RMIX]] | [[Fleming Ned N III]] | $238K | 46 | – | pending |
+| 2026-11-17 | [[RMIX]] | [[Wentroth Thomas G]] | $995 | 54 | – | pending |
+| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | – | pending |
+| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | $1.5M | 66 | – | pending |
+| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | – | pending |
+| 2026-11-17 | [[FISN]] | [[JANOVER BLAKE]] | $11K | 44 | – | pending |
+| 2026-11-17 | [[FISN]] | [[Peres Mark Wayne]] | $5K | 35 | – | pending |
+| 2026-11-17 | [[FISN]] | [[Muller Richard]] | $32K | 43 | – | pending |
+| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | – | pending |
+| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | – | pending |
+| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | – | pending |
+| 2026-11-17 | [[NPCE]] | [[Becker Joel]] | $99K | 55 | – | pending |
+| 2026-11-17 | [[UPST]] | [[Gu Paul]] | $950K | 60 | – | pending |
+| 2026-11-17 | [[ITG]] | [[Parrott Andrew]] | $98K | 75 | – | pending |
+| 2026-11-17 | [[ITG]] | [[Braun III Francis A]] | $19K | 58 | – | pending |
+| 2026-11-17 | [[ITG]] | [[Giacalone Peter]] | $509K | 69 | – | pending |
+| 2026-11-17 | [[ITG]] | [[LAPERCH WILLIAM G]] | $50K | 59 | – | pending |
+| 2026-11-17 | [[UAMY]] | [[Bardswich Lloyd]] | $12K | 21 | – | pending |
+| 2026-11-17 | [[GLXY]] | [[DEASON DOUGLAS R]] | $201K | 50 | – | pending |
 
 
 ```dataview

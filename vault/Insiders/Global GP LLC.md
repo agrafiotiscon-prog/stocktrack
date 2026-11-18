@@ -12,4 +12,4 @@ Backtest record: 152 earlier buys, average 3-month excess vs SPY +2.2%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[GLP]] | Other | $442K | 27 | +0.1% |
+| 2026-11-13 | [[GLP]] | Other | $442K | 27 | +2.7% |

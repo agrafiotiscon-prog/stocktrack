@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 KTOS King David Arnold\|2026-11-16]] | [[King David Arnold]] | Director | $201K | 45 | – | pending |
+| [[2026-11-16 KTOS King David Arnold\|2026-11-16]] | [[King David Arnold]] | Director | $201K | 45 | -1.2% | open |

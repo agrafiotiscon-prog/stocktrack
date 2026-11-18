@@ -9,8 +9,8 @@ signals: 5
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 TRTX Smith Michael Bradley\|2026-11-13]] | [[Smith Michael Bradley]] | Director | $65K | 41 | +1.3% | open |
-| [[2026-11-13 TRTX Gillmore Michael\|2026-11-13]] | [[Gillmore Michael]] | Director | $16K | 54 | +1.3% | open |
-| [[2026-11-03 TRTX SILVERSTEIN WENDY\|2026-11-03]] | [[SILVERSTEIN WENDY]] | Director | $253K | 58 | -3.3% | open |
-| 2026-11-03 | [[Smith Michael Bradley]] | Director | $33K | 35 | -3.3% | open |
-| [[2026-11-03 TRTX Gillmore Michael\|2026-11-03]] | [[Gillmore Michael]] | Director | $13K | 53 | -3.3% | open |
+| [[2026-11-13 TRTX Smith Michael Bradley\|2026-11-13]] | [[Smith Michael Bradley]] | Director | $65K | 41 | +0.0% | open |
+| [[2026-11-13 TRTX Gillmore Michael\|2026-11-13]] | [[Gillmore Michael]] | Director | $16K | 54 | +0.0% | open |
+| [[2026-11-03 TRTX SILVERSTEIN WENDY\|2026-11-03]] | [[SILVERSTEIN WENDY]] | Director | $253K | 58 | -4.4% | open |
+| 2026-11-03 | [[Smith Michael Bradley]] | Director | $33K | 35 | -4.4% | open |
+| [[2026-11-03 TRTX Gillmore Michael\|2026-11-03]] | [[Gillmore Michael]] | Director | $13K | 53 | -4.4% | open |

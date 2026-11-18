@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[NORCROSS PHILIP A]] | 10% Owner | $667K | 29 | – | pending |
+| 2026-11-16 | [[NORCROSS PHILIP A]] | 10% Owner | $667K | 29 | +0.8% | open |

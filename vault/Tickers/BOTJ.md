@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-10 | [[ADDISON LEWIS C]] | Director | $2K | 14 | -1.6% | open |
-| 2026-11-09 | [[BRYANT WILLIAM C III]] | Director | $17K | 17 | +1.3% | open |
+| 2026-11-10 | [[ADDISON LEWIS C]] | Director | $2K | 14 | -0.6% | open |
+| 2026-11-09 | [[BRYANT WILLIAM C III]] | Director | $17K | 17 | +2.3% | open |

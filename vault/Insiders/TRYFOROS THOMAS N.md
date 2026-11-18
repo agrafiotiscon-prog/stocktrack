@@ -3,7 +3,7 @@ type: "insider"
 name: "TRYFOROS THOMAS N"
 cik: "897542"
 past_buys: 5
-past_mean_abn_63: -0.05928
+past_mean_abn_63: -0.05929
 ---
 
 # TRYFOROS THOMAS N
@@ -12,4 +12,4 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY -5.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-04 | [[CACC]] | Director | $1.5M | 54 | -1.9% |
+| 2026-11-04 | [[CACC]] | Director | $1.5M | 54 | -1.1% |
