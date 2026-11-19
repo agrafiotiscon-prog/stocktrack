@@ -12,4 +12,4 @@ Backtest record: 8 earlier buys, average 3-month excess vs SPY +7.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[EVLV]] | Director | $40K | 23 | -2.4% |
+| 2026-11-16 | [[EVLV]] | Director | $40K | 23 | -1.1% |

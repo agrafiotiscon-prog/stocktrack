@@ -71,32 +71,33 @@ Cost sensitivity (63-session hold): no costs +17.2%/yr, double costs +10.2%/yr.
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
 | 5 sessions | 48 | +1.7% | +1.9% | 73% |
+| 21 sessions | 2 | +4.5% | +8.0% | 100% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-17 | [[LPG]] | [[HADJIPATERAS JOHN C]] | $961K | 55 | – | pending |
-| 2026-11-17 | [[PEPG]] | [[RA CAPITAL MANAGEMENT, L.P]] | $43.1M | 61 | – | pending |
-| 2026-11-16 | [[KODK]] | [[Katz Philippe D]] | $25K | 20 | -0.6% | open |
-| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | -0.8% | open |
-| 2026-11-16 | [[SENS]] | [[ROEDER DOUGLAS A]] | $176K | 33 | -10.3% | open |
-| 2026-11-16 | [[SEI]] | [[TEAGUE AJ]] | $35K | 19 | +1.0% | open |
-| 2026-11-16 | [[ORRF]] | [[Joiner Cindy Jeannette]] | $11K | 15 | -1.5% | open |
-| 2026-11-16 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $285K | 23 | +0.4% | open |
-| 2026-11-13 | [[FCPT]] | [[Lenehan William H]] | $150K | 39 | -0.6% | open |
-| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | +1.7% | open |
-| 2026-11-13 | [[CAT]] | [[MacLennan David]] | $209K | 43 | -0.6% | open |
-| 2026-11-13 | [[IONS]] | [[Hayden Michael R]] | $148K | 37 | -7.5% | open |
-| 2026-11-13 | [[TXO]] | [[SIMPSON BOB R]] | $945K | 34 | -2.6% | open |
+| 2026-11-18 | [[ANAB]] | [[EcoR1 Capital, LLC]] | $17.2M | 48 | – | pending |
+| 2026-11-18 | [[BH]] | [[BIGLARI, SARDAR]] | $2.2M | 50 | – | pending |
+| 2026-11-18 | [[SGP]] | [[RA CAPITAL MANAGEMENT, L.P]] | $32K | 17 | – | pending |
+| 2026-11-18 | [[NCDL]] | [[Miranda Kenneth M]] | $17K | 21 | – | pending |
+| 2026-11-18 | [[UMH]] | [[Carus Jeffrey A]] | $14K | 45 | – | pending |
+| 2026-11-18 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $263K | 23 | – | pending |
+| 2026-11-17 | [[LPG]] | [[HADJIPATERAS JOHN C]] | $961K | 55 | -1.0% | open |
+| 2026-11-17 | [[PEPG]] | [[RA CAPITAL MANAGEMENT, L.P]] | $43.1M | 61 | -7.3% | open |
+| 2026-11-16 | [[KODK]] | [[Katz Philippe D]] | $25K | 20 | +2.1% | open |
+| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | -3.2% | open |
+| 2026-11-16 | [[SENS]] | [[ROEDER DOUGLAS A]] | $176K | 33 | -13.7% | open |
+| 2026-11-16 | [[SEI]] | [[TEAGUE AJ]] | $35K | 19 | +2.5% | open |
+| 2026-11-16 | [[ORRF]] | [[Joiner Cindy Jeannette]] | $11K | 15 | -2.3% | open |
+| 2026-11-16 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $285K | 23 | +0.5% | open |
+| 2026-11-13 | [[FCPT]] | [[Lenehan William H]] | $150K | 39 | -0.8% | open |
+| 2026-11-13 | [[AKAM]] | [[LEIGHTON F THOMSON]] | $2.6M | 52 | +10.3% | open |
+| 2026-11-13 | [[CAT]] | [[MacLennan David]] | $209K | 43 | -2.4% | open |
+| 2026-11-13 | [[IONS]] | [[Hayden Michael R]] | $148K | 37 | -5.8% | open |
+| 2026-11-13 | [[TXO]] | [[SIMPSON BOB R]] | $945K | 34 | -4.1% | open |
 | 2026-11-13 | [[CCNE]] | [[Peduzzi Michael D]] | $18K | 30 | -0.7% | open |
-| 2026-11-13 | [[BW]] | [[Young Kenneth M]] | $44K | 54 | +4.2% | open |
-| 2026-11-13 | [[CCNE]] | [[POWELL JEFFREY S]] | $20K | 17 | -0.7% | open |
-| 2026-11-12 | [[HPP]] | [[BORTZ JON E]] | $680K | 62 | +0.5% | open |
-| 2026-11-12 | [[IOSP]] | [[PARRETTE LESLIE J]] | $27K | 23 | +1.2% | open |
-| 2026-11-12 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 75 | -2.2% | open |
-| 2026-11-12 | [[ECL]] | [[MacLennan David]] | $185K | 29 | +1.4% | open |
 
 
 ```dataview

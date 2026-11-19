@@ -73,33 +73,33 @@ Cost sensitivity (63-session hold): no costs +7.6%/yr, double costs +1.9%/yr.
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
 | 5 sessions | 335 | +0.2% | +0.9% | 58% |
-| 21 sessions | 11 | -1.0% | +4.6% | 55% |
+| 21 sessions | 21 | -3.5% | +2.6% | 57% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[TSM]] | [[BURNS URSULA M]] | $500K | 60 | – | pending |
-| 2026-11-17 | [[HFRO]] | [[Saba Capital Management, L.P]] | $6K | 8 | – | pending |
-| 2026-11-17 | [[CLRO]] | [[First Finance Ltd]] | $756K | 36 | – | pending |
-| 2026-11-17 | [[JOF]] | [[Saba Capital Management, L.P]] | $6K | 8 | – | pending |
-| 2026-11-17 | [[BOLT]] | [[Coastlands Capital LP]] | $310K | 32 | – | pending |
-| 2026-11-17 | [[LEO]] | [[Saba Capital Management, L.P]] | $272K | 25 | – | pending |
-| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | $92K | 56 | – | pending |
-| 2026-11-17 | [[STEW]] | [[Quinlan Shane Kevin]] | $100K | 42 | – | pending |
-| 2026-11-17 | [[RMIX]] | [[Fleming Ned N III]] | $238K | 46 | – | pending |
-| 2026-11-17 | [[RMIX]] | [[Wentroth Thomas G]] | $995 | 54 | – | pending |
-| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | $1.5M | 66 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | – | pending |
-| 2026-11-17 | [[FISN]] | [[JANOVER BLAKE]] | $11K | 44 | – | pending |
-| 2026-11-17 | [[FISN]] | [[Peres Mark Wayne]] | $5K | 35 | – | pending |
-| 2026-11-17 | [[FISN]] | [[Muller Richard]] | $32K | 43 | – | pending |
-| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | – | pending |
-| 2026-11-17 | [[TEAM]] | [[Cannon-Brookes Michael]] | $2.0M | 39 | – | pending |
-| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | – | pending |
-| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | – | pending |
+| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | $3.0M | 51 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | $12K | 58 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks William J]] | $145K | 64 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 69 | – | pending |
+| 2026-11-18 | [[OIG]] | [[DEUTSCH ROBERT V]] | $106K | 54 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | $55K | 64 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | – | pending |
+| 2026-11-18 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.2M | 45 | – | pending |
+| 2026-11-18 | [[ANAB]] | [[EcoR1 Capital, LLC]] | $17.2M | 48 | – | pending |
+| 2026-11-18 | [[BH]] | [[BIGLARI, SARDAR]] | $2.2M | 50 | – | pending |
+| 2026-11-18 | [[HAWK]] | [[Finelli Francis Alphonse]] | $49K | 38 | – | pending |
+| 2026-11-18 | [[LEO]] | [[Saba Capital Management, L.P]] | $204K | 23 | – | pending |
+| 2026-11-18 | [[HFRO]] | [[Saba Capital Management, L.P]] | $1.3M | 35 | – | pending |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | – | pending |
+| 2026-11-18 | [[BA]] | [[JOHRI AKHIL]] | $500K | 49 | – | pending |
+| 2026-11-18 | [[GLP]] | [[Global GP LLC]] | $312K | 25 | – | pending |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | – | pending |
+| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | $494K | 71 | – | pending |
+| 2026-11-18 | [[PEBK]] | [[PRICE BILLY L JR DR]] | $8K | 15 | – | pending |
 
 
 ```dataview

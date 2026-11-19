@@ -73,33 +73,33 @@ Cost sensitivity (63-session hold): no costs +13.6%/yr, double costs +6.6%/yr.
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
 | 5 sessions | 101 | +1.3% | +1.7% | 64% |
-| 21 sessions | 2 | +7.0% | +8.0% | 100% |
+| 21 sessions | 8 | -1.1% | +6.1% | 75% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
+| 2026-11-18 | [[LEO]] | [[Saba Capital Management, L.P]] | $204K | 23 | – | pending |
+| 2026-11-18 | [[HFRO]] | [[Saba Capital Management, L.P]] | $1.3M | 35 | – | pending |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | – | pending |
+| 2026-11-18 | [[GLP]] | [[Global GP LLC]] | $312K | 25 | – | pending |
+| 2026-11-18 | [[SJT]] | [[OLIVER ERIC L]] | $2.6M | 41 | – | pending |
+| 2026-11-18 | [[FRPH]] | [[BAKER JOHN D II]] | $96K | 20 | – | pending |
+| 2026-11-18 | [[CCAP]] | [[Breaux Jason]] | $50K | 41 | – | pending |
+| 2026-11-18 | [[CCAP]] | [[Lombard Gerhard]] | $20K | 43 | – | pending |
+| 2026-11-18 | [[SLRC]] | [[GROSS MICHAEL S]] | $226K | 30 | – | pending |
+| 2026-11-18 | [[FFIN]] | [[Davis Sally Pope]] | $51K | 29 | – | pending |
+| 2026-11-18 | [[EFC]] | [[Penn Laurence]] | $107K | 44 | – | pending |
+| 2026-11-18 | [[RILY]] | [[RILEY BRYANT R]] | $117K | 38 | – | pending |
+| 2026-11-18 | [[DGICA]] | [[DONEGAL MUTUAL INSURANCE CO]] | $263K | 23 | – | pending |
 | 2026-11-18 | [[TSM]] | [[BURNS URSULA M]] | $500K | 60 | – | pending |
-| 2026-11-17 | [[HFRO]] | [[Saba Capital Management, L.P]] | $6K | 8 | – | pending |
-| 2026-11-17 | [[JOF]] | [[Saba Capital Management, L.P]] | $6K | 8 | – | pending |
-| 2026-11-17 | [[BOLT]] | [[Coastlands Capital LP]] | $310K | 32 | – | pending |
-| 2026-11-17 | [[LEO]] | [[Saba Capital Management, L.P]] | $272K | 25 | – | pending |
-| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | – | pending |
-| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | – | pending |
-| 2026-11-17 | [[FRPH]] | [[BAKER JOHN D II]] | $103K | 20 | – | pending |
-| 2026-11-17 | [[LPG]] | [[HADJIPATERAS JOHN C]] | $961K | 55 | – | pending |
-| 2026-11-17 | [[ANGX]] | [[Sarowitz Steven I]] | $4.6M | 59 | – | pending |
-| 2026-11-17 | [[UMH]] | [[HIRSCH MATTHEW I]] | $42K | 24 | – | pending |
-| 2026-11-17 | [[HNRG]] | [[Wesley Charles Ray IV]] | $1.1M | 48 | – | pending |
-| 2026-11-17 | [[LAND]] | [[Parrish Lewis]] | $6K | 37 | – | pending |
-| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
-| 2026-11-16 | [[JOF]] | [[Saba Capital Management, L.P]] | $73K | 18 | -0.6% | open |
-| 2026-11-16 | [[LEO]] | [[Saba Capital Management, L.P]] | $796K | 31 | +0.6% | open |
-| 2026-11-16 | [[KODK]] | [[Katz Philippe D]] | $25K | 20 | -0.6% | open |
-| 2026-11-16 | [[CTVA]] | [[PAGE GREGORY R]] | $185K | 57 | -3.8% | open |
-| 2026-11-16 | [[LPTH]] | [[Rubin Shmuel]] | $19K | 31 | -0.6% | open |
+| 2026-11-17 | [[HFRO]] | [[Saba Capital Management, L.P]] | $6K | 8 | +1.6% | open |
+| 2026-11-17 | [[JOF]] | [[Saba Capital Management, L.P]] | $6K | 8 | -0.4% | open |
+| 2026-11-17 | [[BOLT]] | [[Coastlands Capital LP]] | $310K | 32 | -9.0% | open |
+| 2026-11-17 | [[LEO]] | [[Saba Capital Management, L.P]] | $272K | 25 | -0.1% | open |
+| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | +0.4% | open |
+| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | +0.4% | open |
 
 
 ```dataview

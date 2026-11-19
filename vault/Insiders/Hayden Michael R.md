@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -4.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[IONS]] | Director | $148K | 37 | -7.5% |
+| 2026-11-13 | [[IONS]] | Director | $148K | 37 | -5.8% |

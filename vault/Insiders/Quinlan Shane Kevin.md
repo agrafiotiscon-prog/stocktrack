@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[STEW]] | Director | $100K | 42 | – |
+| 2026-11-17 | [[STEW]] | Director | $100K | 42 | -0.5% |

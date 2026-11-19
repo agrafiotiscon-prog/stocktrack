@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[INDI]] | Director | $299K | 47 | -10.7% |
+| 2026-11-13 | [[INDI]] | Director | $299K | 47 | -13.2% |

@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -0.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[BRSP]] | CEO | $1.0M | 58 | +0.8% |
+| 2026-11-16 | [[BRSP]] | CEO | $1.0M | 58 | +1.4% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 SKYD Cardinale Gerald J\|2026-11-16]] | [[Cardinale Gerald J]] | Director | $1.0M | 52 | -0.9% | open |
+| [[2026-11-16 SKYD Cardinale Gerald J\|2026-11-16]] | [[Cardinale Gerald J]] | Director | $1.0M | 52 | -4.7% | open |

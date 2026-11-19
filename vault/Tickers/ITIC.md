@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[Parker, Jr. Elton C]] | Director | $133K | 34 | +4.5% | open |
+| 2026-11-12 | [[Parker, Jr. Elton C]] | Director | $133K | 34 | +5.1% | open |

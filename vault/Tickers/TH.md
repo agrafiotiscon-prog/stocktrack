@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-17 TH PATENAUDE PAMELA H\|2026-11-17]] | [[PATENAUDE PAMELA H]] | Director | $46K | 45 | – | pending |
-| [[2026-11-16 TH Schrenk Troy C\|2026-11-16]] | [[Schrenk Troy C]] | Chief Commercial Officer | $250K | 53 | +4.2% | open |
-| [[2026-11-12 TH Archer James Bradley\|2026-11-12]] | [[Archer James Bradley]] | Director and CEO and President | $313K | 43 | +5.0% | open |
+| [[2026-11-17 TH PATENAUDE PAMELA H\|2026-11-17]] | [[PATENAUDE PAMELA H]] | Director | $46K | 45 | +0.8% | open |
+| [[2026-11-16 TH Schrenk Troy C\|2026-11-16]] | [[Schrenk Troy C]] | Chief Commercial Officer | $250K | 53 | +5.0% | open |
+| [[2026-11-12 TH Archer James Bradley\|2026-11-12]] | [[Archer James Bradley]] | Director and CEO and President | $313K | 43 | +5.8% | open |

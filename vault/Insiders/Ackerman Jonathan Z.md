@@ -12,5 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +14.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[LXU]] | Director | $11K | 6 | – |
-| 2026-10-26 | [[LXU]] | Director | $10K | 0 | +8.5% |
+| 2026-11-17 | [[LXU]] | Director | $11K | 6 | -8.3% |
+| 2026-10-26 | [[LXU]] | Director | $10K | 0 | -1.0% |

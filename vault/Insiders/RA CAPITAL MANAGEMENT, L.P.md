@@ -12,5 +12,6 @@ Backtest record: 23 earlier buys, average 3-month excess vs SPY -3.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[PEPG]] | Director | $43.1M | 61 | – |
-| 2026-11-03 | [[BBTX]] | Director | $46.6M | 74 | +6.4% |
+| 2026-11-18 | [[SGP]] | Director | $32K | 17 | – |
+| 2026-11-17 | [[PEPG]] | Director | $43.1M | 61 | -7.3% |
+| 2026-11-03 | [[BBTX]] | Director | $46.6M | 74 | +3.9% |

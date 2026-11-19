@@ -12,4 +12,4 @@ Backtest record: 14 earlier buys, average 3-month excess vs SPY -5.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[YUMC]] | Director | $248K | 46 | +0.7% |
+| 2026-11-16 | [[YUMC]] | Director | $248K | 46 | -0.2% |

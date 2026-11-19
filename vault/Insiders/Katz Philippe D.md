@@ -12,4 +12,4 @@ Backtest record: 12 earlier buys, average 3-month excess vs SPY +17.5%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[KODK]] | Director | $25K | 20 | -0.6% |
+| 2026-11-16 | [[KODK]] | Director | $25K | 20 | +2.1% |

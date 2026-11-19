@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[BLX]] | Chief Legal Officer | $125K | 40 | – |
+| 2026-11-17 | [[BLX]] | Chief Legal Officer | $125K | 40 | +1.3% |

@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-18"
+updated: "2026-11-19"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-18 Backtest]]: the latest full backtest
-- [[2026-11-18]]: today's research log
+- [[2026-11-19]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[TSM]] | [[BURNS URSULA M]] | Director | $500K | 60 | – |
-| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | Chief Financial Officer | $92K | 56 | – |
-| 2026-11-17 | [[STEW]] | [[Quinlan Shane Kevin]] | Director | $100K | 42 | – |
-| 2026-11-17 | [[RMIX]] | [[Fleming Ned N III]] | Director | $238K | 46 | – |
-| 2026-11-17 | [[RMIX]] | [[Wentroth Thomas G]] | Chief Financial Officer | $995 | 54 | – |
-| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | CFO / COO | $104K | 45 | – |
-| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | Director | $1.5M | 66 | – |
-| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | Director | $2.0M | 67 | – |
-| 2026-11-17 | [[FISN]] | [[JANOVER BLAKE]] | Director | $11K | 44 | – |
-| 2026-11-17 | [[FISN]] | [[Muller Richard]] | Chief Technology Officer | $32K | 43 | – |
-| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | CHIEF FINANCIAL OFFICER | $99K | 48 | – |
-| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | Chair | $295K | 57 | – |
-| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | Chief Financial Officer | $99K | 56 | – |
-| 2026-11-17 | [[NPCE]] | [[Becker Joel]] | CHIEF EXECUTIVE OFFICER | $99K | 55 | – |
-| 2026-11-17 | [[UPST]] | [[Gu Paul]] | Chief Executive Officer | $950K | 60 | – |
+| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | Director | $3.0M | 51 | – |
+| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | Director | $12K | 58 | – |
+| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | Director | $731K | 76 | – |
+| 2026-11-18 | [[EQPT]] | [[Schlacks William J]] | Founder & President | $145K | 64 | – |
+| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | Founder & CEO / | $250K | 69 | – |
+| 2026-11-18 | [[OIG]] | [[DEUTSCH ROBERT V]] | Director | $106K | 54 | – |
+| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | Director | $55K | 64 | – |
+| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | Chief Operating Officer | $50K | 53 | – |
+| 2026-11-18 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $3.2M | 45 | – |
+| 2026-11-18 | [[ANAB]] | [[EcoR1 Capital, LLC]] | Director | $17.2M | 48 | – |
+| 2026-11-18 | [[BH]] | [[BIGLARI, SARDAR]] | Chairman and CEO | $2.2M | 50 | – |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | Chief Executive Officer | $118K | 68 | – |
+| 2026-11-18 | [[BA]] | [[JOHRI AKHIL]] | Director | $500K | 49 | – |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | Chief Accounting Officer | $65K | 70 | – |
+| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | Director | $494K | 71 | – |
 
 
 ## Live queries (Dataview plugin)

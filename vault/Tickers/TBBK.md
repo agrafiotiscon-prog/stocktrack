@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Mudick Stephanie B]] | Director | $47K | 35 | -5.2% | open |
-| 2026-11-04 | [[Cohn Matthew]] | Director | $46K | 22 | -0.5% | open |
+| 2026-11-06 | [[Mudick Stephanie B]] | Director | $47K | 35 | -6.8% | open |
+| 2026-11-04 | [[Cohn Matthew]] | Director | $46K | 22 | -2.1% | open |

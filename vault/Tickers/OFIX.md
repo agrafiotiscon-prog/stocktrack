@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 OFIX Juniper Investment Company, LLC\|2026-11-12]] | [[Juniper Investment Company, LLC]] | 10% Owner | $5.1M | 47 | -3.6% | open |
+| [[2026-11-12 OFIX Juniper Investment Company, LLC\|2026-11-12]] | [[Juniper Investment Company, LLC]] | 10% Owner | $5.1M | 47 | -4.1% | open |

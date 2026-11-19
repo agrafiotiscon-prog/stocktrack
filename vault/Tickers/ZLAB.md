@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[GAYNOR RICHARD]] | Director | $33K | 6 | -0.3% | open |
+| 2026-11-13 | [[GAYNOR RICHARD]] | Director | $33K | 6 | -5.9% | open |

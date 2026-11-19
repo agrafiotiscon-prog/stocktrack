@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 BRK-B O'Sullivan Michael J\|2026-11-16]] | [[O'Sullivan Michael J]] | See Remarks | $250K | 45 | +0.3% | open |
+| [[2026-11-16 BRK-B O'Sullivan Michael J\|2026-11-16]] | [[O'Sullivan Michael J]] | See Remarks | $250K | 45 | -1.5% | open |

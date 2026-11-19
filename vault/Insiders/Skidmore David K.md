@@ -12,5 +12,5 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +6.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[SUNC]] | Director | $94K | 42 | +6.5% |
-| 2026-11-10 | [[SUN]] | Director | $92K | 30 | +6.2% |
+| 2026-11-10 | [[SUNC]] | Director | $94K | 42 | +5.1% |
+| 2026-11-10 | [[SUN]] | Director | $92K | 30 | +4.1% |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[SKYD]] | Director | $1.0M | 52 | -0.9% |
+| 2026-11-16 | [[SKYD]] | Director | $1.0M | 52 | -4.7% |

@@ -12,4 +12,4 @@ Backtest record: 10 earlier buys, average 3-month excess vs SPY -0.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[ETN]] | Director | $102K | 46 | – |
+| 2026-11-17 | [[ETN]] | Director | $102K | 46 | +0.6% |

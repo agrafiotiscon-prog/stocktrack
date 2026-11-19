@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-13 FEAM vant Hoff Graham\|2026-10-13]] | [[vant Hoff Graham]] | Director | $215K | 45 | -48.6% | open |
-| [[2026-10-09 FEAM Weibel Paul Wesley III\|2026-10-09]] | [[Weibel Paul Wesley III]] | Chief Executive Officer | $25K | 45 | -53.7% | open |
+| [[2026-10-13 FEAM vant Hoff Graham\|2026-10-13]] | [[vant Hoff Graham]] | Director | $215K | 45 | -43.5% | open |
+| [[2026-10-09 FEAM Weibel Paul Wesley III\|2026-10-09]] | [[Weibel Paul Wesley III]] | Chief Executive Officer | $25K | 45 | -49.2% | open |

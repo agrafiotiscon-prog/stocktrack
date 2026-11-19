@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[Caraway Bart]] | See Remarks | $25K | 20 | -0.6% | open |
-| 2026-10-26 | [[Bobbora William]] | See Remarks | $40K | 24 | -0.4% | open |
+| 2026-11-16 | [[Caraway Bart]] | See Remarks | $25K | 20 | -1.4% | open |
+| 2026-10-26 | [[Bobbora William]] | See Remarks | $40K | 24 | -1.2% | open |

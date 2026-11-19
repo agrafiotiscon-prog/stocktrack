@@ -80,26 +80,26 @@ Cost sensitivity (63-session hold): no costs +8.0%/yr, double costs +2.5%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[TSM]] | [[BURNS URSULA M]] | $500K | 60 | – | pending |
-| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | $92K | 56 | – | pending |
-| 2026-11-17 | [[STEW]] | [[Quinlan Shane Kevin]] | $100K | 42 | – | pending |
-| 2026-11-17 | [[RMIX]] | [[Fleming Ned N III]] | $238K | 46 | – | pending |
-| 2026-11-17 | [[RMIX]] | [[Wentroth Thomas G]] | $995 | 54 | – | pending |
-| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | $1.5M | 66 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | – | pending |
-| 2026-11-17 | [[FISN]] | [[JANOVER BLAKE]] | $11K | 44 | – | pending |
-| 2026-11-17 | [[FISN]] | [[Muller Richard]] | $32K | 43 | – | pending |
-| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | – | pending |
-| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | – | pending |
-| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | – | pending |
-| 2026-11-17 | [[NPCE]] | [[Becker Joel]] | $99K | 55 | – | pending |
-| 2026-11-17 | [[UPST]] | [[Gu Paul]] | $950K | 60 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Parrott Andrew]] | $98K | 75 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Braun III Francis A]] | $19K | 58 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Giacalone Peter]] | $509K | 69 | – | pending |
-| 2026-11-17 | [[ITG]] | [[LAPERCH WILLIAM G]] | $50K | 59 | – | pending |
-| 2026-11-17 | [[TH]] | [[PATENAUDE PAMELA H]] | $46K | 45 | – | pending |
+| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | $3.0M | 51 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | $12K | 58 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks William J]] | $145K | 64 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 69 | – | pending |
+| 2026-11-18 | [[OIG]] | [[DEUTSCH ROBERT V]] | $106K | 54 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | $55K | 64 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | – | pending |
+| 2026-11-18 | [[BPRE]] | [[KAMFAR RAMIN]] | $3.2M | 45 | – | pending |
+| 2026-11-18 | [[ANAB]] | [[EcoR1 Capital, LLC]] | $17.2M | 48 | – | pending |
+| 2026-11-18 | [[BH]] | [[BIGLARI, SARDAR]] | $2.2M | 50 | – | pending |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | – | pending |
+| 2026-11-18 | [[BA]] | [[JOHRI AKHIL]] | $500K | 49 | – | pending |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | – | pending |
+| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | $494K | 71 | – | pending |
+| 2026-11-18 | [[CRMD]] | [[Kaplan Myron]] | $122K | 44 | – | pending |
+| 2026-11-18 | [[CRC]] | [[Bremner Andrew B]] | $100K | 42 | – | pending |
+| 2026-11-18 | [[FUN]] | [[JAFFER REHAN]] | $6.4M | 68 | – | pending |
+| 2026-11-18 | [[SJT]] | [[OLIVER ERIC L]] | $2.6M | 41 | – | pending |
+| 2026-11-18 | [[NPCE]] | [[Huennekens R Scott]] | $104K | 62 | – | pending |
 
 
 ```dataview

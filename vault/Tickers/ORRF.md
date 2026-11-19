@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[Joiner Cindy Jeannette]] | Director | $11K | 15 | -1.5% | open |
+| 2026-11-16 | [[Joiner Cindy Jeannette]] | Director | $11K | 15 | -2.3% | open |

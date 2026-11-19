@@ -80,26 +80,26 @@ Cost sensitivity (63-session hold): no costs +13.6%/yr, double costs +7.6%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
+| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks William J]] | $145K | 64 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 69 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | $55K | 64 | – | pending |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | – | pending |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | – | pending |
+| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | $494K | 71 | – | pending |
+| 2026-11-18 | [[FUN]] | [[JAFFER REHAN]] | $6.4M | 68 | – | pending |
+| 2026-11-18 | [[NPCE]] | [[Huennekens R Scott]] | $104K | 62 | – | pending |
+| 2026-11-18 | [[CGON]] | [[Kuan Arthur]] | $2.4M | 72 | – | pending |
+| 2026-11-18 | [[CGON]] | [[Kalofonos Isabel]] | $299K | 65 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[Morris Scott James]] | $100K | 67 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[PEIROS LARRY]] | $301K | 68 | – | pending |
+| 2026-11-18 | [[LKQ]] | [[Urbain Xavier]] | $496K | 61 | – | pending |
+| 2026-11-18 | [[STWD]] | [[ZELNICK STRAUSS]] | $2.0M | 75 | – | pending |
+| 2026-11-18 | [[PAM]] | [[Mariani Gustavo]] | $1.4M | 75 | – | pending |
+| 2026-11-18 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.5M | 65 | – | pending |
+| 2026-11-18 | [[PAM]] | [[Mindlin Marcos Marcelo]] | $4.0M | 66 | – | pending |
 | 2026-11-18 | [[TSM]] | [[BURNS URSULA M]] | $500K | 60 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | $1.5M | 66 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | – | pending |
-| 2026-11-17 | [[UPST]] | [[Gu Paul]] | $950K | 60 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Parrott Andrew]] | $98K | 75 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Giacalone Peter]] | $509K | 69 | – | pending |
-| 2026-11-17 | [[UPBD]] | [[Jain Charu]] | $49K | 64 | – | pending |
-| 2026-11-17 | [[PEPG]] | [[RA CAPITAL MANAGEMENT, L.P]] | $43.1M | 61 | – | pending |
-| 2026-11-17 | [[NGS]] | [[Jacobs Justin]] | $86K | 64 | – | pending |
-| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
-| 2026-11-16 | [[MX]] | [[LEE CHAE]] | $218K | 63 | -2.9% | open |
-| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | $1.5M | 66 | -1.7% | open |
-| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | -4.0% | open |
-| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | -0.6% | open |
-| 2026-11-16 | [[FPS]] | [[Bhatia Neel]] | $199K | 61 | -0.6% | open |
-| 2026-11-16 | [[FPS]] | [[Niederpruem Gary John]] | $334K | 77 | -0.6% | open |
-| 2026-11-16 | [[FPS]] | [[Ard Amy E]] | $300K | 75 | -0.6% | open |
+| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | $1.5M | 66 | +0.4% | open |
 
 
 ```dataview

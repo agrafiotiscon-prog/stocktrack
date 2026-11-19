@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +0.4%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[CTVA]] | Chief Executive Officer | $300K | 65 | -3.8% |
+| 2026-11-16 | [[CTVA]] | Chief Executive Officer | $300K | 65 | -8.5% |

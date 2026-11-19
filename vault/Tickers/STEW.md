@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-17 STEW Quinlan Shane Kevin\|2026-11-17]] | [[Quinlan Shane Kevin]] | Director | $100K | 42 | – | pending |
+| [[2026-11-17 STEW Quinlan Shane Kevin\|2026-11-17]] | [[Quinlan Shane Kevin]] | Director | $100K | 42 | -0.5% | open |

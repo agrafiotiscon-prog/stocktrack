@@ -80,26 +80,26 @@ Cost sensitivity (63-session hold): no costs +11.6%/yr, double costs +6.2%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
+| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | $3.0M | 51 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | – | pending |
+| 2026-11-18 | [[OIG]] | [[DEUTSCH ROBERT V]] | $106K | 54 | – | pending |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | – | pending |
+| 2026-11-18 | [[BA]] | [[JOHRI AKHIL]] | $500K | 49 | – | pending |
+| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | $494K | 71 | – | pending |
+| 2026-11-18 | [[NPCE]] | [[Huennekens R Scott]] | $104K | 62 | – | pending |
+| 2026-11-18 | [[GPRK]] | [[Gilinski Gabriel]] | $1.6M | 54 | – | pending |
+| 2026-11-18 | [[CGON]] | [[Kalofonos Isabel]] | $299K | 65 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[Morris Scott James]] | $100K | 67 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[PEIROS LARRY]] | $301K | 68 | – | pending |
+| 2026-11-18 | [[LKQ]] | [[Urbain Xavier]] | $496K | 61 | – | pending |
+| 2026-11-18 | [[STWD]] | [[ZELNICK STRAUSS]] | $2.0M | 75 | – | pending |
+| 2026-11-18 | [[PAM]] | [[Mariani Gustavo]] | $1.4M | 75 | – | pending |
+| 2026-11-18 | [[PAL]] | [[Lal Rohit]] | $179K | 57 | – | pending |
+| 2026-11-18 | [[TRTX]] | [[Schuster Todd]] | $225K | 58 | – | pending |
 | 2026-11-18 | [[TSM]] | [[BURNS URSULA M]] | $500K | 60 | – | pending |
-| 2026-11-17 | [[RMIX]] | [[Fleming Ned N III]] | $238K | 46 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | $1.5M | 66 | – | pending |
-| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | – | pending |
-| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | – | pending |
-| 2026-11-17 | [[UPST]] | [[Gu Paul]] | $950K | 60 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Giacalone Peter]] | $509K | 69 | – | pending |
-| 2026-11-17 | [[ANGX]] | [[Sarowitz Steven I]] | $4.6M | 59 | – | pending |
-| 2026-11-17 | [[PEPG]] | [[RA CAPITAL MANAGEMENT, L.P]] | $43.1M | 61 | – | pending |
-| 2026-11-17 | [[HNRG]] | [[Wesley Charles Ray IV]] | $1.1M | 48 | – | pending |
-| 2026-11-16 | [[SKYD]] | [[Cardinale Gerald J]] | $1.0M | 52 | -0.9% | open |
-| 2026-11-16 | [[KTOS]] | [[King David Arnold]] | $201K | 45 | -1.2% | open |
-| 2026-11-16 | [[KURA]] | [[WILSON TROY EDWARD]] | $1.5M | 66 | -1.7% | open |
-| 2026-11-16 | [[HL]] | [[Andres Dale]] | $125K | 43 | +1.0% | open |
-| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | -0.6% | open |
-| 2026-11-16 | [[BRK-B]] | [[O'Sullivan Michael J]] | $250K | 45 | +0.3% | open |
-| 2026-11-16 | [[CNH]] | [[Simonelli Lorenzo]] | $567K | 50 | -0.6% | open |
-| 2026-11-16 | [[AMG]] | [[Cates G. Staley]] | $1.0M | 50 | -0.5% | open |
-| 2026-11-16 | [[CTVA]] | [[PAGE GREGORY R]] | $185K | 57 | -3.8% | open |
-| 2026-11-16 | [[NSLR]] | [[Klein Mark D]] | $994K | 85 | -0.8% | open |
+| 2026-11-17 | [[RMIX]] | [[Fleming Ned N III]] | $238K | 46 | +20.1% | open |
+| 2026-11-17 | [[STUB]] | [[Bhargava Sameer]] | $1.5M | 66 | +0.4% | open |
+| 2026-11-17 | [[STUB]] | [[Raab Andrew John]] | $2.0M | 67 | +0.4% | open |
 
 
 ```dataview

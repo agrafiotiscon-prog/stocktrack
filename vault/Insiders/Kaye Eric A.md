@@ -12,5 +12,5 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY -2.7%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[OTF]] | Director | $9K | 28 | -0.7% |
-| 2026-11-16 | [[OBDC]] | Director | $11K | 18 | -0.4% |
+| 2026-11-16 | [[OTF]] | Director | $9K | 28 | -1.5% |
+| 2026-11-16 | [[OBDC]] | Director | $11K | 18 | -0.0% |

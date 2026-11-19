@@ -78,26 +78,26 @@ Cost sensitivity (63-session hold): no costs +11.8%/yr, double costs +6.4%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | – | pending |
-| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | – | pending |
-| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | – | pending |
-| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | – | pending |
-| 2026-11-17 | [[NPCE]] | [[Becker Joel]] | $99K | 55 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Parrott Andrew]] | $98K | 75 | – | pending |
-| 2026-11-17 | [[BLX]] | [[Real Jorge Luis]] | $125K | 40 | – | pending |
-| 2026-11-17 | [[NGS]] | [[Jacobs Justin]] | $86K | 64 | – | pending |
-| 2026-11-16 | [[BRSP]] | [[Mazzei Michael]] | $1.0M | 58 | +0.8% | open |
-| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | -4.0% | open |
-| 2026-11-16 | [[FPS]] | [[Hottinger Tyson]] | $245K | 77 | -0.6% | open |
-| 2026-11-16 | [[FPS]] | [[Niederpruem Gary John]] | $334K | 77 | -0.6% | open |
-| 2026-11-16 | [[FPS]] | [[Ard Amy E]] | $300K | 75 | -0.6% | open |
-| 2026-11-16 | [[OIG]] | [[Gregg Kenneth]] | $1.0M | 46 | -5.1% | open |
-| 2026-11-16 | [[CTVA]] | [[KISSAM LUTHER C IV]] | $300K | 65 | -3.8% | open |
-| 2026-11-16 | [[IMRX]] | [[Gengos Andrew]] | $90K | 41 | -2.5% | open |
-| 2026-11-16 | [[HUBS]] | [[Halligan Brian]] | $5.0M | 70 | -3.5% | open |
+| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | – | pending |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | – | pending |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | – | pending |
+| 2026-11-18 | [[CGON]] | [[Kuan Arthur]] | $2.4M | 72 | – | pending |
+| 2026-11-18 | [[CGON]] | [[Kalofonos Isabel]] | $299K | 65 | – | pending |
+| 2026-11-18 | [[EFC]] | [[Penn Laurence]] | $107K | 44 | – | pending |
+| 2026-11-18 | [[RILY]] | [[RILEY BRYANT R]] | $117K | 38 | – | pending |
+| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | +1.9% | open |
+| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | +0.7% | open |
+| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | -1.7% | open |
+| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | -3.5% | open |
+| 2026-11-17 | [[NPCE]] | [[Becker Joel]] | $99K | 55 | -3.5% | open |
+| 2026-11-17 | [[ITG]] | [[Parrott Andrew]] | $98K | 75 | +3.4% | open |
+| 2026-11-17 | [[BLX]] | [[Real Jorge Luis]] | $125K | 40 | +1.3% | open |
+| 2026-11-17 | [[NGS]] | [[Jacobs Justin]] | $86K | 64 | +2.4% | open |
+| 2026-11-16 | [[BRSP]] | [[Mazzei Michael]] | $1.0M | 58 | +1.4% | open |
+| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | -8.4% | open |
+| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | -8.4% | open |
+| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | -8.4% | open |
+| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | -8.4% | open |
 
 
 ```dataview

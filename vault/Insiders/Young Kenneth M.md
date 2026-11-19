@@ -12,4 +12,4 @@ Backtest record: 28 earlier buys, average 3-month excess vs SPY +13.3%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[BW]] | Chief Executive Officer | $44K | 54 | +4.2% |
+| 2026-11-13 | [[BW]] | Chief Executive Officer | $44K | 54 | +3.1% |

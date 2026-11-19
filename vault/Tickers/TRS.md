@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[Tredwell Daniel P]] | Director | $3K | 13 | +0.5% | open |
+| 2026-11-13 | [[Tredwell Daniel P]] | Director | $3K | 13 | +3.9% | open |

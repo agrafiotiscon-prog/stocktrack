@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 HOS HORNBECK TODD M\|2026-11-16]] | [[HORNBECK TODD M]] | PRESIDENT & CEO | $500K | 45 | -4.8% | open |
-| [[2026-11-12 HOS HORNBECK TODD M\|2026-11-12]] | [[HORNBECK TODD M]] | PRESIDENT & CEO | $1.5M | 53 | -1.6% | open |
+| [[2026-11-16 HOS HORNBECK TODD M\|2026-11-16]] | [[HORNBECK TODD M]] | PRESIDENT & CEO | $500K | 45 | -6.0% | open |
+| [[2026-11-12 HOS HORNBECK TODD M\|2026-11-12]] | [[HORNBECK TODD M]] | PRESIDENT & CEO | $1.5M | 53 | -2.8% | open |

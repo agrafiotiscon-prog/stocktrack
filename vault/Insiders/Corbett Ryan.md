@@ -10,6 +10,6 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[MP]] | Chief Financial Officer | $92K | 56 | – |
-| 2026-11-16 | [[MP]] | Chief Financial Officer | $129K | 58 | -4.3% |
-| 2026-11-12 | [[MP]] | Chief Financial Officer | $199K | 61 | -3.0% |
+| 2026-11-17 | [[MP]] | Chief Financial Officer | $92K | 56 | +3.8% |
+| 2026-11-16 | [[MP]] | Chief Financial Officer | $129K | 58 | -1.1% |
+| 2026-11-12 | [[MP]] | Chief Financial Officer | $199K | 61 | +0.2% |

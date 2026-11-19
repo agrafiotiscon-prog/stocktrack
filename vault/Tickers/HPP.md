@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 HPP LAMMAS MARK T\|2026-11-13]] | [[LAMMAS MARK T]] | President | $44K | 62 | +3.5% | open |
-| [[2026-11-12 HPP BORTZ JON E\|2026-11-12]] | [[BORTZ JON E]] | Director | $680K | 62 | +0.5% | open |
-| [[2026-11-12 HPP COLEMAN VICTOR J\|2026-11-12]] | [[COLEMAN VICTOR J]] | Chief Executive Officer | $182K | 62 | +0.5% | open |
+| [[2026-11-13 HPP LAMMAS MARK T\|2026-11-13]] | [[LAMMAS MARK T]] | President | $44K | 62 | -2.7% | open |
+| [[2026-11-12 HPP BORTZ JON E\|2026-11-12]] | [[BORTZ JON E]] | Director | $680K | 62 | -5.5% | open |
+| [[2026-11-12 HPP COLEMAN VICTOR J\|2026-11-12]] | [[COLEMAN VICTOR J]] | Chief Executive Officer | $182K | 62 | -5.5% | open |

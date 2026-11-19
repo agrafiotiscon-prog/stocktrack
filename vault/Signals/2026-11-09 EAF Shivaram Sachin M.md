@@ -15,8 +15,8 @@ strategies: ["all_liquid", "momentum_buy"]
 entry_date: "2026-11-10"
 entry_price: 10.44
 status: "open"
-abn_now: -0.188089
-ret_now: -0.208812
+abn_now: -0.187967
+ret_now: -0.211686
 abn_5: -0.129164
 abn_21: 
 abn_63: 

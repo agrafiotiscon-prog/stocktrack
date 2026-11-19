@@ -12,4 +12,4 @@ Backtest record: 82 earlier buys, average 3-month excess vs SPY +4.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[AKAM]] | Chief Executive Officer | $2.6M | 52 | +1.7% |
+| 2026-11-13 | [[AKAM]] | Chief Executive Officer | $2.6M | 52 | +10.3% |

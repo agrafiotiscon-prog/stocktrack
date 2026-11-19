@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-17 ANGX Sarowitz Steven I\|2026-11-17]] | [[Sarowitz Steven I]] | Director | $4.6M | 59 | – | pending |
+| [[2026-11-17 ANGX Sarowitz Steven I\|2026-11-17]] | [[Sarowitz Steven I]] | Director | $4.6M | 59 | -3.9% | open |

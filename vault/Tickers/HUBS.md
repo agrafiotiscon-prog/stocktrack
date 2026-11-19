@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 HUBS Halligan Brian\|2026-11-16]] | [[Halligan Brian]] | Chief Executive Officer | $5.0M | 70 | -3.5% | open |
+| [[2026-11-16 HUBS Halligan Brian\|2026-11-16]] | [[Halligan Brian]] | Chief Executive Officer | $5.0M | 70 | -8.2% | open |

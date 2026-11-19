@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[WEAVER JESSE]] | Chief Financial Officer | $23K | 29 | +2.4% | open |
+| 2026-11-12 | [[WEAVER JESSE]] | Chief Financial Officer | $23K | 29 | +3.1% | open |

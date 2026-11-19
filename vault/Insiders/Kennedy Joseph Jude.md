@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[SONO]] | Director | $1.9M | 55 | -2.6% |
+| 2026-11-16 | [[SONO]] | Director | $1.9M | 55 | +1.9% |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[KGS]] | Director | $50K | 46 | +0.8% |
+| 2026-11-13 | [[KGS]] | Director | $50K | 46 | +1.9% |

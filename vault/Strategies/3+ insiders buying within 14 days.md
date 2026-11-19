@@ -80,26 +80,26 @@ Cost sensitivity (63-session hold): no costs +8.6%/yr, double costs +2.7%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | $92K | 56 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Parrott Andrew]] | $98K | 75 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Braun III Francis A]] | $19K | 58 | – | pending |
-| 2026-11-17 | [[ITG]] | [[Giacalone Peter]] | $509K | 69 | – | pending |
-| 2026-11-17 | [[ITG]] | [[LAPERCH WILLIAM G]] | $50K | 59 | – | pending |
-| 2026-11-17 | [[TH]] | [[PATENAUDE PAMELA H]] | $46K | 45 | – | pending |
-| 2026-11-17 | [[UPBD]] | [[Jain Charu]] | $49K | 64 | – | pending |
-| 2026-11-17 | [[DKNG]] | [[Kalish Matthew]] | $1.0M | 55 | – | pending |
-| 2026-11-17 | [[PAM]] | [[Mariani Gustavo]] | $169K | 56 | – | pending |
-| 2026-11-17 | [[PAM]] | [[Mindlin Marcos Marcelo]] | $541K | 55 | – | pending |
-| 2026-11-17 | [[NGS]] | [[Jacobs Justin]] | $86K | 64 | – | pending |
-| 2026-11-17 | [[NGS]] | [[TRINGALI DONALD J]] | $49K | 54 | – | pending |
-| 2026-11-17 | [[VISN]] | [[Gilstrap Charles A]] | $20K | 45 | – | pending |
-| 2026-11-17 | [[BW]] | [[BRC Group Holdings, Inc]] | $212K | 66 | – | pending |
-| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | -4.3% | open |
-| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Aarnes Robert B]] | $100K | 68 | -4.0% | open |
-| 2026-11-16 | [[ADIG]] | [[Copeland Alicia Crispin]] | $51K | 70 | -4.0% | open |
+| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | $12K | 58 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks William J]] | $145K | 64 | – | pending |
+| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 69 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | $55K | 64 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | – | pending |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | – | pending |
+| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | $494K | 71 | – | pending |
+| 2026-11-18 | [[FUN]] | [[JAFFER REHAN]] | $6.4M | 68 | – | pending |
+| 2026-11-18 | [[NPCE]] | [[Huennekens R Scott]] | $104K | 62 | – | pending |
+| 2026-11-18 | [[LRMR]] | [[Clayton Russell]] | $10K | 49 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[Morris Scott James]] | $100K | 67 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[Foraker John M]] | $104K | 53 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[PEIROS LARRY]] | $301K | 68 | – | pending |
+| 2026-11-18 | [[OFRM]] | [[ROBB WALTER E IV]] | $50K | 49 | – | pending |
+| 2026-11-18 | [[HAWK]] | [[Zeitouni Patrick Elie]] | $5K | 40 | – | pending |
+| 2026-11-18 | [[HAWK]] | [[Sweeney Janine Virginia]] | $10K | 40 | – | pending |
+| 2026-11-18 | [[STWD]] | [[ZELNICK STRAUSS]] | $2.0M | 75 | – | pending |
+| 2026-11-18 | [[PAM]] | [[Mariani Gustavo]] | $1.4M | 75 | – | pending |
+| 2026-11-18 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.5M | 65 | – | pending |
 
 
 ```dataview
