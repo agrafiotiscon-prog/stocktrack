@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[Peduzzi Michael D]] | President & CEO | $18K | 30 | -0.7% | open |
-| 2026-11-13 | [[POWELL JEFFREY S]] | Director | $20K | 17 | -0.7% | open |
+| 2026-11-13 | [[Peduzzi Michael D]] | President & CEO | $18K | 30 | +0.0% | open |
+| 2026-11-13 | [[POWELL JEFFREY S]] | Director | $20K | 17 | +0.0% | open |

@@ -12,12 +12,12 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -25.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[BPRE]] | Director | $3.2M | 45 | – |
-| 2026-10-28 | [[BPRE]] | Director | $2.2M | 55 | +3.2% |
-| 2026-10-26 | [[BPRE]] | Director | $2.1M | 54 | +2.0% |
-| 2026-10-21 | [[BPRE]] | Director | $3.3M | 59 | +3.3% |
-| 2026-10-19 | [[BPRE]] | Director | $2.4M | 64 | +5.2% |
-| 2026-10-14 | [[BPRE]] | Director | $5.5M | 73 | +2.5% |
-| 2026-10-09 | [[BPRE]] | Director | $8.5M | 81 | +0.0% |
-| 2026-10-05 | [[BPRE]] | Director | $3.4M | 73 | +3.1% |
-| 2026-09-30 | [[BPRE]] | Director | $5.4M | 79 | +2.7% |
+| 2026-11-18 | [[BPRE]] | Director | $3.2M | 45 | +2.7% |
+| 2026-10-28 | [[BPRE]] | Director | $2.2M | 55 | +3.9% |
+| 2026-10-26 | [[BPRE]] | Director | $2.1M | 54 | +2.7% |
+| 2026-10-21 | [[BPRE]] | Director | $3.3M | 59 | +4.0% |
+| 2026-10-19 | [[BPRE]] | Director | $2.4M | 64 | +5.8% |
+| 2026-10-14 | [[BPRE]] | Director | $5.5M | 73 | +3.2% |
+| 2026-10-09 | [[BPRE]] | Director | $8.5M | 81 | +0.7% |
+| 2026-10-05 | [[BPRE]] | Director | $3.4M | 73 | +3.8% |
+| 2026-09-30 | [[BPRE]] | Director | $5.4M | 79 | +3.3% |

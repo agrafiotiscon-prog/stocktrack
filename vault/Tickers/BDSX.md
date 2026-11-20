@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 BDSX SCHULER JACK W\|2026-11-12]] | [[SCHULER JACK W]] | 10% Owner | $1.0M | 40 | -12.6% | open |
+| [[2026-11-12 BDSX SCHULER JACK W\|2026-11-12]] | [[SCHULER JACK W]] | 10% Owner | $1.0M | 40 | -11.7% | open |

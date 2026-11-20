@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | [[McLaughlin Shawn Patrick]] | Director | $36K | 20 | +2.1% | open |
-| 2026-10-27 | [[WILSON DAVID]] | Director | $7K | 27 | +4.1% | open |
+| 2026-10-30 | [[McLaughlin Shawn Patrick]] | Director | $36K | 20 | +2.9% | open |
+| 2026-10-27 | [[WILSON DAVID]] | Director | $7K | 27 | +4.9% | open |

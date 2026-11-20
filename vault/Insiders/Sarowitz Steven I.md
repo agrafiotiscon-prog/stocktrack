@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +11.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[ANGX]] | Director | $4.6M | 59 | -3.9% |
+| 2026-11-17 | [[ANGX]] | Director | $4.6M | 59 | -2.6% |

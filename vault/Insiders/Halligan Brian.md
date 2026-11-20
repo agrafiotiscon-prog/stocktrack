@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -25.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[HUBS]] | Chief Executive Officer | $5.0M | 70 | -8.2% |
+| 2026-11-16 | [[HUBS]] | Chief Executive Officer | $5.0M | 70 | -12.0% |

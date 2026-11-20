@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[Mendelsohn D. Eric]] | CEO and President | $91K | 38 | – | pending |
+| 2026-11-18 | [[Mendelsohn D. Eric]] | CEO and President | $91K | 38 | +1.9% | open |

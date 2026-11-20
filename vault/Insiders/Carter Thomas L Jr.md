@@ -12,4 +12,5 @@ Backtest record: 33 earlier buys, average 3-month excess vs SPY -3.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[BSM]] | Executive Chairman | $686K | 44 | +0.3% |
+| 2026-11-19 | [[BSM]] | Executive Chairman | $338K | 40 | – |
+| 2026-11-10 | [[BSM]] | Executive Chairman | $686K | 44 | +2.3% |

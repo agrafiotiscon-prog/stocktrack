@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -8.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[NCDL]] | Director | $17K | 21 | – |
+| 2026-11-18 | [[NCDL]] | Director | $17K | 21 | +2.6% |

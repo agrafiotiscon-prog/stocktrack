@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -0.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[TRTX]] | Director | $225K | 58 | – |
+| 2026-11-18 | [[TRTX]] | Director | $225K | 58 | +2.2% |

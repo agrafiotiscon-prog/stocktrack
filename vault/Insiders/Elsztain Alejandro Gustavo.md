@@ -12,5 +12,5 @@ Backtest record: 5 earlier buys, average 3-month excess vs SPY -2.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-15 | [[CRESY]] | Director | $93K | 24 | -15.9% |
-| 2026-10-01 | [[CRESY]] | CEO | $199K | 41 | -15.6% |
+| 2026-10-15 | [[CRESY]] | Director | $93K | 24 | -17.5% |
+| 2026-10-01 | [[CRESY]] | CEO | $199K | 41 | -17.3% |

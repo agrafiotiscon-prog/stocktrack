@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-03 MGM Meister Keith A\|2026-11-03]] | [[Meister Keith A]] | Director | $51.7M | 58 | +8.9% | open |
+| [[2026-11-03 MGM Meister Keith A\|2026-11-03]] | [[Meister Keith A]] | Director | $51.7M | 58 | +9.8% | open |

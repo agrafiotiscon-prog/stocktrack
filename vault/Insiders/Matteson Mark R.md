@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +20.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[RMIX]] | Director | $55K | 64 | – |
+| 2026-11-18 | [[RMIX]] | Director | $55K | 64 | -12.5% |

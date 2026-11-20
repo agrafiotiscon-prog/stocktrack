@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 CRVS Arcara Jeffrey\|2026-11-13]] | [[Arcara Jeffrey]] | Chief Business Officer | $50K | 45 | -2.9% | open |
+| [[2026-11-13 CRVS Arcara Jeffrey\|2026-11-13]] | [[Arcara Jeffrey]] | Chief Business Officer | $50K | 45 | -2.6% | open |

@@ -72,34 +72,34 @@ Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.6%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 50 | -1.9% | +0.3% | 52% |
-| 21 sessions | 2 | -25.7% | -15.8% | 0% |
+| 5 sessions | 67 | -2.5% | -1.5% | 45% |
+| 21 sessions | 3 | -18.2% | -15.8% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | $3.0M | 51 | – | pending |
-| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | $12K | 58 | – | pending |
-| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | – | pending |
-| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | $55K | 64 | – | pending |
-| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | – | pending |
-| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | – | pending |
-| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | – | pending |
-| 2026-11-18 | [[CRMD]] | [[Kaplan Myron]] | $122K | 44 | – | pending |
-| 2026-11-18 | [[NPCE]] | [[Huennekens R Scott]] | $104K | 62 | – | pending |
-| 2026-11-18 | [[OFRM]] | [[Morris Scott James]] | $100K | 67 | – | pending |
-| 2026-11-18 | [[OFRM]] | [[Foraker John M]] | $104K | 53 | – | pending |
-| 2026-11-18 | [[OFRM]] | [[PEIROS LARRY]] | $301K | 68 | – | pending |
-| 2026-11-18 | [[OFRM]] | [[ROBB WALTER E IV]] | $50K | 49 | – | pending |
-| 2026-11-18 | [[LWLG]] | [[Graffam Fred]] | $29K | 31 | – | pending |
-| 2026-11-18 | [[RAIL]] | [[Gil Benavides Jesus Salvador]] | $228K | 36 | – | pending |
-| 2026-11-18 | [[RILY]] | [[RILEY BRYANT R]] | $117K | 38 | – | pending |
-| 2026-11-18 | [[PAL]] | [[Rice Amy F]] | $9K | 51 | – | pending |
-| 2026-11-18 | [[PAL]] | [[Lal Rohit]] | $179K | 57 | – | pending |
-| 2026-11-18 | [[PAL]] | [[Gattoni James B]] | $65K | 52 | – | pending |
-| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | $92K | 56 | +3.8% | open |
+| 2026-11-20 | [[UAMY]] | [[Bardswich Lloyd]] | $25K | 25 | – | pending |
+| 2026-11-20 | [[PDYN]] | [[Wolff Benjamin G]] | $42K | 33 | – | pending |
+| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | $183K | 70 | – | pending |
+| 2026-11-19 | [[NXRT]] | [[Richards Paul]] | $15K | 32 | – | pending |
+| 2026-11-19 | [[PAL]] | [[Schraudenbach John]] | $78K | 66 | – | pending |
+| 2026-11-19 | [[PAL]] | [[COL DOUGLAS L]] | $84K | 66 | – | pending |
+| 2026-11-19 | [[ARR]] | [[ULM SCOTT]] | $52K | 39 | – | pending |
+| 2026-11-19 | [[SKYD]] | [[Cardinale Gerald J]] | $495K | 48 | – | pending |
+| 2026-11-19 | [[HPP]] | [[COLEMAN VICTOR J]] | $81K | 62 | – | pending |
+| 2026-11-19 | [[HMH]] | [[Bergsvik Eirik]] | $88K | 53 | – | pending |
+| 2026-11-19 | [[HMH]] | [[McGee Thomas W]] | $1.6M | 76 | – | pending |
+| 2026-11-19 | [[BKYI]] | [[DEPASQUALE MICHAEL W]] | $4K | 37 | – | pending |
+| 2026-11-19 | [[CTGO]] | [[Van Nieuwenhuyse Rick]] | $101K | 51 | – | pending |
+| 2026-11-19 | [[ECOR]] | [[Fox Michael]] | $13K | 31 | – | pending |
+| 2026-11-19 | [[CTGO]] | [[JUNEAU JOHN B]] | $199K | 43 | – | pending |
+| 2026-11-19 | [[AGMB]] | [[Epstein David R]] | $28K | 25 | – | pending |
+| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | $3.0M | 51 | +2.6% | open |
+| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | $12K | 58 | -12.5% | open |
+| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | -12.5% | open |
+| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | $55K | 64 | -12.5% | open |
 
 
 ```dataview

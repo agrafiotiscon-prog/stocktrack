@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[RILEY BRYANT R]] | Chairman and Co-CEO | $117K | 38 | – | pending |
+| 2026-11-18 | [[RILEY BRYANT R]] | Chairman and Co-CEO | $117K | 38 | -1.3% | open |

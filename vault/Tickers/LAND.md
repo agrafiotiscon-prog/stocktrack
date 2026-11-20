@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[Reiman William L]] | Executive Vice President | $3K | 30 | – | pending |
-| 2026-11-17 | [[Parrish Lewis]] | Chief Financial Officer | $6K | 37 | +1.9% | open |
+| 2026-11-18 | [[Reiman William L]] | Executive Vice President | $3K | 30 | +0.7% | open |
+| 2026-11-17 | [[Parrish Lewis]] | Chief Financial Officer | $6K | 37 | +1.8% | open |

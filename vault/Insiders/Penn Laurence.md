@@ -12,4 +12,4 @@ Backtest record: 30 earlier buys, average 3-month excess vs SPY +4.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[EFC]] | CEO and President | $107K | 44 | – |
+| 2026-11-18 | [[EFC]] | CEO and President | $107K | 44 | +3.9% |

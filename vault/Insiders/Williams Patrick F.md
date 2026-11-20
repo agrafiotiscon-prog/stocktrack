@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[NPCE]] | Chief Financial Officer | $99K | 56 | -3.5% |
+| 2026-11-17 | [[NPCE]] | Chief Financial Officer | $99K | 56 | -2.5% |

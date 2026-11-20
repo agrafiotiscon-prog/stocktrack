@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[DasGupta Arijit]] | See Remarks | $97K | 34 | -2.9% | open |
+| 2026-11-16 | [[DasGupta Arijit]] | See Remarks | $97K | 34 | +0.5% | open |

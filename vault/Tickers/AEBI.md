@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[Schroeder Henning]] | CEO Europe and ROW | $12K | 30 | -1.8% | open |
+| 2026-11-13 | [[Schroeder Henning]] | CEO Europe and ROW | $12K | 30 | -3.4% | open |

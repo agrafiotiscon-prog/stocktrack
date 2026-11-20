@@ -12,5 +12,5 @@ Backtest record: 33 earlier buys, average 3-month excess vs SPY -0.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[CAT]] | Director | $209K | 43 | -2.4% |
-| 2026-11-12 | [[ECL]] | Director | $185K | 29 | +1.1% |
+| 2026-11-13 | [[CAT]] | Director | $209K | 43 | -4.1% |
+| 2026-11-12 | [[ECL]] | Director | $185K | 29 | +1.9% |

@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -15.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[SRTS]] | CHIEF EXECUTIVE OFFICER | $72K | 38 | -0.9% |
+| 2026-11-17 | [[SRTS]] | CHIEF EXECUTIVE OFFICER | $72K | 38 | +3.7% |

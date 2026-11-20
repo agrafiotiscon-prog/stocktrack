@@ -12,4 +12,4 @@ Backtest record: 35 earlier buys, average 3-month excess vs SPY +0.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[SLRC]] | See Remarks | $226K | 30 | – |
+| 2026-11-18 | [[SLRC]] | See Remarks | $226K | 30 | +2.7% |

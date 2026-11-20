@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-19"
+updated: "2026-11-20"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-18 Backtest]]: the latest full backtest
-- [[2026-11-19]]: today's research log
+- [[2026-11-20]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | Director | $3.0M | 51 | – |
-| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | Director | $12K | 58 | – |
-| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | Director | $731K | 76 | – |
-| 2026-11-18 | [[EQPT]] | [[Schlacks William J]] | Founder & President | $145K | 64 | – |
-| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | Founder & CEO / | $250K | 69 | – |
-| 2026-11-18 | [[OIG]] | [[DEUTSCH ROBERT V]] | Director | $106K | 54 | – |
-| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | Director | $55K | 64 | – |
-| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | Chief Operating Officer | $50K | 53 | – |
-| 2026-11-18 | [[BPRE]] | [[KAMFAR RAMIN]] | Director | $3.2M | 45 | – |
-| 2026-11-18 | [[ANAB]] | [[EcoR1 Capital, LLC]] | Director | $17.2M | 48 | – |
-| 2026-11-18 | [[BH]] | [[BIGLARI, SARDAR]] | Chairman and CEO | $2.2M | 50 | – |
-| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | Chief Executive Officer | $118K | 68 | – |
-| 2026-11-18 | [[BA]] | [[JOHRI AKHIL]] | Director | $500K | 49 | – |
-| 2026-11-18 | [[FPS]] | [[Lund Inez]] | Chief Accounting Officer | $65K | 70 | – |
-| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | Director | $494K | 71 | – |
+| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | Director | $183K | 70 | – |
+| 2026-11-19 | [[SCM]] | [[Ladd Robert T]] | President and CEO | $197K | 44 | – |
+| 2026-11-19 | [[PAL]] | [[Schraudenbach John]] | Director | $78K | 66 | – |
+| 2026-11-19 | [[PAL]] | [[COL DOUGLAS L]] | Director | $84K | 66 | – |
+| 2026-11-19 | [[CCB]] | [[HOVDE STEVEN D]] | Director | $550K | 49 | – |
+| 2026-11-19 | [[BSM]] | [[Carter Thomas L Jr]] | Executive Chairman | $338K | 40 | – |
+| 2026-11-19 | [[IRTC]] | [[TALWALKAR ABHIJIT Y]] | Director | $764K | 51 | – |
+| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | President & CEO | $250K | 54 | – |
+| 2026-11-19 | [[PLD]] | [[KELLY ALFRED F JR]] | Director | $587K | 50 | – |
+| 2026-11-19 | [[APC]] | [[HEYER ANDREW R]] | Director | $279K | 46 | – |
+| 2026-11-19 | [[BCML]] | [[PERDUE MICHAEL J]] | Director | $151K | 44 | – |
+| 2026-11-19 | [[ITT]] | [[Berryman Kevin C]] | Director | $502K | 49 | – |
+| 2026-11-19 | [[SKYD]] | [[Cardinale Gerald J]] | Director | $495K | 48 | – |
+| 2026-11-19 | [[HPP]] | [[COLEMAN VICTOR J]] | Chief Executive Officer | $81K | 62 | – |
+| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | CHAIRMAN, PRESIDENT & CEO | $203K | 55 | – |
 
 
 ## Live queries (Dataview plugin)

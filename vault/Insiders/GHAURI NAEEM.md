@@ -12,4 +12,4 @@ Backtest record: 18 earlier buys, average 3-month excess vs SPY -4.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[NTWK]] | President | $17K | 27 | +4.4% |
+| 2026-11-16 | [[NTWK]] | President | $17K | 27 | -1.4% |

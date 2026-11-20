@@ -12,4 +12,4 @@ Backtest record: 124 earlier buys, average 3-month excess vs SPY -0.6%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[BH]] | Chairman and CEO | $2.2M | 50 | – |
+| 2026-11-18 | [[BH]] | Chairman and CEO | $2.2M | 50 | +2.3% |

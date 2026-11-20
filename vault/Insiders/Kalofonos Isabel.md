@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[CGON]] | Chief Commercial Officer | $299K | 65 | – |
+| 2026-11-18 | [[CGON]] | Chief Commercial Officer | $299K | 65 | +0.4% |

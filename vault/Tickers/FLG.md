@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 FLG Otting Joseph M\|2026-11-12]] | [[Otting Joseph M]] | Exec Chairman and CEO | $496K | 60 | +1.6% | open |
-| 2026-10-28 | [[Frank Alan L]] | Director | $101K | 33 | +4.8% | open |
+| [[2026-11-12 FLG Otting Joseph M\|2026-11-12]] | [[Otting Joseph M]] | Exec Chairman and CEO | $496K | 60 | +1.3% | open |
+| 2026-10-28 | [[Frank Alan L]] | Director | $101K | 33 | +4.5% | open |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[LRMR]] | Chief Medical Officer | $10K | 49 | – |
+| 2026-11-18 | [[LRMR]] | Chief Medical Officer | $10K | 49 | +0.5% |

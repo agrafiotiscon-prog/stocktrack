@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[Hayden Michael R]] | Director | $148K | 37 | -5.8% | open |
+| 2026-11-13 | [[Hayden Michael R]] | Director | $148K | 37 | -4.5% | open |

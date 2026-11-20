@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -5.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[CRMD]] | Chief Executive Officer | $391K | 50 | -4.9% |
+| 2026-11-16 | [[CRMD]] | Chief Executive Officer | $391K | 50 | +9.1% |

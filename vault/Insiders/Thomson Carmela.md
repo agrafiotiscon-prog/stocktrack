@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +3.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[RWAY]] | CFO, Treasurer and Secretary | $7K | 42 | – |
+| 2026-11-18 | [[RWAY]] | CFO, Treasurer and Secretary | $7K | 42 | +0.8% |

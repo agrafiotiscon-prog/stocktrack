@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-18 SJT OLIVER ERIC L\|2026-11-18]] | [[OLIVER ERIC L]] | 10% Owner | $2.6M | 41 | – | pending |
+| [[2026-11-18 SJT OLIVER ERIC L\|2026-11-18]] | [[OLIVER ERIC L]] | 10% Owner | $2.6M | 41 | -1.1% | open |

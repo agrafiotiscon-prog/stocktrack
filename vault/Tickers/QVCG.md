@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-14 QVCG GOLDENTREE ASSET MANAGEMENT LP\|2026-10-14]] | [[GOLDENTREE ASSET MANAGEMENT LP]] | 10% Owner | $16.7M | 48 | -2.9% | open |
-| [[2026-10-06 QVCG GOLDENTREE ASSET MANAGEMENT LP\|2026-10-06]] | [[GOLDENTREE ASSET MANAGEMENT LP]] | 10% Owner | $3.5M | 50 | -21.1% | open |
-| 2026-10-02 | [[GOLDENTREE ASSET MANAGEMENT LP]] | 10% Owner | $79K | 30 | -28.5% | open |
-| 2026-09-28 | [[Tananbaum Steven A]] | 10% Owner | $1.1M | 31 | -29.9% | open |
+| [[2026-10-14 QVCG GOLDENTREE ASSET MANAGEMENT LP\|2026-10-14]] | [[GOLDENTREE ASSET MANAGEMENT LP]] | 10% Owner | $16.7M | 48 | +0.1% | open |
+| [[2026-10-06 QVCG GOLDENTREE ASSET MANAGEMENT LP\|2026-10-06]] | [[GOLDENTREE ASSET MANAGEMENT LP]] | 10% Owner | $3.5M | 50 | -18.3% | open |
+| 2026-10-02 | [[GOLDENTREE ASSET MANAGEMENT LP]] | 10% Owner | $79K | 30 | -25.8% | open |
+| 2026-09-28 | [[Tananbaum Steven A]] | 10% Owner | $1.1M | 31 | -27.3% | open |

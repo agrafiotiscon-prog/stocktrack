@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-28 | [[Rhodes Blake]] | Director | $50K | 39 | -3.9% | open |
+| 2026-10-28 | [[Rhodes Blake]] | Director | $50K | 39 | -10.8% | open |

@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -4.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[MRBK]] | Director | $16K | 30 | +2.0% |
+| 2026-11-13 | [[MRBK]] | Director | $16K | 30 | +1.9% |

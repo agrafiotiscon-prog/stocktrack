@@ -75,33 +75,34 @@ Cost sensitivity (63-session hold): no costs +16.0%/yr, double costs +10.5%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 38 | +2.1% | +2.1% | 61% |
+| 5 sessions | 45 | +1.9% | +2.1% | 62% |
+| 21 sessions | 1 | -3.3% | -3.3% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | – | pending |
-| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | – | pending |
-| 2026-11-18 | [[CGON]] | [[Kalofonos Isabel]] | $299K | 65 | – | pending |
-| 2026-11-18 | [[OFRM]] | [[Foraker John M]] | $104K | 53 | – | pending |
-| 2026-11-18 | [[LWLG]] | [[Graffam Fred]] | $29K | 31 | – | pending |
-| 2026-11-18 | [[SLRC]] | [[GROSS MICHAEL S]] | $226K | 30 | – | pending |
-| 2026-11-18 | [[PAM]] | [[Mariani Gustavo]] | $1.4M | 75 | – | pending |
-| 2026-11-18 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.5M | 65 | – | pending |
-| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | $92K | 56 | +3.8% | open |
-| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | +0.4% | open |
-| 2026-11-17 | [[FISN]] | [[Muller Richard]] | $32K | 43 | -4.1% | open |
-| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | +1.9% | open |
-| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | -3.5% | open |
-| 2026-11-17 | [[ETN]] | [[Foster David B]] | $69K | 39 | +0.6% | open |
-| 2026-11-17 | [[PAM]] | [[Mariani Gustavo]] | $169K | 56 | +0.3% | open |
-| 2026-11-17 | [[BLX]] | [[Real Jorge Luis]] | $125K | 40 | +1.3% | open |
-| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | -1.1% | open |
-| 2026-11-16 | [[ADIG]] | [[Carlet Michael]] | $100K | 71 | -8.4% | open |
-| 2026-11-16 | [[ADIG]] | [[Cardazzi Marco]] | $25K | 61 | -8.4% | open |
-| 2026-11-16 | [[ADIG]] | [[Lane Jeannine J]] | $50K | 57 | -8.4% | open |
+| 2026-11-20 | [[UAMY]] | [[Bardswich Lloyd]] | $25K | 25 | – | pending |
+| 2026-11-19 | [[HMH]] | [[McGee Thomas W]] | $1.6M | 76 | – | pending |
+| 2026-11-19 | [[EFC]] | [[Vranos Michael W]] | $2.1M | 62 | – | pending |
+| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | -12.5% | open |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | -4.0% | open |
+| 2026-11-18 | [[CGON]] | [[Kalofonos Isabel]] | $299K | 65 | +0.4% | open |
+| 2026-11-18 | [[OFRM]] | [[Foraker John M]] | $104K | 53 | +5.9% | open |
+| 2026-11-18 | [[LWLG]] | [[Graffam Fred]] | $29K | 31 | +0.3% | open |
+| 2026-11-18 | [[SLRC]] | [[GROSS MICHAEL S]] | $226K | 30 | +2.7% | open |
+| 2026-11-18 | [[PAM]] | [[Mariani Gustavo]] | $1.4M | 75 | +1.6% | open |
+| 2026-11-18 | [[PAM]] | [[Mindlin Damian Miguel]] | $1.5M | 65 | +1.6% | open |
+| 2026-11-17 | [[MP]] | [[Corbett Ryan]] | $92K | 56 | +7.8% | open |
+| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | +6.2% | open |
+| 2026-11-17 | [[FISN]] | [[Muller Richard]] | $32K | 43 | +22.5% | open |
+| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | +1.5% | open |
+| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | -2.5% | open |
+| 2026-11-17 | [[ETN]] | [[Foster David B]] | $69K | 39 | +0.3% | open |
+| 2026-11-17 | [[PAM]] | [[Mariani Gustavo]] | $169K | 56 | +1.6% | open |
+| 2026-11-17 | [[BLX]] | [[Real Jorge Luis]] | $125K | 40 | +1.8% | open |
+| 2026-11-16 | [[MP]] | [[Corbett Ryan]] | $129K | 58 | +2.8% | open |
 
 
 ```dataview

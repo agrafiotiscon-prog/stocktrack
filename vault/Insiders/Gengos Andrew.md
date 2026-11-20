@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -38.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[IMRX]] | Chief Financial Officer | $90K | 41 | -1.1% |
+| 2026-11-16 | [[IMRX]] | Chief Financial Officer | $90K | 41 | -0.6% |

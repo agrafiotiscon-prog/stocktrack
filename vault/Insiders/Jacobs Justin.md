@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -0.2%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[NGS]] | Chief Executive Officer | $86K | 64 | +2.4% |
+| 2026-11-17 | [[NGS]] | Chief Executive Officer | $86K | 64 | +5.4% |

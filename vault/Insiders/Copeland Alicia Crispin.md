@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[ADIG]] | Executive VP and COO | $51K | 70 | -8.4% |
+| 2026-11-16 | [[ADIG]] | Executive VP and COO | $51K | 70 | -7.5% |

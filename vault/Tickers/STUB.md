@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-17 STUB Bhargava Sameer\|2026-11-17]] | [[Bhargava Sameer]] | Director | $1.5M | 66 | +0.4% | open |
-| [[2026-11-17 STUB Raab Andrew John\|2026-11-17]] | [[Raab Andrew John]] | Director | $2.0M | 67 | +0.4% | open |
+| [[2026-11-17 STUB Bhargava Sameer\|2026-11-17]] | [[Bhargava Sameer]] | Director | $1.5M | 66 | +2.6% | open |
+| [[2026-11-17 STUB Raab Andrew John\|2026-11-17]] | [[Raab Andrew John]] | Director | $2.0M | 67 | +2.6% | open |

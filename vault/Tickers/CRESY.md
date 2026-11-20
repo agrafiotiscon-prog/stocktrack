@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-15 | [[Elsztain Alejandro Gustavo]] | Director | $93K | 24 | -15.9% | open |
-| [[2026-10-01 CRESY Elsztain Alejandro Gustavo\|2026-10-01]] | [[Elsztain Alejandro Gustavo]] | CEO | $199K | 41 | -15.6% | open |
+| 2026-10-15 | [[Elsztain Alejandro Gustavo]] | Director | $93K | 24 | -17.5% | open |
+| [[2026-10-01 CRESY Elsztain Alejandro Gustavo\|2026-10-01]] | [[Elsztain Alejandro Gustavo]] | CEO | $199K | 41 | -17.3% | open |

@@ -12,4 +12,4 @@ Backtest record: 9 earlier buys, average 3-month excess vs SPY +2.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-26 | [[KRRO]] | 10% Owner | $885K | 34 | +2.6% |
+| 2026-10-26 | [[KRRO]] | 10% Owner | $885K | 34 | +2.5% |

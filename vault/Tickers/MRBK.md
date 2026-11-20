@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[Warriner Kenneth Thomas]] | Director | $16K | 30 | +2.0% | open |
+| 2026-11-13 | [[Warriner Kenneth Thomas]] | Director | $16K | 30 | +1.9% | open |

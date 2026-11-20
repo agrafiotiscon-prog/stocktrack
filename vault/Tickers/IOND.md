@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 IOND Abbate Michael\|2026-11-13]] | [[Abbate Michael]] | Director | $1.3M | 53 | +7.3% | open |
+| [[2026-11-13 IOND Abbate Michael\|2026-11-13]] | [[Abbate Michael]] | Director | $1.3M | 53 | +1.2% | open |

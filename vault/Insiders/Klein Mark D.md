@@ -12,4 +12,4 @@ Backtest record: 49 earlier buys, average 3-month excess vs SPY +4.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[NSLR]] | Chairman, CEO and President | $994K | 85 | -3.2% |
+| 2026-11-16 | [[NSLR]] | Chairman, CEO and President | $994K | 85 | -2.5% |

@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 GSM Girardeau David Marie, Gabriel\|2026-11-12]] | [[Girardeau David Marie, Gabriel]] | SEE REMARKS | $41K | 55 | -16.3% | open |
-| [[2026-11-12 GSM CROCKETT BRUCE LARMOUR\|2026-11-12]] | [[CROCKETT BRUCE LARMOUR]] | Director | $21K | 52 | -16.3% | open |
-| [[2026-11-12 GSM Lopez Madrid Javier\|2026-11-12]] | [[Lopez Madrid Javier]] | EXECUTIVE CHAIRMAN | $75K | 66 | -16.3% | open |
-| [[2026-11-12 GSM Levi Marco\|2026-11-12]] | [[Levi Marco]] | CHIEF EXECUTIVE OFFICER | $51K | 56 | -16.3% | open |
+| [[2026-11-12 GSM Girardeau David Marie, Gabriel\|2026-11-12]] | [[Girardeau David Marie, Gabriel]] | SEE REMARKS | $41K | 55 | -19.0% | open |
+| [[2026-11-12 GSM CROCKETT BRUCE LARMOUR\|2026-11-12]] | [[CROCKETT BRUCE LARMOUR]] | Director | $21K | 52 | -19.0% | open |
+| [[2026-11-12 GSM Lopez Madrid Javier\|2026-11-12]] | [[Lopez Madrid Javier]] | EXECUTIVE CHAIRMAN | $75K | 66 | -19.0% | open |
+| [[2026-11-12 GSM Levi Marco\|2026-11-12]] | [[Levi Marco]] | CHIEF EXECUTIVE OFFICER | $51K | 56 | -19.0% | open |

@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +51.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[USAR]] | Director | $3.0M | 51 | – |
+| 2026-11-18 | [[USAR]] | Director | $3.0M | 51 | +2.6% |

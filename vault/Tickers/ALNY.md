@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 ALNY Sigal Charles Elliott\|2026-11-12]] | [[Sigal Charles Elliott]] | Director | $244K | 58 | -2.2% | open |
-| [[2026-11-12 ALNY SCHULMAN AMY W\|2026-11-12]] | [[SCHULMAN AMY W]] | Director | $300K | 47 | -2.2% | open |
+| [[2026-11-12 ALNY Sigal Charles Elliott\|2026-11-12]] | [[Sigal Charles Elliott]] | Director | $244K | 58 | -1.3% | open |
+| [[2026-11-12 ALNY SCHULMAN AMY W\|2026-11-12]] | [[SCHULMAN AMY W]] | Director | $300K | 47 | -1.3% | open |

@@ -12,4 +12,5 @@ Backtest record: 12 earlier buys, average 3-month excess vs SPY +1.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[HPP]] | Chief Executive Officer | $182K | 62 | -5.5% |
+| 2026-11-19 | [[HPP]] | Chief Executive Officer | $81K | 62 | – |
+| 2026-11-12 | [[HPP]] | Chief Executive Officer | $182K | 62 | -10.3% |

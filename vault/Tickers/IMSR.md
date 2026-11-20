@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-15 IMSR Pardee Charles G\|2026-10-15]] | [[Pardee Charles G]] | Director | $22K | 55 | -20.7% | open |
-| [[2026-10-14 IMSR Irish Simon\|2026-10-14]] | [[Irish Simon]] | Chief Executive Officer | $51K | 46 | -11.7% | open |
-| 2026-10-13 | [[BUCKMAN FREDERICK W]] | Director | $39K | 38 | -15.9% | open |
+| [[2026-10-15 IMSR Pardee Charles G\|2026-10-15]] | [[Pardee Charles G]] | Director | $22K | 55 | -21.6% | open |
+| [[2026-10-14 IMSR Irish Simon\|2026-10-14]] | [[Irish Simon]] | Chief Executive Officer | $51K | 46 | -13.0% | open |
+| 2026-10-13 | [[BUCKMAN FREDERICK W]] | Director | $39K | 38 | -17.0% | open |

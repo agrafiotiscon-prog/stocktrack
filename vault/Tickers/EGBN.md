@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 EGBN Curley Stephen Russell\|2026-11-12]] | [[Curley Stephen Russell]] | President/CEO | $150K | 57 | +2.3% | open |
-| [[2026-11-10 EGBN Newell Eric R\|2026-11-10]] | [[Newell Eric R]] | Senior EVP, CFO | $50K | 41 | +2.0% | open |
+| [[2026-11-12 EGBN Curley Stephen Russell\|2026-11-12]] | [[Curley Stephen Russell]] | President/CEO | $150K | 57 | +2.4% | open |
+| [[2026-11-10 EGBN Newell Eric R\|2026-11-10]] | [[Newell Eric R]] | Senior EVP, CFO | $50K | 41 | +2.2% | open |

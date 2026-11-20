@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-12 AQST Daly Richard J\|2026-11-12]] | [[Daly Richard J]] | Director | $99K | 42 | +7.8% | open |
+| [[2026-11-12 AQST Daly Richard J\|2026-11-12]] | [[Daly Richard J]] | Director | $99K | 42 | +7.6% | open |

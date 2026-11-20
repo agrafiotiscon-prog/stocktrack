@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-18 CCAP Breaux Jason\|2026-11-18]] | [[Breaux Jason]] | Chief Executive Officer | $50K | 41 | – | pending |
-| [[2026-11-18 CCAP Lombard Gerhard\|2026-11-18]] | [[Lombard Gerhard]] | Chief Financial Officer | $20K | 43 | – | pending |
+| [[2026-11-18 CCAP Breaux Jason\|2026-11-18]] | [[Breaux Jason]] | Chief Executive Officer | $50K | 41 | +2.3% | open |
+| [[2026-11-18 CCAP Lombard Gerhard\|2026-11-18]] | [[Lombard Gerhard]] | Chief Financial Officer | $20K | 43 | +2.3% | open |

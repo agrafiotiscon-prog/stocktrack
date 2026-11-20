@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 SONO Kennedy Joseph Jude\|2026-11-16]] | [[Kennedy Joseph Jude]] | Director | $1.9M | 55 | +1.9% | open |
+| [[2026-11-16 SONO Kennedy Joseph Jude\|2026-11-16]] | [[Kennedy Joseph Jude]] | Director | $1.9M | 55 | -0.1% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[Lynch Mark T]] | Director | $165K | 27 | – | pending |
+| 2026-11-18 | [[Lynch Mark T]] | Director | $165K | 27 | +0.9% | open |

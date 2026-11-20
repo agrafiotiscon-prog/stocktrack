@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[KTOS]] | Director | $201K | 45 | -3.5% |
+| 2026-11-16 | [[KTOS]] | Director | $201K | 45 | -3.4% |

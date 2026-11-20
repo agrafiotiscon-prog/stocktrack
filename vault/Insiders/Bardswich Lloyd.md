@@ -12,4 +12,5 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY -10.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[UAMY]] | Dir, EVP & Chief Mining Eng | $12K | 21 | +2.0% |
+| 2026-11-20 | [[UAMY]] | Dir, EVP & Chief Mining Eng | $25K | 25 | – |
+| 2026-11-17 | [[UAMY]] | Dir, EVP & Chief Mining Eng | $12K | 21 | -1.6% |

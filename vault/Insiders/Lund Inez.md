@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[FPS]] | Chief Accounting Officer | $65K | 70 | – |
+| 2026-11-18 | [[FPS]] | Chief Accounting Officer | $65K | 70 | -4.0% |

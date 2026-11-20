@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[Graffam Fred]] | Chief Financial Officer | $29K | 31 | – | pending |
+| 2026-11-18 | [[Graffam Fred]] | Chief Financial Officer | $29K | 31 | +0.3% | open |

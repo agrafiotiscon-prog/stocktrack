@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -2.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[CTRI]] | Director | $100K | 40 | +4.2% |
+| 2026-11-13 | [[CTRI]] | Director | $100K | 40 | +2.6% |
