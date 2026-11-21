@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -53.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[ITG]] | Director | $19K | 58 | +5.9% |
+| 2026-11-17 | [[ITG]] | Director | $19K | 58 | -1.4% |

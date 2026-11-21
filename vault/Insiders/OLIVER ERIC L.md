@@ -12,4 +12,5 @@ Backtest record: 10 earlier buys, average 3-month excess vs SPY +3.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[SJT]] | 10% Owner | $2.6M | 41 | -1.1% |
+| 2026-11-20 | [[SJT]] | 10% Owner | $1.8M | 38 | – |
+| 2026-11-18 | [[SJT]] | 10% Owner | $2.6M | 41 | -6.1% |

@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +12.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[BRK-B]] | See Remarks | $250K | 45 | +0.0% |
+| 2026-11-16 | [[BRK-B]] | See Remarks | $250K | 45 | +3.2% |

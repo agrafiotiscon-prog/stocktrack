@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[SOPH]] | Chief Executive Officer | $137K | 53 | -11.2% |
+| 2026-11-09 | [[SOPH]] | Chief Executive Officer | $137K | 53 | -13.4% |

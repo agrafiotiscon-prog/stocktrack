@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 CACC Quinn Sean Edward\|2026-11-16]] | [[Quinn Sean Edward]] | Director | $252K | 54 | -1.0% | open |
-| [[2026-11-04 CACC TRYFOROS THOMAS N\|2026-11-04]] | [[TRYFOROS THOMAS N]] | Director | $1.5M | 54 | -2.6% | open |
+| [[2026-11-16 CACC Quinn Sean Edward\|2026-11-16]] | [[Quinn Sean Edward]] | Director | $252K | 54 | +1.5% | open |
+| [[2026-11-04 CACC TRYFOROS THOMAS N\|2026-11-04]] | [[TRYFOROS THOMAS N]] | Director | $1.5M | 54 | -0.2% | open |

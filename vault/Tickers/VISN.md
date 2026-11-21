@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-17 VISN Gilstrap Charles A\|2026-11-17]] | [[Gilstrap Charles A]] | SVP, Treasury, Tax & CAO | $20K | 45 | +2.6% | open |
-| [[2026-11-13 VISN Yates Timothy T\|2026-11-13]] | [[Yates Timothy T]] | Director | $99K | 43 | +1.1% | open |
-| 2026-11-12 | [[Watts Claudius E. IV]] | Director | $198K | 30 | +0.7% | open |
-| [[2026-11-12 VISN Watts Claudius E. IV\|2026-11-12]] | [[Watts Claudius E. IV]] | Director | $831K | 42 | +0.7% | open |
+| [[2026-11-17 VISN Gilstrap Charles A\|2026-11-17]] | [[Gilstrap Charles A]] | SVP, Treasury, Tax & CAO | $20K | 45 | +1.7% | open |
+| [[2026-11-13 VISN Yates Timothy T\|2026-11-13]] | [[Yates Timothy T]] | Director | $99K | 43 | +0.3% | open |
+| 2026-11-12 | [[Watts Claudius E. IV]] | Director | $198K | 30 | -0.1% | open |
+| [[2026-11-12 VISN Watts Claudius E. IV\|2026-11-12]] | [[Watts Claudius E. IV]] | Director | $831K | 42 | -0.1% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[Charlton Kevin M]] | Director | $40K | 23 | +0.8% | open |
+| 2026-11-16 | [[Charlton Kevin M]] | Director | $40K | 23 | +1.5% | open |

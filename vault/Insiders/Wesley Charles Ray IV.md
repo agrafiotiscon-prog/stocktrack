@@ -12,4 +12,4 @@ Backtest record: 10 earlier buys, average 3-month excess vs SPY +14.9%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[HNRG]] | Director | $1.1M | 48 | -2.2% |
+| 2026-11-17 | [[HNRG]] | Director | $1.1M | 48 | -8.2% |

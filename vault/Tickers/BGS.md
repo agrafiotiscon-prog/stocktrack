@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-19 BGS Mills Robert D\|2026-11-19]] | [[Mills Robert D]] | President & CEO | $250K | 54 | – | pending |
+| [[2026-11-19 BGS Mills Robert D\|2026-11-19]] | [[Mills Robert D]] | President & CEO | $250K | 54 | +4.4% | open |

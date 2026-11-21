@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-19 SCM Ladd Robert T\|2026-11-19]] | [[Ladd Robert T]] | President and CEO | $197K | 44 | – | pending |
+| [[2026-11-19 SCM Ladd Robert T\|2026-11-19]] | [[Ladd Robert T]] | President and CEO | $197K | 44 | +0.5% | open |

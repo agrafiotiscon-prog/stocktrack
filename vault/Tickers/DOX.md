@@ -9,10 +9,10 @@ signals: 7
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 DOX Gardner Adrian\|2026-11-16]] | [[Gardner Adrian]] | Director | $215K | 64 | -4.0% | open |
-| [[2026-11-16 DOX DE LA VEGA RAFAEL\|2026-11-16]] | [[DE LA VEGA RAFAEL]] | Director | $102K | 54 | -4.0% | open |
-| [[2026-11-16 DOX Gelman Eliahu Meir\|2026-11-16]] | [[Gelman Eliahu Meir]] | Director | $104K | 50 | -4.0% | open |
-| [[2026-11-12 DOX Kanouff Yvette\|2026-11-12]] | [[Kanouff Yvette]] | Director | $101K | 51 | -3.3% | open |
-| [[2026-11-12 DOX Genish Amos\|2026-11-12]] | [[Genish Amos]] | Director | $150K | 60 | -3.3% | open |
-| [[2026-11-12 DOX MacDonald John Anthony\|2026-11-12]] | [[MacDonald John Anthony]] | Director | $42K | 44 | -3.3% | open |
-| [[2026-11-12 DOX MORALI VERONIQUE\|2026-11-12]] | [[MORALI VERONIQUE]] | Director | $6K | 40 | -3.3% | open |
+| [[2026-11-16 DOX Gardner Adrian\|2026-11-16]] | [[Gardner Adrian]] | Director | $215K | 64 | +1.1% | open |
+| [[2026-11-16 DOX DE LA VEGA RAFAEL\|2026-11-16]] | [[DE LA VEGA RAFAEL]] | Director | $102K | 54 | +1.1% | open |
+| [[2026-11-16 DOX Gelman Eliahu Meir\|2026-11-16]] | [[Gelman Eliahu Meir]] | Director | $104K | 50 | +1.1% | open |
+| [[2026-11-12 DOX Kanouff Yvette\|2026-11-12]] | [[Kanouff Yvette]] | Director | $101K | 51 | +1.7% | open |
+| [[2026-11-12 DOX Genish Amos\|2026-11-12]] | [[Genish Amos]] | Director | $150K | 60 | +1.7% | open |
+| [[2026-11-12 DOX MacDonald John Anthony\|2026-11-12]] | [[MacDonald John Anthony]] | Director | $42K | 44 | +1.7% | open |
+| [[2026-11-12 DOX MORALI VERONIQUE\|2026-11-12]] | [[MORALI VERONIQUE]] | Director | $6K | 40 | +1.7% | open |

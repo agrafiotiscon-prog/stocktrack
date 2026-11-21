@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[HAWK]] | Chief Operating Officer | $15K | 23 | +1.2% |
+| 2026-11-16 | [[HAWK]] | Chief Operating Officer | $15K | 23 | -5.8% |

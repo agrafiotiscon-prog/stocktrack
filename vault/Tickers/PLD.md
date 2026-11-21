@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-19 PLD KELLY ALFRED F JR\|2026-11-19]] | [[KELLY ALFRED F JR]] | Director | $587K | 50 | – | pending |
+| [[2026-11-19 PLD KELLY ALFRED F JR\|2026-11-19]] | [[KELLY ALFRED F JR]] | Director | $587K | 50 | +2.4% | open |

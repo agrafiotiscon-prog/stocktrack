@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-19 IRTC TALWALKAR ABHIJIT Y\|2026-11-19]] | [[TALWALKAR ABHIJIT Y]] | Director | $764K | 51 | – | pending |
+| [[2026-11-19 IRTC TALWALKAR ABHIJIT Y\|2026-11-19]] | [[TALWALKAR ABHIJIT Y]] | Director | $764K | 51 | +2.8% | open |

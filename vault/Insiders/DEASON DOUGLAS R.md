@@ -12,5 +12,6 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -10.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[GLXY]] | Director | $201K | 50 | -5.3% |
-| 2026-11-10 | [[GLXY]] | Director | $70K | 40 | -14.3% |
+| 2026-11-20 | [[GLXY]] | Director | $99K | 42 | – |
+| 2026-11-17 | [[GLXY]] | Director | $201K | 50 | -10.0% |
+| 2026-11-10 | [[GLXY]] | Director | $70K | 40 | -18.0% |

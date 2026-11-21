@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-16 PCQ MITTAL MOHIT\|2026-11-16]] | [[MITTAL MOHIT]] | Other | $809K | 43 | +0.8% | open |
-| 2026-10-16 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +5.3% | open |
-| 2026-10-13 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +8.7% | open |
+| [[2026-11-16 PCQ MITTAL MOHIT\|2026-11-16]] | [[MITTAL MOHIT]] | Other | $809K | 43 | +4.5% | open |
+| 2026-10-16 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +8.8% | open |
+| 2026-10-13 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $16K | 30 | +12.2% | open |

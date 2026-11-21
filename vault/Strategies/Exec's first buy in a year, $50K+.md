@@ -71,7 +71,7 @@ Cost sensitivity (63-session hold): no costs +11.8%/yr, double costs +6.4%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 47 | -0.9% | -0.4% | 47% |
+| 5 sessions | 50 | -0.7% | -0.1% | 48% |
 | 21 sessions | 4 | -3.3% | -3.3% | 0% |
 
 
@@ -79,26 +79,26 @@ Cost sensitivity (63-session hold): no costs +11.8%/yr, double costs +6.4%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | – | pending |
-| 2026-11-19 | [[ARR]] | [[ULM SCOTT]] | $52K | 39 | – | pending |
-| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | $203K | 55 | – | pending |
-| 2026-11-19 | [[EFC]] | [[Vranos Michael W]] | $2.1M | 62 | – | pending |
-| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | -12.5% | open |
-| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | +8.0% | open |
-| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | -4.0% | open |
-| 2026-11-18 | [[CGON]] | [[Kuan Arthur]] | $2.4M | 72 | +0.4% | open |
-| 2026-11-18 | [[CGON]] | [[Kalofonos Isabel]] | $299K | 65 | +0.4% | open |
-| 2026-11-18 | [[EFC]] | [[Penn Laurence]] | $107K | 44 | +3.9% | open |
-| 2026-11-18 | [[RILY]] | [[RILEY BRYANT R]] | $117K | 38 | -1.3% | open |
-| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | +1.5% | open |
-| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | -1.1% | open |
-| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | -4.2% | open |
-| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | -2.5% | open |
-| 2026-11-17 | [[NPCE]] | [[Becker Joel]] | $99K | 55 | -2.5% | open |
-| 2026-11-17 | [[ITG]] | [[Parrott Andrew]] | $98K | 75 | +5.9% | open |
-| 2026-11-17 | [[BLX]] | [[Real Jorge Luis]] | $125K | 40 | +1.8% | open |
-| 2026-11-17 | [[NGS]] | [[Jacobs Justin]] | $86K | 64 | +5.4% | open |
-| 2026-11-16 | [[BRSP]] | [[Mazzei Michael]] | $1.0M | 58 | -0.8% | open |
+| 2026-11-20 | [[HBCP]] | [[Hill Darren M]] | $315K | 53 | – | pending |
+| 2026-11-20 | [[AVEX]] | [[Morrison Christine M]] | $102K | 43 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Ramachandran Kyle S]] | $160K | 61 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Zartler William A]] | $212K | 65 | – | pending |
+| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | +4.4% | open |
+| 2026-11-19 | [[ARR]] | [[ULM SCOTT]] | $52K | 39 | +2.6% | open |
+| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | $203K | 55 | +1.6% | open |
+| 2026-11-19 | [[EFC]] | [[Vranos Michael W]] | $2.1M | 62 | +3.9% | open |
+| 2026-11-18 | [[RMIX]] | [[Jones Mark Alan]] | $50K | 53 | -15.0% | open |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | +9.4% | open |
+| 2026-11-18 | [[FPS]] | [[Lund Inez]] | $65K | 70 | -13.6% | open |
+| 2026-11-18 | [[CGON]] | [[Kuan Arthur]] | $2.4M | 72 | +1.0% | open |
+| 2026-11-18 | [[CGON]] | [[Kalofonos Isabel]] | $299K | 65 | +1.0% | open |
+| 2026-11-18 | [[EFC]] | [[Penn Laurence]] | $107K | 44 | +8.2% | open |
+| 2026-11-18 | [[RILY]] | [[RILEY BRYANT R]] | $117K | 38 | -2.9% | open |
+| 2026-11-17 | [[ATEC]] | [[Koning John Todd]] | $99K | 48 | +1.9% | open |
+| 2026-11-17 | [[PRAA]] | [[FREDRICKSON STEVEN D]] | $295K | 57 | -5.4% | open |
+| 2026-11-17 | [[RDW]] | [[Cannito Peter Anthony Jr]] | $100K | 39 | -13.0% | open |
+| 2026-11-17 | [[NPCE]] | [[Williams Patrick F]] | $99K | 56 | -1.2% | open |
+| 2026-11-17 | [[NPCE]] | [[Becker Joel]] | $99K | 55 | -1.2% | open |
 
 
 ```dataview

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[EAD]] | Director | $1K | 32 | +2.8% |
+| 2026-11-18 | [[EAD]] | Director | $1K | 32 | +6.0% |

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-09 KMT Watson Patrick S\|2026-11-09]] | [[Watson Patrick S]] | Vice President and CFO | $47K | 45 | -2.9% | open |
-| [[2026-11-06 KMT Chowbey Sanjay\|2026-11-06]] | [[Chowbey Sanjay]] | President and CEO | $165K | 42 | -2.0% | open |
+| [[2026-11-09 KMT Watson Patrick S\|2026-11-09]] | [[Watson Patrick S]] | Vice President and CFO | $47K | 45 | -3.4% | open |
+| [[2026-11-06 KMT Chowbey Sanjay\|2026-11-06]] | [[Chowbey Sanjay]] | President and CEO | $165K | 42 | -2.6% | open |

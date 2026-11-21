@@ -12,6 +12,7 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -28.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[EQPT]] | Founder & CEO / | $250K | 69 | -5.2% |
-| 2026-11-16 | [[EQPT]] | Founder & CEO | $63K | 50 | +0.1% |
-| 2026-11-12 | [[EQPT]] | Founder & CEO | $250K | 61 | -8.2% |
+| 2026-11-20 | [[EQPT]] | Founder & CEO | $180K | 65 | – |
+| 2026-11-18 | [[EQPT]] | Founder & CEO / | $250K | 69 | -5.6% |
+| 2026-11-16 | [[EQPT]] | Founder & CEO | $63K | 50 | -0.6% |
+| 2026-11-12 | [[EQPT]] | Founder & CEO | $250K | 61 | -8.5% |

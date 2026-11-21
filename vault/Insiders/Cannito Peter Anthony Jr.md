@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +31.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[RDW]] | Chairman and CEO | $100K | 39 | -4.2% |
+| 2026-11-17 | [[RDW]] | Chairman and CEO | $100K | 39 | -13.0% |

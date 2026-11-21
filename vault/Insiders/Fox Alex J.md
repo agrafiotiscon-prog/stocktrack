@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[HAWK]] | Pres, HawkEye 360 Int'l | $10K | 17 | +1.2% |
+| 2026-11-16 | [[HAWK]] | Pres, HawkEye 360 Int'l | $10K | 17 | -5.8% |

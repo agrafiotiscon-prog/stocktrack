@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[OFRM]] | Director | $301K | 68 | +5.9% |
+| 2026-11-18 | [[OFRM]] | Director | $301K | 68 | +7.6% |

@@ -12,7 +12,10 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +51.8%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[EDRY]] | Director | $43K | 22 | -9.9% |
-| 2026-10-16 | [[EDRY]] | Director | $29K | 19 | -22.2% |
-| 2026-10-14 | [[EDRY]] | Director | $36K | 20 | -26.7% |
-| 2026-10-05 | [[ESEA]] | Director | $75K | 25 | -13.0% |
+| 2026-11-20 | [[ESEA]] | Director | $59K | 23 | – |
+| 2026-11-20 | [[EDRY]] | Director | $38K | 21 | – |
+| 2026-11-20 | [[ESEA]] | Director | $31K | 20 | – |
+| 2026-11-18 | [[EDRY]] | Director | $43K | 22 | -6.6% |
+| 2026-10-16 | [[EDRY]] | Director | $29K | 19 | -18.9% |
+| 2026-10-14 | [[EDRY]] | Director | $36K | 20 | -23.5% |
+| 2026-10-05 | [[ESEA]] | Director | $75K | 25 | -8.8% |

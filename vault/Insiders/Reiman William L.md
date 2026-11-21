@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[LAND]] | Executive Vice President | $3K | 30 | +0.7% |
+| 2026-11-18 | [[LAND]] | Executive Vice President | $3K | 30 | +3.6% |

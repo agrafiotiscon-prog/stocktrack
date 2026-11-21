@@ -9,6 +9,6 @@ signals: 3
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-08 | [[Carrico Brian Allen]] | Chief Executive Officer | $1K | 26 | -27.6% | open |
-| 2026-10-08 | [[Carrico Thomas Joeseph]] | CRO, CCO, CPO | $2K | 19 | -27.6% | open |
-| 2026-10-08 | [[Henrichs Timothy Robert]] | Chief Financial Officer | $9K | 36 | -27.6% | open |
+| 2026-10-08 | [[Carrico Brian Allen]] | Chief Executive Officer | $1K | 26 | -28.2% | open |
+| 2026-10-08 | [[Carrico Thomas Joeseph]] | CRO, CCO, CPO | $2K | 19 | -28.2% | open |
+| 2026-10-08 | [[Henrichs Timothy Robert]] | Chief Financial Officer | $9K | 36 | -28.2% | open |

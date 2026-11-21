@@ -12,4 +12,4 @@ Backtest record: 15 earlier buys, average 3-month excess vs SPY +10.5%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[ECOR]] | Director | $54K | 24 | +3.3% |
+| 2026-11-16 | [[ECOR]] | Director | $54K | 24 | -2.1% |

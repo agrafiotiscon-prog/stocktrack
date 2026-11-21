@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-19 CCB HOVDE STEVEN D\|2026-11-19]] | [[HOVDE STEVEN D]] | Director | $550K | 49 | – | pending |
-| 2026-11-19 | [[HOVDE STEVEN D]] | Director | $188K | 37 | – | pending |
+| [[2026-11-19 CCB HOVDE STEVEN D\|2026-11-19]] | [[HOVDE STEVEN D]] | Director | $550K | 49 | +1.8% | open |
+| 2026-11-19 | [[HOVDE STEVEN D]] | Director | $188K | 37 | +1.8% | open |

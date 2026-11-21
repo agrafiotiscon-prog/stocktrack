@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-17 | [[First Finance Ltd]] | 10% Owner | $756K | 36 | +3.7% | open |
+| 2026-11-17 | [[First Finance Ltd]] | 10% Owner | $756K | 36 | -14.1% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[BASSWOOD CAPITAL MANAGEMENT, L.L.C]] | Director | $359K | 37 | +1.5% | open |
+| 2026-11-12 | [[BASSWOOD CAPITAL MANAGEMENT, L.L.C]] | Director | $359K | 37 | +3.6% | open |

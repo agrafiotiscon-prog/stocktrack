@@ -9,10 +9,10 @@ signals: 7
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-02 BBT Hughes William H III\|2026-11-02]] | [[Hughes William H III]] | Director | $6K | 40 | +1.5% | open |
-| [[2026-10-30 BBT Charnley Nina A\|2026-10-30]] | [[Charnley Nina A]] | Director | $11K | 57 | +5.9% | open |
-| [[2026-10-29 BBT Callahan Mary Anne\|2026-10-29]] | [[Callahan Mary Anne]] | Director | $97K | 54 | +4.2% | open |
-| [[2026-10-28 BBT Polito Karyn\|2026-10-28]] | [[Polito Karyn]] | Director | $31K | 49 | +5.1% | open |
-| [[2026-10-28 BBT Rosengren Eric S\|2026-10-28]] | [[Rosengren Eric S]] | Director | $21K | 44 | +5.1% | open |
-| 2026-10-28 | [[Fitzgerald Margaret Boles]] | Director | $10K | 36 | +5.1% | open |
-| 2026-10-26 | [[Hollister Thomas J]] | Director | $105K | 33 | +4.7% | open |
+| [[2026-11-02 BBT Hughes William H III\|2026-11-02]] | [[Hughes William H III]] | Director | $6K | 40 | +2.6% | open |
+| [[2026-10-30 BBT Charnley Nina A\|2026-10-30]] | [[Charnley Nina A]] | Director | $11K | 57 | +6.9% | open |
+| [[2026-10-29 BBT Callahan Mary Anne\|2026-10-29]] | [[Callahan Mary Anne]] | Director | $97K | 54 | +5.2% | open |
+| [[2026-10-28 BBT Polito Karyn\|2026-10-28]] | [[Polito Karyn]] | Director | $31K | 49 | +6.1% | open |
+| [[2026-10-28 BBT Rosengren Eric S\|2026-10-28]] | [[Rosengren Eric S]] | Director | $21K | 44 | +6.1% | open |
+| 2026-10-28 | [[Fitzgerald Margaret Boles]] | Director | $10K | 36 | +6.1% | open |
+| 2026-10-26 | [[Hollister Thomas J]] | Director | $105K | 33 | +5.7% | open |

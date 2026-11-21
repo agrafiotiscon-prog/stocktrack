@@ -12,6 +12,6 @@ Backtest record: 18 earlier buys, average 3-month excess vs SPY +2.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[ETRA]] | Director | $745K | 37 | +13.8% |
-| 2026-11-05 | [[ETRA]] | Director | $3.6M | 53 | +18.4% |
-| 2026-11-04 | [[ASPE]] | Director | $15.0M | 80 | +1.0% |
+| 2026-11-10 | [[ETRA]] | Director | $745K | 37 | +7.2% |
+| 2026-11-05 | [[ETRA]] | Director | $3.6M | 53 | +11.2% |
+| 2026-11-04 | [[ASPE]] | Director | $15.0M | 80 | +4.6% |

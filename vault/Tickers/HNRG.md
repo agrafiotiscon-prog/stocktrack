@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-17 HNRG Wesley Charles Ray IV\|2026-11-17]] | [[Wesley Charles Ray IV]] | Director | $1.1M | 48 | -2.2% | open |
+| [[2026-11-17 HNRG Wesley Charles Ray IV\|2026-11-17]] | [[Wesley Charles Ray IV]] | Director | $1.1M | 48 | -8.2% | open |

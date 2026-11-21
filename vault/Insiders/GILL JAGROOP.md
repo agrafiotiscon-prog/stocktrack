@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY +7.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[CWBC]] | Director | $294K | 31 | – |
+| 2026-11-19 | [[CWBC]] | Director | $294K | 31 | +3.3% |

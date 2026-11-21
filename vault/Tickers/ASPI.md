@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-10-01 | [[Ryan Robert John Andrew]] | Director | $40K | 22 | -53.8% | open |
-| 2026-09-30 | [[Ryan Robert John Andrew]] | Director | $22K | 18 | -50.8% | open |
+| 2026-10-01 | [[Ryan Robert John Andrew]] | Director | $40K | 22 | -51.6% | open |
+| 2026-09-30 | [[Ryan Robert John Andrew]] | Director | $22K | 18 | -48.7% | open |

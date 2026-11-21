@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[HAWK]] | Chief Strategy Officer | $5K | 40 | -1.3% |
+| 2026-11-18 | [[HAWK]] | Chief Strategy Officer | $5K | 40 | -8.0% |

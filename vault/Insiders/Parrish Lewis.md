@@ -12,4 +12,4 @@ Backtest record: 8 earlier buys, average 3-month excess vs SPY +7.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[LAND]] | Chief Financial Officer | $6K | 37 | +1.8% |
+| 2026-11-17 | [[LAND]] | Chief Financial Officer | $6K | 37 | +4.8% |

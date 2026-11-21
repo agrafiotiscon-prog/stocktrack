@@ -12,4 +12,4 @@ Backtest record: 6 earlier buys, average 3-month excess vs SPY +26.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[COHR]] | CEO | $997K | 62 | -0.6% |
+| 2026-11-12 | [[COHR]] | CEO | $997K | 62 | -9.3% |

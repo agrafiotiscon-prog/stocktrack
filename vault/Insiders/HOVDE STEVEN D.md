@@ -12,5 +12,5 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -0.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[CCB]] | Director | $550K | 49 | – |
-| 2026-11-19 | [[CCB]] | Director | $188K | 37 | – |
+| 2026-11-19 | [[CCB]] | Director | $550K | 49 | +1.8% |
+| 2026-11-19 | [[CCB]] | Director | $188K | 37 | +1.8% |

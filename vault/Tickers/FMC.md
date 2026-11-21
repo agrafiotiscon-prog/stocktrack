@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-12 | [[Tack Luc Jules R]] | Director | $14K | 14 | -10.7% | open |
+| 2026-11-12 | [[Tack Luc Jules R]] | Director | $14K | 14 | -15.1% | open |

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-05 | [[Gallotta Steven E]] | Director | $502 | 17 | +2.2% | open |
-| 2026-11-05 | [[Kim Denny]] | Director | $501 | 18 | +2.2% | open |
+| 2026-11-05 | [[Gallotta Steven E]] | Director | $502 | 17 | +4.6% | open |
+| 2026-11-05 | [[Kim Denny]] | Director | $501 | 18 | +4.6% | open |

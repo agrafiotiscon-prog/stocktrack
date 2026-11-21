@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[COHR]] | Director | $223K | 46 | -0.6% |
+| 2026-11-12 | [[COHR]] | Director | $223K | 46 | -9.3% |

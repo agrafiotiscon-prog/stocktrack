@@ -1,6 +1,6 @@
 ---
 type: "home"
-updated: "2026-11-20"
+updated: "2026-11-21"
 ---
 
 # Insider Buying Research
@@ -10,7 +10,7 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 - [[Findings]]: what the evidence says, in plain English
 - [[What Works]]: the scoreboard
 - [[2026-11-18 Backtest]]: the latest full backtest
-- [[2026-11-20]]: today's research log
+- [[2026-11-21]]: today's research log
 - [[Best Insiders]] · [[Methodology]]
 
 ## Headline
@@ -24,21 +24,21 @@ A research log on one question: **do stocks go up after insiders buy them, and w
 
 | Filed | Ticker | Insider | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | Director | $183K | 70 | – |
-| 2026-11-19 | [[SCM]] | [[Ladd Robert T]] | President and CEO | $197K | 44 | – |
-| 2026-11-19 | [[PAL]] | [[Schraudenbach John]] | Director | $78K | 66 | – |
-| 2026-11-19 | [[PAL]] | [[COL DOUGLAS L]] | Director | $84K | 66 | – |
-| 2026-11-19 | [[CCB]] | [[HOVDE STEVEN D]] | Director | $550K | 49 | – |
-| 2026-11-19 | [[BSM]] | [[Carter Thomas L Jr]] | Executive Chairman | $338K | 40 | – |
-| 2026-11-19 | [[IRTC]] | [[TALWALKAR ABHIJIT Y]] | Director | $764K | 51 | – |
-| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | President & CEO | $250K | 54 | – |
-| 2026-11-19 | [[PLD]] | [[KELLY ALFRED F JR]] | Director | $587K | 50 | – |
-| 2026-11-19 | [[APC]] | [[HEYER ANDREW R]] | Director | $279K | 46 | – |
-| 2026-11-19 | [[BCML]] | [[PERDUE MICHAEL J]] | Director | $151K | 44 | – |
-| 2026-11-19 | [[ITT]] | [[Berryman Kevin C]] | Director | $502K | 49 | – |
-| 2026-11-19 | [[SKYD]] | [[Cardinale Gerald J]] | Director | $495K | 48 | – |
-| 2026-11-19 | [[HPP]] | [[COLEMAN VICTOR J]] | Chief Executive Officer | $81K | 62 | – |
-| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | CHAIRMAN, PRESIDENT & CEO | $203K | 55 | – |
+| 2026-11-20 | [[UPST]] | [[Gu Paul]] | Chief Executive Officer | $860K | 76 | – |
+| 2026-11-20 | [[UPST]] | [[Girouard Dave]] | Director | $951K | 46 | – |
+| 2026-11-20 | [[HBCP]] | [[Hill Darren M]] | Chief Risk Officer | $315K | 53 | – |
+| 2026-11-20 | [[CRMD]] | [[Blum Susan]] | Chief Financial Officer | $23K | 56 | – |
+| 2026-11-20 | [[EQPT]] | [[Schlacks Jabbok]] | Founder & CEO | $180K | 65 | – |
+| 2026-11-20 | [[ARR]] | [[Harper Gordon]] | CFO | $27K | 46 | – |
+| 2026-11-20 | [[TJX]] | [[PINTOFF CRAIG ADAM]] | Director | $200K | 45 | – |
+| 2026-11-20 | [[UPBD]] | [[LEWIS HAROLD G]] | Director | $399K | 73 | – |
+| 2026-11-20 | [[HPP]] | [[COLEMAN VICTOR J]] | Chief Executive Officer | $75K | 62 | – |
+| 2026-11-20 | [[OFRM]] | [[Garner Jennifer Anne]] | Director | $118K | 50 | – |
+| 2026-11-20 | [[AVEX]] | [[Morrison Christine M]] | Chief Legal Officer | $102K | 43 | – |
+| 2026-11-20 | [[OFRM]] | [[Morris Scott James]] | Director | $142K | 69 | – |
+| 2026-11-20 | [[INOD]] | [[Massey Stewart R]] | Director | $321K | 47 | – |
+| 2026-11-20 | [[GLXY]] | [[DEASON DOUGLAS R]] | Director | $99K | 42 | – |
+| 2026-11-20 | [[GLXY]] | [[Novogratz Michael]] | Chief Executive Officer | $4.9M | 84 | – |
 
 
 ## Live queries (Dataview plugin)

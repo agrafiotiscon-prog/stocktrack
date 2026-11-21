@@ -72,34 +72,34 @@ Cost sensitivity (63-session hold): no costs +11.6%/yr, double costs +6.2%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 69 | +0.6% | +0.2% | 52% |
-| 21 sessions | 4 | -2.2% | -2.8% | 25% |
+| 5 sessions | 77 | +0.1% | +0.1% | 53% |
+| 21 sessions | 5 | -3.1% | -3.3% | 20% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | $183K | 70 | – | pending |
-| 2026-11-19 | [[CCB]] | [[HOVDE STEVEN D]] | $550K | 49 | – | pending |
-| 2026-11-19 | [[IRTC]] | [[TALWALKAR ABHIJIT Y]] | $764K | 51 | – | pending |
-| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | – | pending |
-| 2026-11-19 | [[PLD]] | [[KELLY ALFRED F JR]] | $587K | 50 | – | pending |
-| 2026-11-19 | [[APC]] | [[HEYER ANDREW R]] | $279K | 46 | – | pending |
-| 2026-11-19 | [[BCML]] | [[PERDUE MICHAEL J]] | $151K | 44 | – | pending |
-| 2026-11-19 | [[ITT]] | [[Berryman Kevin C]] | $502K | 49 | – | pending |
-| 2026-11-19 | [[SKYD]] | [[Cardinale Gerald J]] | $495K | 48 | – | pending |
-| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | $203K | 55 | – | pending |
-| 2026-11-19 | [[HMH]] | [[McGee Thomas W]] | $1.6M | 76 | – | pending |
-| 2026-11-19 | [[SRTS]] | [[Sachetta Eric]] | $183K | 52 | – | pending |
-| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | $3.0M | 51 | +2.6% | open |
-| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | -12.5% | open |
-| 2026-11-18 | [[OIG]] | [[DEUTSCH ROBERT V]] | $106K | 54 | +1.6% | open |
-| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | +8.0% | open |
-| 2026-11-18 | [[BA]] | [[JOHRI AKHIL]] | $500K | 49 | +0.9% | open |
-| 2026-11-18 | [[KGS]] | [[HOGAN RANDALL J]] | $494K | 71 | +0.4% | open |
-| 2026-11-18 | [[NPCE]] | [[Huennekens R Scott]] | $104K | 62 | +0.2% | open |
-| 2026-11-18 | [[GPRK]] | [[Gilinski Gabriel]] | $1.6M | 54 | -2.2% | open |
+| 2026-11-20 | [[UPST]] | [[Gu Paul]] | $860K | 76 | – | pending |
+| 2026-11-20 | [[HBCP]] | [[Hill Darren M]] | $315K | 53 | – | pending |
+| 2026-11-20 | [[TJX]] | [[PINTOFF CRAIG ADAM]] | $200K | 45 | – | pending |
+| 2026-11-20 | [[UPBD]] | [[LEWIS HAROLD G]] | $399K | 73 | – | pending |
+| 2026-11-20 | [[AVEX]] | [[Morrison Christine M]] | $102K | 43 | – | pending |
+| 2026-11-20 | [[OFRM]] | [[Morris Scott James]] | $142K | 69 | – | pending |
+| 2026-11-20 | [[INOD]] | [[Massey Stewart R]] | $321K | 47 | – | pending |
+| 2026-11-20 | [[ANNX]] | [[Carson William H]] | $122K | 26 | – | pending |
+| 2026-11-20 | [[GLXY]] | [[Novogratz Michael]] | $4.9M | 84 | – | pending |
+| 2026-11-20 | [[MED]] | [[Kiai Parsa]] | $1.1M | 53 | – | pending |
+| 2026-11-20 | [[BHRB]] | [[Poillon Diane]] | $106K | 39 | – | pending |
+| 2026-11-20 | [[PICS]] | [[Pruett William Rodney]] | $233K | 56 | – | pending |
+| 2026-11-20 | [[PICS]] | [[Teixeira Linares Marcio Antonio]] | $299K | 59 | – | pending |
+| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | $183K | 70 | -4.1% | open |
+| 2026-11-19 | [[CCB]] | [[HOVDE STEVEN D]] | $550K | 49 | +1.8% | open |
+| 2026-11-19 | [[IRTC]] | [[TALWALKAR ABHIJIT Y]] | $764K | 51 | +2.8% | open |
+| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | +4.4% | open |
+| 2026-11-19 | [[PLD]] | [[KELLY ALFRED F JR]] | $587K | 50 | +2.4% | open |
+| 2026-11-19 | [[APC]] | [[HEYER ANDREW R]] | $279K | 46 | +4.1% | open |
+| 2026-11-19 | [[BCML]] | [[PERDUE MICHAEL J]] | $151K | 44 | +1.5% | open |
 
 
 ```dataview

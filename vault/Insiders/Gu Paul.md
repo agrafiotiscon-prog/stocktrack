@@ -12,5 +12,6 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -9.6%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[UPST]] | Chief Executive Officer | $950K | 60 | -5.0% |
-| 2026-11-13 | [[UPST]] | Chief Executive Officer | $1.0M | 63 | -8.3% |
+| 2026-11-20 | [[UPST]] | Chief Executive Officer | $860K | 76 | – |
+| 2026-11-17 | [[UPST]] | Chief Executive Officer | $950K | 60 | -8.7% |
+| 2026-11-13 | [[UPST]] | Chief Executive Officer | $1.0M | 63 | -11.7% |

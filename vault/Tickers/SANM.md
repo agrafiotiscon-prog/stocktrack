@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-17 | [[Trivedi Shanker]] | Director | $53K | 39 | +0.9% | open |
+| 2026-11-17 | [[Trivedi Shanker]] | Director | $53K | 39 | -5.1% | open |

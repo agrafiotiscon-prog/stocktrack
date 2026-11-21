@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -4.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[BGH]] | President | $12K | 33 | +2.7% |
+| 2026-11-18 | [[BGH]] | President | $12K | 33 | +5.1% |

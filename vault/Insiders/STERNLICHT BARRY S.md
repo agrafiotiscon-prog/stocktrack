@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +9.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[STWD]] | CEO, Chairman of the Board | $14.7M | 87 | +0.3% |
+| 2026-11-13 | [[STWD]] | CEO, Chairman of the Board | $14.7M | 87 | +0.2% |

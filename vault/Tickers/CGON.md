@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-18 CGON Kuan Arthur\|2026-11-18]] | [[Kuan Arthur]] | Chief Executive Officer | $2.4M | 72 | +0.4% | open |
-| [[2026-11-18 CGON Kalofonos Isabel\|2026-11-18]] | [[Kalofonos Isabel]] | Chief Commercial Officer | $299K | 65 | +0.4% | open |
+| [[2026-11-18 CGON Kuan Arthur\|2026-11-18]] | [[Kuan Arthur]] | Chief Executive Officer | $2.4M | 72 | +1.0% | open |
+| [[2026-11-18 CGON Kalofonos Isabel\|2026-11-18]] | [[Kalofonos Isabel]] | Chief Commercial Officer | $299K | 65 | +1.0% | open |

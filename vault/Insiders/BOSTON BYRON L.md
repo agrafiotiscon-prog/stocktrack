@@ -12,6 +12,6 @@ Backtest record: 14 earlier buys, average 3-month excess vs SPY +2.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[DX]] | Co-CEO & Chairman of the Board | $50K | 46 | – |
-| 2026-11-16 | [[DX]] | Co-CEO & Chairman of the Board | $50K | 46 | +2.1% |
-| 2026-10-21 | [[DX]] | Co-CEO & Chairman of the Board | $100K | 50 | -3.3% |
+| 2026-11-19 | [[DX]] | Co-CEO & Chairman of the Board | $50K | 46 | +2.4% |
+| 2026-11-16 | [[DX]] | Co-CEO & Chairman of the Board | $50K | 46 | +5.6% |
+| 2026-10-21 | [[DX]] | Co-CEO & Chairman of the Board | $100K | 50 | +0.0% |

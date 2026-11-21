@@ -2,12 +2,13 @@
 type: "ticker"
 ticker: "MED"
 company: "MEDIFAST INC"
-signals: 2
+signals: 3
 ---
 
 # MED: MEDIFAST INC
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Kiai Parsa]] | Director | $9K | 17 | -3.8% | open |
-| 2026-10-30 | [[Kiai Parsa]] | Director | $68K | 38 | +2.7% | open |
+| [[2026-11-20 MED Kiai Parsa\|2026-11-20]] | [[Kiai Parsa]] | Director | $1.1M | 53 | – | pending |
+| 2026-11-06 | [[Kiai Parsa]] | Director | $9K | 17 | -2.0% | open |
+| 2026-10-30 | [[Kiai Parsa]] | Director | $68K | 38 | +4.2% | open |

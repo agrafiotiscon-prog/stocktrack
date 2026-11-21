@@ -12,6 +12,6 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY -26.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-10-14 | [[QVCG]] | 10% Owner | $16.7M | 48 | +0.1% |
-| 2026-10-06 | [[QVCG]] | 10% Owner | $3.5M | 50 | -18.3% |
-| 2026-10-02 | [[QVCG]] | 10% Owner | $79K | 30 | -25.8% |
+| 2026-10-14 | [[QVCG]] | 10% Owner | $16.7M | 48 | -3.1% |
+| 2026-10-06 | [[QVCG]] | 10% Owner | $3.5M | 50 | -20.2% |
+| 2026-10-02 | [[QVCG]] | 10% Owner | $79K | 30 | -27.1% |

@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | [[BATTIST CHRISTINE]] | Director | $10K | 17 | – | pending |
-| 2026-10-01 | [[Thomas William R III]] | Director | $50K | 28 | +5.2% | open |
+| 2026-11-19 | [[BATTIST CHRISTINE]] | Director | $10K | 17 | +2.6% | open |
+| 2026-10-01 | [[Thomas William R III]] | Director | $50K | 28 | +7.1% | open |

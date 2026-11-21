@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +7.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[AVK]] | CHAIRMAN, PRESIDENT & CEO | $203K | 55 | – |
+| 2026-11-19 | [[AVK]] | CHAIRMAN, PRESIDENT & CEO | $203K | 55 | +1.6% |

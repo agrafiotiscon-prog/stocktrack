@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-10 | [[SMCI]] | Director | $50K | 33 | -14.1% |
+| 2026-11-10 | [[SMCI]] | Director | $50K | 33 | -18.1% |

@@ -72,7 +72,7 @@ Cost sensitivity (63-session hold): no costs +12.6%/yr, double costs +6.7%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 62 | -1.2% | +0.4% | 52% |
+| 5 sessions | 69 | -1.5% | +0.2% | 52% |
 | 21 sessions | 2 | -4.7% | -3.3% | 0% |
 
 
@@ -80,26 +80,26 @@ Cost sensitivity (63-session hold): no costs +12.6%/yr, double costs +6.7%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | [[SCM]] | [[Ladd Robert T]] | $197K | 44 | – | pending |
-| 2026-11-19 | [[TEAM]] | [[Cannon-Brookes Michael]] | $1.9M | 38 | – | pending |
-| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | – | pending |
-| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | $203K | 55 | – | pending |
-| 2026-11-19 | [[HMH]] | [[McGee Thomas W]] | $1.6M | 76 | – | pending |
-| 2026-11-19 | [[CTGO]] | [[Van Nieuwenhuyse Rick]] | $101K | 51 | – | pending |
-| 2026-11-19 | [[MTDR]] | [[Foran Joseph Wm]] | $127K | 74 | – | pending |
-| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 69 | -5.2% | open |
-| 2026-11-18 | [[BH]] | [[BIGLARI, SARDAR]] | $2.2M | 50 | +2.3% | open |
-| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | +8.0% | open |
-| 2026-11-18 | [[TEAM]] | [[Cannon-Brookes Michael]] | $2.0M | 39 | +1.5% | open |
-| 2026-11-18 | [[CGON]] | [[Kuan Arthur]] | $2.4M | 72 | +0.4% | open |
-| 2026-11-18 | [[EFC]] | [[Penn Laurence]] | $107K | 44 | +3.9% | open |
-| 2026-11-18 | [[RILY]] | [[RILEY BRYANT R]] | $117K | 38 | -1.3% | open |
-| 2026-11-17 | [[ECC]] | [[Onorio Kenneth P]] | $104K | 45 | +6.2% | open |
-| 2026-11-17 | [[TEAM]] | [[Cannon-Brookes Michael]] | $2.0M | 39 | -2.2% | open |
-| 2026-11-17 | [[UPST]] | [[Gu Paul]] | $950K | 60 | -5.0% | open |
-| 2026-11-17 | [[LPG]] | [[HADJIPATERAS JOHN C]] | $961K | 55 | +0.7% | open |
-| 2026-11-16 | [[MX]] | [[LEE CHAE]] | $218K | 63 | -3.5% | open |
-| 2026-11-16 | [[BRSP]] | [[Mazzei Michael]] | $1.0M | 58 | -0.8% | open |
+| 2026-11-20 | [[UPST]] | [[Gu Paul]] | $860K | 76 | – | pending |
+| 2026-11-20 | [[EQPT]] | [[Schlacks Jabbok]] | $180K | 65 | – | pending |
+| 2026-11-20 | [[TEAM]] | [[Cannon-Brookes Michael]] | $1.8M | 38 | – | pending |
+| 2026-11-20 | [[GLXY]] | [[Novogratz Michael]] | $4.9M | 84 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Brock Amanda M]] | $269K | 68 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Zartler William A]] | $212K | 65 | – | pending |
+| 2026-11-20 | [[MTDR]] | [[Foran Joseph Wm]] | $123K | 73 | – | pending |
+| 2026-11-19 | [[SCM]] | [[Ladd Robert T]] | $197K | 44 | +0.5% | open |
+| 2026-11-19 | [[TEAM]] | [[Cannon-Brookes Michael]] | $1.9M | 38 | +6.1% | open |
+| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | +4.4% | open |
+| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | $203K | 55 | +1.6% | open |
+| 2026-11-19 | [[HMH]] | [[McGee Thomas W]] | $1.6M | 76 | +3.5% | open |
+| 2026-11-19 | [[CTGO]] | [[Van Nieuwenhuyse Rick]] | $101K | 51 | +2.5% | open |
+| 2026-11-19 | [[MTDR]] | [[Foran Joseph Wm]] | $127K | 74 | +2.8% | open |
+| 2026-11-18 | [[EQPT]] | [[Schlacks Jabbok]] | $250K | 69 | -5.6% | open |
+| 2026-11-18 | [[BH]] | [[BIGLARI, SARDAR]] | $2.2M | 50 | +3.4% | open |
+| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | +9.4% | open |
+| 2026-11-18 | [[TEAM]] | [[Cannon-Brookes Michael]] | $2.0M | 39 | +6.3% | open |
+| 2026-11-18 | [[CGON]] | [[Kuan Arthur]] | $2.4M | 72 | +1.0% | open |
+| 2026-11-18 | [[EFC]] | [[Penn Laurence]] | $107K | 44 | +8.2% | open |
 
 
 ```dataview

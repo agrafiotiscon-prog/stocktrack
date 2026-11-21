@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY +0.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[CCAP]] | Chief Executive Officer | $50K | 41 | +2.3% |
+| 2026-11-18 | [[CCAP]] | Chief Executive Officer | $50K | 41 | +4.2% |

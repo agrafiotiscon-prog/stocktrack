@@ -12,4 +12,5 @@ Backtest record: 8 earlier buys, average 3-month excess vs SPY -9.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[CTGO]] | Director | $199K | 43 | – |
+| 2026-11-20 | [[CTGO]] | Director | $97K | 46 | – |
+| 2026-11-19 | [[CTGO]] | Director | $199K | 43 | +2.5% |

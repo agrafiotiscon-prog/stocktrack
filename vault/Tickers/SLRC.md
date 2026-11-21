@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[GROSS MICHAEL S]] | See Remarks | $226K | 30 | +2.7% | open |
+| 2026-11-18 | [[GROSS MICHAEL S]] | See Remarks | $226K | 30 | +4.5% | open |

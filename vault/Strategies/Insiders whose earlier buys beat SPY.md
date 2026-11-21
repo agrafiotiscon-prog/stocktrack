@@ -72,34 +72,34 @@ Cost sensitivity (63-session hold): no costs +13.6%/yr, double costs +6.6%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 123 | +1.1% | +1.6% | 61% |
-| 21 sessions | 11 | +0.3% | +6.1% | 73% |
+| 5 sessions | 136 | +0.8% | +1.5% | 62% |
+| 21 sessions | 17 | +2.0% | +6.2% | 76% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-20 | [[PDYN]] | [[Wolff Benjamin G]] | $42K | 33 | – | pending |
-| 2026-11-19 | [[NXRT]] | [[Richards Paul]] | $15K | 32 | – | pending |
-| 2026-11-19 | [[SCM]] | [[Ladd Robert T]] | $197K | 44 | – | pending |
-| 2026-11-19 | [[LEO]] | [[Saba Capital Management, L.P]] | $431K | 27 | – | pending |
-| 2026-11-19 | [[HFRO]] | [[Saba Capital Management, L.P]] | $67K | 18 | – | pending |
-| 2026-11-19 | [[PAL]] | [[Schraudenbach John]] | $78K | 66 | – | pending |
-| 2026-11-19 | [[HPP]] | [[COLEMAN VICTOR J]] | $81K | 62 | – | pending |
-| 2026-11-19 | [[SEI]] | [[TEAGUE AJ]] | $10K | 15 | – | pending |
-| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | $203K | 55 | – | pending |
-| 2026-11-19 | [[EFC]] | [[Vranos Michael W]] | $2.1M | 62 | – | pending |
-| 2026-11-19 | [[DX]] | [[BOSTON BYRON L]] | $50K | 46 | – | pending |
-| 2026-11-19 | [[CTGO]] | [[Van Nieuwenhuyse Rick]] | $101K | 51 | – | pending |
-| 2026-11-19 | [[MTDR]] | [[Foran Joseph Wm]] | $127K | 74 | – | pending |
-| 2026-11-18 | [[LEO]] | [[Saba Capital Management, L.P]] | $204K | 23 | +2.9% | open |
-| 2026-11-18 | [[HFRO]] | [[Saba Capital Management, L.P]] | $1.3M | 35 | +2.3% | open |
-| 2026-11-18 | [[ECC]] | [[Majewski Thomas P]] | $118K | 68 | +8.0% | open |
-| 2026-11-18 | [[GLP]] | [[Global GP LLC]] | $312K | 25 | +2.4% | open |
-| 2026-11-18 | [[SJT]] | [[OLIVER ERIC L]] | $2.6M | 41 | -1.1% | open |
-| 2026-11-18 | [[FRPH]] | [[BAKER JOHN D II]] | $96K | 20 | +2.4% | open |
-| 2026-11-18 | [[CCAP]] | [[Breaux Jason]] | $50K | 41 | +2.3% | open |
+| 2026-11-20 | [[TTMI]] | [[FRANKLIN PHILIP G]] | $292K | 32 | – | pending |
+| 2026-11-20 | [[SJT]] | [[OLIVER ERIC L]] | $1.8M | 38 | – | pending |
+| 2026-11-20 | [[HFRO]] | [[Saba Capital Management, L.P]] | $375K | 27 | – | pending |
+| 2026-11-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $485K | 28 | – | pending |
+| 2026-11-20 | [[MRBK]] | [[Annas Christopher J]] | $32K | 32 | – | pending |
+| 2026-11-20 | [[HPP]] | [[COLEMAN VICTOR J]] | $75K | 62 | – | pending |
+| 2026-11-20 | [[ALTO]] | [[NATHAN GILBERT E]] | $81K | 26 | – | pending |
+| 2026-11-20 | [[CWBC]] | [[BARTLEIN ROBERT]] | $73K | 35 | – | pending |
+| 2026-11-20 | [[ANNX]] | [[Carson William H]] | $122K | 26 | – | pending |
+| 2026-11-20 | [[SEI]] | [[TEAGUE AJ]] | $31K | 47 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Zartler William A]] | $212K | 65 | – | pending |
+| 2026-11-20 | [[NXG]] | [[Sunderland Todd]] | $42K | 35 | – | pending |
+| 2026-11-20 | [[NMCO]] | [[BANK OF AMERICA CORP -DE-]] | $400 | 28 | – | pending |
+| 2026-11-20 | [[NBH]] | [[BANK OF AMERICA CORP -DE-]] | $3K | 28 | – | pending |
+| 2026-11-20 | [[LEO]] | [[BANK OF AMERICA CORP -DE-]] | $5K | 40 | – | pending |
+| 2026-11-20 | [[CRMD]] | [[Lefkowitz Steven W]] | $52K | 48 | – | pending |
+| 2026-11-20 | [[CION]] | [[BRESNER GREGG A]] | $48K | 39 | – | pending |
+| 2026-11-20 | [[PICS]] | [[Pruett William Rodney]] | $233K | 56 | – | pending |
+| 2026-11-20 | [[IMMX]] | [[Rachman Ilya M]] | $10K | 26 | – | pending |
+| 2026-11-20 | [[IMMX]] | [[Morris Gabriel S]] | $10K | 24 | – | pending |
 
 
 ```dataview

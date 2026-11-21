@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-05 | [[Price Teddy Ray]] | Director | $113K | 24 | +1.0% | open |
+| 2026-11-05 | [[Price Teddy Ray]] | Director | $113K | 24 | +3.8% | open |

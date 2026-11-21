@@ -12,4 +12,4 @@ Backtest record: 20 earlier buys, average 3-month excess vs SPY -28.4%. (Past wi
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[BKYI]] | Chief Executive Officer | $4K | 37 | – |
+| 2026-11-19 | [[BKYI]] | Chief Executive Officer | $4K | 37 | +1.4% |

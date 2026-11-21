@@ -72,34 +72,34 @@ Cost sensitivity (63-session hold): no costs +8.0%/yr, double costs +2.5%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 195 | -0.2% | +0.6% | 55% |
-| 21 sessions | 9 | -2.4% | -3.3% | 33% |
+| 5 sessions | 217 | -0.3% | +0.3% | 55% |
+| 21 sessions | 15 | -2.2% | -2.8% | 47% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | $183K | 70 | – | pending |
-| 2026-11-19 | [[SCM]] | [[Ladd Robert T]] | $197K | 44 | – | pending |
-| 2026-11-19 | [[PAL]] | [[Schraudenbach John]] | $78K | 66 | – | pending |
-| 2026-11-19 | [[PAL]] | [[COL DOUGLAS L]] | $84K | 66 | – | pending |
-| 2026-11-19 | [[CCB]] | [[HOVDE STEVEN D]] | $550K | 49 | – | pending |
-| 2026-11-19 | [[BSM]] | [[Carter Thomas L Jr]] | $338K | 40 | – | pending |
-| 2026-11-19 | [[IRTC]] | [[TALWALKAR ABHIJIT Y]] | $764K | 51 | – | pending |
-| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | – | pending |
-| 2026-11-19 | [[PLD]] | [[KELLY ALFRED F JR]] | $587K | 50 | – | pending |
-| 2026-11-19 | [[APC]] | [[HEYER ANDREW R]] | $279K | 46 | – | pending |
-| 2026-11-19 | [[BCML]] | [[PERDUE MICHAEL J]] | $151K | 44 | – | pending |
-| 2026-11-19 | [[ITT]] | [[Berryman Kevin C]] | $502K | 49 | – | pending |
-| 2026-11-19 | [[SKYD]] | [[Cardinale Gerald J]] | $495K | 48 | – | pending |
-| 2026-11-19 | [[HPP]] | [[COLEMAN VICTOR J]] | $81K | 62 | – | pending |
-| 2026-11-19 | [[AVK]] | [[MAITLAND TRACY V]] | $203K | 55 | – | pending |
-| 2026-11-19 | [[HMH]] | [[Bergsvik Eirik]] | $88K | 53 | – | pending |
-| 2026-11-19 | [[OBK]] | [[Jones Michael Aubrey]] | $79K | 43 | – | pending |
-| 2026-11-19 | [[HMH]] | [[McGee Thomas W]] | $1.6M | 76 | – | pending |
-| 2026-11-19 | [[SRTS]] | [[Sachetta Eric]] | $183K | 52 | – | pending |
-| 2026-11-19 | [[EFC]] | [[Vranos Michael W]] | $2.1M | 62 | – | pending |
+| 2026-11-20 | [[UPST]] | [[Gu Paul]] | $860K | 76 | – | pending |
+| 2026-11-20 | [[UPST]] | [[Girouard Dave]] | $951K | 46 | – | pending |
+| 2026-11-20 | [[HBCP]] | [[Hill Darren M]] | $315K | 53 | – | pending |
+| 2026-11-20 | [[CRMD]] | [[Blum Susan]] | $23K | 56 | – | pending |
+| 2026-11-20 | [[EQPT]] | [[Schlacks Jabbok]] | $180K | 65 | – | pending |
+| 2026-11-20 | [[ARR]] | [[Harper Gordon]] | $27K | 46 | – | pending |
+| 2026-11-20 | [[TJX]] | [[PINTOFF CRAIG ADAM]] | $200K | 45 | – | pending |
+| 2026-11-20 | [[UPBD]] | [[LEWIS HAROLD G]] | $399K | 73 | – | pending |
+| 2026-11-20 | [[HPP]] | [[COLEMAN VICTOR J]] | $75K | 62 | – | pending |
+| 2026-11-20 | [[OFRM]] | [[Garner Jennifer Anne]] | $118K | 50 | – | pending |
+| 2026-11-20 | [[AVEX]] | [[Morrison Christine M]] | $102K | 43 | – | pending |
+| 2026-11-20 | [[OFRM]] | [[Morris Scott James]] | $142K | 69 | – | pending |
+| 2026-11-20 | [[INOD]] | [[Massey Stewart R]] | $321K | 47 | – | pending |
+| 2026-11-20 | [[GLXY]] | [[DEASON DOUGLAS R]] | $99K | 42 | – | pending |
+| 2026-11-20 | [[GLXY]] | [[Novogratz Michael]] | $4.9M | 84 | – | pending |
+| 2026-11-20 | [[NXG]] | [[Bruce Brian R]] | $50K | 51 | – | pending |
+| 2026-11-20 | [[SEI]] | [[TEAGUE AJ]] | $31K | 47 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Ramachandran Kyle S]] | $160K | 61 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Brock Amanda M]] | $269K | 68 | – | pending |
+| 2026-11-20 | [[SEI]] | [[Zartler William A]] | $212K | 65 | – | pending |
 
 
 ```dataview

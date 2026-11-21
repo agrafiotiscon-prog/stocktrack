@@ -12,5 +12,5 @@ Backtest record: 14 earlier buys, average 3-month excess vs SPY -5.2%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[RMIX]] | Director | $183K | 70 | – |
-| 2026-11-19 | [[APC]] | Director | $279K | 46 | – |
+| 2026-11-19 | [[RMIX]] | Director | $183K | 70 | -4.1% |
+| 2026-11-19 | [[APC]] | Director | $279K | 46 | +4.1% |

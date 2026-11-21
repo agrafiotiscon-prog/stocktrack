@@ -83,22 +83,24 @@ Cost sensitivity (63-session hold): no costs +21.8%/yr, double costs +16.5%/yr.
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[SJT]] | [[OLIVER ERIC L]] | $2.6M | 41 | -1.1% | open |
-| 2026-11-17 | [[BOLT]] | [[Coastlands Capital LP]] | $310K | 32 | -7.7% | open |
-| 2026-11-12 | [[OBIO]] | [[RTW INVESTMENTS, LP]] | $6.0M | 71 | +17.8% | open |
-| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | +5.8% | open |
-| 2026-11-10 | [[BOLT]] | [[Coastlands Capital LP]] | $319K | 33 | -15.3% | open |
-| 2026-11-09 | [[LAW]] | [[Friedrichsen Eric]] | $24K | 30 | +5.9% | open |
-| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | +4.2% | open |
-| 2026-11-09 | [[EAF]] | [[Shivaram Sachin M]] | $50K | 39 | -19.9% | open |
-| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | -0.2% | open |
-| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | -12.4% | open |
-| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | -16.8% | open |
-| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -19.1% | open |
-| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | -1.8% | open |
-| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | -1.8% | open |
-| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -8.3% | open |
-| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -41.9% | open |
+| 2026-11-20 | [[SJT]] | [[OLIVER ERIC L]] | $1.8M | 38 | – | pending |
+| 2026-11-20 | [[UPBD]] | [[LEWIS HAROLD G]] | $399K | 73 | – | pending |
+| 2026-11-18 | [[SJT]] | [[OLIVER ERIC L]] | $2.6M | 41 | -6.1% | open |
+| 2026-11-17 | [[BOLT]] | [[Coastlands Capital LP]] | $310K | 32 | -6.8% | open |
+| 2026-11-12 | [[OBIO]] | [[RTW INVESTMENTS, LP]] | $6.0M | 71 | +14.5% | open |
+| 2026-11-10 | [[UPBD]] | [[Young Scott A]] | $150K | 75 | +11.6% | open |
+| 2026-11-10 | [[BOLT]] | [[Coastlands Capital LP]] | $319K | 33 | -14.2% | open |
+| 2026-11-09 | [[LAW]] | [[Friedrichsen Eric]] | $24K | 30 | +12.2% | open |
+| 2026-11-09 | [[UPBD]] | [[Karam Fahmi]] | $300K | 71 | +9.9% | open |
+| 2026-11-09 | [[EAF]] | [[Shivaram Sachin M]] | $50K | 39 | -23.5% | open |
+| 2026-11-06 | [[KOD]] | [[BAKER BROS. ADVISORS LP]] | $24.3M | 45 | +2.6% | open |
+| 2026-11-04 | [[AEYE]] | [[HAWKINS JAMES B]] | $38K | 21 | -9.5% | open |
+| 2026-11-02 | [[AEYE]] | [[HAWKINS JAMES B]] | $53K | 23 | -13.8% | open |
+| 2026-10-29 | [[AEYE]] | [[HAWKINS JAMES B]] | $37K | 21 | -16.1% | open |
+| 2026-10-28 | [[ACN]] | [[Sweet Julie Spellman]] | $3.0M | 78 | +2.7% | open |
+| 2026-10-28 | [[ACN]] | [[Price Paula A]] | $200K | 46 | +2.7% | open |
+| 2026-10-23 | [[BZUN]] | [[Qiu Wenbin]] | $40K | 33 | -10.9% | open |
+| 2026-10-20 | [[XGN]] | [[Chernett Jorey]] | $104K | 20 | -41.1% | open |
 
 
 ```dataview

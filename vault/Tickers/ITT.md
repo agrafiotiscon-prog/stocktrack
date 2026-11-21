@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-19 ITT Berryman Kevin C\|2026-11-19]] | [[Berryman Kevin C]] | Director | $502K | 49 | – | pending |
+| [[2026-11-19 ITT Berryman Kevin C\|2026-11-19]] | [[Berryman Kevin C]] | Director | $502K | 49 | +1.1% | open |

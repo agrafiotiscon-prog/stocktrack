@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[ITT]] | Director | $502K | 49 | – |
+| 2026-11-19 | [[ITT]] | Director | $502K | 49 | +1.1% |

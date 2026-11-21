@@ -12,4 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +3.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[NTB]] | Director | $165K | 27 | +0.9% |
+| 2026-11-20 | [[NTB]] | Director | $377K | 33 | – |
+| 2026-11-18 | [[NTB]] | Director | $165K | 27 | +4.0% |

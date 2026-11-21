@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY +37.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[SENS]] | Director | $176K | 33 | -19.0% |
+| 2026-11-16 | [[SENS]] | Director | $176K | 33 | -23.3% |

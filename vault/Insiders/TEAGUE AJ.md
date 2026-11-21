@@ -12,6 +12,7 @@ Backtest record: 37 earlier buys, average 3-month excess vs SPY +5.5%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[SEI]] | Director | $10K | 15 | – |
-| 2026-11-16 | [[SEI]] | Director | $35K | 19 | +2.3% |
-| 2026-11-12 | [[SEI]] | Director | $41K | 20 | -0.4% |
+| 2026-11-20 | [[SEI]] | Director | $31K | 47 | – |
+| 2026-11-19 | [[SEI]] | Director | $10K | 15 | -3.5% |
+| 2026-11-16 | [[SEI]] | Director | $35K | 19 | -5.1% |
+| 2026-11-12 | [[SEI]] | Director | $41K | 20 | -7.3% |

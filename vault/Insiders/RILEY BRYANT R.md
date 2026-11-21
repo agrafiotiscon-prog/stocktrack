@@ -12,4 +12,4 @@ Backtest record: 82 earlier buys, average 3-month excess vs SPY +8.1%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[RILY]] | Chairman and Co-CEO | $117K | 38 | -1.3% |
+| 2026-11-18 | [[RILY]] | Chairman and Co-CEO | $117K | 38 | -2.9% |

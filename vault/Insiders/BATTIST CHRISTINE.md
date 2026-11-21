@@ -12,4 +12,4 @@ Backtest record: 20 earlier buys, average 3-month excess vs SPY -0.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[CSWC]] | Director | $10K | 17 | – |
+| 2026-11-19 | [[CSWC]] | Director | $10K | 17 | +2.6% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[MILLIGAN GEORGE D]] | Director | $237K | 32 | +5.1% | open |
+| 2026-11-09 | [[MILLIGAN GEORGE D]] | Director | $237K | 32 | +8.3% | open |

@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +9.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-12 | [[BOOT]] | CFO & SECRETARY | $271K | 44 | +6.7% |
+| 2026-11-12 | [[BOOT]] | CFO & SECRETARY | $271K | 44 | +7.4% |

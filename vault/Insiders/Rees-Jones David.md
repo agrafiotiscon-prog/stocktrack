@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[RMIX]] | Director | $731K | 76 | -12.5% |
+| 2026-11-18 | [[RMIX]] | Director | $731K | 76 | -15.0% |

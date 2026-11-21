@@ -15,9 +15,9 @@ strategies: ["all_liquid", "ceo_cfo_100k"]
 entry_date: "2026-11-16"
 entry_price: 149.03
 status: "open"
-abn_now: -0.0624214
-ret_now: -0.107495
-abn_5: 
+abn_now: -0.0166545
+ret_now: -0.0964907
+abn_5: -0.0166545
 abn_21: 
 abn_63: 
 abn_126: 
@@ -47,7 +47,7 @@ tags: ["signal", "strategy/all_liquid", "strategy/ceo_cfo_100k"]
 
 | 1 week | 1 month | 3 months | 6 months | 1 year | So far |
 |---|---|---|---|---|---|
-| – | – | – | – | – | -6.2% |
+| -1.7% | – | – | – | – | -1.7% |
 
 
 [SEC filing](https://www.sec.gov/Archives/edgar/data/1650372/000166612026000034/0001666120-26-000034-index.htm)

@@ -72,34 +72,34 @@ Cost sensitivity (63-session hold): no costs +5.0%/yr, double costs -1.6%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 67 | -2.5% | -1.5% | 45% |
-| 21 sessions | 3 | -18.2% | -15.8% | 0% |
+| 5 sessions | 78 | -2.3% | -1.5% | 44% |
+| 21 sessions | 4 | -15.3% | -6.7% | 0% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-20 | [[UAMY]] | [[Bardswich Lloyd]] | $25K | 25 | – | pending |
-| 2026-11-20 | [[PDYN]] | [[Wolff Benjamin G]] | $42K | 33 | – | pending |
-| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | $183K | 70 | – | pending |
-| 2026-11-19 | [[NXRT]] | [[Richards Paul]] | $15K | 32 | – | pending |
-| 2026-11-19 | [[PAL]] | [[Schraudenbach John]] | $78K | 66 | – | pending |
-| 2026-11-19 | [[PAL]] | [[COL DOUGLAS L]] | $84K | 66 | – | pending |
-| 2026-11-19 | [[ARR]] | [[ULM SCOTT]] | $52K | 39 | – | pending |
-| 2026-11-19 | [[SKYD]] | [[Cardinale Gerald J]] | $495K | 48 | – | pending |
-| 2026-11-19 | [[HPP]] | [[COLEMAN VICTOR J]] | $81K | 62 | – | pending |
-| 2026-11-19 | [[HMH]] | [[Bergsvik Eirik]] | $88K | 53 | – | pending |
-| 2026-11-19 | [[HMH]] | [[McGee Thomas W]] | $1.6M | 76 | – | pending |
-| 2026-11-19 | [[BKYI]] | [[DEPASQUALE MICHAEL W]] | $4K | 37 | – | pending |
-| 2026-11-19 | [[CTGO]] | [[Van Nieuwenhuyse Rick]] | $101K | 51 | – | pending |
-| 2026-11-19 | [[ECOR]] | [[Fox Michael]] | $13K | 31 | – | pending |
-| 2026-11-19 | [[CTGO]] | [[JUNEAU JOHN B]] | $199K | 43 | – | pending |
-| 2026-11-19 | [[AGMB]] | [[Epstein David R]] | $28K | 25 | – | pending |
-| 2026-11-18 | [[USAR]] | [[BLITZER MICHAEL]] | $3.0M | 51 | +2.6% | open |
-| 2026-11-18 | [[RMIX]] | [[Johnston Bretton A]] | $12K | 58 | -12.5% | open |
-| 2026-11-18 | [[RMIX]] | [[Rees-Jones David]] | $731K | 76 | -12.5% | open |
-| 2026-11-18 | [[RMIX]] | [[Matteson Mark R]] | $55K | 64 | -12.5% | open |
+| 2026-11-20 | [[UPST]] | [[Gu Paul]] | $860K | 76 | – | pending |
+| 2026-11-20 | [[UPST]] | [[Girouard Dave]] | $951K | 46 | – | pending |
+| 2026-11-20 | [[TTMI]] | [[FRANKLIN PHILIP G]] | $292K | 32 | – | pending |
+| 2026-11-20 | [[CRMD]] | [[Blum Susan]] | $23K | 56 | – | pending |
+| 2026-11-20 | [[ARR]] | [[Harper Gordon]] | $27K | 46 | – | pending |
+| 2026-11-20 | [[HPP]] | [[COLEMAN VICTOR J]] | $75K | 62 | – | pending |
+| 2026-11-20 | [[OFRM]] | [[Garner Jennifer Anne]] | $118K | 50 | – | pending |
+| 2026-11-20 | [[AVEX]] | [[Morrison Christine M]] | $102K | 43 | – | pending |
+| 2026-11-20 | [[OFRM]] | [[Morris Scott James]] | $142K | 69 | – | pending |
+| 2026-11-20 | [[INOD]] | [[Massey Stewart R]] | $321K | 47 | – | pending |
+| 2026-11-20 | [[ANNX]] | [[Carson William H]] | $122K | 26 | – | pending |
+| 2026-11-20 | [[GLXY]] | [[DEASON DOUGLAS R]] | $99K | 42 | – | pending |
+| 2026-11-20 | [[GLXY]] | [[Novogratz Michael]] | $4.9M | 84 | – | pending |
+| 2026-11-20 | [[BTDR]] | [[Naas Lars Eivind Haugnes]] | $34K | 27 | – | pending |
+| 2026-11-20 | [[CRMD]] | [[Lefkowitz Steven W]] | $52K | 48 | – | pending |
+| 2026-11-20 | [[EDRY]] | [[Pittas Aristeidis P]] | $38K | 21 | – | pending |
+| 2026-11-20 | [[PICS]] | [[Pruett William Rodney]] | $233K | 56 | – | pending |
+| 2026-11-20 | [[PICS]] | [[Costa de Moura Mauricio]] | $25K | 56 | – | pending |
+| 2026-11-20 | [[PICS]] | [[Teixeira Linares Marcio Antonio]] | $299K | 59 | – | pending |
+| 2026-11-20 | [[IMMX]] | [[Rachman Ilya M]] | $10K | 26 | – | pending |
 
 
 ```dataview

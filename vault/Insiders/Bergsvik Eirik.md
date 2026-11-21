@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -12.6%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[HMH]] | Chief Executive Officer | $88K | 53 | – |
+| 2026-11-19 | [[HMH]] | Chief Executive Officer | $88K | 53 | +3.5% |

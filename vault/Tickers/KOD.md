@@ -9,7 +9,7 @@ signals: 4
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-06 KOD BAKER BROS. ADVISORS LP\|2026-11-06]] | [[BAKER BROS. ADVISORS LP]] | Director | $24.3M | 45 | -0.2% | open |
-| [[2026-09-30 KOD Baker Bros. Advisors (GP) LLC\|2026-09-30]] | [[Baker Bros. Advisors (GP) LLC]] | Director | $58.6M | 68 | +9.0% | open |
-| [[2026-09-30 KOD BAKER JULIAN\|2026-09-30]] | [[BAKER JULIAN]] | Director | $35.0M | 66 | +9.0% | open |
-| [[2026-09-30 KOD 667, L.P\|2026-09-30]] | [[667, L.P]] | Director | $63.4M | 82 | +9.0% | open |
+| [[2026-11-06 KOD BAKER BROS. ADVISORS LP\|2026-11-06]] | [[BAKER BROS. ADVISORS LP]] | Director | $24.3M | 45 | +2.6% | open |
+| [[2026-09-30 KOD Baker Bros. Advisors (GP) LLC\|2026-09-30]] | [[Baker Bros. Advisors (GP) LLC]] | Director | $58.6M | 68 | +11.6% | open |
+| [[2026-09-30 KOD BAKER JULIAN\|2026-09-30]] | [[BAKER JULIAN]] | Director | $35.0M | 66 | +11.6% | open |
+| [[2026-09-30 KOD 667, L.P\|2026-09-30]] | [[667, L.P]] | Director | $63.4M | 82 | +11.6% | open |

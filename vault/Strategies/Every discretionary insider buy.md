@@ -72,34 +72,34 @@ Cost sensitivity (63-session hold): no costs +7.6%/yr, double costs +1.9%/yr.
 
 | Horizon | Matured | Mean vs SPY | Median | Beat SPY |
 |---|---|---|---|---|
-| 5 sessions | 392 | +0.0% | +0.9% | 57% |
-| 21 sessions | 32 | -2.7% | +2.6% | 56% |
+| 5 sessions | 427 | -0.0% | +0.6% | 56% |
+| 21 sessions | 42 | -2.0% | +2.6% | 60% |
 
 
 ### Latest live signals
 
 | Filed | Ticker | Insider | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-20 | [[UAMY]] | [[Bardswich Lloyd]] | $25K | 25 | – | pending |
-| 2026-11-20 | [[PDYN]] | [[Wolff Benjamin G]] | $42K | 33 | – | pending |
-| 2026-11-19 | [[RMIX]] | [[HEYER ANDREW R]] | $183K | 70 | – | pending |
-| 2026-11-19 | [[NXRT]] | [[Richards Paul]] | $15K | 32 | – | pending |
-| 2026-11-19 | [[SCM]] | [[Ladd Robert T]] | $197K | 44 | – | pending |
-| 2026-11-19 | [[LEO]] | [[Saba Capital Management, L.P]] | $431K | 27 | – | pending |
-| 2026-11-19 | [[HFRO]] | [[Saba Capital Management, L.P]] | $67K | 18 | – | pending |
-| 2026-11-19 | [[PAL]] | [[Schraudenbach John]] | $78K | 66 | – | pending |
-| 2026-11-19 | [[PAL]] | [[COL DOUGLAS L]] | $84K | 66 | – | pending |
-| 2026-11-19 | [[CCB]] | [[HOVDE STEVEN D]] | $550K | 49 | – | pending |
-| 2026-11-19 | [[BSM]] | [[Carter Thomas L Jr]] | $338K | 40 | – | pending |
-| 2026-11-19 | [[IRTC]] | [[TALWALKAR ABHIJIT Y]] | $764K | 51 | – | pending |
-| 2026-11-19 | [[CSWC]] | [[BATTIST CHRISTINE]] | $10K | 17 | – | pending |
-| 2026-11-19 | [[TEAM]] | [[Cannon-Brookes Michael]] | $1.9M | 38 | – | pending |
-| 2026-11-19 | [[BGS]] | [[Mills Robert D]] | $250K | 54 | – | pending |
-| 2026-11-19 | [[PLD]] | [[KELLY ALFRED F JR]] | $587K | 50 | – | pending |
-| 2026-11-19 | [[APC]] | [[HEYER ANDREW R]] | $279K | 46 | – | pending |
-| 2026-11-19 | [[SKYH]] | [[GESSOW ANDREW J]] | $56K | 33 | – | pending |
-| 2026-11-19 | [[BCML]] | [[PERDUE MICHAEL J]] | $151K | 44 | – | pending |
-| 2026-11-19 | [[ARR]] | [[ULM SCOTT]] | $52K | 39 | – | pending |
+| 2026-11-20 | [[UPST]] | [[Gu Paul]] | $860K | 76 | – | pending |
+| 2026-11-20 | [[UPST]] | [[Girouard Dave]] | $951K | 46 | – | pending |
+| 2026-11-20 | [[TTMI]] | [[FRANKLIN PHILIP G]] | $292K | 32 | – | pending |
+| 2026-11-20 | [[HBCP]] | [[Hill Darren M]] | $315K | 53 | – | pending |
+| 2026-11-20 | [[SJT]] | [[OLIVER ERIC L]] | $1.8M | 38 | – | pending |
+| 2026-11-20 | [[HFRO]] | [[Saba Capital Management, L.P]] | $375K | 27 | – | pending |
+| 2026-11-20 | [[CRMD]] | [[Blum Susan]] | $23K | 56 | – | pending |
+| 2026-11-20 | [[LEO]] | [[Saba Capital Management, L.P]] | $485K | 28 | – | pending |
+| 2026-11-20 | [[EQPT]] | [[Schlacks Jabbok]] | $180K | 65 | – | pending |
+| 2026-11-20 | [[MRBK]] | [[Annas Christopher J]] | $32K | 32 | – | pending |
+| 2026-11-20 | [[ARR]] | [[Harper Gordon]] | $27K | 46 | – | pending |
+| 2026-11-20 | [[TJX]] | [[PINTOFF CRAIG ADAM]] | $200K | 45 | – | pending |
+| 2026-11-20 | [[UPBD]] | [[LEWIS HAROLD G]] | $399K | 73 | – | pending |
+| 2026-11-20 | [[CL]] | [[Malcolm Gregory]] | $503 | 5 | – | pending |
+| 2026-11-20 | [[HPP]] | [[COLEMAN VICTOR J]] | $75K | 62 | – | pending |
+| 2026-11-20 | [[OFRM]] | [[Garner Jennifer Anne]] | $118K | 50 | – | pending |
+| 2026-11-20 | [[ALTO]] | [[NATHAN GILBERT E]] | $81K | 26 | – | pending |
+| 2026-11-20 | [[AVEX]] | [[Morrison Christine M]] | $102K | 43 | – | pending |
+| 2026-11-20 | [[CWBC]] | [[BARTLEIN ROBERT]] | $73K | 35 | – | pending |
+| 2026-11-20 | [[TEAM]] | [[Cannon-Brookes Michael]] | $1.8M | 38 | – | pending |
 
 
 ```dataview

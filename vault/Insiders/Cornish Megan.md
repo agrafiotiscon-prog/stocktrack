@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[SRTS]] | Director | $5K | 39 | – |
+| 2026-11-19 | [[SRTS]] | Director | $5K | 39 | -2.1% |

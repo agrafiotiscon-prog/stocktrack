@@ -12,5 +12,5 @@ Backtest record: 8 earlier buys, average 3-month excess vs SPY -3.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[UMH]] | Director | $14K | 45 | +5.0% |
-| 2026-11-04 | [[UMH]] | Director | $8K | 32 | -0.6% |
+| 2026-11-18 | [[UMH]] | Director | $14K | 45 | +6.5% |
+| 2026-11-04 | [[UMH]] | Director | $8K | 32 | +1.0% |

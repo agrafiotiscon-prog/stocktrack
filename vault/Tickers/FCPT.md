@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-13 | [[Lenehan William H]] | President and CEO | $150K | 39 | +1.3% | open |
-| [[2026-11-02 FCPT Lenehan William H\|2026-11-02]] | [[Lenehan William H]] | President and CEO | $226K | 42 | +2.5% | open |
+| 2026-11-13 | [[Lenehan William H]] | President and CEO | $150K | 39 | +4.8% | open |
+| [[2026-11-02 FCPT Lenehan William H\|2026-11-02]] | [[Lenehan William H]] | President and CEO | $226K | 42 | +6.1% | open |

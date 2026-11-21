@@ -12,5 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -6.8%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-09 | [[UPBD]] | Chief Executive Officer | $300K | 71 | +4.2% |
-| 2026-11-05 | [[UPBD]] | Chief Executive Officer | $100K | 64 | +4.1% |
+| 2026-11-09 | [[UPBD]] | Chief Executive Officer | $300K | 71 | +9.9% |
+| 2026-11-05 | [[UPBD]] | Chief Executive Officer | $100K | 64 | +10.0% |

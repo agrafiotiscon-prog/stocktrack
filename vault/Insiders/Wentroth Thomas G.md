@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[RMIX]] | Chief Financial Officer | $995 | 54 | +2.5% |
+| 2026-11-17 | [[RMIX]] | Chief Financial Officer | $995 | 54 | -1.1% |

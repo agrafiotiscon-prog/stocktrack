@@ -12,5 +12,5 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY -12.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-05 | [[JBSS]] | Sr. VP, Corporate Controller | $11K | 19 | +15.9% |
-| 2026-11-04 | [[JBSS]] | Sr. VP, Corporate Controller | $16K | 22 | +14.8% |
+| 2026-11-05 | [[JBSS]] | Sr. VP, Corporate Controller | $11K | 19 | +20.0% |
+| 2026-11-04 | [[JBSS]] | Sr. VP, Corporate Controller | $16K | 22 | +18.8% |

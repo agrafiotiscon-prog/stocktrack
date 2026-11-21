@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-09 | [[LAUCK ANDREW]] | Director | $10K | 15 | -14.5% | open |
+| 2026-11-09 | [[LAUCK ANDREW]] | Director | $10K | 15 | -15.6% | open |

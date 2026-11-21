@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $32K | 17 | +6.5% | open |
+| 2026-11-18 | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $32K | 17 | +8.8% | open |

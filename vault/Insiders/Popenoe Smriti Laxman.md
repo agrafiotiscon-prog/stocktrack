@@ -12,5 +12,5 @@ Backtest record: 9 earlier buys, average 3-month excess vs SPY +0.0%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[DX]] | Co-CEO and President | $26K | 43 | +2.1% |
-| 2026-10-20 | [[DX]] | Co-CEO and President | $106K | 39 | -3.1% |
+| 2026-11-16 | [[DX]] | Co-CEO and President | $26K | 43 | +5.6% |
+| 2026-10-20 | [[DX]] | Co-CEO and President | $106K | 39 | +0.2% |

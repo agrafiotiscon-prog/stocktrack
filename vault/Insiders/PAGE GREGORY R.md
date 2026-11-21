@@ -12,4 +12,4 @@ Backtest record: 10 earlier buys, average 3-month excess vs SPY +3.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[CTVA]] | Director | $185K | 57 | -9.2% |
+| 2026-11-16 | [[CTVA]] | Director | $185K | 57 | -8.1% |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-19 AVK MAITLAND TRACY V\|2026-11-19]] | [[MAITLAND TRACY V]] | CHAIRMAN, PRESIDENT & CEO | $203K | 55 | – | pending |
+| [[2026-11-19 AVK MAITLAND TRACY V\|2026-11-19]] | [[MAITLAND TRACY V]] | CHAIRMAN, PRESIDENT & CEO | $203K | 55 | +1.6% | open |

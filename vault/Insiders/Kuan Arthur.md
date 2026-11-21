@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-18 | [[CGON]] | Chief Executive Officer | $2.4M | 72 | +0.4% |
+| 2026-11-18 | [[CGON]] | Chief Executive Officer | $2.4M | 72 | +1.0% |

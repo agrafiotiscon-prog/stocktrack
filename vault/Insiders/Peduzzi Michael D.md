@@ -12,4 +12,4 @@ Backtest record: 21 earlier buys, average 3-month excess vs SPY -0.7%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[CCNE]] | President & CEO | $18K | 30 | +0.0% |
+| 2026-11-13 | [[CCNE]] | President & CEO | $18K | 30 | +2.3% |

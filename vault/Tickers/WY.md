@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-13 WY BECKWITT RICHARD\|2026-11-13]] | [[BECKWITT RICHARD]] | Director | $307K | 46 | -2.5% | open |
+| [[2026-11-13 WY BECKWITT RICHARD\|2026-11-13]] | [[BECKWITT RICHARD]] | Director | $307K | 46 | +1.2% | open |

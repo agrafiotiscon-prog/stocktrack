@@ -12,4 +12,4 @@ Backtest record: 1 earlier buys, average 3-month excess vs SPY +2.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[LPTH]] | Director | $636 | 13 | -5.2% |
+| 2026-11-17 | [[LPTH]] | Director | $636 | 13 | -14.4% |

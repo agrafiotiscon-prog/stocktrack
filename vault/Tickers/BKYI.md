@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-19 | [[DEPASQUALE MICHAEL W]] | Chief Executive Officer | $4K | 37 | – | pending |
+| 2026-11-19 | [[DEPASQUALE MICHAEL W]] | Chief Executive Officer | $4K | 37 | +1.4% | open |

@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[Miranda Kenneth M]] | Director | $17K | 21 | +2.6% | open |
+| 2026-11-18 | [[Miranda Kenneth M]] | Director | $17K | 21 | +5.5% | open |

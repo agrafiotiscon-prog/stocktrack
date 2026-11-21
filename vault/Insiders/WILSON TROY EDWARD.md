@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +14.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[KURA]] | President and CEO | $1.5M | 66 | -1.2% |
+| 2026-11-16 | [[KURA]] | President and CEO | $1.5M | 66 | -3.4% |

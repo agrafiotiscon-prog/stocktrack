@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | [[GHAURI NAEEM]] | President | $17K | 27 | -1.4% | open |
-| 2026-11-16 | [[GHAURI NAJEEB]] | CEO | $22K | 30 | -1.4% | open |
+| 2026-11-16 | [[GHAURI NAEEM]] | President | $17K | 27 | +0.5% | open |
+| 2026-11-16 | [[GHAURI NAJEEB]] | CEO | $22K | 30 | +0.5% | open |

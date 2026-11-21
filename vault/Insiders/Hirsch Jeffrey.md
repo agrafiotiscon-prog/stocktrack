@@ -12,4 +12,4 @@ Backtest record: 4 earlier buys, average 3-month excess vs SPY -7.9%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-03 | [[STRZ]] | President and CEO | $111K | 55 | +5.7% |
+| 2026-11-03 | [[STRZ]] | President and CEO | $111K | 55 | +2.9% |

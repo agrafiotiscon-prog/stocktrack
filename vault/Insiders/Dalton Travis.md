@@ -12,4 +12,4 @@ Backtest record: 7 earlier buys, average 3-month excess vs SPY +30.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-13 | [[CTEV]] | Pres., CEO & Executive Chair | $150K | 58 | -27.3% |
+| 2026-11-13 | [[CTEV]] | Pres., CEO & Executive Chair | $150K | 58 | -26.5% |

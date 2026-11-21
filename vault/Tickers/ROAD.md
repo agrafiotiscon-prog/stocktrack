@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-06 | [[Skelly Noreen E]] | Director | $8K | 17 | -7.0% | open |
+| 2026-11-06 | [[Skelly Noreen E]] | Director | $8K | 17 | -7.2% | open |

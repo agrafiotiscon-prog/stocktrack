@@ -12,4 +12,4 @@ Backtest record: 18 earlier buys, average 3-month excess vs SPY -3.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[ARR]] | CEO | $52K | 39 | – |
+| 2026-11-19 | [[ARR]] | CEO | $52K | 39 | +2.6% |

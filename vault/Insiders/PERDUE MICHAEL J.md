@@ -12,4 +12,4 @@ Backtest record: 2 earlier buys, average 3-month excess vs SPY -1.3%. (Past winn
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[BCML]] | Director | $151K | 44 | – |
+| 2026-11-19 | [[BCML]] | Director | $151K | 44 | +1.5% |

@@ -10,4 +10,4 @@ past_mean_abn_63:
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[ITG]] | Director | $508K | 69 | +5.9% |
+| 2026-11-17 | [[ITG]] | Director | $508K | 69 | -1.4% |

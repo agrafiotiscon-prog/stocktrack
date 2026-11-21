@@ -9,4 +9,4 @@ signals: 1
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-11-17 PEPG RA CAPITAL MANAGEMENT, L.P\|2026-11-17]] | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $43.1M | 61 | -2.9% | open |
+| [[2026-11-17 PEPG RA CAPITAL MANAGEMENT, L.P\|2026-11-17]] | [[RA CAPITAL MANAGEMENT, L.P]] | Director | $43.1M | 61 | -3.0% | open |

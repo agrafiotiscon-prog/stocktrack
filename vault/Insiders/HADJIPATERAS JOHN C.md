@@ -12,4 +12,4 @@ Backtest record: 14 earlier buys, average 3-month excess vs SPY +0.4%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-17 | [[LPG]] | President and CEO | $961K | 55 | +0.7% |
+| 2026-11-17 | [[LPG]] | President and CEO | $961K | 55 | +2.6% |

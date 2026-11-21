@@ -2,14 +2,15 @@
 type: "ticker"
 ticker: "NMCO"
 company: "Nuveen Municipal Credit Opportunities Fund"
-signals: 4
+signals: 5
 ---
 
 # NMCO: Nuveen Municipal Credit Opportunities Fund
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| [[2026-10-27 NMCO Robert Young L\|2026-10-27]] | [[Robert Young L]] | Other | $249K | 50 | +3.8% | open |
-| [[2026-10-22 NMCO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | +3.4% | open |
-| [[2026-10-22 NMCO Jones Nathaniel T\|2026-10-22]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | +3.4% | open |
-| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +7.5% | open |
+| 2026-11-20 | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $400 | 28 | – | pending |
+| [[2026-10-27 NMCO Robert Young L\|2026-10-27]] | [[Robert Young L]] | Other | $249K | 50 | +6.0% | open |
+| [[2026-10-22 NMCO BANK OF AMERICA CORP -DE-\|2026-10-22]] | [[BANK OF AMERICA CORP -DE-]] | 10% Owner | $974 | 40 | +5.6% | open |
+| [[2026-10-22 NMCO Jones Nathaniel T\|2026-10-22]] | [[Jones Nathaniel T]] | Vice President | $4K | 40 | +5.6% | open |
+| 2026-10-09 | [[Hamilton Michael S]] | Other | $26K | 28 | +9.6% | open |

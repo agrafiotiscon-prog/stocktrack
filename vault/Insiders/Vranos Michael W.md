@@ -12,4 +12,4 @@ Backtest record: 27 earlier buys, average 3-month excess vs SPY +5.0%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-19 | [[EFC]] | Co-Chief Investment Officer | $2.1M | 62 | – |
+| 2026-11-19 | [[EFC]] | Co-Chief Investment Officer | $2.1M | 62 | +3.9% |

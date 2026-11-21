@@ -12,4 +12,4 @@ Backtest record: 3 earlier buys, average 3-month excess vs SPY +11.3%. (Past win
 
 | Filed | Ticker | Role | Value | Score | vs SPY so far |
 |---|---|---|---|---|---|
-| 2026-11-16 | [[CACC]] | Director | $252K | 54 | -1.0% |
+| 2026-11-16 | [[CACC]] | Director | $252K | 54 | +1.5% |

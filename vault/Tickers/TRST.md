@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-17 | [[Silverman Frank B]] | Director | $3K | 15 | +2.2% | open |
-| 2026-11-17 | [[Kieper-Fusco Patricia Ann]] | Director | $5K | 32 | +2.2% | open |
+| 2026-11-17 | [[Silverman Frank B]] | Director | $3K | 15 | +5.5% | open |
+| 2026-11-17 | [[Kieper-Fusco Patricia Ann]] | Director | $5K | 32 | +5.5% | open |

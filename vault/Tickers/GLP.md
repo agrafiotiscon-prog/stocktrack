@@ -9,5 +9,5 @@ signals: 2
 
 | Filed | Insider | Role | Value | Score | vs SPY so far | Status |
 |---|---|---|---|---|---|---|
-| 2026-11-18 | [[Global GP LLC]] | Other | $312K | 25 | +2.4% | open |
-| 2026-11-13 | [[Global GP LLC]] | Other | $442K | 27 | +2.7% | open |
+| 2026-11-18 | [[Global GP LLC]] | Other | $312K | 25 | +3.3% | open |
+| 2026-11-13 | [[Global GP LLC]] | Other | $442K | 27 | +3.6% | open |
